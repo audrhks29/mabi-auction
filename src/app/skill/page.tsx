@@ -13,6 +13,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import SelectRank from "@/components/skill/SelectRank";
 
 export default function SkillPage() {
   return (
@@ -48,18 +49,7 @@ export default function SkillPage() {
                   <TableCell className="text-left">{skill.name_kor}</TableCell>
 
                   <TableCell>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="연습" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {rankLists.map(rankList => (
-                          <SelectItem key={rankList.id} value={rankList.display}>
-                            {rankList.display}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <SelectRank />
                   </TableCell>
 
                   <TableCell>{skill.skill_by_total.ap || 0}</TableCell>

@@ -48,19 +48,7 @@ export default function SkillPage() {
                   </TableCell>
                   <TableCell className="text-left">{skill.name_kor}</TableCell>
 
-                  <TableCell>
-                    <SelectRank />
-                  </TableCell>
-
-                  <TableCell>{skill.skill_by_total.ap || 0}</TableCell>
-                  <TableCell>{skill.skill_by_total.hp || 0}</TableCell>
-                  <TableCell>{skill.skill_by_total.mp || 0}</TableCell>
-                  <TableCell>{skill.skill_by_total.sp || 0}</TableCell>
-                  <TableCell>{skill.skill_by_total.str || 0}</TableCell>
-                  <TableCell>{skill.skill_by_total.dex || 0}</TableCell>
-                  <TableCell>{skill.skill_by_total.int || 0}</TableCell>
-                  <TableCell>{skill.skill_by_total.will || 0}</TableCell>
-                  <TableCell>{skill.skill_by_total.luck || 0}</TableCell>
+                  <SelectRank skill={skill} />
                 </TableRow>
               )),
             )}

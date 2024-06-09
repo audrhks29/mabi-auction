@@ -1,10 +1,11 @@
 "use client";
 
-import rankLists from "@/assets/rank.json";
-
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { TableCell } from "../ui/table";
 import { useState } from "react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
+import { TableCell } from "../ui/table";
+import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 const initialStats = {
   ap: 0,
@@ -19,6 +20,11 @@ const initialStats = {
 };
 
 export default function SelectRank({ skill }) {
+  const router = useRouter();
+
+  const handleClickRow = id => {
+    router.push(`skill/${id}`);
+  };
   const [rankByStats, setRankByStats] = useState(initialStats);
 
   const handleSelectRank = (value: string) => {
@@ -60,22 +66,11 @@ export default function SelectRank({ skill }) {
           </SelectTrigger>
 
           <SelectContent>
-            {rankLists.map(rankList => {
-              const isPromotion = skill.isPromotion;
-              if (isPromotion) {
-                return (
-                  <SelectItem key={rankList.id} value={rankList.display}>
-                    {rankList.display}
-                  </SelectItem>
-                );
-              } else if (rankList.id <= 16) {
-                return (
-                  <SelectItem key={rankList.id} value={rankList.display}>
-                    {rankList.display}
-                  </SelectItem>
-                );
-              }
-            })}
+            {skill.skill_by_rank.map((item, index) => (
+              <SelectItem key={index} value={item.rank}>
+                {item.rank}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
       </TableCell>
@@ -114,6 +109,10 @@ export default function SelectRank({ skill }) {
 
       <TableCell>
         {rankByStats.luck || 0}/{skill.skill_by_total.luck || 0}
+      </TableCell>
+
+      <TableCell>
+        <Button onClick={() => handleClickRow(skill.skill_id)}>자세히</Button>
       </TableCell>
     </>
   );

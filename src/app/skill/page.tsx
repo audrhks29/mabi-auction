@@ -48,18 +48,16 @@ export default function SkillPage() {
           </TableHeader>
 
           <TableBody>
-            {skillLists.map(skillList =>
-              skillList.skills.map(skill => (
-                <TableRow key={skill.skill_id} className="cursor-pointer">
-                  <TableCell>
-                    <Image src={skill.icon} width={30} height={30} alt={skill.name_kor} className="m-auto" />
-                  </TableCell>
-                  <TableCell className="text-left">{skill.name_kor}</TableCell>
+            {skillLists.map(skill => (
+              <TableRow key={skill.skill_id} className="cursor-pointer">
+                <TableCell>
+                  <Image src={skill.icon} width={30} height={30} alt={skill.name_kor} className="m-auto" />
+                </TableCell>
+                <TableCell className="text-left">{skill.name_kor}</TableCell>
 
-                  <SelectRank skill={skill} />
-                </TableRow>
-              )),
-            )}
+                <SelectRank skill={skill} />
+              </TableRow>
+            ))}
           </TableBody>
         </Table>
       </div>

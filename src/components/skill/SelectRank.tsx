@@ -19,17 +19,21 @@ const initialStats = {
   luck: 0,
 };
 
-export default function SelectRank({ skill }) {
+export default function SelectRank({ skill }: { skill: SkillsTypes }) {
   const router = useRouter();
 
-  const handleClickRow = id => {
-    router.push(`skill/${id}`);
-  };
   const [rankByStats, setRankByStats] = useState(initialStats);
 
+  // detail 버튼 클릭 함수
+  const handleClickDetail = (talent: string, id: number) => {
+    router.push(`skill/${talent}/${id}`);
+  };
+
+  // 랭크 선택 함수
   const handleSelectRank = (value: string) => {
     const selectRankIndex = skill.skill_by_rank.findIndex(skill => skill.rank === value);
 
+    // 누적 스탯 계산
     const cumulativeBonusStat = skill.skill_by_rank.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
       const bonusStat = rankInfo.bonus_stat;
       if (bonusStat) {
@@ -44,9 +48,12 @@ export default function SelectRank({ skill }) {
       return acc;
     }, {});
 
+    // ----------------------------------------------------------------
+    // 누적 ap 계산
     const cumulativeAP = skill.skill_by_rank.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
       return acc + rankInfo.ap;
     }, 0);
+    // ----------------------------------------------------------------
 
     const newRankStats = {
       ...initialStats,
@@ -112,7 +119,7 @@ export default function SelectRank({ skill }) {
       </TableCell>
 
       <TableCell>
-        <Button onClick={() => handleClickRow(skill.skill_id)}>자세히</Button>
+        <Button onClick={() => handleClickDetail(skill.talent, skill.skill_id)}>자세히</Button>
       </TableCell>
     </>
   );

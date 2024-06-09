@@ -1,14 +1,18 @@
-import skillLists from "@/assets/skill/human.json";
 import Image from "next/image";
+
+import skillLists from "@/assets/skill/human.json";
+
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-export default function SkillDetailPage({ params }) {
-  // console.log(params);
-  const findSkill = skillLists
-    .find(item => item.talent === "인형사")
-    ?.skills.find(skill => skill.skill_id == params.id);
+
+import SameTalentSkills from "@/components/skill/SameTalentSkills";
+
+export default function SkillDetailPage({ params }: { params: { category: string; id: number } }) {
+  const findSkill = skillLists.find(item => item.talent === params.category && item.skill_id == params.id);
 
   return (
     <main className="inner">
+      <SameTalentSkills params={params} />
+
       <div className="grid gap-3 mb-3">
         <h2 className="text-center text-[20px] font-bold">{findSkill?.name_kor}</h2>
         <Image src={findSkill?.icon || ""} width={60} height={60} alt={findSkill?.name_kor || ""} className="m-auto" />
@@ -70,7 +74,7 @@ export default function SkillDetailPage({ params }) {
                       ))}
                     </div>
 
-                    {/* 수련방법 */}
+                    {/* --- 수련방법 --- */}
                     <div className="border text-left text-[12px] p-3 rounded-sm">
                       <h3 className="font-bold text-[14px] pb-3">수련방법</h3>
 

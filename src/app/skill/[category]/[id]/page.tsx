@@ -30,19 +30,21 @@ export default function SkillDetailPage({ params }: { params: { category: string
               // ----------------------------------------------------------------
 
               // 누적 스탯 계산
-              const cumulativeBonusStats = findSkill.skill_by_rank.slice(0, skillIndex + 1).reduce((acc, rankInfo) => {
-                const bonusStat = rankInfo.bonus_stat;
-                if (bonusStat) {
-                  for (const [key, value] of Object.entries(bonusStat)) {
-                    if (acc[key]) {
-                      acc[key] += value;
-                    } else {
-                      acc[key] = value;
+              const cumulativeBonusStats = findSkill.skill_by_rank
+                .slice(0, skillIndex + 1)
+                .reduce((acc: StatsTypes, rankInfo) => {
+                  const bonusStat = rankInfo.bonus_stat;
+                  if (bonusStat) {
+                    for (const [key, value] of Object.entries(bonusStat)) {
+                      if (key in acc) {
+                        acc[key as keyof StatsTypes] = (acc[key as keyof StatsTypes] || 0) + (value as number);
+                      } else {
+                        acc[key as keyof StatsTypes] = value as number;
+                      }
                     }
                   }
-                }
-                return acc;
-              }, {});
+                  return acc;
+                }, {} as StatsTypes);
 
               const entriesCumulativeStats = Object.entries(cumulativeBonusStats);
               const flatCumulativeStatsArray = entriesCumulativeStats.flatMap(([key, value]) => [key, value]);

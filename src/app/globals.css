@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+nav,
 .inner {
   width: 1300px;
   margin: 0 auto;
+}
+.inner {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 @layer base {

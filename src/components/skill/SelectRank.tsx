@@ -34,7 +34,7 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
     const selectRankIndex = skill.skill_by_rank.findIndex(skill => skill.rank === value);
 
     // 누적 스탯 계산
-    const cumulativeBonusStat = skill.skill_by_rank
+    const cumulativeBonusStat = skill?.skill_by_rank
       .slice(0, selectRankIndex + 1)
       .reduce((acc: StatsTypes, rankInfo) => {
         const bonusStat = rankInfo.bonus_stat;
@@ -52,9 +52,10 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
 
     // ----------------------------------------------------------------
     // 누적 ap 계산
-    const cumulativeAP = skill.skill_by_rank.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
-      return acc + rankInfo.ap;
-    }, 0);
+    const cumulativeAP =
+      skill.skill_by_rank.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
+        return acc + rankInfo.ap;
+      }, 0) || 0;
     // ----------------------------------------------------------------
 
     const newRankStats = {

@@ -13,6 +13,7 @@ export default function TalentLayout({
   return (
     <main className="inner">
       <SameTalentSkills params={params} />
+
       {children}
     </main>
   );

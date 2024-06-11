@@ -5,6 +5,7 @@ import skillLists from "@/assets/skill/human.json";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
+import CurrentRank from "@/components/skill/talent/CurrentRank";
 import Training from "@/components/skill/talent/skillCard/Training";
 import AbilityPoint from "@/components/skill/talent/skillCard/AbilityPoint";
 import Stats from "@/components/skill/talent/skillCard/Stats";
@@ -21,7 +22,9 @@ export default function SkillDetailPage({
   const findSkill = skillLists.find(item => item.talent === params.talent && item.skill_id == params.id);
 
   return (
-    <section className="relative">
+    <section className="grid gap-3">
+      <CurrentRank totalStats={findSkill?.skill_by_total} rank={findSkill?.skill_by_rank} />
+
       <Tabs defaultValue="F" className="grid gap-3">
         <TabsList className="block w-fit m-auto">
           {findSkill?.skill_by_rank.map(item => (
@@ -94,7 +97,7 @@ export default function SkillDetailPage({
                   {/* --- AP --- */}
                   <AbilityPoint nextRank={nextRank} cumulativeAP={cumulativeAP} />
 
-                  {/* --- 승급시 받는 스탯 --- */}
+                  {/* --- 스탯 --- */}
                   <Stats flatBonusStats={flatBonusStats} flatCumulativeStatsArray={flatCumulativeStatsArray} />
                 </CardContent>
               </Card>

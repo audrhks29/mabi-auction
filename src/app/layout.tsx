@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <Header />
-        <Separator />
+        <Separator className="fixed top-14" />
         {children}
       </body>
     </html>

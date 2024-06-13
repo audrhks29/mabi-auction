@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { TableCell } from "../ui/table";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
+import { calculateCumulativeStats } from "@/utils/cumulativeBonusStats";
 
 const initialStats = {
   ap: 0,
@@ -34,21 +35,7 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
     const selectRankIndex = skill.skill_by_rank.findIndex(skill => skill.rank === value);
 
     // 누적 스탯 계산
-    const cumulativeBonusStat = skill?.skill_by_rank
-      .slice(0, selectRankIndex + 1)
-      .reduce((acc: StatsTypes, rankInfo) => {
-        const bonusStat = rankInfo.bonus_stat;
-        if (bonusStat) {
-          for (const [key, value] of Object.entries(bonusStat)) {
-            if (key in acc) {
-              acc[key as keyof StatsTypes] = (acc[key as keyof StatsTypes] || 0) + (value as number);
-            } else {
-              acc[key as keyof StatsTypes] = value as number;
-            }
-          }
-        }
-        return acc;
-      }, {} as StatsTypes);
+    const cumulativeBonusStat = calculateCumulativeStats(skill, selectRankIndex);
 
     // ----------------------------------------------------------------
     // 누적 ap 계산

@@ -10,6 +10,7 @@ import Training from "@/components/skill/talent/skillCard/Training";
 import AbilityPoint from "@/components/skill/talent/skillCard/AbilityPoint";
 import Stats from "@/components/skill/talent/skillCard/Stats";
 import DetailDescription from "@/components/skill/talent/skillCard/DetailDescription";
+import { convertCumulativeStatsArray } from "@/utils/cumulativeBonusStats";
 
 export default function SkillDetailPage({
   params,
@@ -41,24 +42,7 @@ export default function SkillDetailPage({
           // ----------------------------------------------------------------
 
           // 누적 스탯 계산
-          const cumulativeBonusStats = findSkill.skill_by_rank
-            .slice(0, index + 1)
-            .reduce((acc: StatsTypes, rankInfo) => {
-              const bonusStat = rankInfo.bonus_stat;
-              if (bonusStat) {
-                for (const [key, value] of Object.entries(bonusStat)) {
-                  if (key in acc) {
-                    acc[key as keyof StatsTypes] = (acc[key as keyof StatsTypes] || 0) + (value as number);
-                  } else {
-                    acc[key as keyof StatsTypes] = value as number;
-                  }
-                }
-              }
-              return acc;
-            }, {} as StatsTypes);
-
-          const entriesCumulativeStats = Object.entries(cumulativeBonusStats);
-          const flatCumulativeStatsArray = entriesCumulativeStats.flatMap(([key, value]) => [key, value]);
+          const flatCumulativeStatsArray = convertCumulativeStatsArray(findSkill, index);
           // ----------------------------------------------------------------
           const nextRank = findSkill && findSkill?.skill_by_rank[index + 1];
           // 승급 시 받는 스탯 계산

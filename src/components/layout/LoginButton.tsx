@@ -1,3 +1,5 @@
+"use client";
+
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -5,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 
 import Link from "next/link";
+import { PopoverClose } from "@radix-ui/react-popover";
 
 export default function LoginButton() {
   return (
@@ -18,18 +21,22 @@ export default function LoginButton() {
           <div className="grid gap-4">
             <div className="grid gap-2">
               <Input id="user_id" type="text" placeholder="아이디" required />
-              <Input id="password" type="password" placeholder="비밀번호" required />
+              <Input id="user_password" type="password" placeholder="비밀번호" required />
             </div>
-            <Button type="submit" className="w-full">
-              로그인
-            </Button>
+            <PopoverClose asChild>
+              <Button type="submit" className="w-full">
+                로그인
+              </Button>
+            </PopoverClose>
           </div>
 
           <div className="mt-4 text-center text-sm">
             계정이 없으신가요?&nbsp;
-            <Link href="#" className="underline">
-              회원가입
-            </Link>
+            <PopoverClose asChild>
+              <Link href="/signup" className="underline">
+                회원가입
+              </Link>
+            </PopoverClose>
           </div>
         </div>
       </PopoverContent>

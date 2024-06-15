@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
 export default function SignupPage() {
-  const { handleSubmit, control, register, setValue } = useForm();
+  const { handleSubmit, register, setValue } = useForm();
 
   const onSubmit = data => {
     console.log(data);
@@ -18,7 +18,7 @@ export default function SignupPage() {
     <main className="inner grid gap-3">
       <h2 className="text-center text-[24px] font-bold">회원가입</h2>
 
-      <form onSubmit={onSubmit}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <Card className="m-auto w-[450px]">
           <CardContent className="p-6">
             <div className="grid gap-4">

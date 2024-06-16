@@ -51,7 +51,7 @@ export default function SkillDetailPage({
           const flatBonusStats = entriesBonusStats && entriesBonusStats.flatMap(([key, value]) => [key, value]);
 
           return (
-            <TabsContent className="w-[450px] m-auto" key={rank.rank} value={rank.rank}>
+            <TabsContent className="w-[500px] m-auto" key={rank.rank} value={rank.rank}>
               <Card className="text-center text-[14px]">
                 <CardHeader>
                   <CardTitle className="font-bold text-[16px]">

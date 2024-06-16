@@ -27,9 +27,9 @@ export default function SameTalentSkills({ params }: { params: { talent: string;
       </div>
 
       {isMoreSkill && (
-        <ul className="grid grid-cols-6 text-center border text-[14px] border-t-0">
+        <ul className="grid grid-cols-6 text-center text-[14px] border border-t-0">
           {SameTalentSkillLists.map(skill => (
-            <li key={skill.skill_id} className="border-r p-3 grid gap-3">
+            <li key={skill.skill_id} className="p-3 grid gap-3">
               <Image src={skill.icon} width={30} height={30} alt={skill.name_kor} className="m-auto" />
               <p onClick={() => handleClickSkillName(skill.skill_id)} className="cursor-pointer hover:font-bold">
                 {skill.name_kor}

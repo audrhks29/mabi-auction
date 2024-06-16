@@ -1499,7 +1499,7 @@
           "효과 지속시간 45초"
         ],
         "ap": 0,
-        "rp": 3000
+        "rp": 0
       },
       {
         "rank": "F",
@@ -1536,7 +1536,7 @@
           "연결이 해제된 상태에서 AI전투 수행",
           "효과 지속시간 48초"
         ],
-        "ap": 8,
+        "ap": 9,
         "rp": 7000
       },
       {
@@ -1840,6 +1840,197 @@
         ],
         "ap": 35,
         "rp": 50000
+      }
+    ]
+  },
+  {
+    "skill_id": 7,
+    "talent": "puppeteer",
+    "talent_kor": "인형사",
+    "category": "인형술",
+    "isPromotion": false,
+    "name_kor": "와이어 풀링",
+    "icon": "/images/skill/puppeteer/wirePulling.webp",
+    "description": "멀리 떨어져 있는 적을 실로 묶어 자기 자신 쪽으로 강하게 끌어당기는 핸들 전투 스킬. 하나의 적을 무리로부터 떼어놓거나 아군에게 달려드는 적을 방해하는 것에 유용하다.",
+    "skill_by_total": { "ap": 154, "sp": 12, "dex": 4 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": null,
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": ["대미지 배율 60%", "사정거리 8m"],
+        "ap": 0,
+        "rp": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
+        "effect": ["대미지 배율 70%", "사정거리 10m"],
+        "ap": 1,
+        "rp": 1000
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
+        "effect": ["대미지 배율 80%", "사정거리 10m"],
+        "ap": 2,
+        "rp": 1500
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 90%", "사정거리 10m"],
+        "ap": 3,
+        "rp": 2500
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 100%", "사정거리 10m"],
+        "ap": 4,
+        "rp": 4000
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 110%", "사정거리 10m"],
+        "ap": 5,
+        "rp": 4000
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 32, "max_count": 1 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 80, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 120%", "사정거리 10m"],
+        "ap": 6,
+        "rp": 6000
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 140%", "사정거리 11m"],
+        "ap": 9,
+        "rp": 7000
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 20, "max_count": 2 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 28, "max_count": 2 }
+        ],
+        "effect": ["대미지 배율 150%", "사정거리 11m"],
+        "ap": 10,
+        "rp": 9000
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 16, "max_count": 3 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 20, "max_count": 2 }
+        ],
+        "effect": ["대미지 배율 160%", "사정거리 11m"],
+        "ap": 11,
+        "rp": 10000
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 10, "max_count": 4 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 12, "max_count": 3 }
+        ],
+        "effect": ["대미지 배율 170%", "사정거리 11m"],
+        "ap": 12,
+        "rp": 13000
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 6.8, "max_count": 5 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 9.6, "max_count": 4 }
+        ],
+        "effect": ["대미지 배율 190%", "사정거리 12m"],
+        "ap": 15,
+        "rp": 15000
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 30 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 4.8, "max_count": 8 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 6, "max_count": 5 }
+        ],
+        "effect": ["대미지 배율 200%", "사정거리 12m"],
+        "ap": 16,
+        "rp": 22000
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 38 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 3.2, "max_count": 13 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 4.8, "max_count": 8 }
+        ],
+        "effect": ["대미지 배율 210%", "사정거리 12m"],
+        "ap": 17,
+        "rp": 25000
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 43 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 2.4, "max_count": 18 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 4, "max_count": 10 }
+        ],
+        "effect": ["대미지 배율 220%", "사정거리 12m"],
+        "ap": 18,
+        "rp": 29000
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "sp": 1, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
+          { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
+          { "title": "와이어 풀링의 크리티컬 히트 성공", "training_exp": 3.2, "max_count": 13 }
+        ],
+        "effect": ["대미지 배율 250%", "사정거리 13m"],
+        "ap": 25,
+        "rp": 31000
       }
     ]
   }

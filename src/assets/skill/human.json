@@ -1282,5 +1282,565 @@
         "rp": 0
       }
     ]
+  },
+  {
+    "skill_id": 5,
+    "talent": "puppeteer",
+    "talent_kor": "인형사",
+    "category": "인형술",
+    "isPromotion": false,
+    "name_kor": "7막: 광란의 질주",
+    "icon": "/images/skill/puppeteer/act7.webp",
+    "description": "마리오네트가 앞으로 돌진하며 마주치는 모든 적들을 날려버리는 마리오네트 전투 스킬. 적들의 술수에 당해 광기에 휩싸여 날뛰는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
+    "skill_by_total": { "ap": 282, "str": 17, "dex": 8 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": null,
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": ["대미지 배율 ?%", "돌진거리 10m, 폭 3.5m", "쿨타임 20초", "영혼력 8%"],
+        "ap": 0,
+        "rp": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stat": { "str": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
+        "effect": ["대미지 배율 380%", "돌진거리 10m, 폭 4m", "쿨타임 20초", "영혼력 8%"],
+        "ap": 5,
+        "rp": 3000
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "str": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
+        "effect": ["대미지 배율 400%", "돌진거리 10m, 폭 4m", "쿨타임 20초", "영혼력 8%"],
+        "ap": 6,
+        "rp": 7000
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 420%", "돌진거리 10m, 폭 4m", "쿨타임 20초", "영혼력 8%"],
+        "ap": 7,
+        "rp": 8000
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "str": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 440%", "돌진거리 10m, 폭 4.5m", "쿨타임 20초", "영혼력 8%"],
+        "ap": 8,
+        "rp": 10000
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 460%", "돌진거리 10m, 폭 4.5m", "쿨타임 20초", "영혼력 8%"],
+        "ap": 10,
+        "rp": 12000
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 32, "max_count": 1 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 80, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 480%", "돌진거리 10m, 폭 4.5m", "쿨타임 20초", "영혼력 8%"],
+        "ap": 12,
+        "rp": 14000
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "str": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 510%", "돌진거리 10m, 폭 5m", "쿨타임 19초", "영혼력 8%"],
+        "ap": 16,
+        "rp": 15000
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 20, "max_count": 2 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 28, "max_count": 2 }
+        ],
+        "effect": ["대미지 배율 540%", "돌진거리 10m, 폭 5m", "쿨타임 19초", "영혼력 8%"],
+        "ap": 18,
+        "rp": 20000
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 16, "max_count": 3 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 20, "max_count": 2 }
+        ],
+        "effect": ["대미지 배율 570%", "돌진거리 10m, 폭 5m", "쿨타임 19초", "영혼력 8%"],
+        "ap": 20,
+        "rp": 24000
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 10, "max_count": 4 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 12, "max_count": 3 }
+        ],
+        "effect": ["대미지 배율 600%", "돌진거리 10m, 폭 5m", "쿨타임 19초", "영혼력 8%"],
+        "ap": 22,
+        "rp": 29000
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "str": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 6.8, "max_count": 5 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 9.6, "max_count": 4 }
+        ],
+        "effect": ["대미지 배율 640%", "돌진거리 10m, 폭 5.5m", "쿨타임 18초", "영혼력 8%"],
+        "ap": 27,
+        "rp": 34000
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 28 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 5.2, "max_count": 8 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 6.8, "max_count": 5 }
+        ],
+        "effect": ["대미지 배율 680%", "돌진거리 10m, 폭 5.5m", "쿨타임 18초", "영혼력 8%"],
+        "ap": 29,
+        "rp": 40000
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.4, "max_count": 30 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 3.2, "max_count": 13 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 4.8, "max_count": 8 }
+        ],
+        "effect": ["대미지 배율 720%", "돌진거리 10m, 폭 5.5m", "쿨타임 18초", "영혼력 8%"],
+        "ap": 31,
+        "rp": 45000
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "str": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 33 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 2.4, "max_count": 18 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 4, "max_count": 10 }
+        ],
+        "effect": ["대미지 배율 760%", "돌진거리 10m, 폭 5.5m", "쿨타임 18초", "영혼력 8%"],
+        "ap": 33,
+        "rp": 49000
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "str": 3, "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 3.2, "max_count": 13 }
+        ],
+        "effect": ["대미지 배율 860%", "돌진거리 10m, 폭 6m", "쿨타임 17초", "영혼력 8%"],
+        "ap": 38,
+        "rp": 49000
+      }
+    ]
+  },
+  {
+    "skill_id": 6,
+    "talent": "puppeteer",
+    "talent_kor": "인형사",
+    "category": "인형술",
+    "isPromotion": false,
+    "name_kor": "9막: 깨어나는 생명",
+    "icon": "/images/skill/puppeteer/act9.webp",
+    "description": "마리오네트가 일시적으로 생명을 얻고 깨어나 직접 적들을 공격할 수 있게 해주는 전투 스킬. 직접 조종하는 경우에는 인형사의 지시에 따라 이전보다 더 강력한 공격을 할 수 있다. 새로운 생명을 얻고 깨어나는 감동적인 인형극 속 장면을 스킬로 재탄생 시킨 것으로 진정한 인형사만이 사용할 수 있다고 한다.",
+    "skill_by_total": { "ap": 286, "hp": 20, "dex": 9, "will": 10 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": null,
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": [
+          "사용시 반경 4m에 대미지 배율 15%로 공격",
+          "마리오네트 대미지 10~25증가",
+          "마리오네트 공격 시 보너스 대미지 3%",
+          "방어, 마법방어 120 증가",
+          "보호, 마법보호 10 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "효과 지속시간 45초"
+        ],
+        "ap": 0,
+        "rp": 3000
+      },
+      {
+        "rank": "F",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 3 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 24, "max_count": 4 }
+        ],
+        "effect": [
+          "사용시 반경 4m에 대미지 배율 15%로 공격",
+          "마리오네트 대미지 10~25증가",
+          "마리오네트 공격 시 보너스 대미지 3%",
+          "방어, 마법방어 120 증가",
+          "보호, 마법보호 10 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "효과 지속시간 45초"
+        ],
+        "ap": 8,
+        "rp": 3000
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "hp": 1, "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 3 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 24, "max_count": 4 }
+        ],
+        "effect": [
+          "사용시 반경 4m에 대미지 배율 15%로 공격",
+          "마리오네트 대미지 11~27",
+          "마리오네트 공격 시 보너스 대미지 3%",
+          "방어, 마법방어 140 증가",
+          "보호, 마법보호 15 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "효과 지속시간 48초"
+        ],
+        "ap": 8,
+        "rp": 7000
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 8 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 8, "max_count": 12 }
+        ],
+        "effect": [
+          "사용시 반경 4m에 대미지 배율 20%로 공격",
+          "마리오네트 대미지 13~28",
+          "마리오네트 공격 시 보너스 대미지 3%",
+          "방어, 마법방어 160 증가",
+          "보호, 마법보호 20 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "효과 지속시간 51초"
+        ],
+        "ap": 10,
+        "rp": 8000
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "hp": 2, "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 4, "max_count": 10 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 5.6, "max_count": 15 }
+        ],
+        "effect": [
+          "사용시 반경 4m에 대미지 배율 20%로 공격",
+          "마리오네트 대미지 15~30",
+          "마리오네트 공격 시 보너스 대미지 3%",
+          "방어, 마법방어 180 증가",
+          "보호, 마법보호 25 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "효과 지속시간 54초"
+        ],
+        "ap": 12,
+        "rp": 10000
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 13 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 3.2, "max_count": 19 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 2.88, "max_count": 8 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 2.4, "max_count": 10 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 2.88, "max_count": 8 }
+        ],
+        "effect": [
+          "사용시 반경 4m에 대미지 배율 25%로 공격",
+          "마리오네트 대미지 17~34",
+          "마리오네트 공격 시 보너스 대미지 3%",
+          "방어, 마법방어 200 증가",
+          "보호, 마법보호 30 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "효과 지속시간 57초"
+        ],
+        "ap": 13,
+        "rp": 12000
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "hp": 1, "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 15 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 2.4, "max_count": 23 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 2.56, "max_count": 9 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 2.08, "max_count": 13 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 2.56, "max_count": 9 }
+        ],
+        "effect": [
+          "사용시 반경 4m에 대미지 배율 25%로 공격",
+          "마리오네트 대미지 19~37",
+          "마리오네트 공격 시 보너스 대미지 3%",
+          "방어, 마법방어 220 증가",
+          "보호, 마법보호 35 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "효과 지속시간 60초"
+        ],
+        "ap": 14,
+        "rp": 14000
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "hp": 2, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 15 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 2.4, "max_count": 23 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 2.56, "max_count": 9 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 2.08, "max_count": 13 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 2.56, "max_count": 9 }
+        ],
+        "effect": [
+          "사용시 반경 4.5m에 대미지 배율 30%로 공격",
+          "마리오네트 대미지 21~40",
+          "마리오네트 공격 시 보너스 대미지 5%",
+          "방어, 마법방어 260 증가",
+          "보호, 마법보호 40 증가",
+          "효과 지속시간 63초",
+          "연결이 해제된 상태에서 AI전투 수행"
+        ],
+        "ap": 16,
+        "rp": 15000
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "hp": 1, "dex": 1, "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 23 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 1.2, "max_count": 34 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 1.76, "max_count": 14 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 1.44, "max_count": 19 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 1.76, "max_count": 14 }
+        ],
+        "effect": [
+          "사용시 반경 4.5m에 대미지 배율 30%로 공격",
+          "마리오네트 대미지 24~42",
+          "마리오네트 공격 시 보너스 대미지 5%",
+          "방어, 마법방어 290 증가",
+          "보호, 마법보호 45 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "인형극 스킬 시전시간 감소 10%",
+          "효과 지속시간 66초"
+        ],
+        "ap": 17,
+        "rp": 20000
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "hp": 1, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.12, "max_count": 27 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 0.96, "max_count": 40 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 1.6, "max_count": 17 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 1.28, "max_count": 22 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 1.6, "max_count": 17 },
+          { "title": "스킬이 사용된 상태에서 6막: 유혹의 올가미를 사용한다.", "training_exp": 1.92, "max_count": 4 },
+          { "title": "스킬이 사용된 상태에서 7막: 광란의 질주를 사용한다.", "training_exp": 1.92, "max_count": 4 }
+        ],
+        "effect": [
+          "사용시 반경 4.5m에 대미지 배율 35%로 공격",
+          "마리오네트 대미지 26~45",
+          "마리오네트 공격 시 보너스 대미지 5%",
+          "방어, 마법방어 320 증가",
+          "보호, 마법보호 50 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "인형극 스킬 시전시간 감소 10%",
+          "효과 지속시간 69초"
+        ],
+        "ap": 18,
+        "rp": 24000
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "hp": 1, "dex": 1, "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.88, "max_count": 30 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 0.8, "max_count": 47 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 1.44, "max_count": 19 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 1.12, "max_count": 25 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 1.44, "max_count": 19 },
+          { "title": "스킬이 사용된 상태에서 6막: 유혹의 올가미를 사용한다.", "training_exp": 1.6, "max_count": 5 },
+          { "title": "스킬이 사용된 상태에서 7막: 광란의 질주를 사용한다.", "training_exp": 1.6, "max_count": 5 }
+        ],
+        "effect": [
+          "사용시 반경 4.5m에 대미지 배율 40%로 공격",
+          "마리오네트 대미지 28~47",
+          "마리오네트 공격 시 보너스 대미지 5%",
+          "방어, 마법방어 350 증가",
+          "보호, 마법보호 55 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "인형극 스킬 시전시간 감소 10%",
+          "효과 지속시간 72초"
+        ],
+        "ap": 20,
+        "rp": 29000
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "hp": 2, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.72, "max_count": 34 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 0.72, "max_count": 52 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 1.28, "max_count": 20 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 1.04, "max_count": 29 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 1.28, "max_count": 20 },
+          { "title": "스킬이 사용된 상태에서 6막: 유혹의 올가미를 사용한다.", "training_exp": 1.2, "max_count": 7 },
+          { "title": "스킬이 사용된 상태에서 7막: 광란의 질주를 사용한다.", "training_exp": 1.2, "max_count": 7 }
+        ],
+        "effect": [
+          "사용시 반경 5m에 대미지 배율 40%로 공격",
+          "마리오네트 대미지 30~50",
+          "마리오네트 공격 시 보너스 대미지 7%",
+          "방어, 마법방어 400 증가",
+          "보호, 마법보호 60 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "인형극 스킬 시전시간 감소 20%",
+          "효과 지속시간 75초"
+        ],
+        "ap": 24,
+        "rp": 34000
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "hp": 1, "dex": 1, "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.64, "max_count": 38 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 0.64, "max_count": 58 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 1.2, "max_count": 23 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 0.96, "max_count": 32 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 1.2, "max_count": 23 },
+          { "title": "스킬이 사용된 상태에서 6막: 유혹의 올가미를 사용한다.", "training_exp": 1.2, "max_count": 8 },
+          { "title": "스킬이 사용된 상태에서 7막: 광란의 질주를 사용한다.", "training_exp": 1.2, "max_count": 8 }
+        ],
+        "effect": [
+          "사용시 반경 5m에 대미지 배율 45%로 공격",
+          "마리오네트 대미지 32~52",
+          "마리오네트 공격 시 보너스 대미지 7%",
+          "방어, 마법방어 440 증가",
+          "보호, 마법보호 65 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "인형극 스킬 시전시간 감소 20%",
+          "효과 지속시간 78초"
+        ],
+        "ap": 28,
+        "rp": 40000
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "hp": 2, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.56, "max_count": 42 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 0.64, "max_count": 63 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 1.04, "max_count": 25 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 0.88, "max_count": 35 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 1.04, "max_count": 25 },
+          { "title": "스킬이 사용된 상태에서 6막: 유혹의 올가미를 사용한다.", "training_exp": 1.2, "max_count": 9 },
+          { "title": "스킬이 사용된 상태에서 7막: 광란의 질주를 사용한다.", "training_exp": 1.2, "max_count": 9 }
+        ],
+        "effect": [
+          "사용시 반경 5.5m에 대미지 배율 45%로 공격",
+          "마리오네트 대미지 34~54",
+          "마리오네트 공격 시 보너스 대미지 7%",
+          "방어, 마법방어 480 증가",
+          "보호, 마법보호 70 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "인형극 스킬 시전시간 감소 20%",
+          "효과 지속시간 81초"
+        ],
+        "ap": 30,
+        "rp": 45000
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "hp": 1, "dex": 1, "will": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.48, "max_count": 45 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 0.48, "max_count": 69 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 0.96, "max_count": 27 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 0.8, "max_count": 38 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 0.96, "max_count": 27 },
+          { "title": "스킬이 사용된 상태에서 6막: 유혹의 올가미를 사용한다.", "training_exp": 1.2, "max_count": 9 },
+          { "title": "스킬이 사용된 상태에서 7막: 광란의 질주를 사용한다.", "training_exp": 1.2, "max_count": 9 }
+        ],
+        "effect": [
+          "사용시 반경 5.5m에 대미지 배율 50%로 공격",
+          "마리오네트 대미지 36~56",
+          "마리오네트 공격 시 보너스 대미지 7%",
+          "방어, 마법방어 520 증가",
+          "보호, 마법보호 75 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "인형극 스킬 시전시간 감소 20%",
+          "효과 지속시간 84초"
+        ],
+        "ap": 32,
+        "rp": 49000
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "hp": 2, "dex": 1, "will": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.4, "max_count": 50 },
+          { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 0.4, "max_count": 77 },
+          { "title": "스킬이 사용된 상태에서 2막: 솟구치는 분노를 사용한다.", "training_exp": 0.8, "max_count": 30 },
+          { "title": "스킬이 사용된 상태에서 1막: 우연한 충돌을 사용한다.", "training_exp": 0.72, "max_count": 42 },
+          { "title": "스킬이 사용된 상태에서 4막: 질투의 화신을 사용한다.", "training_exp": 0.8, "max_count": 30 },
+          { "title": "스킬이 사용된 상태에서 6막: 유혹의 올가미를 사용한다.", "training_exp": 1.2, "max_count": 10 },
+          { "title": "스킬이 사용된 상태에서 7막: 광란의 질주를 사용한다.", "training_exp": 1.2, "max_count": 10 }
+        ],
+        "effect": [
+          "사용시 반경 6m에 대미지 배율 60%로 공격",
+          "마리오네트 대미지 40~60",
+          "마리오네트 공격 시 보너스 대미지 10%",
+          "방어, 마법방어 580 증가",
+          "보호, 마법보호 80 증가",
+          "연결이 해제된 상태에서 AI전투 수행",
+          "인형극 스킬 시전시간 감소 30%",
+          "효과 지속시간 90초"
+        ],
+        "ap": 35,
+        "rp": 50000
+      }
+    ]
   }
 ]

@@ -7,10 +7,19 @@ import { Label } from "@/components/ui/label";
 
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
-export default function SignupPage() {
-  const { handleSubmit, register, setValue } = useForm();
 
-  const onSubmit = data => {
+interface FormData {
+  user_id: string;
+  user_password: string;
+  user_password_confirm: string;
+  user_server: string;
+  user_nickName: string;
+}
+
+export default function SignupPage() {
+  const { handleSubmit, register, setValue } = useForm<FormData>();
+
+  const onSubmit = (data: FormData) => {
     console.log(data);
   };
 

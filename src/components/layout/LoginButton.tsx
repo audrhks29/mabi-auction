@@ -3,20 +3,24 @@
 import { useForm } from "react-hook-form";
 
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { PopoverClose } from "@radix-ui/react-popover";
 
 import Link from "next/link";
 
-export default function LoginButton() {
-  const { handleSubmit, register, setValue } = useForm();
+interface FormData {
+  user_id: string;
+  user_password: string;
+}
 
-  const onSubmit = data => {
+export default function LoginButton() {
+  const { handleSubmit, register } = useForm<FormData>();
+
+  const onSubmit = (data: FormData) => {
     console.log(data);
   };
+
   return (
     <Popover>
       <PopoverTrigger className="border border-input bg-background hover:bg-accent hover:text-accent-foreground inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2">
@@ -24,7 +28,7 @@ export default function LoginButton() {
       </PopoverTrigger>
 
       <PopoverContent className="absolute -right-10">
-        <form className="p-3">
+        <form onSubmit={handleSubmit(onSubmit)} className="p-3">
           <div className="grid gap-4">
             <div className="grid gap-2">
               <Input
@@ -42,11 +46,10 @@ export default function LoginButton() {
                 required
               />
             </div>
-            <PopoverClose asChild>
-              <Button type="submit" className="w-full">
-                로그인
-              </Button>
-            </PopoverClose>
+
+            <Button type="submit" className="w-full">
+              로그인
+            </Button>
           </div>
 
           <div className="mt-4 text-center text-sm">

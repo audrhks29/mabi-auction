@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import skillLists from "@/assets/skill/human.json";
+import skillLists from "@/assets/skill/human/puppeteer.json";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";

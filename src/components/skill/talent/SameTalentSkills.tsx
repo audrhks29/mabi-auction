@@ -1,6 +1,7 @@
 "use client";
 
-import skillLists from "@/assets/skill/human.json";
+import skillLists from "@/assets/skill/human/puppeteer.json";
+
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import skillLists from "@/assets/skill/human.json";
+import skillLists from "@/assets/skill/human/puppeteer.json";
 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 

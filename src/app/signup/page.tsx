@@ -13,6 +13,7 @@ interface FormData {
   user_password: string;
   user_password_confirm: string;
   user_server: string;
+  user_race: string;
   user_nickName: string;
 }
 
@@ -63,6 +64,22 @@ export default function SignupPage() {
                       <SelectItem value="만돌린">만돌린</SelectItem>
                       <SelectItem value="하프">하프</SelectItem>
                       <SelectItem value="울프">울프</SelectItem>
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+                <Label htmlFor="user_race">종족</Label>
+                <Select onValueChange={value => setValue("user_race", value)}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="종족을 선택해주세요" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectItem value="인간">인간</SelectItem>
+                      <SelectItem value="엘프">엘프</SelectItem>
+                      <SelectItem value="자이언트">자이언트</SelectItem>
                     </SelectGroup>
                   </SelectContent>
                 </Select>

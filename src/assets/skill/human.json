@@ -2033,5 +2033,982 @@
         "rp": 31000
       }
     ]
+  },
+  {
+    "skill_id": 8,
+    "talent": "puppeteer",
+    "talent_kor": "인형사",
+    "category": "인형술",
+    "isPromotion": false,
+    "name_kor": "와이어 바인딩",
+    "icon": "/images/skill/puppeteer/wireBinding.webp",
+    "description": "멀리 떨어져 있는 적을 실로 묶어 움직이지 못하게 붙잡아두는 핸들 전투 스킬. 기술에 당한 적의 몸에 엉킨 실은 기술이 끝난 후에도 일정 시간동안 피해를 준다.",
+    "skill_by_total": { "ap": 145, "sp": 10, "dex": 6 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": null,
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": ["사정거리 8m", "경직시간 3초", "순간 대미지 배율 20%", "지속 대미지 3초당 10"],
+        "ap": 0,
+        "rp": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
+        "effect": ["사정거리 10m", "경직시간 4초", "순간 대미지 배율 30%", "지속 대미지 3초당 15"],
+        "ap": 2,
+        "rp": 1000
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": ["사정거리 10m", "경직시간 4초", "순간 대미지 배율 30%", "지속 대미지 3초당 20"],
+        "ap": 2,
+        "rp": 1500
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
+        "effect": ["사정거리 10m", "경직시간 4초", "순간 대미지 배율 30%", "지속 대미지 3초당 25"],
+        "ap": 3,
+        "rp": 2500
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 48, "max_count": 4 }],
+        "effect": ["사정거리 10m", "경직시간 4초", "순간 대미지 배율 40%", "지속 대미지 3초당 30"],
+        "ap": 3,
+        "rp": 4000
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 36, "max_count": 5 }],
+        "effect": ["사정거리 10m", "경직시간 4.5초", "순간 대미지 배율 40%", "지속 대미지 3초당 35"],
+        "ap": 4,
+        "rp": 4000
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 30, "max_count": 5 }],
+        "effect": ["사정거리 10m", "경직시간 4.5초", "순간 대미지 배율 40%", "지속 대미지 3초당 40"],
+        "ap": 5,
+        "rp": 6000
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 20, "max_count": 8 }],
+        "effect": ["사정거리 11m", "경직시간 5초", "순간 대미지 배율 50%", "지속 대미지 3초당 50"],
+        "ap": 8,
+        "rp": 7000
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 15.2, "max_count": 10 }],
+        "effect": ["사정거리 11m", "경직시간 5초", "순간 대미지 배율 50%", "지속 대미지 3초당 60"],
+        "ap": 9,
+        "rp": 9000
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 13 }],
+        "effect": ["사정거리 11m", "경직시간 5초", "순간 대미지 배율 50%", "지속 대미지 3초당 70"],
+        "ap": 10,
+        "rp": 10000
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 8.8, "max_count": 18 }],
+        "effect": ["사정거리 11m", "경직시간 5초", "순간 대미지 배율 50%", "지속 대미지 3초당 80"],
+        "ap": 11,
+        "rp": 13000
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 25 }],
+        "effect": ["사정거리 12m", "경직시간 5.5초", "순간 대미지 배율 60%", "지속 대미지 3초당 90"],
+        "ap": 15,
+        "rp": 15000
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 5.2, "max_count": 30 }],
+        "effect": ["사정거리 12m", "경직시간 5.5초", "순간 대미지 배율 60%", "지속 대미지 3초당 110"],
+        "ap": 16,
+        "rp": 22000
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 4, "max_count": 38 }],
+        "effect": ["사정거리 12m", "경직시간 5.5초", "순간 대미지 배율 60%", "지속 대미지 3초당 130"],
+        "ap": 17,
+        "rp": 25000
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 3.6, "max_count": 43 }],
+        "effect": ["사정거리 12m", "경직시간 5.5초", "순간 대미지 배율 60%", "지속 대미지 3초당 150"],
+        "ap": 18,
+        "rp": 29000
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 3, "max_count": 50 }],
+        "effect": ["사정거리 13m", "경직시간 6초", "순간 대미지 배율 70%", "지속 대미지 3초당 170"],
+        "ap": 22,
+        "rp": 31000
+      }
+    ]
+  },
+  {
+    "skill_id": 9,
+    "talent": "puppeteer",
+    "talent_kor": "인형사",
+    "category": "인형술",
+    "isPromotion": false,
+    "name_kor": "마리오네트 조종술",
+    "icon": "/images/skill/puppeteer/marionetteControl.webp",
+    "description": "전투형 마리오네트를 조종하는 기술. 인형사의 시작이자 끝인 기술로 더 치명적이고 날카로운 마리오네트의 움직임을 통해 확인할 수 있다. 전설에 따르면 궁극에 달한 이형사의 마리오네트는 살아있는 사람처럼 스스로 움직일 수 있다고 전해진다.",
+    "skill_by_total": { "ap": 148, "sp": 8, "dex": 24 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": null,
+        "training_list": [{ "title": "마리오네트 조종술을 사용한다.", "training_exp": 80, "max_count": 2 }],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 5~10, 크리티컬 5%, 밸런스 1",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용"
+        ],
+        "ap": 0,
+        "rp": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stat": { "sp": 1, "dex": 1 },
+        "training_list": [
+          { "title": "마리오네트 조종술을 사용한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 80, "max_count": 2 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 5~10, 크리티컬 5%, 밸런스 1",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용"
+        ],
+        "ap": 3,
+        "rp": 1500
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "sp": 1, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 20, "max_count": 3 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 40, "max_count": 3 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 7~14, 크리티컬 6%, 밸런스 2",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용"
+        ],
+        "ap": 5,
+        "rp": 6000
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "sp": 1, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 20, "max_count": 3 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 20, "max_count": 3 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 9~18, 크리티컬 7%, 밸런스 3",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용"
+        ],
+        "ap": 6,
+        "rp": 7000
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "sp": 1, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 4 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 14, "max_count": 4 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 14, "max_count": 4 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 11~22, 크리티컬 8%, 밸런스 4",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용"
+        ],
+        "ap": 6,
+        "rp": 8500
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "sp": 1, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 4 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 12, "max_count": 4 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 12, "max_count": 4 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 8, "max_count": 4 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 13~26, 크리티컬 9%, 밸런스 5",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용"
+        ],
+        "ap": 7,
+        "rp": 9500
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "sp": 1, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 5 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 8, "max_count": 5 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 8, "max_count": 5 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 8, "max_count": 5 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 15~30, 크리티컬 10%, 밸런스 6",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용"
+        ],
+        "ap": 7,
+        "rp": 10500
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "sp": 2, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 4, "max_count": 8 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 4, "max_count": 8 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 4, "max_count": 8 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 4, "max_count": 8 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 12, "max_count": 3 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 16~32, 크리티컬 11%, 밸런스 7",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 5%"
+        ],
+        "ap": 8,
+        "rp": 10500
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 10 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 3.2, "max_count": 10 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 3.2, "max_count": 10 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 4, "max_count": 10 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 4, "max_count": 5 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 17~34, 크리티컬 12%, 밸런스 8",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 5%"
+        ],
+        "ap": 9,
+        "rp": 13000
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 13 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 2, "max_count": 13 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 2, "max_count": 13 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 2, "max_count": 13 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 4, "max_count": 8 },
+          { "title": "7막: 광란의 질주를 사용한다.", "training_exp": 8, "max_count": 3 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 18~36, 크리티컬 13%, 밸런스 9",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 5%"
+        ],
+        "ap": 10,
+        "rp": 14000
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 18 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 1.2, "max_count": 18 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 1.2, "max_count": 18 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 1.2, "max_count": 18 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 3.2, "max_count": 13 },
+          { "title": "7막: 광란의 질주를 사용한다.", "training_exp": 4.8, "max_count": 5 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 19~38, 크리티컬 14%, 밸런스 10",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 5%"
+        ],
+        "ap": 11,
+        "rp": 16000
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.8, "max_count": 25 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.8, "max_count": 25 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 0.8, "max_count": 25 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 0.8, "max_count": 25 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 1.2, "max_count": 25 },
+          { "title": "7막: 광란의 질주를 사용한다.", "training_exp": 2.4, "max_count": 8 },
+          { "title": "9막: 깨어나는 생명을 사용한다.", "training_exp": 8, "max_count": 3 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 21~41, 크리티컬 15%, 밸런스 11",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 10%"
+        ],
+        "ap": 12,
+        "rp": 18000
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.4, "max_count": 28 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.8, "max_count": 30 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 0.8, "max_count": 30 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 0.8, "max_count": 30 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 1.2, "max_count": 28 },
+          { "title": "7막: 광란의 질주를 사용한다.", "training_exp": 1.6, "max_count": 13 },
+          { "title": "9막: 깨어나는 생명을 사용한다.", "training_exp": 4, "max_count": 5 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 23~44, 크리티컬 16%, 밸런스 12",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 10%"
+        ],
+        "ap": 13,
+        "rp": 21000
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.4, "max_count": 30 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.6, "max_count": 38 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 0.6, "max_count": 38 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 0.6, "max_count": 38 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 0.8, "max_count": 30 },
+          { "title": "7막: 광란의 질주를 사용한다.", "training_exp": 1.4, "max_count": 18 },
+          { "title": "9막: 깨어나는 생명을 사용한다.", "training_exp": 2.8, "max_count": 8 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 25~47, 크리티컬 17%, 밸런스 13",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 10%"
+        ],
+        "ap": 14,
+        "rp": 23000
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.32, "max_count": 33 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.48, "max_count": 43 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 0.48, "max_count": 43 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 0.48, "max_count": 43 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 0.8, "max_count": 33 },
+          { "title": "7막: 광란의 질주를 사용한다.", "training_exp": 1.2, "max_count": 25 },
+          { "title": "9막: 깨어나는 생명을 사용한다.", "training_exp": 2.4, "max_count": 10 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 27~50, 크리티컬 18%, 밸런스 14",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 10%"
+        ],
+        "ap": 15,
+        "rp": 25000
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "dex": 3 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.32, "max_count": 38 },
+          { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.44, "max_count": 50 },
+          { "title": "1막: 우연한 충돌을 사용한다.", "training_exp": 0.44, "max_count": 50 },
+          { "title": "4막: 질투의 화신을 사용한다.", "training_exp": 0.44, "max_count": 50 },
+          { "title": "6막: 유혹의 올가미를 사용한다.", "training_exp": 0.64, "max_count": 38 },
+          { "title": "7막: 광란의 질주를 사용한다.", "training_exp": 0.64, "max_count": 38 },
+          { "title": "9막: 깨어나는 생명을 사용한다.", "training_exp": 2, "max_count": 13 }
+        ],
+        "effect": [
+          "조종술 연결 시 마리오네트 능력 강화",
+          "대미지 30~55, 크리티컬 20%, 밸런스 15",
+          "인형사의 대미지, 크리티컬, 밸런스, 방어관통, 피어싱 레벨의 70% 적용",
+          "인형극 스킬 쿨타임 감소 15%"
+        ],
+        "ap": 22,
+        "rp": 26000
+      }
+    ]
+  },
+  {
+    "skill_id": 10,
+    "talent": "puppeteer",
+    "talent_kor": "인형사",
+    "category": "인형술",
+    "isPromotion": false,
+    "name_kor": "피에로 마리오네트",
+    "icon": "/images/skill/puppeteer/pierrotMarionette.webp",
+    "description": "아름답지만 치명적인 무기를 숨기고 있는 전투형 피에로 마리오네트를 소환하는 기술, 스킬의 랭크에 따라서 점점 튼튼해진다. 인형사들의 비전이었던 전투형 마리오네트의 기술이 공개된 덕택에 모든 사람들이 사용할 수 있게 되었지만, 그 기술의 극에 도달할 수 있는 재능을 가진 사람은 그리 많지 않다고 한다.",
+    "skill_by_total": { "ap": 115, "hp": 5, "str": 5, "int": 5 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": null,
+        "training_list": [{ "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 80, "max_count": 2 }],
+        "effect": [
+          "하급 피에로 마리오네트",
+          "대미지 10~15, 크리티컬 10%, 밸런스 20",
+          "생명력 200, 방어 10, 보호 0, 마법방어 0, 마법보호 0",
+          "재사용 대기 시간 10초"
+        ],
+        "ap": 0,
+        "rp": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 40, "max_count": 3 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 80, "max_count": 2 }
+        ],
+        "effect": [
+          "하급 피에로 마리오네트",
+          "대미지 10~15, 크리티컬 10%, 밸런스 20",
+          "생명력 250, 방어 11, 보호 1, 마법방어 1, 마법보호 1",
+          "재사용 대기 시간 10초"
+        ],
+        "ap": 1,
+        "rp": 1000
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 28, "max_count": 4 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 56, "max_count": 2 }
+        ],
+        "effect": [
+          "하급 피에로 마리오네트",
+          "대미지 10~15, 크리티컬 12%, 밸런스 22",
+          "생명력 300, 방어 12, 보호 2, 마법방어 2, 마법보호 1",
+          "재사용 대기 시간 10초"
+        ],
+        "ap": 3,
+        "rp": 1500
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 16, "max_count": 7 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 32, "max_count": 4 }
+        ],
+        "effect": [
+          "하급 피에로 마리오네트",
+          "대미지 20~25, 크리티컬 14%, 밸런스 24",
+          "생명력 350, 방어 14, 보호 3, 마법방어 3, 마법보호 2",
+          "재사용 대기 시간 10초"
+        ],
+        "ap": 4,
+        "rp": 2500
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 14, "max_count": 8 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 28, "max_count": 4 }
+        ],
+        "effect": [
+          "하급 피에로 마리오네트",
+          "대미지 25~30, 크리티컬 16%, 밸런스 26",
+          "생명력 400, 방어 16, 보호 4, 마법방어 4, 마법보호 2",
+          "재사용 대기 시간 9초"
+        ],
+        "ap": 4,
+        "rp": 4000
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 10, "max_count": 10 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 20, "max_count": 5 }
+        ],
+        "effect": [
+          "하급 피에로 마리오네트",
+          "대미지 30~35, 크리티컬 18%, 밸런스 28",
+          "생명력 450, 방어 18, 보호 5, 마법방어 5, 마법보호 3",
+          "재사용 대기 시간 9초"
+        ],
+        "ap": 5,
+        "rp": 5000
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 16, "max_count": 7 }
+        ],
+        "effect": [
+          "하급 피에로 마리오네트",
+          "대미지 35~40, 크리티컬 20%, 밸런스 30",
+          "생명력 500, 방어 20, 보호 6, 마법방어 6, 마법보호 3",
+          "재사용 대기 시간 9초"
+        ],
+        "ap": 5,
+        "rp": 6000
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 6, "max_count": 19 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 12, "max_count": 10 }
+        ],
+        "effect": [
+          "중급 피에로 마리오네트",
+          "대미지 40~50, 크리티컬 23%, 밸런스 32",
+          "생명력 600, 방어 28, 보호 8, 마법방어 8, 마법보호 4",
+          "재사용 대기 시간 8초"
+        ],
+        "ap": 6,
+        "rp": 6500
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "int": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 4, "max_count": 25 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 8, "max_count": 13 }
+        ],
+        "effect": [
+          "중급 피에로 마리오네트",
+          "대미지 45~60, 크리티컬 29%, 밸런스 34",
+          "생명력 650, 방어 30, 보호 10, 마법방어 10, 마법보호 4",
+          "재사용 대기 시간 8초"
+        ],
+        "ap": 7,
+        "rp": 9000
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 2.8, "max_count": 38 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 5.6, "max_count": 19 }
+        ],
+        "effect": [
+          "중급 피에로 마리오네트",
+          "대미지 50~70, 크리티컬 32%, 밸런스 36",
+          "생명력 700, 방어 32, 보호 12, 마법방어 12, 마법보호 5",
+          "재사용 대기 시간 8초"
+        ],
+        "ap": 8,
+        "rp": 10000
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "int": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 2, "max_count": 50 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 4, "max_count": 25 }
+        ],
+        "effect": [
+          "중급 피에로 마리오네트",
+          "대미지 55~80, 크리티컬 35%, 밸런스 38",
+          "생명력 750, 방어 35, 보호 13, 마법방어 14, 마법보호 5",
+          "재사용 대기 시간 7초"
+        ],
+        "ap": 9,
+        "rp": 12000
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 3.2, "max_count": 32 }
+        ],
+        "effect": [
+          "고급 피에로 마리오네트",
+          "대미지 60~100, 크리티컬 40%, 밸런스 40",
+          "생명력 850, 방어 38, 보호 14, 마법방어 15, 마법보호 6",
+          "재사용 대기 시간 7초"
+        ],
+        "ap": 10,
+        "rp": 14000
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "int": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 1.4, "max_count": 75 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 2.8, "max_count": 38 }
+        ],
+        "effect": [
+          "고급 피에로 마리오네트",
+          "대미지 65~120, 크리티컬 45%, 밸런스 42",
+          "생명력 900, 방어 40, 보호 16, 마법방어 16, 마법보호 6",
+          "재사용 대기 시간 7초"
+        ],
+        "ap": 11,
+        "rp": 17000
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 1, "max_count": 100 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 2, "max_count": 50 }
+        ],
+        "effect": [
+          "고급 피에로 마리오네트",
+          "대미지 70~140, 크리티컬 50%, 밸런스 44",
+          "생명력 950, 방어 42, 보호 18, 마법방어 17, 마법보호 7",
+          "재사용 대기 시간 6초"
+        ],
+        "ap": 12,
+        "rp": 19000
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "int": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 0.8, "max_count": 125 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 63 }
+        ],
+        "effect": [
+          "고급 피에로 마리오네트",
+          "대미지 75~160, 크리티컬 55%, 밸런스 46",
+          "생명력 1000, 방어 45, 보호 20, 마법방어 18, 마법보호 8",
+          "재사용 대기 시간 6초"
+        ],
+        "ap": 13,
+        "rp": 21000
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "str": 1, "int": 1 },
+        "training_list": [
+          { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 0.8, "max_count": 125 },
+          { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 63 }
+        ],
+        "effect": [
+          "고급 피에로 마리오네트",
+          "대미지 80~190, 크리티컬 60%, 밸런스 50",
+          "생명력 1200, 방어 50, 보호 25, 마법방어 20, 마법보호 10",
+          "재사용 대기 시간 5초"
+        ],
+        "ap": 17,
+        "rp": 22000
+      }
+    ]
+  },
+  {
+    "skill_id": 10,
+    "talent": "puppeteer",
+    "talent_kor": "인형사",
+    "category": "인형술",
+    "isPromotion": false,
+    "name_kor": "콜로서스 마리오네트",
+    "icon": "/images/skill/puppeteer/colossusMarionette.webp",
+    "description": "커다란 덩치 만큼이나 강력한 전투형 콜로서스 마리오네트를 소환하는 기술, 스킬의 랭크에 따라서 점점 튼튼해진다. 인형사들의 비전이었던 전투형 마리오네트의 기술이 공개된 덕택에 모든 사람들이 사용할 수 있게 되었지만, 그 기술의 극에 도달할 수 있는 재능을 가진 사람은 그리 많지 않다고 한다.",
+    "skill_by_total": { "ap": 115, "hp": 5, "str": 5, "int": 5 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": null,
+        "training_list": [{ "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 80, "max_count": 2 }],
+        "effect": [
+          "하급 콜로서스 마리오네트",
+          "대미지 10~15, 크리티컬 10%, 밸런스 20",
+          "생명력 200, 방어 10, 보호 0, 마법방어 0, 마법보호 0",
+          "재사용 대기 시간 10초"
+        ],
+        "ap": 0,
+        "rp": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 40, "max_count": 3 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 80, "max_count": 2 }
+        ],
+        "effect": [
+          "하급 콜로서스 마리오네트",
+          "대미지 10~15, 크리티컬 10%, 밸런스 20",
+          "생명력 250, 방어 11, 보호 1, 마법방어 1, 마법보호 1",
+          "재사용 대기 시간 10초"
+        ],
+        "ap": 1,
+        "rp": 1000
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 28, "max_count": 4 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 56, "max_count": 2 }
+        ],
+        "effect": [
+          "하급 콜로서스 마리오네트",
+          "대미지 10~15, 크리티컬 12%, 밸런스 22",
+          "생명력 300, 방어 12, 보호 2, 마법방어 2, 마법보호 1",
+          "재사용 대기 시간 10초"
+        ],
+        "ap": 3,
+        "rp": 1500
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 16, "max_count": 7 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 32, "max_count": 4 }
+        ],
+        "effect": [
+          "하급 콜로서스 마리오네트",
+          "대미지 20~25, 크리티컬 14%, 밸런스 24",
+          "생명력 350, 방어 14, 보호 3, 마법방어 3, 마법보호 2",
+          "재사용 대기 시간 10초"
+        ],
+        "ap": 4,
+        "rp": 2500
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 14, "max_count": 8 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 28, "max_count": 4 }
+        ],
+        "effect": [
+          "하급 콜로서스 마리오네트",
+          "대미지 25~30, 크리티컬 16%, 밸런스 26",
+          "생명력 400, 방어 16, 보호 4, 마법방어 4, 마법보호 2",
+          "재사용 대기 시간 9초"
+        ],
+        "ap": 4,
+        "rp": 4000
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 10, "max_count": 10 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 20, "max_count": 5 }
+        ],
+        "effect": [
+          "하급 콜로서스 마리오네트",
+          "대미지 30~35, 크리티컬 18%, 밸런스 28",
+          "생명력 450, 방어 18, 보호 5, 마법방어 5, 마법보호 3",
+          "재사용 대기 시간 9초"
+        ],
+        "ap": 5,
+        "rp": 5000
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "hp": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 16, "max_count": 7 }
+        ],
+        "effect": [
+          "하급 콜로서스 마리오네트",
+          "대미지 35~40, 크리티컬 20%, 밸런스 30",
+          "생명력 500, 방어 20, 보호 6, 마법방어 6, 마법보호 3",
+          "재사용 대기 시간 9초"
+        ],
+        "ap": 5,
+        "rp": 6000
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 6, "max_count": 19 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 12, "max_count": 10 }
+        ],
+        "effect": [
+          "중급 콜로서스 마리오네트",
+          "대미지 40~50, 크리티컬 23%, 밸런스 32",
+          "생명력 600, 방어 28, 보호 8, 마법방어 8, 마법보호 4",
+          "재사용 대기 시간 8초"
+        ],
+        "ap": 6,
+        "rp": 6500
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "int": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 4, "max_count": 25 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 8, "max_count": 13 }
+        ],
+        "effect": [
+          "중급 콜로서스 마리오네트",
+          "대미지 45~60, 크리티컬 29%, 밸런스 34",
+          "생명력 650, 방어 30, 보호 10, 마법방어 10, 마법보호 4",
+          "재사용 대기 시간 8초"
+        ],
+        "ap": 7,
+        "rp": 9000
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 2.8, "max_count": 38 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 5.6, "max_count": 19 }
+        ],
+        "effect": [
+          "중급 콜로서스 마리오네트",
+          "대미지 50~70, 크리티컬 32%, 밸런스 36",
+          "생명력 700, 방어 32, 보호 12, 마법방어 12, 마법보호 5",
+          "재사용 대기 시간 8초"
+        ],
+        "ap": 8,
+        "rp": 10000
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "int": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 2, "max_count": 50 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 4, "max_count": 25 }
+        ],
+        "effect": [
+          "중급 콜로서스 마리오네트",
+          "대미지 55~80, 크리티컬 35%, 밸런스 38",
+          "생명력 750, 방어 35, 보호 13, 마법방어 14, 마법보호 5",
+          "재사용 대기 시간 7초"
+        ],
+        "ap": 9,
+        "rp": 12000
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 3.2, "max_count": 32 }
+        ],
+        "effect": [
+          "고급 콜로서스 마리오네트",
+          "대미지 60~100, 크리티컬 40%, 밸런스 40",
+          "생명력 850, 방어 38, 보호 14, 마법방어 15, 마법보호 6",
+          "재사용 대기 시간 7초"
+        ],
+        "ap": 10,
+        "rp": 14000
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "int": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 1.4, "max_count": 75 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 2.8, "max_count": 38 }
+        ],
+        "effect": [
+          "고급 콜로서스 마리오네트",
+          "대미지 65~120, 크리티컬 45%, 밸런스 42",
+          "생명력 900, 방어 40, 보호 16, 마법방어 16, 마법보호 6",
+          "재사용 대기 시간 7초"
+        ],
+        "ap": 11,
+        "rp": 17000
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 1, "max_count": 100 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 2, "max_count": 50 }
+        ],
+        "effect": [
+          "고급 콜로서스 마리오네트",
+          "대미지 70~140, 크리티컬 50%, 밸런스 44",
+          "생명력 950, 방어 42, 보호 18, 마법방어 17, 마법보호 7",
+          "재사용 대기 시간 6초"
+        ],
+        "ap": 12,
+        "rp": 19000
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "int": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 0.8, "max_count": 125 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 63 }
+        ],
+        "effect": [
+          "고급 콜로서스 마리오네트",
+          "대미지 75~160, 크리티컬 55%, 밸런스 46",
+          "생명력 1000, 방어 45, 보호 20, 마법방어 18, 마법보호 8",
+          "재사용 대기 시간 6초"
+        ],
+        "ap": 13,
+        "rp": 21000
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "str": 1, "int": 1 },
+        "training_list": [
+          { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 0.8, "max_count": 125 },
+          { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 63 }
+        ],
+        "effect": [
+          "고급 콜로서스 마리오네트",
+          "대미지 80~190, 크리티컬 60%, 밸런스 50",
+          "생명력 1200, 방어 50, 보호 25, 마법방어 20, 마법보호 10",
+          "재사용 대기 시간 5초"
+        ],
+        "ap": 17,
+        "rp": 22000
+      }
+    ]
   }
 ]

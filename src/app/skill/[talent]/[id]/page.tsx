@@ -71,7 +71,7 @@ export default function SkillDetailPage({
                   {/* 자세한 설명보기 */}
                   <DetailDescription description={findSkill.description} />
 
-                  <div className="border py-3 rounded-sm">
+                  <div className="border p-3 rounded-sm">
                     {rank?.effect.map((effect, index) => <p key={index}>{effect}</p>)}
                   </div>
 

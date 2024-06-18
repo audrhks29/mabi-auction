@@ -27,7 +27,7 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
 
   // detail 버튼 클릭 함수
   const handleClickDetail = (talent: string, id: number) => {
-    router.push(`skill/${talent}/${id}`);
+    router.push(`/skill/${talent}/${id}`);
   };
 
   // 랭크 선택 함수

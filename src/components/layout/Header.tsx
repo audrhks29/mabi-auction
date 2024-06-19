@@ -20,6 +20,14 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+
+          <ul className="h-full">
+            <li className="w-[200px] text-center h-full hover:bg-muted cursor-pointer">
+              <Link href="/grade" className="flex w-full h-full justify-center items-center">
+                재능등급 계산
+              </Link>
+            </li>
+          </ul>
         </div>
 
         <LoginButton />

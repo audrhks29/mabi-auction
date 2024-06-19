@@ -3297,17 +3297,182 @@
     "category_kor": "전투",
     "isPromotion": false,
     "name_kor": "골드 스트라이크",
-    "icon": "/images/skill/life/commerceMastery.webp",
-    "description": "뛰어난 상인이 되기 위해서는 얼마에 사느냐도 중요하지만 얼마에 파느냐가 더 중요하다. 이 스킬을 익히면 교역을 할 때, 조금 더 이득을 볼 수 있다고 한다. 다만 손해를 보는 상황을 이득으로 전환시켜 주지는 않는다고 한다.",
+    "icon": "/images/skill/battle/goldStrike.webp",
+    "description": "성공한 상인들은 돈으로 생각보다 많은 것을 할 수 있다는 것을 알고 있다. 돈이 생명보다 소중하지는 않지만, 돈으로 위험을 벗어날 기회를 살 수 있기 때문이다. 이 스킬은 돈자루를 직접 적에게 던져서 위기를 모면하고 적에게 피해를 주는 것으로, 여러 번 차지하면 더 큰 돈자루를 던져 피해를 높일 수도 있다. 1차지하면 100골드, 랭크를 올려 10차지를 하면 한번에 10000 골드가 소모된다. 행운이 높으면 드물게 금화가 크게 터져 나가기도 하는데 그럴 때는 주변의 적한테도 피해를 줄 수 있다고 한다. 하지만 어느 새 금고가 텅텅빌지도 모르니 주의하도록 하자.",
     "skill_by_total": { "ap": 336, "luck": 30 },
     "skill_by_rank": [
       {
         "rank": "연습",
         "bonus_stat": null,
-        "training_list": [{ "title": "교역을 한다.", "training_exp": 100, "max_count": 1 }],
+        "training_list": [{ "title": "돈을 던져 적을 공격한다.", "training_exp": 40, "max_count": 3 }],
         "effect": [""],
         "ap": 0,
         "rp": { "title": "상인", "exp": 0 }
+      },
+      {
+        "rank": "F",
+        "bonus_stat": { "luck": 1 },
+        "training_list": [
+          { "title": "돈을 던져 적을 공격한다.", "training_exp": 40, "max_count": 5 },
+          { "title": "돈을 던져 적에게 승리", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": ["돈자루 대미지 16~50", "최대 5차지"],
+        "ap": 2,
+        "rp": { "title": "상인", "exp": 7000 }
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "luck": 1 },
+        "training_list": [
+          { "title": "돈을 던져 적을 공격한다.", "training_exp": 20, "max_count": 5 },
+          { "title": "돈을 던져 적에게 승리", "training_exp": 40, "max_count": 2 }
+        ],
+        "effect": ["돈자루 대미지 18~54", "최대 5차지"],
+        "ap": 3,
+        "rp": { "title": "상인", "exp": 10500 }
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "luck": 1 },
+        "training_list": [
+          { "title": "돈을 던져 적을 공격한다.", "training_exp": 10, "max_count": 10 },
+          { "title": "돈을 던져 적에게 승리", "training_exp": 20, "max_count": 3 }
+        ],
+        "effect": ["돈자루 대미지 19~58", "최대 5차지"],
+        "ap": 4,
+        "rp": { "title": "상인", "exp": 14000 }
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "luck": 1 },
+        "training_list": [
+          { "title": "돈을 던져 적을 공격한다.", "training_exp": 10, "max_count": 13 },
+          { "title": "돈을 던져 적에게 승리", "training_exp": 16, "max_count": 4 }
+        ],
+        "effect": ["돈자루 대미지 21~63", "최대 6차지"],
+        "ap": 5,
+        "rp": { "title": "상인", "exp": 17500 }
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "luck": 1 },
+        "training_list": [
+          { "title": "돈을 던져 적을 공격한다.", "training_exp": 6, "max_count": 25 },
+          { "title": "돈을 던져 적에게 승리", "training_exp": 8, "max_count": 5 }
+        ],
+        "effect": ["돈자루 대미지 22~67", "최대 6차지"],
+        "ap": 6,
+        "rp": { "title": "상인", "exp": 21000 }
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "luck": 1 },
+        "training_list": [
+          { "title": "돈을 던져 적을 공격한다.", "training_exp": 4, "max_count": 25 },
+          { "title": "돈을 던져 적에게 승리", "training_exp": 4, "max_count": 10 }
+        ],
+        "effect": ["돈자루 대미지 24~72", "최대 6차지"],
+        "ap": 7,
+        "rp": { "title": "상인", "exp": 24500 }
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "luck": 2 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 4, "max_count": 25 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 8, "max_count": 4 }
+        ],
+        "effect": ["돈자루 대미지 25~76", "최대 7차지"],
+        "ap": 10,
+        "rp": { "title": "상인", "exp": 35000 }
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "luck": 2 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 4, "max_count": 25 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 6.4, "max_count": 5 }
+        ],
+        "effect": ["돈자루 대미지 27~81", "최대 7차지"],
+        "ap": 13,
+        "rp": { "title": "상인", "exp": 45500 }
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "luck": 2 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 3.2, "max_count": 32 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 4.8, "max_count": 7 }
+        ],
+        "effect": ["돈자루 대미지 28~85", "최대 7차지"],
+        "ap": 16,
+        "rp": { "title": "상인", "exp": 56000 }
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "luck": 2 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 3.2, "max_count": 32 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 4, "max_count": 8 }
+        ],
+        "effect": ["돈자루 대미지 30~90", "최대 7차지"],
+        "ap": 20,
+        "rp": { "title": "상인", "exp": 70000 }
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "luck": 3 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 2.8, "max_count": 38 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 3.2, "max_count": 9 }
+        ],
+        "effect": ["돈자루 대미지 31~94", "최대 8차지"],
+        "ap": 30,
+        "rp": { "title": "상인", "exp": 105000 }
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "luck": 3 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 2.8, "max_count": 38 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 2.4, "max_count": 13 }
+        ],
+        "effect": ["돈자루 대미지 33~100", "최대 8차지"],
+        "ap": 40,
+        "rp": { "title": "상인", "exp": 140000 }
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "luck": 3 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 2, "max_count": 50 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 1.6, "max_count": 19 }
+        ],
+        "effect": ["돈자루 대미지 34~103", "최대 9차지"],
+        "ap": 50,
+        "rp": { "title": "상인", "exp": 175000 }
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "luck": 3 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 2, "max_count": 50 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 0.8, "max_count": 38 }
+        ],
+        "effect": ["돈자루 대미지 36~108", "최대 9차지"],
+        "ap": 60,
+        "rp": { "title": "상인", "exp": 210000 }
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "luck": 4 },
+        "training_list": [
+          { "title": "돈을 던져 적에게 승리", "training_exp": 1.6, "max_count": 63 },
+          { "title": "크리티컬로 적에게 승리", "training_exp": 0.8, "max_count": 38 }
+        ],
+        "effect": ["돈자루 대미지 37~112", "최대 10차지"],
+        "ap": 70,
+        "rp": { "title": "상인", "exp": 245000 }
       }
     ]
   }

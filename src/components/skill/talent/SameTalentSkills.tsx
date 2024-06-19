@@ -3,11 +3,12 @@
 import skillLists from "@/assets/skill/human/skill.json";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 
-export default function SameTalentSkills({ params }: { params: { category: string; id: number } }) {
+export default function SameTalentSkills() {
   const [isMoreSkill, setIsMoreSkill] = useState(false);
+  const params = useParams();
 
   const router = useRouter();
 
@@ -18,9 +19,9 @@ export default function SameTalentSkills({ params }: { params: { category: strin
   };
 
   return (
-    <div className="mb-3 text-center">
+    <div className="mb-3 text-center" style={{ display: !params.id ? "none" : "block" }}>
       <div className="border">
-        <h2 className="p-1 font-bold border-b bg-muted">{SameTalentSkillLists[0].category_kor} 스킬 목록</h2>
+        <h2 className="p-1 font-bold border-b bg-muted">{SameTalentSkillLists[0]?.category_kor} 스킬 목록</h2>
 
         <span className="p-1 text-[14px] cursor-pointer" onClick={() => setIsMoreSkill(!isMoreSkill)}>
           {isMoreSkill ? "닫기" : "보기"}

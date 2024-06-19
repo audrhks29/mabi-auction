@@ -10,6 +10,7 @@ import Training from "@/components/skill/talent/skillCard/Training";
 import AbilityPoint from "@/components/skill/talent/skillCard/AbilityPoint";
 import Stats from "@/components/skill/talent/skillCard/Stats";
 import DetailDescription from "@/components/skill/talent/skillCard/DetailDescription";
+
 import { convertCumulativeStatsArray } from "@/utils/cumulativeBonusStats";
 
 export default function SkillDetailPage({

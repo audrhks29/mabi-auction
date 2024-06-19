@@ -23,7 +23,6 @@ export default function SkillTab() {
   const [tabValue, setTabValue] = useState("전체");
   const params = useParams();
 
-  console.log(params);
   return (
     !(params.category && params.id) && (
       <>

@@ -13,7 +13,7 @@ export function AllSkill() {
   );
 }
 
-export default function SkillTab({ params }: { params: { talent: string } | string }) {
+export default function SkillTab({ params }: { params: { category: string } | string }) {
   return (
     <Tabs defaultValue="category">
       <TabsList>
@@ -24,10 +24,10 @@ export default function SkillTab({ params }: { params: { talent: string } | stri
       <TabsContent value="category" className="border p-3 rounded-sm">
         <ul className="grid grid-cols-11 gap-2 text-center text-[14px]">
           <AllSkill />
-          {categoryLists.map(talent => (
-            <li key={talent.id}>
-              <Link href={""} className="hover:underline">
-                {talent.category}
+          {categoryLists.map(category => (
+            <li key={category.id}>
+              <Link href={category.link ? `/skill/${category.link}` : ""} className="hover:underline">
+                {category.category}
               </Link>
             </li>
           ))}

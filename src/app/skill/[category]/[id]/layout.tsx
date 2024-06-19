@@ -1,12 +1,12 @@
 import SameTalentSkills from "@/components/skill/talent/SameTalentSkills";
 
-export default function TalentLayout({
+export default function CategoryLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
   params: {
-    talent: string;
+    category: string;
     id: number;
   };
 }>) {

@@ -6,15 +6,15 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export default function SameTalentSkills({ params }: { params: { talent: string; id: number } }) {
+export default function SameTalentSkills({ params }: { params: { category: string; id: number } }) {
   const [isMoreSkill, setIsMoreSkill] = useState(false);
 
   const router = useRouter();
 
-  const SameTalentSkillLists = skillLists.filter(item => item.talent === params.talent);
+  const SameTalentSkillLists = skillLists.filter(item => item.category === params.category);
 
   const handleClickSkillName = (id: number) => {
-    router.push(`/skill/${params.talent}/${id}`);
+    router.push(`/skill/${params.category}/${id}`);
   };
 
   return (

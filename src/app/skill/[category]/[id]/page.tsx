@@ -16,11 +16,11 @@ export default function SkillDetailPage({
   params,
 }: {
   params: {
-    talent: string;
+    category: string;
     id: number;
   };
 }) {
-  const findSkill = skillLists.find(item => item.talent === params.talent && item.skill_id == params.id);
+  const findSkill = skillLists.find(item => item.category === params.category && item.skill_id == params.id);
 
   return (
     <section className="grid gap-3">

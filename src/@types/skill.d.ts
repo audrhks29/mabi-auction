@@ -1,7 +1,7 @@
 interface SkillsTypes {
   skill_id: number;
-  talent: string;
-  talent_kor: string;
+  talent: string[];
+  talent_kor: string[];
   category: string;
   isPromotion: boolean;
   name_kor: string;
@@ -33,7 +33,7 @@ interface SkillByRankTypes {
   training_list: TrainingListTypes[];
   effect: string[];
   ap: number;
-  rp: number;
+  rp: { title: string; exp: number };
 }
 
 interface TrainingListTypes {

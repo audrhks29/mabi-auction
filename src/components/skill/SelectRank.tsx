@@ -109,7 +109,7 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
       </TableCell>
 
       <TableCell>
-        <Button onClick={() => handleClickDetail(skill.talent, skill.skill_id)}>자세히</Button>
+        <Button onClick={() => handleClickDetail(skill.category, skill.skill_id)}>자세히</Button>
       </TableCell>
     </>
   );

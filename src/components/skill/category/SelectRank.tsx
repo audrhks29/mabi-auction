@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-
-import { TableCell } from "../ui/table";
-import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
+
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { TableCell } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
+
 import { calculateCumulativeStats } from "@/utils/cumulativeBonusStats";
 
 const initialStats = {

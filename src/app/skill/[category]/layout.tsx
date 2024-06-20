@@ -1,4 +1,4 @@
-import SameTalentSkills from "@/components/skill/talent/SameTalentSkills";
+import SameTalentSkills from "@/components/skill/category/SameTalentSkills";
 
 export default function CategoryLayout({
   children,

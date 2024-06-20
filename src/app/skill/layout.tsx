@@ -1,5 +1,4 @@
-import SkillTab from "@/components/skill/SkillTab";
-import SameTalentSkills from "@/components/skill/talent/SameTalentSkills";
+import SkillTab from "@/components/skill/category/layout/SkillTab";
 
 export default function CategoryLayout({
   children,

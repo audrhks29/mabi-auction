@@ -5,11 +5,11 @@ import skillLists from "@/assets/skill/human/skill.json";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-import CurrentRank from "@/components/skill/talent/CurrentRank";
-import Training from "@/components/skill/talent/skillCard/Training";
-import AbilityPoint from "@/components/skill/talent/skillCard/AbilityPoint";
-import Stats from "@/components/skill/talent/skillCard/Stats";
-import DetailDescription from "@/components/skill/talent/skillCard/DetailDescription";
+import CurrentRank from "@/components/skill/category/CurrentRank";
+import Training from "@/components/skill/category/skillCard/Training";
+import AbilityPoint from "@/components/skill/category/skillCard/AbilityPoint";
+import Stats from "@/components/skill/category/skillCard/Stats";
+import DetailDescription from "@/components/skill/category/skillCard/DetailDescription";
 
 import { convertCumulativeStatsArray } from "@/utils/cumulativeBonusStats";
 

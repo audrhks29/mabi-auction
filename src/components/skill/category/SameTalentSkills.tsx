@@ -12,7 +12,7 @@ export default function SameTalentSkills() {
 
   const router = useRouter();
 
-  const SameTalentSkillLists = skillLists.filter(item => item.category === params.category);
+  const sameTalentSkillLists = skillLists.filter(item => item.category === params.category);
 
   const handleClickSkillName = (id: number) => {
     router.push(`/skill/${params.category}/${id}`);
@@ -21,7 +21,7 @@ export default function SameTalentSkills() {
   return (
     <div className="mb-3 text-center" style={{ display: !params.id ? "none" : "block" }}>
       <div className="border">
-        <h2 className="p-1 font-bold border-b bg-muted">{SameTalentSkillLists[0]?.category_kor} 스킬 목록</h2>
+        <h2 className="p-1 font-bold border-b bg-muted">{sameTalentSkillLists[0]?.category_kor} 스킬 목록</h2>
 
         <span className="p-1 text-[14px] cursor-pointer" onClick={() => setIsMoreSkill(!isMoreSkill)}>
           {isMoreSkill ? "닫기" : "보기"}
@@ -30,7 +30,7 @@ export default function SameTalentSkills() {
 
       {isMoreSkill && (
         <ul className="grid grid-cols-6 text-center text-[14px] border border-t-0">
-          {SameTalentSkillLists.map(skill => (
+          {sameTalentSkillLists.map(skill => (
             <li key={skill.skill_id} className="p-3 grid gap-3">
               <Image src={skill.icon} width={30} height={30} alt={skill.name_kor} className="m-auto" />
               <p onClick={() => handleClickSkillName(skill.skill_id)} className="cursor-pointer hover:font-bold">

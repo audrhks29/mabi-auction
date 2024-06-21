@@ -8,6 +8,7 @@ import { TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 
 import { calculateCumulativeStats } from "@/utils/cumulativeBonusStats";
+import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 
 const initialStats = {
   ap: 0,
@@ -22,6 +23,7 @@ const initialStats = {
 };
 
 export default function SelectRank({ skill }: { skill: SkillsTypes }) {
+  const { calculateCurrentStats } = useCurrentCategoryInfoStore();
   const router = useRouter();
 
   const [rankByStats, setRankByStats] = useState(initialStats);
@@ -53,6 +55,7 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
     };
 
     setRankByStats(newRankStats);
+    calculateCurrentStats(newRankStats);
   };
 
   return (

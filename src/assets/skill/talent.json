@@ -20,5 +20,6 @@
   { "id": 19, "talent": "대장장이" },
   { "id": 20, "talent": "인형사", "link": "puppeteer" },
   { "id": 21, "talent": "닌자" },
-  { "id": 22, "talent": "마기그래퍼" }
+  { "id": 22, "talent": "마기그래퍼" },
+  { "id": 23, "talent": "점성술" }
 ]

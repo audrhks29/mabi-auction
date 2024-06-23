@@ -7,6 +7,7 @@ import skillLists from "@/assets/skill/human/skill.json";
 
 import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 import { useLayoutEffect } from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function CurrentCategoryInfo() {
   const { myStats, initialMyStats } = useCurrentCategoryInfoStore();
@@ -34,6 +35,7 @@ export default function CurrentCategoryInfo() {
     int: 0,
     will: 0,
     luck: 0,
+    rp: 0,
   };
 
   // 누적 ap 계산
@@ -50,10 +52,10 @@ export default function CurrentCategoryInfo() {
 
   // initialStats와 myStats의 각 속성별 차이 계산
   const calculateDifference = (stats1: SkillByTotalTypes, stats2: SkillByTotalTypes) => {
-    const difference: Partial<SkillByTotalTypes> = {}; // Partial 사용
+    const difference: Partial<SkillByTotalTypes> = {};
 
     Object.keys(stats1).forEach(key => {
-      const typedKey = key as keyof SkillByTotalTypes; // 타입 캐스팅
+      const typedKey = key as keyof SkillByTotalTypes;
       difference[typedKey] = (stats2[typedKey] as number) - (stats1[typedKey] || 0);
     });
 
@@ -70,7 +72,7 @@ export default function CurrentCategoryInfo() {
           <TableRow>
             <TableHead></TableHead>
             {Object.entries(initialStats).map(([key, _]) => (
-              <TableCell key={key}>{key}</TableCell>
+              <TableHead key={key}>{key}</TableHead>
             ))}
           </TableRow>
         </TableHeader>
@@ -98,6 +100,12 @@ export default function CurrentCategoryInfo() {
           </TableRow>
         </TableBody>
       </Table>
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-[20px]">나의 재능 등급</CardTitle>
+        </CardHeader>
+        <CardContent></CardContent>
+      </Card>
     </article>
   );
 }

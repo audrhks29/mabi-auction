@@ -20,6 +20,7 @@ const initialStats = {
   int: 0,
   will: 0,
   luck: 0,
+  rp: 0,
 };
 
 export default function SelectRank({ skill }: { skill: SkillsTypes }) {
@@ -41,6 +42,7 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
     const cumulativeBonusStat = calculateCumulativeStats(skill, selectRankIndex);
 
     // ----------------------------------------------------------------
+
     // 누적 ap 계산
     const cumulativeAP =
       skill.skill_by_rank.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
@@ -48,14 +50,25 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
       }, 0) || 0;
     // ----------------------------------------------------------------
 
+    const cumulativeRpArray =
+      skill.skill_by_rank[selectRankIndex].rp.reduce((acc, rankInfo) => {
+        console.log(rankInfo);
+        return acc + rankInfo.exp;
+      }, 0) || 0;
+
+    console.log(cumulativeRpArray);
+    // console.log(cumulativeRp);
+
     const newRankStats = {
       ...initialStats,
       ...cumulativeBonusStat,
       ap: cumulativeAP,
+      // rp: cumulativeRp,
     };
 
     setRankByStats(newRankStats);
     calculateCurrentStats(newRankStats);
+    console.log(newRankStats);
   };
 
   return (

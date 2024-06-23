@@ -2,6 +2,7 @@ import create from "zustand";
 
 interface storeType {
   myStats: SkillByTotalTypes;
+  myGrade: number;
   calculateCurrentStats(newRankStats: SkillByTotalTypes): void;
   initialMyStats(): void;
 }
@@ -17,11 +18,14 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
     int: 0,
     will: 0,
     luck: 0,
+    rp: 0,
   },
+
+  myGrade: 0,
 
   calculateCurrentStats: (newRankStats: SkillByTotalTypes) => {
     const state = getState();
-    let myStats = state.myStats;
+    const myStats = state.myStats;
 
     const updateMyStats = (newRankStats: SkillByTotalTypes) => {
       const updatedStats = myStats;
@@ -40,6 +44,15 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
 
   initialMyStats: () => {
     set({ myStats: { ap: 0, hp: 0, mp: 0, sp: 0, str: 0, dex: 0, int: 0, will: 0, luck: 0 } });
+  },
+
+  calculateCurrentGrade: () => {
+    const state = getState();
+    const myGrade = state.myGrade;
+  },
+
+  initialGrade: () => {
+    // set({ myStats: { ap: 0, hp: 0, mp: 0, sp: 0, str: 0, dex: 0, int: 0, will: 0, luck: 0 } });
   },
 }));
 

@@ -1,4 +1,4 @@
-import CurrentCategoryInfo from "@/components/skill/category/CurrentCategoryInfo";
+import CurrentCategoryInfo from "@/components/skill/category/categoryInfo/CurrentCategoryInfo";
 import SkillTable from "@/components/skill/category/SkillTable";
 
 export default function SkillPage({ params }: { params: { category: string } }) {

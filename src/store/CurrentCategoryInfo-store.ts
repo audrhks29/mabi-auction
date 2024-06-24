@@ -2,9 +2,15 @@ import create from "zustand";
 
 interface storeType {
   myStats: SkillByTotalTypes;
-  myGrade: number;
+
+  selectedRp?: RpTypes[];
+  myCurrentRp: RpTypes[];
+
   calculateCurrentStats(newRankStats: SkillByTotalTypes): void;
+  calculateCurrentRp(cumulativeRp: RpTypes[]): void;
+
   initialMyStats(): void;
+  initialRp(): void;
 }
 
 const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
@@ -18,10 +24,10 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
     int: 0,
     will: 0,
     luck: 0,
-    rp: 0,
   },
 
-  myGrade: 0,
+  selectedRp: [],
+  myCurrentRp: [],
 
   calculateCurrentStats: (newRankStats: SkillByTotalTypes) => {
     const state = getState();
@@ -46,13 +52,42 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
     set({ myStats: { ap: 0, hp: 0, mp: 0, sp: 0, str: 0, dex: 0, int: 0, will: 0, luck: 0 } });
   },
 
-  calculateCurrentGrade: () => {
+  calculateCurrentRp: (cumulativeRp: RpTypes[]) => {
     const state = getState();
-    const myGrade = state.myGrade;
+    const selectedRp = state.selectedRp || [];
+    const myCurrentRp = state.myCurrentRp || [];
+
+    cumulativeRp.forEach(key => {
+      const isKey = selectedRp?.find(item => item.skill_id === key.skill_id && item.title === key.title);
+
+      if (isKey) {
+        isKey.exp = key.exp;
+      } else {
+        selectedRp?.push(key);
+      }
+    });
+
+    set({ selectedRp: selectedRp });
+
+    const calculateRp = selectedRp.reduce<Record<string, number>>((acc, curr) => {
+      if (!acc[curr.title]) {
+        acc[curr.title] = 0;
+      }
+      acc[curr.title] += curr.exp;
+      return acc;
+    }, {});
+
+    const myCurrentValue = Object.entries(calculateRp).map(([title, exp]) => ({
+      title,
+      exp: exp as number,
+    }));
+
+    set({ myCurrentRp: myCurrentValue });
+    // console.log(myCurrentRp);
   },
 
-  initialGrade: () => {
-    // set({ myStats: { ap: 0, hp: 0, mp: 0, sp: 0, str: 0, dex: 0, int: 0, will: 0, luck: 0 } });
+  initialRp: () => {
+    set({ selectedRp: [] });
   },
 }));
 

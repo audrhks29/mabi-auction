@@ -25,7 +25,6 @@ interface StatsTypes {
   int?: number;
   will?: number;
   luck?: number;
-  rp?: number;
 }
 
 interface SkillByRankTypes {
@@ -34,11 +33,17 @@ interface SkillByRankTypes {
   training_list: TrainingListTypes[];
   effect: string[];
   ap: number;
-  rp: { title: string; exp: number }[];
+  rp: RpTypes[];
 }
 
 interface TrainingListTypes {
   title: string;
   training_exp: number;
   max_count: number;
+}
+
+interface RpTypes {
+  skill_id?: number;
+  title: string;
+  exp: number;
 }

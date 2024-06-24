@@ -20,11 +20,10 @@ const initialStats = {
   int: 0,
   will: 0,
   luck: 0,
-  rp: 0,
 };
 
 export default function SelectRank({ skill }: { skill: SkillsTypes }) {
-  const { calculateCurrentStats } = useCurrentCategoryInfoStore();
+  const { calculateCurrentStats, calculateCurrentRp } = useCurrentCategoryInfoStore();
   const router = useRouter();
 
   const [rankByStats, setRankByStats] = useState(initialStats);
@@ -38,37 +37,43 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
   const handleSelectRank = (value: string) => {
     const selectRankIndex = skill.skill_by_rank.findIndex(skill => skill.rank === value);
 
-    // 누적 스탯 계산
-    const cumulativeBonusStat = calculateCumulativeStats(skill, selectRankIndex);
+    const cumulativeBonusStat = calculateStats(selectRankIndex);
+    const cumulativeAP = calculateAp(selectRankIndex);
 
-    // ----------------------------------------------------------------
-
-    // 누적 ap 계산
-    const cumulativeAP =
-      skill.skill_by_rank.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
-        return acc + rankInfo.ap;
-      }, 0) || 0;
-    // ----------------------------------------------------------------
-
-    const cumulativeRpArray =
-      skill.skill_by_rank[selectRankIndex].rp.reduce((acc, rankInfo) => {
-        console.log(rankInfo);
-        return acc + rankInfo.exp;
-      }, 0) || 0;
-
-    console.log(cumulativeRpArray);
-    // console.log(cumulativeRp);
+    const cumulativeRp = calculateRp(selectRankIndex);
 
     const newRankStats = {
       ...initialStats,
       ...cumulativeBonusStat,
       ap: cumulativeAP,
-      // rp: cumulativeRp,
     };
 
     setRankByStats(newRankStats);
     calculateCurrentStats(newRankStats);
-    console.log(newRankStats);
+    calculateCurrentRp(cumulativeRp);
+  };
+
+  // 누적 스탯 계산 함수
+  const calculateStats = (selectRankIndex: number) => {
+    const cumulativeBonusStat = calculateCumulativeStats(skill, selectRankIndex);
+    return cumulativeBonusStat;
+  };
+
+  // 누적 ap 계산 함수
+  const calculateAp = (selectRankIndex: number) => {
+    const cumulativeAP =
+      skill.skill_by_rank.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
+        return acc + rankInfo.ap;
+      }, 0) || 0;
+    return cumulativeAP;
+  };
+
+  // 누적 rp 계산 함수
+  const calculateRp = (selectRankIndex: number) => {
+    const cumulativeRpArray = skill.skill_by_rank[selectRankIndex].rp.map(item => {
+      return { skill_id: skill.skill_id, title: item.title, exp: item.exp };
+    });
+    return cumulativeRpArray;
   };
 
   return (

@@ -5,7 +5,7 @@ import gradeLists from "@/assets/grade/grade.json";
 
 export default function TalentRp() {
   const { myCurrentRp } = useCurrentCategoryInfoStore();
-  console.log(myCurrentRp);
+
   return (
     <Card>
       <CardHeader>

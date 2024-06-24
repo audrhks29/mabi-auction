@@ -87,7 +87,7 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
   },
 
   initialRp: () => {
-    set({ selectedRp: [] });
+    set({ selectedRp: [], myCurrentRp: [] });
   },
 }));
 

@@ -21,9 +21,13 @@ export default function StatsTable() {
     luck: 0,
   };
 
-  const sameTalentSkillLists: Array<{ skill_by_total: Partial<SkillByTotalTypes> }> = skillLists.filter(
-    item => item.category === params.category,
-  );
+  const sameTalentSkillLists: Array<{ skill_by_total: Partial<SkillByTotalTypes> }> = skillLists.filter(item => {
+    if (Array.isArray(params.category)) {
+      return params.category.includes(item.category) || params.category.some(cat => item.talent.includes(cat));
+    } else {
+      return item.category === params.category || item.talent.includes(params.category);
+    }
+  });
 
   // 누적 ap 계산
   const ap = sameTalentSkillLists.map(item => item.skill_by_total);

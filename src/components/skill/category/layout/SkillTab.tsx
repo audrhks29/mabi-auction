@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useState } from "react";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -23,8 +22,6 @@ export default function SkillTab() {
         <TabsContent value="category" className="border p-3 rounded-sm">
           <ul className="grid grid-cols-11 gap-2 text-center text-[14px]">
             {categoryLists.map(category => {
-              const displayText = category.category;
-
               return (
                 <li key={category.id}>
                   <Link href={category.link ? `/skill/${category.link}` : ""} className="hover:underline">
@@ -39,8 +36,6 @@ export default function SkillTab() {
         <TabsContent value="talent" className="border p-3 rounded-sm">
           <ul className="grid grid-cols-11 gap-2 text-center text-[14px]">
             {talentLists.map(talent => {
-              const displayText = talent.talent;
-
               return (
                 <li key={talent.id}>
                   <Link href={talent.link ? `/skill/${talent.link}` : ""} className="hover:underline">

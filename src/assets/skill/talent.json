@@ -3,10 +3,46 @@
   { "id": 2, "image": "", "talent": "펫 핸들러" },
   { "id": 3, "image": "", "talent": "체인 슬래셔" },
   { "id": 4, "image": "", "talent": "슈터" },
-  { "id": 5, "image": "/images/talent/battle.png", "talent": "전사" },
-  { "id": 6, "image": "", "talent": "마법사" },
-  { "id": 7, "image": "", "talent": "궁수" },
-  { "id": 8, "image": "", "talent": "전투 연금술사" },
+  {
+    "id": 5,
+    "image": {
+      "fledgling": "/images/talent/closeCombat/closeCombat_1.png",
+      "Apprentice": "/images/talent/closeCombat/closeCombat_2.png",
+      "Expert": "/images/talent/closeCombat/closeCombat_3.png",
+      "Grandmaster": "/images/talent/closeCombat/closeCombat_4.png"
+    },
+    "talent": "전사"
+  },
+  {
+    "id": 6,
+    "image": {
+      "fledgling": "/images/talent/magic/magic_1.png",
+      "Apprentice": "/images/talent/magic/magic_2.png",
+      "Expert": "/images/talent/magic/magic_3.png",
+      "Grandmaster": "/images/talent/magic/magic_4.png"
+    },
+    "talent": "마법사"
+  },
+  {
+    "id": 7,
+    "image": {
+      "fledgling": "/images/talent/archery/archery_1.png",
+      "Apprentice": "/images/talent/archery/archery_2.png",
+      "Expert": "/images/talent/archery/archery_3.png",
+      "Grandmaster": "/images/talent/archery/archery_4.png"
+    },
+    "talent": "궁수"
+  },
+  {
+    "id": 8,
+    "image": {
+      "fledgling": "/images/talent/battleAlchemy/battleAlchemy_1.png",
+      "Apprentice": "/images/talent/battleAlchemy/battleAlchemy_2.png",
+      "Expert": "/images/talent/battleAlchemy/battleAlchemy_3.png",
+      "Grandmaster": "/images/talent/battleAlchemy/battleAlchemy_4.png"
+    },
+    "talent": "전투 연금술사"
+  },
   { "id": 9, "image": "", "talent": "음유시인" },
   { "id": 10, "image": "", "talent": "사제" },
   { "id": 11, "image": "", "talent": "재단사" },

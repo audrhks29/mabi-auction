@@ -50,7 +50,16 @@
   { "id": 13, "image": "", "talent": "요리사" },
   { "id": 14, "image": "", "talent": "모험가" },
   { "id": 15, "image": "", "talent": "격투가" },
-  { "id": 16, "image": "", "talent": "연성 연금술사" },
+  {
+    "id": 16,
+    "image": {
+      "fledgling": "/images/talent/transmutation/transmutation_1.png",
+      "Apprentice": "/images/talent/transmutation/transmutation_2.png",
+      "Expert": "/images/talent/transmutation/transmutation_3.png",
+      "Grandmaster": "/images/talent/transmutation/transmutation_4.png"
+    },
+    "talent": "연성 연금술사"
+  },
   { "id": 17, "image": "", "talent": "목수" },
   { "id": 18, "image": "", "talent": "약사" },
   { "id": 19, "image": "", "talent": "대장장이" },

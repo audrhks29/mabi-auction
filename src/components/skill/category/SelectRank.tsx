@@ -7,11 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 
-import { calculateCumulativeStats } from "@/utils/cumulativeBonusStats";
-import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
-
 const initialStats = {
-  ap: 0,
   hp: 0,
   mp: 0,
   sp: 0,
@@ -22,10 +18,12 @@ const initialStats = {
   luck: 0,
 };
 
+const initialAp = 0;
+
 export default function SelectRank({ skill }: { skill: SkillsTypes }) {
-  const { calculateCurrentStats, calculateCurrentRp } = useCurrentCategoryInfoStore();
   const router = useRouter();
 
+  const [rankByAp, setRankByAp] = useState(initialAp);
   const [rankByStats, setRankByStats] = useState(initialStats);
 
   // detail 버튼 클릭 함수
@@ -36,44 +34,20 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
   // 랭크 선택 함수
   const handleSelectRank = (value: string) => {
     const selectRankIndex = skill.skill_by_rank.findIndex(skill => skill.rank === value);
+    const newRankByAP = skill.skill_by_rank[selectRankIndex].accumulate_ap;
 
-    const cumulativeBonusStat = calculateStats(selectRankIndex);
-    const cumulativeAP = calculateAp(selectRankIndex);
-
-    const cumulativeRp = calculateRp(selectRankIndex);
-
-    const newRankStats = {
-      ...initialStats,
-      ...cumulativeBonusStat,
-      ap: cumulativeAP,
+    const newRankByStats = {
+      hp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.hp || 0,
+      mp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.mp || 0,
+      sp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.sp || 0,
+      str: skill.skill_by_rank[selectRankIndex].accumulate_stats?.str || 0,
+      dex: skill.skill_by_rank[selectRankIndex].accumulate_stats?.dex || 0,
+      int: skill.skill_by_rank[selectRankIndex].accumulate_stats?.int || 0,
+      will: skill.skill_by_rank[selectRankIndex].accumulate_stats?.will || 0,
+      luck: skill.skill_by_rank[selectRankIndex].accumulate_stats?.luck || 0,
     };
-
-    setRankByStats(newRankStats);
-    calculateCurrentStats(newRankStats);
-    calculateCurrentRp(cumulativeRp);
-  };
-
-  // 누적 스탯 계산 함수
-  const calculateStats = (selectRankIndex: number) => {
-    const cumulativeBonusStat = calculateCumulativeStats(skill, selectRankIndex);
-    return cumulativeBonusStat;
-  };
-
-  // 누적 ap 계산 함수
-  const calculateAp = (selectRankIndex: number) => {
-    const cumulativeAP =
-      skill.skill_by_rank.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
-        return acc + rankInfo.ap;
-      }, 0) || 0;
-    return cumulativeAP;
-  };
-
-  // 누적 rp 계산 함수
-  const calculateRp = (selectRankIndex: number) => {
-    const cumulativeRpArray = skill.skill_by_rank[selectRankIndex].rp.map(item => {
-      return { skill_id: skill.skill_id, title: item.title, exp: item.exp };
-    });
-    return cumulativeRpArray;
+    setRankByAp(newRankByAP);
+    setRankByStats(newRankByStats);
   };
 
   return (
@@ -95,39 +69,39 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
       </TableCell>
 
       <TableCell>
-        {rankByStats.ap || 0}/{skill.skill_by_total.ap || 0}
+        {rankByAp || 0}/{skill.total_need_ap || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.hp || 0}/{skill.skill_by_total.hp || 0}
+        {rankByStats.hp || 0}/{skill.total_stats.hp || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.mp || 0}/{skill.skill_by_total.mp || 0}
+        {rankByStats.mp || 0}/{skill.total_stats.mp || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.sp || 0}/{skill.skill_by_total.sp || 0}
+        {rankByStats.sp || 0}/{skill.total_stats.sp || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.str || 0}/{skill.skill_by_total.str || 0}
+        {rankByStats.str || 0}/{skill.total_stats.str || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.dex || 0}/{skill.skill_by_total.dex || 0}
+        {rankByStats.dex || 0}/{skill.total_stats.dex || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.int || 0}/{skill.skill_by_total.int || 0}
+        {rankByStats.int || 0}/{skill.total_stats.int || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.will || 0}/{skill.skill_by_total.will || 0}
+        {rankByStats.will || 0}/{skill.total_stats.will || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.luck || 0}/{skill.skill_by_total.luck || 0}
+        {rankByStats.luck || 0}/{skill.total_stats.luck || 0}
       </TableCell>
 
       <TableCell>

@@ -1,6 +1,7 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Card } from "@/components/ui/card";
 import talentLists from "@/assets/skill/talent.json";
-import { Card } from "../ui/card";
+
 import Image from "next/image";
 
 export default function Talents() {

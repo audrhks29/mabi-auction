@@ -7,14 +7,11 @@ interface SkillsTypes {
   name_kor: string;
   icon: string;
   description: string;
-  skill_by_total: SkillByTotalTypes;
+  total_need_ap: number;
+  total_stats: StatsTypes;
   skill_by_rank: SkillByRankTypes[];
 }
 [];
-
-interface SkillByTotalTypes extends StatsTypes {
-  ap: number;
-}
 
 interface StatsTypes {
   hp?: number;
@@ -32,8 +29,10 @@ interface SkillByRankTypes {
   bonus_stat: StatsTypes | null;
   training_list: TrainingListTypes[];
   effect: string[];
-  ap: number;
-  rp: RpTypes[];
+  need_ap: number;
+  accumulate_rp: RpTypes[];
+  accumulate_stats: StatsTypes;
+  accumulate_ap: number;
 }
 
 interface TrainingListTypes {

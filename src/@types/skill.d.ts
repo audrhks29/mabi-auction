@@ -26,12 +26,12 @@ interface StatsTypes {
 
 interface SkillByRankTypes {
   rank: string;
-  bonus_stat: StatsTypes | null;
+  bonus_stats: StatsTypes | null;
   training_list: TrainingListTypes[];
   effect: string[];
   need_ap: number;
   accumulate_rp: RpTypes[];
-  accumulate_stats: StatsTypes;
+  accumulate_stats: StatsTypes | null;
   accumulate_ap: number;
 }
 
@@ -42,7 +42,6 @@ interface TrainingListTypes {
 }
 
 interface RpTypes {
-  skill_id?: number;
   title: string;
   exp: number;
 }

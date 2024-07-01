@@ -11,8 +11,6 @@ import AbilityPoint from "@/components/skill/category/skillCard/AbilityPoint";
 import Stats from "@/components/skill/category/skillCard/Stats";
 import DetailDescription from "@/components/skill/category/skillCard/DetailDescription";
 
-import { convertCumulativeStatsArray } from "@/utils/cumulativeBonusStats";
-
 export default function SkillDetailPage({
   params,
 }: {
@@ -25,7 +23,7 @@ export default function SkillDetailPage({
 
   return (
     <section className="grid gap-3">
-      <CurrentRank totalStats={findSkill?.skill_by_total} rank={findSkill?.skill_by_rank} />
+      <CurrentRank skill={findSkill} />
 
       <Tabs defaultValue="F" className="grid gap-3">
         <TabsList className="block w-fit m-auto">
@@ -37,20 +35,6 @@ export default function SkillDetailPage({
         </TabsList>
 
         {findSkill?.skill_by_rank.map((rank, index) => {
-          const cumulativeAP = findSkill.skill_by_rank.slice(0, index + 1).reduce((acc, rankInfo) => {
-            return acc + rankInfo.ap;
-          }, 0);
-          // ----------------------------------------------------------------
-
-          // 누적 스탯 계산
-          const flatCumulativeStatsArray = convertCumulativeStatsArray(findSkill, index);
-          // ----------------------------------------------------------------
-          const nextRank = findSkill && findSkill?.skill_by_rank[index + 1];
-          // 승급 시 받는 스탯 계산
-          const bonusStats = nextRank?.bonus_stat;
-          const entriesBonusStats = bonusStats && Object.entries(bonusStats);
-          const flatBonusStats = entriesBonusStats && entriesBonusStats.flatMap(([key, value]) => [key, value]);
-
           return (
             <TabsContent className="w-[500px] m-auto" key={rank.rank} value={rank.rank}>
               <Card className="text-center text-[14px]">
@@ -80,10 +64,16 @@ export default function SkillDetailPage({
                   <Training rank={rank} />
 
                   {/* --- AP --- */}
-                  <AbilityPoint nextRank={nextRank} cumulativeAP={cumulativeAP} />
+                  <AbilityPoint
+                    needAp={findSkill.skill_by_rank[index].need_ap}
+                    accumulateAP={findSkill.skill_by_rank[index].accumulate_ap}
+                  />
 
                   {/* --- 스탯 --- */}
-                  <Stats flatBonusStats={flatBonusStats} flatCumulativeStatsArray={flatCumulativeStatsArray} />
+                  <Stats
+                    bonusStats={findSkill.skill_by_rank[index].bonus_stats}
+                    accumulateStats={findSkill.skill_by_rank[index].accumulate_stats}
+                  />
                 </CardContent>
               </Card>
             </TabsContent>

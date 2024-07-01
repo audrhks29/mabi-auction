@@ -1,6 +1,6 @@
 export const calculateCumulativeStats = (findSkill: SkillsTypes, index: number) => {
   const cumulativeBonusStats = findSkill.skill_by_rank.slice(0, index + 1).reduce((acc: StatsTypes, rankInfo) => {
-    const bonusStat = rankInfo.bonus_stat;
+    const bonusStat = rankInfo.bonus_stats;
     if (bonusStat) {
       for (const [key, value] of Object.entries(bonusStat)) {
         if (key in acc) {

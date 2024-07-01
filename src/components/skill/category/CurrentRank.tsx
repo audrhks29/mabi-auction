@@ -5,7 +5,6 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { useState } from "react";
 
 const initialStats = {
-  ap: 0,
   hp: 0,
   mp: 0,
   sp: 0,
@@ -16,45 +15,31 @@ const initialStats = {
   luck: 0,
 };
 
-export default function CurrentRank({
-  totalStats,
-  rank,
-}: {
-  totalStats: SkillByTotalTypes | undefined;
-  rank: SkillByRankTypes[] | undefined;
-}) {
+const initialAp = 0;
+
+export default function CurrentRank({ skill }: { skill: SkillsTypes | undefined }) {
+  const [rankByAp, setRankByAp] = useState<number | undefined>(initialAp);
   const [rankByStats, setRankByStats] = useState(initialStats);
 
   const handleSelectRank = (value: string) => {
-    const selectRankIndex = rank?.findIndex(skill => skill.rank === value) || 0;
-    const cumulativeBonusStat = rank?.slice(0, selectRankIndex + 1).reduce((acc: StatsTypes, rankInfo) => {
-      const bonusStat = rankInfo.bonus_stat;
+    const selectRankIndex = skill?.skill_by_rank.findIndex(skill => skill.rank === value);
+    if (selectRankIndex) {
+      const newRankByAP = skill?.skill_by_rank[selectRankIndex].accumulate_ap;
 
-      if (bonusStat) {
-        for (const [key, value] of Object.entries(bonusStat)) {
-          if (key in acc) {
-            acc[key as keyof StatsTypes] = (acc[key as keyof StatsTypes] || 0) + (value as number);
-          } else {
-            acc[key as keyof StatsTypes] = value as number;
-          }
-        }
-      }
-      return acc;
-    }, {} as StatsTypes);
+      const newRankByStats = {
+        hp: skill?.skill_by_rank[selectRankIndex].accumulate_stats?.hp || 0,
+        mp: skill?.skill_by_rank[selectRankIndex].accumulate_stats?.mp || 0,
+        sp: skill?.skill_by_rank[selectRankIndex].accumulate_stats?.sp || 0,
+        str: skill?.skill_by_rank[selectRankIndex].accumulate_stats?.str || 0,
+        dex: skill?.skill_by_rank[selectRankIndex].accumulate_stats?.dex || 0,
+        int: skill?.skill_by_rank[selectRankIndex].accumulate_stats?.int || 0,
+        will: skill?.skill_by_rank[selectRankIndex].accumulate_stats?.will || 0,
+        luck: skill?.skill_by_rank[selectRankIndex].accumulate_stats?.luck || 0,
+      };
 
-    // 누적 ap 계산
-    const cumulativeAP =
-      rank?.slice(0, selectRankIndex + 1).reduce((acc, rankInfo) => {
-        return acc + rankInfo.ap;
-      }, 0) || 0;
-
-    const newRankStats = {
-      ...initialStats,
-      ...cumulativeBonusStat,
-      ap: cumulativeAP,
-    };
-
-    setRankByStats(newRankStats);
+      setRankByAp(newRankByAP);
+      setRankByStats(newRankByStats);
+    }
   };
 
   return (
@@ -84,7 +69,7 @@ export default function CurrentRank({
                 </SelectTrigger>
 
                 <SelectContent>
-                  {rank?.map((item, index) => (
+                  {skill?.skill_by_rank?.map((item, index) => (
                     <SelectItem key={index} value={item.rank}>
                       {item.rank}
                     </SelectItem>
@@ -93,7 +78,7 @@ export default function CurrentRank({
               </Select>
             </TableCell>
 
-            <TableCell>{rankByStats?.ap}</TableCell>
+            <TableCell>{rankByAp}</TableCell>
             <TableCell>{rankByStats?.hp}</TableCell>
             <TableCell>{rankByStats?.mp}</TableCell>
             <TableCell>{rankByStats?.sp}</TableCell>

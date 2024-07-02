@@ -7,10 +7,9 @@ import skillLists from "@/assets/skill/human/skill.json";
 
 export default function StatsTable() {
   const params = useParams();
-  const { myStats } = useCurrentCategoryInfoStore();
+  const { myStats, total_ap } = useCurrentCategoryInfoStore();
 
-  const initialStats: SkillByTotalTypes = {
-    ap: 0,
+  const initialStats = {
     hp: 0,
     mp: 0,
     sp: 0,
@@ -60,6 +59,7 @@ export default function StatsTable() {
       <TableHeader>
         <TableRow>
           <TableHead></TableHead>
+          <TableHead>ap</TableHead>
           {Object.entries(initialStats).map(([key, _]) => (
             <TableHead key={key}>{key}</TableHead>
           ))}
@@ -69,23 +69,16 @@ export default function StatsTable() {
       <TableBody>
         <TableRow>
           <TableCell>총 합계</TableCell>
-          {Object.entries(initialStats).map(([key, value]) => (
-            <TableCell key={key}>{value}</TableCell>
-          ))}
+          <TableCell></TableCell>
         </TableRow>
 
         <TableRow>
           <TableCell>나의 합계</TableCell>
-          {Object.entries(myStats).map(([key, value]) => {
-            if (key !== "rp") return <TableCell key={key}>{value}</TableCell>;
-          })}
+          <TableCell>{total_ap}</TableCell>
         </TableRow>
 
         <TableRow>
           <TableCell>차이</TableCell>
-          {Object.entries(difference).map(([key, value]) => {
-            if (key !== "rp") return <TableCell key={key}>{value}</TableCell>;
-          })}
         </TableRow>
       </TableBody>
     </Table>

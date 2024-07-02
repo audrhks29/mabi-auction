@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 
 const initialStats = {
   hp: 0,
@@ -21,6 +22,7 @@ const initialStats = {
 const initialAp = 0;
 
 export default function SelectRank({ skill }: { skill: SkillsTypes }) {
+  const { setSelectedTalent } = useCurrentCategoryInfoStore();
   const router = useRouter();
 
   const [rankByAp, setRankByAp] = useState(initialAp);
@@ -46,8 +48,11 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
       will: skill.skill_by_rank[selectRankIndex].accumulate_stats?.will || 0,
       luck: skill.skill_by_rank[selectRankIndex].accumulate_stats?.luck || 0,
     };
+
     setRankByAp(newRankByAP);
     setRankByStats(newRankByStats);
+
+    setSelectedTalent(skill, newRankByAP);
   };
 
   return (
@@ -73,35 +78,35 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
       </TableCell>
 
       <TableCell>
-        {rankByStats.hp || 0}/{skill.total_stats.hp || 0}
+        {rankByStats.hp || 0}/{skill?.total_stats?.hp || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.mp || 0}/{skill.total_stats.mp || 0}
+        {rankByStats.mp || 0}/{skill?.total_stats?.mp || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.sp || 0}/{skill.total_stats.sp || 0}
+        {rankByStats.sp || 0}/{skill?.total_stats?.sp || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.str || 0}/{skill.total_stats.str || 0}
+        {rankByStats.str || 0}/{skill?.total_stats?.str || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.dex || 0}/{skill.total_stats.dex || 0}
+        {rankByStats.dex || 0}/{skill?.total_stats?.dex || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.int || 0}/{skill.total_stats.int || 0}
+        {rankByStats.int || 0}/{skill?.total_stats?.int || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.will || 0}/{skill.total_stats.will || 0}
+        {rankByStats.will || 0}/{skill?.total_stats?.will || 0}
       </TableCell>
 
       <TableCell>
-        {rankByStats.luck || 0}/{skill.total_stats.luck || 0}
+        {rankByStats.luck || 0}/{skill?.total_stats?.luck || 0}
       </TableCell>
 
       <TableCell>

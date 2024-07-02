@@ -3,6 +3,12 @@ import create from "zustand";
 interface storeType {
   myStats: SkillByTotalTypes;
 
+  total_ap_array: {
+    id?: number;
+    ap?: number;
+  }[];
+  setSelectedTalent(skill: SkillsTypes, newRankByAP: number): void;
+  total_ap: number;
   selectedRp?: RpTypes[];
   myCurrentRp: RpTypes[];
 
@@ -28,6 +34,32 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
 
   selectedRp: [],
   myCurrentRp: [],
+
+  total_ap_array: [],
+  total_ap: 0,
+
+  setSelectedTalent: (skill, newRankByAP) => {
+    const state = getState();
+    const total_ap_array = state.total_ap_array;
+
+    const newSumAp = {
+      id: skill.skill_id,
+      ap: newRankByAP,
+    };
+
+    if (total_ap_array.some(arr => arr.id === skill.skill_id)) {
+      const a = total_ap_array.find(a => a.id === skill.skill_id);
+      if (a) a.ap = newRankByAP;
+    } else {
+      total_ap_array.push(newSumAp);
+    }
+
+    const newTotalAp = total_ap_array.reduce((acc, cur) => {
+      return acc + cur.ap;
+    }, 0);
+
+    set({ total_ap: newTotalAp });
+  },
 
   calculateCurrentStats: (newRankStats: SkillByTotalTypes) => {
     const state = getState();

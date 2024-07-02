@@ -24,6 +24,10 @@ interface StatsTypes {
   luck?: number;
 }
 
+interface StatsTypes extends StatsIncludeIdTypes {
+  id?: number;
+}
+
 interface SkillByRankTypes {
   rank: string;
   bonus_stats: StatsTypes | null;

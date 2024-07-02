@@ -7,20 +7,8 @@ import skillLists from "@/assets/skill/human/skill.json";
 
 export default function StatsTable() {
   const params = useParams();
-  const { myStats, total_ap } = useCurrentCategoryInfoStore();
+  const { total_ap, total_stats } = useCurrentCategoryInfoStore();
 
-  const initialStats = {
-    hp: 0,
-    mp: 0,
-    sp: 0,
-    str: 0,
-    dex: 0,
-    int: 0,
-    will: 0,
-    luck: 0,
-  };
-
-  const initialAp = 0;
   // ----------------------------------------------------------------
   const skills = skillLists.filter(
     skillList =>
@@ -34,6 +22,7 @@ export default function StatsTable() {
 
   const calculateTotals = (skills: SkillsTypes[]) => {
     const ap = skills.reduce((sum, skill) => sum + skill.total_need_ap, 0);
+
     const stats = skills.reduce((acc, { total_stats = {} }) => {
       for (const [key, value] of Object.entries(total_stats)) {
         acc[key as keyof StatsTypes] = (acc[key as keyof StatsTypes] || 0) + value!;
@@ -52,9 +41,14 @@ export default function StatsTable() {
         <TableRow>
           <TableHead></TableHead>
           <TableHead>ap</TableHead>
-          {Object.entries(initialStats).map(([key, _]) => (
-            <TableHead key={key}>{key}</TableHead>
-          ))}
+          <TableHead>hp</TableHead>
+          <TableHead>mp</TableHead>
+          <TableHead>sp</TableHead>
+          <TableHead>str</TableHead>
+          <TableHead>dex</TableHead>
+          <TableHead>int</TableHead>
+          <TableHead>will</TableHead>
+          <TableHead>luck</TableHead>
         </TableRow>
       </TableHeader>
 
@@ -75,10 +69,27 @@ export default function StatsTable() {
         <TableRow>
           <TableCell>나의 합계</TableCell>
           <TableCell>{total_ap || 0}</TableCell>
+          <TableCell>{total_stats.hp || 0}</TableCell>
+          <TableCell>{total_stats.mp || 0}</TableCell>
+          <TableCell>{total_stats.sp || 0}</TableCell>
+          <TableCell>{total_stats.str || 0}</TableCell>
+          <TableCell>{total_stats.dex || 0}</TableCell>
+          <TableCell>{total_stats.int || 0}</TableCell>
+          <TableCell>{total_stats.will || 0}</TableCell>
+          <TableCell>{total_stats.luck || 0}</TableCell>
         </TableRow>
 
         <TableRow>
           <TableCell>차이</TableCell>
+          <TableCell>{(total.ap || 0) - (total_ap || 0)}</TableCell>
+          <TableCell>{(total.stats.hp || 0) - (total_stats.hp || 0)}</TableCell>
+          <TableCell>{(total.stats.mp || 0) - (total_stats.hp || 0)}</TableCell>
+          <TableCell>{(total.stats.sp || 0) - (total_stats.hp || 0)}</TableCell>
+          <TableCell>{(total.stats.str || 0) - (total_stats.str || 0)}</TableCell>
+          <TableCell>{(total.stats.dex || 0) - (total_stats.dex || 0)}</TableCell>
+          <TableCell>{(total.stats.int || 0) - (total_stats.int || 0)}</TableCell>
+          <TableCell>{(total.stats.will || 0) - (total_stats.will || 0)}</TableCell>
+          <TableCell>{(total.stats.luck || 0) - (total_stats.luck || 0)}</TableCell>
         </TableRow>
       </TableBody>
     </Table>

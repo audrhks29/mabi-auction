@@ -4,8 +4,6 @@ import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 import gradeLists from "@/assets/grade/grade.json";
 
 export default function TalentRp() {
-  const { myCurrentRp } = useCurrentCategoryInfoStore();
-
   return (
     <Card>
       <CardHeader>
@@ -14,7 +12,7 @@ export default function TalentRp() {
 
       <CardContent>
         <ul className="grid gap-2">
-          {myCurrentRp?.map((item, index) => {
+          {/* {myCurrentRp?.map((item, index) => {
             // 경험치에 맞는 재능등급 필터
             const rpGradeArray = gradeLists.filter(grade => item.exp >= grade.need_exp);
 
@@ -45,7 +43,7 @@ export default function TalentRp() {
                 </div>
               </li>
             );
-          })}
+          })} */}
         </ul>
       </CardContent>
     </Card>

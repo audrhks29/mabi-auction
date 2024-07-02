@@ -5,34 +5,13 @@ interface storeType {
     id: number;
     ap: number;
   }[];
+  total_stats_array: StatsIncludeIdTypes[];
 
-  total_stats_array: {
-    id?: number;
-    hp?: number;
-    mp?: number;
-    sp?: number;
-    str?: number;
-    dex?: number;
-    int?: number;
-    will?: number;
-    luck?: number;
-  }[];
-
-  total_stats: {
-    id?: number;
-    hp?: number;
-    mp?: number;
-    sp?: number;
-    str?: number;
-    dex?: number;
-    int?: number;
-    will?: number;
-    luck?: number;
-  };
   setApTable(skill: SkillsTypes, newRankByAP: number): void;
   setStatsTable(skill: SkillsTypes, newRankByStats: StatsTypes): void;
 
   total_ap: number;
+  total_stats: StatsIncludeIdTypes;
 }
 
 const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({

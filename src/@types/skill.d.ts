@@ -24,7 +24,7 @@ interface StatsTypes {
   luck?: number;
 }
 
-interface StatsTypes extends StatsIncludeIdTypes {
+interface StatsIncludeIdTypes extends StatsTypes {
   id?: number;
 }
 

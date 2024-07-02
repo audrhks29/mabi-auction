@@ -3,14 +3,12 @@ import skillLists from "@/assets/skill/human/skill.json";
 import Image from "next/image";
 import SelectRank from "./SelectRank";
 
-export default function SkillTable({ params }: { params: { category: string } | string }) {
-  const skill =
-    typeof params === "string" && params !== "all"
-      ? skillLists.filter(skill => skill.category === params || skill.talent.includes(params))
-      : typeof params === "object" && params.category !== "all"
-        ? skillLists.filter(skill => skill.category === params.category || skill.talent.includes(params.category))
-        : skillLists;
+export default function SkillTable({ params }: { params: { category: string } }) {
+  const skill = skillLists.filter(
+    skillList => skillList.category === params.category || skillList.talent.includes(params.category),
+  );
 
+  // console.log(skill);
   return (
     <article>
       <Table>

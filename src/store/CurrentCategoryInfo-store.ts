@@ -4,10 +4,25 @@ interface storeType {
   myStats: SkillByTotalTypes;
 
   total_ap_array: {
-    id?: number;
-    ap?: number;
+    id: number;
+    ap: number;
   }[];
-  setSelectedTalent(skill: SkillsTypes, newRankByAP: number): void;
+
+  total_stats_array: {
+    id: number;
+    hp?: number;
+    mp?: number;
+    sp?: number;
+    str?: number;
+    dex?: number;
+    int?: number;
+    will?: number;
+    luck?: number;
+  }[];
+
+  setApTable(skill: SkillsTypes, newRankByAP: number): void;
+  setStatsTable(skill: SkillsTypes, newRankByStats: StatsTypes): void;
+
   total_ap: number;
   selectedRp?: RpTypes[];
   myCurrentRp: RpTypes[];
@@ -36,9 +51,11 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
   myCurrentRp: [],
 
   total_ap_array: [],
+  total_stats_array: [],
+
   total_ap: 0,
 
-  setSelectedTalent: (skill, newRankByAP) => {
+  setApTable: (skill, newRankByAP) => {
     const state = getState();
     const total_ap_array = state.total_ap_array;
 
@@ -48,8 +65,8 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
     };
 
     if (total_ap_array.some(arr => arr.id === skill.skill_id)) {
-      const a = total_ap_array.find(a => a.id === skill.skill_id);
-      if (a) a.ap = newRankByAP;
+      const isTotalApArray = total_ap_array.find(a => a.id === skill.skill_id);
+      if (isTotalApArray) isTotalApArray.ap = newRankByAP;
     } else {
       total_ap_array.push(newSumAp);
     }
@@ -59,6 +76,25 @@ const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
     }, 0);
 
     set({ total_ap: newTotalAp });
+  },
+
+  setStatsTable: (skill, newRankByStats) => {
+    const state = getState();
+    const total_stats_array = state.total_stats_array;
+
+    const newSumStats = {
+      id: skill.skill_id,
+      ...newRankByStats,
+    };
+
+    const selectedIndex = total_stats_array.findIndex(arr => arr.id === skill.skill_id);
+    if (selectedIndex !== -1) {
+      total_stats_array[selectedIndex] = newSumStats;
+    } else {
+      total_stats_array.push(newSumStats);
+    }
+
+    console.log(total_stats_array);
   },
 
   calculateCurrentStats: (newRankStats: SkillByTotalTypes) => {

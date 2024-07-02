@@ -389,7 +389,7 @@
     "icon": "/images/skill/puppetry/act2.webp",
     "description": "상대에게 짧은 시간동안 3번의 공격을 퍼부어서 큰 피해를 입히는 마리오네트 전투 스킬.\n엄청나게 화가나서 물건을 부수는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
     "total_need_ap": 149,
-    "skill_by_total": { "sp": 10, "str": 10 },
+    "total_stats": { "sp": 10, "str": 10 },
     "skill_by_rank": [
       {
         "rank": "연습",

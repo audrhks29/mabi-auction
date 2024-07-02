@@ -20,40 +20,32 @@ export default function StatsTable() {
     luck: 0,
   };
 
-  const sameTalentSkillLists: Array<{ skill_by_total: Partial<SkillByTotalTypes> }> = skillLists.filter(item => {
-    if (Array.isArray(params.category)) {
-      return params.category.includes(item.category) || params.category.some(cat => item.talent.includes(cat));
-    } else {
-      return item.category === params.category || item.talent.includes(params.category);
-    }
-  });
-
-  // 누적 ap 계산
-  const ap = sameTalentSkillLists.map(item => item.skill_by_total);
-
-  ap.forEach(item => {
-    for (const key in item) {
-      if (initialStats.hasOwnProperty(key)) {
-        initialStats[key as keyof SkillByTotalTypes] += item[key as keyof SkillByTotalTypes] as number;
-      }
-    }
-  });
+  const initialAp = 0;
   // ----------------------------------------------------------------
+  const skills = skillLists.filter(
+    skillList =>
+      (Array.isArray(params.category)
+        ? params.category.includes(skillList.category)
+        : skillList.category === params.category) ||
+      (Array.isArray(params.category)
+        ? params.category.some(cat => skillList.talent.includes(cat))
+        : skillList.talent.includes(params.category)),
+  );
 
-  // initialStats와 myStats의 각 속성별 차이 계산
-  const calculateDifference = (stats1: SkillByTotalTypes, stats2: SkillByTotalTypes) => {
-    const difference: Partial<SkillByTotalTypes> = {};
+  const calculateTotals = (skills: SkillsTypes[]) => {
+    const ap = skills.reduce((sum, skill) => sum + skill.total_need_ap, 0);
+    const stats = skills.reduce((acc, { total_stats = {} }) => {
+      for (const [key, value] of Object.entries(total_stats)) {
+        acc[key as keyof StatsTypes] = (acc[key as keyof StatsTypes] || 0) + value!;
+      }
+      return acc;
+    }, {} as StatsTypes);
 
-    Object.keys(stats1).forEach(key => {
-      const typedKey = key as keyof SkillByTotalTypes;
-      difference[typedKey] = (stats2[typedKey] as number) - (stats1[typedKey] || 0);
-    });
-
-    return difference;
+    return { ap, stats };
   };
 
-  const difference = calculateDifference(myStats, initialStats);
-  // ----------------------------------------------------------------
+  const total = calculateTotals(skills);
+
   return (
     <Table>
       <TableHeader>
@@ -69,12 +61,20 @@ export default function StatsTable() {
       <TableBody>
         <TableRow>
           <TableCell>총 합계</TableCell>
-          <TableCell></TableCell>
+          <TableCell>{total.ap || 0}</TableCell>
+          <TableCell>{total.stats.hp || 0}</TableCell>
+          <TableCell>{total.stats.mp || 0}</TableCell>
+          <TableCell>{total.stats.sp || 0}</TableCell>
+          <TableCell>{total.stats.str || 0}</TableCell>
+          <TableCell>{total.stats.dex || 0}</TableCell>
+          <TableCell>{total.stats.int || 0}</TableCell>
+          <TableCell>{total.stats.will || 0}</TableCell>
+          <TableCell>{total.stats.luck || 0}</TableCell>
         </TableRow>
 
         <TableRow>
           <TableCell>나의 합계</TableCell>
-          <TableCell>{total_ap}</TableCell>
+          <TableCell>{total_ap || 0}</TableCell>
         </TableRow>
 
         <TableRow>

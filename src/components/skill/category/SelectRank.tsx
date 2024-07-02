@@ -22,7 +22,7 @@ const initialStats = {
 const initialAp = 0;
 
 export default function SelectRank({ skill }: { skill: SkillsTypes }) {
-  const { setSelectedTalent } = useCurrentCategoryInfoStore();
+  const { setApTable, setStatsTable } = useCurrentCategoryInfoStore();
   const router = useRouter();
 
   const [rankByAp, setRankByAp] = useState(initialAp);
@@ -52,7 +52,8 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
     setRankByAp(newRankByAP);
     setRankByStats(newRankByStats);
 
-    setSelectedTalent(skill, newRankByAP);
+    setApTable(skill, newRankByAP);
+    setStatsTable(skill, newRankByStats);
   };
 
   return (

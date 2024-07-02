@@ -377,5 +377,355 @@
         "accumulate_ap": 135
       }
     ]
+  },
+  {
+    "skill_id": 2,
+    "talent": ["puppeteer"],
+    "talent_kor": ["인형사"],
+    "category": "puppetry",
+    "category_kor": "인형술",
+    "isPromotion": false,
+    "name_kor": "2막: 솟구치는 분노",
+    "icon": "/images/skill/puppetry/act2.webp",
+    "description": "상대에게 짧은 시간동안 3번의 공격을 퍼부어서 큰 피해를 입히는 마리오네트 전투 스킬.\n엄청나게 화가나서 물건을 부수는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
+    "total_need_ap": 149,
+    "skill_by_total": { "sp": 10, "str": 10 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": [
+          "대미지 배율 230% (65% + 65% + 100%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 5%",
+          "영혼력 5%",
+          "재사용 대기 시간 10초"
+        ],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stats": {
+          "sp": 1
+        },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
+        "effect": [
+          "대미지 배율 275% (80% + 80% + 115%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 5%",
+          "영혼력 5%",
+          "재사용 대기 시간 10초"
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 1000 }],
+        "accumulate_stats": { "str": 1 },
+        "accumulate_ap": 1
+      },
+      {
+        "rank": "E",
+        "bonus_stats": {
+          "str": 1
+        },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
+        "effect": [
+          "대미지 배율 275% (80% + 80% + 115%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 7%",
+          "영혼력 5%",
+          "재사용 대기 시간 10초"
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 2500 }],
+        "accumulate_stats": { "sp": 1, "str": 1 },
+        "accumulate_ap": 3
+      },
+      {
+        "rank": "D",
+        "bonus_stats": {
+          "sp": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 320% (95% + 95% + 130%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 9%",
+          "영혼력 5%",
+          "재사용 대기 시간 10초"
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 5000 }],
+        "accumulate_stats": { "sp": 1, "str": 2 },
+        "accumulate_ap": 6
+      },
+      {
+        "rank": "C",
+        "bonus_stats": {
+          "str": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 365% (110% + 110% + 145%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 11%",
+          "영혼력 5%",
+          "재사용 대기 시간 10초"
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 9000 }],
+        "accumulate_stats": { "sp": 2, "str": 2 },
+        "accumulate_ap": 10
+      },
+      {
+        "rank": "B",
+        "bonus_stats": {
+          "sp": 2
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 410% (125% + 125% + 160%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 13%",
+          "영혼력 5%",
+          "재사용 대기 시간 10초"
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 13000 }],
+        "accumulate_stats": { "sp": 2, "str": 3 },
+        "accumulate_ap": 15
+      },
+      {
+        "rank": "A",
+        "bonus_stats": {
+          "str": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 32, "max_count": 1 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 80, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 455% (140% + 140% + 175%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 15%",
+          "영혼력 5%",
+          "재사용 대기 시간 10초"
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 19000 }],
+        "accumulate_stats": { "sp": 4, "str": 3 },
+        "accumulate_ap": 20
+      },
+      {
+        "rank": "9",
+        "bonus_stats": {
+          "sp": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 510% (155% + 155% + 200%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 17%",
+          "영혼력 5%",
+          "재사용 대기 시간 9초"
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 26000 }],
+        "accumulate_stats": { "sp": 4, "str": 4 },
+        "accumulate_ap": 26
+      },
+      {
+        "rank": "8",
+        "bonus_stats": {
+          "str": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 20, "max_count": 2 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 28, "max_count": 2 }
+        ],
+        "effect": [
+          "대미지 배율 565% (170% + 170% + 225%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 19%",
+          "영혼력 5%",
+          "재사용 대기 시간 9초"
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 36000 }],
+        "accumulate_stats": { "sp": 5, "str": 4 },
+        "accumulate_ap": 34
+      },
+      {
+        "rank": "7",
+        "bonus_stats": {
+          "sp": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 16, "max_count": 3 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 20, "max_count": 2 }
+        ],
+        "effect": [
+          "대미지 배율 620% (185% + 185% + 250%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 21%",
+          "영혼력 5%",
+          "재사용 대기 시간 9초"
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 47000 }],
+        "accumulate_stats": { "sp": 5, "str": 5 },
+        "accumulate_ap": 44
+      },
+      {
+        "rank": "6",
+        "bonus_stats": {
+          "str": 2
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 10, "max_count": 4 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 12, "max_count": 3 }
+        ],
+        "effect": [
+          "대미지 배율 675% (200% + 200% + 275%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 23%",
+          "영혼력 5%",
+          "재사용 대기 시간 9초"
+        ],
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 61000 }],
+        "accumulate_stats": { "sp": 6, "str": 5 },
+        "accumulate_ap": 56
+      },
+      {
+        "rank": "5",
+        "bonus_stats": {
+          "sp": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 6.8, "max_count": 5 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 9.6, "max_count": 4 }
+        ],
+        "effect": [
+          "대미지 배율 730% (215% + 215% + 300%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 25%",
+          "영혼력 5%",
+          "재사용 대기 시간 8초"
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 78000 }],
+        "accumulate_stats": { "sp": 6, "str": 7 },
+        "accumulate_ap": 70
+      },
+      {
+        "rank": "4",
+        "bonus_stats": {
+          "str": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 30 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 4.8, "max_count": 8 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 6, "max_count": 5 }
+        ],
+        "effect": [
+          "대미지 배율 785% (230% + 230% + 325%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 27%",
+          "영혼력 5%",
+          "재사용 대기 시간 8초"
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 101000 }],
+        "accumulate_stats": { "sp": 7, "str": 7 },
+        "accumulate_ap": 86
+      },
+      {
+        "rank": "3",
+        "bonus_stats": {
+          "sp": 1
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 38 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 3.2, "max_count": 13 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 4.8, "max_count": 8 }
+        ],
+        "effect": [
+          "대미지 배율 840% (245% + 245% + 350%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 29%",
+          "영혼력 5%",
+          "재사용 대기 시간 8초"
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 127000 }],
+        "accumulate_stats": { "sp": 7, "str": 8 },
+        "accumulate_ap": 104
+      },
+      {
+        "rank": "2",
+        "bonus_stats": {
+          "sp": 2,
+          "str": 2
+        },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 43 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 2.4, "max_count": 18 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 4, "max_count": 10 }
+        ],
+        "effect": [
+          "대미지 배율 865% (260% + 260% + 375%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 31%",
+          "영혼력 5%",
+          "재사용 대기 시간 8초"
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 157000 }],
+        "accumulate_stats": { "sp": 8, "str": 8 },
+        "accumulate_ap": 124
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
+          { "title": "2막: 솟구치는 분노로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
+          { "title": "2막: 솟구치는 분노의 크리티컬 히트 성공", "training_exp": 3.2, "max_count": 13 }
+        ],
+        "effect": [
+          "대미지 배율 960% (280% + 280% + 400%)",
+          "스플래시 범위 반경 2m",
+          "크리티컬 확률 증가 35%",
+          "영혼력 5%",
+          "재사용 대기 시간 7초"
+        ],
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 190000 }],
+        "accumulate_stats": { "sp": 10, "str": 10 },
+        "accumulate_ap": 149
+      }
+    ]
   }
 ]

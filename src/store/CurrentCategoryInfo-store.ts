@@ -1,20 +1,20 @@
 import create from "zustand";
 
-interface storeType {
+interface StoreType {
   total_ap_array: {
     id: number;
     ap: number;
   }[];
   total_stats_array: StatsIncludeIdTypes[];
 
-  setApTable(skill: SkillsTypes, newRankByAP: number): void;
-  setStatsTable(skill: SkillsTypes, newRankByStats: StatsTypes): void;
-
   total_ap: number;
   total_stats: StatsIncludeIdTypes;
+
+  setApTable(skill: SkillsTypes, newRankByAP: number): void;
+  setStatsTable(skill: SkillsTypes, newRankByStats: StatsTypes): void;
 }
 
-const useCurrentCategoryInfoStore = create<storeType>((set, getState) => ({
+const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
   total_ap_array: [],
   total_stats_array: [],
 

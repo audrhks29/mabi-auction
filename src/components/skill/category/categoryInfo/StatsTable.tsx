@@ -83,8 +83,8 @@ export default function StatsTable() {
           <TableCell>차이</TableCell>
           <TableCell>{(total.ap || 0) - (total_ap || 0)}</TableCell>
           <TableCell>{(total.stats.hp || 0) - (total_stats.hp || 0)}</TableCell>
-          <TableCell>{(total.stats.mp || 0) - (total_stats.hp || 0)}</TableCell>
-          <TableCell>{(total.stats.sp || 0) - (total_stats.hp || 0)}</TableCell>
+          <TableCell>{(total.stats.mp || 0) - (total_stats.mp || 0)}</TableCell>
+          <TableCell>{(total.stats.sp || 0) - (total_stats.sp || 0)}</TableCell>
           <TableCell>{(total.stats.str || 0) - (total_stats.str || 0)}</TableCell>
           <TableCell>{(total.stats.dex || 0) - (total_stats.dex || 0)}</TableCell>
           <TableCell>{(total.stats.int || 0) - (total_stats.int || 0)}</TableCell>

@@ -16,7 +16,7 @@
         "rank": "연습",
         "bonus_stats": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 7 }],
-        "effect": ["대미지 배율", "사정거리", "경직시간", "영혼력", "재사용 대기시간"],
+        "effect": ["대미지 배율 70%", "사정거리 6.5m", "경직시간 0.5초", "영혼력 3%", "재사용 대기시간 8초"],
         "need_ap": 1,
         "accumulate_rp": [{ "title": "인형술사", "exp": 0 }],
         "accumulate_stats": null,
@@ -396,7 +396,7 @@
         "bonus_stats": { "str": 1 },
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
         "effect": [
-          "대미지 배율 230% (65% + 65% + 100%)",
+          "대미지 배율 185% (50% + 50% + 85%)",
           "스플래시 범위 반경 2m",
           "크리티컬 확률 증가 5%",
           "영혼력 5%",
@@ -414,7 +414,7 @@
         },
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
         "effect": [
-          "대미지 배율 275% (80% + 80% + 115%)",
+          "대미지 배율 230% (65% + 65% + 100%)",
           "스플래시 범위 반경 2m",
           "크리티컬 확률 증가 5%",
           "영혼력 5%",
@@ -725,6 +725,705 @@
         "accumulate_rp": [{ "title": "인형술사", "exp": 190000 }],
         "accumulate_stats": { "sp": 10, "str": 10 },
         "accumulate_ap": 149
+      }
+    ]
+  },
+  {
+    "skill_id": 3,
+    "talent": ["puppeteer"],
+    "talent_kor": ["인형사"],
+    "category": "puppetry",
+    "category_kor": "인형술",
+    "isPromotion": true,
+    "name_kor": "4막: 질투의 화신",
+    "icon": "/images/skill/puppetry/act4.webp",
+    "description": "인형사의 주변에 있는 모든 적들을 밖으로 밀쳐내고 피해를 입히는 마리오네트 전투 스킬.\n짝사랑 하는 사람에게 접근하는 사람들을 밀쳐내는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
+    "total_need_ap": 193,
+    "total_stats": { "will": 15, "dex": 3 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": { "will": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": ["데미지 배율 120%", "스플래시 범위 반경 4m", "영혼력 4%", "재사용 대기 시간 10초"],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stat": null,
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
+        "effect": ["데미지 배율 140%", "스플래시 범위 반경 4.5m", "영혼력 4%", "재사용 대기 시간 10초"],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 1500 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 3
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "will": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
+        "effect": ["데미지 배율 160%", "스플래시 범위 반경 4.5m", "영혼력 4%", "재사용 대기 시간 10초"],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 3500 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 6
+      },
+      {
+        "rank": "D",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 180%", "스플래시 범위 반경 4.5m", "영혼력 4%", "재사용 대기 시간 10초"],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 6500 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 10
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 200%", "스플래시 범위 반경 5m", "영혼력 4%", "재사용 대기 시간 10초"],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 11500 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 14
+      },
+      {
+        "rank": "B",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 220%", "스플래시 범위 반경 5m", "영혼력 4%", "재사용 대기 시간 10초"],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 16500 }],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 19
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 240%", "스플래시 범위 반경 5m", "영혼력 4%", "재사용 대기 시간 10초"],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 23500 }],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 24
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 270%", "스플래시 범위 반경 5.5m", "영혼력 4%", "재사용 대기 시간 9초"],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 31500 }],
+        "accumulate_stats": { "dex": 1, "will": 3 },
+        "accumulate_ap": 31
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 300%", "스플래시 범위 반경 5.5m", "영혼력 4%", "재사용 대기 시간 9초"],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 42500 }],
+        "accumulate_stats": { "dex": 1, "will": 4 },
+        "accumulate_ap": 40
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 16, "max_count": 3 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 20, "max_count": 1 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 80, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 330%", "스플래시 범위 반경 5.5m", "영혼력 4%", "재사용 대기 시간 9초"],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 54500 }],
+        "accumulate_stats": { "dex": 1, "will": 5 },
+        "accumulate_ap": 51
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "dex": 1, "will": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 10, "max_count": 4 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 16, "max_count": 1 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 80, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 360%", "스플래시 범위 반경 5.5m", "영혼력 4%", "재사용 대기 시간 9초"],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 69500 }],
+        "accumulate_stats": { "dex": 1, "will": 6 },
+        "accumulate_ap": 64
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "will": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 6.8, "max_count": 5 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 12, "max_count": 2 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 400%", "스플래시 범위 반경 6m", "영혼력 4%", "재사용 대기 시간 8초"],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 87500 }],
+        "accumulate_stats": { "dex": 2, "will": 7 },
+        "accumulate_ap": 79
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "will": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 30 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 4.8, "max_count": 8 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 8, "max_count": 2 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 440%", "스플래시 범위 반경 6m", "영혼력 4%", "재사용 대기 시간 8초"],
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 111500 }],
+        "accumulate_stats": { "dex": 2, "will": 9 },
+        "accumulate_ap": 96
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "will": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 38 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 3.2, "max_count": 13 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 4, "max_count": 2 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 24, "max_count": 1 },
+          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 480%", "스플래시 범위 반경 6m", "영혼력 4%", "재사용 대기 시간 8초"],
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 138500 }],
+        "accumulate_stats": { "dex": 2, "will": 11 },
+        "accumulate_ap": 115
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "will": 2, "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 43 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2.4, "max_count": 18 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 4, "max_count": 2 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 24, "max_count": 1 },
+          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 32, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 400%", "스플래시 범위 반경 6m", "영혼력 4%", "재사용 대기 시간 8초"],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 168500 }],
+        "accumulate_stats": { "dex": 2, "will": 13 },
+        "accumulate_ap": 136
+      },
+      {
+        "rank": "1",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 3.2, "max_count": 3 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 14, "max_count": 2 },
+          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 20, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 560%", "스플래시 범위 반경 6.5m", "영혼력 4%", "재사용 대기 시간 7초"],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 201500 }],
+        "accumulate_stats": { "dex": 3, "will": 15 },
+        "accumulate_ap": 161
+      },
+      {
+        "rank": "1단",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 3.2, "max_count": 3 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 14, "max_count": 2 },
+          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 20, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 600%", "스플래시 범위 반경 6.5m", "영혼력 4%", "재사용 대기 시간 7초"],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 201500 }],
+        "accumulate_stats": { "dex": 3, "will": 15 },
+        "accumulate_ap": 168
+      },
+      {
+        "rank": "2단",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 3.2, "max_count": 3 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 14, "max_count": 2 },
+          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 20, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 640%", "스플래시 범위 반경 6.5m", "영혼력 4%", "재사용 대기 시간 7초"],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 201500 }],
+        "accumulate_stats": { "dex": 3, "will": 15 },
+        "accumulate_ap": 178
+      },
+      {
+        "rank": "3단",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
+          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
+          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 3.2, "max_count": 3 },
+          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 14, "max_count": 2 },
+          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 20, "max_count": 1 }
+        ],
+        "effect": ["데미지 배율 680%", "스플래시 범위 반경 6.5m", "영혼력 4%", "재사용 대기 시간 7초"],
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 201500 }],
+        "accumulate_stats": { "dex": 3, "will": 15 },
+        "accumulate_ap": 193
+      }
+    ]
+  },
+  {
+    "skill_id": 4,
+    "talent": ["puppeteer"],
+    "talent_kor": ["인형사"],
+    "category": "puppetry",
+    "category_kor": "인형술",
+    "isPromotion": true,
+    "name_kor": "6막: 유혹의 올가미",
+    "icon": "/images/skill/puppetry/act6.webp",
+    "description": "마리오네트가 주변으로 실을 뻗어 범위 안에 있는 모든 적들을 자기 자신 쪽으로 당기고 도발하는 마리오네트 전투 스킬.\n사람들을 현혹해서 세계를 혼란에 빠뜨리는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
+    "total_need_ap": 299,
+    "total_stats": { "str": 6, "dex": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": [
+          "대미지 배율 ?%",
+          "범위 반경 4m",
+          "도발 유지 시간 3초",
+          "5초 동안 마리오네트의 방어력 12, 보호 1 증가",
+          "재사용 대기 시간 25초",
+          "영혼력 10%"
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0
+      },
+      {
+        "rank": "F",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
+        "effect": [
+          "대미지 배율 100%",
+          "범위 반경 4m",
+          "도발 유지 시간 3초",
+          "5초 동안 마리오네트의 방어력 12, 보호 1 증가",
+          "재사용 대기 시간 25초",
+          "영혼력 10%"
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 2000 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 7
+      },
+      {
+        "rank": "E",
+        "bonus_stat": { "str": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
+        "effect": [
+          "대미지 배율 105%",
+          "범위 반경 4m",
+          "도발 유지 시간 3초",
+          "5초 동안 마리오네트의 방어력 14, 보호 2 증가",
+          "재사용 대기 시간 25초",
+          "영혼력 10%"
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 8000 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 15
+      },
+      {
+        "rank": "D",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 110%",
+          "범위 반경 4m",
+          "도발 유지 시간 3초",
+          "5초 동안 마리오네트의 방어력 16, 보호 3 증가",
+          "재사용 대기 시간 25초",
+          "영혼력 10%"
+        ],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 15000 }],
+        "accumulate_stats": { "str": 1, "dex": 2 },
+        "accumulate_ap": 24
+      },
+      {
+        "rank": "C",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 115%",
+          "범위 반경 4.5m",
+          "도발 유지 시간 3.5초",
+          "5.5초 동안 마리오네트의 방어력 18, 보호 4 증가",
+          "재사용 대기 시간 25초",
+          "영혼력 10%"
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 24000 }],
+        "accumulate_stats": { "str": 1, "dex": 4 },
+        "accumulate_ap": 35
+      },
+      {
+        "rank": "B",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 120%",
+          "범위 반경 4.5m",
+          "도발 유지 시간 3.5초",
+          "5.5초 동안 마리오네트의 방어력 20, 보호 5 증가",
+          "재사용 대기 시간 25초",
+          "영혼력 10%"
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 35000 }],
+        "accumulate_stats": { "str": 1, "dex": 5 },
+        "accumulate_ap": 47
+      },
+      {
+        "rank": "A",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 125%",
+          "범위 반경 4.5m",
+          "도발 유지 시간 3.5초",
+          "5.5초 동안 마리오네트의 방어력 22, 보호 6 증가",
+          "재사용 대기 시간 25초",
+          "영혼력 10%"
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 48000 }],
+        "accumulate_stats": { "str": 2, "dex": 5 },
+        "accumulate_ap": 60
+      },
+      {
+        "rank": "9",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 24, "max_count": 2 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 130%",
+          "범위 반경 5m",
+          "도발 유지 시간 4초",
+          "6초 동안 마리오네트의 방어력 24, 보호 7 증가",
+          "재사용 대기 시간 24초",
+          "영혼력 10%"
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 62000 }],
+        "accumulate_stats": { "str": 2, "dex": 7 },
+        "accumulate_ap": 76
+      },
+      {
+        "rank": "8",
+        "bonus_stat": { "srt": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 24, "max_count": 2 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 140%",
+          "범위 반경 5m",
+          "도발 유지 시간 4초",
+          "6초 동안 마리오네트의 방어력 26, 보호 8 증가",
+          "재사용 대기 시간 24초",
+          "영혼력 10%"
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 81000 }],
+        "accumulate_stats": { "str": 2, "dex": 8 },
+        "accumulate_ap": 93
+      },
+      {
+        "rank": "7",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 16, "max_count": 3 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 80, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 150%",
+          "범위 반경 5m",
+          "도발 유지 시간 4초",
+          "6초 동안 마리오네트의 방어력 28, 보호 9 증가",
+          "재사용 대기 시간 24초",
+          "영혼력 10%"
+        ],
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 104000 }],
+        "accumulate_stats": { "str": 3, "dex": 8 },
+        "accumulate_ap": 111
+      },
+      {
+        "rank": "6",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 10, "max_count": 4 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 16, "max_count": 1 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 80, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 160%",
+          "범위 반경 5m",
+          "도발 유지 시간 4초",
+          "6초 동안 마리오네트의 방어력 30, 보호 10 증가",
+          "재사용 대기 시간 24초",
+          "영혼력 10%"
+        ],
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 132000 }],
+        "accumulate_stats": { "str": 3, "dex": 9 },
+        "accumulate_ap": 130
+      },
+      {
+        "rank": "5",
+        "bonus_stat": { "str": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 7.2, "max_count": 5 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 12, "max_count": 2 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 165%",
+          "범위 반경 5.5m",
+          "도발 유지 시간 4.5초",
+          "6.5초 동안 마리오네트의 방어력 32, 보호 11 증가",
+          "재사용 대기 시간 23초",
+          "영혼력 10%"
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 165000 }],
+        "accumulate_stats": { "str": 3, "dex": 11 },
+        "accumulate_ap": 153
+      },
+      {
+        "rank": "4",
+        "bonus_stat": { "dex": 1 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 28 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 4.8, "max_count": 8 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 8, "max_count": 2 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 175%",
+          "범위 반경 5.5m",
+          "도발 유지 시간 4.5초",
+          "6.5초 동안 마리오네트의 방어력 34, 보호 12 증가",
+          "재사용 대기 시간 23초",
+          "영혼력 10%"
+        ],
+        "need_ap": 27,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 204000 }],
+        "accumulate_stats": { "str": 4, "dex": 11 },
+        "accumulate_ap": 178
+      },
+      {
+        "rank": "3",
+        "bonus_stat": { "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.4, "max_count": 30 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 13 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 4, "max_count": 2 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 24, "max_count": 1 },
+          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 185%",
+          "범위 반경 5.5m",
+          "도발 유지 시간 4.5초",
+          "6.5초 동안 마리오네트의 방어력 36, 보호 13 증가",
+          "재사용 대기 시간 23초",
+          "영혼력 10%"
+        ],
+        "need_ap": 29,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 248000 }],
+        "accumulate_stats": { "str": 4, "dex": 12 },
+        "accumulate_ap": 205
+      },
+      {
+        "rank": "2",
+        "bonus_stat": { "str": 2, "dex": 3 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 33 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2.4, "max_count": 18 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 4, "max_count": 2 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 24, "max_count": 1 },
+          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 32, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 195%",
+          "범위 반경 5.5m",
+          "도발 유지 시간 4.5초",
+          "6.5초 동안 마리오네트의 방어력 38, 보호 14 증가",
+          "재사용 대기 시간 23초",
+          "영혼력 10%"
+        ],
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 294000 }],
+        "accumulate_stats": { "str": 4, "dex": 14 },
+        "accumulate_ap": 234
+      },
+      {
+        "rank": "1",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2, "max_count": 25 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 3 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 14, "max_count": 2 },
+          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 200%",
+          "범위 반경 6m",
+          "도발 유지 시간 5초",
+          "7초 동안 마리오네트의 방어력 40, 보호 15 증가",
+          "재사용 대기 시간 22초",
+          "영혼력 10%"
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 342000 }],
+        "accumulate_stats": { "str": 6, "dex": 17 },
+        "accumulate_ap": 267
+      },
+      {
+        "rank": "1단",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2, "max_count": 25 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 3 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 14, "max_count": 2 },
+          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 205%",
+          "범위 반경 6m",
+          "도발 유지 시간 5.5초",
+          "7초 동안 마리오네트의 방어력 42, 보호 16 증가",
+          "재사용 대기 시간 22초",
+          "영혼력 10%"
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 342000 }],
+        "accumulate_stats": { "str": 6, "dex": 17 },
+        "accumulate_ap": 274
+      },
+      {
+        "rank": "2단",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2, "max_count": 25 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 3 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 14, "max_count": 2 },
+          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 210%",
+          "범위 반경 6m",
+          "도발 유지 시간 6초",
+          "7초 동안 마리오네트의 방어력 44, 보호 17 증가",
+          "재사용 대기 시간 22초",
+          "영혼력 10%"
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 342000 }],
+        "accumulate_stats": { "str": 6, "dex": 17 },
+        "accumulate_ap": 284
+      },
+      {
+        "rank": "3단",
+        "bonus_stat": null,
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
+          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2, "max_count": 25 },
+          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 3 },
+          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 14, "max_count": 2 },
+          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 }
+        ],
+        "effect": [
+          "대미지 배율 215%",
+          "범위 반경 6.5m",
+          "도발 유지 시간 6.5초",
+          "7초 동안 마리오네트의 방어력 46, 보호 18 증가",
+          "재사용 대기 시간 22초",
+          "영혼력 10%"
+        ],
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인형술사", "exp": 342000 }],
+        "accumulate_stats": { "str": 6, "dex": 17 },
+        "accumulate_ap": 299
       }
     ]
   }

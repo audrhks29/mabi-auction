@@ -1,628 +1,5 @@
 [
   {
-    "skill_id": 3,
-    "talent": ["puppeteer"],
-    "talent_kor": ["인형사"],
-    "category": "puppetry",
-    "category_kor": "인형술",
-    "isPromotion": true,
-    "name_kor": "4막: 질투의 화신",
-    "icon": "/images/skill/puppetry/act4.webp",
-    "description": "인형사의 주변에 있는 모든 적들을 밖으로 밀쳐내고 피해를 입히는 마리오네트 전투 스킬.\n짝사랑 하는 사람에게 접근하는 사람들을 밀쳐내는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
-    "skill_by_total": { "need_ap": 193, "will": 15, "dex": 3 },
-    "skill_by_rank": [
-      {
-        "rank": "연습",
-        "bonus_stat": null,
-        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
-        "effect": ["데미지 배율 ?%", "스플래시 범위 반경 4.5m", "영혼력 4%", "재사용 대기 시간 10초"],
-        "need_ap": 0,
-        "rp": [{ "title": "인형술사", "exp": 0 }]
-      },
-      {
-        "rank": "F",
-        "bonus_stat": { "will": 1 },
-        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
-        "effect": ["데미지 배율 140%", "스플래시 범위 반경 4.5m", "영혼력 4%", "재사용 대기 시간 10초"],
-
-        "need_ap": 3,
-        "rp": [{ "title": "인형술사", "exp": 1500 }]
-      },
-      {
-        "rank": "E",
-        "bonus_stat": null,
-        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
-        "effect": ["데미지 배율 160%", "스플래시 범위 반경 4.5m", "영혼력 4%", "재사용 대기 시간 10초"],
-
-        "need_ap": 3,
-        "rp": [{ "title": "인형술사", "exp": 2000 }]
-      },
-      {
-        "rank": "D",
-        "bonus_stat": { "will": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 100, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 180%", "스플래시 범위 반경 4.5m", "영혼력 4%", "재사용 대기 시간 10초"],
-        "need_ap": 4,
-        "rp": [{ "title": "인형술사", "exp": 3000 }]
-      },
-      {
-        "rank": "C",
-        "bonus_stat": null,
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 60, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 200%", "스플래시 범위 반경 5m", "영혼력 4%", "재사용 대기 시간 10초"],
-        "need_ap": 4,
-        "rp": [{ "title": "인형술사", "exp": 5000 }]
-      },
-      {
-        "rank": "B",
-        "bonus_stat": { "will": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 100, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 220%", "스플래시 범위 반경 5m", "영혼력 4%", "재사용 대기 시간 10초"],
-        "need_ap": 5,
-        "rp": [{ "title": "인형술사", "exp": 5000 }]
-      },
-      {
-        "rank": "A",
-        "bonus_stat": null,
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 100, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 240%", "스플래시 범위 반경 5m", "영혼력 4%", "재사용 대기 시간 10초"],
-        "need_ap": 5,
-        "rp": [{ "title": "인형술사", "exp": 7000 }]
-      },
-      {
-        "rank": "9",
-        "bonus_stat": { "dex": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 60, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 270%", "스플래시 범위 반경 5.5m", "영혼력 4%", "재사용 대기 시간 9초"],
-        "need_ap": 7,
-        "rp": [{ "title": "인형술사", "exp": 8000 }]
-      },
-      {
-        "rank": "8",
-        "bonus_stat": { "will": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 60, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 300%", "스플래시 범위 반경 5.5m", "영혼력 4%", "재사용 대기 시간 9초"],
-        "need_ap": 9,
-        "rp": [{ "title": "인형술사", "exp": 11000 }]
-      },
-      {
-        "rank": "7",
-        "bonus_stat": { "will": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 16, "max_count": 3 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 20, "max_count": 1 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 80, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 330%", "스플래시 범위 반경 5.5m", "영혼력 4%", "재사용 대기 시간 9초"],
-        "need_ap": 11,
-        "rp": [{ "title": "인형술사", "exp": 12000 }]
-      },
-      {
-        "rank": "6",
-        "bonus_stat": { "will": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 10, "max_count": 4 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 16, "max_count": 1 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 80, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 360%", "스플래시 범위 반경 5.5m", "영혼력 4%", "재사용 대기 시간 9초"],
-        "need_ap": 13,
-        "rp": [{ "title": "인형술사", "exp": 15000 }]
-      },
-      {
-        "rank": "5",
-        "bonus_stat": { "will": 1, "dex": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 6.8, "max_count": 5 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 12, "max_count": 2 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 40, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 400%", "스플래시 범위 반경 6m", "영혼력 4%", "재사용 대기 시간 8초"],
-        "need_ap": 15,
-        "rp": [{ "title": "인형술사", "exp": 18000 }]
-      },
-      {
-        "rank": "4",
-        "bonus_stat": { "will": 2 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 30 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 4.8, "max_count": 8 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 8, "max_count": 2 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 40, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 440%", "스플래시 범위 반경 6m", "영혼력 4%", "재사용 대기 시간 8초"],
-        "need_ap": 17,
-        "rp": [{ "title": "인형술사", "exp": 24000 }]
-      },
-      {
-        "rank": "3",
-        "bonus_stat": { "will": 2 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 38 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 3.2, "max_count": 13 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 4, "max_count": 2 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 24, "max_count": 1 },
-          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 40, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 480%", "스플래시 범위 반경 6m", "영혼력 4%", "재사용 대기 시간 8초"],
-        "need_ap": 19,
-        "rp": [{ "title": "인형술사", "exp": 27000 }]
-      },
-      {
-        "rank": "2",
-        "bonus_stat": { "will": 2 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 43 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2.4, "max_count": 18 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 4, "max_count": 2 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 24, "max_count": 1 },
-          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 32, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 400%", "스플래시 범위 반경 6m", "영혼력 4%", "재사용 대기 시간 8초"],
-        "need_ap": 21,
-        "rp": [{ "title": "인형술사", "exp": 30000 }]
-      },
-      {
-        "rank": "1",
-        "bonus_stat": { "will": 2, "dex": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 3.2, "max_count": 3 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 14, "max_count": 2 },
-          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 20, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 560%", "스플래시 범위 반경 6.5m", "영혼력 4%", "재사용 대기 시간 7초"],
-        "need_ap": 25,
-        "rp": [{ "title": "인형술사", "exp": 30000 }]
-      },
-      {
-        "rank": "1단",
-        "bonus_stat": null,
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 3.2, "max_count": 3 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 14, "max_count": 2 },
-          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 20, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 600%", "스플래시 범위 반경 6.5m", "영혼력 4%", "재사용 대기 시간 7초"],
-        "need_ap": 7,
-        "rp": [{ "title": "인형술사", "exp": 30000 }]
-      },
-      {
-        "rank": "2단",
-        "bonus_stat": null,
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 3.2, "max_count": 3 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 14, "max_count": 2 },
-          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 20, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 640%", "스플래시 범위 반경 6.5m", "영혼력 4%", "재사용 대기 시간 7초"],
-        "need_ap": 10,
-        "rp": [{ "title": "인형술사", "exp": 30000 }]
-      },
-      {
-        "rank": "3단",
-        "bonus_stat": null,
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 50 },
-          { "title": "4막: 질투의 화신으로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
-          { "title": "넷 이상의 적을 동시에 공격", "training_exp": 3.2, "max_count": 3 },
-          { "title": "여섯 이상의 적을 동시에 공격", "training_exp": 14, "max_count": 2 },
-          { "title": "넷 이상의 적에게 동시에 마지막 일격을 가함", "training_exp": 20, "max_count": 1 }
-        ],
-        "effect": ["데미지 배율 680%", "스플래시 범위 반경 6.5m", "영혼력 4%", "재사용 대기 시간 7초"],
-        "need_ap": 15,
-        "rp": [{ "title": "인형술사", "exp": 30000 }]
-      }
-    ]
-  },
-  {
-    "skill_id": 4,
-    "talent": ["puppeteer"],
-    "talent_kor": ["인형사"],
-    "category": "puppetry",
-    "category_kor": "인형술",
-    "isPromotion": true,
-    "name_kor": "6막: 유혹의 올가미",
-    "icon": "/images/skill/puppetry/act6.webp",
-    "description": "마리오네트가 주변으로 실을 뻗어 범위 안에 있는 모든 적들을 자기 자신 쪽으로 당기고 도발하는 마리오네트 전투 스킬.\n사람들을 현혹해서 세계를 혼란에 빠뜨리는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
-    "skill_by_total": { "need_ap": 299, "str": 6, "dex": 17 },
-    "skill_by_rank": [
-      {
-        "rank": "연습",
-        "bonus_stat": null,
-        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
-        "effect": [
-          "대미지 배율 ?%",
-          "범위 반경 4m",
-          "도발 유지 시간 3초",
-          "5초 동안 마리오네트의 방어력 12, 보호 1 증가",
-          "재사용 대기 시간 25초",
-          "영혼력 10%"
-        ],
-        "need_ap": 0,
-        "rp": [{ "title": "인형술사", "exp": 0 }]
-      },
-      {
-        "rank": "F",
-        "bonus_stat": { "dex": 1 },
-        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
-        "effect": [
-          "대미지 배율 100%",
-          "범위 반경 4m",
-          "도발 유지 시간 3초",
-          "5초 동안 마리오네트의 방어력 12, 보호 1 증가",
-          "재사용 대기 시간 25초",
-          "영혼력 10%"
-        ],
-        "need_ap": 7,
-        "rp": [{ "title": "인형술사", "exp": 2000 }]
-      },
-      {
-        "rank": "E",
-        "bonus_stat": { "dex": 1 },
-        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
-        "effect": [
-          "대미지 배율 105%",
-          "범위 반경 4m",
-          "도발 유지 시간 3초",
-          "5초 동안 마리오네트의 방어력 14, 보호 2 증가",
-          "재사용 대기 시간 25초",
-          "영혼력 10%"
-        ],
-        "need_ap": 8,
-        "rp": [{ "title": "인형술사", "exp": 6000 }]
-      },
-      {
-        "rank": "D",
-        "bonus_stat": { "str": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 100, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 110%",
-          "범위 반경 4m",
-          "도발 유지 시간 3초",
-          "5초 동안 마리오네트의 방어력 16, 보호 3 증가",
-          "재사용 대기 시간 25초",
-          "영혼력 10%"
-        ],
-        "need_ap": 9,
-        "rp": [{ "title": "인형술사", "exp": 7000 }]
-      },
-      {
-        "rank": "C",
-        "bonus_stat": { "dex": 2 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 60, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 115%",
-          "범위 반경 4.5m",
-          "도발 유지 시간 3.5초",
-          "5.5초 동안 마리오네트의 방어력 18, 보호 4 증가",
-          "재사용 대기 시간 25초",
-          "영혼력 10%"
-        ],
-        "need_ap": 11,
-        "rp": [{ "title": "인형술사", "exp": 9000 }]
-      },
-      {
-        "rank": "B",
-        "bonus_stat": { "dex": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 100, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 120%",
-          "범위 반경 4.5m",
-          "도발 유지 시간 3.5초",
-          "5.5초 동안 마리오네트의 방어력 20, 보호 5 증가",
-          "재사용 대기 시간 25초",
-          "영혼력 10%"
-        ],
-        "need_ap": 12,
-        "rp": [{ "title": "인형술사", "exp": 11000 }]
-      },
-      {
-        "rank": "A",
-        "bonus_stat": { "str": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 100, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 125%",
-          "범위 반경 4.5m",
-          "도발 유지 시간 3.5초",
-          "5.5초 동안 마리오네트의 방어력 22, 보호 6 증가",
-          "재사용 대기 시간 25초",
-          "영혼력 10%"
-        ],
-        "need_ap": 13,
-        "rp": [{ "title": "인형술사", "exp": 13000 }]
-      },
-      {
-        "rank": "9",
-        "bonus_stat": { "dex": 2 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 24, "max_count": 2 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 60, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 130%",
-          "범위 반경 5m",
-          "도발 유지 시간 4초",
-          "6초 동안 마리오네트의 방어력 24, 보호 7 증가",
-          "재사용 대기 시간 24초",
-          "영혼력 10%"
-        ],
-        "need_ap": 16,
-        "rp": [{ "title": "인형술사", "exp": 14000 }]
-      },
-      {
-        "rank": "8",
-        "bonus_stat": { "dex": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 24, "max_count": 2 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 60, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 140%",
-          "범위 반경 5m",
-          "도발 유지 시간 4초",
-          "6초 동안 마리오네트의 방어력 26, 보호 8 증가",
-          "재사용 대기 시간 24초",
-          "영혼력 10%"
-        ],
-        "need_ap": 17,
-        "rp": [{ "title": "인형술사", "exp": 19000 }]
-      },
-      {
-        "rank": "7",
-        "bonus_stat": { "str": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 16, "max_count": 3 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 80, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 150%",
-          "범위 반경 5m",
-          "도발 유지 시간 4초",
-          "6초 동안 마리오네트의 방어력 28, 보호 9 증가",
-          "재사용 대기 시간 24초",
-          "영혼력 10%"
-        ],
-        "need_ap": 18,
-        "rp": [{ "title": "인형술사", "exp": 23000 }]
-      },
-      {
-        "rank": "6",
-        "bonus_stat": { "dex": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 10, "max_count": 4 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 16, "max_count": 1 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 80, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 160%",
-          "범위 반경 5m",
-          "도발 유지 시간 4초",
-          "6초 동안 마리오네트의 방어력 30, 보호 10 증가",
-          "재사용 대기 시간 24초",
-          "영혼력 10%"
-        ],
-        "need_ap": 19,
-        "rp": [{ "title": "인형술사", "exp": 28000 }]
-      },
-      {
-        "rank": "5",
-        "bonus_stat": { "dex": 2 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 7.2, "max_count": 5 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 12, "max_count": 2 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 165%",
-          "범위 반경 5.5m",
-          "도발 유지 시간 4.5초",
-          "6.5초 동안 마리오네트의 방어력 32, 보호 11 증가",
-          "재사용 대기 시간 23초",
-          "영혼력 10%"
-        ],
-        "need_ap": 23,
-        "rp": [{ "title": "인형술사", "exp": 33000 }]
-      },
-      {
-        "rank": "4",
-        "bonus_stat": { "str": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 28 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 4.8, "max_count": 8 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 8, "max_count": 2 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 175%",
-          "범위 반경 5.5m",
-          "도발 유지 시간 4.5초",
-          "6.5초 동안 마리오네트의 방어력 34, 보호 12 증가",
-          "재사용 대기 시간 23초",
-          "영혼력 10%"
-        ],
-        "need_ap": 25,
-        "rp": [{ "title": "인형술사", "exp": 39000 }]
-      },
-      {
-        "rank": "3",
-        "bonus_stat": { "dex": 1 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 2.4, "max_count": 30 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 13 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 4, "max_count": 2 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 24, "max_count": 1 },
-          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 40, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 185%",
-          "범위 반경 5.5m",
-          "도발 유지 시간 4.5초",
-          "6.5초 동안 마리오네트의 방어력 36, 보호 13 증가",
-          "재사용 대기 시간 23초",
-          "영혼력 10%"
-        ],
-        "need_ap": 27,
-        "rp": [{ "title": "인형술사", "exp": 44000 }]
-      },
-      {
-        "rank": "2",
-        "bonus_stat": { "dex": 2 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 33 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2.4, "max_count": 18 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 4, "max_count": 2 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 24, "max_count": 1 },
-          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 32, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 195%",
-          "범위 반경 5.5m",
-          "도발 유지 시간 4.5초",
-          "6.5초 동안 마리오네트의 방어력 38, 보호 14 증가",
-          "재사용 대기 시간 23초",
-          "영혼력 10%"
-        ],
-        "need_ap": 29,
-        "rp": [{ "title": "인형술사", "exp": 46000 }]
-      },
-      {
-        "rank": "1",
-        "bonus_stat": { "str": 2, "dex": 3 },
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2, "max_count": 25 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 3 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 14, "max_count": 2 },
-          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 200%",
-          "범위 반경 6m",
-          "도발 유지 시간 5초",
-          "7초 동안 마리오네트의 방어력 40, 보호 15 증가",
-          "재사용 대기 시간 22초",
-          "영혼력 10%"
-        ],
-        "need_ap": 33,
-        "rp": [{ "title": "인형술사", "exp": 48000 }]
-      },
-      {
-        "rank": "1단",
-        "bonus_stat": null,
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2, "max_count": 25 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 3 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 14, "max_count": 2 },
-          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 205%",
-          "범위 반경 6m",
-          "도발 유지 시간 5.5초",
-          "7초 동안 마리오네트의 방어력 42, 보호 16 증가",
-          "재사용 대기 시간 22초",
-          "영혼력 10%"
-        ],
-        "need_ap": 7,
-        "rp": [{ "title": "인형술사", "exp": 48000 }]
-      },
-      {
-        "rank": "2단",
-        "bonus_stat": null,
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2, "max_count": 25 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 3 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 14, "max_count": 2 },
-          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 210%",
-          "범위 반경 6m",
-          "도발 유지 시간 6초",
-          "7초 동안 마리오네트의 방어력 44, 보호 17 증가",
-          "재사용 대기 시간 22초",
-          "영혼력 10%"
-        ],
-        "need_ap": 10,
-        "rp": [{ "title": "인형술사", "exp": 48000 }]
-      },
-      {
-        "rank": "3단",
-        "bonus_stat": null,
-        "training_list": [
-          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
-          { "title": "둘 이상의 적을 상대로 공격", "training_exp": 2, "max_count": 25 },
-          { "title": "넷 이상의 적을 상대로 공격", "training_exp": 3.2, "max_count": 3 },
-          { "title": "여섯 이상의 적을 상대로 공격", "training_exp": 14, "max_count": 2 },
-          { "title": "여덟 이상의 적을 상대로 공격", "training_exp": 20, "max_count": 1 }
-        ],
-        "effect": [
-          "대미지 배율 215%",
-          "범위 반경 6.5m",
-          "도발 유지 시간 6.5초",
-          "7초 동안 마리오네트의 방어력 46, 보호 18 증가",
-          "재사용 대기 시간 22초",
-          "영혼력 10%"
-        ],
-        "need_ap": 15,
-        "rp": [{ "title": "인형술사", "exp": 48000 }]
-      }
-    ]
-  },
-  {
     "skill_id": 5,
     "talent": ["puppeteer"],
     "talent_kor": ["인형사"],
@@ -632,7 +9,8 @@
     "name_kor": "7막: 광란의 질주",
     "icon": "/images/skill/puppetry/act7.webp",
     "description": "마리오네트가 앞으로 돌진하며 마주치는 모든 적들을 날려버리는 마리오네트 전투 스킬. 적들의 술수에 당해 광기에 휩싸여 날뛰는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
-    "skill_by_total": { "need_ap": 282, "str": 17, "dex": 8 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 282, "str": 17, "dex": 8 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -644,7 +22,7 @@
       },
       {
         "rank": "F",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
         "effect": ["대미지 배율 380%", "돌진거리 10m, 폭 4m", "쿨타임 20초", "영혼력 8%"],
         "need_ap": 5,
@@ -652,7 +30,7 @@
       },
       {
         "rank": "E",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
         "effect": ["대미지 배율 400%", "돌진거리 10m, 폭 4m", "쿨타임 20초", "영혼력 8%"],
         "need_ap": 6,
@@ -660,7 +38,7 @@
       },
       {
         "rank": "D",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 100, "max_count": 1 }
@@ -671,7 +49,7 @@
       },
       {
         "rank": "C",
-        "bonus_stat": { "str": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 60, "max_count": 1 }
@@ -682,7 +60,7 @@
       },
       {
         "rank": "B",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
@@ -694,7 +72,7 @@
       },
       {
         "rank": "A",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 32, "max_count": 1 },
@@ -706,7 +84,7 @@
       },
       {
         "rank": "9",
-        "bonus_stat": { "str": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
@@ -718,7 +96,7 @@
       },
       {
         "rank": "8",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 20, "max_count": 2 },
@@ -730,7 +108,7 @@
       },
       {
         "rank": "7",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 16, "max_count": 3 },
@@ -742,7 +120,7 @@
       },
       {
         "rank": "6",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 10, "max_count": 4 },
@@ -754,7 +132,7 @@
       },
       {
         "rank": "5",
-        "bonus_stat": { "str": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 6.8, "max_count": 5 },
@@ -766,7 +144,7 @@
       },
       {
         "rank": "4",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 28 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 5.2, "max_count": 8 },
@@ -778,7 +156,7 @@
       },
       {
         "rank": "3",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 2.4, "max_count": 30 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 3.2, "max_count": 13 },
@@ -790,7 +168,7 @@
       },
       {
         "rank": "2",
-        "bonus_stat": { "str": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 33 },
           { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 2.4, "max_count": 18 },
@@ -824,7 +202,8 @@
     "name_kor": "9막: 깨어나는 생명",
     "icon": "/images/skill/puppetry/act9.webp",
     "description": "마리오네트가 일시적으로 생명을 얻고 깨어나 직접 적들을 공격할 수 있게 해주는 전투 스킬. 직접 조종하는 경우에는 인형사의 지시에 따라 이전보다 더 강력한 공격을 할 수 있다. 새로운 생명을 얻고 깨어나는 감동적인 인형극 속 장면을 스킬로 재탄생 시킨 것으로 진정한 인형사만이 사용할 수 있다고 한다.",
-    "skill_by_total": { "need_ap": 286, "hp": 20, "dex": 9, "will": 10 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 286, "hp": 20, "dex": 9, "will": 10 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -844,7 +223,7 @@
       },
       {
         "rank": "F",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 3 },
           { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 24, "max_count": 4 }
@@ -882,7 +261,7 @@
       },
       {
         "rank": "D",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 8 },
           { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 8, "max_count": 12 }
@@ -920,7 +299,7 @@
       },
       {
         "rank": "B",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 13 },
           { "title": "스킬이 사용된 상태에서 마지막 일격을 가함", "training_exp": 3.2, "max_count": 19 },
@@ -1194,7 +573,8 @@
     "name_kor": "와이어 풀링",
     "icon": "/images/skill/puppetry/wirePulling.webp",
     "description": "멀리 떨어져 있는 적을 실로 묶어 자기 자신 쪽으로 강하게 끌어당기는 핸들 전투 스킬. 하나의 적을 무리로부터 떼어놓거나 아군에게 달려드는 적을 방해하는 것에 유용하다.",
-    "skill_by_total": { "need_ap": 154, "sp": 12, "dex": 4 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 154, "sp": 12, "dex": 4 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -1206,7 +586,7 @@
       },
       {
         "rank": "F",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
         "effect": ["대미지 배율 70%", "사정거리 10m"],
         "need_ap": 1,
@@ -1214,7 +594,7 @@
       },
       {
         "rank": "E",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
         "effect": ["대미지 배율 80%", "사정거리 10m"],
         "need_ap": 2,
@@ -1222,7 +602,7 @@
       },
       {
         "rank": "D",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 100, "max_count": 1 }
@@ -1233,7 +613,7 @@
       },
       {
         "rank": "C",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 60, "max_count": 1 }
@@ -1244,7 +624,7 @@
       },
       {
         "rank": "B",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
@@ -1256,7 +636,7 @@
       },
       {
         "rank": "A",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 32, "max_count": 1 },
@@ -1268,7 +648,7 @@
       },
       {
         "rank": "9",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
@@ -1280,7 +660,7 @@
       },
       {
         "rank": "8",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 20, "max_count": 2 },
@@ -1292,7 +672,7 @@
       },
       {
         "rank": "7",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 16, "max_count": 3 },
@@ -1304,7 +684,7 @@
       },
       {
         "rank": "6",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 10, "max_count": 4 },
@@ -1316,7 +696,7 @@
       },
       {
         "rank": "5",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 6.8, "max_count": 5 },
@@ -1328,7 +708,7 @@
       },
       {
         "rank": "4",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 30 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 4.8, "max_count": 8 },
@@ -1340,7 +720,7 @@
       },
       {
         "rank": "3",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 38 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 3.2, "max_count": 13 },
@@ -1352,7 +732,7 @@
       },
       {
         "rank": "2",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 43 },
           { "title": "와이어 풀링으로 마지막 일격을 가함", "training_exp": 2.4, "max_count": 18 },
@@ -1386,7 +766,8 @@
     "name_kor": "와이어 바인딩",
     "icon": "/images/skill/puppetry/wireBinding.webp",
     "description": "멀리 떨어져 있는 적을 실로 묶어 움직이지 못하게 붙잡아두는 핸들 전투 스킬. 기술에 당한 적의 몸에 엉킨 실은 기술이 끝난 후에도 일정 시간동안 피해를 준다.",
-    "skill_by_total": { "need_ap": 145, "sp": 10, "dex": 6 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 145, "sp": 10, "dex": 6 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -1398,7 +779,7 @@
       },
       {
         "rank": "F",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
         "effect": ["사정거리 10m", "경직시간 4초", "순간 대미지 배율 30%", "지속 대미지 3초당 15"],
         "need_ap": 2,
@@ -1406,7 +787,7 @@
       },
       {
         "rank": "E",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
         "effect": ["사정거리 10m", "경직시간 4초", "순간 대미지 배율 30%", "지속 대미지 3초당 20"],
         "need_ap": 2,
@@ -1414,7 +795,7 @@
       },
       {
         "rank": "D",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
         "effect": ["사정거리 10m", "경직시간 4초", "순간 대미지 배율 30%", "지속 대미지 3초당 25"],
         "need_ap": 3,
@@ -1422,7 +803,7 @@
       },
       {
         "rank": "C",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 48, "max_count": 4 }],
         "effect": ["사정거리 10m", "경직시간 4초", "순간 대미지 배율 40%", "지속 대미지 3초당 30"],
         "need_ap": 3,
@@ -1430,7 +811,7 @@
       },
       {
         "rank": "B",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 36, "max_count": 5 }],
         "effect": ["사정거리 10m", "경직시간 4.5초", "순간 대미지 배율 40%", "지속 대미지 3초당 35"],
         "need_ap": 4,
@@ -1438,7 +819,7 @@
       },
       {
         "rank": "A",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 30, "max_count": 5 }],
         "effect": ["사정거리 10m", "경직시간 4.5초", "순간 대미지 배율 40%", "지속 대미지 3초당 40"],
         "need_ap": 5,
@@ -1446,7 +827,7 @@
       },
       {
         "rank": "9",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 20, "max_count": 8 }],
         "effect": ["사정거리 11m", "경직시간 5초", "순간 대미지 배율 50%", "지속 대미지 3초당 50"],
         "need_ap": 8,
@@ -1454,7 +835,7 @@
       },
       {
         "rank": "8",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 15.2, "max_count": 10 }],
         "effect": ["사정거리 11m", "경직시간 5초", "순간 대미지 배율 50%", "지속 대미지 3초당 60"],
         "need_ap": 9,
@@ -1462,7 +843,7 @@
       },
       {
         "rank": "7",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 13 }],
         "effect": ["사정거리 11m", "경직시간 5초", "순간 대미지 배율 50%", "지속 대미지 3초당 70"],
         "need_ap": 10,
@@ -1470,7 +851,7 @@
       },
       {
         "rank": "6",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 8.8, "max_count": 18 }],
         "effect": ["사정거리 11m", "경직시간 5초", "순간 대미지 배율 50%", "지속 대미지 3초당 80"],
         "need_ap": 11,
@@ -1478,7 +859,7 @@
       },
       {
         "rank": "5",
-        "bonus_stat": { "dex": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 25 }],
         "effect": ["사정거리 12m", "경직시간 5.5초", "순간 대미지 배율 60%", "지속 대미지 3초당 90"],
         "need_ap": 15,
@@ -1486,7 +867,7 @@
       },
       {
         "rank": "4",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 5.2, "max_count": 30 }],
         "effect": ["사정거리 12m", "경직시간 5.5초", "순간 대미지 배율 60%", "지속 대미지 3초당 110"],
         "need_ap": 16,
@@ -1494,7 +875,7 @@
       },
       {
         "rank": "3",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 4, "max_count": 38 }],
         "effect": ["사정거리 12m", "경직시간 5.5초", "순간 대미지 배율 60%", "지속 대미지 3초당 130"],
         "need_ap": 17,
@@ -1502,7 +883,7 @@
       },
       {
         "rank": "2",
-        "bonus_stat": { "sp": 1 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 3.6, "max_count": 43 }],
         "effect": ["사정거리 12m", "경직시간 5.5초", "순간 대미지 배율 60%", "지속 대미지 3초당 150"],
         "need_ap": 18,
@@ -1510,7 +891,7 @@
       },
       {
         "rank": "1",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 3, "max_count": 50 }],
         "effect": ["사정거리 13m", "경직시간 6초", "순간 대미지 배율 70%", "지속 대미지 3초당 170"],
         "need_ap": 22,
@@ -1528,7 +909,8 @@
     "name_kor": "마리오네트 조종술",
     "icon": "/images/skill/puppetry/marionetteControl.webp",
     "description": "전투형 마리오네트를 조종하는 기술. 인형사의 시작이자 끝인 기술로 더 치명적이고 날카로운 마리오네트의 움직임을 통해 확인할 수 있다. 전설에 따르면 궁극에 달한 이형사의 마리오네트는 살아있는 사람처럼 스스로 움직일 수 있다고 전해진다.",
-    "skill_by_total": { "need_ap": 148, "sp": 8, "dex": 24 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 148, "sp": 8, "dex": 24 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -1659,7 +1041,7 @@
       },
       {
         "rank": "8",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 10 },
           { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 3.2, "max_count": 10 },
@@ -1678,7 +1060,7 @@
       },
       {
         "rank": "7",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 13 },
           { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 2, "max_count": 13 },
@@ -1698,7 +1080,7 @@
       },
       {
         "rank": "6",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 1.2, "max_count": 18 },
           { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 1.2, "max_count": 18 },
@@ -1718,7 +1100,7 @@
       },
       {
         "rank": "5",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 0.8, "max_count": 25 },
           { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.8, "max_count": 25 },
@@ -1739,7 +1121,7 @@
       },
       {
         "rank": "4",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 0.4, "max_count": 28 },
           { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.8, "max_count": 30 },
@@ -1760,7 +1142,7 @@
       },
       {
         "rank": "3",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 0.4, "max_count": 30 },
           { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.6, "max_count": 38 },
@@ -1781,7 +1163,7 @@
       },
       {
         "rank": "2",
-        "bonus_stat": { "dex": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 0.32, "max_count": 33 },
           { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.48, "max_count": 43 },
@@ -1802,7 +1184,7 @@
       },
       {
         "rank": "1",
-        "bonus_stat": { "dex": 3 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "스킬을 성공시킨다.", "training_exp": 0.32, "max_count": 38 },
           { "title": "2막: 솟구치는 분노를 사용한다.", "training_exp": 0.44, "max_count": 50 },
@@ -1833,7 +1215,8 @@
     "name_kor": "피에로 마리오네트",
     "icon": "/images/skill/puppetry/pierrotMarionette.webp",
     "description": "아름답지만 치명적인 무기를 숨기고 있는 전투형 피에로 마리오네트를 소환하는 기술, 스킬의 랭크에 따라서 점점 튼튼해진다. 인형사들의 비전이었던 전투형 마리오네트의 기술이 공개된 덕택에 모든 사람들이 사용할 수 있게 되었지만, 그 기술의 극에 도달할 수 있는 재능을 가진 사람은 그리 많지 않다고 한다.",
-    "skill_by_total": { "need_ap": 115, "hp": 5, "str": 5, "int": 5 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 115, "hp": 5, "str": 5, "int": 5 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -1866,7 +1249,7 @@
       },
       {
         "rank": "E",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 28, "max_count": 4 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 56, "max_count": 2 }
@@ -1882,7 +1265,7 @@
       },
       {
         "rank": "D",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 16, "max_count": 7 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 32, "max_count": 4 }
@@ -1898,7 +1281,7 @@
       },
       {
         "rank": "C",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 14, "max_count": 8 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 28, "max_count": 4 }
@@ -1914,7 +1297,7 @@
       },
       {
         "rank": "B",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 10, "max_count": 10 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 20, "max_count": 5 }
@@ -1930,7 +1313,7 @@
       },
       {
         "rank": "A",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 8, "max_count": 13 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 16, "max_count": 7 }
@@ -1946,7 +1329,7 @@
       },
       {
         "rank": "9",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 6, "max_count": 19 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 12, "max_count": 10 }
@@ -1962,7 +1345,7 @@
       },
       {
         "rank": "8",
-        "bonus_stat": { "int": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 4, "max_count": 25 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 8, "max_count": 13 }
@@ -1978,7 +1361,7 @@
       },
       {
         "rank": "7",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 2.8, "max_count": 38 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 5.6, "max_count": 19 }
@@ -1994,7 +1377,7 @@
       },
       {
         "rank": "6",
-        "bonus_stat": { "int": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 2, "max_count": 50 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 4, "max_count": 25 }
@@ -2010,7 +1393,7 @@
       },
       {
         "rank": "5",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 1.6, "max_count": 63 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 3.2, "max_count": 32 }
@@ -2026,7 +1409,7 @@
       },
       {
         "rank": "4",
-        "bonus_stat": { "int": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 1.4, "max_count": 75 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 2.8, "max_count": 38 }
@@ -2042,7 +1425,7 @@
       },
       {
         "rank": "3",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 1, "max_count": 100 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 2, "max_count": 50 }
@@ -2058,7 +1441,7 @@
       },
       {
         "rank": "2",
-        "bonus_stat": { "int": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "피에로 마리오네트로 적을 공격한다.", "training_exp": 0.8, "max_count": 125 },
           { "title": "피에로 마리오네트를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 63 }
@@ -2100,7 +1483,8 @@
     "name_kor": "콜로서스 마리오네트",
     "icon": "/images/skill/puppetry/colossusMarionette.webp",
     "description": "커다란 덩치 만큼이나 강력한 전투형 콜로서스 마리오네트를 소환하는 기술, 스킬의 랭크에 따라서 점점 튼튼해진다. 인형사들의 비전이었던 전투형 마리오네트의 기술이 공개된 덕택에 모든 사람들이 사용할 수 있게 되었지만, 그 기술의 극에 도달할 수 있는 재능을 가진 사람은 그리 많지 않다고 한다.",
-    "skill_by_total": { "need_ap": 115, "hp": 5, "str": 5, "int": 5 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 115, "hp": 5, "str": 5, "int": 5 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -2133,7 +1517,7 @@
       },
       {
         "rank": "E",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 28, "max_count": 4 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 56, "max_count": 2 }
@@ -2149,7 +1533,7 @@
       },
       {
         "rank": "D",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 16, "max_count": 7 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 32, "max_count": 4 }
@@ -2165,7 +1549,7 @@
       },
       {
         "rank": "C",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 14, "max_count": 8 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 28, "max_count": 4 }
@@ -2181,7 +1565,7 @@
       },
       {
         "rank": "B",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 10, "max_count": 10 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 20, "max_count": 5 }
@@ -2197,7 +1581,7 @@
       },
       {
         "rank": "A",
-        "bonus_stat": { "hp": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 8, "max_count": 13 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 16, "max_count": 7 }
@@ -2213,7 +1597,7 @@
       },
       {
         "rank": "9",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 6, "max_count": 19 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 12, "max_count": 10 }
@@ -2229,7 +1613,7 @@
       },
       {
         "rank": "8",
-        "bonus_stat": { "int": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 4, "max_count": 25 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 8, "max_count": 13 }
@@ -2245,7 +1629,7 @@
       },
       {
         "rank": "7",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 2.8, "max_count": 38 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 5.6, "max_count": 19 }
@@ -2261,7 +1645,7 @@
       },
       {
         "rank": "6",
-        "bonus_stat": { "int": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 2, "max_count": 50 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 4, "max_count": 25 }
@@ -2277,7 +1661,7 @@
       },
       {
         "rank": "5",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 1.6, "max_count": 63 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 3.2, "max_count": 32 }
@@ -2293,7 +1677,7 @@
       },
       {
         "rank": "4",
-        "bonus_stat": { "int": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 1.4, "max_count": 75 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 2.8, "max_count": 38 }
@@ -2309,7 +1693,7 @@
       },
       {
         "rank": "3",
-        "bonus_stat": { "str": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 1, "max_count": 100 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 2, "max_count": 50 }
@@ -2325,7 +1709,7 @@
       },
       {
         "rank": "2",
-        "bonus_stat": { "int": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "콜로서스 마리오네트로 적을 공격한다.", "training_exp": 0.8, "max_count": 125 },
           { "title": "콜로서스 마리오네트를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 63 }
@@ -2367,7 +1751,8 @@
     "name_kor": "교역 마스터리",
     "icon": "/images/skill/life/commerceMastery.webp",
     "description": "뛰어난 상인이 되기 위해서는 얼마에 사느냐도 중요하지만 얼마에 파느냐가 더 중요하다. 이 스킬을 익히면 교역을 할 때, 조금 더 이득을 볼 수 있다고 한다. 다만 손해를 보는 상황을 이득으로 전환시켜 주지는 않는다고 한다.",
-    "skill_by_total": { "need_ap": 336, "luck": 30 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 336, "luck": 30 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -2379,7 +1764,7 @@
       },
       {
         "rank": "F",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 100 시즌 두카트 이상을 벌었다.",
@@ -2393,7 +1778,7 @@
       },
       {
         "rank": "E",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 100 시즌 두카트 이상을 벌었다.",
@@ -2407,7 +1792,7 @@
       },
       {
         "rank": "D",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 100 시즌 두카트 이상을 벌었다.",
@@ -2421,7 +1806,7 @@
       },
       {
         "rank": "C",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 100 시즌 두카트 이상을 벌었다.",
@@ -2440,7 +1825,7 @@
       },
       {
         "rank": "B",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 100 시즌 두카트 이상을 벌었다.",
@@ -2459,7 +1844,7 @@
       },
       {
         "rank": "A",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 100 시즌 두카트 이상을 벌었다.",
@@ -2478,7 +1863,7 @@
       },
       {
         "rank": "9",
-        "bonus_stat": { "luck": 2 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 1000 시즌 두카트 이상을 벌었다.",
@@ -2497,7 +1882,7 @@
       },
       {
         "rank": "8",
-        "bonus_stat": { "luck": 2 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 1000 시즌 두카트 이상을 벌었다.",
@@ -2516,7 +1901,7 @@
       },
       {
         "rank": "7",
-        "bonus_stat": { "luck": 2 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 1000 시즌 두카트 이상을 벌었다.",
@@ -2535,7 +1920,7 @@
       },
       {
         "rank": "6",
-        "bonus_stat": { "luck": 2 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 1000 시즌 두카트 이상을 벌었다.",
@@ -2554,7 +1939,7 @@
       },
       {
         "rank": "5",
-        "bonus_stat": { "luck": 3 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 5000 시즌 두카트 이상을 벌었다.",
@@ -2568,7 +1953,7 @@
       },
       {
         "rank": "4",
-        "bonus_stat": { "luck": 3 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 5000 시즌 두카트 이상을 벌었다.",
@@ -2582,7 +1967,7 @@
       },
       {
         "rank": "3",
-        "bonus_stat": { "luck": 3 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 5000 시즌 두카트 이상을 벌었다.",
@@ -2596,7 +1981,7 @@
       },
       {
         "rank": "2",
-        "bonus_stat": { "luck": 3 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 5000 시즌 두카트 이상을 벌었다.",
@@ -2610,7 +1995,7 @@
       },
       {
         "rank": "1",
-        "bonus_stat": { "luck": 4 },
+        "bonus_stat": null,
         "training_list": [
           {
             "title": "교역소에서 교역을 하여 한 번에 5000 시즌 두카트 이상을 벌었다.",
@@ -2634,7 +2019,8 @@
     "name_kor": "골드 스트라이크",
     "icon": "/images/skill/battle/goldStrike.webp",
     "description": "성공한 상인들은 돈으로 생각보다 많은 것을 할 수 있다는 것을 알고 있다. 돈이 생명보다 소중하지는 않지만, 돈으로 위험을 벗어날 기회를 살 수 있기 때문이다. 이 스킬은 돈자루를 직접 적에게 던져서 위기를 모면하고 적에게 피해를 주는 것으로, 여러 번 차지하면 더 큰 돈자루를 던져 피해를 높일 수도 있다. 1차지하면 100골드, 랭크를 올려 10차지를 하면 한번에 10000 골드가 소모된다. 행운이 높으면 드물게 금화가 크게 터져 나가기도 하는데 그럴 때는 주변의 적한테도 피해를 줄 수 있다고 한다. 하지만 어느 새 금고가 텅텅빌지도 모르니 주의하도록 하자.",
-    "skill_by_total": { "need_ap": 336, "luck": 30 },
+    "total_need_ap": 0,
+    "total_stats": { "need_ap": 336, "luck": 30 },
     "skill_by_rank": [
       {
         "rank": "연습",
@@ -2646,7 +2032,7 @@
       },
       {
         "rank": "F",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적을 공격한다.", "training_exp": 40, "max_count": 5 },
           { "title": "돈을 던져 적에게 승리", "training_exp": 60, "max_count": 1 }
@@ -2657,7 +2043,7 @@
       },
       {
         "rank": "E",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적을 공격한다.", "training_exp": 20, "max_count": 5 },
           { "title": "돈을 던져 적에게 승리", "training_exp": 40, "max_count": 2 }
@@ -2668,7 +2054,7 @@
       },
       {
         "rank": "D",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적을 공격한다.", "training_exp": 10, "max_count": 10 },
           { "title": "돈을 던져 적에게 승리", "training_exp": 20, "max_count": 3 }
@@ -2679,7 +2065,7 @@
       },
       {
         "rank": "C",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적을 공격한다.", "training_exp": 10, "max_count": 13 },
           { "title": "돈을 던져 적에게 승리", "training_exp": 16, "max_count": 4 }
@@ -2690,7 +2076,7 @@
       },
       {
         "rank": "B",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적을 공격한다.", "training_exp": 6, "max_count": 25 },
           { "title": "돈을 던져 적에게 승리", "training_exp": 8, "max_count": 5 }
@@ -2701,7 +2087,7 @@
       },
       {
         "rank": "A",
-        "bonus_stat": { "luck": 1 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적을 공격한다.", "training_exp": 4, "max_count": 25 },
           { "title": "돈을 던져 적에게 승리", "training_exp": 4, "max_count": 10 }
@@ -2712,7 +2098,7 @@
       },
       {
         "rank": "9",
-        "bonus_stat": { "luck": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 4, "max_count": 25 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 8, "max_count": 4 }
@@ -2723,7 +2109,7 @@
       },
       {
         "rank": "8",
-        "bonus_stat": { "luck": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 4, "max_count": 25 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 6.4, "max_count": 5 }
@@ -2734,7 +2120,7 @@
       },
       {
         "rank": "7",
-        "bonus_stat": { "luck": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 3.2, "max_count": 32 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 4.8, "max_count": 7 }
@@ -2745,7 +2131,7 @@
       },
       {
         "rank": "6",
-        "bonus_stat": { "luck": 2 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 3.2, "max_count": 32 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 4, "max_count": 8 }
@@ -2756,7 +2142,7 @@
       },
       {
         "rank": "5",
-        "bonus_stat": { "luck": 3 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 2.8, "max_count": 38 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 3.2, "max_count": 9 }
@@ -2767,7 +2153,7 @@
       },
       {
         "rank": "4",
-        "bonus_stat": { "luck": 3 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 2.8, "max_count": 38 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 2.4, "max_count": 13 }
@@ -2778,7 +2164,7 @@
       },
       {
         "rank": "3",
-        "bonus_stat": { "luck": 3 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 2, "max_count": 50 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 1.6, "max_count": 19 }
@@ -2789,7 +2175,7 @@
       },
       {
         "rank": "2",
-        "bonus_stat": { "luck": 3 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 2, "max_count": 50 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 0.8, "max_count": 38 }
@@ -2800,7 +2186,7 @@
       },
       {
         "rank": "1",
-        "bonus_stat": { "luck": 4 },
+        "bonus_stat": null,
         "training_list": [
           { "title": "돈을 던져 적에게 승리", "training_exp": 1.6, "max_count": 63 },
           { "title": "크리티컬로 적에게 승리", "training_exp": 0.8, "max_count": 38 }

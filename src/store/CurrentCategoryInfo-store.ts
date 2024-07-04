@@ -12,6 +12,8 @@ interface StoreType {
 
   setApTable(skill: SkillsTypes, newRankByAP: number): void;
   setStatsTable(skill: SkillsTypes, newRankByStats: StatsTypes): void;
+
+  initialTable(): void;
 }
 
 const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
@@ -21,6 +23,7 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
   total_ap: 0,
   total_stats: {},
 
+  // ap 데이터
   setApTable: (skill, newRankByAP) => {
     const state = getState();
     const total_ap_array = state.total_ap_array;
@@ -44,6 +47,7 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
     set({ total_ap: newTotalAp });
   },
 
+  // stats 데이터
   setStatsTable: (skill, newRankByStats) => {
     const state = getState();
     const total_stats_array = state.total_stats_array;
@@ -74,6 +78,17 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
     );
 
     set({ total_stats: newTotalStats });
+  },
+
+  // Table 초기화
+  initialTable: () => {
+    set({
+      total_ap_array: [],
+      total_stats_array: [],
+
+      total_ap: 0,
+      total_stats: {},
+    });
   },
 }));
 

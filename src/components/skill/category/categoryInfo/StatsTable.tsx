@@ -4,12 +4,17 @@ import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 import skillLists from "@/assets/skill/human/skill.json";
+import { useLayoutEffect } from "react";
 
 export default function StatsTable() {
   const params = useParams();
-  const { total_ap, total_stats } = useCurrentCategoryInfoStore();
+  const { total_ap, total_stats, initialTable } = useCurrentCategoryInfoStore();
 
-  // ----------------------------------------------------------------
+  // params 변동 시 Table 초기화
+  useLayoutEffect(() => {
+    initialTable();
+  }, [initialTable, params]);
+
   const skills = skillLists.filter(
     skillList =>
       (Array.isArray(params.category)

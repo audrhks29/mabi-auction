@@ -1426,5 +1426,231 @@
         "accumulate_ap": 299
       }
     ]
+  },
+  {
+    "skill_id": 5,
+    "talent": ["puppeteer"],
+    "talent_kor": ["인형사"],
+    "category": "puppetry",
+    "category_kor": "인형술",
+    "isPromotion": false,
+    "name_kor": "7막: 광란의 질주",
+    "icon": "/images/skill/puppetry/act7.webp",
+    "description": "마리오네트가 앞으로 돌진하며 마주치는 모든 적들을 날려버리는 마리오네트 전투 스킬. 적들의 술수에 당해 광기에 휩싸여 날뛰는 인형극 속 장면을 마리오네트 전투 스킬로 멋지게 재탄생 시켰다.",
+    "total_need_ap": 282,
+    "total_stats": { "str": 17, "dex": 8 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 80, "max_count": 2 }],
+        "effect": ["대미지 배율 ?%", "돌진거리 10m, 폭 3.5m", "쿨타임 20초", "영혼력 8%"],
+        "bonus_stats": { "str": 1 },
+        "need_ap": 5,
+        "rp": [{ "title": "인형술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0
+      },
+      {
+        "rank": "F",
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 2 }],
+        "effect": ["대미지 배율 380%", "돌진거리 10m, 폭 4m", "쿨타임 20초", "영혼력 8%"],
+        "bonus_stats": { "str": 1 },
+        "need_ap": 6,
+        "rp": [{ "title": "인형술사", "exp": 3000 }],
+        "accumulate_stats": { "str": 1 },
+        "accumulate_ap": 5
+      },
+      {
+        "rank": "E",
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 60, "max_count": 3 }],
+        "effect": ["대미지 배율 400%", "돌진거리 10m, 폭 4m", "쿨타임 20초", "영혼력 8%"],
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 7,
+        "rp": [{ "title": "인형술사", "exp": 10000 }],
+        "accumulate_stats": { "str": 2 },
+        "accumulate_ap": 11
+      },
+      {
+        "rank": "D",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 420%", "돌진거리 10m, 폭 4m", "쿨타임 20초", "영혼력 8%"],
+        "bonus_stats": { "str": 2 },
+        "need_ap": 8,
+        "rp": [{ "title": "인형술사", "exp": 18000 }],
+        "accumulate_stats": { "str": 2, "dex": 1 },
+        "accumulate_ap": 18
+      },
+      {
+        "rank": "C",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 32, "max_count": 4 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 60, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 440%", "돌진거리 10m, 폭 4.5m", "쿨타임 20초", "영혼력 8%"],
+        "bonus_stats": { "str": 1 },
+        "need_ap": 10,
+        "rp": [{ "title": "인형술사", "exp": 28000 }],
+        "accumulate_stats": { "str": 4, "dex": 1 },
+        "accumulate_ap": 26
+      },
+      {
+        "rank": "B",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 24, "max_count": 4 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 40, "max_count": 1 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 100, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 460%", "돌진거리 10m, 폭 4.5m", "쿨타임 20초", "영혼력 8%"],
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 12,
+        "rp": [{ "title": "인형술사", "exp": 40000 }],
+        "accumulate_stats": { "str": 5, "dex": 1 },
+        "accumulate_ap": 36
+      },
+      {
+        "rank": "A",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 5 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 32, "max_count": 1 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 80, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 480%", "돌진거리 10m, 폭 4.5m", "쿨타임 20초", "영혼력 8%"],
+        "bonus_stats": { "str": 2 },
+        "need_ap": 16,
+        "rp": [{ "title": "인형술사", "exp": 54000 }],
+        "accumulate_stats": { "str": 5, "dex": 2 },
+        "accumulate_ap": 48
+      },
+      {
+        "rank": "9",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 12, "max_count": 8 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 24, "max_count": 2 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 40, "max_count": 1 }
+        ],
+        "effect": ["대미지 배율 510%", "돌진거리 10m, 폭 5m", "쿨타임 19초", "영혼력 8%"],
+        "bonus_stats": { "str": 1 },
+        "need_ap": 18,
+        "rp": [{ "title": "인형술사", "exp": 69000 }],
+        "accumulate_stats": { "str": 7, "dex": 2 },
+        "accumulate_ap": 64
+      },
+      {
+        "rank": "8",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 10 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 20, "max_count": 2 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 28, "max_count": 2 }
+        ],
+        "effect": ["대미지 배율 540%", "돌진거리 10m, 폭 5m", "쿨타임 19초", "영혼력 8%"],
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 20,
+        "rp": [{ "title": "인형술사", "exp": 89000 }],
+        "accumulate_stats": { "str": 8, "dex": 2 },
+        "accumulate_ap": 82
+      },
+      {
+        "rank": "7",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 6, "max_count": 13 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 16, "max_count": 3 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 20, "max_count": 2 }
+        ],
+        "effect": ["대미지 배율 570%", "돌진거리 10m, 폭 5m", "쿨타임 19초", "영혼력 8%"],
+        "bonus_stats": null,
+        "need_ap": 22,
+        "rp": [{ "title": "인형술사", "exp": 113000 }],
+        "accumulate_stats": { "str": 8, "dex": 4 },
+        "accumulate_ap": 102
+      },
+      {
+        "rank": "6",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 4.8, "max_count": 18 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 10, "max_count": 4 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 12, "max_count": 3 }
+        ],
+        "effect": ["대미지 배율 600%", "돌진거리 10m, 폭 5m", "쿨타임 19초", "영혼력 8%"],
+        "bonus_stats": { "str": 3 },
+        "need_ap": 27,
+        "rp": [{ "title": "인형술사", "exp": 142000 }],
+        "accumulate_stats": { "str": 8, "dex": 4 },
+        "accumulate_ap": 124
+      },
+      {
+        "rank": "5",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 3.2, "max_count": 25 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 6.8, "max_count": 5 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 9.6, "max_count": 4 }
+        ],
+        "effect": ["대미지 배율 640%", "돌진거리 10m, 폭 5.5m", "쿨타임 18초", "영혼력 8%"],
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 29,
+        "rp": [{ "title": "인형술사", "exp": 176000 }],
+        "accumulate_stats": { "str": 11, "dex": 4 },
+        "accumulate_ap": 151
+      },
+      {
+        "rank": "4",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.8, "max_count": 28 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 5.2, "max_count": 8 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 6.8, "max_count": 5 }
+        ],
+        "effect": ["대미지 배율 680%", "돌진거리 10m, 폭 5.5m", "쿨타임 18초", "영혼력 8%"],
+        "bonus_stats": { "str": 1 },
+        "need_ap": 31,
+        "rp": [{ "title": "인형술사", "exp": 216000 }],
+        "accumulate_stats": { "str": 11, "dex": 6 },
+        "accumulate_ap": 180
+      },
+      {
+        "rank": "3",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2.4, "max_count": 30 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 3.2, "max_count": 13 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 4.8, "max_count": 8 }
+        ],
+        "effect": ["대미지 배율 720%", "돌진거리 10m, 폭 5.5m", "쿨타임 18초", "영혼력 8%"],
+        "bonus_stats": { "str": 2 },
+        "need_ap": 33,
+        "rp": [{ "title": "인형술사", "exp": 261000 }],
+        "accumulate_stats": { "str": 12, "dex": 6 },
+        "accumulate_ap": 211
+      },
+      {
+        "rank": "2",
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 2, "max_count": 33 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 2.4, "max_count": 18 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 4, "max_count": 10 }
+        ],
+        "effect": ["대미지 배율 760%", "돌진거리 10m, 폭 5.5m", "쿨타임 18초", "영혼력 8%"],
+        "bonus_stats": { "str": 3, "dex": 2 },
+        "need_ap": 38,
+        "rp": [{ "title": "인형술사", "exp": 310000 }],
+        "accumulate_stats": { "str": 14, "dex": 6 },
+        "accumulate_ap": 244
+      },
+      {
+        "rank": "1",
+        "bonus_stat": { "str": 3, "dex": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 38 },
+          { "title": "7막: 광란의 질주로 마지막 일격을 가함", "training_exp": 2, "max_count": 25 },
+          { "title": "7막: 광란의 질주의 크리티컬 히트 성공", "training_exp": 3.2, "max_count": 13 }
+        ],
+        "effect": ["대미지 배율 860%", "돌진거리 10m, 폭 6m", "쿨타임 17초", "영혼력 8%"],
+        "bonus_stats": { "str": 3, "dex": 2 },
+        "need_ap": 38,
+        "rp": [{ "title": "인형술사", "exp": 310000 }],
+        "accumulate_stats": { "str": 14, "dex": 6 },
+        "accumulate_ap": 244
+      }
+    ]
   }
 ]

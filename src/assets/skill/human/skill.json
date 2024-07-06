@@ -3912,5 +3912,276 @@
         "accumulate_ap": 336
       }
     ]
+  },
+  {
+    "skill_id": 13,
+    "talent": ["lance_combat"],
+    "talent_kor": ["랜서"],
+    "category": "battle",
+    "category_kor": "전투",
+    "isPromotion": false,
+    "name_kor": "랜스 차지",
+    "icon": "/images/skill/battle/goldStrike.webp",
+    "description": "",
+    "total_need_ap": 447,
+    "total_stats": { "str": 21, "will": 21 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "training_list": [{ "title": "랜스 차지로 적을 공격한다.", "training_exp": 40, "max_count": 3 }],
+        "effect": ["차지 대미지 90%"],
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "상인", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0
+      },
+      {
+        "rank": "F",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 32, "max_count": 4 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 64, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 100%"],
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "상인", "exp": 27200 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10
+      },
+      {
+        "rank": "E",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 24, "max_count": 5 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 48, "max_count": 3 }
+        ],
+        "effect": ["차지 대미지 105%"],
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "상인", "exp": 54400 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 20
+      },
+      {
+        "rank": "D",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 16, "max_count": 7 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 32, "max_count": 4 }
+        ],
+        "effect": ["차지 대미지 110%"],
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "상인", "exp": 82000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 30
+      },
+      {
+        "rank": "C",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 13.6, "max_count": 8 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 27.2, "max_count": 4 }
+        ],
+        "effect": ["차지 대미지 115%"],
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "상인", "exp": 123500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 45
+      },
+      {
+        "rank": "B",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 10, "max_count": 10 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 20, "max_count": 5 }
+        ],
+        "effect": ["차지 대미지 120%"],
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "상인", "exp": 165400 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 60
+      },
+      {
+        "rank": "A",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 16, "max_count": 7 }
+        ],
+        "effect": ["차지 대미지 125%"],
+        "bonus_stats": { "str": 1, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "상인", "exp": 207500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 75
+      },
+      {
+        "rank": "9",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 4, "max_count": 15 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 8, "max_count": 8 },
+          { "title": "랜스 차지로 한 번에 3마리 이상의 적을 공격한다.", "training_exp": 16, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 135%"],
+        "bonus_stats": { "str": 1, "will": 1 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "상인", "exp": 258300 }],
+        "accumulate_stats": { "str": 1, "will": 1 },
+        "accumulate_ap": 93
+      },
+      {
+        "rank": "8",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 3.2, "max_count": 19 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 6.4, "max_count": 10 },
+          { "title": "랜스 차지로 한 번에 3마리 이상의 적을 공격한다.", "training_exp": 12, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 145%"],
+        "bonus_stats": { "str": 1, "will": 1 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "상인", "exp": 317400 }],
+        "accumulate_stats": { "str": 2, "will": 2 },
+        "accumulate_ap": 114
+      },
+      {
+        "rank": "7",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 2.4, "max_count": 25 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 4.8, "max_count": 13 },
+          { "title": "랜스 차지로 한 번에 3마리 이상의 적을 공격한다.", "training_exp": 8, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 155%"],
+        "bonus_stats": { "str": 1, "will": 1 },
+        "need_ap": 27,
+        "accumulate_rp": [{ "title": "상인", "exp": 384800 }],
+        "accumulate_stats": { "str": 3, "will": 3 },
+        "accumulate_ap": 138
+      },
+      {
+        "rank": "6",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 2, "max_count": 32 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 4, "max_count": 16 },
+          { "title": "랜스 차지로 한 번에 3마리 이상의 적을 공격한다.", "training_exp": 4, "max_count": 4 }
+        ],
+        "effect": ["차지 대미지 165%"],
+        "bonus_stats": { "str": 3, "will": 3 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "상인", "exp": 460500 }],
+        "accumulate_stats": { "str": 4, "will": 4 },
+        "accumulate_ap": 165
+      },
+      {
+        "rank": "5",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 1.6, "max_count": 25 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 3.2, "max_count": 13 },
+          { "title": "랜스 차지로 한 번에 4마리 이상의 적을 공격한다.", "training_exp": 16, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 180%", "차지 거리 증가"],
+        "bonus_stats": { "str": 3, "will": 3 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "상인", "exp": 544900 }],
+        "accumulate_stats": { "str": 7, "will": 7 },
+        "accumulate_ap": 195
+      },
+      {
+        "rank": "4",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 1.44, "max_count": 44 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 2.88, "max_count": 22 },
+          { "title": "랜스 차지로 한 번에 4마리 이상의 적을 공격한다.", "training_exp": 12, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 195%"],
+        "bonus_stats": { "str": 3, "will": 3 },
+        "need_ap": 50,
+        "accumulate_rp": [{ "title": "상인", "exp": 656500 }],
+        "accumulate_stats": { "str": 10, "will": 10 },
+        "accumulate_ap": 235
+      },
+      {
+        "rank": "3",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 1.2, "max_count": 50 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 2.4, "max_count": 25 },
+          { "title": "랜스 차지로 한 번에 4마리 이상의 적을 공격한다.", "training_exp": 9.6, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 210%"],
+        "bonus_stats": { "str": 3, "will": 3 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "상인", "exp": 795300 }],
+        "accumulate_stats": { "str": 13, "will": 13 },
+        "accumulate_ap": 285
+      },
+      {
+        "rank": "2",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 1.04, "max_count": 57 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 2, "max_count": 29 },
+          { "title": "랜스 차지로 한 번에 4마리 이상의 적을 공격한다.", "training_exp": 8, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 225%"],
+        "bonus_stats": { "str": 5, "will": 5 },
+        "need_ap": 70,
+        "accumulate_rp": [{ "title": "상인", "exp": 961300 }],
+        "accumulate_stats": { "str": 16, "will": 16 },
+        "accumulate_ap": 345
+      },
+      {
+        "rank": "1",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 0.8, "max_count": 63 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 32 },
+          { "title": "랜스 차지로 한 번에 4마리 이상의 적을 공격한다.", "training_exp": 8, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 250%", "차지 거리 증가"],
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "상인", "exp": 1155300 }],
+        "accumulate_stats": { "str": 21, "will": 21 },
+        "accumulate_ap": 415
+      },
+      {
+        "rank": "1단",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 0.8, "max_count": 63 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 32 },
+          { "title": "랜스 차지로 한 번에 4마리 이상의 적을 공격한다.", "training_exp": 8, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 265%"],
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "상인", "exp": 1155300 }],
+        "accumulate_stats": { "str": 21, "will": 21 },
+        "accumulate_ap": 422
+      },
+      {
+        "rank": "2단",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 0.8, "max_count": 63 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 32 },
+          { "title": "랜스 차지로 한 번에 4마리 이상의 적을 공격한다.", "training_exp": 8, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 280%"],
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "상인", "exp": 1155300 }],
+        "accumulate_stats": { "str": 21, "will": 21 },
+        "accumulate_ap": 432
+      },
+      {
+        "rank": "3단",
+        "training_list": [
+          { "title": "랜스 차지로 적을 공격한다.", "training_exp": 0.8, "max_count": 63 },
+          { "title": "랜스 차지를 이용해 적에게 승리", "training_exp": 1.6, "max_count": 32 },
+          { "title": "랜스 차지로 한 번에 4마리 이상의 적을 공격한다.", "training_exp": 8, "max_count": 2 }
+        ],
+        "effect": ["차지 대미지 295%"],
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "상인", "exp": 1155300 }],
+        "accumulate_stats": { "str": 21, "will": 21 },
+        "accumulate_ap": 447
+      }
+    ]
   }
 ]

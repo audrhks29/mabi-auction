@@ -11,7 +11,8 @@
       "Expert": "/images/talent/closeCombat/closeCombat_3.png",
       "Grandmaster": "/images/talent/closeCombat/closeCombat_4.png"
     },
-    "talent": "전사"
+    "talent": "전사",
+    "link": "closecombat"
   },
   {
     "id": 6,
@@ -31,7 +32,8 @@
       "Expert": "/images/talent/archery/archery_3.png",
       "Grandmaster": "/images/talent/archery/archery_4.png"
     },
-    "talent": "궁수"
+    "talent": "궁수",
+    "link": "archery"
   },
   {
     "id": 8,
@@ -46,7 +48,7 @@
   { "id": 9, "image": "", "talent": "음유시인" },
   { "id": 10, "image": "", "talent": "사제" },
   { "id": 11, "image": "", "talent": "재단사" },
-  { "id": 12, "image": "", "talent": "랜서" },
+  { "id": 12, "image": "", "talent": "랜서", "link": "lancecombat" },
   { "id": 13, "image": "", "talent": "요리사" },
   { "id": 14, "image": "", "talent": "모험가" },
   { "id": 15, "image": "", "talent": "격투가" },

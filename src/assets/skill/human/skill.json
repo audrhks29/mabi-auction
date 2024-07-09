@@ -3914,8 +3914,8 @@
     ]
   },
   {
-    "skill_id": 13,
-    "talent": ["lance"],
+    "skill_id": 14,
+    "talent": ["lancecombat"],
     "talent_kor": ["랜서"],
     "category": "battle",
     "category_kor": "전투",
@@ -4185,8 +4185,8 @@
     ]
   },
   {
-    "skill_id": 14,
-    "talent": ["lancer"],
+    "skill_id": 15,
+    "talent": ["lancecombat"],
     "talent_kor": ["랜서"],
     "category": ["combat"],
     "category_kor": ["전투"],
@@ -4194,160 +4194,1788 @@
     "name_kor": "랜스 카운터",
     "icon": "",
     "description": "",
-    "total_need_ap": 447,
-    "total_stats": { "str": 21, "will": 21 },
+    "total_need_ap": 255,
+    "total_stats": { "dex": 11 },
     "skill_by_rank": [
       {
         "rank": "연습",
         "bonus_stats": null,
-        "need_ap": 10,
+        "need_ap": 5,
         "accumulate_rp": [{ "title": "랜서", "exp": 0 }],
         "accumulate_stats": null,
-        "accumulate_ap": 0
+        "accumulate_ap": 0,
+        "effect": ["상대 공격력의 50%와 자신의 공격력 50% 만큼의 공격력으로 반격이 이루어진다."]
       },
       {
         "rank": "F",
         "bonus_stats": null,
-        "need_ap": 10,
-        "accumulate_rp": [{ "title": "랜서", "exp": 27200 }],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "랜서", "exp": 13000 }],
         "accumulate_stats": null,
-        "accumulate_ap": 10
+        "accumulate_ap": 5,
+        "effect": ["상대 공격력의 50%와 자신의 공격력 100% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +5%"]
       },
       {
         "rank": "E",
         "bonus_stats": null,
-        "need_ap": 10,
-        "accumulate_rp": [{ "title": "랜서", "exp": 54400 }],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "랜서", "exp": 28600 }],
         "accumulate_stats": null,
-        "accumulate_ap": 20
+        "accumulate_ap": 11,
+        "effect": ["상대 공격력의 60%와 자신의 공격력 105% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +5%"]
       },
       {
         "rank": "D",
         "bonus_stats": null,
-        "need_ap": 15,
-        "accumulate_rp": [{ "title": "랜서", "exp": 82000 }],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "랜서", "exp": 46800 }],
         "accumulate_stats": null,
-        "accumulate_ap": 30
+        "accumulate_ap": 18,
+        "effect": ["상대 공격력의 70%와 자신의 공격력 110% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +5%"]
       },
       {
         "rank": "C",
         "bonus_stats": null,
-        "need_ap": 15,
-        "accumulate_rp": [{ "title": "랜서", "exp": 123500 }],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "랜서", "exp": 67600 }],
         "accumulate_stats": null,
-        "accumulate_ap": 45
+        "accumulate_ap": 26,
+        "effect": ["상대 공격력의 80%와 자신의 공격력 115% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +5%"]
       },
       {
         "rank": "B",
         "bonus_stats": null,
-        "need_ap": 15,
-        "accumulate_rp": [{ "title": "랜서", "exp": 165400 }],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "랜서", "exp": 91000 }],
         "accumulate_stats": null,
-        "accumulate_ap": 60
+        "accumulate_ap": 35,
+        "effect": ["상대 공격력의 90%와 자신의 공격력 120% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +5%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "랜서", "exp": 117000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 45,
+        "effect": ["상대 공격력의 100%와 자신의 공격력 125% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +5%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "랜서", "exp": 156000 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 60,
+        "effect": ["상대 공격력의 120%와 자신의 공격력 140% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +7%"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "랜서", "exp": 195000 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 75,
+        "effect": ["상대 공격력의 130%와 자신의 공격력 150% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +7%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "랜서", "exp": 234000 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 90,
+        "effect": ["상대 공격력의 140%와 자신의 공격력 160% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +7%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "랜서", "exp": 273000 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 105,
+        "effect": ["상대 공격력의 150%와 자신의 공격력 170% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +7%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "랜서", "exp": 325000 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 125,
+        "effect": ["상대 공격력의 160%와 자신의 공격력 180% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +10%"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "랜서", "exp": 390000 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 150,
+        "effect": ["상대 공격력의 170%와 자신의 공격력 190% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +10%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "랜서", "exp": 468000 }],
+        "accumulate_stats": { "dex": 7 },
+        "accumulate_ap": 180,
+        "effect": ["상대 공격력의 180%와 자신의 공격력 200% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +10%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "랜서", "exp": 559000 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 215,
+        "effect": ["상대 공격력의 190%와 자신의 공격력 210% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +10%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "랜서", "exp": 663000 }],
+        "accumulate_stats": { "dex": 11 },
+        "accumulate_ap": 255,
+        "effect": ["상대 공격력의 200%와 자신의 공격력 230% 만큼의 공격력으로 반격이 이루어진다.", "크리티컬 +12%"]
+      }
+    ]
+  },
+  {
+    "skill_id": 16,
+    "talent": ["lancecombat"],
+    "talent_kor": ["랜서"],
+    "category": ["combat"],
+    "category_kor": ["전투"],
+    "isPromotion": "",
+    "name_kor": "랜스 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 207,
+    "total_stats": { "str": 19 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "랜서", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["랜스 장착시", "근접 공격 최대 대미지 2 증가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "랜서", "exp": 2600 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["랜스 장착시", "근접 공격 최대 대미지 2 증가", "크리티컬 +1", "랜스를 이용해 적을 공격해보자."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "랜서", "exp": 7800 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 2,
+        "effect": ["랜스 장착시", "근접 공격 최대 대미지 3 증가", "크리티컬 +2", "랜스를 이용해 적을 공격해보자."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "랜서", "exp": 15600 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 5,
+        "effect": ["랜스 장착시", "근접 공격 최대 대미지 4 증가", "크리티컬 +3", "랜스를 이용해 적을 공격해보자."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "랜서", "exp": 26000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 9,
+        "effect": ["랜스 장착시", "근접 공격 최소 대미지 1 증가", "근접 공격 최대 대미지 5 증가", "크리티컬 +4"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "랜서", "exp": 39000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 14,
+        "effect": ["랜스 장착시", "근접 공격 최소 대미지 2 증가", "근접 공격 최대 대미지 6 증가", "크리티컬 +5"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "랜서", "exp": 54600 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 20,
+        "effect": ["랜스 장착시", "근접 공격 최소 대미지 3 증가", "근접 공격 최대 대미지 7 증가", "크리티컬 +6"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "랜서", "exp": 80600 }],
+        "accumulate_stats": { "str": 1 },
+        "accumulate_ap": 30,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 4 증가",
+          "근접 공격 최대 대미지 10 증가",
+          "크리티컬 +7",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "랜서", "exp": 111800 }],
+        "accumulate_stats": { "str": 2 },
+        "accumulate_ap": 42,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 5 증가",
+          "근접 공격 최대 대미지 12 증가",
+          "크리티컬 +8",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "랜서", "exp": 148200 }],
+        "accumulate_stats": { "str": 3 },
+        "accumulate_ap": 56,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 6 증가",
+          "근접 공격 최대 대미지 14 증가",
+          "크리티컬 +9",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "랜서", "exp": 189800 }],
+        "accumulate_stats": { "str": 4 },
+        "accumulate_ap": 72,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 7 증가",
+          "근접 공격 최대 대미지 16 증가",
+          "크리티컬 +10",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "랜서", "exp": 241800 }],
+        "accumulate_stats": { "str": 6 },
+        "accumulate_ap": 92,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 8 증가",
+          "근접 공격 최대 대미지 19 증가",
+          "크리티컬 +11",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 27,
+        "accumulate_rp": [{ "title": "랜서", "exp": 301600 }],
+        "accumulate_stats": { "str": 8 },
+        "accumulate_ap": 115,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 9 증가",
+          "근접 공격 최대 대미지 20 증가",
+          "크리티컬 +12",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "랜서", "exp": 371800 }],
+        "accumulate_stats": { "str": 11 },
+        "accumulate_ap": 142,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 10 증가",
+          "근접 공격 최대 대미지 21 증가",
+          "크리티컬 +13",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 5 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "랜서", "exp": 449800 }],
+        "accumulate_stats": { "str": 14 },
+        "accumulate_ap": 172,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 11 증가",
+          "근접 공격 최대 대미지 22 증가",
+          "크리티컬 +14",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "랜서", "exp": 540800 }],
+        "accumulate_stats": { "str": 19 },
+        "accumulate_ap": 207,
+        "effect": [
+          "랜스 장착시",
+          "근접 공격 최소 대미지 12 증가",
+          "근접 공격 최대 대미지 25 증가",
+          "크리티컬 +15",
+          "일반 공격 시 추가 공격 1타"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 17,
+    "talent": ["lancecombat", "closecombat"],
+    "talent_kor": ["랜서", "전사"],
+    "category": ["hidden"],
+    "category_kor": ["히든"],
+    "isPromotion": "",
+    "name_kor": "버서크",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 336,
+    "total_stats": { "str": 25, "will": 10 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 0 },
+          { "title": "전사", "exp": 0 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["광전사 효과 발동", "체력 50 증가", "10초간 지속"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 500 },
+          { "title": "전사", "exp": 400 }
+        ],
+        "accumulate_stats": { "str": 1 },
+        "accumulate_ap": 5,
+        "effect": ["광전사 효과 발동", "체력 56 증가", "10초간 지속"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 1300 },
+          { "title": "전사", "exp": 1000 }
+        ],
+        "accumulate_stats": { "str": 2 },
+        "accumulate_ap": 11,
+        "effect": ["광전사 효과 발동", "체력 62 증가", "10초간 지속"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 2300 },
+          { "title": "전사", "exp": 1900 }
+        ],
+        "accumulate_stats": { "str": 3 },
+        "accumulate_ap": 18,
+        "effect": ["광전사 효과 발동", "체력 68 증가", "11초간 지속"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 3500 },
+          { "title": "전사", "exp": 3000 }
+        ],
+        "accumulate_stats": { "str": 4 },
+        "accumulate_ap": 26,
+        "effect": ["광전사 효과 발동", "체력 75 증가", "11초간 지속"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 5000 },
+          { "title": "전사", "exp": 4300 }
+        ],
+        "accumulate_stats": { "str": 5 },
+        "accumulate_ap": 38,
+        "effect": ["광전사 효과 발동", "체력 82 증가", "11초간 지속"]
       },
       {
         "rank": "A",
         "bonus_stats": { "str": 1, "will": 1 },
-        "need_ap": 18,
-        "accumulate_rp": [{ "title": "랜서", "exp": 207500 }],
-        "accumulate_stats": null,
-        "accumulate_ap": 75
+        "need_ap": 17,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 7000 },
+          { "title": "전사", "exp": 6100 }
+        ],
+        "accumulate_stats": { "str": 6 },
+        "accumulate_ap": 53,
+        "effect": ["광전사 효과 발동", "체력 90 증가", "11초간 지속"]
       },
       {
         "rank": "9",
         "bonus_stats": { "str": 1, "will": 1 },
-        "need_ap": 21,
-        "accumulate_rp": [{ "title": "랜서", "exp": 258300 }],
-        "accumulate_stats": { "str": 1, "will": 1 },
-        "accumulate_ap": 93
+        "need_ap": 20,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 9400 },
+          { "title": "전사", "exp": 8300 }
+        ],
+        "accumulate_stats": { "str": 7, "will": 1 },
+        "accumulate_ap": 70,
+        "effect": ["광전사 효과 발동", "체력 100 증가", "12초간 지속"]
       },
       {
         "rank": "8",
-        "bonus_stats": { "str": 1, "will": 1 },
-        "need_ap": 24,
-        "accumulate_rp": [{ "title": "랜서", "exp": 317400 }],
-        "accumulate_stats": { "str": 2, "will": 2 },
-        "accumulate_ap": 114
+        "bonus_stats": { "str": 2, "will": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 12200 },
+          { "title": "전사", "exp": 10900 }
+        ],
+        "accumulate_stats": { "str": 8, "will": 2 },
+        "accumulate_ap": 90,
+        "effect": ["광전사 효과 발동", "체력 106 증가", "12초간 지속"]
       },
       {
         "rank": "7",
-        "bonus_stats": { "str": 1, "will": 1 },
-        "need_ap": 27,
-        "accumulate_rp": [{ "title": "랜서", "exp": 384800 }],
-        "accumulate_stats": { "str": 3, "will": 3 },
-        "accumulate_ap": 138
+        "bonus_stats": { "str": 2, "will": 1 },
+        "need_ap": 28,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 15400 },
+          { "title": "전사", "exp": 13900 }
+        ],
+        "accumulate_stats": { "str": 10, "will": 3 },
+        "accumulate_ap": 115,
+        "effect": ["광전사 효과 발동", "체력 112 증가", "12초간 지속"]
       },
       {
         "rank": "6",
-        "bonus_stats": { "str": 3, "will": 3 },
-        "need_ap": 30,
-        "accumulate_rp": [{ "title": "랜서", "exp": 460500 }],
-        "accumulate_stats": { "str": 4, "will": 4 },
-        "accumulate_ap": 165
+        "bonus_stats": { "str": 2, "will": 1 },
+        "need_ap": 32,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 18900 },
+          { "title": "전사", "exp": 17100 }
+        ],
+        "accumulate_stats": { "str": 12, "will": 4 },
+        "accumulate_ap": 143,
+        "effect": ["광전사 효과 발동", "체력 118 증가", "12초간 지속"]
       },
       {
         "rank": "5",
-        "bonus_stats": { "str": 3, "will": 3 },
-        "need_ap": 40,
-        "accumulate_rp": [{ "title": "랜서", "exp": 544900 }],
-        "accumulate_stats": { "str": 7, "will": 7 },
-        "accumulate_ap": 195
+        "bonus_stats": { "str": 2, "will": 1 },
+        "need_ap": 35,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 22700 },
+          { "title": "전사", "exp": 20600 }
+        ],
+        "accumulate_stats": { "str": 14, "will": 5 },
+        "accumulate_ap": 175,
+        "effect": ["광전사 효과 발동", "체력 123 증가", "12초간 지속"]
       },
       {
         "rank": "4",
-        "bonus_stats": { "str": 3, "will": 3 },
-        "need_ap": 50,
-        "accumulate_rp": [{ "title": "랜서", "exp": 656500 }],
-        "accumulate_stats": { "str": 10, "will": 10 },
-        "accumulate_ap": 235
+        "bonus_stats": { "str": 2, "will": 1 },
+        "need_ap": 38,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 26700 },
+          { "title": "전사", "exp": 24400 }
+        ],
+        "accumulate_stats": { "str": 16, "will": 6 },
+        "accumulate_ap": 210,
+        "effect": ["광전사 효과 발동", "체력 130 증가", "13초간 지속"]
       },
       {
         "rank": "3",
-        "bonus_stats": { "str": 3, "will": 3 },
-        "need_ap": 60,
-        "accumulate_rp": [{ "title": "랜서", "exp": 795300 }],
-        "accumulate_stats": { "str": 13, "will": 13 },
-        "accumulate_ap": 285
+        "bonus_stats": { "str": 2, "will": 1 },
+        "need_ap": 40,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 31200 },
+          { "title": "전사", "exp": 28600 }
+        ],
+        "accumulate_stats": { "str": 18, "will": 7 },
+        "accumulate_ap": 248,
+        "effect": ["광전사 효과 발동", "체력 136 증가", "13초간 지속"]
       },
       {
         "rank": "2",
-        "bonus_stats": { "str": 5, "will": 5 },
-        "need_ap": 70,
-        "accumulate_rp": [{ "title": "랜서", "exp": 961300 }],
-        "accumulate_stats": { "str": 16, "will": 16 },
-        "accumulate_ap": 345
+        "bonus_stats": { "str": 5, "will": 2 },
+        "need_ap": 48,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 36200 },
+          { "title": "전사", "exp": 33100 }
+        ],
+        "accumulate_stats": { "str": 20, "will": 8 },
+        "accumulate_ap": 288,
+        "effect": ["광전사 효과 발동", "체력 145 증가", "13초간 지속"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 42200 },
+          { "title": "전사", "exp": 38100 }
+        ],
+        "accumulate_stats": { "str": 25, "will": 10 },
+        "accumulate_ap": 336,
+        "effect": ["광전사 효과 발동", "체력 160 증가", "15초간 지속"]
+      }
+    ]
+  },
+  {
+    "skill_id": 18,
+    "talent": ["lancecombat", "closecombat"],
+    "talent_kor": ["랜서", "전사"],
+    "category": ["combat"],
+    "category_kor": ["전투"],
+    "isPromotion": "",
+    "name_kor": "다운 어택",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 233,
+    "total_stats": { "str": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 0 },
+          { "title": "전사", "exp": 0 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["쓰러진 적에게 대미지 70%"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 200 },
+          { "title": "전사", "exp": 1000 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [
+          "쓰러진 적에게 대미지 80%",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 50%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 800 },
+          { "title": "전사", "exp": 4000 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": [
+          "쓰러진 적에게 대미지 84%",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 50%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 1400 },
+          { "title": "전사", "exp": 7000 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 6,
+        "effect": [
+          "쓰러진 적에게 대미지 88%",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 50%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 2400 },
+          { "title": "전사", "exp": 12000 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 11,
+        "effect": [
+          "쓰러진 적에게 대미지 92%",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 50%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 3400 },
+          { "title": "전사", "exp": 17000 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 16,
+        "effect": [
+          "쓰러진 적에게 대미지 96%",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 50%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 4400 },
+          { "title": "전사", "exp": 22000 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 21,
+        "effect": [
+          "쓰러진 적에게 대미지 100%",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 50%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 6000 },
+          { "title": "전사", "exp": 30000 }
+        ],
+        "accumulate_stats": { "str": 1 },
+        "accumulate_ap": 29,
+        "effect": [
+          "쓰러진 적에게 대미지 110%",
+          "다운 어택 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 60%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 8000 },
+          { "title": "전사", "exp": 40000 }
+        ],
+        "accumulate_stats": { "str": 2 },
+        "accumulate_ap": 39,
+        "effect": [
+          "쓰러진 적에게 대미지 115%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 60%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 10400 },
+          { "title": "전사", "exp": 52000 }
+        ],
+        "accumulate_stats": { "str": 3 },
+        "accumulate_ap": 51,
+        "effect": [
+          "쓰러진 적에게 대미지 120%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 60%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 13400 },
+          { "title": "전사", "exp": 67000 }
+        ],
+        "accumulate_stats": { "str": 4 },
+        "accumulate_ap": 66,
+        "effect": [
+          "쓰러진 적에게 대미지 125%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 23,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 17400 },
+          { "title": "전사", "exp": 87000 }
+        ],
+        "accumulate_stats": { "str": 6 },
+        "accumulate_ap": 86,
+        "effect": [
+          "쓰러진 적에게 대미지 150%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 27,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 22000 },
+          { "title": "전사", "exp": 110000 }
+        ],
+        "accumulate_stats": { "str": 8 },
+        "accumulate_ap": 109,
+        "effect": [
+          "쓰러진 적에게 대미지 160%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 27400 },
+          { "title": "전사", "exp": 137000 }
+        ],
+        "accumulate_stats": { "str": 10 },
+        "accumulate_ap": 136,
+        "effect": [
+          "쓰러진 적에게 대미지 170%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 5 },
+        "need_ap": 35,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 33400 },
+          { "title": "전사", "exp": 167000 }
+        ],
+        "accumulate_stats": { "str": 12 },
+        "accumulate_ap": 166,
+        "effect": [
+          "쓰러진 적에게 대미지 180%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
       },
       {
         "rank": "1",
         "bonus_stats": null,
         "need_ap": 7,
-        "accumulate_rp": [{ "title": "랜서", "exp": 1155300 }],
-        "accumulate_stats": { "str": 21, "will": 21 },
-        "accumulate_ap": 415
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 40400 },
+          { "title": "전사", "exp": 202000 }
+        ],
+        "accumulate_stats": { "str": 17 },
+        "accumulate_ap": 201,
+        "effect": [
+          "쓰러진 적에게 대미지 200%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
       },
       {
         "rank": "1단",
         "bonus_stats": null,
         "need_ap": 10,
-        "accumulate_rp": [{ "title": "랜서", "exp": 1155300 }],
-        "accumulate_stats": { "str": 21, "will": 21 },
-        "accumulate_ap": 422
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 40400 },
+          { "title": "전사", "exp": 202000 }
+        ],
+        "accumulate_stats": { "str": 17 },
+        "accumulate_ap": 208,
+        "effect": [
+          "쓰러진 적에게 대미지 220%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
       },
       {
         "rank": "2단",
         "bonus_stats": null,
         "need_ap": 15,
-        "accumulate_rp": [{ "title": "랜서", "exp": 1155300 }],
-        "accumulate_stats": { "str": 21, "will": 21 },
-        "accumulate_ap": 432
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 40400 },
+          { "title": "전사", "exp": 202000 }
+        ],
+        "accumulate_stats": { "str": 17 },
+        "accumulate_ap": 218,
+        "effect": [
+          "쓰러진 적에게 대미지 240%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
       },
       {
         "rank": "3단",
         "bonus_stats": null,
         "need_ap": 0,
-        "accumulate_rp": [{ "title": "랜서", "exp": 1155300 }],
-        "accumulate_stats": { "str": 21, "will": 21 },
-        "accumulate_ap": 447
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 40400 },
+          { "title": "전사", "exp": 202000 }
+        ],
+        "accumulate_stats": { "str": 17 },
+        "accumulate_ap": 233,
+        "effect": [
+          "쓰러진 적에게 대미지 260%",
+          "다운 어택의 거리가 늘어난다.",
+          "검,둔기,도끼로 공격 시 타격 지점 주위의 적 모두에게 타격 대미지의 70%로 근접 공격"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 19,
+    "talent": ["lancecombat", "closecombat"],
+    "talent_kor": ["랜서", "전사"],
+    "category": ["combat"],
+    "category_kor": ["전투"],
+    "isPromotion": "",
+    "name_kor": "컴뱃 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 230,
+    "total_stats": { "str": 42, "dex": 10 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 0,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 0 },
+          { "title": "전사", "exp": 0 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 200 },
+          { "title": "전사", "exp": 1000 }
+        ],
+        "accumulate_stats": { "str": 1 },
+        "accumulate_ap": 0,
+        "effect": ["전투를 통해 경험치를 얻을 수 있다"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 400 },
+          { "title": "전사", "exp": 2000 }
+        ],
+        "accumulate_stats": { "str": 3 },
+        "accumulate_ap": 1,
+        "effect": ["근접 공격 최대 대미지에 보너스 2점 추가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 1000 },
+          { "title": "전사", "exp": 5000 }
+        ],
+        "accumulate_stats": { "str": 6 },
+        "accumulate_ap": 4,
+        "effect": ["근접 공격 최대 대미지에 보너스 3점 추가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 2000 },
+          { "title": "전사", "exp": 10000 }
+        ],
+        "accumulate_stats": { "str": 9 },
+        "accumulate_ap": 9,
+        "effect": ["근접 공격 최대 대미지에 보너스 4점 추가", "근접 공격 최소 대미지에 보너스 1점 추가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "str": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 3400 },
+          { "title": "전사", "exp": 17000 }
+        ],
+        "accumulate_stats": { "str": 12 },
+        "accumulate_ap": 16,
+        "effect": ["근접 공격 최대 대미지에 보너스 5점 추가", "근접 공격 최소 대미지에 보너스 2점 추가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 4 },
+        "need_ap": 10,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 5000 },
+          { "title": "전사", "exp": 25000 }
+        ],
+        "accumulate_stats": { "str": 16 },
+        "accumulate_ap": 24,
+        "effect": ["근접 공격 최대 대미지에 보너스 5점 추가", "근접 공격 최소 대미지에 보너스 3점 추가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "str": 4 },
+        "need_ap": 12,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 7000 },
+          { "title": "전사", "exp": 35000 }
+        ],
+        "accumulate_stats": { "str": 20 },
+        "accumulate_ap": 34,
+        "effect": ["근접 공격 최대 대미지에 보너스 6점 추가", "근접 공격 최소 대미지에 보너스 4점 추가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 4 },
+        "need_ap": 14,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 9400 },
+          { "title": "전사", "exp": 47000 }
+        ],
+        "accumulate_stats": { "str": 24 },
+        "accumulate_ap": 46,
+        "effect": ["근접 공격 최대 대미지에 보너스 7점 추가", "근접 공격 최소 대미지에 보너스 4점 추가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 4 },
+        "need_ap": 16,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 12200 },
+          { "title": "전사", "exp": 61000 }
+        ],
+        "accumulate_stats": { "str": 28 },
+        "accumulate_ap": 60,
+        "effect": ["근접 공격 최대 대미지에 보너스 8점 추가", "근접 공격 최소 대미지에 보너스 4점 추가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 2, "dex": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 15400 },
+          { "title": "전사", "exp": 77000 }
+        ],
+        "accumulate_stats": { "str": 32 },
+        "accumulate_ap": 76,
+        "effect": ["근접 공격 최대 대미지에 보너스 9점 추가", "근접 공격 최소 대미지에 보너스 4점 추가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 2, "dex": 2 },
+        "need_ap": 22,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 19400 },
+          { "title": "전사", "exp": 97000 }
+        ],
+        "accumulate_stats": { "str": 34, "dex": 2 },
+        "accumulate_ap": 96,
+        "effect": ["근접 공격 최대 대미지에 보너스 10점 추가", "근접 공격 최소 대미지에 보너스 5점 추가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 2, "dex": 2 },
+        "need_ap": 24,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 23800 },
+          { "title": "전사", "exp": 119000 }
+        ],
+        "accumulate_stats": { "str": 36, "dex": 4 },
+        "accumulate_ap": 118,
+        "effect": ["근접 공격 최대 대미지에 보너스 11점 추가", "근접 공격 최소 대미지에 보너스 6점 추가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 2, "dex": 2 },
+        "need_ap": 26,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 28600 },
+          { "title": "전사", "exp": 143000 }
+        ],
+        "accumulate_stats": { "str": 38, "dex": 6 },
+        "accumulate_ap": 142,
+        "effect": ["근접 공격 최대 대미지에 보너스 13점 추가", "근접 공격 최소 대미지에 보너스 6점 추가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 2, "dex": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 33800 },
+          { "title": "전사", "exp": 169000 }
+        ],
+        "accumulate_stats": { "str": 40, "dex": 8 },
+        "accumulate_ap": 168,
+        "effect": ["근접 공격 최대 대미지에 보너스 16점 추가", "근접 공격 최소 대미지에 보너스 6점 추가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 39800 },
+          { "title": "전사", "exp": 199000 }
+        ],
+        "accumulate_stats": { "str": 42, "dex": 10 },
+        "accumulate_ap": 198,
+        "effect": ["근접 공격 최대 대미지에 보너스 18점 추가", "근접 공격 최소 대미지에 보너스 8점 추가", "생명력 +150"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 39800 },
+          { "title": "전사", "exp": 199000 }
+        ],
+        "accumulate_stats": { "str": 42, "dex": 10 },
+        "accumulate_ap": 205,
+        "effect": [
+          "근접 공격 최대 대미지에 보너스 20점 추가",
+          "근접 공격 최소 대미지에 보너스 10점 추가",
+          "생명력 +160"
+        ]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 39800 },
+          { "title": "전사", "exp": 199000 }
+        ],
+        "accumulate_stats": { "str": 42, "dex": 10 },
+        "accumulate_ap": 215,
+        "effect": [
+          "근접 공격 최대 대미지에 보너스 22점 추가",
+          "근접 공격 최소 대미지에 보너스 12점 추가",
+          "생명력 +170"
+        ]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 39800 },
+          { "title": "전사", "exp": 199000 }
+        ],
+        "accumulate_stats": { "str": 42, "dex": 10 },
+        "accumulate_ap": 230,
+        "effect": [
+          "근접 공격 최대 대미지에 보너스 24점 추가",
+          "근접 공격 최소 대미지에 보너스 14점 추가",
+          "생명력 +180"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 20,
+    "talent": ["lancecombat", "closecombat"],
+    "talent_kor": ["랜서", "전사"],
+    "category": ["combat"],
+    "category_kor": ["전투"],
+    "isPromotion": "",
+    "name_kor": "윈드밀",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 209,
+    "total_stats": { "str": 30, "will": 50 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1, "will": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 0 },
+          { "title": "전사", "exp": 0 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "str": 1, "will": 3 },
+        "need_ap": 4,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 600 },
+          { "title": "전사", "exp": 5100 }
+        ],
+        "accumulate_stats": { "str": 1, "will": 3 },
+        "accumulate_ap": 3,
+        "effect": ["주위의 적 모두에게 기본 대미지의 100%로 근접 공격"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "str": 1, "will": 3 },
+        "need_ap": 4,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 1400 },
+          { "title": "전사", "exp": 11900 }
+        ],
+        "accumulate_stats": { "str": 2, "will": 6 },
+        "accumulate_ap": 7,
+        "effect": ["주위의 적 모두에게 기본 대미지의 110%로 근접 공격"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "str": 1, "will": 3 },
+        "need_ap": 4,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 2200 },
+          { "title": "전사", "exp": 18700 }
+        ],
+        "accumulate_stats": { "str": 3, "will": 9 },
+        "accumulate_ap": 11,
+        "effect": ["주위의 적 모두에게 기본 대미지의 120%로 근접 공격"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "str": 1, "will": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 3000 },
+          { "title": "전사", "exp": 25500 }
+        ],
+        "accumulate_stats": { "str": 4, "will": 12 },
+        "accumulate_ap": 15,
+        "effect": ["주위의 적 모두에게 기본 대미지의 130%로 근접 공격"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "str": 2, "will": 3 },
+        "need_ap": 6,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 4000 },
+          { "title": "전사", "exp": 34000 }
+        ],
+        "accumulate_stats": { "str": 5, "will": 15 },
+        "accumulate_ap": 20,
+        "effect": ["주위의 적 모두에게 기본 대미지의 140%로 근접 공격"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 2, "will": 3 },
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 5200 },
+          { "title": "전사", "exp": 44200 }
+        ],
+        "accumulate_stats": { "str": 7, "will": 18 },
+        "accumulate_ap": 26,
+        "effect": ["주위의 적 모두에게 기본 대미지의 150%로 근접 공격"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "str": 2, "will": 3 },
+        "need_ap": 8,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 6600 },
+          { "title": "전사", "exp": 56100 }
+        ],
+        "accumulate_stats": { "str": 9, "will": 21 },
+        "accumulate_ap": 33,
+        "effect": ["주위의 적 모두에게 기본 대미지의 160%로 근접 공격", "쿨타임 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 2, "will": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 8200 },
+          { "title": "전사", "exp": 69700 }
+        ],
+        "accumulate_stats": { "str": 11, "will": 24 },
+        "accumulate_ap": 41,
+        "effect": ["주위의 적 모두에게 기본 대미지의 170%로 근접 공격"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 2, "will": 3 },
+        "need_ap": 12,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 10200 },
+          { "title": "전사", "exp": 86700 }
+        ],
+        "accumulate_stats": { "str": 13, "will": 27 },
+        "accumulate_ap": 51,
+        "effect": ["주위의 적 모두에게 기본 대미지의 180%로 근접 공격"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 3, "will": 4 },
+        "need_ap": 18,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 12600 },
+          { "title": "전사", "exp": 107100 }
+        ],
+        "accumulate_stats": { "str": 15, "will": 30 },
+        "accumulate_ap": 63,
+        "effect": ["주위의 적 모두에게 기본 대미지의 190%로 근접 공격"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 3, "will": 4 },
+        "need_ap": 20,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 16200 },
+          { "title": "전사", "exp": 137700 }
+        ],
+        "accumulate_stats": { "str": 18, "will": 34 },
+        "accumulate_ap": 81,
+        "effect": ["주위의 적 모두에게 기본 대미지의 200%로 근접 공격", "윈드밀을 사용해서 적을 공격하고 쓰러뜨린다."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 3, "will": 4 },
+        "need_ap": 22,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 20200 },
+          { "title": "전사", "exp": 171700 }
+        ],
+        "accumulate_stats": { "str": 21, "will": 38 },
+        "accumulate_ap": 101,
+        "effect": ["주위의 적 모두에게 기본 대미지의 210%로 근접 공격", "윈드밀을 사용해서 적을 공격하고 쓰러뜨린다."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 3, "will": 4 },
+        "need_ap": 24,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 24600 },
+          { "title": "전사", "exp": 209100 }
+        ],
+        "accumulate_stats": { "str": 24, "will": 42 },
+        "accumulate_ap": 123,
+        "effect": ["주위의 적 모두에게 기본 대미지의 220%로 근접 공격", "윈드밀을 사용해서 적을 공격하고 쓰러뜨린다."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 3, "will": 4 },
+        "need_ap": 30,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 29400 },
+          { "title": "전사", "exp": 249900 }
+        ],
+        "accumulate_stats": { "str": 27, "will": 46 },
+        "accumulate_ap": 147,
+        "effect": ["주위의 적 모두에게 기본 대미지의 230%로 근접 공격", "윈드밀을 사용해서 적을 공격하고 쓰러뜨린다."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 35400 },
+          { "title": "전사", "exp": 300900 }
+        ],
+        "accumulate_stats": { "str": 30, "will": 50 },
+        "accumulate_ap": 177,
+        "effect": ["주위의 적 모두에게 기본 대미지의 250%로 근접 공격"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 35400 },
+          { "title": "전사", "exp": 300900 }
+        ],
+        "accumulate_stats": { "str": 30, "will": 50 },
+        "accumulate_ap": 184,
+        "effect": ["주위의 적 모두에게 기본 대미지의 270%로 근접 공격"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 35400 },
+          { "title": "전사", "exp": 300900 }
+        ],
+        "accumulate_stats": { "str": 30, "will": 50 },
+        "accumulate_ap": 194,
+        "effect": ["주위의 적 모두에게 기본 대미지의 290%로 근접 공격"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 35400 },
+          { "title": "전사", "exp": 300900 }
+        ],
+        "accumulate_stats": { "str": 30, "will": 50 },
+        "accumulate_ap": 209,
+        "effect": ["주위의 적 모두에게 기본 대미지의 310%로 근접 공격"]
+      }
+    ]
+  },
+  {
+    "skill_id": 21,
+    "talent": ["lancecombat", "archery", "closecombat"],
+    "talent_kor": ["랜서", "궁수", "전사"],
+    "category": ["combat"],
+    "category_kor": ["전투"],
+    "isPromotion": "",
+    "name_kor": "크리티컬 히트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 132,
+    "total_stats": { "will": 45 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 0 },
+          { "title": "궁수", "exp": 0 },
+          { "title": "전사", "exp": 0 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["크리티컬 히트 연습 중"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 300 },
+          { "title": "궁수", "exp": 1500 },
+          { "title": "전사", "exp": 900 }
+        ],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 3,
+        "effect": ["크리티컬 발동시 최대 대미지의 50% 대미지 추가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 600 },
+          { "title": "궁수", "exp": 3000 },
+          { "title": "전사", "exp": 1800 }
+        ],
+        "accumulate_stats": { "will": 6 },
+        "accumulate_ap": 6,
+        "effect": ["크리티컬 발동시 최대 대미지의 55% 대미지 추가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 900 },
+          { "title": "궁수", "exp": 4500 },
+          { "title": "전사", "exp": 2700 }
+        ],
+        "accumulate_stats": { "will": 9 },
+        "accumulate_ap": 9,
+        "effect": ["크리티컬 발동시 최대 대미지의 60% 대미지 추가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 4,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 1200 },
+          { "title": "궁수", "exp": 6000 },
+          { "title": "전사", "exp": 3600 }
+        ],
+        "accumulate_stats": { "will": 12 },
+        "accumulate_ap": 12,
+        "effect": ["크리티컬 발동시 최대 대미지의 65% 대미지 추가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 1600 },
+          { "title": "궁수", "exp": 8000 },
+          { "title": "전사", "exp": 4800 }
+        ],
+        "accumulate_stats": { "will": 15 },
+        "accumulate_ap": 16,
+        "effect": ["크리티컬 발동시 최대 대미지의 70% 대미지 추가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 6,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 2100 },
+          { "title": "궁수", "exp": 10500 },
+          { "title": "전사", "exp": 6300 }
+        ],
+        "accumulate_stats": { "will": 18 },
+        "accumulate_ap": 21,
+        "effect": ["크리티컬 발동시 최대 대미지의 75% 대미지 추가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 2700 },
+          { "title": "궁수", "exp": 13500 },
+          { "title": "전사", "exp": 8100 }
+        ],
+        "accumulate_stats": { "will": 21 },
+        "accumulate_ap": 27,
+        "effect": ["크리티컬 발동시 최대 대미지의 90% 대미지 추가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 8,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 3400 },
+          { "title": "궁수", "exp": 17000 },
+          { "title": "전사", "exp": 10200 }
+        ],
+        "accumulate_stats": { "will": 24 },
+        "accumulate_ap": 34,
+        "effect": ["크리티컬 발동시 최대 대미지의 95% 대미지 추가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 4200 },
+          { "title": "궁수", "exp": 21000 },
+          { "title": "전사", "exp": 12600 }
+        ],
+        "accumulate_stats": { "will": 27 },
+        "accumulate_ap": 42,
+        "effect": ["크리티컬 발동시 최대 대미지의 100% 대미지 추가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 12,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 5200 },
+          { "title": "궁수", "exp": 26000 },
+          { "title": "전사", "exp": 15600 }
+        ],
+        "accumulate_stats": { "will": 30 },
+        "accumulate_ap": 52,
+        "effect": ["크리티컬 발동시 최대 대미지의 105% 대미지 추가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 14,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 6400 },
+          { "title": "궁수", "exp": 32000 },
+          { "title": "전사", "exp": 19200 }
+        ],
+        "accumulate_stats": { "will": 33 },
+        "accumulate_ap": 64,
+        "effect": ["크리티컬 발동시 최대 대미지의 110% 대미지 추가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 16,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 7800 },
+          { "title": "궁수", "exp": 39000 },
+          { "title": "전사", "exp": 23400 }
+        ],
+        "accumulate_stats": { "will": 36 },
+        "accumulate_ap": 78,
+        "effect": ["크리티컬 발동시 최대 대미지의 120% 대미지 추가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 18,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 9400 },
+          { "title": "궁수", "exp": 47000 },
+          { "title": "전사", "exp": 28200 }
+        ],
+        "accumulate_stats": { "will": 39 },
+        "accumulate_ap": 94,
+        "effect": ["크리티컬 발동시 최대 대미지의 130% 대미지 추가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 11200 },
+          { "title": "궁수", "exp": 56000 },
+          { "title": "전사", "exp": 33600 }
+        ],
+        "accumulate_stats": { "will": 42 },
+        "accumulate_ap": 112,
+        "effect": ["크리티컬 발동시 최대 대미지의 140% 대미지 추가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [
+          { "title": "랜서", "exp": 13200 },
+          { "title": "궁수", "exp": 66000 },
+          { "title": "전사", "exp": 39600 }
+        ],
+        "accumulate_stats": { "will": 45 },
+        "accumulate_ap": 132,
+        "effect": ["크리티컬 발동시 최대 대미지의 150% 대미지 추가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 22,
+    "talent": ["closecombat"],
+    "talent_kor": ["전사"],
+    "category": ["combat"],
+    "category_kor": ["전투"],
+    "isPromotion": "",
+    "name_kor": "디펜스",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 205,
+    "total_stats": { "hp": 41 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "전사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전사", "exp": 1000 }],
+        "accumulate_stats": { "hp": 2 },
+        "accumulate_ap": 0,
+        "effect": ["기본방어 +3", "디펜스 성공시 방어 20, 보호 5 추가 적용"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전사", "exp": 2000 }],
+        "accumulate_stats": { "hp": 4 },
+        "accumulate_ap": 1,
+        "effect": ["기본방어 +4", "디펜스 성공시 방어 21, 보호 6 추가 적용"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전사", "exp": 5000 }],
+        "accumulate_stats": { "hp": 6 },
+        "accumulate_ap": 4,
+        "effect": ["기본방어 +5", "디펜스 성공시 방어 22, 보호 7 추가 적용"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전사", "exp": 10000 }],
+        "accumulate_stats": { "hp": 8 },
+        "accumulate_ap": 9,
+        "effect": ["기본방어 +6", "디펜스 성공시 방어 24, 보호 8 추가 적용"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전사", "exp": 17000 }],
+        "accumulate_stats": { "hp": 10 },
+        "accumulate_ap": 16,
+        "effect": ["기본방어 +7", "디펜스 성공시 방어 26, 보호 9 추가 적용"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "전사", "exp": 25000 }],
+        "accumulate_stats": { "hp": 12 },
+        "accumulate_ap": 24,
+        "effect": ["기본방어 +8", "디펜스 성공시 방어 28, 보호 10 추가 적용"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전사", "exp": 36000 }],
+        "accumulate_stats": { "hp": 14 },
+        "accumulate_ap": 35,
+        "effect": ["기본방어 +10", "디펜스 성공시 방어 32, 보호 12 추가 적용"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "전사", "exp": 48000 }],
+        "accumulate_stats": { "hp": 16 },
+        "accumulate_ap": 47,
+        "effect": ["기본방어 +11", "디펜스 성공시 방어 34, 보호 13 추가 적용"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "전사", "exp": 61000 }],
+        "accumulate_stats": { "hp": 18 },
+        "accumulate_ap": 60,
+        "effect": ["기본방어 +12", "디펜스 성공시 방어 38, 보호 14 추가 적용"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "전사", "exp": 75000 }],
+        "accumulate_stats": { "hp": 20 },
+        "accumulate_ap": 74,
+        "effect": ["기본방어 +13", "디펜스 성공시 방어 42, 보호 15 추가 적용"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "전사", "exp": 92000 }],
+        "accumulate_stats": { "hp": 22 },
+        "accumulate_ap": 91,
+        "effect": ["기본방어 +15", "디펜스 성공시 방어 46, 보호 17 추가 적용", "상대의 공격을 디펜스로 방어하자."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "전사", "exp": 110000 }],
+        "accumulate_stats": { "hp": 25 },
+        "accumulate_ap": 109,
+        "effect": ["기본방어 +16", "디펜스 성공시 방어 50, 보호 20 추가 적용", "상대의 공격을 디펜스로 방어하자."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "전사", "exp": 129000 }],
+        "accumulate_stats": { "hp": 28 },
+        "accumulate_ap": 128,
+        "effect": ["기본방어 +17", "디펜스 성공시 방어 55, 보호 25 추가 적용", "상대의 공격을 디펜스로 방어하자."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 10 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전사", "exp": 149000 }],
+        "accumulate_stats": { "hp": 31 },
+        "accumulate_ap": 148,
+        "effect": ["기본방어 +18", "디펜스 성공시 방어 60, 보호 30 추가 적용", "상대의 공격을 디펜스로 방어하자."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전사", "exp": 174000 }],
+        "accumulate_stats": { "hp": 41 },
+        "accumulate_ap": 173,
+        "effect": ["기본방어 +20", "디펜스 성공시 방어 65, 보호 35 추가 적용"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전사", "exp": 174000 }],
+        "accumulate_stats": { "hp": 41 },
+        "accumulate_ap": 180,
+        "effect": ["기본방어 +22", "디펜스 성공시 방어 70, 보호 35 추가 적용"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전사", "exp": 174000 }],
+        "accumulate_stats": { "hp": 41 },
+        "accumulate_ap": 190,
+        "effect": ["기본방어 +24", "디펜스 성공시 방어 75, 보호 35 추가 적용"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "전사", "exp": 174000 }],
+        "accumulate_stats": { "hp": 41 },
+        "accumulate_ap": 205,
+        "effect": ["기본방어 +26", "디펜스 성공시 방어 80, 보호 35 추가 적용"]
       }
     ]
   }

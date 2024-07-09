@@ -4188,8 +4188,8 @@
     "skill_id": 15,
     "talent": ["lancecombat"],
     "talent_kor": ["랜서"],
-    "category": ["combat"],
-    "category_kor": ["전투"],
+    "category": "combat",
+    "category_kor": "전투",
     "isPromotion": "",
     "name_kor": "랜스 카운터",
     "icon": "",
@@ -4347,8 +4347,8 @@
     "skill_id": 16,
     "talent": ["lancecombat"],
     "talent_kor": ["랜서"],
-    "category": ["combat"],
-    "category_kor": ["전투"],
+    "category": "combat",
+    "category_kor": "전투",
     "isPromotion": "",
     "name_kor": "랜스 마스터리",
     "icon": "",
@@ -4767,8 +4767,8 @@
     "skill_id": 18,
     "talent": ["lancecombat", "closecombat"],
     "talent_kor": ["랜서", "전사"],
-    "category": ["combat"],
-    "category_kor": ["전투"],
+    "category": "combat",
+    "category_kor": "전투",
     "isPromotion": "",
     "name_kor": "다운 어택",
     "icon": "",
@@ -5076,8 +5076,8 @@
     "skill_id": 19,
     "talent": ["lancecombat", "closecombat"],
     "talent_kor": ["랜서", "전사"],
-    "category": ["combat"],
-    "category_kor": ["전투"],
+    "category": "combat",
+    "category_kor": "전투",
     "isPromotion": "",
     "name_kor": "컴뱃 마스터리",
     "icon": "",
@@ -5331,8 +5331,8 @@
     "skill_id": 20,
     "talent": ["lancecombat", "closecombat"],
     "talent_kor": ["랜서", "전사"],
-    "category": ["combat"],
-    "category_kor": ["전투"],
+    "category": "combat",
+    "category_kor": "전투",
     "isPromotion": "",
     "name_kor": "윈드밀",
     "icon": "",
@@ -5574,8 +5574,8 @@
     "skill_id": 21,
     "talent": ["lancecombat", "archery", "closecombat"],
     "talent_kor": ["랜서", "궁수", "전사"],
-    "category": ["combat"],
-    "category_kor": ["전투"],
+    "category": "combat",
+    "category_kor": "전투",
     "isPromotion": "",
     "name_kor": "크리티컬 히트",
     "icon": "",
@@ -5797,8 +5797,8 @@
     "skill_id": 22,
     "talent": ["closecombat"],
     "talent_kor": ["전사"],
-    "category": ["combat"],
-    "category_kor": ["전투"],
+    "category": "combat",
+    "category_kor": "전투",
     "isPromotion": "",
     "name_kor": "디펜스",
     "icon": "",
@@ -5976,6 +5976,1717 @@
         "accumulate_stats": { "hp": 41 },
         "accumulate_ap": 205,
         "effect": ["기본방어 +26", "디펜스 성공시 방어 80, 보호 35 추가 적용"]
+      }
+    ]
+  },
+  {
+    "skill_id": 23,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "크래시 샷",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 522,
+    "total_stats": { "mp": 16, "dex": 31 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 21000 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 10,
+        "effect": ["파편 대미지 100%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "궁수", "exp": 46200 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 22,
+        "effect": ["파편 대미지 105%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "궁수", "exp": 75600 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 36,
+        "effect": ["파편 대미지 110%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "궁수", "exp": 109200 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 52,
+        "effect": ["파편 대미지 115%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "궁수", "exp": 147000 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 70,
+        "effect": ["파편 대미지 120%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 2, "dex": 2 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "궁수", "exp": 189000 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 90,
+        "effect": ["파편 대미지 125%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1, "dex": 2 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "궁수", "exp": 235200 }],
+        "accumulate_stats": { "mp": 2, "dex": 8 },
+        "accumulate_ap": 112,
+        "effect": ["파편 대미지 150%", "파편 수 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "dex": 2 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "궁수", "exp": 285600 }],
+        "accumulate_stats": { "mp": 3, "dex": 10 },
+        "accumulate_ap": 136,
+        "effect": ["파편 대미지 155%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 1, "dex": 2 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "궁수", "exp": 340200 }],
+        "accumulate_stats": { "mp": 4, "dex": 12 },
+        "accumulate_ap": 162,
+        "effect": ["파편 대미지 160%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2, "dex": 3 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "궁수", "exp": 399000 }],
+        "accumulate_stats": { "mp": 5, "dex": 14 },
+        "accumulate_ap": 190,
+        "effect": ["파편 대미지 165%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2, "dex": 3 },
+        "need_ap": 50,
+        "accumulate_rp": [{ "title": "궁수", "exp": 483000 }],
+        "accumulate_stats": { "mp": 7, "dex": 17 },
+        "accumulate_ap": 230,
+        "effect": ["파편 대미지 200%", "폭발 범위, 파편 수 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2, "dex": 3 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "궁수", "exp": 588000 }],
+        "accumulate_stats": { "mp": 9, "dex": 20 },
+        "accumulate_ap": 280,
+        "effect": ["파편 대미지 210%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2, "dex": 3 },
+        "need_ap": 70,
+        "accumulate_rp": [{ "title": "궁수", "exp": 714000 }],
+        "accumulate_stats": { "mp": 11, "dex": 23 },
+        "accumulate_ap": 340,
+        "effect": ["파편 대미지 220%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 3, "dex": 5 },
+        "need_ap": 80,
+        "accumulate_rp": [{ "title": "궁수", "exp": 861000 }],
+        "accumulate_stats": { "mp": 13, "dex": 26 },
+        "accumulate_ap": 410,
+        "effect": ["파편 대미지 230%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1029000 }],
+        "accumulate_stats": { "mp": 16, "dex": 31 },
+        "accumulate_ap": 490,
+        "effect": ["파편 대미지 250%", "폭발 범위 증가", "파편 수 증가"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1029000 }],
+        "accumulate_stats": { "mp": 16, "dex": 31 },
+        "accumulate_ap": 497,
+        "effect": ["파편 대미지 260%"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1029000 }],
+        "accumulate_stats": { "mp": 16, "dex": 31 },
+        "accumulate_ap": 507,
+        "effect": ["파편 대미지 270%"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1029000 }],
+        "accumulate_stats": { "mp": 16, "dex": 31 },
+        "accumulate_ap": 522,
+        "effect": ["파편 대미지 280%"]
+      }
+    ]
+  },
+  {
+    "skill_id": 24,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "애로우 리볼버",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 214,
+    "total_stats": { "str": 8, "dex": 30 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 6600 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 3,
+        "effect": ["애로우 리볼버를 사용해서 적을 공격하자."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 17600 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 8,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "str": 1, "dex": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 28600 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 13,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "str": 1, "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 50600 }],
+        "accumulate_stats": { "str": 1, "dex": 4 },
+        "accumulate_ap": 23,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 61600 }],
+        "accumulate_stats": { "str": 2, "dex": 5 },
+        "accumulate_ap": 28,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 72600 }],
+        "accumulate_stats": { "str": 2, "dex": 7 },
+        "accumulate_ap": 33,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 94600 }],
+        "accumulate_stats": { "str": 2, "dex": 9 },
+        "accumulate_ap": 43,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 1, "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 110000 }],
+        "accumulate_stats": { "str": 2, "dex": 11 },
+        "accumulate_ap": 50,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 1, "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 125400 }],
+        "accumulate_stats": { "str": 3, "dex": 13 },
+        "accumulate_ap": 57,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "궁수", "exp": 140800 }],
+        "accumulate_stats": { "str": 4, "dex": 15 },
+        "accumulate_ap": 64,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "궁수", "exp": 173800 }],
+        "accumulate_stats": { "str": 4, "dex": 18 },
+        "accumulate_ap": 79,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "궁수", "exp": 217800 }],
+        "accumulate_stats": { "str": 4, "dex": 21 },
+        "accumulate_ap": 99,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 2, "dex": 3 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "궁수", "exp": 272800 }],
+        "accumulate_stats": { "str": 4, "dex": 24 },
+        "accumulate_ap": 124,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 2, "dex": 3 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "궁수", "exp": 338800 }],
+        "accumulate_stats": { "str": 6, "dex": 27 },
+        "accumulate_ap": 154,
+        "effect": ["스킬 대미지가 강해진다."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 470800 }],
+        "accumulate_stats": { "str": 8, "dex": 30 },
+        "accumulate_ap": 214,
+        "effect": ["스킬 대미지가 강해진다."]
+      }
+    ]
+  },
+  {
+    "skill_id": 25,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "매그넘 샷",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 232,
+    "total_stats": { "dex": 18 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "궁수", "exp": 2200 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["대미지 200%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 11000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 5,
+        "effect": ["대미지 210%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 22000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10,
+        "effect": ["대미지 220%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "궁수", "exp": 37400 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 17,
+        "effect": ["대미지 230%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 57200 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 26,
+        "effect": ["대미지 240%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 79200 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 36,
+        "effect": ["대미지 250%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 105600 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 48,
+        "effect": ["대미지 300%"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 132000 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 60,
+        "effect": ["대미지 310%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 158400 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 72,
+        "effect": ["대미지 320%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "궁수", "exp": 184800 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 84,
+        "effect": ["대미지 330%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "궁수", "exp": 228800 }],
+        "accumulate_stats": { "dex": 10 },
+        "accumulate_ap": 104,
+        "effect": ["대미지 400%"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "궁수", "exp": 275000 }],
+        "accumulate_stats": { "dex": 12 },
+        "accumulate_ap": 125,
+        "effect": ["대미지 420%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "궁수", "exp": 323400 }],
+        "accumulate_stats": { "dex": 14 },
+        "accumulate_ap": 147,
+        "effect": ["대미지 440%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "궁수", "exp": 374000 }],
+        "accumulate_stats": { "dex": 16 },
+        "accumulate_ap": 170,
+        "effect": ["대미지 460%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 440000 }],
+        "accumulate_stats": { "dex": 18 },
+        "accumulate_ap": 200,
+        "effect": ["대미지 500%"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 440000 }],
+        "accumulate_stats": { "dex": 18 },
+        "accumulate_ap": 207,
+        "effect": ["대미지 500%"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "궁수", "exp": 440000 }],
+        "accumulate_stats": { "dex": 18 },
+        "accumulate_ap": 217,
+        "effect": ["대미지 500%"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 440000 }],
+        "accumulate_stats": { "dex": 18 },
+        "accumulate_ap": 232,
+        "effect": ["대미지 500%"]
+      }
+    ]
+  },
+  {
+    "skill_id": 26,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "레인지 컴뱃 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 187,
+    "total_stats": { "str": 6, "dex": 50 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1200 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "궁수", "exp": 2400 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 1,
+        "effect": ["원거리 공격 최대 대미지에 보너스 1점 추가", "조준속도 110%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 6000 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 4,
+        "effect": ["원거리 공격 최대 대미지에 보너스 2점 추가", "조준속도 120%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 12000 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 9,
+        "effect": ["원거리 공격 최대 대미지에 보너스 4점 추가", "조준속도 130%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "궁수", "exp": 20400 }],
+        "accumulate_stats": { "dex": 10 },
+        "accumulate_ap": 16,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 4점 추가",
+          "원거리 공격 최소 대미지에 보너스 1점 추가",
+          "조준속도 140%"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 4 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "궁수", "exp": 30000 }],
+        "accumulate_stats": { "dex": 14 },
+        "accumulate_ap": 24,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 5점 추가",
+          "원거리 공격 최소 대미지에 보너스 1점 추가",
+          "조준속도 150%"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 4 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 40800 }],
+        "accumulate_stats": { "dex": 18 },
+        "accumulate_ap": 33,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 6점 추가",
+          "원거리 공격 최소 대미지에 보너스 1점 추가",
+          "조준속도 160%"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 4 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 52800 }],
+        "accumulate_stats": { "dex": 22 },
+        "accumulate_ap": 43,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 7점 추가",
+          "원거리 공격 최소 대미지에 보너스 2점 추가",
+          "조준속도 170%"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 1, "dex": 4 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "궁수", "exp": 67200 }],
+        "accumulate_stats": { "dex": 26 },
+        "accumulate_ap": 55,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 9점 추가",
+          "원거리 공격 최소 대미지에 보너스 2점 추가",
+          "조준속도 180%"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 1, "dex": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "궁수", "exp": 84000 }],
+        "accumulate_stats": { "str": 1, "dex": 30 },
+        "accumulate_ap": 69,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 11점 추가",
+          "원거리 공격 최소 대미지에 보너스 2점 추가",
+          "조준속도 190%"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 1, "dex": 4 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "궁수", "exp": 102000 }],
+        "accumulate_stats": { "str": 2, "dex": 34 },
+        "accumulate_ap": 84,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 13점 추가",
+          "원거리 공격 최소 대미지에 보너스 3점 추가",
+          "조준속도 200%"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 1, "dex": 4 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "궁수", "exp": 121200 }],
+        "accumulate_stats": { "str": 3, "dex": 38 },
+        "accumulate_ap": 100,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 16점 추가",
+          "원거리 공격 최소 대미지에 보너스 4점 추가",
+          "조준속도 220%"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 1, "dex": 4 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "궁수", "exp": 141600 }],
+        "accumulate_stats": { "str": 4, "dex": 42 },
+        "accumulate_ap": 117,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 19점 추가",
+          "원거리 공격 최소 대미지에 보너스 6점 추가",
+          "조준속도 250%"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 1, "dex": 4 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "궁수", "exp": 163200 }],
+        "accumulate_stats": { "str": 5, "dex": 46 },
+        "accumulate_ap": 135,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 22점 추가",
+          "원거리 공격 최소 대미지에 보너스 8점 추가",
+          "조준속도 280%"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 187200 }],
+        "accumulate_stats": { "str": 6, "dex": 50 },
+        "accumulate_ap": 155,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 25점 추가",
+          "원거리 공격 최소 대미지에 보너스 10점 추가",
+          "조준속도 300%"
+        ]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 187200 }],
+        "accumulate_stats": { "str": 6, "dex": 50 },
+        "accumulate_ap": 162,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 28점 추가",
+          "원거리 공격 최소 대미지에 보너스 12점 추가",
+          "조준속도 300%"
+        ]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "궁수", "exp": 187200 }],
+        "accumulate_stats": { "str": 6, "dex": 50 },
+        "accumulate_ap": 172,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 31점 추가",
+          "원거리 공격 최소 대미지에 보너스 14점 추가",
+          "조준속도 300%"
+        ]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 187200 }],
+        "accumulate_stats": { "str": 6, "dex": 50 },
+        "accumulate_ap": 187,
+        "effect": [
+          "원거리 공격 최대 대미지에 보너스 34점 추가",
+          "원거리 공격 최소 대미지에 보너스 16점 추가",
+          "조준속도 300%"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "서포트 샷",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 181,
+    "total_stats": { "dex": 20 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1000 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 0,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 20% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "궁수", "exp": 2000 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 1,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 22% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "궁수", "exp": 5000 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 4,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 24% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 8000 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 7,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 26% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 13000 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 12,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 28% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 18000 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 17,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 30% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 28000 }],
+        "accumulate_stats": { "dex": 7 },
+        "accumulate_ap": 27,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 40% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 38000 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 37,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 43% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 50000 }],
+        "accumulate_stats": { "dex": 9 },
+        "accumulate_ap": 49,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 46% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "궁수", "exp": 62000 }],
+        "accumulate_stats": { "dex": 10 },
+        "accumulate_ap": 61,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 49% 추가", "재사용 대기 시간 1.5초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "궁수", "exp": 80000 }],
+        "accumulate_stats": { "dex": 11 },
+        "accumulate_ap": 79,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 54% 추가", "재사용 대기 시간 1초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "궁수", "exp": 101000 }],
+        "accumulate_stats": { "dex": 13 },
+        "accumulate_ap": 100,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 57% 추가", "재사용 대기 시간 1초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 27,
+        "accumulate_rp": [{ "title": "궁수", "exp": 125000 }],
+        "accumulate_stats": { "dex": 15 },
+        "accumulate_ap": 124,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 60% 추가", "재사용 대기 시간 1초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "궁수", "exp": 152000 }],
+        "accumulate_stats": { "dex": 17 },
+        "accumulate_ap": 151,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 63% 추가", "재사용 대기 시간 1초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": -19,
+        "accumulate_rp": [{ "title": "궁수", "exp": 182000 }],
+        "accumulate_stats": { "dex": 20 },
+        "accumulate_ap": 181,
+        "effect": ["서포트 샷 이후 근접 공격 대미지 70% 추가", "재사용 대기 시간 0.5초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 28,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "어전트 샷",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 200,
+    "total_stats": { "sp": 10, "dex": 20 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 100%", "어전트 샷 이후 레인지 계열 공격 조준 속도 150%", "재사용 대기시간 7초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1000 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 1,
+        "effect": ["대미지 100%", "어전트 샷 이후 레인지 계열 공격 조준 속도 150%", "재사용 대기시간 7초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 2000 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 5,
+        "effect": ["대미지 100%", "어전트 샷 이후 레인지 계열 공격 조준 속도 150%", "재사용 대기시간 7초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "궁수", "exp": 5000 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 10,
+        "effect": ["대미지 100%", "어전트 샷 이후 레인지 계열 공격 조준 속도 150%", "재사용 대기시간 7초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "궁수", "exp": 8000 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 17,
+        "effect": ["대미지 100%", "어전트 샷 이후 레인지 계열 공격 조준 속도 150%", "재사용 대기시간 7초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 13000 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 26,
+        "effect": ["대미지 100%", "어전트 샷 이후 레인지 계열 공격 조준 속도 150%", "재사용 대기시간 7초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 18000 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 36,
+        "effect": ["대미지 110%", "어전트 샷 이후 레인지 계열 공격 조준 속도 200%", "재사용 대기시간 6초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 28000 }],
+        "accumulate_stats": { "sp": 1, "dex": 7 },
+        "accumulate_ap": 48,
+        "effect": ["대미지 110%", "어전트 샷 이후 레인지 계열 공격 조준 속도 200%", "재사용 대기시간 6초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 38000 }],
+        "accumulate_stats": { "sp": 2, "dex": 8 },
+        "accumulate_ap": 60,
+        "effect": ["대미지 110%", "어전트 샷 이후 레인지 계열 공격 조준 속도 200%", "재사용 대기시간 6초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 50000 }],
+        "accumulate_stats": { "sp": 3, "dex": 9 },
+        "accumulate_ap": 72,
+        "effect": ["대미지 110%", "어전트 샷 이후 레인지 계열 공격 조준 속도 200%", "재사용 대기시간 6초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "궁수", "exp": 62000 }],
+        "accumulate_stats": { "sp": 4, "dex": 10 },
+        "accumulate_ap": 84,
+        "effect": ["대미지 110%", "어전트 샷 이후 레인지 계열 공격 조준 속도 200%", "재사용 대기시간 6초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 1, "dex": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "궁수", "exp": 80000 }],
+        "accumulate_stats": { "sp": 5, "dex": 11 },
+        "accumulate_ap": 104,
+        "effect": ["대미지 120%", "어전트 샷 이후 레인지 계열 공격 조준 속도 230%", "재사용 대기시간 5초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 1, "dex": 2 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "궁수", "exp": 101000 }],
+        "accumulate_stats": { "sp": 6, "dex": 13 },
+        "accumulate_ap": 125,
+        "effect": ["대미지 120%", "어전트 샷 이후 레인지 계열 공격 조준 속도 230%", "재사용 대기시간 5초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 1, "dex": 2 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "궁수", "exp": 125000 }],
+        "accumulate_stats": { "sp": 7, "dex": 15 },
+        "accumulate_ap": 147,
+        "effect": ["대미지 120%", "어전트 샷 이후 레인지 계열 공격 조준 속도 230%", "재사용 대기시간 5초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 2, "dex": 3 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "궁수", "exp": 152000 }],
+        "accumulate_stats": { "sp": 8, "dex": 17 },
+        "accumulate_ap": 170,
+        "effect": ["대미지 120%", "어전트 샷 이후 레인지 계열 공격 조준 속도 230%", "재사용 대기시간 5초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 182000 }],
+        "accumulate_stats": { "sp": 10, "dex": 20 },
+        "accumulate_ap": 200,
+        "effect": ["대미지 150%", "어전트 샷 이후 레인지 계열 공격 조준 속도 270%", "재사용 대기시간 4초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 29,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "보우 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 157,
+    "total_stats": { "dex": 19 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["활 장착시", "원거리 공격 최대 대미지 2 증가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 1 증가", "원거리 공격 최대 대미지 3 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "궁수", "exp": 2000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 2 증가", "원거리 공격 최대 대미지 4 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "궁수", "exp": 4000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 3 증가", "원거리 공격 최대 대미지 5 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "궁수", "exp": 7000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 6,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 4 증가", "원거리 공격 최대 대미지 7 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 11000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 5 증가", "원거리 공격 최대 대미지 8 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "궁수", "exp": 16000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 15,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 6 증가", "원거리 공격 최대 대미지 9 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 24000 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 23,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 7 증가", "원거리 공격 최대 대미지 10 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "궁수", "exp": 34000 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 33,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 8 증가", "원거리 공격 최대 대미지 12 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 45000 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 44,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 9 증가", "원거리 공격 최대 대미지 14 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "궁수", "exp": 57000 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 56,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 10 증가", "원거리 공격 최대 대미지 16 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "궁수", "exp": 72000 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 71,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 11 증가", "원거리 공격 최대 대미지 18 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "궁수", "exp": 89000 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 88,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 12 증가", "원거리 공격 최대 대미지 20 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "궁수", "exp": 108000 }],
+        "accumulate_stats": { "dex": 11 },
+        "accumulate_ap": 107,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 13 증가", "원거리 공격 최대 대미지 23 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 5 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "궁수", "exp": 128000 }],
+        "accumulate_stats": { "dex": 14 },
+        "accumulate_ap": 127,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 14 증가", "원거리 공격 최대 대미지 26 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 158000 }],
+        "accumulate_stats": { "dex": 19 },
+        "accumulate_ap": 157,
+        "effect": ["활 장착시", "원거리 공격 최소 대미지 15 증가", "원거리 공격 최대 대미지 30 증가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 30,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "크로스보우 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 157,
+    "total_stats": { "will": 19 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["원거리 공격 최대 대미지 1 증가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["석궁 장착시", "원거리 공격 최대 대미지 2 증가", "크리티컬 +1", "방어관통 +2"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "궁수", "exp": 2000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["석궁 장착시", "원거리 공격 최대 대미지 3 증가", "크리티컬 +2", "방어관통 +2"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "궁수", "exp": 4000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["석궁 장착시", "원거리 공격 최대 대미지 4 증가", "크리티컬 +3", "방어관통 +4"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "궁수", "exp": 7000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 6,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 1 증가",
+          "원거리 공격 최대 대미지 5 증가",
+          "크리티컬 +4",
+          "방어관통 +4"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 11000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 2 증가",
+          "원거리 공격 최대 대미지 5 증가",
+          "크리티컬 +5",
+          "방어관통 +6"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "궁수", "exp": 16000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 15,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 3 증가",
+          "원거리 공격 최대 대미지 6 증가",
+          "크리티컬 +6",
+          "방어관통 +6"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 24000 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 23,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 4 증가",
+          "원거리 공격 최대 대미지 7 증가",
+          "크리티컬 +7",
+          "방어관통 +9"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "궁수", "exp": 34000 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 33,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 4 증가",
+          "원거리 공격 최대 대미지 8 증가",
+          "크리티컬 +8",
+          "방어관통 +10"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 45000 }],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 44,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 4 증가",
+          "원거리 공격 최대 대미지 9 증가",
+          "크리티컬 +9",
+          "방어관통 +11"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "궁수", "exp": 57000 }],
+        "accumulate_stats": { "will": 4 },
+        "accumulate_ap": 56,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 5 증가",
+          "원거리 공격 최대 대미지 10 증가",
+          "크리티컬 +10",
+          "방어관통 +12"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "궁수", "exp": 72000 }],
+        "accumulate_stats": { "will": 6 },
+        "accumulate_ap": 71,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 6 증가",
+          "원거리 공격 최대 대미지 11 증가",
+          "크리티컬 +11",
+          "방어관통 +13"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "궁수", "exp": 89000 }],
+        "accumulate_stats": { "will": 8 },
+        "accumulate_ap": 88,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 7 증가",
+          "원거리 공격 최대 대미지 13 증가",
+          "크리티컬 +12",
+          "방어관통 +14"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "궁수", "exp": 108000 }],
+        "accumulate_stats": { "will": 11 },
+        "accumulate_ap": 107,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 8 증가",
+          "원거리 공격 최대 대미지 16 증가",
+          "크리티컬 +13",
+          "방어관통 +15"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "will": 5 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "궁수", "exp": 128000 }],
+        "accumulate_stats": { "will": 14 },
+        "accumulate_ap": 127,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 9 증가",
+          "원거리 공격 최대 대미지 18 증가",
+          "크리티컬 +14",
+          "방어관통 +16"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 158000 }],
+        "accumulate_stats": { "will": 19 },
+        "accumulate_ap": 157,
+        "effect": [
+          "석궁 장착시",
+          "원거리 공격 최소 대미지 10 증가",
+          "원거리 공격 최대 대미지 20 증가",
+          "크리티컬 +15",
+          "방어관통 +18"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 31,
+    "talent": ["archery"],
+    "talent_kor": ["궁수"],
+    "category": ["hidden"],
+    "category_kor": ["히든"],
+    "isPromotion": "",
+    "name_kor": "스파이더 샷",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 306,
+    "total_stats": { "sp": 20, "dex": 23 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["트랩 지속시간 5초", "트랩에 걸린 대상에 크리티컬 대미지 5%"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "궁수", "exp": 500 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 5,
+        "effect": [
+          "트랩 지속시간 5초",
+          "트랩에 걸린 대상에 크리티컬 대미지 6%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "궁수", "exp": 1300 }],
+        "accumulate_stats": { "sp": 1, "dex": 1 },
+        "accumulate_ap": 11,
+        "effect": [
+          "트랩 지속시간 5초",
+          "트랩에 걸린 대상에 크리티컬 대미지 7%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "궁수", "exp": 2300 }],
+        "accumulate_stats": { "sp": 1, "dex": 2 },
+        "accumulate_ap": 19,
+        "effect": [
+          "트랩 지속시간 5초",
+          "트랩에 걸린 대상에 크리티컬 대미지 8%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "궁수", "exp": 3500 }],
+        "accumulate_stats": { "sp": 2, "dex": 2 },
+        "accumulate_ap": 29,
+        "effect": [
+          "트랩 지속시간 5초",
+          "트랩에 걸린 대상에 크리티컬 대미지 9%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "궁수", "exp": 5000 }],
+        "accumulate_stats": { "sp": 2, "dex": 3 },
+        "accumulate_ap": 41,
+        "effect": [
+          "트랩 지속시간 6초",
+          "트랩에 걸린 대상에 크리티컬 대미지 11%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "궁수", "exp": 7000 }],
+        "accumulate_stats": { "sp": 3, "dex": 3 },
+        "accumulate_ap": 55,
+        "effect": [
+          "트랩 지속시간 6초",
+          "트랩에 걸린 대상에 크리티컬 대미지 12%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "궁수", "exp": 9400 }],
+        "accumulate_stats": { "sp": 4, "dex": 4 },
+        "accumulate_ap": 71,
+        "effect": [
+          "트랩 지속시간 6초",
+          "트랩에 걸린 대상에 크리티컬 대미지 13%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 2, "dex": 2 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "궁수", "exp": 12200 }],
+        "accumulate_stats": { "sp": 5, "dex": 5 },
+        "accumulate_ap": 89,
+        "effect": [
+          "트랩 지속시간 6초",
+          "트랩에 걸린 대상에 크리티컬 대미지 14%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 2, "dex": 2 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "궁수", "exp": 15400 }],
+        "accumulate_stats": { "sp": 7, "dex": 7 },
+        "accumulate_ap": 113,
+        "effect": [
+          "트랩 지속시간 7초",
+          "트랩에 걸린 대상에 크리티컬 대미지 15%",
+          "재사용 대기시간 감소",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 2, "dex": 2 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "궁수", "exp": 18900 }],
+        "accumulate_stats": { "sp": 9, "dex": 9 },
+        "accumulate_ap": 139,
+        "effect": [
+          "트랩 지속시간 7초",
+          "트랩에 걸린 대상에 크리티컬 대미지 16%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 2, "dex": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "궁수", "exp": 22700 }],
+        "accumulate_stats": { "sp": 11, "dex": 11 },
+        "accumulate_ap": 167,
+        "effect": [
+          "트랩 지속시간 7초",
+          "트랩에 걸린 대상에 크리티컬 대미지 18%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 2, "dex": 2 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "궁수", "exp": 26700 }],
+        "accumulate_stats": { "sp": 13, "dex": 13 },
+        "accumulate_ap": 197,
+        "effect": [
+          "트랩 지속시간 8초",
+          "트랩에 걸린 대상에 크리티컬 대미지 20%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 2, "dex": 3 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "궁수", "exp": 31200 }],
+        "accumulate_stats": { "sp": 15, "dex": 15 },
+        "accumulate_ap": 229,
+        "effect": [
+          "트랩 지속시간 8초",
+          "트랩에 걸린 대상에 크리티컬 대미지 22%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 3, "dex": 5 },
+        "need_ap": 42,
+        "accumulate_rp": [{ "title": "궁수", "exp": 36200 }],
+        "accumulate_stats": { "sp": 17, "dex": 18 },
+        "accumulate_ap": 264,
+        "effect": [
+          "트랩 지속시간 9초",
+          "트랩에 걸린 대상에 크리티컬 대미지 25%",
+          "스파이더 트랩을 발사하여 적을 이동불가 상태로 만든다.",
+          "스파이더 트랩을 가지고 있어야 사용할 수 있다."
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "궁수", "exp": 42200 }],
+        "accumulate_stats": { "sp": 20, "dex": 23 },
+        "accumulate_ap": 306,
+        "effect": ["트랩 지속시간 10초", "트랩에 걸린 대상에 크리티컬 대미지 30%", "재사용 대기시간 감소"]
       }
     ]
   }

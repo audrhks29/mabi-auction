@@ -1,6 +1,6 @@
 [
   { "id": 1, "category": "생활", "link": "life" },
-  { "id": 2, "category": "전투", "link": "battle" },
+  { "id": 2, "category": "전투", "link": "combat" },
   { "id": 3, "category": "마법", "link": "magic" },
   { "id": 4, "category": "연금술", "link": "alchemy" },
   { "id": 5, "category": "격투술", "link": "fighter" },

@@ -1,8 +1,8 @@
 [
   { "id": 1, "image": "", "talent": "상인", "link": "merchant" },
-  { "id": 2, "image": "", "talent": "펫 핸들러" },
-  { "id": 3, "image": "", "talent": "체인 슬래셔" },
-  { "id": 4, "image": "", "talent": "슈터" },
+  { "id": 2, "image": "", "talent": "펫 핸들러", "link": "pettraining" },
+  { "id": 3, "image": "", "talent": "체인 슬래셔", "link": "chainslash" },
+  { "id": 4, "image": "", "talent": "슈터", "link": "gunslinger" },
   {
     "id": 5,
     "image": {
@@ -22,7 +22,8 @@
       "Expert": "/images/talent/magic/magic_3.png",
       "Grandmaster": "/images/talent/magic/magic_4.png"
     },
-    "talent": "마법사"
+    "talent": "마법사",
+    "link": "magic"
   },
   {
     "id": 7,
@@ -43,15 +44,16 @@
       "Expert": "/images/talent/battleAlchemy/battleAlchemy_3.png",
       "Grandmaster": "/images/talent/battleAlchemy/battleAlchemy_4.png"
     },
-    "talent": "전투 연금술사"
+    "talent": "전투 연금술사",
+    "link": "battlealchemy"
   },
-  { "id": 9, "image": "", "talent": "음유시인" },
-  { "id": 10, "image": "", "talent": "사제" },
-  { "id": 11, "image": "", "talent": "재단사" },
+  { "id": 9, "image": "", "talent": "음유시인", "link": "music" },
+  { "id": 10, "image": "", "talent": "사제", "link": "holyarts" },
+  { "id": 11, "image": "", "talent": "재단사", "link": "tailoring" },
   { "id": 12, "image": "", "talent": "랜서", "link": "lancecombat" },
-  { "id": 13, "image": "", "talent": "요리사" },
-  { "id": 14, "image": "", "talent": "모험가" },
-  { "id": 15, "image": "", "talent": "격투가" },
+  { "id": 13, "image": "", "talent": "요리사", "link": "cooking" },
+  { "id": 14, "image": "", "talent": "모험가", "link": "adventure" },
+  { "id": 15, "image": "", "talent": "격투가", "link": "martialarts" },
   {
     "id": 16,
     "image": {
@@ -62,11 +64,11 @@
     },
     "talent": "연성 연금술사"
   },
-  { "id": 17, "image": "", "talent": "목수" },
-  { "id": 18, "image": "", "talent": "약사" },
-  { "id": 19, "image": "", "talent": "대장장이" },
+  { "id": 17, "image": "", "talent": "목수", "link": "carpentry" },
+  { "id": 18, "image": "", "talent": "약사", "link": "medicine" },
+  { "id": 19, "image": "", "talent": "대장장이", "link": "smithing" },
   { "id": 20, "image": "", "talent": "인형사", "link": "puppeteer" },
-  { "id": 21, "image": "", "talent": "닌자" },
-  { "id": 22, "image": "", "talent": "마기그래퍼" },
-  { "id": 23, "image": "", "talent": "점성술사" }
+  { "id": 21, "image": "", "talent": "닌자", "link": "ninja" },
+  { "id": 22, "image": "", "talent": "마기그래퍼", "link": "glyphwrighting" },
+  { "id": 23, "image": "", "talent": "점성술사", "link": "" }
 ]

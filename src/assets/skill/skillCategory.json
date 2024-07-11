@@ -3,7 +3,7 @@
   { "id": 2, "category": "전투", "link": "combat" },
   { "id": 3, "category": "마법", "link": "magic" },
   { "id": 4, "category": "연금술", "link": "alchemy" },
-  { "id": 5, "category": "격투술", "link": "fighter" },
+  { "id": 5, "category": "격투술", "link": "martialarts" },
   { "id": 6, "category": "음악", "link": "music" },
   { "id": 7, "category": "인형술", "link": "puppetry" },
   { "id": 8, "category": "듀얼건", "link": "dualgun" },

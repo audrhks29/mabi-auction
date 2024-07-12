@@ -7853,5 +7853,201 @@
         "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 800%", "스플래시 대미지 증가"]
       }
     ]
+  },
+  {
+    "skill_id": 33,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "연속기 : 파운딩",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 302,
+    "total_stats": { "will": 19 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 400%"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 7500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 5,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 410%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 16500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 11,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 420%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "격투술", "exp": 27000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 18,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 430%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 39000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 26,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 440%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 52500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 35,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 450%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "격투술", "exp": 67500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 45,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 460%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "격투술", "exp": 87000 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 58,
+        "effect": [
+          "3단계 연속기 (2단계 연속기 후 사용가능)",
+          "대미지 620%",
+          "파운딩 타수 증가",
+          "파운딩 추가 타수 증가"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "격투술", "exp": 111000 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 74,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 630%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "격투술", "exp": 139500 }],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 93,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 640%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "격투술", "exp": 172500 }],
+        "accumulate_stats": { "will": 5 },
+        "accumulate_ap": 115,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 650%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "격투술", "exp": 210000 }],
+        "accumulate_stats": { "will": 7 },
+        "accumulate_ap": 140,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 660%"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 31,
+        "accumulate_rp": [{ "title": "격투술", "exp": 252000 }],
+        "accumulate_stats": { "will": 9 },
+        "accumulate_ap": 168,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 670%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 34,
+        "accumulate_rp": [{ "title": "격투술", "exp": 298500 }],
+        "accumulate_stats": { "will": 12 },
+        "accumulate_ap": 199,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 680%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "will": 4 },
+        "need_ap": 37,
+        "accumulate_rp": [{ "title": "격투술", "exp": 349500 }],
+        "accumulate_stats": { "will": 15 },
+        "accumulate_ap": 233,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 700%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 405000 }],
+        "accumulate_stats": { "will": 19 },
+        "accumulate_ap": 270,
+        "effect": [
+          "3단계 연속기 (2단계 연속기 후 사용가능)",
+          "대미지 900%",
+          "파운딩 타수 증가",
+          "파운딩 추가 타수 증가"
+        ]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 405000 }],
+        "accumulate_stats": { "will": 19 },
+        "accumulate_ap": 277,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 930%"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 405000 }],
+        "accumulate_stats": { "will": 19 },
+        "accumulate_ap": 287,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 960%"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "격투술", "exp": 405000 }],
+        "accumulate_stats": { "will": 19 },
+        "accumulate_ap": 302,
+        "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 1000%"]
+      }
+    ]
   }
 ]

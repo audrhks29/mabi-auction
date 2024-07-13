@@ -8049,5 +8049,1513 @@
         "effect": ["3단계 연속기 (2단계 연속기 후 사용가능)", "대미지 1000%"]
       }
     ]
+  },
+  {
+    "skill_id": 33,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "리스토어",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 295,
+    "total_stats": { "hp": 15, "sp": 20 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 4 회복"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "격투술", "exp": 3000 }],
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 4 회복"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 8000 }],
+        "accumulate_stats": { "sp": 2 },
+        "accumulate_ap": 8,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 5 회복"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 15000 }],
+        "accumulate_stats": { "sp": 3 },
+        "accumulate_ap": 15,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 5 회복"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "격투술", "exp": 24000 }],
+        "accumulate_stats": { "sp": 4 },
+        "accumulate_ap": 24,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 6 회복"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "격투술", "exp": 35000 }],
+        "accumulate_stats": { "sp": 5 },
+        "accumulate_ap": 35,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 6 회복"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 48000 }],
+        "accumulate_stats": { "sp": 6 },
+        "accumulate_ap": 48,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 7 회복"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "격투술", "exp": 63000 }],
+        "accumulate_stats": { "sp": 7 },
+        "accumulate_ap": 63,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 8 회복", "해독 확률 55%"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "격투술", "exp": 80000 }],
+        "accumulate_stats": { "sp": 8 },
+        "accumulate_ap": 80,
+        "effect": ["초당 생명력 8 회복", "초당 스태미나 9 회복", "해독 확률 60%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "격투술", "exp": 99000 }],
+        "accumulate_stats": { "sp": 9 },
+        "accumulate_ap": 99,
+        "effect": ["초당 생명력 9 회복", "초당 스태미나 9 회복", "해독 확률 65%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 3, "sp": 2 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "격투술", "exp": 120000 }],
+        "accumulate_stats": { "sp": 10 },
+        "accumulate_ap": 120,
+        "effect": ["초당 생명력 10 회복", "초당 스태미나 10 회복", "해독 확률 70%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 3, "sp": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "격투술", "exp": 145000 }],
+        "accumulate_stats": { "hp": 3, "sp": 12 },
+        "accumulate_ap": 145,
+        "effect": ["초당 생명력 11 회복", "초당 스태미나 11 회복", "해독 확률 75%"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 3, "sp": 2 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "격투술", "exp": 175000 }],
+        "accumulate_stats": { "hp": 6, "sp": 14 },
+        "accumulate_ap": 175,
+        "effect": ["초당 생명력 12 회복", "초당 스태미나 12 회복", "해독 확률 80%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 3, "sp": 2 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "격투술", "exp": 210000 }],
+        "accumulate_stats": { "hp": 9, "sp": 16 },
+        "accumulate_ap": 210,
+        "effect": ["초당 생명력 13 회복", "초당 스태미나 13 회복", "해독 확률 85%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 3, "sp": 2 },
+        "need_ap": 45,
+        "accumulate_rp": [{ "title": "격투술", "exp": 250000 }],
+        "accumulate_stats": { "hp": 12, "sp": 18 },
+        "accumulate_ap": 250,
+        "effect": ["초당 생명력 14 회복", "초당 스태미나 14 회복", "해독 확률 90%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "격투술", "exp": 295000 }],
+        "accumulate_stats": { "hp": 15, "sp": 20 },
+        "accumulate_ap": 295,
+        "effect": ["초당 생명력 15 회복", "초당 스태미나 15 회복", "해독 확률 95%"]
+      }
+    ]
+  },
+  {
+    "skill_id": 34,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "연속기 : 스크류 어퍼",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 212,
+    "total_stats": { "hp": 10, "will": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 15, 보호 3 파괴 가능", "대미지 250%"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "격투술", "exp": 1000 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 0,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 16, 보호 3 파괴 가능", "대미지 270%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "격투술", "exp": 7000 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 4,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 17, 보호 3 파괴 가능", "대미지 290%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 14500 }],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 9,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 18, 보호 4 파괴 가능", "대미지 310%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 23500 }],
+        "accumulate_stats": { "will": 4 },
+        "accumulate_ap": 15,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 19, 보호 4 파괴 가능", "대미지 330%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "격투술", "exp": 34000 }],
+        "accumulate_stats": { "will": 5 },
+        "accumulate_ap": 22,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 20, 보호 5 파괴 가능", "대미지 350%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 1, "will": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 46000 }],
+        "accumulate_stats": { "will": 6 },
+        "accumulate_ap": 30,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 21, 보호 5 파괴 가능", "대미지 370%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 59500 }],
+        "accumulate_stats": { "hp": 1, "will": 7 },
+        "accumulate_ap": 39,
+        "effect": [
+          "2단계 연속기 (1단계 연속기 후 사용가능)",
+          "방어 22, 보호 6 파괴 가능",
+          "대미지 390%",
+          "방어, 보호 파괴 증가"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 1, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "격투술", "exp": 74500 }],
+        "accumulate_stats": { "hp": 2, "will": 8 },
+        "accumulate_ap": 49,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 23, 보호 6 파괴 가능", "대미지 410%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 1, "will": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "격투술", "exp": 92500 }],
+        "accumulate_stats": { "hp": 3, "will": 9 },
+        "accumulate_ap": 61,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 24, 보호 7 파괴 가능", "대미지 430%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 1, "will": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "격투술", "exp": 113500 }],
+        "accumulate_stats": { "hp": 4, "will": 10 },
+        "accumulate_ap": 75,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 25, 보호 7 파괴 가능", "대미지 450%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 1, "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "격투술", "exp": 142000 }],
+        "accumulate_stats": { "hp": 5, "will": 11 },
+        "accumulate_ap": 94,
+        "effect": [
+          "2단계 연속기 (1단계 연속기 후 사용가능)",
+          "대미지 480%",
+          "방어 26, 보호 8 파괴 가능",
+          "방어, 보호 파괴 성공률 증가"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 1, "will": 1 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "격투술", "exp": 172000 }],
+        "accumulate_stats": { "hp": 6, "will": 12 },
+        "accumulate_ap": 114,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 27, 보호 8 파괴 가능", "대미지 510%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "will": 2 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "격투술", "exp": 203500 }],
+        "accumulate_stats": { "hp": 7, "will": 13 },
+        "accumulate_ap": 135,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 28, 보호 9 파괴 가능", "대미지 540%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 2, "will": 2 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "격투술", "exp": 236500 }],
+        "accumulate_stats": { "hp": 8, "will": 15 },
+        "accumulate_ap": 157,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 29, 보호 9 파괴 가능", "대미지 570%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 271000 }],
+        "accumulate_stats": { "hp": 10, "will": 17 },
+        "accumulate_ap": 180,
+        "effect": [
+          "2단계 연속기 (1단계 연속기 후 사용가능)",
+          "대미지 600%",
+          "방어 30, 보호 10 파괴 가능",
+          "방어, 보호 파괴 성공률 증가"
+        ]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 271000 }],
+        "accumulate_stats": { "hp": 10, "will": 17 },
+        "accumulate_ap": 187,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 31, 보호 10 파괴 가능", "대미지 630%"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 271000 }],
+        "accumulate_stats": { "hp": 10, "will": 17 },
+        "accumulate_ap": 197,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "방어 32, 보호 10 파괴 가능", "대미지 660%"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "격투술", "exp": 271000 }],
+        "accumulate_stats": { "hp": 10, "will": 17 },
+        "accumulate_ap": 212,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 690%", "방어 33, 보호 10 파괴 가능"]
+      }
+    ]
+  },
+  {
+    "skill_id": 35,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "연속기 : 섬머솔트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 180,
+    "total_stats": { "will": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 250%"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "격투술", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 280%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "격투술", "exp": 7000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 4,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 310%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 14500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 9,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 340%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 23500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 15,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 370%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "격투술", "exp": 34000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 22,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 400%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 46000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 30,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 430%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 59500 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 39,
+        "effect": [
+          "2단계 연속기 (1단계 연속기 후 사용가능)",
+          "대미지 460%",
+          "그로기 성공률 증가",
+          "그로기 상태이상 시간 증가"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "격투술", "exp": 74500 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 49,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 490%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "격투술", "exp": 92500 }],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 61,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 520%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "격투술", "exp": 113500 }],
+        "accumulate_stats": { "will": 4 },
+        "accumulate_ap": 75,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 550%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "격투술", "exp": 142000 }],
+        "accumulate_stats": { "will": 6 },
+        "accumulate_ap": 94,
+        "effect": [
+          "2단계 연속기 (1단계 연속기 후 사용가능)",
+          "대미지 580%",
+          "그로기 성공률 증가",
+          "그로기 상태이상 시간 증가"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "격투술", "exp": 172000 }],
+        "accumulate_stats": { "will": 8 },
+        "accumulate_ap": 114,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 610%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "격투술", "exp": 203500 }],
+        "accumulate_stats": { "will": 10 },
+        "accumulate_ap": 135,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 640%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "will": 4 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "격투술", "exp": 236500 }],
+        "accumulate_stats": { "will": 13 },
+        "accumulate_ap": 157,
+        "effect": ["2단계 연속기 (1단계 연속기 후 사용가능)", "대미지 670%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 271000 }],
+        "accumulate_stats": { "will": 17 },
+        "accumulate_ap": 180,
+        "effect": [
+          "2단계 연속기 (1단계 연속기 후 사용가능)",
+          "대미지 700%",
+          "그로기 성공률 증가",
+          "그로기 상태이상 시간 증가"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 36,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "너클 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 157,
+    "total_stats": { "will": 19 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 1 증가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "격투술", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 2 증가", "밸런스 + 1"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "격투술", "exp": 2200 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 3 증가", "밸런스 + 1"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 4600 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 4 증가", "밸런스 + 2"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "격투술", "exp": 8200 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 6,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 5 증가", "근접 공격 최소 대미지 1 증가", "밸런스 + 2"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "격투술", "exp": 13000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 5 증가", "근접 공격 최소 대미지 2 증가", "밸런스 + 3"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "격투술", "exp": 19000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 15,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 6 증가", "근접 공격 최소 대미지 3 증가", "밸런스 + 3"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 28600 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 23,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 7 증가", "근접 공격 최소 대미지 4 증가", "밸런스 + 4"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "격투술", "exp": 40600 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 33,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 8 증가", "근접 공격 최소 대미지 4 증가", "밸런스 + 4"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "격투술", "exp": 53800 }],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 44,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 9 증가", "근접 공격 최소 대미지 4 증가", "밸런스 + 4"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 68200 }],
+        "accumulate_stats": { "will": 4 },
+        "accumulate_ap": 56,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 10 증가", "근접 공격 최소 대미지 5 증가", "밸런스 + 5"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "격투술", "exp": 86200 }],
+        "accumulate_stats": { "will": 6 },
+        "accumulate_ap": 71,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 11 증가", "근접 공격 최소 대미지 6 증가", "밸런스 + 6"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "격투술", "exp": 106600 }],
+        "accumulate_stats": { "will": 8 },
+        "accumulate_ap": 88,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 13 증가", "근접 공격 최소 대미지 7 증가", "밸런스 + 7"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "격투술", "exp": 129400 }],
+        "accumulate_stats": { "will": 11 },
+        "accumulate_ap": 107,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 16 증가", "근접 공격 최소 대미지 8 증가", "밸런스 + 8"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "will": 5 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "격투술", "exp": 153400 }],
+        "accumulate_stats": { "will": 14 },
+        "accumulate_ap": 127,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 18 증가", "근접 공격 최소 대미지 9 증가", "밸런스 + 9"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "격투술", "exp": 189400 }],
+        "accumulate_stats": { "will": 19 },
+        "accumulate_ap": 157,
+        "effect": ["너클 장착시", "근접 공격 최대 대미지 20 증가", "근접 공격 최소 대미지 10 증가", "밸런스 + 10"]
+      }
+    ]
+  },
+  {
+    "skill_id": 37,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "연속기 : 대쉬 펀치",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 154,
+    "total_stats": { "sp": 18, "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["1단계 연속기", "대미지 150%"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "격투술", "exp": 1000 }],
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 0,
+        "effect": ["1단계 연속기", "대미지 160%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "격투술", "exp": 2500 }],
+        "accumulate_stats": { "sp": 2 },
+        "accumulate_ap": 1,
+        "effect": ["1단계 연속기", "대미지 170%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 5500 }],
+        "accumulate_stats": { "sp": 3 },
+        "accumulate_ap": 3,
+        "effect": ["1단계 연속기", "대미지 180%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 10000 }],
+        "accumulate_stats": { "sp": 4 },
+        "accumulate_ap": 6,
+        "effect": ["1단계 연속기", "대미지 190%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 14500 }],
+        "accumulate_stats": { "sp": 5 },
+        "accumulate_ap": 9,
+        "effect": ["1단계 연속기", "대미지 200%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "격투술", "exp": 19000 }],
+        "accumulate_stats": { "sp": 6 },
+        "accumulate_ap": 12,
+        "effect": ["1단계 연속기", "대미지 220%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 26500 }],
+        "accumulate_stats": { "sp": 7, "will": 1 },
+        "accumulate_ap": 17,
+        "effect": ["1단계 연속기", "대미지 240%", "대쉬 펀치 사정 거리 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 35500 }],
+        "accumulate_stats": { "sp": 8, "will": 2 },
+        "accumulate_ap": 23,
+        "effect": ["1단계 연속기", "대미지 260%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "격투술", "exp": 46000 }],
+        "accumulate_stats": { "sp": 9, "will": 3 },
+        "accumulate_ap": 30,
+        "effect": ["1단계 연속기", "대미지 280%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 58000 }],
+        "accumulate_stats": { "sp": 10, "will": 4 },
+        "accumulate_ap": 38,
+        "effect": ["1단계 연속기", "대미지 300%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 71500 }],
+        "accumulate_stats": { "sp": 11, "will": 5 },
+        "accumulate_ap": 47,
+        "effect": ["1단계 연속기", "대미지 320%"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 2, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 86500 }],
+        "accumulate_stats": { "sp": 12, "will": 6 },
+        "accumulate_ap": 57,
+        "effect": ["1단계 연속기", "대미지 340%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 2, "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "격투술", "exp": 109000 }],
+        "accumulate_stats": { "sp": 14, "will": 7 },
+        "accumulate_ap": 72,
+        "effect": ["1단계 연속기", "대미지 360%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 2, "will": 1 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "격투술", "exp": 139000 }],
+        "accumulate_stats": { "sp": 16, "will": 8 },
+        "accumulate_ap": 92,
+        "effect": ["1단계 연속기", "대미지 380%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 184000 }],
+        "accumulate_stats": { "sp": 18, "will": 9 },
+        "accumulate_ap": 122,
+        "effect": ["1단계 연속기", "대미지 400%", "대쉬 펀치 사정 거리 증가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 38,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "연속기 : 차징 피스트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 122,
+    "total_stats": { "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["1단계 연속기", "대미지 150%"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "격투술", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["1단계 연속기", "대미지 160%", "차지 사정거리 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "격투술", "exp": 2500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["1단계 연속기", "대미지 170%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 5500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["1단계 연속기", "대미지 180%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 10000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 6,
+        "effect": ["1단계 연속기", "대미지 190%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 14500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 9,
+        "effect": ["1단계 연속기", "대미지 200%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "격투술", "exp": 19000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 12,
+        "effect": ["1단계 연속기", "대미지 220%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 26500 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 17,
+        "effect": ["1단계 연속기", "대미지 240%", "차지 사정거리 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 35500 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 23,
+        "effect": ["1단계 연속기", "대미지 260%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "격투술", "exp": 46000 }],
+        "accumulate_stats": { "will": 3 },
+        "accumulate_ap": 30,
+        "effect": ["1단계 연속기", "대미지 280%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 58000 }],
+        "accumulate_stats": { "will": 4 },
+        "accumulate_ap": 38,
+        "effect": ["1단계 연속기", "대미지 300%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 71500 }],
+        "accumulate_stats": { "will": 5 },
+        "accumulate_ap": 47,
+        "effect": ["1단계 연속기", "대미지 320%"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 86500 }],
+        "accumulate_stats": { "will": 6 },
+        "accumulate_ap": 57,
+        "effect": ["1단계 연속기", "대미지 340%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "격투술", "exp": 109000 }],
+        "accumulate_stats": { "will": 7 },
+        "accumulate_ap": 72,
+        "effect": ["1단계 연속기", "대미지 360%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "격투술", "exp": 139000 }],
+        "accumulate_stats": { "will": 8 },
+        "accumulate_ap": 92,
+        "effect": ["1단계 연속기", "대미지 380%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "격투술", "exp": 184000 }],
+        "accumulate_stats": { "will": 9 },
+        "accumulate_ap": 122,
+        "effect": ["1단계 연속기", "대미지 400%", "차지 사정거리 증가", "차지 시간 단축"]
+      }
+    ]
+  },
+  {
+    "skill_id": 39,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "연속기 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 148,
+    "total_stats": { "str": 10, "will": 44 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["연속기 사용 시 대미지 1% 증가", "중갑옷 장비 시 3단계 연속기 스킬 사용 불가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 3600 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 3,
+        "effect": ["연속기 사용 시 대미지 5% 증가", "중갑옷 장비 시 3단계 연속기 스킬 사용 불가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 7200 }],
+        "accumulate_stats": { "will": 4 },
+        "accumulate_ap": 6,
+        "effect": ["연속기 사용 시 대미지 6% 증가", "중갑옷 장비 시 3단계 연속기 스킬 사용 불가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 10800 }],
+        "accumulate_stats": { "will": 6 },
+        "accumulate_ap": 9,
+        "effect": ["연속기 사용 시 대미지 7% 증가", "중갑옷 장비 시 3단계 연속기 스킬 사용 불가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 18000 }],
+        "accumulate_stats": { "will": 8 },
+        "accumulate_ap": 15,
+        "effect": ["연속기 사용 시 대미지 8% 증가", "중갑옷 장비 시 3단계 연속기 스킬 사용 불가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 25200 }],
+        "accumulate_stats": { "will": 10 },
+        "accumulate_ap": 21,
+        "effect": ["연속기 사용 시 대미지 9% 증가", "중갑옷 장비 시 3단계 연속기 스킬 사용 불가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 32400 }],
+        "accumulate_stats": { "will": 12 },
+        "accumulate_ap": 27,
+        "effect": ["연속기 사용 시 대미지 10% 증가", "중갑옷 장비 시 3단계 연속기 스킬 사용 불가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 43200 }],
+        "accumulate_stats": { "will": 15 },
+        "accumulate_ap": 36,
+        "effect": ["연속기 사용 시 대미지 13% 증가", "중갑옷 장비 시 3단계 연속기 스킬 대미지 40% 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 54000 }],
+        "accumulate_stats": { "will": 18 },
+        "accumulate_ap": 45,
+        "effect": ["연속기 사용 시 대미지 14% 증가", "중갑옷 장비 시 3단계 연속기 스킬 대미지 40% 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 64800 }],
+        "accumulate_stats": { "will": 21 },
+        "accumulate_ap": 54,
+        "effect": ["연속기 사용 시 대미지 15% 증가", "중갑옷 장비 시 3단계 연속기 스킬 대미지 40% 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 2, "will": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 75600 }],
+        "accumulate_stats": { "will": 24 },
+        "accumulate_ap": 63,
+        "effect": ["연속기 사용 시 대미지 16% 증가", "중갑옷 장비 시 3단계 연속기 스킬 대미지 40% 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 2, "will": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 93600 }],
+        "accumulate_stats": { "str": 2, "will": 28 },
+        "accumulate_ap": 78,
+        "effect": [
+          "연속기 사용 시 대미지 20% 증가",
+          "연속기 쿨타임 5% 감소",
+          "중갑옷 장비 시 3단계 연속기 스킬 대미지 30% 감소"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 2, "will": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 111600 }],
+        "accumulate_stats": { "str": 4, "will": 32 },
+        "accumulate_ap": 93,
+        "effect": [
+          "연속기 사용 시 대미지 22% 증가",
+          "연속기 쿨타임 5% 감소",
+          "중갑옷 장비 시 3단계 연속기 스킬 대미지 30% 감소"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 2, "will": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "격투술", "exp": 129600 }],
+        "accumulate_stats": { "str": 6, "will": 36 },
+        "accumulate_ap": 108,
+        "effect": [
+          "연속기 사용 시 대미지 24% 증가",
+          "연속기 쿨타임 5% 감소",
+          "중갑옷 장비 시 3단계 연속기 스킬 대미지 30% 감소"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 2, "will": 4 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "격투술", "exp": 147600 }],
+        "accumulate_stats": { "str": 8, "will": 40 },
+        "accumulate_ap": 123,
+        "effect": [
+          "연속기 사용 시 대미지 26% 증가",
+          "연속기 쿨타임 5% 감소",
+          "중갑옷 장비 시 3단계 연속기 스킬 대미지 30% 감소"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": -19,
+        "accumulate_rp": [{ "title": "격투술", "exp": 177600 }],
+        "accumulate_stats": { "str": 10, "will": 44 },
+        "accumulate_ap": 148,
+        "effect": [
+          "연속기 사용 시 대미지 30% 증가",
+          "연속기 쿨타임 10% 감소",
+          "중갑옷 장비 시 3단계 연속기 스킬 대미지 20% 감소"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 40,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["martialarts"],
+    "category_kor": ["격투술"],
+    "isPromotion": "",
+    "name_kor": "백스텝",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 176,
+    "total_stats": { "dex": 14 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["백스텝 거리 6m"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "격투술", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["백스텝 거리 6.2m"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "격투술", "exp": 3000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["백스텝 거리 6.4m"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 7000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 7,
+        "effect": ["백스텝 거리 6.6m"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "격투술", "exp": 13000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 13,
+        "effect": ["백스텝 거리 6.8m", "백스텝 속도 5% 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "격투술", "exp": 21000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 21,
+        "effect": ["백스텝 거리 7m", "백스텝 속도 5% 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "격투술", "exp": 31000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 31,
+        "effect": ["백스텝 거리 7.2m", "백스텝 속도 5% 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "격투술", "exp": 42000 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 42,
+        "effect": ["백스텝 거리 7.4m", "백스텝 속도 10% 증가", "쿨타임 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "격투술", "exp": 54000 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 54,
+        "effect": ["백스텝 거리 7.6m", "백스텝 속도 10% 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "격투술", "exp": 67000 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 67,
+        "effect": ["백스텝 거리 7.8m", "백스텝 속도 10% 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "격투술", "exp": 81000 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 81,
+        "effect": ["백스텝 거리 8m", "백스텝 속도 10% 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "격투술", "exp": 98000 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 98,
+        "effect": ["백스텝 거리 8.2m", "백스텝 속도 20% 증가", "쿨타임 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "격투술", "exp": 116000 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 116,
+        "effect": ["백스텝 거리 8.4m", "백스텝 속도 20% 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "격투술", "exp": 135000 }],
+        "accumulate_stats": { "dex": 10 },
+        "accumulate_ap": 135,
+        "effect": ["백스텝 거리 8.6m", "백스텝 속도 20% 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "격투술", "exp": 155000 }],
+        "accumulate_stats": { "dex": 12 },
+        "accumulate_ap": 155,
+        "effect": ["백스텝 거리 8.8m", "백스텝 속도 20% 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": -47,
+        "accumulate_rp": [{ "title": "격투술", "exp": 176000 }],
+        "accumulate_stats": { "dex": 14 },
+        "accumulate_ap": 176,
+        "effect": ["백스텝 거리 9m", "백스텝 속도 30% 증가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 41,
+    "talent": ["martialarts"],
+    "talent_kor": ["격투가"],
+    "category": ["hidden"],
+    "category_kor": ["히든"],
+    "isPromotion": "",
+    "name_kor": "연속기 : 카운터 펀치",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 234,
+    "total_stats": { "sp": 19, "str": 5, "will": 7 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "격투술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["1단계 연속기", "대미지 100%", "크리티컬 대미지 2% 증가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "격투술", "exp": 500 }],
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 2,
+        "effect": ["1단계 연속기", "대미지 110%", "크리티컬 대미지 2% 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "격투술", "exp": 1300 }],
+        "accumulate_stats": { "sp": 2 },
+        "accumulate_ap": 5,
+        "effect": ["1단계 연속기", "대미지 120%", "크리티컬 대미지 3% 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "격투술", "exp": 2300 }],
+        "accumulate_stats": { "sp": 3 },
+        "accumulate_ap": 10,
+        "effect": ["1단계 연속기", "대미지 130%", "크리티컬 대미지 4% 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "격투술", "exp": 3500 }],
+        "accumulate_stats": { "sp": 4 },
+        "accumulate_ap": 16,
+        "effect": ["1단계 연속기", "대미지 140%", "크리티컬 대미지 5% 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "격투술", "exp": 5000 }],
+        "accumulate_stats": { "sp": 5 },
+        "accumulate_ap": 24,
+        "effect": ["1단계 연속기", "대미지 150%", "크리티컬 대미지 6% 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "격투술", "exp": 6800 }],
+        "accumulate_stats": { "sp": 6 },
+        "accumulate_ap": 33,
+        "effect": ["1단계 연속기", "대미지 160%", "크리티컬 대미지 7% 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 1, "str": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "격투술", "exp": 8800 }],
+        "accumulate_stats": { "sp": 7, "will": 1 },
+        "accumulate_ap": 45,
+        "effect": ["1단계 연속기", "대미지 170%", "크리티컬 대미지 8% 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "격투술", "exp": 11300 }],
+        "accumulate_stats": { "sp": 8, "str": 1, "will": 1 },
+        "accumulate_ap": 59,
+        "effect": ["1단계 연속기", "대미지 180%", "크리티컬 대미지 9% 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 1, "str": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "격투술", "exp": 14300 }],
+        "accumulate_stats": { "sp": 9, "str": 1, "will": 2 },
+        "accumulate_ap": 75,
+        "effect": ["1단계 연속기", "대미지 190%", "크리티컬 대미지 10% 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 1, "will": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "격투술", "exp": 17800 }],
+        "accumulate_stats": { "sp": 10, "str": 2, "will": 2 },
+        "accumulate_ap": 95,
+        "effect": ["1단계 연속기", "대미지 200%", "크리티컬 대미지 11% 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 1, "str": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "격투술", "exp": 21800 }],
+        "accumulate_stats": { "sp": 11, "str": 2, "will": 3 },
+        "accumulate_ap": 117,
+        "effect": ["1단계 연속기", "대미지 210%", "크리티컬 대미지 12% 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 2, "will": 1 },
+        "need_ap": 27,
+        "accumulate_rp": [{ "title": "격투술", "exp": 26300 }],
+        "accumulate_stats": { "sp": 12, "str": 3, "will": 3 },
+        "accumulate_ap": 142,
+        "effect": ["1단계 연속기", "대미지 220%", "크리티컬 대미지 13% 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 2, "str": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "격투술", "exp": 31300 }],
+        "accumulate_stats": { "sp": 14, "str": 3, "will": 4 },
+        "accumulate_ap": 169,
+        "effect": ["1단계 연속기", "대미지 230%", "크리티컬 대미지 14% 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 3, "will": 3 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "격투술", "exp": 37300 }],
+        "accumulate_stats": { "sp": 16, "str": 5, "will": 4 },
+        "accumulate_ap": 199,
+        "effect": ["1단계 연속기", "대미지 240%", "크리티컬 대미지 15% 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": -105,
+        "accumulate_rp": [{ "title": "격투술", "exp": 45300 }],
+        "accumulate_stats": { "sp": 19, "str": 5, "will": 7 },
+        "accumulate_ap": 234,
+        "effect": ["1단계 연속기", "대미지 250%", "크리티컬 대미지 20% 증가"]
+      }
+    ]
   }
 ]

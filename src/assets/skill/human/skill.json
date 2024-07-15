@@ -9557,5 +9557,3044 @@
         "effect": ["1단계 연속기", "대미지 250%", "크리티컬 대미지 20% 증가"]
       }
     ]
+  },
+  {
+    "skill_id": 42,
+    "talent": ["ninja"],
+    "talent_kor": ["닌자"],
+    "category": ["ninja"],
+    "category_kor": ["인술"],
+    "isPromotion": "",
+    "name_kor": "수리검 폭쇄",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 188,
+    "total_stats": { "hp": 18, "str": 18, "will": 7 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 100%", "기폭찰 1개 설치 가능", "기폭찰 유지 시간 15초", "사정거리 7m"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "인술", "exp": 7500 }],
+        "accumulate_stats": { "hp": 1, "str": 1 },
+        "accumulate_ap": 1,
+        "effect": ["대미지 110%", "기폭찰 1개 설치 가능", "기폭찰 유지 시간 15초", "사정거리 7m"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인술", "exp": 16500 }],
+        "accumulate_stats": { "hp": 2, "str": 2 },
+        "accumulate_ap": 3,
+        "effect": ["대미지 110%", "기폭찰 1개 설치 가능", "기폭찰 유지 시간 20초", "사정거리 7m"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "인술", "exp": 27000 }],
+        "accumulate_stats": { "hp": 3, "str": 3 },
+        "accumulate_ap": 7,
+        "effect": ["대미지 120%", "기폭찰 2개 설치 가능", "기폭찰 유지 시간 20초", "사정거리 7m"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "인술", "exp": 39000 }],
+        "accumulate_stats": { "hp": 4, "str": 4 },
+        "accumulate_ap": 13,
+        "effect": ["대미지 120%", "기폭찰 2개 설치 가능", "기폭찰 유지 시간 20초", "사정거리 7m"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "인술", "exp": 52500 }],
+        "accumulate_stats": { "hp": 5, "str": 5 },
+        "accumulate_ap": 21,
+        "effect": ["대미지 120%", "기폭찰 2개 설치 가능", "기폭찰 유지 시간 25초", "사정거리 8m"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인술", "exp": 67500 }],
+        "accumulate_stats": { "hp": 7, "str": 7 },
+        "accumulate_ap": 30,
+        "effect": ["대미지 140%", "기폭찰 2개 설치 가능", "기폭찰 유지 시간 25초", "사정거리 8m"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 87000 }],
+        "accumulate_stats": { "hp": 8, "str": 8 },
+        "accumulate_ap": 41,
+        "effect": ["대미지 140%", "기폭찰 3개 설치 가능", "기폭찰 유지 시간 25초", "사정거리 8m"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "인술", "exp": 111000 }],
+        "accumulate_stats": { "hp": 9, "str": 9 },
+        "accumulate_ap": 53,
+        "effect": ["대미지 140%", "기폭찰 3개 설치 가능", "기폭찰 유지 시간 30초", "사정거리 8m"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "인술", "exp": 139500 }],
+        "accumulate_stats": { "hp": 10, "str": 10, "will": 1 },
+        "accumulate_ap": 66,
+        "effect": ["대미지 160%", "기폭찰 3개 설치 가능", "기폭찰 유지 시간 30초", "사정거리 8m"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "인술", "exp": 172500 }],
+        "accumulate_stats": { "hp": 11, "str": 11, "will": 2 },
+        "accumulate_ap": 79,
+        "effect": ["대미지 160%", "기폭찰 3개 설치 가능", "기폭찰 유지 시간 30초", "사정거리 9m"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 2, "str": 2, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "인술", "exp": 210000 }],
+        "accumulate_stats": { "hp": 14, "str": 14, "will": 3 },
+        "accumulate_ap": 97,
+        "effect": ["대미지 160%", "기폭찰 4개 설치 가능", "기폭찰 유지 시간 35초", "사정거리 9m"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 2, "str": 2, "will": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "인술", "exp": 252000 }],
+        "accumulate_stats": { "hp": 16, "str": 16, "will": 4 },
+        "accumulate_ap": 115,
+        "effect": ["대미지 180%", "기폭찰 4개 설치 가능", "기폭찰 유지 시간 35초", "사정거리 9m"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "인술", "exp": 298500 }],
+        "accumulate_stats": { "hp": 18, "str": 18, "will": 5 },
+        "accumulate_ap": 137,
+        "effect": ["대미지 180%", "기폭찰 4개 설치 가능", "기폭찰 유지 시간 35초", "사정거리 9m"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "인술", "exp": 349500 }],
+        "accumulate_stats": { "hp": 18, "str": 18, "will": 6 },
+        "accumulate_ap": 160,
+        "effect": ["대미지 180%", "기폭찰 5개 설치 가능", "기폭찰 유지 시간 40초", "사정거리 10m"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 405000 }],
+        "accumulate_stats": { "hp": 18, "str": 18, "will": 7 },
+        "accumulate_ap": 188,
+        "effect": ["대미지 200%", "기폭찰 5개 설치 가능", "기폭찰 유지 시간 40초", "사정거리 10m"]
+      }
+    ]
+  },
+  {
+    "skill_id": 43,
+    "talent": ["ninja"],
+    "talent_kor": ["닌자"],
+    "category": ["ninja"],
+    "category_kor": ["인술"],
+    "isPromotion": "",
+    "name_kor": "벚꽃 비화술",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 310,
+    "total_stats": { "hp": 51, "str": 51, "will": 19 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 100%", "최대 5차지"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 4, "str": 4 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "인술", "exp": 7500 }],
+        "accumulate_stats": { "hp": 2, "str": 2 },
+        "accumulate_ap": 1,
+        "effect": ["대미지 110%", "최대 5차지"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인술", "exp": 16500 }],
+        "accumulate_stats": { "hp": 6, "str": 6 },
+        "accumulate_ap": 6,
+        "effect": ["대미지 120%", "최대 5차지"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 4, "str": 4 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인술", "exp": 27000 }],
+        "accumulate_stats": { "hp": 8, "str": 8 },
+        "accumulate_ap": 16,
+        "effect": ["대미지 130%", "최대 5차지"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인술", "exp": 39000 }],
+        "accumulate_stats": { "hp": 12, "str": 12 },
+        "accumulate_ap": 26,
+        "effect": ["대미지 140%", "최대 7차지"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 4, "str": 4 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인술", "exp": 52500 }],
+        "accumulate_stats": { "hp": 14, "str": 14 },
+        "accumulate_ap": 37,
+        "effect": ["대미지 150%", "최대 7차지"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "인술", "exp": 67500 }],
+        "accumulate_stats": { "hp": 18, "str": 18 },
+        "accumulate_ap": 48,
+        "effect": ["대미지 160%", "최대 7차지"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "인술", "exp": 87000 }],
+        "accumulate_stats": { "hp": 21, "str": 21, "will": 1 },
+        "accumulate_ap": 63,
+        "effect": ["대미지 170%", "최대 9차지"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "인술", "exp": 111000 }],
+        "accumulate_stats": { "hp": 24, "str": 24, "will": 2 },
+        "accumulate_ap": 82,
+        "effect": ["대미지 180%", "최대 9차지"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 1 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "인술", "exp": 139500 }],
+        "accumulate_stats": { "hp": 27, "str": 27, "will": 3 },
+        "accumulate_ap": 104,
+        "effect": ["대미지 190%", "최대 9차지"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 5, "str": 5, "will": 2 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "인술", "exp": 172500 }],
+        "accumulate_stats": { "hp": 30, "str": 30, "will": 4 },
+        "accumulate_ap": 130,
+        "effect": ["대미지 200%", "최대 12차지"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 2 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "인술", "exp": 210000 }],
+        "accumulate_stats": { "hp": 35, "str": 35, "will": 6 },
+        "accumulate_ap": 158,
+        "effect": ["대미지 210%", "최대 12차지"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 3 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "인술", "exp": 252000 }],
+        "accumulate_stats": { "hp": 38, "str": 38, "will": 8 },
+        "accumulate_ap": 190,
+        "effect": ["대미지 220%", "최대 12차지"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 3 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "인술", "exp": 298500 }],
+        "accumulate_stats": { "hp": 41, "str": 41, "will": 11 },
+        "accumulate_ap": 225,
+        "effect": ["대미지 230%", "최대 15차지"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 7, "str": 7, "will": 5 },
+        "need_ap": 45,
+        "accumulate_rp": [{ "title": "인술", "exp": 349500 }],
+        "accumulate_stats": { "hp": 44, "str": 44, "will": 14 },
+        "accumulate_ap": 265,
+        "effect": ["대미지 240%", "최대 15차지"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 405000 }],
+        "accumulate_stats": { "hp": 51, "str": 51, "will": 19 },
+        "accumulate_ap": 310,
+        "effect": ["대미지 250%", "최대 15차지"]
+      }
+    ]
+  },
+  {
+    "skill_id": 44,
+    "talent": ["ninja"],
+    "talent_kor": ["닌자"],
+    "category": ["ninja"],
+    "category_kor": ["인술"],
+    "isPromotion": "",
+    "name_kor": "잿빛 연막술",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 188,
+    "total_stats": { "hp": 18, "str": 18, "will": 7 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["사정거리 7m", "방어 5 감소", "보호 3 감소"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "인술", "exp": 3000 }],
+        "accumulate_stats": { "hp": 1, "str": 1 },
+        "accumulate_ap": 1,
+        "effect": ["사정거리 7m", "방어 6 감소", "보호 3 감소"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인술", "exp": 8000 }],
+        "accumulate_stats": { "hp": 2, "str": 2 },
+        "accumulate_ap": 3,
+        "effect": ["사정거리 7m", "방어 7 감소", "보호 4 감소"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "인술", "exp": 15000 }],
+        "accumulate_stats": { "hp": 3, "str": 3 },
+        "accumulate_ap": 7,
+        "effect": ["사정거리 7m", "방어 8 감소", "보호 4 감소"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "인술", "exp": 24000 }],
+        "accumulate_stats": { "hp": 4, "str": 4 },
+        "accumulate_ap": 13,
+        "effect": ["사정거리 7m", "방어 9 감소", "보호 4 감소"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "인술", "exp": 35000 }],
+        "accumulate_stats": { "hp": 5, "str": 5 },
+        "accumulate_ap": 21,
+        "effect": ["사정거리 8m", "방어 10 감소", "보호 4 감소"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인술", "exp": 48000 }],
+        "accumulate_stats": { "hp": 7, "str": 7 },
+        "accumulate_ap": 30,
+        "effect": ["사정거리 8m", "방어 11 감소", "보호 5 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 63000 }],
+        "accumulate_stats": { "hp": 8, "str": 8 },
+        "accumulate_ap": 41,
+        "effect": ["사정거리 8m", "방어 12 감소", "보호 5 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "인술", "exp": 80000 }],
+        "accumulate_stats": { "hp": 9, "str": 9 },
+        "accumulate_ap": 53,
+        "effect": ["사정거리 8m", "방어 13 감소", "보호 5 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "인술", "exp": 99000 }],
+        "accumulate_stats": { "hp": 10, "str": 10, "will": 1 },
+        "accumulate_ap": 66,
+        "effect": ["사정거리 8m", "방어 14 감소", "보호 5 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "인술", "exp": 120000 }],
+        "accumulate_stats": { "hp": 11, "str": 11, "will": 2 },
+        "accumulate_ap": 79,
+        "effect": ["사정거리 9m", "방어 15 감소", "보호 6 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 2, "str": 2, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "인술", "exp": 145000 }],
+        "accumulate_stats": { "hp": 14, "str": 14, "will": 3 },
+        "accumulate_ap": 97,
+        "effect": ["사정거리 9m", "방어 16 감소", "보호 6 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 2, "str": 2, "will": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "인술", "exp": 175000 }],
+        "accumulate_stats": { "hp": 16, "str": 16, "will": 4 },
+        "accumulate_ap": 115,
+        "effect": ["사정거리 9m", "방어 17 감소", "보호 6 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "인술", "exp": 210000 }],
+        "accumulate_stats": { "hp": 18, "str": 18, "will": 5 },
+        "accumulate_ap": 137,
+        "effect": ["사정거리 9m", "방어 18 감소", "보호 6 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "인술", "exp": 250000 }],
+        "accumulate_stats": { "hp": 18, "str": 18, "will": 6 },
+        "accumulate_ap": 160,
+        "effect": ["사정거리 10m", "방어 19 감소", "보호 7 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": -188,
+        "accumulate_rp": [{ "title": "인술", "exp": 295000 }],
+        "accumulate_stats": { "hp": 18, "str": 18, "will": 7 },
+        "accumulate_ap": 188,
+        "effect": ["사정거리 10m", "방어 20 감소", "보호 7 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 45,
+    "talent": ["ninja"],
+    "talent_kor": ["닌자"],
+    "category": ["ninja"],
+    "category_kor": ["인술"],
+    "isPromotion": "",
+    "name_kor": "그림자 은신",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 247,
+    "total_stats": { "hp": 24, "str": 24 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 70%", "이동 속도 34% 증가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인술", "exp": 1000 }],
+        "accumulate_stats": { "hp": 1, "str": 1 },
+        "accumulate_ap": 1,
+        "effect": ["대미지 70%", "이동 속도 36% 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "인술", "exp": 7000 }],
+        "accumulate_stats": { "hp": 2, "str": 2 },
+        "accumulate_ap": 5,
+        "effect": ["대미지 80%", "이동 속도 38% 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "인술", "exp": 14500 }],
+        "accumulate_stats": { "hp": 3, "str": 3 },
+        "accumulate_ap": 13,
+        "effect": ["대미지 80%", "이동 속도 40% 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "인술", "exp": 23500 }],
+        "accumulate_stats": { "hp": 4, "str": 4 },
+        "accumulate_ap": 21,
+        "effect": ["대미지 80%", "이동 속도 42% 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "인술", "exp": 34000 }],
+        "accumulate_stats": { "hp": 5, "str": 5 },
+        "accumulate_ap": 30,
+        "effect": ["대미지 80%", "이동 속도 44% 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 46000 }],
+        "accumulate_stats": { "hp": 6, "str": 6 },
+        "accumulate_ap": 39,
+        "effect": ["대미지 90%", "이동 속도 46% 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "인술", "exp": 59500 }],
+        "accumulate_stats": { "hp": 7, "str": 7 },
+        "accumulate_ap": 51,
+        "effect": ["대미지 90%", "이동 속도 50% 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "인술", "exp": 74500 }],
+        "accumulate_stats": { "hp": 9, "str": 9 },
+        "accumulate_ap": 66,
+        "effect": ["대미지 90%", "이동 속도 55% 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "인술", "exp": 92500 }],
+        "accumulate_stats": { "hp": 11, "str": 11 },
+        "accumulate_ap": 83,
+        "effect": ["대미지 90%", "이동 속도 60% 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "인술", "exp": 113500 }],
+        "accumulate_stats": { "hp": 13, "str": 13 },
+        "accumulate_ap": 103,
+        "effect": ["대미지 100%", "이동 속도 65% 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "인술", "exp": 142000 }],
+        "accumulate_stats": { "hp": 15, "str": 15 },
+        "accumulate_ap": 126,
+        "effect": ["대미지 100%", "이동 속도 70% 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "인술", "exp": 172000 }],
+        "accumulate_stats": { "hp": 17, "str": 17 },
+        "accumulate_ap": 151,
+        "effect": ["대미지 100%", "이동 속도 75% 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "인술", "exp": 203500 }],
+        "accumulate_stats": { "hp": 19, "str": 19 },
+        "accumulate_ap": 179,
+        "effect": ["대미지 100%", "이동 속도 80% 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 3, "str": 3 },
+        "need_ap": 36,
+        "accumulate_rp": [{ "title": "인술", "exp": 236500 }],
+        "accumulate_stats": { "hp": 21, "str": 21 },
+        "accumulate_ap": 211,
+        "effect": ["대미지 120%", "이동 속도 85% 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 271000 }],
+        "accumulate_stats": { "hp": 24, "str": 24 },
+        "accumulate_ap": 247,
+        "effect": ["대미지 120%", "이동 속도 100% 증가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 46,
+    "talent": ["ninja"],
+    "talent_kor": ["닌자"],
+    "category": ["ninja"],
+    "category_kor": ["인술"],
+    "isPromotion": "",
+    "name_kor": "그림자 속박",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 224,
+    "total_stats": { "hp": 15, "str": 15, "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["사정거리 7m", "지속시간 3초", "속박 가능 2명"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인술", "exp": 1000 }],
+        "accumulate_stats": { "hp": 1, "str": 1 },
+        "accumulate_ap": 1,
+        "effect": ["사정거리 7m", "지속시간 3초", "속박 가능 2명"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "인술", "exp": 7000 }],
+        "accumulate_stats": { "hp": 2, "str": 2 },
+        "accumulate_ap": 5,
+        "effect": ["사정거리 7m", "지속시간 3초", "속박 가능 3명"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "인술", "exp": 14500 }],
+        "accumulate_stats": { "hp": 3, "str": 3 },
+        "accumulate_ap": 11,
+        "effect": ["사정거리 7m", "지속시간 3.5초", "속박 가능 3명"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인술", "exp": 23500 }],
+        "accumulate_stats": { "hp": 4, "str": 4 },
+        "accumulate_ap": 17,
+        "effect": ["사정거리 7m", "지속시간 3.5초", "속박 가능 3명"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인술", "exp": 34000 }],
+        "accumulate_stats": { "hp": 5, "str": 5 },
+        "accumulate_ap": 24,
+        "effect": ["사정거리 8m", "지속시간 3.5초", "속박 가능 4명"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인술", "exp": 46000 }],
+        "accumulate_stats": { "hp": 6, "str": 6 },
+        "accumulate_ap": 31,
+        "effect": ["사정거리 8m", "지속시간 3.5초", "속박 가능 4명"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "인술", "exp": 59500 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 1 },
+        "accumulate_ap": 42,
+        "effect": ["사정거리 8m", "지속시간 4초", "속박 가능 4명"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "인술", "exp": 74500 }],
+        "accumulate_stats": { "hp": 8, "str": 8, "will": 2 },
+        "accumulate_ap": 55,
+        "effect": ["사정거리 8m", "지속시간 4초", "속박 가능 4명"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "인술", "exp": 92500 }],
+        "accumulate_stats": { "hp": 9, "str": 9, "will": 3 },
+        "accumulate_ap": 71,
+        "effect": ["사정거리 8m", "지속시간 4초", "속박 가능 5명"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "인술", "exp": 113500 }],
+        "accumulate_stats": { "hp": 10, "str": 10, "will": 4 },
+        "accumulate_ap": 89,
+        "effect": ["사정거리 9m", "지속시간 4초", "속박 가능 5명"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "인술", "exp": 142000 }],
+        "accumulate_stats": { "hp": 11, "str": 11, "will": 5 },
+        "accumulate_ap": 110,
+        "effect": ["사정거리 9m", "지속시간 5초", "속박 가능 5명"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 27,
+        "accumulate_rp": [{ "title": "인술", "exp": 172000 }],
+        "accumulate_stats": { "hp": 12, "str": 12, "will": 6 },
+        "accumulate_ap": 134,
+        "effect": ["사정거리 9m", "지속시간 5초", "속박 가능 5명"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "인술", "exp": 203500 }],
+        "accumulate_stats": { "hp": 13, "str": 13, "will": 7 },
+        "accumulate_ap": 161,
+        "effect": ["사정거리 9m", "지속시간 5초", "속박 가능 6명"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 33,
+        "accumulate_rp": [{ "title": "인술", "exp": 236500 }],
+        "accumulate_stats": { "hp": 14, "str": 14, "will": 8 },
+        "accumulate_ap": 191,
+        "effect": ["사정거리 10m", "지속시간 5초", "속박 가능 6명"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 271000 }],
+        "accumulate_stats": { "hp": 15, "str": 15, "will": 9 },
+        "accumulate_ap": 224,
+        "effect": ["사정거리 10m", "지속시간 5.5초", "속박 가능 6명"]
+      }
+    ]
+  },
+  {
+    "skill_id": 47,
+    "talent": ["ninja"],
+    "talent_kor": ["닌자"],
+    "category": ["ninja"],
+    "category_kor": ["인술"],
+    "isPromotion": "",
+    "name_kor": "수리검 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 149,
+    "total_stats": { "hp": 34, "str": 34, "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["수리검 장착시", "최대 대미지 1 증가", "사정거리 7m"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인술", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["수리검 장착시", "최대 대미지 2 증가", "사정거리 7m"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "인술", "exp": 2200 }],
+        "accumulate_stats": { "hp": 1, "str": 1 },
+        "accumulate_ap": 1,
+        "effect": ["수리검 장착시", "최대 대미지 3 증가", "사정거리 7m"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "인술", "exp": 4600 }],
+        "accumulate_stats": { "hp": 2, "str": 2 },
+        "accumulate_ap": 3,
+        "effect": ["수리검 장착시", "최대 대미지 4 증가", "사정거리 8m"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인술", "exp": 8200 }],
+        "accumulate_stats": { "hp": 3, "str": 3 },
+        "accumulate_ap": 6,
+        "effect": ["수리검 장착시", "최대 대미지 5 증가", "최소 대미지 1 증가", "사정거리 8m"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 2, "str": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "인술", "exp": 13000 }],
+        "accumulate_stats": { "hp": 4, "str": 4 },
+        "accumulate_ap": 10,
+        "effect": ["수리검 장착시", "최대 대미지 5 증가", "최소 대미지 2 증가", "사정거리 8m"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 2, "str": 2, "will": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "인술", "exp": 19000 }],
+        "accumulate_stats": { "hp": 6, "str": 6 },
+        "accumulate_ap": 15,
+        "effect": ["수리검 장착시", "최대 대미지 6 증가", "최소 대미지 3 증가", "사정거리 9m"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 2, "str": 2, "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인술", "exp": 28600 }],
+        "accumulate_stats": { "hp": 8, "str": 8, "will": 1 },
+        "accumulate_ap": 23,
+        "effect": ["수리검 장착시", "최대 대미지 7 증가", "최소 대미지 4 증가", "사정거리 9m"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 2, "str": 2, "will": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인술", "exp": 40600 }],
+        "accumulate_stats": { "hp": 10, "str": 10, "will": 2 },
+        "accumulate_ap": 33,
+        "effect": ["수리검 장착시", "최대 대미지 8 증가", "최소 대미지 4 증가", "사정거리 9m"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2, "str": 2, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 53800 }],
+        "accumulate_stats": { "hp": 12, "str": 12, "will": 3 },
+        "accumulate_ap": 44,
+        "effect": ["수리검 장착시", "최대 대미지 9 증가", "최소 대미지 4 증가", "사정거리 10m"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "인술", "exp": 68200 }],
+        "accumulate_stats": { "hp": 14, "str": 14, "will": 4 },
+        "accumulate_ap": 56,
+        "effect": ["수리검 장착시", "최대 대미지 10 증가", "최소 대미지 5 증가", "사정거리 10m"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "인술", "exp": 86200 }],
+        "accumulate_stats": { "hp": 17, "str": 17, "will": 5 },
+        "accumulate_ap": 70,
+        "effect": ["수리검 장착시", "최대 대미지 11 증가", "최소 대미지 6 증가", "사정거리 11m"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 4, "str": 4, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "인술", "exp": 106600 }],
+        "accumulate_stats": { "hp": 20, "str": 20, "will": 6 },
+        "accumulate_ap": 86,
+        "effect": ["수리검 장착시", "최대 대미지 13 증가", "최소 대미지 7 증가", "사정거리 11m"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 4, "str": 4, "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "인술", "exp": 129400 }],
+        "accumulate_stats": { "hp": 24, "str": 24, "will": 7 },
+        "accumulate_ap": 104,
+        "effect": ["수리검 장착시", "최대 대미지 16 증가", "최소 대미지 8 증가", "사정거리 12m"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 6, "str": 6, "will": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "인술", "exp": 153400 }],
+        "accumulate_stats": { "hp": 28, "str": 28, "will": 8 },
+        "accumulate_ap": 124,
+        "effect": ["수리검 장착시", "최대 대미지 18 증가", "최소 대미지 9 증가", "사정거리 12m"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 189400 }],
+        "accumulate_stats": { "hp": 34, "str": 34, "will": 9 },
+        "accumulate_ap": 149,
+        "effect": ["수리검 장착시", "최대 대미지 20 증가", "최소 대미지 10 증가", "사정거리 13m"]
+      }
+    ]
+  },
+  {
+    "skill_id": 48,
+    "talent": ["ninja"],
+    "talent_kor": ["닌자"],
+    "category": ["ninja"],
+    "category_kor": ["인술"],
+    "isPromotion": "",
+    "name_kor": "수리검 폭풍",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 232,
+    "total_stats": { "hp": 7, "str": 7, "will": 19 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 150% 증가", "사정거리 7m"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인술", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["대미지 160% 증가", "사정거리 7m"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "인술", "exp": 2500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 5,
+        "effect": ["대미지 170% 증가", "사정거리 7m"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인술", "exp": 5500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10,
+        "effect": ["대미지 180% 증가", "사정거리 7m"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "인술", "exp": 10000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 17,
+        "effect": ["대미지 190% 증가", "사정거리 7m"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인술", "exp": 14500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 26,
+        "effect": ["대미지 200% 증가", "사정거리 8m"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 19000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 36,
+        "effect": ["대미지 220% 증가", "사정거리 8m"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 26500 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 48,
+        "effect": ["대미지 240% 증가", "사정거리 8m"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 35500 }],
+        "accumulate_stats": { "hp": 1, "str": 1, "will": 2 },
+        "accumulate_ap": 60,
+        "effect": ["대미지 260% 증가", "사정거리 8m"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 46000 }],
+        "accumulate_stats": { "hp": 1, "str": 1, "will": 3 },
+        "accumulate_ap": 72,
+        "effect": ["대미지 280% 증가", "사정거리 8m"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "인술", "exp": 58000 }],
+        "accumulate_stats": { "hp": 2, "str": 2, "will": 5 },
+        "accumulate_ap": 84,
+        "effect": ["대미지 300% 증가", "사정거리 9m"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "인술", "exp": 71500 }],
+        "accumulate_stats": { "hp": 2, "str": 2, "will": 7 },
+        "accumulate_ap": 104,
+        "effect": ["대미지 320% 증가", "사정거리 9m"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "인술", "exp": 86500 }],
+        "accumulate_stats": { "hp": 3, "str": 3, "will": 9 },
+        "accumulate_ap": 125,
+        "effect": ["대미지 340% 증가", "사정거리 9m"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 3 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "인술", "exp": 109000 }],
+        "accumulate_stats": { "hp": 3, "str": 3, "will": 12 },
+        "accumulate_ap": 147,
+        "effect": ["대미지 360% 증가", "사정거리 9m"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 4 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "인술", "exp": 139000 }],
+        "accumulate_stats": { "hp": 4, "str": 4, "will": 15 },
+        "accumulate_ap": 170,
+        "effect": ["대미지 380% 증가", "사정거리 10m"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인술", "exp": 184000 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 19 },
+        "accumulate_ap": 200,
+        "effect": ["대미지 400% 증가", "사정거리 10m"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인술", "exp": 184000 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 19 },
+        "accumulate_ap": 207,
+        "effect": ["대미지 420% 증가", "사정거리 10m"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "인술", "exp": 184000 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 19 },
+        "accumulate_ap": 217,
+        "effect": ["대미지 440% 증가", "사정거리 10m"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 184000 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 19 },
+        "accumulate_ap": 232,
+        "effect": ["대미지 460% 증가", "사정거리 10m"]
+      }
+    ]
+  },
+  {
+    "skill_id": 49,
+    "talent": ["ninja"],
+    "talent_kor": ["닌자"],
+    "category": ["ninja"],
+    "category_kor": ["인술"],
+    "isPromotion": "",
+    "name_kor": "수리검 돌진",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 189,
+    "total_stats": { "hp": 7, "str": 7, "will": 19 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 150%", "사정거리 7m"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "인술", "exp": 3600 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 200%", "사정거리 7m"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "인술", "exp": 7200 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["대미지 220%", "사정거리 7m"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "인술", "exp": 10800 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["대미지 240%", "사정거리 8m"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "인술", "exp": 18000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 6,
+        "effect": ["대미지 260%", "사정거리 8m"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "인술", "exp": 25200 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10,
+        "effect": ["대미지 280%", "사정거리 8m"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "인술", "exp": 32400 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 15,
+        "effect": ["대미지 300%", "사정거리 9m"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인술", "exp": 43200 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 23,
+        "effect": ["대미지 320%", "사정거리 9m"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "인술", "exp": 54000 }],
+        "accumulate_stats": { "hp": 1, "str": 1, "will": 2 },
+        "accumulate_ap": 33,
+        "effect": ["대미지 340%", "사정거리 9m"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "인술", "exp": 64800 }],
+        "accumulate_stats": { "hp": 1, "str": 1, "will": 3 },
+        "accumulate_ap": 44,
+        "effect": ["대미지 360%", "사정거리 10m"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "인술", "exp": 75600 }],
+        "accumulate_stats": { "hp": 2, "str": 2, "will": 5 },
+        "accumulate_ap": 56,
+        "effect": ["대미지 370%", "사정거리 10m"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "인술", "exp": 93600 }],
+        "accumulate_stats": { "hp": 2, "str": 2, "will": 7 },
+        "accumulate_ap": 71,
+        "effect": ["대미지 380%", "사정거리 11m"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "will": 3 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "인술", "exp": 111600 }],
+        "accumulate_stats": { "hp": 3, "str": 3, "will": 9 },
+        "accumulate_ap": 88,
+        "effect": ["대미지 400%", "사정거리 11m"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "str": 1, "will": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "인술", "exp": 129600 }],
+        "accumulate_stats": { "hp": 3, "str": 3, "will": 12 },
+        "accumulate_ap": 107,
+        "effect": ["대미지 410%", "사정거리 12m"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 3, "str": 3, "will": 4 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "인술", "exp": 147600 }],
+        "accumulate_stats": { "hp": 4, "str": 4, "will": 15 },
+        "accumulate_ap": 127,
+        "effect": ["대미지 420%", "사정거리 12m"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "인술", "exp": 177600 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 19 },
+        "accumulate_ap": 157,
+        "effect": ["대미지 430%", "사정거리 13m"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "인술", "exp": 177600 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 19 },
+        "accumulate_ap": 164,
+        "effect": ["대미지 440%", "사정거리 13m"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "인술", "exp": 177600 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 19 },
+        "accumulate_ap": 174,
+        "effect": ["대미지 450%", "사정거리 13m"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "인술", "exp": 177600 }],
+        "accumulate_stats": { "hp": 7, "str": 7, "will": 19 },
+        "accumulate_ap": 189,
+        "effect": ["대미지 460%", "사정거리 14m"]
+      }
+    ]
+  },
+  {
+    "skill_id": 50,
+    "talent": ["smithing"],
+    "talent_kor": ["대장장이"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "야금술",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 100,
+    "total_stats": { "sp": 21, "dex": 11 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["광석을 한 번에 1개 채집 가능"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 23100 }],
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["광석을 한 번에 1개 채집 가능", "야금 성공률 1% 추가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 46200 }],
+        "accumulate_stats": { "sp": 2 },
+        "accumulate_ap": 6,
+        "effect": ["광석을 한 번에 1개 채집 가능", "야금 성공률 2% 추가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 77000 }],
+        "accumulate_stats": { "sp": 3 },
+        "accumulate_ap": 10,
+        "effect": ["광석을 한 번에 1개 채집 가능", "야금 성공률 3% 추가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 107800 }],
+        "accumulate_stats": { "sp": 4 },
+        "accumulate_ap": 14,
+        "effect": ["광석을 한 번에 1개 채집 가능", "야금 성공률 4% 추가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 146300 }],
+        "accumulate_stats": { "sp": 5 },
+        "accumulate_ap": 19,
+        "effect": ["광석을 한 번에 1개 채집 가능", "야금 성공률 5% 추가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 184800 }],
+        "accumulate_stats": { "sp": 6 },
+        "accumulate_ap": 24,
+        "effect": ["광석을 한 번에 1개 채집 가능", "야금 성공률 6% 추가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 238700 }],
+        "accumulate_stats": { "sp": 7, "dex": 1 },
+        "accumulate_ap": 31,
+        "effect": ["광석을 한 번에 2개까지 채집 가능", "야금 성공률 7% 추가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 292600 }],
+        "accumulate_stats": { "sp": 8, "dex": 2 },
+        "accumulate_ap": 38,
+        "effect": ["광석을 한 번에 2개까지 채집 가능", "야금 성공률 8% 추가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 1, "dex": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 346500 }],
+        "accumulate_stats": { "sp": 9, "dex": 3 },
+        "accumulate_ap": 45,
+        "effect": ["광석을 한 번에 2개까지 채집 가능", "야금 성공률 9% 추가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 2, "dex": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 400400 }],
+        "accumulate_stats": { "sp": 10, "dex": 4 },
+        "accumulate_ap": 52,
+        "effect": ["광석을 한 번에 2개까지 채집 가능", "야금 성공률 10% 추가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 2, "dex": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 469700 }],
+        "accumulate_stats": { "sp": 12, "dex": 5 },
+        "accumulate_ap": 61,
+        "effect": ["광석을 한 번에 3개까지 채집 가능", "야금 성공률 11% 추가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 2, "dex": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 539000 }],
+        "accumulate_stats": { "sp": 14, "dex": 6 },
+        "accumulate_ap": 70,
+        "effect": ["광석을 한 번에 3개까지 채집 가능", "야금 성공률 12% 추가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 2, "dex": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 608300 }],
+        "accumulate_stats": { "sp": 16, "dex": 7 },
+        "accumulate_ap": 79,
+        "effect": ["광석을 한 번에 3개까지 채집 가능", "야금 성공률 13% 추가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 3, "dex": 3 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 677600 }],
+        "accumulate_stats": { "sp": 18, "dex": 8 },
+        "accumulate_ap": 88,
+        "effect": ["광석을 한 번에 3개까지 채집 가능", "야금 성공률 14% 추가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 64,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 770000 }],
+        "accumulate_stats": { "sp": 21, "dex": 11 },
+        "accumulate_ap": 100,
+        "effect": ["광석을 한 번에 3개까지 채집 가능", "야금 성공률 15% 추가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 51,
+    "talent": ["smithing"],
+    "talent_kor": ["대장장이"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "채광",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 88,
+    "total_stats": { "str": 25 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 15400 }],
+        "accumulate_stats": { "str": 1 },
+        "accumulate_ap": 2,
+        "effect": ["채광 시간 0.25초 감소", "채광 성공률 1% 증가", "보너스 채집율 1%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 30800 }],
+        "accumulate_stats": { "str": 2 },
+        "accumulate_ap": 4,
+        "effect": ["채광 시간 0.25초 감소", "채광 성공률 2% 증가", "보너스 채집율 2%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 53900 }],
+        "accumulate_stats": { "str": 3 },
+        "accumulate_ap": 7,
+        "effect": ["채광 시간 0.25초 감소", "채광 성공률 3% 증가", "보너스 채집율 3%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 77000 }],
+        "accumulate_stats": { "str": 4 },
+        "accumulate_ap": 10,
+        "effect": ["채광 시간 0.25초 감소", "채광 성공률 4% 증가", "보너스 채집율 4%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 107800 }],
+        "accumulate_stats": { "str": 5 },
+        "accumulate_ap": 14,
+        "effect": ["채광 시간 0.25초 감소", "채광 성공률 5% 증가", "보너스 채집율 5%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 138600 }],
+        "accumulate_stats": { "str": 6 },
+        "accumulate_ap": 18,
+        "effect": ["채광 시간 0.25초 감소", "채광 성공률 6% 증가", "보너스 채집율 6%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 177100 }],
+        "accumulate_stats": { "str": 7 },
+        "accumulate_ap": 23,
+        "effect": ["채광 시간 0.5초 감소", "채광 성공률 7% 증가", "보너스 채집율 7%"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 215600 }],
+        "accumulate_stats": { "str": 8 },
+        "accumulate_ap": 28,
+        "effect": ["채광 시간 0.5초 감소", "채광 성공률 8% 증가", "보너스 채집율 8%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 261800 }],
+        "accumulate_stats": { "str": 9 },
+        "accumulate_ap": 34,
+        "effect": ["채광 시간 0.5초 감소", "채광 성공률 9% 증가", "보너스 채집율 9%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 308000 }],
+        "accumulate_stats": { "str": 10 },
+        "accumulate_ap": 40,
+        "effect": ["채광 시간 0.5초 감소", "채광 성공률 10% 증가", "보너스 채집율 10%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 361900 }],
+        "accumulate_stats": { "str": 12 },
+        "accumulate_ap": 48,
+        "effect": ["채광 시간 0.75초 감소", "채광 성공률 11% 증가", "보너스 채집율 11%"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 415800 }],
+        "accumulate_stats": { "str": 14 },
+        "accumulate_ap": 56,
+        "effect": ["채광 시간 0.75초 감소", "채광 성공률 12% 증가", "보너스 채집율 12%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 477400 }],
+        "accumulate_stats": { "str": 17 },
+        "accumulate_ap": 65,
+        "effect": ["채광 시간 0.75초 감소", "채광 성공률 13% 증가", "보너스 채집율 13%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 5 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 539000 }],
+        "accumulate_stats": { "str": 20 },
+        "accumulate_ap": 74,
+        "effect": ["채광 시간 0.75초 감소", "채광 성공률 14% 증가", "보너스 채집율 14%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 76,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 631400 }],
+        "accumulate_stats": { "str": 25 },
+        "accumulate_ap": 88,
+        "effect": ["채광 시간 1초 감소", "채광 성공률 15% 증가", "보너스 채집율 15%"]
+      }
+    ]
+  },
+  {
+    "skill_id": 52,
+    "talent": ["smithing"],
+    "talent_kor": ["대장장이"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "블랙스미스",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 94,
+    "total_stats": { "sp": 3, "dex": 21, "int": 21 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 18000 }],
+        "accumulate_stats": { "dex": 1, "int": 1 },
+        "accumulate_ap": 2,
+        "effect": ["도구, 무기, 방패 제작가능"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 36000 }],
+        "accumulate_stats": { "dex": 2, "int": 2 },
+        "accumulate_ap": 4,
+        "effect": ["도구, 무기, 방패 제작가능"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 72000 }],
+        "accumulate_stats": { "dex": 3, "int": 3 },
+        "accumulate_ap": 8,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛 제작가능"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 90000 }],
+        "accumulate_stats": { "dex": 4, "int": 4 },
+        "accumulate_ap": 10,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛 제작가능"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1, "dex": 1, "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 108000 }],
+        "accumulate_stats": { "dex": 5, "int": 5 },
+        "accumulate_ap": 12,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠 제작가능"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 162000 }],
+        "accumulate_stats": { "sp": 1, "dex": 6, "int": 6 },
+        "accumulate_ap": 18,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 189000 }],
+        "accumulate_stats": { "sp": 1, "dex": 7, "int": 7 },
+        "accumulate_ap": 21,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 216000 }],
+        "accumulate_stats": { "sp": 1, "dex": 8, "int": 8 },
+        "accumulate_ap": 24,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 2, "dex": 2, "int": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 243000 }],
+        "accumulate_stats": { "sp": 1, "dex": 9, "int": 9 },
+        "accumulate_ap": 27,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 297000 }],
+        "accumulate_stats": { "sp": 3, "dex": 11, "int": 11 },
+        "accumulate_ap": 33,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 333000 }],
+        "accumulate_stats": { "sp": 3, "dex": 13, "int": 13 },
+        "accumulate_ap": 37,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 369000 }],
+        "accumulate_stats": { "sp": 3, "dex": 15, "int": 15 },
+        "accumulate_ap": 41,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 414000 }],
+        "accumulate_stats": { "sp": 3, "dex": 17, "int": 17 },
+        "accumulate_ap": 46,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 468000 }],
+        "accumulate_stats": { "sp": 3, "dex": 19, "int": 19 },
+        "accumulate_ap": 52,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 558000 }],
+        "accumulate_stats": { "sp": 3, "dex": 21, "int": 21 },
+        "accumulate_ap": 62,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 558000 }],
+        "accumulate_stats": { "sp": 3, "dex": 21, "int": 21 },
+        "accumulate_ap": 69,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 558000 }],
+        "accumulate_stats": { "sp": 3, "dex": 21, "int": 21 },
+        "accumulate_ap": 79,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 558000 }],
+        "accumulate_stats": { "sp": 3, "dex": 21, "int": 21 },
+        "accumulate_ap": 94,
+        "effect": ["도구, 무기, 방패, 투구, 건틀렛,", "금속부츠, 갑옷 제작가능"]
+      }
+    ]
+  },
+  {
+    "skill_id": 53,
+    "talent": ["smithing"],
+    "talent_kor": ["대장장이"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "제련",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 53,
+    "total_stats": { "dex": 36 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["제련 연습"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 7700 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 1,
+        "effect": ["철광석 제련 가능"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 23100 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 3,
+        "effect": ["철광석 제련 가능"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 38500 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 5,
+        "effect": ["철광석 제련 가능"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 53900 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 7,
+        "effect": ["동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 69300 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 9,
+        "effect": ["동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 84700 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 11,
+        "effect": ["은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 123200 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 16,
+        "effect": ["은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 146300 }],
+        "accumulate_stats": { "dex": 10 },
+        "accumulate_ap": 19,
+        "effect": ["금광석, 은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 169400 }],
+        "accumulate_stats": { "dex": 12 },
+        "accumulate_ap": 22,
+        "effect": ["금광석, 은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 192500 }],
+        "accumulate_stats": { "dex": 14 },
+        "accumulate_ap": 25,
+        "effect": ["금광석, 은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 231000 }],
+        "accumulate_stats": { "dex": 17 },
+        "accumulate_ap": 30,
+        "effect": ["금광석, 은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 254100 }],
+        "accumulate_stats": { "dex": 20 },
+        "accumulate_ap": 33,
+        "effect": ["금광석, 은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 277200 }],
+        "accumulate_stats": { "dex": 23 },
+        "accumulate_ap": 36,
+        "effect": ["금광석, 은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 10 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 331100 }],
+        "accumulate_stats": { "dex": 26 },
+        "accumulate_ap": 43,
+        "effect": ["금광석, 은광석, 동광석, 철광석 제련 가능"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "대장장이", "exp": 408100 }],
+        "accumulate_stats": { "dex": 36 },
+        "accumulate_ap": 53,
+        "effect": ["금광석, 은광석, 동광석, 철광석 제련 가능"]
+      }
+    ]
+  },
+  {
+    "skill_id": 54,
+    "talent": ["smithing", "cooking", "tailoring", "medicine", "carpentry"],
+    "talent_kor": ["대장장이", "요리사", "재단사", "약사", "목수"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "메이킹 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 67,
+    "total_stats": { "sp": 150, "dex": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 10 },
+        "need_ap": 1,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 0 },
+          { "title": "요리사", "exp": 0 },
+          { "title": "재단사", "exp": 0 },
+          { "title": "약사", "exp": 0 },
+          { "title": "목수", "exp": 0 }
+        ],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["생산과 채집 연습 중"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 10 },
+        "need_ap": 1,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 200 },
+          { "title": "요리사", "exp": 200 },
+          { "title": "재단사", "exp": 200 },
+          { "title": "약사", "exp": 200 },
+          { "title": "목수", "exp": 200 }
+        ],
+        "accumulate_stats": { "sp": 10 },
+        "accumulate_ap": 1,
+        "effect": ["생산과 채집 확률 1% 추가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 10 },
+        "need_ap": 1,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 500 },
+          { "title": "요리사", "exp": 500 },
+          { "title": "재단사", "exp": 500 },
+          { "title": "약사", "exp": 500 },
+          { "title": "목수", "exp": 500 }
+        ],
+        "accumulate_stats": { "sp": 20 },
+        "accumulate_ap": 2,
+        "effect": ["생산과 채집 확률 2% 추가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 10 },
+        "need_ap": 2,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 900 },
+          { "title": "요리사", "exp": 800 },
+          { "title": "재단사", "exp": 900 },
+          { "title": "약사", "exp": 900 },
+          { "title": "목수", "exp": 900 }
+        ],
+        "accumulate_stats": { "sp": 30 },
+        "accumulate_ap": 3,
+        "effect": ["생산과 채집 확률 3% 추가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 10 },
+        "need_ap": 2,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 1400 },
+          { "title": "요리사", "exp": 1400 },
+          { "title": "재단사", "exp": 1400 },
+          { "title": "약사", "exp": 1400 },
+          { "title": "목수", "exp": 1400 }
+        ],
+        "accumulate_stats": { "sp": 40 },
+        "accumulate_ap": 5,
+        "effect": ["생산과 채집 확률 4% 추가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 10 },
+        "need_ap": 2,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 2400 },
+          { "title": "요리사", "exp": 2000 },
+          { "title": "재단사", "exp": 2400 },
+          { "title": "약사", "exp": 2400 },
+          { "title": "목수", "exp": 2400 }
+        ],
+        "accumulate_stats": { "sp": 50 },
+        "accumulate_ap": 7,
+        "effect": ["생산과 채집 확률 5% 추가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 10, "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 6400 },
+          { "title": "요리사", "exp": 2600 },
+          { "title": "재단사", "exp": 8400 },
+          { "title": "약사", "exp": 8400 },
+          { "title": "목수", "exp": 6400 }
+        ],
+        "accumulate_stats": { "sp": 60 },
+        "accumulate_ap": 9,
+        "effect": ["생산과 채집 확률 6% 추가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 10, "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 16500 },
+          { "title": "요리사", "exp": 4100 },
+          { "title": "재단사", "exp": 23500 },
+          { "title": "약사", "exp": 23500 },
+          { "title": "목수", "exp": 16500 }
+        ],
+        "accumulate_stats": { "sp": 70, "dex": 1 },
+        "accumulate_ap": 14,
+        "effect": ["생산과 채집 확률 7% 추가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 10, "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 28200 },
+          { "title": "요리사", "exp": 5600 },
+          { "title": "재단사", "exp": 39500 },
+          { "title": "약사", "exp": 39500 },
+          { "title": "목수", "exp": 28200 }
+        ],
+        "accumulate_stats": { "sp": 80, "dex": 2 },
+        "accumulate_ap": 19,
+        "effect": ["생산과 채집 확률 8% 추가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 10, "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 40800 },
+          { "title": "요리사", "exp": 7100 },
+          { "title": "재단사", "exp": 56200 },
+          { "title": "약사", "exp": 56200 },
+          { "title": "목수", "exp": 40800 }
+        ],
+        "accumulate_stats": { "sp": 90, "dex": 3 },
+        "accumulate_ap": 24,
+        "effect": ["생산과 채집 확률 9% 추가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 10, "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 54300 },
+          { "title": "요리사", "exp": 8600 },
+          { "title": "재단사", "exp": 73800 },
+          { "title": "약사", "exp": 73800 },
+          { "title": "목수", "exp": 54300 }
+        ],
+        "accumulate_stats": { "sp": 100, "dex": 4 },
+        "accumulate_ap": 29,
+        "effect": ["생산과 채집 확률 10% 추가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 10, "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 68300 },
+          { "title": "요리사", "exp": 10700 },
+          { "title": "재단사", "exp": 94800 },
+          { "title": "약사", "exp": 94800 },
+          { "title": "목수", "exp": 68300 }
+        ],
+        "accumulate_stats": { "sp": 110, "dex": 6 },
+        "accumulate_ap": 36,
+        "effect": ["생산과 채집 확률 11% 추가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 10, "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 82300 },
+          { "title": "요리사", "exp": 12800 },
+          { "title": "재단사", "exp": 117300 },
+          { "title": "약사", "exp": 117300 },
+          { "title": "목수", "exp": 82300 }
+        ],
+        "accumulate_stats": { "sp": 120, "dex": 8 },
+        "accumulate_ap": 43,
+        "effect": ["생산과 채집 확률 12% 추가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 10, "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 96300 },
+          { "title": "요리사", "exp": 14900 },
+          { "title": "재단사", "exp": 141300 },
+          { "title": "약사", "exp": 141300 },
+          { "title": "목수", "exp": 96300 }
+        ],
+        "accumulate_stats": { "sp": 130, "dex": 10 },
+        "accumulate_ap": 50,
+        "effect": ["생산과 채집 확률 13% 추가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 10, "dex": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 112300 },
+          { "title": "요리사", "exp": 17000 },
+          { "title": "재단사", "exp": 168300 },
+          { "title": "약사", "exp": 168300 },
+          { "title": "목수", "exp": 134000 }
+        ],
+        "accumulate_stats": { "sp": 140, "dex": 12 },
+        "accumulate_ap": 57,
+        "effect": ["생산과 채집 확률 14% 추가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [
+          { "title": "대장장이", "exp": 134000 },
+          { "title": "요리사", "exp": 20100 },
+          { "title": "재단사", "exp": 201000 },
+          { "title": "약사", "exp": 201000 },
+          { "title": "목수", "exp": 134000 }
+        ],
+        "accumulate_stats": { "sp": 150, "dex": 17 },
+        "accumulate_ap": 67,
+        "effect": ["생산과 채집 확률 15% 추가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 55,
+    "talent": ["glyphwrighting"],
+    "talent_kor": ["마기그래퍼"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "마기그래프 발동",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 277,
+    "total_stats": { "mp": 29, "dex": 2, "int": 45 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 1500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 4500 }],
+        "accumulate_stats": { "mp": 1, "int": 1 },
+        "accumulate_ap": 4,
+        "effect": []
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 12000 }],
+        "accumulate_stats": { "mp": 2, "int": 2 },
+        "accumulate_ap": 10,
+        "effect": []
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 24000 }],
+        "accumulate_stats": { "mp": 4, "int": 4 },
+        "accumulate_ap": 18,
+        "effect": []
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 45000 }],
+        "accumulate_stats": { "mp": 6, "int": 6 },
+        "accumulate_ap": 28,
+        "effect": []
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 3, "dex": 1, "int": 4 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 72000 }],
+        "accumulate_stats": { "mp": 8, "int": 8 },
+        "accumulate_ap": 40,
+        "effect": []
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 2, "int": 3 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 105000 }],
+        "accumulate_stats": { "mp": 11, "dex": 1, "int": 12 },
+        "accumulate_ap": 56,
+        "effect": []
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 2, "int": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 141000 }],
+        "accumulate_stats": { "mp": 13, "dex": 1, "int": 15 },
+        "accumulate_ap": 74,
+        "effect": []
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 2, "int": 3 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 180000 }],
+        "accumulate_stats": { "mp": 15, "dex": 1, "int": 18 },
+        "accumulate_ap": 94,
+        "effect": []
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 3, "int": 5 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 231000 }],
+        "accumulate_stats": { "mp": 17, "dex": 1, "int": 21 },
+        "accumulate_ap": 116,
+        "effect": []
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2, "int": 4 },
+        "need_ap": 29,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 288000 }],
+        "accumulate_stats": { "mp": 20, "dex": 1, "int": 26 },
+        "accumulate_ap": 142,
+        "effect": []
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2, "int": 4 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 360000 }],
+        "accumulate_stats": { "mp": 22, "dex": 1, "int": 30 },
+        "accumulate_ap": 171,
+        "effect": []
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2, "int": 4 },
+        "need_ap": 34,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 438000 }],
+        "accumulate_stats": { "mp": 24, "dex": 1, "int": 34 },
+        "accumulate_ap": 203,
+        "effect": []
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 3, "dex": 1, "int": 7 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 531000 }],
+        "accumulate_stats": { "mp": 26, "dex": 1, "int": 38 },
+        "accumulate_ap": 237,
+        "effect": []
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 630000 }],
+        "accumulate_stats": { "mp": 29, "dex": 2, "int": 45 },
+        "accumulate_ap": 277,
+        "effect": []
+      }
+    ]
+  },
+  {
+    "skill_id": 56,
+    "talent": ["glyphwrighting"],
+    "talent_kor": ["마기그래퍼"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "마기그래프 디자인",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 277,
+    "total_stats": { "mp": 29, "dex": 29, "int": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1, "dex": 1, "int": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 1500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1, "dex": 1, "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 4500 }],
+        "accumulate_stats": { "mp": 1, "dex": 1, "int": 1 },
+        "accumulate_ap": 4,
+        "effect": []
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 12000 }],
+        "accumulate_stats": { "mp": 2, "dex": 2, "int": 2 },
+        "accumulate_ap": 10,
+        "effect": []
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 24000 }],
+        "accumulate_stats": { "mp": 4, "dex": 4, "int": 3 },
+        "accumulate_ap": 18,
+        "effect": []
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 45000 }],
+        "accumulate_stats": { "mp": 6, "dex": 6, "int": 4 },
+        "accumulate_ap": 28,
+        "effect": []
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 3, "dex": 3, "int": 2 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 72000 }],
+        "accumulate_stats": { "mp": 8, "dex": 8, "int": 5 },
+        "accumulate_ap": 40,
+        "effect": []
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 105000 }],
+        "accumulate_stats": { "mp": 11, "dex": 11, "int": 7 },
+        "accumulate_ap": 56,
+        "effect": []
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 141000 }],
+        "accumulate_stats": { "mp": 13, "dex": 13, "int": 8 },
+        "accumulate_ap": 74,
+        "effect": []
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 180000 }],
+        "accumulate_stats": { "mp": 15, "dex": 15, "int": 9 },
+        "accumulate_ap": 94,
+        "effect": []
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 3, "dex": 3, "int": 2 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 231000 }],
+        "accumulate_stats": { "mp": 17, "dex": 17, "int": 10 },
+        "accumulate_ap": 116,
+        "effect": []
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 29,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 288000 }],
+        "accumulate_stats": { "mp": 20, "dex": 20, "int": 12 },
+        "accumulate_ap": 142,
+        "effect": []
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 360000 }],
+        "accumulate_stats": { "mp": 22, "dex": 22, "int": 13 },
+        "accumulate_ap": 171,
+        "effect": []
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 1 },
+        "need_ap": 34,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 438000 }],
+        "accumulate_stats": { "mp": 24, "dex": 24, "int": 14 },
+        "accumulate_ap": 203,
+        "effect": []
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 3, "dex": 3, "int": 2 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 531000 }],
+        "accumulate_stats": { "mp": 26, "dex": 26, "int": 15 },
+        "accumulate_ap": 237,
+        "effect": []
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 630000 }],
+        "accumulate_stats": { "mp": 29, "dex": 29, "int": 17 },
+        "accumulate_ap": 277,
+        "effect": []
+      }
+    ]
+  },
+  {
+    "skill_id": 57,
+    "talent": ["glyphwrighting"],
+    "talent_kor": ["마기그래퍼"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "마기그래프 형상화",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 184,
+    "total_stats": { "mp": 20, "dex": 14, "int": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 3000 }],
+        "accumulate_stats": { "mp": 1, "int": 1 },
+        "accumulate_ap": 3,
+        "effect": []
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1, "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 8000 }],
+        "accumulate_stats": { "mp": 1, "int": 2 },
+        "accumulate_ap": 7,
+        "effect": []
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 16000 }],
+        "accumulate_stats": { "mp": 2, "dex": 1, "int": 2 },
+        "accumulate_ap": 12,
+        "effect": []
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 30000 }],
+        "accumulate_stats": { "mp": 3, "dex": 1, "int": 3 },
+        "accumulate_ap": 18,
+        "effect": []
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 2 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 48000 }],
+        "accumulate_stats": { "mp": 4, "dex": 1, "int": 4 },
+        "accumulate_ap": 25,
+        "effect": []
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1, "dex": 1, "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 70000 }],
+        "accumulate_stats": { "mp": 6, "dex": 3, "int": 6 },
+        "accumulate_ap": 34,
+        "effect": []
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "dex": 1, "int": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 94000 }],
+        "accumulate_stats": { "mp": 7, "dex": 4, "int": 7 },
+        "accumulate_ap": 44,
+        "effect": []
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 1, "dex": 1, "int": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 120000 }],
+        "accumulate_stats": { "mp": 8, "dex": 5, "int": 8 },
+        "accumulate_ap": 56,
+        "effect": []
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 154000 }],
+        "accumulate_stats": { "mp": 9, "dex": 6, "int": 9 },
+        "accumulate_ap": 70,
+        "effect": []
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2, "dex": 1, "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 192000 }],
+        "accumulate_stats": { "mp": 11, "dex": 8, "int": 11 },
+        "accumulate_ap": 87,
+        "effect": []
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2, "dex": 1, "int": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 240000 }],
+        "accumulate_stats": { "mp": 13, "dex": 9, "int": 12 },
+        "accumulate_ap": 107,
+        "effect": []
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2, "dex": 1, "int": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 292000 }],
+        "accumulate_stats": { "mp": 15, "dex": 10, "int": 13 },
+        "accumulate_ap": 129,
+        "effect": []
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 3, "dex": 3, "int": 3 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 354000 }],
+        "accumulate_stats": { "mp": 17, "dex": 11, "int": 14 },
+        "accumulate_ap": 154,
+        "effect": []
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 420000 }],
+        "accumulate_stats": { "mp": 20, "dex": 14, "int": 17 },
+        "accumulate_ap": 184,
+        "effect": []
+      }
+    ]
+  },
+  {
+    "skill_id": 58,
+    "talent": ["glyphwrighting"],
+    "talent_kor": ["마기그래퍼"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "마기그래피의 지식",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 89,
+    "total_stats": { "mp": 10, "dex": 1, "int": 14 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 1500 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 5,
+        "effect": []
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 4000 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 10,
+        "effect": []
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 8000 }],
+        "accumulate_stats": { "mp": 1, "int": 3 },
+        "accumulate_ap": 15,
+        "effect": []
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 15000 }],
+        "accumulate_stats": { "mp": 1, "int": 4 },
+        "accumulate_ap": 20,
+        "effect": []
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 24000 }],
+        "accumulate_stats": { "mp": 1, "int": 5 },
+        "accumulate_ap": 25,
+        "effect": []
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 35000 }],
+        "accumulate_stats": { "mp": 2, "int": 6 },
+        "accumulate_ap": 31,
+        "effect": []
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 47000 }],
+        "accumulate_stats": { "mp": 2, "int": 7 },
+        "accumulate_ap": 37,
+        "effect": []
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 60000 }],
+        "accumulate_stats": { "mp": 3, "int": 8 },
+        "accumulate_ap": 43,
+        "effect": []
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 77000 }],
+        "accumulate_stats": { "mp": 3, "int": 9 },
+        "accumulate_ap": 49,
+        "effect": []
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 96000 }],
+        "accumulate_stats": { "mp": 5, "int": 10 },
+        "accumulate_ap": 56,
+        "effect": []
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 120000 }],
+        "accumulate_stats": { "mp": 6, "int": 11 },
+        "accumulate_ap": 63,
+        "effect": []
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 146000 }],
+        "accumulate_stats": { "mp": 7, "int": 12 },
+        "accumulate_ap": 71,
+        "effect": []
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 2, "dex": 1, "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 177000 }],
+        "accumulate_stats": { "mp": 8, "int": 13 },
+        "accumulate_ap": 79,
+        "effect": []
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 210000 }],
+        "accumulate_stats": { "mp": 10, "dex": 1, "int": 14 },
+        "accumulate_ap": 89,
+        "effect": []
+      }
+    ]
+  },
+  {
+    "skill_id": 59,
+    "talent": ["glyphwrighting"],
+    "talent_kor": ["마기그래퍼"],
+    "category": ["life"],
+    "category_kor": ["생활"],
+    "isPromotion": "",
+    "name_kor": "필기구 크래프트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 89,
+    "total_stats": { "mp": 10, "dex": 12, "int": 3 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 1500 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 5,
+        "effect": []
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1, "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 4000 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 10,
+        "effect": []
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 8000 }],
+        "accumulate_stats": { "mp": 1, "dex": 3 },
+        "accumulate_ap": 15,
+        "effect": []
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 15000 }],
+        "accumulate_stats": { "mp": 1, "dex": 4 },
+        "accumulate_ap": 20,
+        "effect": []
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 24000 }],
+        "accumulate_stats": { "mp": 1, "dex": 5 },
+        "accumulate_ap": 25,
+        "effect": []
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 35000 }],
+        "accumulate_stats": { "mp": 2, "dex": 5, "int": 1 },
+        "accumulate_ap": 31,
+        "effect": []
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "dex": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 47000 }],
+        "accumulate_stats": { "mp": 2, "dex": 6, "int": 1 },
+        "accumulate_ap": 37,
+        "effect": []
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 60000 }],
+        "accumulate_stats": { "mp": 3, "dex": 7, "int": 1 },
+        "accumulate_ap": 43,
+        "effect": []
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 77000 }],
+        "accumulate_stats": { "mp": 3, "dex": 8, "int": 1 },
+        "accumulate_ap": 49,
+        "effect": []
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 1, "dex": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 96000 }],
+        "accumulate_stats": { "mp": 5, "dex": 8, "int": 2 },
+        "accumulate_ap": 56,
+        "effect": []
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 1, "dex": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 120000 }],
+        "accumulate_stats": { "mp": 6, "dex": 9, "int": 2 },
+        "accumulate_ap": 63,
+        "effect": []
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 1, "dex": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 146000 }],
+        "accumulate_stats": { "mp": 7, "dex": 10, "int": 2 },
+        "accumulate_ap": 71,
+        "effect": []
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 2, "dex": 1, "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 177000 }],
+        "accumulate_stats": { "mp": 8, "dex": 11, "int": 2 },
+        "accumulate_ap": 79,
+        "effect": []
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마기그래퍼", "exp": 210000 }],
+        "accumulate_stats": { "mp": 10, "dex": 12, "int": 3 },
+        "accumulate_ap": 89,
+        "effect": []
+      }
+    ]
   }
 ]

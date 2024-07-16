@@ -12660,5 +12660,3993 @@
         "effect": ["제작 성공률 증가", "마법의 잉크 제작 가능"]
       }
     ]
+  },
+  {
+    "skill_id": 60,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "헤일스톰",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 438,
+    "total_stats": { "mp": 23, "dex": 19, "int": 33 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["아이스 대미지 50~100", "3단계까지 차징 가능"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 6400 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 8,
+        "effect": ["아이스 대미지 100~110", "3단계까지 차징 가능"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14400 }],
+        "accumulate_stats": { "int": 4 },
+        "accumulate_ap": 18,
+        "effect": ["아이스 대미지 105~120", "3단계까지 차징 가능"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 24000 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 30,
+        "effect": ["아이스 대미지 110~130", "3단계까지 차징 가능"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 35200 }],
+        "accumulate_stats": { "int": 8 },
+        "accumulate_ap": 44,
+        "effect": ["아이스 대미지 115~140", "3단계까지 차징 가능"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마법사", "exp": 48000 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 60,
+        "effect": ["아이스 대미지 120~150", "3단계까지 차징 가능"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 62400 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 78,
+        "effect": ["아이스 대미지 125~160", "3단계까지 차징 가능"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 2 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 78400 }],
+        "accumulate_stats": { "mp": 2, "dex": 2, "int": 14 },
+        "accumulate_ap": 98,
+        "effect": [
+          "아이스 대미지 140~180",
+          "4단계까지 차징 가능",
+          "차징 시간 감소",
+          "얼음을 모아 주변의 적을 공격해보자."
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마법사", "exp": 98400 }],
+        "accumulate_stats": { "mp": 4, "dex": 4, "int": 16 },
+        "accumulate_ap": 123,
+        "effect": ["아이스 대미지 145~190", "4단계까지 차징 가능"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 2, "dex": 2, "int": 2 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "마법사", "exp": 122400 }],
+        "accumulate_stats": { "mp": 6, "dex": 6, "int": 18 },
+        "accumulate_ap": 153,
+        "effect": ["아이스 대미지 150~200", "4단계까지 차징 가능"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 3, "dex": 2, "int": 2 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "마법사", "exp": 150400 }],
+        "accumulate_stats": { "mp": 8, "dex": 8, "int": 20 },
+        "accumulate_ap": 188,
+        "effect": ["아이스 대미지 155~210", "4단계까지 차징 가능"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 3, "dex": 2, "int": 2 },
+        "need_ap": 45,
+        "accumulate_rp": [{ "title": "마법사", "exp": 182400 }],
+        "accumulate_stats": { "mp": 11, "dex": 10, "int": 22 },
+        "accumulate_ap": 228,
+        "effect": [
+          "아이스 대미지 170~230",
+          "5단계까지 차징 가능",
+          "차징 시간 감소",
+          "얼음을 모아 주변의 적을 공격해보자."
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 3, "dex": 2, "int": 2 },
+        "need_ap": 50,
+        "accumulate_rp": [{ "title": "마법사", "exp": 218400 }],
+        "accumulate_stats": { "mp": 14, "dex": 12, "int": 24 },
+        "accumulate_ap": 273,
+        "effect": ["아이스 대미지 175~240", "5단계까지 차징 가능"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 3, "dex": 2, "int": 2 },
+        "need_ap": 55,
+        "accumulate_rp": [{ "title": "마법사", "exp": 258400 }],
+        "accumulate_stats": { "mp": 17, "dex": 14, "int": 26 },
+        "accumulate_ap": 323,
+        "effect": ["아이스 대미지 180~250", "5단계까지 차징 가능"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 3, "dex": 3, "int": 5 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "마법사", "exp": 302400 }],
+        "accumulate_stats": { "mp": 20, "dex": 16, "int": 28 },
+        "accumulate_ap": 378,
+        "effect": ["아이스 대미지 185~260", "5단계까지 차징 가능"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 23, "dex": 19, "int": 33 },
+        "accumulate_ap": 438,
+        "effect": ["아이스 대미지 200~300", "5단계까지 차징 가능", "차징 시간 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 61,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "아이스 스피어",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 470,
+    "total_stats": { "mp": 25, "int": 29 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["아이스 대미지 40~80"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3200 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 4,
+        "effect": ["아이스 대미지 80~88"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 8000 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 10,
+        "effect": ["아이스 대미지 84~96"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14400 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 18,
+        "effect": ["아이스 대미지 88~104"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 22400 }],
+        "accumulate_stats": { "int": 4 },
+        "accumulate_ap": 28,
+        "effect": ["아이스 대미지 92~112"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 32000 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 40,
+        "effect": ["아이스 대미지 96~120"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 43200 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 54,
+        "effect": ["아이스 대미지 100~128"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 59200 }],
+        "accumulate_stats": { "int": 8 },
+        "accumulate_ap": 74,
+        "effect": ["아이스 대미지 112~144"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마법사", "exp": 79200 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 99,
+        "effect": ["아이스 대미지 116~152"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "마법사", "exp": 103200 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 129,
+        "effect": ["아이스 대미지 120~160"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 5, "int": 3 },
+        "need_ap": 42,
+        "accumulate_rp": [{ "title": "마법사", "exp": 131200 }],
+        "accumulate_stats": { "int": 14 },
+        "accumulate_ap": 164,
+        "effect": ["아이스 대미지 124~168"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 5, "int": 3 },
+        "need_ap": 48,
+        "accumulate_rp": [{ "title": "마법사", "exp": 164800 }],
+        "accumulate_stats": { "mp": 5, "int": 17 },
+        "accumulate_ap": 206,
+        "effect": ["아이스 대미지 136~184"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 5, "int": 3 },
+        "need_ap": 54,
+        "accumulate_rp": [{ "title": "마법사", "exp": 203200 }],
+        "accumulate_stats": { "mp": 10, "int": 20 },
+        "accumulate_ap": 254,
+        "effect": ["아이스 대미지 140~192"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 5, "int": 3 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "마법사", "exp": 246400 }],
+        "accumulate_stats": { "mp": 15, "int": 23 },
+        "accumulate_ap": 308,
+        "effect": ["아이스 대미지 144~200"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 5, "int": 3 },
+        "need_ap": 70,
+        "accumulate_rp": [{ "title": "마법사", "exp": 294400 }],
+        "accumulate_stats": { "mp": 20, "int": 26 },
+        "accumulate_ap": 368,
+        "effect": ["아이스 대미지 148~208"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 25, "int": 29 },
+        "accumulate_ap": 438,
+        "effect": ["아이스 대미지 160~240"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 25, "int": 29 },
+        "accumulate_ap": 445,
+        "effect": ["아이스 대미지 172~272"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 25, "int": 29 },
+        "accumulate_ap": 455,
+        "effect": ["아이스 대미지 184~304"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 25, "int": 29 },
+        "accumulate_ap": 470,
+        "effect": ["아이스 대미지 196~336"]
+      }
+    ]
+  },
+  {
+    "skill_id": 62,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "라이트닝로드",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 425,
+    "total_stats": { "mp": 16, "int": 54 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["전격 대미지 7~42", "최대 충전 시 대미지 보너스 50%", "재사용 대기 시간 40초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 6400 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 6,
+        "effect": ["전격 대미지 11~65", "최대 충전 시 대미지 보너스 60%", "재사용 대기 시간 40초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14400 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 14,
+        "effect": ["전격 대미지 13~83", "최대 충전 시 대미지 보너스 70%", "재사용 대기 시간 40초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 24000 }],
+        "accumulate_stats": { "int": 8 },
+        "accumulate_ap": 24,
+        "effect": ["전격 대미지 20~133", "최대 충전 시 대미지 보너스 80%", "재사용 대기 시간 35초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 35200 }],
+        "accumulate_stats": { "int": 11 },
+        "accumulate_ap": 36,
+        "effect": ["전격 대미지 37~167", "최대 충전 시 대미지 보너스 90%", "재사용 대기 시간 35초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 48000 }],
+        "accumulate_stats": { "int": 14 },
+        "accumulate_ap": 50,
+        "effect": ["전격 대미지 47~232", "최대 충전 시 대미지 보너스 100%", "재사용 대기 시간 35초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "int": 4 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 62400 }],
+        "accumulate_stats": { "int": 17 },
+        "accumulate_ap": 66,
+        "effect": ["전격 대미지 60~245", "최대 충전 시 대미지 보너스 110%", "재사용 대기 시간 30초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1, "int": 4 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "마법사", "exp": 78400 }],
+        "accumulate_stats": { "mp": 1, "int": 21 },
+        "accumulate_ap": 86,
+        "effect": ["전격 대미지 87~292", "최대 충전 시 대미지 보너스 120%", "재사용 대기 시간 30초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "int": 4 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "마법사", "exp": 98400 }],
+        "accumulate_stats": { "mp": 2, "int": 25 },
+        "accumulate_ap": 110,
+        "effect": ["전격 대미지 93~310", "최대 충전 시 대미지 보너스 130%", "재사용 대기 시간 30초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 2, "int": 4 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "마법사", "exp": 122400 }],
+        "accumulate_stats": { "mp": 3, "int": 29 },
+        "accumulate_ap": 138,
+        "effect": ["전격 대미지 100~335", "최대 충전 시 대미지 보너스 140%", "재사용 대기 시간 25초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2, "int": 4 },
+        "need_ap": 36,
+        "accumulate_rp": [{ "title": "마법사", "exp": 150400 }],
+        "accumulate_stats": { "mp": 5, "int": 33 },
+        "accumulate_ap": 170,
+        "effect": ["전격 대미지 103~347", "최대 충전 시 대미지 보너스 150%", "재사용 대기 시간 25초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2, "int": 4 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "마법사", "exp": 182400 }],
+        "accumulate_stats": { "mp": 7, "int": 37 },
+        "accumulate_ap": 206,
+        "effect": ["전격 대미지 110~365", "최대 충전 시 대미지 보너스 160%", "재사용 대기 시간 25초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2, "int": 4 },
+        "need_ap": 44,
+        "accumulate_rp": [{ "title": "마법사", "exp": 218400 }],
+        "accumulate_stats": { "mp": 9, "int": 41 },
+        "accumulate_ap": 246,
+        "effect": ["전격 대미지 117~385", "최대 충전 시 대미지 보너스 170%", "재사용 대기 시간 20초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2, "int": 4 },
+        "need_ap": 50,
+        "accumulate_rp": [{ "title": "마법사", "exp": 258400 }],
+        "accumulate_stats": { "mp": 11, "int": 45 },
+        "accumulate_ap": 290,
+        "effect": ["전격 대미지 120~415", "최대 충전 시 대미지 보너스 180%", "재사용 대기 시간 20초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 3, "int": 5 },
+        "need_ap": 53,
+        "accumulate_rp": [{ "title": "마법사", "exp": 302400 }],
+        "accumulate_stats": { "mp": 13, "int": 49 },
+        "accumulate_ap": 340,
+        "effect": ["전격 대미지 127~435", "최대 충전 시 대미지 보너스 190%", "재사용 대기 시간 20초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 16, "int": 54 },
+        "accumulate_ap": 393,
+        "effect": ["전격 대미지 133~465", "최대 충전 시 대미지 보너스 200%", "재사용 대기 시간 15초"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 16, "int": 54 },
+        "accumulate_ap": 400,
+        "effect": ["전격 대미지 141~475", "최대 충전 시 대미지 보너스 210%", "재사용 대기 시간 15초"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 16, "int": 54 },
+        "accumulate_ap": 410,
+        "effect": ["전격 대미지 148~485", "최대 충전 시 대미지 보너스 220%", "재사용 대기 시간 15초"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 350400 }],
+        "accumulate_stats": { "mp": 16, "int": 54 },
+        "accumulate_ap": 425,
+        "effect": ["전격 대미지 155~500", "최대 충전 시 대미지 보너스 230%", "재사용 대기 시간 15초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 63,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "블레이즈",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 410,
+    "total_stats": { "mp": 33, "str": 7, "int": 33 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["스킬을 연습하는 단계"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3200 }],
+        "accumulate_stats": { "mp": 2, "int": 2 },
+        "accumulate_ap": 4,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 8000 }],
+        "accumulate_stats": { "mp": 4, "int": 4 },
+        "accumulate_ap": 10,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14400 }],
+        "accumulate_stats": { "mp": 6, "int": 6 },
+        "accumulate_ap": 18,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 23200 }],
+        "accumulate_stats": { "mp": 8, "int": 8 },
+        "accumulate_ap": 29,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "마법사", "exp": 34400 }],
+        "accumulate_stats": { "mp": 10, "int": 10 },
+        "accumulate_ap": 43,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "마법사", "exp": 48000 }],
+        "accumulate_stats": { "mp": 12, "int": 12 },
+        "accumulate_ap": 60,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 64800 }],
+        "accumulate_stats": { "mp": 14, "int": 14 },
+        "accumulate_ap": 81,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 29,
+        "accumulate_rp": [{ "title": "마법사", "exp": 84800 }],
+        "accumulate_stats": { "mp": 16, "int": 16 },
+        "accumulate_ap": 106,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 2, "int": 2 },
+        "need_ap": 33,
+        "accumulate_rp": [{ "title": "마법사", "exp": 108000 }],
+        "accumulate_stats": { "mp": 18, "int": 18 },
+        "accumulate_ap": 135,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2, "str": 1, "int": 2 },
+        "need_ap": 38,
+        "accumulate_rp": [{ "title": "마법사", "exp": 134400 }],
+        "accumulate_stats": { "mp": 20, "int": 20 },
+        "accumulate_ap": 168,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2, "str": 1, "int": 2 },
+        "need_ap": 43,
+        "accumulate_rp": [{ "title": "마법사", "exp": 164800 }],
+        "accumulate_stats": { "mp": 22, "str": 1, "int": 22 },
+        "accumulate_ap": 206,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2, "str": 1, "int": 2 },
+        "need_ap": 48,
+        "accumulate_rp": [{ "title": "마법사", "exp": 199200 }],
+        "accumulate_stats": { "mp": 24, "str": 2, "int": 24 },
+        "accumulate_ap": 249,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2, "str": 1, "int": 2 },
+        "need_ap": 53,
+        "accumulate_rp": [{ "title": "마법사", "exp": 237600 }],
+        "accumulate_stats": { "mp": 26, "str": 3, "int": 26 },
+        "accumulate_ap": 297,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 5, "str": 3, "int": 5 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "마법사", "exp": 280000 }],
+        "accumulate_stats": { "mp": 28, "str": 4, "int": 28 },
+        "accumulate_ap": 350,
+        "effect": ["폭발 대미지 상승"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 328000 }],
+        "accumulate_stats": { "mp": 33, "str": 7, "int": 33 },
+        "accumulate_ap": 410,
+        "effect": ["폭발 대미지 상승"]
+      }
+    ]
+  },
+  {
+    "skill_id": 64,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "썬더",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 441,
+    "total_stats": { "mp": 90, "will": 29 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 5, "will": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["전격 대미지 5~40"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 5, "will": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1600 }],
+        "accumulate_stats": { "mp": 5, "will": 1 },
+        "accumulate_ap": 2,
+        "effect": ["전격 대미지 10~66"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 5, "will": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4800 }],
+        "accumulate_stats": { "mp": 10, "will": 2 },
+        "accumulate_ap": 6,
+        "effect": ["전격 대미지 16~106"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 6, "will": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 9600 }],
+        "accumulate_stats": { "mp": 15, "will": 3 },
+        "accumulate_ap": 12,
+        "effect": ["전격 대미지 21~133"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 6, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 16800 }],
+        "accumulate_stats": { "mp": 21, "will": 4 },
+        "accumulate_ap": 21,
+        "effect": ["전격 대미지 26~160"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 6, "will": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 26400 }],
+        "accumulate_stats": { "mp": 27, "will": 5 },
+        "accumulate_ap": 33,
+        "effect": ["전격 대미지 37~173"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 7, "will": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 39200 }],
+        "accumulate_stats": { "mp": 33, "will": 6 },
+        "accumulate_ap": 49,
+        "effect": ["전격 대미지 48~200"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 7, "will": 2 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 55200 }],
+        "accumulate_stats": { "mp": 40, "will": 8 },
+        "accumulate_ap": 69,
+        "effect": ["전격 대미지 69~266"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 8, "will": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마법사", "exp": 75200 }],
+        "accumulate_stats": { "mp": 47, "will": 10 },
+        "accumulate_ap": 94,
+        "effect": ["전격 대미지 74~280"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 10, "will": 2 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "마법사", "exp": 99200 }],
+        "accumulate_stats": { "mp": 55, "will": 12 },
+        "accumulate_ap": 124,
+        "effect": ["전격 대미지 80~293"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 5, "will": 3 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "마법사", "exp": 127200 }],
+        "accumulate_stats": { "mp": 65, "will": 14 },
+        "accumulate_ap": 159,
+        "effect": ["전격 대미지 82~306"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 5, "will": 3 },
+        "need_ap": 45,
+        "accumulate_rp": [{ "title": "마법사", "exp": 159200 }],
+        "accumulate_stats": { "mp": 70, "will": 17 },
+        "accumulate_ap": 199,
+        "effect": ["전격 대미지 88~333"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 5, "will": 3 },
+        "need_ap": 50,
+        "accumulate_rp": [{ "title": "마법사", "exp": 195200 }],
+        "accumulate_stats": { "mp": 75, "will": 20 },
+        "accumulate_ap": 244,
+        "effect": ["전격 대미지 93~346"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 5, "will": 3 },
+        "need_ap": 55,
+        "accumulate_rp": [{ "title": "마법사", "exp": 235200 }],
+        "accumulate_stats": { "mp": 80, "will": 23 },
+        "accumulate_ap": 294,
+        "effect": ["전격 대미지 96~360"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 5, "will": 3 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "마법사", "exp": 279200 }],
+        "accumulate_stats": { "mp": 85, "will": 26 },
+        "accumulate_ap": 349,
+        "effect": ["전격 대미지 101~373"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 327200 }],
+        "accumulate_stats": { "mp": 90, "will": 29 },
+        "accumulate_ap": 409,
+        "effect": ["전격 대미지 106~400"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 327200 }],
+        "accumulate_stats": { "mp": 90, "will": 29 },
+        "accumulate_ap": 416,
+        "effect": ["전격 대미지 111~427"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 327200 }],
+        "accumulate_stats": { "mp": 90, "will": 29 },
+        "accumulate_ap": 426,
+        "effect": ["전격 대미지 116~454"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 327200 }],
+        "accumulate_stats": { "mp": 90, "will": 29 },
+        "accumulate_ap": 441,
+        "effect": ["전격 대미지 121~481"]
+      }
+    ]
+  },
+  {
+    "skill_id": 65,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "파이어볼",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 415,
+    "total_stats": { "str": 8, "int": 64 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["파이어 대미지 80~240"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 5600 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 7,
+        "effect": ["파이어 대미지 160~400"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 12000 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 15,
+        "effect": ["파이어 대미지 240~640"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 19200 }],
+        "accumulate_stats": { "int": 9 },
+        "accumulate_ap": 24,
+        "effect": ["파이어 대미지 320~800"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 27200 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 34,
+        "effect": ["파이어 대미지 400~960"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 36800 }],
+        "accumulate_stats": { "int": 16 },
+        "accumulate_ap": 46,
+        "effect": ["파이어 대미지 560~1040"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "마법사", "exp": 48800 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 61,
+        "effect": ["파이어 대미지 720~1200"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 62400 }],
+        "accumulate_stats": { "int": 24 },
+        "accumulate_ap": 78,
+        "effect": ["파이어 대미지 1040~1600"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 78400 }],
+        "accumulate_stats": { "int": 29 },
+        "accumulate_ap": 98,
+        "effect": ["파이어 대미지 1120~1680"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마법사", "exp": 98400 }],
+        "accumulate_stats": { "int": 34 },
+        "accumulate_ap": 123,
+        "effect": ["파이어 대미지 1200~1760"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "마법사", "exp": 122400 }],
+        "accumulate_stats": { "int": 39 },
+        "accumulate_ap": 153,
+        "effect": ["파이어 대미지 1240~1840"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 2, "int": 5 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "마법사", "exp": 150400 }],
+        "accumulate_stats": { "int": 44 },
+        "accumulate_ap": 188,
+        "effect": ["파이어 대미지 1440~2000"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 2, "int": 5 },
+        "need_ap": 45,
+        "accumulate_rp": [{ "title": "마법사", "exp": 182400 }],
+        "accumulate_stats": { "str": 2, "int": 49 },
+        "accumulate_ap": 228,
+        "effect": ["파이어 대미지 1440~2080"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 2, "int": 5 },
+        "need_ap": 50,
+        "accumulate_rp": [{ "title": "마법사", "exp": 218400 }],
+        "accumulate_stats": { "str": 4, "int": 54 },
+        "accumulate_ap": 273,
+        "effect": ["파이어 대미지 1440~2160"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 2, "int": 5 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "마법사", "exp": 258400 }],
+        "accumulate_stats": { "str": 6, "int": 59 },
+        "accumulate_ap": 323,
+        "effect": ["파이어 대미지 1440~2240"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 306400 }],
+        "accumulate_stats": { "str": 8, "int": 64 },
+        "accumulate_ap": 383,
+        "effect": ["파이어 대미지 1600~2400"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 306400 }],
+        "accumulate_stats": { "str": 8, "int": 64 },
+        "accumulate_ap": 390,
+        "effect": ["파이어 대미지 1600~2520"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 306400 }],
+        "accumulate_stats": { "str": 8, "int": 64 },
+        "accumulate_ap": 400,
+        "effect": ["파이어 대미지 1600~2640"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 306400 }],
+        "accumulate_stats": { "str": 8, "int": 64 },
+        "accumulate_ap": 415,
+        "effect": ["파이어 대미지 1600~2760"]
+      }
+    ]
+  },
+  {
+    "skill_id": 66,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "마나 리커버리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 126,
+    "total_stats": { "mp": 60 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 2400 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 2,
+        "effect": ["자신의 전체 마나량의 최대 20% 회복", "재사용 대기 시간 5분"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 6000 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 6,
+        "effect": ["자신의 전체 마나량의 최대 20% 회복", "재사용 대기 시간 4분 55초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 3 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 11200 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 12,
+        "effect": ["자신의 전체 마나량의 최대 20% 회복", "재사용 대기 시간 4분 50초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 3 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 17700 }],
+        "accumulate_stats": { "mp": 8 },
+        "accumulate_ap": 18,
+        "effect": ["자신의 전체 마나량의 최대 25% 회복", "재사용 대기 시간 4분 45초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 3 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 26200 }],
+        "accumulate_stats": { "mp": 11 },
+        "accumulate_ap": 24,
+        "effect": ["자신의 전체 마나량의 최대 25% 회복", "재사용 대기 시간 4분 40초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 36200 }],
+        "accumulate_stats": { "mp": 14 },
+        "accumulate_ap": 30,
+        "effect": ["자신의 전체 마나량의 최대 25% 회복", "재사용 대기 시간 4분 35초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 48200 }],
+        "accumulate_stats": { "mp": 18 },
+        "accumulate_ap": 38,
+        "effect": ["자신의 전체 마나량의 최대 30% 회복", "재사용 대기 시간 4분 30초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 62200 }],
+        "accumulate_stats": { "mp": 22 },
+        "accumulate_ap": 46,
+        "effect": ["자신의 전체 마나량의 최대 30% 회복", "재사용 대기 시간 4분 20초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 78200 }],
+        "accumulate_stats": { "mp": 26 },
+        "accumulate_ap": 54,
+        "effect": ["자신의 전체 마나량의 최대 35% 회복", "재사용 대기 시간 4분 10초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 96200 }],
+        "accumulate_stats": { "mp": 31 },
+        "accumulate_ap": 64,
+        "effect": ["자신의 전체 마나량의 최대 35% 회복", "재사용 대기 시간 4분"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 116200 }],
+        "accumulate_stats": { "mp": 36 },
+        "accumulate_ap": 74,
+        "effect": ["자신의 전체 마나량의 최대 40% 회복", "재사용 대기 시간 3분 50초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 6 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 140200 }],
+        "accumulate_stats": { "mp": 41 },
+        "accumulate_ap": 84,
+        "effect": ["자신의 전체 마나량의 최대 40% 회복", "재사용 대기 시간 3분 40초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 6 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 168200 }],
+        "accumulate_stats": { "mp": 47 },
+        "accumulate_ap": 96,
+        "effect": ["자신의 전체 마나량의 최대 45% 회복", "재사용 대기 시간 3분 30초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 7 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 200200 }],
+        "accumulate_stats": { "mp": 53 },
+        "accumulate_ap": 110,
+        "effect": ["자신의 전체 마나량의 최대 45% 회복", "재사용 대기 시간 3분 20초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 236200 }],
+        "accumulate_stats": { "mp": 60 },
+        "accumulate_ap": 126,
+        "effect": ["자신의 전체 마나량의 최대 50% 회복", "재사용 대기 시간 3분"]
+      }
+    ]
+  },
+  {
+    "skill_id": 67,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "볼트 마법 조합",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 279,
+    "total_stats": { "int": 29 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["조합된 볼트 마법 대미지 2% 추가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3500 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 7,
+        "effect": ["조합된 볼트 마법 대미지 4% 추가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 6000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 12,
+        "effect": ["조합된 볼트 마법 대미지 6% 추가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 9000 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 18,
+        "effect": ["조합된 볼트 마법 대미지 8% 추가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 12500 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 25,
+        "effect": ["조합된 볼트 마법 대미지 10% 추가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 16500 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 33,
+        "effect": ["조합된 볼트 마법 대미지 12% 추가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 22500 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 45,
+        "effect": ["조합된 볼트 마법 대미지 14% 추가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마법사", "exp": 30000 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 60,
+        "effect": ["조합된 볼트 마법 대미지 16% 추가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "마법사", "exp": 39000 }],
+        "accumulate_stats": { "int": 9 },
+        "accumulate_ap": 78,
+        "effect": ["조합된 볼트 마법 대미지 18% 추가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 49500 }],
+        "accumulate_stats": { "int": 11 },
+        "accumulate_ap": 99,
+        "effect": ["조합된 볼트 마법 대미지 20% 추가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마법사", "exp": 62000 }],
+        "accumulate_stats": { "int": 14 },
+        "accumulate_ap": 124,
+        "effect": ["조합된 볼트 마법 대미지 22% 추가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "마법사", "exp": 77000 }],
+        "accumulate_stats": { "int": 17 },
+        "accumulate_ap": 154,
+        "effect": ["조합된 볼트 마법 대미지 24% 추가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "마법사", "exp": 94500 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 189,
+        "effect": ["조합된 볼트 마법 대미지 26% 추가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 50,
+        "accumulate_rp": [{ "title": "마법사", "exp": 114500 }],
+        "accumulate_stats": { "int": 24 },
+        "accumulate_ap": 229,
+        "effect": ["조합된 볼트 마법 대미지 28% 추가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 139500 }],
+        "accumulate_stats": { "int": 29 },
+        "accumulate_ap": 279,
+        "effect": ["조합된 볼트 마법 대미지 30% 추가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 68,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "매직 웨폰 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 152,
+    "total_stats": { "int": 9, "will": 3 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 5% 증가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 10% 증가", "중급 마법 시전 시간 1% 감소"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "마법사", "exp": 2000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 20% 증가", "중급 마법 시전 시간 2% 감소"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 30% 증가", "중급 마법 시전 시간 3% 감소"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 8000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 6,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 40% 증가", "중급 마법 시전 시간 4% 감소"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 50% 증가", "중급 마법 시전 시간 5% 감소"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 22000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 15,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 60% 증가", "중급 마법 시전 시간 6% 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 31000 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 22,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 70% 증가", "중급 마법 시전 시간 7% 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "마법사", "exp": 40000 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 31,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 80% 증가", "중급 마법 시전 시간 8% 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "마법사", "exp": 49000 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 42,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 90% 증가", "중급 마법 시전 시간 9% 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 58000 }],
+        "accumulate_stats": { "int": 4 },
+        "accumulate_ap": 55,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 100% 증가", "중급 마법 시전 시간 10% 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "마법사", "exp": 68000 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 70,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 110% 증가", "중급 마법 시전 시간 11% 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 1, "will": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "마법사", "exp": 78000 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 87,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 120% 증가", "중급 마법 시전 시간 12% 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1, "will": 1 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "마법사", "exp": 88000 }],
+        "accumulate_stats": { "int": 7, "will": 1 },
+        "accumulate_ap": 106,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 130% 증가", "중급 마법 시전 시간 13% 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 1, "will": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 98000 }],
+        "accumulate_stats": { "int": 8, "will": 2 },
+        "accumulate_ap": 127,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 140% 증가", "중급 마법 시전 시간 14% 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 113000 }],
+        "accumulate_stats": { "int": 9, "will": 3 },
+        "accumulate_ap": 152,
+        "effect": ["마법 무기 착용 시", "볼트 마법 대미지 150% 증가", "중급 마법 시전 시간 15% 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 69,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "라이트닝볼트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 154,
+    "total_stats": { "int": 52 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["라이트닝볼트 연습(연습 대미지: 1~10)"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4000 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 5,
+        "effect": ["전격 대미지 1~40", "최대 차지 시 대미지 12% 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 8000 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 10,
+        "effect": ["전격 대미지 2~46", "최대 차지 시 대미지 14% 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 12000 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 15,
+        "effect": ["전격 대미지 3~52", "최대 차지 시 대미지 14% 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 16000 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 20,
+        "effect": ["전격 대미지 4~58", "최대 차지 시 대미지 14% 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 20000 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 25,
+        "effect": ["전격 대미지 5~65", "최대 차지 시 대미지 16% 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 24000 }],
+        "accumulate_stats": { "int": 13 },
+        "accumulate_ap": 30,
+        "effect": ["전격 대미지 6~72", "최대 차지 시 대미지 16% 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 30400 }],
+        "accumulate_stats": { "int": 16 },
+        "accumulate_ap": 38,
+        "effect": ["전격 대미지 7~79", "최대 차지 시 대미지 18% 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 36800 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 46,
+        "effect": ["전격 대미지 9~86", "최대 차지 시 대미지 18% 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 43200 }],
+        "accumulate_stats": { "int": 24 },
+        "accumulate_ap": 54,
+        "effect": ["전격 대미지 11~93", "최대 차지 시 대미지 20% 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 49600 }],
+        "accumulate_stats": { "int": 28 },
+        "accumulate_ap": 62,
+        "effect": ["전격 대미지 13~100", "최대 차지 시 대미지 20% 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 57600 }],
+        "accumulate_stats": { "int": 32 },
+        "accumulate_ap": 72,
+        "effect": ["전격 대미지 20~110", "시전 시간 감소", "최대 차지 시 대미지 22% 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 65600 }],
+        "accumulate_stats": { "int": 37 },
+        "accumulate_ap": 82,
+        "effect": ["전격 대미지 24~120", "최대 차지 시 대미지 22% 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 73600 }],
+        "accumulate_stats": { "int": 42 },
+        "accumulate_ap": 92,
+        "effect": ["전격 대미지 28~130", "최대 차지 시 대미지 24% 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 81600 }],
+        "accumulate_stats": { "int": 47 },
+        "accumulate_ap": 102,
+        "effect": ["전격 대미지 32~140", "최대 차지 시 대미지 24% 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 97600 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 122,
+        "effect": ["전격 대미지 40~150", "최대 차지 시 대미지 26% 증가"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 97600 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 129,
+        "effect": ["전격 대미지 48~160", "최대 차지 시 대미지 26% 증가"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 97600 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 139,
+        "effect": ["전격 대미지 56~170", "최대 차지 시 대미지 28% 증가"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 97600 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 154,
+        "effect": ["전격 대미지 64~180", "최대 차지 시 대미지 28% 증가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 70,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "인챈트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 135,
+    "total_stats": { "dex": 15, "int": 15 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "마법사", "exp": 500 }],
+        "accumulate_stats": { "dex": 1, "int": 1 },
+        "accumulate_ap": 1,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1900 }],
+        "accumulate_stats": { "dex": 2, "int": 2 },
+        "accumulate_ap": 3,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4000 }],
+        "accumulate_stats": { "dex": 3, "int": 3 },
+        "accumulate_ap": 6,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 6800 }],
+        "accumulate_stats": { "dex": 4, "int": 4 },
+        "accumulate_ap": 10,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 10300 }],
+        "accumulate_stats": { "dex": 5, "int": 5 },
+        "accumulate_ap": 15,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14500 }],
+        "accumulate_stats": { "dex": 6, "int": 6 },
+        "accumulate_ap": 21,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 19400 }],
+        "accumulate_stats": { "dex": 7, "int": 7 },
+        "accumulate_ap": 28,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 25000 }],
+        "accumulate_stats": { "dex": 8, "int": 8 },
+        "accumulate_ap": 36,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 31300 }],
+        "accumulate_stats": { "dex": 9, "int": 9 },
+        "accumulate_ap": 45,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 38300 }],
+        "accumulate_stats": { "dex": 10, "int": 10 },
+        "accumulate_ap": 55,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 46700 }],
+        "accumulate_stats": { "dex": 11, "int": 11 },
+        "accumulate_ap": 67,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 56500 }],
+        "accumulate_stats": { "dex": 12, "int": 12 },
+        "accumulate_ap": 81,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마법사", "exp": 67700 }],
+        "accumulate_stats": { "dex": 13, "int": 13 },
+        "accumulate_ap": 97,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 80300 }],
+        "accumulate_stats": { "dex": 14, "int": 14 },
+        "accumulate_ap": 115,
+        "effect": ["인챈트 가능"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 94300 }],
+        "accumulate_stats": { "dex": 15, "int": 15 },
+        "accumulate_ap": 135,
+        "effect": ["인챈트 가능"]
+      }
+    ]
+  },
+  {
+    "skill_id": 71,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "파이어볼트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 141,
+    "total_stats": { "int": 52 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["파이어볼트 연습(연습 대미지: 4~10)"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 2400 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 3,
+        "effect": ["파이어 대미지 7~25"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4800 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 6,
+        "effect": ["파이어 대미지 8~27"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 7200 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 9,
+        "effect": ["파이어 대미지 9~28"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 9600 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 12,
+        "effect": ["파이어 대미지 11~30"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 12000 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 15,
+        "effect": ["파이어 대미지 13~35"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14400 }],
+        "accumulate_stats": { "int": 13 },
+        "accumulate_ap": 18,
+        "effect": ["파이어 대미지 15~40"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 20000 }],
+        "accumulate_stats": { "int": 16 },
+        "accumulate_ap": 25,
+        "effect": ["파이어 대미지 18~45"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 25600 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 32,
+        "effect": ["파이어 대미지 21~50"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 31200 }],
+        "accumulate_stats": { "int": 24 },
+        "accumulate_ap": 39,
+        "effect": ["파이어 대미지 25~55"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 36800 }],
+        "accumulate_stats": { "int": 28 },
+        "accumulate_ap": 46,
+        "effect": ["파이어 대미지 29~60"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 46400 }],
+        "accumulate_stats": { "int": 32 },
+        "accumulate_ap": 58,
+        "effect": ["파이어 대미지 33~65"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 56000 }],
+        "accumulate_stats": { "int": 37 },
+        "accumulate_ap": 70,
+        "effect": ["파이어 대미지 37~70"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 65600 }],
+        "accumulate_stats": { "int": 42 },
+        "accumulate_ap": 82,
+        "effect": ["파이어 대미지 41~75"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 75200 }],
+        "accumulate_stats": { "int": 47 },
+        "accumulate_ap": 94,
+        "effect": ["파이어 대미지 45~80"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 87200 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 109,
+        "effect": ["파이어 대미지 60~120"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 87200 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 116,
+        "effect": ["파이어 대미지 62~122"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 87200 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 126,
+        "effect": ["파이어 대미지 64~124"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 87200 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 141,
+        "effect": ["파이어 대미지 66~126"]
+      }
+    ]
+  },
+  {
+    "skill_id": 72,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "볼트 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 124,
+    "total_stats": { "mp": 21 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1500 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["볼트 마법 대미지 1% 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3000 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 6,
+        "effect": ["볼트 마법 대미지 2% 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4500 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 9,
+        "effect": ["볼트 마법 대미지 3% 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 7500 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 15,
+        "effect": ["볼트 마법 대미지 4% 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 10500 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 21,
+        "effect": ["볼트 마법 대미지 5% 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14000 }],
+        "accumulate_stats": { "mp": 7 },
+        "accumulate_ap": 27,
+        "effect": ["볼트 마법 대미지 6% 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 18000 }],
+        "accumulate_stats": { "mp": 8 },
+        "accumulate_ap": 35,
+        "effect": ["볼트 마법 대미지 7% 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 22500 }],
+        "accumulate_stats": { "mp": 9 },
+        "accumulate_ap": 43,
+        "effect": ["볼트 마법 대미지 8% 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 27500 }],
+        "accumulate_stats": { "mp": 10 },
+        "accumulate_ap": 51,
+        "effect": ["볼트 마법 대미지 9% 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "마법사", "exp": 33500 }],
+        "accumulate_stats": { "mp": 11 },
+        "accumulate_ap": 59,
+        "effect": ["볼트 마법 대미지 10% 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 40500 }],
+        "accumulate_stats": { "mp": 13 },
+        "accumulate_ap": 70,
+        "effect": ["볼트 마법 대미지 11% 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "마법사", "exp": 48500 }],
+        "accumulate_stats": { "mp": 15 },
+        "accumulate_ap": 82,
+        "effect": ["볼트 마법 대미지 12% 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 58500 }],
+        "accumulate_stats": { "mp": 17 },
+        "accumulate_ap": 95,
+        "effect": ["볼트 마법 대미지 13% 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 70500 }],
+        "accumulate_stats": { "mp": 19 },
+        "accumulate_ap": 109,
+        "effect": ["볼트 마법 대미지 14% 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 85500 }],
+        "accumulate_stats": { "mp": 21 },
+        "accumulate_ap": 124,
+        "effect": ["볼트 마법 대미지 15% 증가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 73,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "파이어 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 156,
+    "total_stats": { "mp": 14, "int": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1500 }],
+        "accumulate_stats": { "mp": 3, "int": 1 },
+        "accumulate_ap": 3,
+        "effect": ["파이어 마법 스킬 대미지 1% 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3000 }],
+        "accumulate_stats": { "mp": 3, "int": 2 },
+        "accumulate_ap": 6,
+        "effect": ["파이어 마법 스킬 대미지 2% 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4500 }],
+        "accumulate_stats": { "mp": 3, "int": 3 },
+        "accumulate_ap": 9,
+        "effect": ["파이어 마법 스킬 대미지 3% 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 7500 }],
+        "accumulate_stats": { "mp": 3, "int": 4 },
+        "accumulate_ap": 15,
+        "effect": ["파이어 마법 스킬 대미지 4% 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 10500 }],
+        "accumulate_stats": { "mp": 3, "int": 5 },
+        "accumulate_ap": 21,
+        "effect": ["파이어 마법 스킬 대미지 5% 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 13500 }],
+        "accumulate_stats": { "mp": 3, "int": 6 },
+        "accumulate_ap": 27,
+        "effect": ["파이어 마법 스킬 대미지 6% 증가", "파이어 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 18000 }],
+        "accumulate_stats": { "mp": 6, "int": 7 },
+        "accumulate_ap": 36,
+        "effect": ["파이어 마법 스킬 대미지 7% 증가", "파이어 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 22500 }],
+        "accumulate_stats": { "mp": 6, "int": 8 },
+        "accumulate_ap": 45,
+        "effect": ["파이어 마법 스킬 대미지 8% 증가", "파이어 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 27000 }],
+        "accumulate_stats": { "mp": 6, "int": 9 },
+        "accumulate_ap": 54,
+        "effect": ["파이어 마법 스킬 대미지 9% 증가", "파이어 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 31500 }],
+        "accumulate_stats": { "mp": 6, "int": 10 },
+        "accumulate_ap": 63,
+        "effect": ["파이어 마법 스킬 대미지 10% 증가", "파이어 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 38500 }],
+        "accumulate_stats": { "mp": 9, "int": 11 },
+        "accumulate_ap": 77,
+        "effect": ["파이어 마법 스킬 대미지 11% 증가", "파이어 마법 마나 소모량 15% 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마법사", "exp": 46500 }],
+        "accumulate_stats": { "mp": 9, "int": 12 },
+        "accumulate_ap": 93,
+        "effect": ["파이어 마법 스킬 대미지 12% 증가", "파이어 마법 마나 소모량 15% 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 55500 }],
+        "accumulate_stats": { "mp": 9, "int": 13 },
+        "accumulate_ap": 111,
+        "effect": ["파이어 마법 스킬 대미지 13% 증가", "파이어 마법 마나 소모량 15% 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 5, "int": 3 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 65500 }],
+        "accumulate_stats": { "mp": 9, "int": 14 },
+        "accumulate_ap": 131,
+        "effect": ["파이어 마법 스킬 대미지 14% 증가", "파이어 마법 마나 소모량 15% 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 78000 }],
+        "accumulate_stats": { "mp": 14, "int": 17 },
+        "accumulate_ap": 156,
+        "effect": ["파이어 마법 스킬 대미지 15% 증가", "파이어 마법 마나 소모량 20% 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 74,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "아이스 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 156,
+    "total_stats": { "mp": 14, "int": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1500 }],
+        "accumulate_stats": { "mp": 3, "int": 1 },
+        "accumulate_ap": 3,
+        "effect": ["아이스 마법 스킬 대미지 1% 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3000 }],
+        "accumulate_stats": { "mp": 3, "int": 2 },
+        "accumulate_ap": 6,
+        "effect": ["아이스 마법 스킬 대미지 2% 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4500 }],
+        "accumulate_stats": { "mp": 3, "int": 3 },
+        "accumulate_ap": 9,
+        "effect": ["아이스 마법 스킬 대미지 3% 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 7500 }],
+        "accumulate_stats": { "mp": 3, "int": 4 },
+        "accumulate_ap": 15,
+        "effect": ["아이스 마법 스킬 대미지 4% 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 10500 }],
+        "accumulate_stats": { "mp": 3, "int": 5 },
+        "accumulate_ap": 21,
+        "effect": ["아이스 마법 스킬 대미지 5% 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 13500 }],
+        "accumulate_stats": { "mp": 3, "int": 6 },
+        "accumulate_ap": 27,
+        "effect": ["아이스 마법 스킬 대미지 6% 증가", "아이스 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 18000 }],
+        "accumulate_stats": { "mp": 6, "int": 7 },
+        "accumulate_ap": 36,
+        "effect": ["아이스 마법 스킬 대미지 7% 증가", "아이스 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 22500 }],
+        "accumulate_stats": { "mp": 6, "int": 8 },
+        "accumulate_ap": 45,
+        "effect": ["아이스 마법 스킬 대미지 8% 증가", "아이스 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 27000 }],
+        "accumulate_stats": { "mp": 6, "int": 9 },
+        "accumulate_ap": 54,
+        "effect": ["아이스 마법 스킬 대미지 9% 증가", "아이스 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 31500 }],
+        "accumulate_stats": { "mp": 6, "int": 10 },
+        "accumulate_ap": 63,
+        "effect": ["아이스 마법 스킬 대미지 10% 증가", "아이스 마법 마나 소모량 10% 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 38500 }],
+        "accumulate_stats": { "mp": 9, "int": 11 },
+        "accumulate_ap": 77,
+        "effect": ["아이스 마법 스킬 대미지 11% 증가", "아이스 마법 마나 소모량 15% 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마법사", "exp": 46500 }],
+        "accumulate_stats": { "mp": 9, "int": 12 },
+        "accumulate_ap": 93,
+        "effect": ["아이스 마법 스킬 대미지 12% 증가", "아이스 마법 마나 소모량 15% 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 55500 }],
+        "accumulate_stats": { "mp": 9, "int": 13 },
+        "accumulate_ap": 111,
+        "effect": ["아이스 마법 스킬 대미지 13% 증가", "아이스 마법 마나 소모량 15% 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 5, "int": 3 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 65500 }],
+        "accumulate_stats": { "mp": 9, "int": 14 },
+        "accumulate_ap": 131,
+        "effect": ["아이스 마법 스킬 대미지 14% 증가", "아이스 마법 마나 소모량 15% 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 78000 }],
+        "accumulate_stats": { "mp": 14, "int": 17 },
+        "accumulate_ap": 156,
+        "effect": ["아이스 마법 스킬 대미지 15% 증가", "아이스 마법 마나 소모량 20% 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 75,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "라이트닝 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 156,
+    "total_stats": { "mp": 14, "int": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1500 }],
+        "accumulate_stats": { "mp": 3, "int": 1 },
+        "accumulate_ap": 3,
+        "effect": ["라이트닝 마법 스킬 대미지 1% 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3000 }],
+        "accumulate_stats": { "mp": 3, "int": 2 },
+        "accumulate_ap": 6,
+        "effect": ["라이트닝 마법 스킬 대미지 2% 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4500 }],
+        "accumulate_stats": { "mp": 3, "int": 3 },
+        "accumulate_ap": 9,
+        "effect": ["라이트닝 마법 스킬 대미지 3% 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 7500 }],
+        "accumulate_stats": { "mp": 3, "int": 4 },
+        "accumulate_ap": 15,
+        "effect": ["라이트닝 마법 스킬 대미지 4% 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 10500 }],
+        "accumulate_stats": { "mp": 3, "int": 5 },
+        "accumulate_ap": 21,
+        "effect": ["라이트닝 마법 스킬 대미지 5% 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 13500 }],
+        "accumulate_stats": { "mp": 3, "int": 6 },
+        "accumulate_ap": 27,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 6% 증가",
+          "라이트닝 마법 마나 소모량 10% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 18000 }],
+        "accumulate_stats": { "mp": 6, "int": 7 },
+        "accumulate_ap": 36,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 7% 증가",
+          "라이트닝 마법 마나 소모량 10% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 22500 }],
+        "accumulate_stats": { "mp": 6, "int": 8 },
+        "accumulate_ap": 45,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 8% 증가",
+          "라이트닝 마법 마나 소모량 10% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 27000 }],
+        "accumulate_stats": { "mp": 6, "int": 9 },
+        "accumulate_ap": 54,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 9% 증가",
+          "라이트닝 마법 마나 소모량 10% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 31500 }],
+        "accumulate_stats": { "mp": 6, "int": 10 },
+        "accumulate_ap": 63,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 10% 증가",
+          "라이트닝 마법 마나 소모량 10% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 38500 }],
+        "accumulate_stats": { "mp": 9, "int": 11 },
+        "accumulate_ap": 77,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 11% 증가",
+          "라이트닝 마법 마나 소모량 15% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마법사", "exp": 46500 }],
+        "accumulate_stats": { "mp": 9, "int": 12 },
+        "accumulate_ap": 93,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 12% 증가",
+          "라이트닝 마법 마나 소모량 15% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 55500 }],
+        "accumulate_stats": { "mp": 9, "int": 13 },
+        "accumulate_ap": 111,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 13% 증가",
+          "라이트닝 마법 마나 소모량 15% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 5, "int": 3 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 65500 }],
+        "accumulate_stats": { "mp": 9, "int": 14 },
+        "accumulate_ap": 131,
+        "effect": [
+          "라이트닝 마법 스킬 대미지 14% 증가",
+          "라이트닝 마법 마나 소모량 15% 감소",
+          "라이트닝 마법을 꾸준히 사용해보자."
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 78000 }],
+        "accumulate_stats": { "mp": 14, "int": 17 },
+        "accumulate_ap": 156,
+        "effect": ["라이트닝 마법 스킬 대미지 15% 증가", "라이트닝 마법 마나 소모량 20% 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 76,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "아이스볼트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 124,
+    "total_stats": { "int": 52 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["아이스볼트 연습(연습 대미지: 4~10)"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 2400 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 3,
+        "effect": ["아이스 대미지 10~20", "공격 성공 시 마나 회복", "적의 이동 속도 20% 감소"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4800 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 6,
+        "effect": ["아이스 대미지 11~21", "공격 성공 시 마나 회복", "적의 이동 속도 20% 감소"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 7200 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 9,
+        "effect": ["아이스 대미지 13~23", "공격 성공 시 마나 회복", "적의 이동 속도 20% 감소"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 9600 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 12,
+        "effect": ["아이스 대미지 15~25", "공격 성공 시 마나 회복", "적의 이동 속도 25% 감소"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 12000 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 15,
+        "effect": ["아이스 대미지 18~27", "공격 성공 시 마나 회복", "적의 이동 속도 25% 감소"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14400 }],
+        "accumulate_stats": { "int": 13 },
+        "accumulate_ap": 18,
+        "effect": ["아이스 대미지 21~30", "공격 성공 시 마나 회복", "적의 이동 속도 25% 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 18400 }],
+        "accumulate_stats": { "int": 16 },
+        "accumulate_ap": 23,
+        "effect": ["아이스 대미지 24~35", "공격 성공 시 마나 회복", "적의 이동 속도 30% 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 22400 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 28,
+        "effect": ["아이스 대미지 28~40", "공격 성공 시 마나 회복", "적의 이동 속도 30% 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 26400 }],
+        "accumulate_stats": { "int": 24 },
+        "accumulate_ap": 33,
+        "effect": ["아이스 대미지 32~45", "공격 성공 시 마나 회복", "적의 이동 속도 30% 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 30400 }],
+        "accumulate_stats": { "int": 28 },
+        "accumulate_ap": 38,
+        "effect": ["아이스 대미지 37~48", "공격 성공 시 마나 회복", "적의 이동 속도 30% 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 36000 }],
+        "accumulate_stats": { "int": 32 },
+        "accumulate_ap": 45,
+        "effect": ["아이스 대미지 48~54", "공격 성공 시 마나 회복", "적의 이동 속도 35% 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 42400 }],
+        "accumulate_stats": { "int": 37 },
+        "accumulate_ap": 53,
+        "effect": ["아이스 대미지 53~59", "공격 성공 시 마나 회복", "적의 이동 속도 35% 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 49600 }],
+        "accumulate_stats": { "int": 42 },
+        "accumulate_ap": 62,
+        "effect": ["아이스 대미지 59~65", "공격 성공 시 마나 회복", "적의 이동 속도 35% 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 57600 }],
+        "accumulate_stats": { "int": 47 },
+        "accumulate_ap": 72,
+        "effect": ["아이스 대미지 63~72", "공격 성공 시 마나 회복", "적의 이동 속도 35% 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 73600 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 92,
+        "effect": ["아이스 대미지 70~80", "공격 성공 시 마나 회복", "적의 이동 속도 40% 감소"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 73600 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 99,
+        "effect": ["아이스 대미지 77~88", "공격 성공 시 마나 회복", "적의 이동 속도 40% 감소"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 73600 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 109,
+        "effect": ["아이스 대미지 84~96", "공격 성공 시 마나 회복", "적의 이동 속도 40% 감소"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 73600 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 124,
+        "effect": ["아이스 대미지 91~104", "공격 성공 시 마나 회복", "적의 이동 속도 40% 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 77,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "매직 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 91,
+    "total_stats": { "mp": 150, "int": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 10 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 10 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "마법사", "exp": 500 }],
+        "accumulate_stats": { "mp": 10 },
+        "accumulate_ap": 1,
+        "effect": []
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 10 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1000 }],
+        "accumulate_stats": { "mp": 20 },
+        "accumulate_ap": 2,
+        "effect": []
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 10 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "마법사", "exp": 2000 }],
+        "accumulate_stats": { "mp": 30 },
+        "accumulate_ap": 4,
+        "effect": []
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 10 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3000 }],
+        "accumulate_stats": { "mp": 40 },
+        "accumulate_ap": 6,
+        "effect": []
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 10 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4500 }],
+        "accumulate_stats": { "mp": 50 },
+        "accumulate_ap": 9,
+        "effect": []
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 10, "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 6000 }],
+        "accumulate_stats": { "mp": 60 },
+        "accumulate_ap": 12,
+        "effect": []
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 10, "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 8500 }],
+        "accumulate_stats": { "mp": 70, "int": 1 },
+        "accumulate_ap": 17,
+        "effect": []
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 10, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 11000 }],
+        "accumulate_stats": { "mp": 80, "int": 2 },
+        "accumulate_ap": 22,
+        "effect": []
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 10, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14500 }],
+        "accumulate_stats": { "mp": 90, "int": 3 },
+        "accumulate_ap": 29,
+        "effect": []
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 10, "int": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 18000 }],
+        "accumulate_stats": { "mp": 100, "int": 4 },
+        "accumulate_ap": 36,
+        "effect": []
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 10, "int": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 23000 }],
+        "accumulate_stats": { "mp": 110, "int": 6 },
+        "accumulate_ap": 46,
+        "effect": []
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 10, "int": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 28000 }],
+        "accumulate_stats": { "mp": 120, "int": 8 },
+        "accumulate_ap": 56,
+        "effect": []
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 10, "int": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 33000 }],
+        "accumulate_stats": { "mp": 130, "int": 10 },
+        "accumulate_ap": 66,
+        "effect": []
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 10, "int": 5 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 38000 }],
+        "accumulate_stats": { "mp": 140, "int": 12 },
+        "accumulate_ap": 76,
+        "effect": []
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 45500 }],
+        "accumulate_stats": { "mp": 150, "int": 17 },
+        "accumulate_ap": 91,
+        "effect": []
+      }
+    ]
+  },
+  {
+    "skill_id": 78,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "hidden",
+    "category_kor": "히든",
+    "isPromotion": "",
+    "name_kor": "쇼크웨이브",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 325,
+    "total_stats": { "hp": 35, "int": 21 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 500 }],
+        "accumulate_stats": { "hp": 1 },
+        "accumulate_ap": 5,
+        "effect": ["범위 반경 4m", "전격 대미지 1~90"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1300 }],
+        "accumulate_stats": { "hp": 1, "int": 1 },
+        "accumulate_ap": 11,
+        "effect": ["범위 반경 4m", "전격 대미지 1~100"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 2300 }],
+        "accumulate_stats": { "hp": 2, "int": 1 },
+        "accumulate_ap": 19,
+        "effect": ["범위 반경 4.5m", "전격 대미지 1~116"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3500 }],
+        "accumulate_stats": { "hp": 3, "int": 1 },
+        "accumulate_ap": 29,
+        "effect": ["범위 반경 4.5m", "전격 대미지 1~126"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 5000 }],
+        "accumulate_stats": { "hp": 3, "int": 2 },
+        "accumulate_ap": 41,
+        "effect": ["범위 반경 5m", "전격 대미지 1~140"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 2, "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 6800 }],
+        "accumulate_stats": { "hp": 4, "int": 2 },
+        "accumulate_ap": 57,
+        "effect": ["범위 반경 5m", "전격 대미지 1~155"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 2, "int": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "마법사", "exp": 8800 }],
+        "accumulate_stats": { "hp": 6, "int": 3 },
+        "accumulate_ap": 77,
+        "effect": ["범위 반경 6m", "전격 대미지 5~180", "재사용 대기시간 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 2, "int": 1 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "마법사", "exp": 11300 }],
+        "accumulate_stats": { "hp": 8, "int": 4 },
+        "accumulate_ap": 99,
+        "effect": ["범위 반경 6m", "전격 대미지 6~198"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2, "int": 2 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14300 }],
+        "accumulate_stats": { "hp": 10, "int": 5 },
+        "accumulate_ap": 123,
+        "effect": ["범위 반경 6.2m", "전격 대미지 8~218"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 2, "int": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마법사", "exp": 17800 }],
+        "accumulate_stats": { "hp": 12, "int": 7 },
+        "accumulate_ap": 151,
+        "effect": ["범위 반경 6.4m", "전격 대미지 11~242"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 3, "int": 2 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "마법사", "exp": 21800 }],
+        "accumulate_stats": { "hp": 14, "int": 9 },
+        "accumulate_ap": 181,
+        "effect": ["범위 반경 6.7m", "전격 대미지 13~268"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 3, "int": 2 },
+        "need_ap": 34,
+        "accumulate_rp": [{ "title": "마법사", "exp": 26300 }],
+        "accumulate_stats": { "hp": 17, "int": 11 },
+        "accumulate_ap": 213,
+        "effect": ["범위 반경 7m", "전격 대미지 15~290", "재사용 대기시간 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 5, "int": 3 },
+        "need_ap": 36,
+        "accumulate_rp": [{ "title": "마법사", "exp": 31300 }],
+        "accumulate_stats": { "hp": 20, "int": 13 },
+        "accumulate_ap": 247,
+        "effect": ["범위 반경 7.2m", "전격 대미지 18~320"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 10, "int": 5 },
+        "need_ap": 42,
+        "accumulate_rp": [{ "title": "마법사", "exp": 37300 }],
+        "accumulate_stats": { "hp": 25, "int": 16 },
+        "accumulate_ap": 283,
+        "effect": ["범위 반경 7.5m", "전격 대미지 22~356"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 45300 }],
+        "accumulate_stats": { "hp": 35, "int": 21 },
+        "accumulate_ap": 325,
+        "effect": ["범위 반경 8m", "전격 대미지 30~400", "재사용 대기시간 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 79,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "메디테이션",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 34,
+    "total_stats": { "mp": 48 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 5 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 5 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1000 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 2,
+        "effect": ["마나 회복 속도 450%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 5 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 2500 }],
+        "accumulate_stats": { "mp": 10 },
+        "accumulate_ap": 5,
+        "effect": ["마나 회복 속도 520%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 5 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4500 }],
+        "accumulate_stats": { "mp": 15 },
+        "accumulate_ap": 9,
+        "effect": ["마나 회복 속도 590%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 7 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 7000 }],
+        "accumulate_stats": { "mp": 20 },
+        "accumulate_ap": 14,
+        "effect": ["마나 회복 속도 660%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 7 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 9500 }],
+        "accumulate_stats": { "mp": 27 },
+        "accumulate_ap": 19,
+        "effect": ["마나 회복 속도 730%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 7 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 12000 }],
+        "accumulate_stats": { "mp": 34 },
+        "accumulate_ap": 24,
+        "effect": ["마나 회복 속도 800%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 7 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 14500 }],
+        "accumulate_stats": { "mp": 41 },
+        "accumulate_ap": 29,
+        "effect": ["마나 회복 속도 870%"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 17000 }],
+        "accumulate_stats": { "mp": 48 },
+        "accumulate_ap": 34,
+        "effect": ["마나 회복 속도 940%"]
+      }
+    ]
+  },
+  {
+    "skill_id": 80,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "hidden",
+    "category_kor": "히든",
+    "isPromotion": "",
+    "name_kor": "연구 : 포션 중독",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 198,
+    "total_stats": { "hp": 10, "mp": 10, "sp": 10, "luck": 3 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 200 }],
+        "accumulate_stats": { "hp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["회복 포션의 포션 중독 수치 11% 감소", "8% 확률로 회복 포션의 150% 효과 적용"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 400 }],
+        "accumulate_stats": { "hp": 1, "mp": 1 },
+        "accumulate_ap": 6,
+        "effect": ["회복 포션의 포션 중독 수치 12% 감소", "8% 확률로 회복 포션의 155% 효과 적용"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 700 }],
+        "accumulate_stats": { "hp": 1, "mp": 1, "sp": 1 },
+        "accumulate_ap": 11,
+        "effect": ["회복 포션의 포션 중독 수치 13% 감소", "8% 확률로 회복 포션의 160% 효과 적용"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1000 }],
+        "accumulate_stats": { "hp": 2, "mp": 1, "sp": 1 },
+        "accumulate_ap": 16,
+        "effect": ["회복 포션의 포션 중독 수치 14% 감소", "8% 확률로 회복 포션의 165% 효과 적용"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1400 }],
+        "accumulate_stats": { "hp": 2, "mp": 2, "sp": 1 },
+        "accumulate_ap": 23,
+        "effect": ["회복 포션의 포션 중독 수치 15% 감소", "10% 확률로 회복 포션의 170% 효과 적용"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 1900 }],
+        "accumulate_stats": { "hp": 2, "mp": 2, "sp": 2 },
+        "accumulate_ap": 32,
+        "effect": ["회복 포션의 포션 중독 수치 16% 감소", "10% 확률로 회복 포션의 174% 효과 적용"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 2500 }],
+        "accumulate_stats": { "hp": 4, "mp": 2, "sp": 2 },
+        "accumulate_ap": 44,
+        "effect": ["회복 포션의 포션 중독 수치 18% 감소", "10% 확률로 회복 포션의 180% 효과 적용"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 3200 }],
+        "accumulate_stats": { "hp": 4, "mp": 4, "sp": 2 },
+        "accumulate_ap": 58,
+        "effect": ["회복 포션의 포션 중독 수치 20% 감소", "11% 확률로 회복 포션의 185% 효과 적용"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "마법사", "exp": 4000 }],
+        "accumulate_stats": { "hp": 4, "mp": 4, "sp": 4 },
+        "accumulate_ap": 73,
+        "effect": ["회복 포션의 포션 중독 수치 22% 감소", "11% 확률로 회복 포션의 190% 효과 적용"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마법사", "exp": 5000 }],
+        "accumulate_stats": { "hp": 6, "mp": 4, "sp": 4 },
+        "accumulate_ap": 90,
+        "effect": ["회복 포션의 포션 중독 수치 24% 감소", "12% 확률로 회복 포션의 195% 효과 적용"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 6200 }],
+        "accumulate_stats": { "hp": 6, "mp": 6, "sp": 4 },
+        "accumulate_ap": 108,
+        "effect": ["회복 포션의 포션 중독 수치 27% 감소", "12% 확률로 회복 포션의 200% 효과 적용"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1, "luck": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "마법사", "exp": 7600 }],
+        "accumulate_stats": { "hp": 6, "mp": 6, "sp": 6 },
+        "accumulate_ap": 128,
+        "effect": ["회복 포션의 포션 중독 수치 30% 감소", "12% 확률로 회복 포션의 210% 효과 적용"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1, "luck": 1 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "마법사", "exp": 9200 }],
+        "accumulate_stats": { "hp": 7, "mp": 7, "sp": 7, "luck": 1 },
+        "accumulate_ap": 150,
+        "effect": ["회복 포션의 포션 중독 수치 33% 감소", "13% 확률로 회복 포션의 220% 효과 적용"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 2, "mp": 2, "sp": 2, "luck": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 11000 }],
+        "accumulate_stats": { "hp": 8, "mp": 8, "sp": 8, "luck": 2 },
+        "accumulate_ap": 173,
+        "effect": ["회복 포션의 포션 중독 수치 36% 감소", "13% 확률로 회복 포션의 230% 효과 적용"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 13000 }],
+        "accumulate_stats": { "hp": 10, "mp": 10, "sp": 10, "luck": 3 },
+        "accumulate_ap": 198,
+        "effect": ["회복 포션의 포션 중독 수치 40% 감소", "15% 확률로 회복 포션의 250% 효과 적용"]
+      }
+    ]
+  },
+  {
+    "skill_id": 81,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "메테오 스트라이크",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 521,
+    "total_stats": { "int": 50 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["물리 대미지 390~520", "파이어 대미지 600~840", "10초간 추가 파이어 대미지 500"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 8,
+        "effect": ["물리 대미지 390~520", "파이어 대미지 720~1120", "10초간 추가 파이어 대미지 600"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 18,
+        "effect": ["물리 대미지 520~650", "파이어 대미지 720~1260", "10초간 추가 파이어 대미지 700"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 30,
+        "effect": ["물리 대미지 650~1040", "파이어 대미지 840~1400", "10초간 추가 파이어 대미지 900"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 4 },
+        "accumulate_ap": 44,
+        "effect": ["물리 대미지 780~1170", "파이어 대미지 960~1820", "10초간 추가 파이어 대미지 1100"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 60,
+        "effect": ["물리 대미지 910~1300", "파이어 대미지 1080~2100", "10초간 추가 파이어 대미지 1250"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 78,
+        "effect": ["물리 대미지 1040~1560", "파이어 대미지 1200~2240", "10초간 추가 파이어 대미지 1400"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 9 },
+        "accumulate_ap": 103,
+        "effect": ["물리 대미지 1300~2340", "파이어 대미지 1680~2800", "10초간 추가 파이어 대미지 1900"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 36,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 11 },
+        "accumulate_ap": 133,
+        "effect": ["물리 대미지 1560~2600", "파이어 대미지 2160~3080", "10초간 추가 파이어 대미지 2100"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 42,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 14 },
+        "accumulate_ap": 169,
+        "effect": ["물리 대미지 1950~2990", "파이어 대미지 2520~3500", "10초간 추가 파이어 대미지 2400"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 48,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 17 },
+        "accumulate_ap": 211,
+        "effect": ["물리 대미지 2340~3510", "파이어 대미지 2640~3920", "10초간 추가 파이어 대미지 2750"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 54,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 259,
+        "effect": ["물리 대미지 2600~3900", "파이어 대미지 3360~4760", "10초간 추가 파이어 대미지 3200"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 60,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 25 },
+        "accumulate_ap": 313,
+        "effect": ["물리 대미지 3250~4550", "파이어 대미지 3720~5740", "10초간 추가 파이어 대미지 3800"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 8 },
+        "need_ap": 68,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 30 },
+        "accumulate_ap": 373,
+        "effect": ["물리 대미지 3900~5200", "파이어 대미지 4080~6160", "10초간 추가 파이어 대미지 4200"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 12 },
+        "need_ap": 80,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 38 },
+        "accumulate_ap": 441,
+        "effect": ["물리 대미지 4550~5850", "파이어 대미지 4800~6750", "10초간 추가 파이어 대미지 4600"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 50 },
+        "accumulate_ap": 521,
+        "effect": ["물리 대미지 5200~7800", "파이어 대미지 5040~8400", "10초간 추가 파이어 대미지 6000"]
+      }
+    ]
+  },
+  {
+    "skill_id": 82,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "무빙 캐스팅",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 155,
+    "total_stats": { "sp": 14, "int": 10 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 34%"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 36%"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 2 },
+        "accumulate_ap": 7,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 38%"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 3 },
+        "accumulate_ap": 11,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 40%"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 3, "int": 1 },
+        "accumulate_ap": 16,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 42%"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 4, "int": 1 },
+        "accumulate_ap": 21,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 44%"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 5, "int": 1 },
+        "accumulate_ap": 26,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 46%"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 5, "int": 2 },
+        "accumulate_ap": 32,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 50%"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 6, "int": 2 },
+        "accumulate_ap": 38,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 55%"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 7, "int": 2 },
+        "accumulate_ap": 46,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 60%"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 1, "int": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 7, "int": 3 },
+        "accumulate_ap": 54,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 65%"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 1, "int": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 8, "int": 4 },
+        "accumulate_ap": 69,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 70%"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 1, "int": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 9, "int": 5 },
+        "accumulate_ap": 86,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 75%"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 1, "int": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 10, "int": 6 },
+        "accumulate_ap": 105,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 80%"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 3, "int": 3 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 11, "int": 7 },
+        "accumulate_ap": 127,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 85%"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "sp": 14, "int": 10 },
+        "accumulate_ap": 155,
+        "effect": ["마법 시전 중 이동 가능", "이동 속도 100%"]
+      }
+    ]
+  },
+  {
+    "skill_id": 83,
+    "talent": ["magician"],
+    "talent_kor": ["마법사"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "인스턴트 캐스팅",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 270,
+    "total_stats": { "int": 17 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 5초", "재사용 대기시간 3분"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 5,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 5.2초", "재사용 대기시간 3분"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 13,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 5.4초", "재사용 대기시간 3분"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 21,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 5.6초", "재사용 대기시간 3분"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 4 },
+        "accumulate_ap": 31,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 5.8초", "재사용 대기시간 3분"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 41,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 6초", "재사용 대기시간 3분"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 53,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 6.2초", "재사용 대기시간 3분"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 68,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 7초", "재사용 대기시간 2분 30초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 8 },
+        "accumulate_ap": 83,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 7.5초", "재사용 대기시간 2분 30초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 9 },
+        "accumulate_ap": 100,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 8초", "재사용 대기시간 2분"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 120,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 8.5초", "재사용 대기시간 2분"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 11 },
+        "accumulate_ap": 140,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 9초", "재사용 대기시간 2분"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 165,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 9.5초", "재사용 대기시간 2분"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 13 },
+        "accumulate_ap": 195,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 10초", "재사용 대기시간 1분 30초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 14 },
+        "accumulate_ap": 230,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 10.5초", "재사용 대기시간 1분 30초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_stats": { "int": 17 },
+        "accumulate_ap": 270,
+        "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 12초", "재사용 대기시간 1분"]
+      }
+    ]
   }
 ]

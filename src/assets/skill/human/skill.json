@@ -12621,7 +12621,7 @@
         "accumulate_rp": [{ "title": "마기그래퍼", "exp": 96000 }],
         "accumulate_stats": { "mp": 5, "dex": 8, "int": 2 },
         "accumulate_ap": 56,
-        "effect": ["제각 성공률 증가", "마법의 잉크 제작 가능"]
+        "effect": ["제작 성공률 증가", "마법의 잉크 제작 가능"]
       },
       {
         "rank": "4",
@@ -12630,7 +12630,7 @@
         "accumulate_rp": [{ "title": "마기그래퍼", "exp": 120000 }],
         "accumulate_stats": { "mp": 6, "dex": 9, "int": 2 },
         "accumulate_ap": 63,
-        "effect": ["제각 성공률 증가", "마법의 잉크 제작 가능"]
+        "effect": ["제작 성공률 증가", "마법의 잉크 제작 가능"]
       },
       {
         "rank": "3",
@@ -12639,7 +12639,7 @@
         "accumulate_rp": [{ "title": "마기그래퍼", "exp": 146000 }],
         "accumulate_stats": { "mp": 7, "dex": 10, "int": 2 },
         "accumulate_ap": 71,
-        "effect": ["제각 성공률 증가", "마법의 잉크 제작 가능"]
+        "effect": ["제작 성공률 증가", "마법의 잉크 제작 가능"]
       },
       {
         "rank": "2",
@@ -12648,7 +12648,7 @@
         "accumulate_rp": [{ "title": "마기그래퍼", "exp": 177000 }],
         "accumulate_stats": { "mp": 8, "dex": 11, "int": 2 },
         "accumulate_ap": 79,
-        "effect": ["제각 성공률 증가", "마법의 잉크 제작 가능"]
+        "effect": ["제작 성공률 증가", "마법의 잉크 제작 가능"]
       },
       {
         "rank": "1",
@@ -12657,7 +12657,7 @@
         "accumulate_rp": [{ "title": "마기그래퍼", "exp": 210000 }],
         "accumulate_stats": { "mp": 10, "dex": 12, "int": 3 },
         "accumulate_ap": 89,
-        "effect": ["제각 성공률 증가", "마법의 잉크 제작 가능"]
+        "effect": ["제작 성공률 증가", "마법의 잉크 제작 가능"]
       }
     ]
   }

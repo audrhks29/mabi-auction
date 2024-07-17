@@ -7462,11 +7462,11 @@
   },
   {
     "skill_id": 31,
-    "talent": ["archery"],
-    "talent_kor": ["궁수"],
+    "talent": ["archery", "carpentry"],
+    "talent_kor": ["궁수", "목수"],
     "category": "hidden",
     "category_kor": "히든",
-    "isPromotion": "",
+    "isPromotion": false,
     "name_kor": "스파이더 샷",
     "icon": "",
     "description": "",
@@ -7477,7 +7477,10 @@
         "rank": "연습",
         "bonus_stats": { "dex": 1 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "궁수", "exp": 0 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 0 },
+          { "title": "목수", "exp": 0 }
+        ],
         "accumulate_stats": null,
         "accumulate_ap": 0,
         "effect": ["트랩 지속시간 5초", "트랩에 걸린 대상에 크리티컬 대미지 5%"]
@@ -7486,7 +7489,10 @@
         "rank": "F",
         "bonus_stats": { "sp": 1 },
         "need_ap": 6,
-        "accumulate_rp": [{ "title": "궁수", "exp": 500 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 500 },
+          { "title": "목수", "exp": 300 }
+        ],
         "accumulate_stats": { "dex": 1 },
         "accumulate_ap": 5,
         "effect": [
@@ -7500,7 +7506,10 @@
         "rank": "E",
         "bonus_stats": { "dex": 1 },
         "need_ap": 8,
-        "accumulate_rp": [{ "title": "궁수", "exp": 1300 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 1300 },
+          { "title": "목수", "exp": 800 }
+        ],
         "accumulate_stats": { "sp": 1, "dex": 1 },
         "accumulate_ap": 11,
         "effect": [
@@ -7514,7 +7523,10 @@
         "rank": "D",
         "bonus_stats": { "sp": 1 },
         "need_ap": 10,
-        "accumulate_rp": [{ "title": "궁수", "exp": 2300 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 2300 },
+          { "title": "목수", "exp": 1600 }
+        ],
         "accumulate_stats": { "sp": 1, "dex": 2 },
         "accumulate_ap": 19,
         "effect": [
@@ -7528,7 +7540,10 @@
         "rank": "C",
         "bonus_stats": { "dex": 1 },
         "need_ap": 12,
-        "accumulate_rp": [{ "title": "궁수", "exp": 3500 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 3500 },
+          { "title": "목수", "exp": 2600 }
+        ],
         "accumulate_stats": { "sp": 2, "dex": 2 },
         "accumulate_ap": 29,
         "effect": [
@@ -7542,7 +7557,10 @@
         "rank": "B",
         "bonus_stats": { "sp": 1 },
         "need_ap": 14,
-        "accumulate_rp": [{ "title": "궁수", "exp": 5000 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 5000 },
+          { "title": "목수", "exp": 3800 }
+        ],
         "accumulate_stats": { "sp": 2, "dex": 3 },
         "accumulate_ap": 41,
         "effect": [
@@ -7556,7 +7574,10 @@
         "rank": "A",
         "bonus_stats": { "sp": 1, "dex": 1 },
         "need_ap": 16,
-        "accumulate_rp": [{ "title": "궁수", "exp": 7000 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 7000 },
+          { "title": "목수", "exp": 5300 }
+        ],
         "accumulate_stats": { "sp": 3, "dex": 3 },
         "accumulate_ap": 55,
         "effect": [
@@ -7570,7 +7591,10 @@
         "rank": "9",
         "bonus_stats": { "sp": 1, "dex": 1 },
         "need_ap": 18,
-        "accumulate_rp": [{ "title": "궁수", "exp": 9400 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 9400 },
+          { "title": "목수", "exp": 7100 }
+        ],
         "accumulate_stats": { "sp": 4, "dex": 4 },
         "accumulate_ap": 71,
         "effect": [
@@ -7584,7 +7608,10 @@
         "rank": "8",
         "bonus_stats": { "sp": 2, "dex": 2 },
         "need_ap": 24,
-        "accumulate_rp": [{ "title": "궁수", "exp": 12200 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 12200 },
+          { "title": "목수", "exp": 9300 }
+        ],
         "accumulate_stats": { "sp": 5, "dex": 5 },
         "accumulate_ap": 89,
         "effect": [
@@ -7598,7 +7625,10 @@
         "rank": "7",
         "bonus_stats": { "sp": 2, "dex": 2 },
         "need_ap": 26,
-        "accumulate_rp": [{ "title": "궁수", "exp": 15400 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 15400 },
+          { "title": "목수", "exp": 11900 }
+        ],
         "accumulate_stats": { "sp": 7, "dex": 7 },
         "accumulate_ap": 113,
         "effect": [
@@ -7613,7 +7643,10 @@
         "rank": "6",
         "bonus_stats": { "sp": 2, "dex": 2 },
         "need_ap": 28,
-        "accumulate_rp": [{ "title": "궁수", "exp": 18900 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 18900 },
+          { "title": "목수", "exp": 14900 }
+        ],
         "accumulate_stats": { "sp": 9, "dex": 9 },
         "accumulate_ap": 139,
         "effect": [
@@ -7627,7 +7660,10 @@
         "rank": "5",
         "bonus_stats": { "sp": 2, "dex": 2 },
         "need_ap": 30,
-        "accumulate_rp": [{ "title": "궁수", "exp": 22700 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 22700 },
+          { "title": "목수", "exp": 18200 }
+        ],
         "accumulate_stats": { "sp": 11, "dex": 11 },
         "accumulate_ap": 167,
         "effect": [
@@ -7641,7 +7677,10 @@
         "rank": "4",
         "bonus_stats": { "sp": 2, "dex": 2 },
         "need_ap": 32,
-        "accumulate_rp": [{ "title": "궁수", "exp": 26700 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 26700 },
+          { "title": "목수", "exp": 21800 }
+        ],
         "accumulate_stats": { "sp": 13, "dex": 13 },
         "accumulate_ap": 197,
         "effect": [
@@ -7655,7 +7694,10 @@
         "rank": "3",
         "bonus_stats": { "sp": 2, "dex": 3 },
         "need_ap": 35,
-        "accumulate_rp": [{ "title": "궁수", "exp": 31200 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 31200 },
+          { "title": "목수", "exp": 25800 }
+        ],
         "accumulate_stats": { "sp": 15, "dex": 15 },
         "accumulate_ap": 229,
         "effect": [
@@ -7669,7 +7711,10 @@
         "rank": "2",
         "bonus_stats": { "sp": 3, "dex": 5 },
         "need_ap": 42,
-        "accumulate_rp": [{ "title": "궁수", "exp": 36200 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 36200 },
+          { "title": "목수", "exp": 30300 }
+        ],
         "accumulate_stats": { "sp": 17, "dex": 18 },
         "accumulate_ap": 264,
         "effect": [
@@ -7683,7 +7728,10 @@
         "rank": "1",
         "bonus_stats": null,
         "need_ap": 0,
-        "accumulate_rp": [{ "title": "궁수", "exp": 42200 }],
+        "accumulate_rp": [
+          { "title": "궁수", "exp": 42200 },
+          { "title": "목수", "exp": 35300 }
+        ],
         "accumulate_stats": { "sp": 20, "dex": 23 },
         "accumulate_ap": 306,
         "effect": ["트랩 지속시간 10초", "트랩에 걸린 대상에 크리티컬 대미지 30%", "재사용 대기시간 감소"]
@@ -16646,6 +16694,429 @@
         "accumulate_stats": { "int": 17 },
         "accumulate_ap": 270,
         "effect": ["차징 가능한 다음 마법 스킬 즉시 사용 가능", "지속시간 12초", "재사용 대기시간 1분"]
+      }
+    ]
+  },
+  {
+    "skill_id": 84,
+    "talent": ["carpentry"],
+    "talent_kor": ["목수"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "목공",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 146,
+    "total_stats": { "str": 42 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "목수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["장작 패기와 목재 생산 가능"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "목수", "exp": 65000 }],
+        "accumulate_stats": { "str": 2 },
+        "accumulate_ap": 5,
+        "effect": [
+          "장작 패기와 목재 생산 가능",
+          "장작 패기 성공률 1% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "목수", "exp": 130000 }],
+        "accumulate_stats": { "str": 4 },
+        "accumulate_ap": 10,
+        "effect": [
+          "장작 패기와 목재 생산 가능",
+          "장작 패기 성공률 2% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "목수", "exp": 195000 }],
+        "accumulate_stats": { "str": 6 },
+        "accumulate_ap": 15,
+        "effect": [
+          "장작 패기와 목재 생산 가능",
+          "장작 패기 성공률 3% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "목수", "exp": 286000 }],
+        "accumulate_stats": { "str": 8 },
+        "accumulate_ap": 22,
+        "effect": [
+          "장작 패기와 목재 생산 가능",
+          "장작 패기 성공률 4% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "목수", "exp": 377000 }],
+        "accumulate_stats": { "str": 10 },
+        "accumulate_ap": 29,
+        "effect": [
+          "장작 패기와 목재 생산 가능",
+          "장작 패기 성공률 5% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "목수", "exp": 468000 }],
+        "accumulate_stats": { "str": 12 },
+        "accumulate_ap": 36,
+        "effect": [
+          "장작 패기와 목재 생산 가능",
+          "장작 패기 성공률 6% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "목수", "exp": 598000 }],
+        "accumulate_stats": { "str": 15 },
+        "accumulate_ap": 46,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 7% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작과 활을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "목수", "exp": 728000 }],
+        "accumulate_stats": { "str": 17 },
+        "accumulate_ap": 56,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 8% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작과 활을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "목수", "exp": 858000 }],
+        "accumulate_stats": { "str": 19 },
+        "accumulate_ap": 66,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 9% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작과 활을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 5 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "목수", "exp": 988000 }],
+        "accumulate_stats": { "str": 21 },
+        "accumulate_ap": 76,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 10% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작과 활을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "목수", "exp": 1131000 }],
+        "accumulate_stats": { "str": 26 },
+        "accumulate_ap": 87,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 11% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작과 활을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "목수", "exp": 1287000 }],
+        "accumulate_stats": { "str": 29 },
+        "accumulate_ap": 99,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 12% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작과 활을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "목수", "exp": 1456000 }],
+        "accumulate_stats": { "str": 32 },
+        "accumulate_ap": 112,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 13% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작과 활을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 7 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "목수", "exp": 1638000 }],
+        "accumulate_stats": { "str": 35 },
+        "accumulate_ap": 126,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 14% 추가",
+          "벌목캠프에서 장작을 패서, 목공 작업대에서 더 좋은 장작과 활을 만들면 된다."
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "목수", "exp": 1898000 }],
+        "accumulate_stats": { "str": 42 },
+        "accumulate_ap": 146,
+        "effect": [
+          "장작 패기와 목재 및 활 생산 가능",
+          "장작 패기 성공률 15% 추가",
+          "당신은 이 스킬을 수련하여 오를 수 있는 최고의 경지에 이르렀다. 더 이상의 레벨은 없다."
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 85,
+    "talent": ["carpentry"],
+    "talent_kor": ["목수"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "핸디크래프트",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 41,
+    "total_stats": { "dex": 29 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "목수", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["핸디크래프트 연습"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "목수", "exp": 10000 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 1,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다. 화살촉 묶음과 나무 장작 5개로 수제 화살을 만들 수 있으며, 다른 아이템도 만들 수 있다."
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "목수", "exp": 20000 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 2,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다. 고급 화살촉 묶음과 나무 장작 5개로 고급 수제 화살을 만들 수 있으며, 다른 아이템도 만들 수 있다."
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "목수", "exp": 30000 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 3,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다. 최고급 화살촉 묶음과 나무 장작 5개로 최고급 수제 화살을 만들 수 있으며, 다른 아이템도 만들 수 있다."
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "목수", "exp": 40000 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 4,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다. 나무장작 5개와 대못 10개로 간이 테이블을 만들 수 있으며, 다른 아이템도 만들 수 있다."
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "목수", "exp": 50000 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 5,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "목수", "exp": 60000 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 6,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "목수", "exp": 110000 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 11,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "목수", "exp": 130000 }],
+        "accumulate_stats": { "dex": 10 },
+        "accumulate_ap": 13,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 2 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "목수", "exp": 150000 }],
+        "accumulate_stats": { "dex": 12 },
+        "accumulate_ap": 15,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "목수", "exp": 170000 }],
+        "accumulate_stats": { "dex": 14 },
+        "accumulate_ap": 17,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "목수", "exp": 220000 }],
+        "accumulate_stats": { "dex": 17 },
+        "accumulate_ap": 22,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "목수", "exp": 250000 }],
+        "accumulate_stats": { "dex": 20 },
+        "accumulate_ap": 25,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "목수", "exp": 280000 }],
+        "accumulate_stats": { "dex": 23 },
+        "accumulate_ap": 28,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "목수", "exp": 310000 }],
+        "accumulate_stats": { "dex": 26 },
+        "accumulate_ap": 31,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "원하는 물품을 만들려면 핸디크래프트 키트를 오른손에 장비하고 스킬을 사용, 알맞은 재료를 넣고 시작하면 된다."
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "목수", "exp": 410000 }],
+        "accumulate_stats": { "dex": 29 },
+        "accumulate_ap": 41,
+        "effect": [
+          "핸디크래프트 키트와 재료로 아이템을 제작",
+          "당신은 이 스킬을 수련하여 오를 수 있는 최고의 경지에 이르렀다. 더 이상의 레벨은 없다."
+        ]
       }
     ]
   }

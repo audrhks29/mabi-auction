@@ -22,11 +22,12 @@ const initialStats = {
 const initialAp = 0;
 
 export default function SelectRank({ skill }: { skill: SkillsTypes }) {
-  const { setApTable, setStatsTable } = useCurrentCategoryInfoStore();
+  const { setApTable, setStatsTable, setRpTable } = useCurrentCategoryInfoStore();
   const router = useRouter();
 
   const [rankByAp, setRankByAp] = useState(initialAp);
   const [rankByStats, setRankByStats] = useState(initialStats);
+  // const [rankByRp, setRankByRp] = useState<RpTypes[]>();
 
   // detail 버튼 클릭 함수
   const handleClickDetail = (talent: string, id: number) => {
@@ -49,11 +50,14 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
       luck: skill.skill_by_rank[selectRankIndex].accumulate_stats?.luck || 0,
     };
 
+    const newRp = skill.skill_by_rank[selectRankIndex].accumulate_rp;
+
     setRankByAp(newRankByAP);
     setRankByStats(newRankByStats);
 
     setApTable(skill, newRankByAP);
     setStatsTable(skill, newRankByStats);
+    setRpTable(skill.skill_id, newRp);
   };
 
   return (

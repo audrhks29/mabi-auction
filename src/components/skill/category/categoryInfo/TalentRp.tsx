@@ -1,9 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
-
-import gradeLists from "@/assets/grade/grade.json";
+import skillLists from "@/assets/skill/human/skill.json";
+import { useParams } from "next/navigation";
 
 export default function TalentRp() {
+  const params = useParams();
+
+  const skills = skillLists.filter(
+    skillList =>
+      (Array.isArray(params.category)
+        ? params.category.includes(skillList.category)
+        : skillList.category === params.category) ||
+      (Array.isArray(params.category)
+        ? params.category.some(cat => skillList.talent.includes(cat))
+        : skillList.talent.includes(params.category)),
+  );
+
+  // console.log(skills);
   return (
     <Card>
       <CardHeader>
@@ -12,6 +24,7 @@ export default function TalentRp() {
 
       <CardContent>
         <ul className="grid gap-2">
+          나의 재능
           {/* {myCurrentRp?.map((item, index) => {
             // 경험치에 맞는 재능등급 필터
             const rpGradeArray = gradeLists.filter(grade => item.exp >= grade.need_exp);

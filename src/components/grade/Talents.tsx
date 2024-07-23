@@ -11,7 +11,7 @@ export default function Talents() {
         <ul className="grid gap-1">
           {talentLists.map(talent => (
             <li key={talent.id} className="grid grid-cols-[50px_1fr] items-center gap-3 border h-16 text-[14px] p-3">
-              <Image src={talent.image.fledgling} width={33} height={33} alt={talent.talent}></Image>
+              <Image src={talent.image.bronze} width={33} height={33} alt={talent.talent}></Image>
               <div>
                 <p>{talent.talent}</p>
                 <div className="bg-muted w-full h-4"></div>

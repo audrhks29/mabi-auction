@@ -1,15 +1,55 @@
 [
-  { "id": 1, "image": "", "talent": "상인", "link": "merchant" },
-  { "id": 2, "image": "", "talent": "펫 핸들러", "link": "pettraining" },
-  { "id": 3, "image": "", "talent": "체인 슬래셔", "link": "chainslash" },
-  { "id": 4, "image": "", "talent": "슈터", "link": "gunslinger" },
+  {
+    "id": 1,
+    "image": {
+      "bronze": "/images/talent/merchant/bronze.png",
+      "silver": "/images/talent/merchant/silver.png",
+      "gold": "/images/talent/merchant/gold.png",
+      "grandmaster": "/images/talent/merchant/grandmaster.png"
+    },
+    "talent": "상인",
+    "link": "merchant"
+  },
+  {
+    "id": 2,
+    "image": {
+      "bronze": "/images/talent/pettraining/bronze.png",
+      "silver": "/images/talent/pettraining/silver.png",
+      "gold": "/images/talent/pettraining/gold.png",
+      "grandmaster": "/images/talent/pettraining/grandmaster.png"
+    },
+    "talent": "펫 핸들러",
+    "link": "pettraining"
+  },
+  {
+    "id": 3,
+    "image": {
+      "bronze": "/images/talent/chainslash/bronze.png",
+      "silver": "/images/talent/chainslash/silver.png",
+      "gold": "/images/talent/chainslash/gold.png",
+      "grandmaster": "/images/talent/chainslash/grandmaster.png"
+    },
+    "talent": "체인 슬래셔",
+    "link": "chainslash"
+  },
+  {
+    "id": 4,
+    "image": {
+      "bronze": "/images/talent/gunslinger/bronze.png",
+      "silver": "/images/talent/gunslinger/silver.png",
+      "gold": "/images/talent/gunslinger/gold.png",
+      "grandmaster": "/images/talent/gunslinger/grandmaster.png"
+    },
+    "talent": "슈터",
+    "link": "gunslinger"
+  },
   {
     "id": 5,
     "image": {
-      "fledgling": "/images/talent/closeCombat/closeCombat_1.png",
-      "Apprentice": "/images/talent/closeCombat/closeCombat_2.png",
-      "Expert": "/images/talent/closeCombat/closeCombat_3.png",
-      "Grandmaster": "/images/talent/closeCombat/closeCombat_4.png"
+      "bronze": "/images/talent/closeCombat/bronze.png",
+      "silver": "/images/talent/closeCombat/silver.png",
+      "gold": "/images/talent/closeCombat/gold.png",
+      "grandmaster": "/images/talent/closeCombat/grandmaster.png"
     },
     "talent": "전사",
     "link": "closecombat"
@@ -17,10 +57,10 @@
   {
     "id": 6,
     "image": {
-      "fledgling": "/images/talent/magic/magic_1.png",
-      "Apprentice": "/images/talent/magic/magic_2.png",
-      "Expert": "/images/talent/magic/magic_3.png",
-      "Grandmaster": "/images/talent/magic/magic_4.png"
+      "bronze": "/images/talent/magician/bronze.png",
+      "silver": "/images/talent/magician/silver.png",
+      "gold": "/images/talent/magician/gold.png",
+      "grandmaster": "/images/talent/magician/grandmaster.png"
     },
     "talent": "마법사",
     "link": "magician"
@@ -28,10 +68,10 @@
   {
     "id": 7,
     "image": {
-      "fledgling": "/images/talent/archery/archery_1.png",
-      "Apprentice": "/images/talent/archery/archery_2.png",
-      "Expert": "/images/talent/archery/archery_3.png",
-      "Grandmaster": "/images/talent/archery/archery_4.png"
+      "bronze": "/images/talent/archery/bronze.png",
+      "silver": "/images/talent/archery/silver.png",
+      "gold": "/images/talent/archery/gold.png",
+      "grandmaster": "/images/talent/archery/grandmaster.png"
     },
     "talent": "궁수",
     "link": "archery"
@@ -39,36 +79,177 @@
   {
     "id": 8,
     "image": {
-      "fledgling": "/images/talent/battleAlchemy/battleAlchemy_1.png",
-      "Apprentice": "/images/talent/battleAlchemy/battleAlchemy_2.png",
-      "Expert": "/images/talent/battleAlchemy/battleAlchemy_3.png",
-      "Grandmaster": "/images/talent/battleAlchemy/battleAlchemy_4.png"
+      "bronze": "/images/talent/battleAlchemy/bronze.png",
+      "silver": "/images/talent/battleAlchemy/silver.png",
+      "gold": "/images/talent/battleAlchemy/gold.png",
+      "grandmaster": "/images/talent/battleAlchemy/grandmaster.png"
     },
     "talent": "전투 연금술사",
     "link": "battlealchemy"
   },
-  { "id": 9, "image": "", "talent": "음유시인", "link": "music" },
-  { "id": 10, "image": "", "talent": "사제", "link": "holyarts" },
-  { "id": 11, "image": "", "talent": "재단사", "link": "tailoring" },
-  { "id": 12, "image": "", "talent": "랜서", "link": "lancecombat" },
-  { "id": 13, "image": "", "talent": "요리사", "link": "cooking" },
-  { "id": 14, "image": "", "talent": "모험가", "link": "adventure" },
-  { "id": 15, "image": "", "talent": "격투가", "link": "martialarts" },
+  {
+    "id": 9,
+    "image": {
+      "bronze": "/images/talent/music/bronze.png",
+      "silver": "/images/talent/music/silver.png",
+      "gold": "/images/talent/music/gold.png",
+      "grandmaster": "/images/talent/music/grandmaster.png"
+    },
+    "talent": "음유시인",
+    "link": "music"
+  },
+  {
+    "id": 10,
+    "image": {
+      "bronze": "/images/talent/holyarts/bronze.png",
+      "silver": "/images/talent/holyarts/silver.png",
+      "gold": "/images/talent/holyarts/gold.png",
+      "grandmaster": "/images/talent/holyarts/grandmaster.png"
+    },
+    "talent": "사제",
+    "link": "holyarts"
+  },
+  {
+    "id": 11,
+    "image": {
+      "bronze": "/images/talent/tailoring/bronze.png",
+      "silver": "/images/talent/tailoring/silver.png",
+      "gold": "/images/talent/tailoring/gold.png",
+      "grandmaster": "/images/talent/tailoring/grandmaster.png"
+    },
+    "talent": "재단사",
+    "link": "tailoring"
+  },
+  {
+    "id": 12,
+    "image": {
+      "bronze": "/images/talent/lancecombat/bronze.png",
+      "silver": "/images/talent/lancecombat/silver.png",
+      "gold": "/images/talent/lancecombat/gold.png",
+      "grandmaster": "/images/talent/lancecombat/grandmaster.png"
+    },
+    "talent": "랜서",
+    "link": "lancecombat"
+  },
+  {
+    "id": 13,
+    "image": {
+      "bronze": "/images/talent/cooking/bronze.png",
+      "silver": "/images/talent/cooking/silver.png",
+      "gold": "/images/talent/cooking/gold.png",
+      "grandmaster": "/images/talent/cooking/grandmaster.png"
+    },
+    "talent": "요리사",
+    "link": "cooking"
+  },
+  {
+    "id": 14,
+    "image": {
+      "bronze": "/images/talent/adventure/bronze.png",
+      "silver": "/images/talent/adventure/silver.png",
+      "gold": "/images/talent/adventure/gold.png",
+      "grandmaster": "/images/talent/adventure/grandmaster.png"
+    },
+    "talent": "모험가",
+    "link": "adventure"
+  },
+  {
+    "id": 15,
+    "image": {
+      "bronze": "/images/talent/martialarts/bronze.png",
+      "silver": "/images/talent/martialarts/silver.png",
+      "gold": "/images/talent/martialarts/gold.png",
+      "grandmaster": "/images/talent/martialarts/grandmaster.png"
+    },
+    "talent": "격투가",
+    "link": "martialarts"
+  },
   {
     "id": 16,
     "image": {
-      "fledgling": "/images/talent/transmutation/transmutation_1.png",
-      "Apprentice": "/images/talent/transmutation/transmutation_2.png",
-      "Expert": "/images/talent/transmutation/transmutation_3.png",
-      "Grandmaster": "/images/talent/transmutation/transmutation_4.png"
+      "bronze": "/images/talent/transmutation/bronze.png",
+      "silver": "/images/talent/transmutation/silver.png",
+      "gold": "/images/talent/transmutation/gold.png",
+      "grandmaster": "/images/talent/transmutation/grandmaster.png"
     },
-    "talent": "연성 연금술사"
+    "talent": "연성 연금술사",
+    "link": "transmutation"
   },
-  { "id": 17, "image": "", "talent": "목수", "link": "carpentry" },
-  { "id": 18, "image": "", "talent": "약사", "link": "medicine" },
-  { "id": 19, "image": "", "talent": "대장장이", "link": "smithing" },
-  { "id": 20, "image": "", "talent": "인형사", "link": "puppeteer" },
-  { "id": 21, "image": "", "talent": "닌자", "link": "ninja" },
-  { "id": 22, "image": "", "talent": "마기그래퍼", "link": "glyphwrighting" },
-  { "id": 23, "image": "", "talent": "점성술사", "link": "" }
+  {
+    "id": 17,
+    "image": {
+      "bronze": "/images/talent/carpentry/bronze.png",
+      "silver": "/images/talent/carpentry/silver.png",
+      "gold": "/images/talent/carpentry/gold.png",
+      "grandmaster": "/images/talent/carpentry/grandmaster.png"
+    },
+    "talent": "목수",
+    "link": "carpentry"
+  },
+  {
+    "id": 18,
+    "image": {
+      "bronze": "/images/talent/medicine/bronze.png",
+      "silver": "/images/talent/medicine/silver.png",
+      "gold": "/images/talent/medicine/gold.png",
+      "grandmaster": "/images/talent/medicine/grandmaster.png"
+    },
+    "talent": "약사",
+    "link": "medicine"
+  },
+  {
+    "id": 19,
+    "image": {
+      "bronze": "/images/talent/smithing/bronze.png",
+      "silver": "/images/talent/smithing/silver.png",
+      "gold": "/images/talent/smithing/gold.png",
+      "grandmaster": "/images/talent/smithing/grandmaster.png"
+    },
+    "talent": "대장장이",
+    "link": "smithing"
+  },
+  {
+    "id": 20,
+    "image": {
+      "bronze": "/images/talent/puppeteer/bronze.png",
+      "silver": "/images/talent/puppeteer/silver.png",
+      "gold": "/images/talent/puppeteer/gold.png",
+      "grandmaster": "/images/talent/puppeteer/grandmaster.png"
+    },
+    "talent": "인형사",
+    "link": "puppeteer"
+  },
+  {
+    "id": 21,
+    "image": {
+      "bronze": "/images/talent/ninja/bronze.png",
+      "silver": "/images/talent/ninja/silver.png",
+      "gold": "/images/talent/ninja/gold.png",
+      "grandmaster": "/images/talent/ninja/grandmaster.png"
+    },
+    "talent": "닌자",
+    "link": "ninja"
+  },
+  {
+    "id": 22,
+    "image": {
+      "bronze": "/images/talent/glyphwrighting/bronze.png",
+      "silver": "/images/talent/glyphwrighting/silver.png",
+      "gold": "/images/talent/glyphwrighting/gold.png",
+      "grandmaster": "/images/talent/glyphwrighting/grandmaster.png"
+    },
+    "talent": "마기그래퍼",
+    "link": "glyphwrighting"
+  },
+  {
+    "id": 23,
+    "image": {
+      "bronze": "/images/talent/astrologer/bronze.png",
+      "silver": "/images/talent/astrologer/silver.png",
+      "gold": "/images/talent/astrologer/gold.png",
+      "grandmaster": "/images/talent/astrologer/grandmaster.png"
+    },
+    "talent": "점성술사",
+    "link": "astrologer"
+  }
 ]

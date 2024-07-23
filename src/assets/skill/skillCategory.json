@@ -9,7 +9,7 @@
   { "id": 8, "category": "듀얼건", "link": "dualgun" },
   { "id": 9, "category": "인술", "link": "ninja" },
   { "id": 10, "category": "체인", "link": "chain" },
-  { "id": 11, "category": "점성술사", "link": "" },
+  { "id": 11, "category": "점성술", "link": "astrology" },
   { "id": 12, "category": "히든재능", "link": "hidden" },
   { "id": 13, "category": "다크나이트", "link": "" },
   { "id": 14, "category": "팔라딘", "link": "" },

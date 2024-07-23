@@ -35,11 +35,23 @@ export default function TalentRp() {
           {total_rp.map((rp, index) => {
             const myGradeArray = gradeLists.filter(grade => rp.exp >= grade.need_exp);
             const currentGrade_text = myGradeArray[myGradeArray.length - 1].grade;
-            const image = talentLists.find(t => t.talent === total_rp[index].title)?.image.fledgling;
+            const currentGrade_order = myGradeArray[myGradeArray.length - 1].order;
+            const currentTalent = talentLists.find(t => t.talent === total_rp[index].title);
+
+            let imageSrc = null;
+            if (currentGrade_order <= 5) {
+              imageSrc = currentTalent?.image.bronze;
+            } else if (currentGrade_order <= 10) {
+              imageSrc = currentTalent?.image.silver;
+            } else if (currentGrade_order <= 15) {
+              imageSrc = currentTalent?.image.gold;
+            } else if (currentGrade_order === 16) {
+              imageSrc = currentTalent?.image.grandmaster;
+            }
 
             return (
               <li key={rp.title} className="grid grid-cols-[50px_1fr] items-center gap-3 border h-16 text-[14px] p-3">
-                <Image src={image} width={33} height={33} alt={rp.title}></Image>
+                {imageSrc && <Image src={imageSrc} width={33} height={33} alt={rp.title}></Image>}
 
                 <div>
                   <p>

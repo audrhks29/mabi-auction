@@ -6,6 +6,7 @@ interface StoreType {
     ap: number;
   }[];
   total_stats_array: StatsIncludeIdTypes[];
+  total_rp_array: any[];
   total_ap: number;
   total_stats: StatsIncludeIdTypes;
   total_rp: RpTypes[];
@@ -85,7 +86,6 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
   setRpTable: (skill_id, newRp) => {
     const state = getState();
     const total_rp_array = state.total_rp_array;
-    const total_rp = state.total_rp;
 
     for (const index in newRp) {
       const findSkillRp = total_rp_array.findIndex(r => r.id === skill_id && r.title === newRp[index].title);
@@ -125,9 +125,11 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
     set({
       total_ap_array: [],
       total_stats_array: [],
+      total_rp_array: [],
 
       total_ap: 0,
       total_stats: {},
+      total_rp: [],
     });
   },
 }));

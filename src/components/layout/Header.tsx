@@ -4,7 +4,7 @@ import LoginButton from "./LoginButton";
 
 export default function Header() {
   return (
-    <header className="fixed bg-background w-full">
+    <header className="fixed bg-background w-full z-40">
       <nav className="flex h-14 justify-between items-center">
         <div className="flex h-14">
           <h1 className="w-16 cursor-pointer">

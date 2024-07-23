@@ -29,9 +29,10 @@ export default function StatsTable() {
     const ap = skills.reduce((sum, skill) => sum + skill.total_need_ap, 0);
 
     const stats = skills.reduce((acc, { total_stats = {} }) => {
-      for (const [key, value] of Object.entries(total_stats)) {
-        acc[key as keyof StatsTypes] = (acc[key as keyof StatsTypes] || 0) + value!;
-      }
+      if (total_stats !== null)
+        for (const [key, value] of Object.entries(total_stats)) {
+          acc[key as keyof StatsTypes] = (acc[key as keyof StatsTypes] || 0) + value;
+        }
       return acc;
     }, {} as StatsTypes);
 

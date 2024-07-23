@@ -34,8 +34,8 @@ export default function TalentRp() {
         <ul className="grid gap-2">
           {total_rp.map((rp, index) => {
             const myGradeArray = gradeLists.filter(grade => rp.exp >= grade.need_exp);
-            const currentGrade_text = myGradeArray[myGradeArray.length - 1].grade;
-            const currentGrade_order = myGradeArray[myGradeArray.length - 1].order;
+            const currentGrade_text = myGradeArray[myGradeArray.length - 1]?.grade || "견습";
+            const currentGrade_order = myGradeArray[myGradeArray.length - 1]?.order || 0;
             const currentTalent = talentLists.find(t => t.talent === total_rp[index].title);
 
             let imageSrc = null;

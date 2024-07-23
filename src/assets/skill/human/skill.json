@@ -6903,7 +6903,7 @@
       {
         "rank": "1",
         "bonus_stats": null,
-        "need_ap": -19,
+        "need_ap": 0,
         "accumulate_rp": [{ "title": "궁수", "exp": 182000 }],
         "accumulate_stats": { "dex": 20 },
         "accumulate_ap": 181,
@@ -9276,7 +9276,7 @@
       {
         "rank": "1",
         "bonus_stats": null,
-        "need_ap": -19,
+        "need_ap": 0,
         "accumulate_rp": [{ "title": "격투술", "exp": 177600 }],
         "accumulate_stats": { "str": 10, "will": 44 },
         "accumulate_ap": 148,
@@ -9439,7 +9439,7 @@
       {
         "rank": "1",
         "bonus_stats": null,
-        "need_ap": -47,
+        "need_ap": 0,
         "accumulate_rp": [{ "title": "격투술", "exp": 176000 }],
         "accumulate_stats": { "dex": 14 },
         "accumulate_ap": 176,
@@ -9598,7 +9598,7 @@
       {
         "rank": "1",
         "bonus_stats": null,
-        "need_ap": -105,
+        "need_ap": 0,
         "accumulate_rp": [{ "title": "격투술", "exp": 45300 }],
         "accumulate_stats": { "sp": 19, "str": 5, "will": 7 },
         "accumulate_ap": 234,
@@ -10075,7 +10075,7 @@
       {
         "rank": "1",
         "bonus_stats": null,
-        "need_ap": -188,
+        "need_ap": 0,
         "accumulate_rp": [{ "title": "인술", "exp": 295000 }],
         "accumulate_stats": { "hp": 18, "str": 18, "will": 7 },
         "accumulate_ap": 188,
@@ -15664,7 +15664,10 @@
         "rank": "연습",
         "bonus_stats": { "mp": 10 },
         "need_ap": 1,
-        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 0 },
+          { "title": "사제", "exp": 0 }
+        ],
         "accumulate_stats": null,
         "accumulate_ap": 0,
         "effect": []
@@ -15673,7 +15676,10 @@
         "rank": "F",
         "bonus_stats": { "mp": 10 },
         "need_ap": 1,
-        "accumulate_rp": [{ "title": "마법사", "exp": 500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 500 },
+          { "title": "사제", "exp": 500 }
+        ],
         "accumulate_stats": { "mp": 10 },
         "accumulate_ap": 1,
         "effect": []
@@ -15682,7 +15688,10 @@
         "rank": "E",
         "bonus_stats": { "mp": 10 },
         "need_ap": 2,
-        "accumulate_rp": [{ "title": "마법사", "exp": 1000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 1000 },
+          { "title": "사제", "exp": 1000 }
+        ],
         "accumulate_stats": { "mp": 20 },
         "accumulate_ap": 2,
         "effect": []
@@ -15691,7 +15700,10 @@
         "rank": "D",
         "bonus_stats": { "mp": 10 },
         "need_ap": 2,
-        "accumulate_rp": [{ "title": "마법사", "exp": 2000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 2000 },
+          { "title": "사제", "exp": 2000 }
+        ],
         "accumulate_stats": { "mp": 30 },
         "accumulate_ap": 4,
         "effect": []
@@ -15700,7 +15712,10 @@
         "rank": "C",
         "bonus_stats": { "mp": 10 },
         "need_ap": 3,
-        "accumulate_rp": [{ "title": "마법사", "exp": 3000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 3000 },
+          { "title": "사제", "exp": 3000 }
+        ],
         "accumulate_stats": { "mp": 40 },
         "accumulate_ap": 6,
         "effect": []
@@ -15709,7 +15724,10 @@
         "rank": "B",
         "bonus_stats": { "mp": 10 },
         "need_ap": 3,
-        "accumulate_rp": [{ "title": "마법사", "exp": 4500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 4500 },
+          { "title": "사제", "exp": 4500 }
+        ],
         "accumulate_stats": { "mp": 50 },
         "accumulate_ap": 9,
         "effect": []
@@ -15718,7 +15736,10 @@
         "rank": "A",
         "bonus_stats": { "mp": 10, "int": 1 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "마법사", "exp": 6000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 6000 },
+          { "title": "사제", "exp": 6000 }
+        ],
         "accumulate_stats": { "mp": 60 },
         "accumulate_ap": 12,
         "effect": []
@@ -15727,7 +15748,10 @@
         "rank": "9",
         "bonus_stats": { "mp": 10, "int": 1 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "마법사", "exp": 8500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 8500 },
+          { "title": "사제", "exp": 8500 }
+        ],
         "accumulate_stats": { "mp": 70, "int": 1 },
         "accumulate_ap": 17,
         "effect": []
@@ -15736,7 +15760,10 @@
         "rank": "8",
         "bonus_stats": { "mp": 10, "int": 1 },
         "need_ap": 7,
-        "accumulate_rp": [{ "title": "마법사", "exp": 11000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 11000 },
+          { "title": "사제", "exp": 11000 }
+        ],
         "accumulate_stats": { "mp": 80, "int": 2 },
         "accumulate_ap": 22,
         "effect": []
@@ -15745,7 +15772,10 @@
         "rank": "7",
         "bonus_stats": { "mp": 10, "int": 1 },
         "need_ap": 7,
-        "accumulate_rp": [{ "title": "마법사", "exp": 14500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 14500 },
+          { "title": "사제", "exp": 14500 }
+        ],
         "accumulate_stats": { "mp": 90, "int": 3 },
         "accumulate_ap": 29,
         "effect": []
@@ -15754,7 +15784,10 @@
         "rank": "6",
         "bonus_stats": { "mp": 10, "int": 2 },
         "need_ap": 10,
-        "accumulate_rp": [{ "title": "마법사", "exp": 18000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 18000 },
+          { "title": "사제", "exp": 18000 }
+        ],
         "accumulate_stats": { "mp": 100, "int": 4 },
         "accumulate_ap": 36,
         "effect": []
@@ -15763,7 +15796,10 @@
         "rank": "5",
         "bonus_stats": { "mp": 10, "int": 2 },
         "need_ap": 10,
-        "accumulate_rp": [{ "title": "마법사", "exp": 23000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 23000 },
+          { "title": "사제", "exp": 23000 }
+        ],
         "accumulate_stats": { "mp": 110, "int": 6 },
         "accumulate_ap": 46,
         "effect": []
@@ -15772,7 +15808,10 @@
         "rank": "4",
         "bonus_stats": { "mp": 10, "int": 2 },
         "need_ap": 10,
-        "accumulate_rp": [{ "title": "마법사", "exp": 28000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 28000 },
+          { "title": "사제", "exp": 28000 }
+        ],
         "accumulate_stats": { "mp": 120, "int": 8 },
         "accumulate_ap": 56,
         "effect": []
@@ -15781,7 +15820,10 @@
         "rank": "3",
         "bonus_stats": { "mp": 10, "int": 2 },
         "need_ap": 10,
-        "accumulate_rp": [{ "title": "마법사", "exp": 33000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 33000 },
+          { "title": "사제", "exp": 33000 }
+        ],
         "accumulate_stats": { "mp": 130, "int": 10 },
         "accumulate_ap": 66,
         "effect": []
@@ -15790,7 +15832,10 @@
         "rank": "2",
         "bonus_stats": { "mp": 10, "int": 5 },
         "need_ap": 15,
-        "accumulate_rp": [{ "title": "마법사", "exp": 38000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 38000 },
+          { "title": "사제", "exp": 38000 }
+        ],
         "accumulate_stats": { "mp": 140, "int": 12 },
         "accumulate_ap": 76,
         "effect": []
@@ -15799,7 +15844,10 @@
         "rank": "1",
         "bonus_stats": null,
         "need_ap": 0,
-        "accumulate_rp": [{ "title": "마법사", "exp": 45500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 45500 },
+          { "title": "사제", "exp": 45500 }
+        ],
         "accumulate_stats": { "mp": 150, "int": 17 },
         "accumulate_ap": 91,
         "effect": []
@@ -15823,7 +15871,10 @@
         "rank": "연습",
         "bonus_stats": { "hp": 1 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 0 },
+          { "title": "사제", "exp": 0 }
+        ],
         "accumulate_stats": null,
         "accumulate_ap": 0,
         "effect": []
@@ -15832,7 +15883,10 @@
         "rank": "F",
         "bonus_stats": { "int": 1 },
         "need_ap": 6,
-        "accumulate_rp": [{ "title": "마법사", "exp": 500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 500 },
+          { "title": "사제", "exp": 300 }
+        ],
         "accumulate_stats": { "hp": 1 },
         "accumulate_ap": 5,
         "effect": ["범위 반경 4m", "전격 대미지 1~90"]
@@ -15841,7 +15895,10 @@
         "rank": "E",
         "bonus_stats": { "hp": 1 },
         "need_ap": 8,
-        "accumulate_rp": [{ "title": "마법사", "exp": 1300 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 1300 },
+          { "title": "사제", "exp": 800 }
+        ],
         "accumulate_stats": { "hp": 1, "int": 1 },
         "accumulate_ap": 11,
         "effect": ["범위 반경 4m", "전격 대미지 1~100"]
@@ -15850,7 +15907,10 @@
         "rank": "D",
         "bonus_stats": { "hp": 1 },
         "need_ap": 10,
-        "accumulate_rp": [{ "title": "마법사", "exp": 2300 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 2300 },
+          { "title": "사제", "exp": 1600 }
+        ],
         "accumulate_stats": { "hp": 2, "int": 1 },
         "accumulate_ap": 19,
         "effect": ["범위 반경 4.5m", "전격 대미지 1~116"]
@@ -15859,7 +15919,10 @@
         "rank": "C",
         "bonus_stats": { "int": 1 },
         "need_ap": 12,
-        "accumulate_rp": [{ "title": "마법사", "exp": 3500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 3500 },
+          { "title": "사제", "exp": 2600 }
+        ],
         "accumulate_stats": { "hp": 3, "int": 1 },
         "accumulate_ap": 29,
         "effect": ["범위 반경 4.5m", "전격 대미지 1~126"]
@@ -15868,7 +15931,10 @@
         "rank": "B",
         "bonus_stats": { "hp": 1 },
         "need_ap": 16,
-        "accumulate_rp": [{ "title": "마법사", "exp": 5000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 5000 },
+          { "title": "사제", "exp": 3800 }
+        ],
         "accumulate_stats": { "hp": 3, "int": 2 },
         "accumulate_ap": 41,
         "effect": ["범위 반경 5m", "전격 대미지 1~140"]
@@ -15877,7 +15943,10 @@
         "rank": "A",
         "bonus_stats": { "hp": 2, "int": 1 },
         "need_ap": 20,
-        "accumulate_rp": [{ "title": "마법사", "exp": 6800 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 6800 },
+          { "title": "사제", "exp": 5300 }
+        ],
         "accumulate_stats": { "hp": 4, "int": 2 },
         "accumulate_ap": 57,
         "effect": ["범위 반경 5m", "전격 대미지 1~155"]
@@ -15886,7 +15955,10 @@
         "rank": "9",
         "bonus_stats": { "hp": 2, "int": 1 },
         "need_ap": 22,
-        "accumulate_rp": [{ "title": "마법사", "exp": 8800 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 8800 },
+          { "title": "사제", "exp": 7100 }
+        ],
         "accumulate_stats": { "hp": 6, "int": 3 },
         "accumulate_ap": 77,
         "effect": ["범위 반경 6m", "전격 대미지 5~180", "재사용 대기시간 감소"]
@@ -15895,7 +15967,10 @@
         "rank": "8",
         "bonus_stats": { "hp": 2, "int": 1 },
         "need_ap": 24,
-        "accumulate_rp": [{ "title": "마법사", "exp": 11300 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 11300 },
+          { "title": "사제", "exp": 9300 }
+        ],
         "accumulate_stats": { "hp": 8, "int": 4 },
         "accumulate_ap": 99,
         "effect": ["범위 반경 6m", "전격 대미지 6~198"]
@@ -15904,7 +15979,10 @@
         "rank": "7",
         "bonus_stats": { "hp": 2, "int": 2 },
         "need_ap": 28,
-        "accumulate_rp": [{ "title": "마법사", "exp": 14300 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 14300 },
+          { "title": "사제", "exp": 11900 }
+        ],
         "accumulate_stats": { "hp": 10, "int": 5 },
         "accumulate_ap": 123,
         "effect": ["범위 반경 6.2m", "전격 대미지 8~218"]
@@ -15913,7 +15991,10 @@
         "rank": "6",
         "bonus_stats": { "hp": 2, "int": 2 },
         "need_ap": 30,
-        "accumulate_rp": [{ "title": "마법사", "exp": 17800 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 17800 },
+          { "title": "사제", "exp": 14900 }
+        ],
         "accumulate_stats": { "hp": 12, "int": 7 },
         "accumulate_ap": 151,
         "effect": ["범위 반경 6.4m", "전격 대미지 11~242"]
@@ -15922,7 +16003,10 @@
         "rank": "5",
         "bonus_stats": { "hp": 3, "int": 2 },
         "need_ap": 32,
-        "accumulate_rp": [{ "title": "마법사", "exp": 21800 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 21800 },
+          { "title": "사제", "exp": 18400 }
+        ],
         "accumulate_stats": { "hp": 14, "int": 9 },
         "accumulate_ap": 181,
         "effect": ["범위 반경 6.7m", "전격 대미지 13~268"]
@@ -15931,7 +16015,10 @@
         "rank": "4",
         "bonus_stats": { "hp": 3, "int": 2 },
         "need_ap": 34,
-        "accumulate_rp": [{ "title": "마법사", "exp": 26300 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 26300 },
+          { "title": "사제", "exp": 22400 }
+        ],
         "accumulate_stats": { "hp": 17, "int": 11 },
         "accumulate_ap": 213,
         "effect": ["범위 반경 7m", "전격 대미지 15~290", "재사용 대기시간 감소"]
@@ -15940,7 +16027,10 @@
         "rank": "3",
         "bonus_stats": { "hp": 5, "int": 3 },
         "need_ap": 36,
-        "accumulate_rp": [{ "title": "마법사", "exp": 31300 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 31300 },
+          { "title": "사제", "exp": 26900 }
+        ],
         "accumulate_stats": { "hp": 20, "int": 13 },
         "accumulate_ap": 247,
         "effect": ["범위 반경 7.2m", "전격 대미지 18~320"]
@@ -15949,7 +16039,10 @@
         "rank": "2",
         "bonus_stats": { "hp": 10, "int": 5 },
         "need_ap": 42,
-        "accumulate_rp": [{ "title": "마법사", "exp": 37300 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 37300 },
+          { "title": "사제", "exp": 31900 }
+        ],
         "accumulate_stats": { "hp": 25, "int": 16 },
         "accumulate_ap": 283,
         "effect": ["범위 반경 7.5m", "전격 대미지 22~356"]
@@ -15958,7 +16051,10 @@
         "rank": "1",
         "bonus_stats": null,
         "need_ap": 0,
-        "accumulate_rp": [{ "title": "마법사", "exp": 45300 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 45300 },
+          { "title": "사제", "exp": 37900 }
+        ],
         "accumulate_stats": { "hp": 35, "int": 21 },
         "accumulate_ap": 325,
         "effect": ["범위 반경 8m", "전격 대미지 30~400", "재사용 대기시간 감소"]
@@ -15982,7 +16078,10 @@
         "rank": "연습",
         "bonus_stats": { "mp": 5 },
         "need_ap": 2,
-        "accumulate_rp": [{ "title": "마법사", "exp": 0 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 0 },
+          { "title": "사제", "exp": 0 }
+        ],
         "accumulate_stats": null,
         "accumulate_ap": 0,
         "effect": []
@@ -15991,7 +16090,10 @@
         "rank": "F",
         "bonus_stats": { "mp": 5 },
         "need_ap": 3,
-        "accumulate_rp": [{ "title": "마법사", "exp": 1000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 1000 },
+          { "title": "사제", "exp": 1000 }
+        ],
         "accumulate_stats": { "mp": 5 },
         "accumulate_ap": 2,
         "effect": ["마나 회복 속도 450%"]
@@ -16000,7 +16102,10 @@
         "rank": "E",
         "bonus_stats": { "mp": 5 },
         "need_ap": 4,
-        "accumulate_rp": [{ "title": "마법사", "exp": 2500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 2500 },
+          { "title": "사제", "exp": 2500 }
+        ],
         "accumulate_stats": { "mp": 10 },
         "accumulate_ap": 5,
         "effect": ["마나 회복 속도 520%"]
@@ -16009,7 +16114,10 @@
         "rank": "D",
         "bonus_stats": { "mp": 5 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "마법사", "exp": 4500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 4500 },
+          { "title": "사제", "exp": 4500 }
+        ],
         "accumulate_stats": { "mp": 15 },
         "accumulate_ap": 9,
         "effect": ["마나 회복 속도 590%"]
@@ -16018,7 +16126,10 @@
         "rank": "C",
         "bonus_stats": { "mp": 7 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "마법사", "exp": 7000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 7000 },
+          { "title": "사제", "exp": 7000 }
+        ],
         "accumulate_stats": { "mp": 20 },
         "accumulate_ap": 14,
         "effect": ["마나 회복 속도 660%"]
@@ -16027,7 +16138,10 @@
         "rank": "B",
         "bonus_stats": { "mp": 7 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "마법사", "exp": 9500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 9500 },
+          { "title": "사제", "exp": 9500 }
+        ],
         "accumulate_stats": { "mp": 27 },
         "accumulate_ap": 19,
         "effect": ["마나 회복 속도 730%"]
@@ -16036,7 +16150,10 @@
         "rank": "A",
         "bonus_stats": { "mp": 7 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "마법사", "exp": 12000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 12000 },
+          { "title": "사제", "exp": 12000 }
+        ],
         "accumulate_stats": { "mp": 34 },
         "accumulate_ap": 24,
         "effect": ["마나 회복 속도 800%"]
@@ -16045,7 +16162,10 @@
         "rank": "9",
         "bonus_stats": { "mp": 7 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "마법사", "exp": 14500 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 14500 },
+          { "title": "사제", "exp": 14500 }
+        ],
         "accumulate_stats": { "mp": 41 },
         "accumulate_ap": 29,
         "effect": ["마나 회복 속도 870%"]
@@ -16054,7 +16174,10 @@
         "rank": "8",
         "bonus_stats": null,
         "need_ap": 0,
-        "accumulate_rp": [{ "title": "마법사", "exp": 17000 }],
+        "accumulate_rp": [
+          { "title": "마법사", "exp": 17000 },
+          { "title": "사제", "exp": 17000 }
+        ],
         "accumulate_stats": { "mp": 48 },
         "accumulate_ap": 34,
         "effect": ["마나 회복 속도 940%"]
@@ -17116,6 +17239,4673 @@
         "effect": [
           "핸디크래프트 키트와 재료로 아이템을 제작",
           "당신은 이 스킬을 수련하여 오를 수 있는 최고의 경지에 이르렀다. 더 이상의 레벨은 없다."
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 86,
+    "talent": ["holyarts"],
+    "talent_kor": ["사제"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "힐링",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 239,
+    "total_stats": { "int": 52 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "사제", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 4000 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 2,
+        "effect": ["타겟의 생명력을 6~10 포인트 회복"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "사제", "exp": 10000 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 5,
+        "effect": ["타겟의 생명력을 7~11 포인트 회복"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "사제", "exp": 20000 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 10,
+        "effect": ["타겟의 생명력을 8~12 포인트 회복"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "사제", "exp": 34000 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 17,
+        "effect": ["타겟의 생명력을 9~13 포인트 회복"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "사제", "exp": 50000 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 25,
+        "effect": ["타겟의 생명력을 10~14 포인트 회복"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 68000 }],
+        "accumulate_stats": { "int": 13 },
+        "accumulate_ap": 34,
+        "effect": ["타겟의 생명력을 11~15 포인트 회복"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "사제", "exp": 88000 }],
+        "accumulate_stats": { "int": 16 },
+        "accumulate_ap": 44,
+        "effect": ["타겟의 생명력을 13~17 포인트 회복"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "사제", "exp": 112000 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 56,
+        "effect": ["타겟의 생명력을 15~19 포인트 회복"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 140000 }],
+        "accumulate_stats": { "int": 24 },
+        "accumulate_ap": 70,
+        "effect": ["타겟의 생명력을 17~21 포인트 회복"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "사제", "exp": 175000 }],
+        "accumulate_stats": { "int": 28 },
+        "accumulate_ap": 85,
+        "effect": ["타겟의 생명력을 19~23 포인트 회복"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "사제", "exp": 220000 }],
+        "accumulate_stats": { "int": 32 },
+        "accumulate_ap": 105,
+        "effect": ["타겟의 생명력을 25~29 포인트 회복"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "사제", "exp": 270000 }],
+        "accumulate_stats": { "int": 37 },
+        "accumulate_ap": 127,
+        "effect": ["타겟의 생명력을 27~31 포인트 회복"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "사제", "exp": 325000 }],
+        "accumulate_stats": { "int": 42 },
+        "accumulate_ap": 151,
+        "effect": ["타겟의 생명력을 29~33 포인트 회복"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "사제", "exp": 387000 }],
+        "accumulate_stats": { "int": 47 },
+        "accumulate_ap": 177,
+        "effect": ["타겟의 생명력을 31~35 포인트 회복"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "사제", "exp": 462000 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 207,
+        "effect": ["타겟의 생명력을 35~45 포인트 회복"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 462000 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 214,
+        "effect": ["타겟의 생명력을 39~47 포인트 회복", "부상 4 회복"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 462000 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 224,
+        "effect": ["타겟의 생명력을 43~49 포인트 회복", "부상 4 회복"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "사제", "exp": 462000 }],
+        "accumulate_stats": { "int": 52 },
+        "accumulate_ap": 239,
+        "effect": ["타겟의 생명력을 47~51 포인트 회복", "부상 5 회복"]
+      }
+    ]
+  },
+  {
+    "skill_id": 87,
+    "talent": ["holyarts"],
+    "talent_kor": ["사제"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "파티 힐링",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 154,
+    "total_stats": { "int": 42 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 6000 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 3,
+        "effect": ["파티의 생명력을 20~30 포인트 회복"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 12000 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 6,
+        "effect": ["파티의 생명력을 25~35 포인트 회복"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "사제", "exp": 18000 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 9,
+        "effect": ["파티의 생명력을 30~40 포인트 회복"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "사제", "exp": 28000 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 14,
+        "effect": ["파티의 생명력을 35~45 포인트 회복"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "사제", "exp": 43000 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 19,
+        "effect": ["파티의 생명력을 40~50 포인트 회복"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 63000 }],
+        "accumulate_stats": { "int": 9 },
+        "accumulate_ap": 24,
+        "effect": ["파티의 생명력을 50~60 포인트 회복"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 88000 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 34,
+        "effect": ["파티의 생명력을 60~70 포인트 회복"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 123000 }],
+        "accumulate_stats": { "int": 15 },
+        "accumulate_ap": 44,
+        "effect": ["파티의 생명력을 70~80 포인트 회복"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 163000 }],
+        "accumulate_stats": { "int": 18 },
+        "accumulate_ap": 54,
+        "effect": ["파티의 생명력을 80~90 포인트 회복"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 213000 }],
+        "accumulate_stats": { "int": 21 },
+        "accumulate_ap": 64,
+        "effect": ["파티의 생명력을 90~100 포인트 회복"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 273000 }],
+        "accumulate_stats": { "int": 25 },
+        "accumulate_ap": 79,
+        "effect": ["파티의 생명력을 100~110 포인트 회복"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 343000 }],
+        "accumulate_stats": { "int": 29 },
+        "accumulate_ap": 94,
+        "effect": ["파티의 생명력을 110~120 포인트 회복"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 4 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 423000 }],
+        "accumulate_stats": { "int": 33 },
+        "accumulate_ap": 109,
+        "effect": ["파티의 생명력을 120~130 포인트 회복"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 5 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "사제", "exp": 513000 }],
+        "accumulate_stats": { "int": 37 },
+        "accumulate_ap": 124,
+        "effect": ["파티의 생명력을 130~140 포인트 회복"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "사제", "exp": 613000 }],
+        "accumulate_stats": { "int": 42 },
+        "accumulate_ap": 154,
+        "effect": ["파티의 생명력을 145~160 포인트 회복"]
+      }
+    ]
+  },
+  {
+    "skill_id": 88,
+    "talent": ["holyarts"],
+    "talent_kor": ["사제"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "내츄럴 매직 실드",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 189,
+    "total_stats": { "mp": 15, "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "사제", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 1400 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 1,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "사제", "exp": 5600 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 4,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "사제", "exp": 12600 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 9,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "사제", "exp": 22400 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 16,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "사제", "exp": 35000 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 25,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "사제", "exp": 50400 }],
+        "accumulate_stats": { "mp": 6 },
+        "accumulate_ap": 36,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "사제", "exp": 67200 }],
+        "accumulate_stats": { "mp": 7, "will": 1 },
+        "accumulate_ap": 48,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "사제", "exp": 85400 }],
+        "accumulate_stats": { "mp": 8, "will": 2 },
+        "accumulate_ap": 61,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 105000 }],
+        "accumulate_stats": { "mp": 9, "will": 3 },
+        "accumulate_ap": 75,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "사제", "exp": 126000 }],
+        "accumulate_stats": { "mp": 10, "will": 4 },
+        "accumulate_ap": 90,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "사제", "exp": 149800 }],
+        "accumulate_stats": { "mp": 11, "will": 5 },
+        "accumulate_ap": 107,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "사제", "exp": 175000 }],
+        "accumulate_stats": { "mp": 12, "will": 6 },
+        "accumulate_ap": 125,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "사제", "exp": 201600 }],
+        "accumulate_stats": { "mp": 13, "will": 7 },
+        "accumulate_ap": 144,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "사제", "exp": 229600 }],
+        "accumulate_stats": { "mp": 14, "will": 8 },
+        "accumulate_ap": 164,
+        "effect": ["활 공격 대미지 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "사제", "exp": 264600 }],
+        "accumulate_stats": { "mp": 15, "will": 9 },
+        "accumulate_ap": 189,
+        "effect": ["활 공격 대미지 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 89,
+    "talent": ["holyarts"],
+    "talent_kor": ["사제"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "라이트닝 매직 실드",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 178,
+    "total_stats": { "mp": 15, "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "사제", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "사제", "exp": 2800 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 2,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "사제", "exp": 5600 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 4,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "사제", "exp": 8400 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 6,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "사제", "exp": 19600 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 14,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "사제", "exp": 30800 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 22,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "사제", "exp": 42000 }],
+        "accumulate_stats": { "mp": 6 },
+        "accumulate_ap": 30,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "사제", "exp": 61600 }],
+        "accumulate_stats": { "mp": 7, "will": 1 },
+        "accumulate_ap": 44,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "사제", "exp": 81200 }],
+        "accumulate_stats": { "mp": 8, "will": 2 },
+        "accumulate_ap": 58,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "사제", "exp": 100800 }],
+        "accumulate_stats": { "mp": 9, "will": 3 },
+        "accumulate_ap": 72,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "사제", "exp": 120400 }],
+        "accumulate_stats": { "mp": 10, "will": 4 },
+        "accumulate_ap": 86,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "사제", "exp": 145600 }],
+        "accumulate_stats": { "mp": 11, "will": 5 },
+        "accumulate_ap": 104,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "사제", "exp": 170800 }],
+        "accumulate_stats": { "mp": 12, "will": 6 },
+        "accumulate_ap": 122,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "사제", "exp": 196000 }],
+        "accumulate_stats": { "mp": 13, "will": 7 },
+        "accumulate_ap": 140,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "사제", "exp": 221200 }],
+        "accumulate_stats": { "mp": 14, "will": 8 },
+        "accumulate_ap": 158,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "사제", "exp": 249200 }],
+        "accumulate_stats": { "mp": 15, "will": 9 },
+        "accumulate_ap": 178,
+        "effect": ["라이트닝 마법 대미지 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 90,
+    "talent": ["holyarts"],
+    "talent_kor": ["사제"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "아이스 매직 실드",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 173,
+    "total_stats": { "mp": 15, "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "사제", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "사제", "exp": 1400 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 1,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 4200 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 3,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "사제", "exp": 8400 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 6,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "사제", "exp": 15400 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 11,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "사제", "exp": 25200 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 18,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 36400 }],
+        "accumulate_stats": { "mp": 6 },
+        "accumulate_ap": 26,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "사제", "exp": 50400 }],
+        "accumulate_stats": { "mp": 7, "will": 1 },
+        "accumulate_ap": 36,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "사제", "exp": 65800 }],
+        "accumulate_stats": { "mp": 8, "will": 2 },
+        "accumulate_ap": 47,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 84000 }],
+        "accumulate_stats": { "mp": 9, "will": 3 },
+        "accumulate_ap": 60,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "사제", "exp": 105000 }],
+        "accumulate_stats": { "mp": 10, "will": 4 },
+        "accumulate_ap": 75,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "사제", "exp": 128800 }],
+        "accumulate_stats": { "mp": 11, "will": 5 },
+        "accumulate_ap": 92,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "사제", "exp": 154000 }],
+        "accumulate_stats": { "mp": 12, "will": 6 },
+        "accumulate_ap": 110,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "사제", "exp": 180600 }],
+        "accumulate_stats": { "mp": 13, "will": 7 },
+        "accumulate_ap": 129,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "사제", "exp": 208600 }],
+        "accumulate_stats": { "mp": 14, "will": 8 },
+        "accumulate_ap": 149,
+        "effect": ["아이스 마법 대미지 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "사제", "exp": 242200 }],
+        "accumulate_stats": { "mp": 15, "will": 9 },
+        "accumulate_ap": 173,
+        "effect": ["아이스 마법 대미지 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 91,
+    "talent": ["holyarts"],
+    "talent_kor": ["사제"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "파이어 매직 실드",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 164,
+    "total_stats": { "mp": 15, "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 4200 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "사제", "exp": 8400 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 6,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "사제", "exp": 16800 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 12,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "사제", "exp": 25200 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 18,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "사제", "exp": 37800 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 27,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "사제", "exp": 50400 }],
+        "accumulate_stats": { "mp": 6 },
+        "accumulate_ap": 36,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "사제", "exp": 67200 }],
+        "accumulate_stats": { "mp": 7, "will": 1 },
+        "accumulate_ap": 48,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "사제", "exp": 84000 }],
+        "accumulate_stats": { "mp": 8, "will": 2 },
+        "accumulate_ap": 60,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "사제", "exp": 100800 }],
+        "accumulate_stats": { "mp": 9, "will": 3 },
+        "accumulate_ap": 72,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 117600 }],
+        "accumulate_stats": { "mp": 10, "will": 4 },
+        "accumulate_ap": 84,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 138600 }],
+        "accumulate_stats": { "mp": 11, "will": 5 },
+        "accumulate_ap": 99,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 159600 }],
+        "accumulate_stats": { "mp": 12, "will": 6 },
+        "accumulate_ap": 114,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 180600 }],
+        "accumulate_stats": { "mp": 13, "will": 7 },
+        "accumulate_ap": 129,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 1, "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "사제", "exp": 201600 }],
+        "accumulate_stats": { "mp": 14, "will": 8 },
+        "accumulate_ap": 144,
+        "effect": ["파이어 마법 대미지 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "사제", "exp": 229600 }],
+        "accumulate_stats": { "mp": 15, "will": 9 },
+        "accumulate_ap": 164,
+        "effect": ["파이어 마법 대미지 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 92,
+    "talent": ["holyarts"],
+    "talent_kor": ["사제"],
+    "category": "magic",
+    "category_kor": "마법",
+    "isPromotion": "",
+    "name_kor": "마나실드",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 140,
+    "total_stats": { "mp": 15, "will": 9 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "사제", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "사제", "exp": 5600 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 4,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "사제", "exp": 14000 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 10,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 25200 }],
+        "accumulate_stats": { "mp": 6 },
+        "accumulate_ap": 18,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "사제", "exp": 39200 }],
+        "accumulate_stats": { "mp": 8 },
+        "accumulate_ap": 28,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "사제", "exp": 56000 }],
+        "accumulate_stats": { "mp": 10 },
+        "accumulate_ap": 40,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "사제", "exp": 75600 }],
+        "accumulate_stats": { "mp": 12 },
+        "accumulate_ap": 54,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "사제", "exp": 99400 }],
+        "accumulate_stats": { "mp": 15, "int": 1 },
+        "accumulate_ap": 71,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "사제", "exp": 127400 }],
+        "accumulate_stats": { "mp": 18, "int": 2 },
+        "accumulate_ap": 91,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 3, "int": 1 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "사제", "exp": 159600 }],
+        "accumulate_stats": { "mp": 21, "int": 3 },
+        "accumulate_ap": 114,
+        "effect": ["마나실드"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "will": 5 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "사제", "exp": 196000 }],
+        "accumulate_stats": { "mp": 24, "int": 4 },
+        "accumulate_ap": 140,
+        "effect": ["마나실드"]
+      }
+    ]
+  },
+  {
+    "skill_id": 93,
+    "talent": ["holyarts"],
+    "talent_kor": ["사제"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "응급치료",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 166,
+    "total_stats": { "hp": 172, "dex": 20 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 3, "dex": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "사제", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 3, "dex": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "사제", "exp": 1000 }],
+        "accumulate_stats": { "hp": 3, "dex": 1 },
+        "accumulate_ap": 1,
+        "effect": ["타겟의 부상을 10~12% 치료"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 3, "dex": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "사제", "exp": 3000 }],
+        "accumulate_stats": { "hp": 6, "dex": 2 },
+        "accumulate_ap": 3,
+        "effect": ["타겟의 부상을 10~14% 치료"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 4, "dex": 2 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "사제", "exp": 8000 }],
+        "accumulate_stats": { "hp": 9, "dex": 3 },
+        "accumulate_ap": 6,
+        "effect": ["타겟의 부상을 10~16% 치료"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 4, "dex": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "사제", "exp": 14000 }],
+        "accumulate_stats": { "hp": 13, "dex": 5 },
+        "accumulate_ap": 10,
+        "effect": ["타겟의 부상을 10~18% 치료"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 4, "dex": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "사제", "exp": 22000 }],
+        "accumulate_stats": { "hp": 17, "dex": 7 },
+        "accumulate_ap": 15,
+        "effect": ["타겟의 부상을 10~20% 치료"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 4, "dex": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "사제", "exp": 32000 }],
+        "accumulate_stats": { "hp": 21, "dex": 9 },
+        "accumulate_ap": 22,
+        "effect": ["타겟의 부상을 15~20% 치료"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 5, "dex": 3 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "사제", "exp": 52000 }],
+        "accumulate_stats": { "hp": 25, "dex": 11 },
+        "accumulate_ap": 32,
+        "effect": ["타겟의 부상을 15~22% 치료"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 5, "dex": 3 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "사제", "exp": 82000 }],
+        "accumulate_stats": { "hp": 30, "dex": 14 },
+        "accumulate_ap": 43,
+        "effect": ["타겟의 부상을 15~24% 치료"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 5, "dex": 3 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "사제", "exp": 122000 }],
+        "accumulate_stats": { "hp": 35, "dex": 17 },
+        "accumulate_ap": 55,
+        "effect": ["타겟의 부상을 15~26% 치료"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 20 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "사제", "exp": 172000 }],
+        "accumulate_stats": { "hp": 40, "dex": 20 },
+        "accumulate_ap": 68,
+        "effect": ["타겟의 부상을 15~28% 치료"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 23 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "사제", "exp": 224000 }],
+        "accumulate_stats": { "hp": 60, "dex": 20 },
+        "accumulate_ap": 83,
+        "effect": ["타겟의 부상을 20~28% 치료"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 26 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "사제", "exp": 278000 }],
+        "accumulate_stats": { "hp": 83, "dex": 20 },
+        "accumulate_ap": 100,
+        "effect": ["타겟의 부상을 20~30% 치료"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 29 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "사제", "exp": 334000 }],
+        "accumulate_stats": { "hp": 109, "dex": 20 },
+        "accumulate_ap": 119,
+        "effect": ["타겟의 부상을 20~32% 치료"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 34 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "사제", "exp": 392000 }],
+        "accumulate_stats": { "hp": 138, "dex": 20 },
+        "accumulate_ap": 141,
+        "effect": ["타겟의 부상을 20~34% 치료"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "사제", "exp": 452000 }],
+        "accumulate_stats": { "hp": 172, "dex": 20 },
+        "accumulate_ap": 166,
+        "effect": ["타겟의 부상을 25~40% 치료"]
+      }
+    ]
+  },
+  {
+    "skill_id": 94,
+    "talent": ["gunslinger"],
+    "talent_kor": ["슈터"],
+    "category": "dualgun",
+    "category_kor": "듀얼건",
+    "isPromotion": "",
+    "name_kor": "슈팅 러쉬",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 257,
+    "total_stats": { "mp": 20, "sp": 5, "str": 1, "int": 4 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "슈터", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 150%", "재사용 대기시간 7.6초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 7500 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 1,
+        "effect": ["대미지 165%", "재사용 대기시간 7.6초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "슈터", "exp": 16500 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 4,
+        "effect": ["대미지 180%", "재사용 대기시간 7.6초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "슈터", "exp": 27000 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 8,
+        "effect": ["대미지 195%", "재사용 대기시간 7.6초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 39000 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 13,
+        "effect": ["대미지 210%", "재사용 대기시간 7.6초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "슈터", "exp": 52500 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 19,
+        "effect": ["대미지 225%", "재사용 대기시간 7.6초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "sp": 5, "int": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "슈터", "exp": 67500 }],
+        "accumulate_stats": { "mp": 6 },
+        "accumulate_ap": 26,
+        "effect": ["대미지 240%", "재사용 대기시간 7.6초", "공격 범위 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "슈터", "exp": 87000 }],
+        "accumulate_stats": { "mp": 7, "sp": 5, "int": 1 },
+        "accumulate_ap": 40,
+        "effect": ["대미지 255%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "슈터", "exp": 111000 }],
+        "accumulate_stats": { "mp": 8, "sp": 5, "int": 1 },
+        "accumulate_ap": 55,
+        "effect": ["대미지 270%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "슈터", "exp": 139500 }],
+        "accumulate_stats": { "mp": 9, "sp": 5, "int": 1 },
+        "accumulate_ap": 70,
+        "effect": ["대미지 285%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2, "int": 1 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "슈터", "exp": 172500 }],
+        "accumulate_stats": { "mp": 10, "sp": 5, "int": 1 },
+        "accumulate_ap": 87,
+        "effect": ["대미지 300%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "슈터", "exp": 210000 }],
+        "accumulate_stats": { "mp": 12, "sp": 5, "int": 2 },
+        "accumulate_ap": 113,
+        "effect": ["대미지 315%", "재사용 대기시간 5.6초", "공격 범위 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "슈터", "exp": 252000 }],
+        "accumulate_stats": { "mp": 14, "sp": 5, "int": 2 },
+        "accumulate_ap": 139,
+        "effect": ["대미지 330%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "슈터", "exp": 298500 }],
+        "accumulate_stats": { "mp": 16, "sp": 5, "int": 2 },
+        "accumulate_ap": 165,
+        "effect": ["대미지 345%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 2, "str": 1, "int": 2 },
+        "need_ap": 34,
+        "accumulate_rp": [{ "title": "슈터", "exp": 349500 }],
+        "accumulate_stats": { "mp": 18, "sp": 5, "int": 2 },
+        "accumulate_ap": 191,
+        "effect": ["대미지 360%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "슈터", "exp": 405000 }],
+        "accumulate_stats": { "mp": 20, "sp": 5, "str": 1, "int": 4 },
+        "accumulate_ap": 225,
+        "effect": ["대미지 400%", "재사용 대기시간 5.6초", "공격 범위 증가"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "슈터", "exp": 405000 }],
+        "accumulate_stats": { "mp": 20, "sp": 5, "str": 1, "int": 4 },
+        "accumulate_ap": 232,
+        "effect": ["대미지 440%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "슈터", "exp": 405000 }],
+        "accumulate_stats": { "mp": 20, "sp": 5, "str": 1, "int": 4 },
+        "accumulate_ap": 242,
+        "effect": ["대미지 480%", "재사용 대기시간 5.6초"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "슈터", "exp": 405000 }],
+        "accumulate_stats": { "mp": 20, "sp": 5, "str": 1, "int": 4 },
+        "accumulate_ap": 257,
+        "effect": ["대미지 520%", "재사용 대기시간 5.6초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 95,
+    "talent": ["gunslinger"],
+    "talent_kor": ["슈터"],
+    "category": "dualgun",
+    "category_kor": "듀얼건",
+    "isPromotion": "",
+    "name_kor": "불릿 스톰",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 275,
+    "total_stats": { "mp": 25, "sp": 5, "str": 3, "int": 5 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "슈터", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["1명당 44% 대미지 추가, 최대 220% 대미지", "8명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "슈터", "exp": 7500 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 1,
+        "effect": ["1명당 48% 대미지 추가, 최대 240% 대미지", "8명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "슈터", "exp": 16500 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 5,
+        "effect": ["1명당 52% 대미지 추가, 최대 260% 대미지", "8명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "슈터", "exp": 27000 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 13,
+        "effect": ["1명당 56% 대미지 추가, 최대 280% 대미지", "8명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "슈터", "exp": 39000 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 21,
+        "effect": ["1명당 60% 대미지 추가, 최대 300% 대미지", "8명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "슈터", "exp": 52500 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 30,
+        "effect": ["1명당 64% 대미지 추가, 최대 320% 대미지", "8명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 2, "sp": 5, "int": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "슈터", "exp": 67500 }],
+        "accumulate_stats": { "mp": 6 },
+        "accumulate_ap": 39,
+        "effect": ["1명당 68% 대미지 추가, 최대 340% 대미지", "10명 공격 가능", "재사용 대기시간 17초", "공격범위 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "슈터", "exp": 87000 }],
+        "accumulate_stats": { "mp": 8, "sp": 5, "int": 1 },
+        "accumulate_ap": 56,
+        "effect": ["1명당 72% 대미지 추가, 최대 360% 대미지", "10명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "슈터", "exp": 111000 }],
+        "accumulate_stats": { "mp": 10, "sp": 5, "int": 1 },
+        "accumulate_ap": 73,
+        "effect": ["1명당 76% 대미지 추가, 최대 380% 대미지", "10명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "슈터", "exp": 139500 }],
+        "accumulate_stats": { "mp": 12, "sp": 5, "int": 1 },
+        "accumulate_ap": 90,
+        "effect": ["1명당 80% 대미지 추가, 최대 400% 대미지", "10명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2, "str": 1, "int": 2 },
+        "need_ap": 31,
+        "accumulate_rp": [{ "title": "슈터", "exp": 172500 }],
+        "accumulate_stats": { "mp": 14, "sp": 5, "int": 1 },
+        "accumulate_ap": 107,
+        "effect": ["1명당 84% 대미지 추가, 최대 420% 대미지", "10명 공격 가능", "재사용 대기시간 17초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 31,
+        "accumulate_rp": [{ "title": "슈터", "exp": 210000 }],
+        "accumulate_stats": { "mp": 16, "sp": 5, "str": 1, "int": 3 },
+        "accumulate_ap": 138,
+        "effect": ["1명당 88% 대미지 추가, 최대 440% 대미지", "12명 공격 가능", "재사용 대기시간 15초", "공격범위 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 31,
+        "accumulate_rp": [{ "title": "슈터", "exp": 252000 }],
+        "accumulate_stats": { "mp": 18, "sp": 5, "str": 1, "int": 3 },
+        "accumulate_ap": 169,
+        "effect": ["1명당 92% 대미지 추가, 최대 460% 대미지", "12명 공격 가능", "재사용 대기시간 15초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 31,
+        "accumulate_rp": [{ "title": "슈터", "exp": 298500 }],
+        "accumulate_stats": { "mp": 20, "sp": 5, "str": 1, "int": 3 },
+        "accumulate_ap": 200,
+        "effect": ["1명당 96% 대미지 추가, 최대 480% 대미지", "12명 공격 가능", "재사용 대기시간 15초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 3, "str": 2, "int": 2 },
+        "need_ap": 44,
+        "accumulate_rp": [{ "title": "슈터", "exp": 349500 }],
+        "accumulate_stats": { "mp": 22, "sp": 5, "str": 1, "int": 3 },
+        "accumulate_ap": 231,
+        "effect": ["1명당 100% 대미지 추가, 최대 500% 대미지", "12명 공격 가능", "재사용 대기시간 15초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "슈터", "exp": 405000 }],
+        "accumulate_stats": { "mp": 25, "sp": 5, "str": 3, "int": 5 },
+        "accumulate_ap": 275,
+        "effect": ["1명당 120% 대미지 추가, 최대 600% 대미지", "12명 공격 가능", "재사용 대기시간 15초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 96,
+    "talent": ["gunslinger"],
+    "talent_kor": ["슈터"],
+    "category": "dualgun",
+    "category_kor": "듀얼건",
+    "isPromotion": "",
+    "name_kor": "프렌지",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 120,
+    "total_stats": { "hp": 7, "mp": 15, "sp": 10, "int": 6 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["프렌지 효과 발동", "지속 시간 15초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 3000 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["프렌지 효과 발동", "지속 시간 15.5초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "슈터", "exp": 8000 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 6,
+        "effect": ["프렌지 효과 발동", "지속 시간 16초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "슈터", "exp": 15000 }],
+        "accumulate_stats": { "mp": 3 },
+        "accumulate_ap": 10,
+        "effect": ["프렌지 효과 발동", "지속 시간 16.5초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "슈터", "exp": 24000 }],
+        "accumulate_stats": { "mp": 4 },
+        "accumulate_ap": 14,
+        "effect": ["프렌지 효과 발동", "지속 시간 17초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1, "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "슈터", "exp": 35000 }],
+        "accumulate_stats": { "mp": 5 },
+        "accumulate_ap": 18,
+        "effect": ["프렌지 효과 발동", "지속 시간 17.5초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 1, "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "슈터", "exp": 48000 }],
+        "accumulate_stats": { "mp": 6, "sp": 1 },
+        "accumulate_ap": 23,
+        "effect": ["프렌지 효과 발동", "지속 시간 18초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 63000 }],
+        "accumulate_stats": { "mp": 7, "sp": 2 },
+        "accumulate_ap": 28,
+        "effect": ["프렌지 효과 발동", "지속 시간 19초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 1, "sp": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "슈터", "exp": 80000 }],
+        "accumulate_stats": { "hp": 1, "mp": 8, "sp": 3 },
+        "accumulate_ap": 34,
+        "effect": ["프렌지 효과 발동", "지속 시간 20초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "슈터", "exp": 99000 }],
+        "accumulate_stats": { "hp": 1, "mp": 9, "sp": 4 },
+        "accumulate_ap": 41,
+        "effect": ["프렌지 효과 발동", "지속 시간 21초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 1, "sp": 1, "int": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "슈터", "exp": 120000 }],
+        "accumulate_stats": { "hp": 2, "mp": 10, "sp": 5 },
+        "accumulate_ap": 49,
+        "effect": ["프렌지 효과 발동", "지속 시간 22초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1, "int": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "슈터", "exp": 145000 }],
+        "accumulate_stats": { "hp": 2, "mp": 11, "sp": 6, "int": 1 },
+        "accumulate_ap": 58,
+        "effect": ["프렌지 효과 발동", "지속 시간 23초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 1, "sp": 1, "int": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "슈터", "exp": 175000 }],
+        "accumulate_stats": { "hp": 3, "mp": 12, "sp": 7, "int": 2 },
+        "accumulate_ap": 69,
+        "effect": ["프렌지 효과 발동", "지속 시간 24초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1, "int": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "슈터", "exp": 210000 }],
+        "accumulate_stats": { "hp": 3, "mp": 13, "sp": 8, "int": 3 },
+        "accumulate_ap": 82,
+        "effect": ["프렌지 효과 발동", "지속 시간 25초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 3, "mp": 1, "sp": 1, "int": 2 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "슈터", "exp": 250000 }],
+        "accumulate_stats": { "hp": 4, "mp": 14, "sp": 9, "int": 4 },
+        "accumulate_ap": 99,
+        "effect": ["프렌지 효과 발동", "지속 시간 26초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "슈터", "exp": 295000 }],
+        "accumulate_stats": { "hp": 7, "mp": 15, "sp": 10, "int": 6 },
+        "accumulate_ap": 120,
+        "effect": ["프렌지 효과 발동", "지속 시간 28초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 97,
+    "talent": ["gunslinger"],
+    "talent_kor": ["슈터"],
+    "category": "dualgun",
+    "category_kor": "듀얼건",
+    "isPromotion": "",
+    "name_kor": "파 어웨이",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 184,
+    "total_stats": { "hp": 15, "mp": 10, "sp": 27, "str": 4, "int": 2, "luck": 1 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "슈터", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 100%", "재사용 대기시간 11초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 1000 }],
+        "accumulate_stats": { "hp": 1, "sp": 1 },
+        "accumulate_ap": 2,
+        "effect": ["대미지 110%", "재사용 대기시간 11초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 7000 }],
+        "accumulate_stats": { "hp": 2, "sp": 2 },
+        "accumulate_ap": 5,
+        "effect": ["대미지 120%", "재사용 대기시간 11초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "슈터", "exp": 14500 }],
+        "accumulate_stats": { "hp": 3, "sp": 3 },
+        "accumulate_ap": 8,
+        "effect": ["대미지 130%", "재사용 대기시간 11초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "슈터", "exp": 23500 }],
+        "accumulate_stats": { "hp": 4, "sp": 4 },
+        "accumulate_ap": 13,
+        "effect": ["대미지 140%", "재사용 대기시간 11초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "슈터", "exp": 34000 }],
+        "accumulate_stats": { "hp": 5, "sp": 5 },
+        "accumulate_ap": 18,
+        "effect": ["대미지 150%", "재사용 대기시간 11초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 2, "str": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "슈터", "exp": 46000 }],
+        "accumulate_stats": { "hp": 6, "mp": 1, "sp": 6 },
+        "accumulate_ap": 25,
+        "effect": ["대미지 160%", "재사용 대기시간 11초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "슈터", "exp": 59500 }],
+        "accumulate_stats": { "hp": 7, "mp": 2, "sp": 8, "str": 1 },
+        "accumulate_ap": 35,
+        "effect": ["대미지 170%", "재사용 대기시간 10초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 2, "str": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "슈터", "exp": 74500 }],
+        "accumulate_stats": { "hp": 8, "mp": 3, "sp": 10, "str": 1 },
+        "accumulate_ap": 47,
+        "effect": ["대미지 180%", "재사용 대기시간 10초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 2, "int": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "슈터", "exp": 92500 }],
+        "accumulate_stats": { "hp": 9, "mp": 4, "sp": 12, "str": 2 },
+        "accumulate_ap": 60,
+        "effect": ["대미지 190%", "재사용 대기시간 10초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 2, "str": 1 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "슈터", "exp": 113500 }],
+        "accumulate_stats": { "hp": 10, "mp": 5, "sp": 14, "str": 2, "int": 1 },
+        "accumulate_ap": 75,
+        "effect": ["대미지 200%", "재사용 대기시간 9초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 2, "int": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "슈터", "exp": 142000 }],
+        "accumulate_stats": { "hp": 11, "mp": 6, "sp": 16, "str": 3, "int": 1 },
+        "accumulate_ap": 93,
+        "effect": ["대미지 210%", "재사용 대기시간 9초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 3 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "슈터", "exp": 172000 }],
+        "accumulate_stats": { "hp": 12, "mp": 7, "sp": 18, "str": 3, "int": 2 },
+        "accumulate_ap": 113,
+        "effect": ["대미지 220%", "재사용 대기시간 9초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 3 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "슈터", "exp": 203500 }],
+        "accumulate_stats": { "hp": 13, "mp": 8, "sp": 21, "str": 3, "int": 2 },
+        "accumulate_ap": 135,
+        "effect": ["대미지 230%", "재사용 대기시간 8초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 3, "str": 1, "luck": 1 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "슈터", "exp": 236500 }],
+        "accumulate_stats": { "hp": 14, "mp": 9, "sp": 24, "str": 3, "int": 2 },
+        "accumulate_ap": 158,
+        "effect": ["대미지 240%", "재사용 대기시간 8초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "슈터", "exp": 271000 }],
+        "accumulate_stats": { "hp": 15, "mp": 10, "sp": 27, "str": 4, "int": 2, "luck": 1 },
+        "accumulate_ap": 184,
+        "effect": [
+          "대미지 250%",
+          "재사용 대기시간 6초",
+          "당신은 이 스킬을 수련하여 오를 수 있는 최고의 경지에 이르렀다. 더 이상의 레벨은 없다."
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 98,
+    "talent": ["gunslinger"],
+    "talent_kor": ["슈터"],
+    "category": "dualgun",
+    "category_kor": "듀얼건",
+    "isPromotion": "",
+    "name_kor": "클로져",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 195,
+    "total_stats": { "hp": 34, "mp": 10, "sp": 20, "str": 6, "int": 2, "luck": 1 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 80%", "재사용 대기시간 16초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 1000 }],
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["대미지 85%", "재사용 대기시간 16초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 7000 }],
+        "accumulate_stats": { "hp": 1, "sp": 2 },
+        "accumulate_ap": 6,
+        "effect": ["대미지 90%", "재사용 대기시간 16초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 14500 }],
+        "accumulate_stats": { "hp": 2, "sp": 3 },
+        "accumulate_ap": 12,
+        "effect": ["대미지 95%", "재사용 대기시간 15.5초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "sp": 1, "str": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "슈터", "exp": 23500 }],
+        "accumulate_stats": { "hp": 3, "sp": 4 },
+        "accumulate_ap": 18,
+        "effect": ["대미지 100%", "재사용 대기시간 15.5초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "슈터", "exp": 34000 }],
+        "accumulate_stats": { "hp": 4, "sp": 5, "str": 1 },
+        "accumulate_ap": 26,
+        "effect": ["대미지 105%", "재사용 대기시간 15초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 1, "str": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "슈터", "exp": 46000 }],
+        "accumulate_stats": { "hp": 6, "mp": 1, "sp": 6, "str": 1 },
+        "accumulate_ap": 34,
+        "effect": ["대미지 110%", "재사용 대기시간 15초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "슈터", "exp": 59500 }],
+        "accumulate_stats": { "hp": 8, "mp": 2, "sp": 7, "str": 2 },
+        "accumulate_ap": 44,
+        "effect": ["대미지 120%", "재사용 대기시간 14.5초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 1, "str": 1 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "슈터", "exp": 74500 }],
+        "accumulate_stats": { "hp": 10, "mp": 3, "sp": 8, "str": 2 },
+        "accumulate_ap": 54,
+        "effect": ["대미지 130%", "재사용 대기시간 14초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "슈터", "exp": 92500 }],
+        "accumulate_stats": { "hp": 12, "mp": 4, "sp": 9, "str": 3 },
+        "accumulate_ap": 67,
+        "effect": ["대미지 140%", "재사용 대기시간 13.5초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 3, "mp": 1, "sp": 1, "str": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "슈터", "exp": 113500 }],
+        "accumulate_stats": { "hp": 14, "mp": 5, "sp": 10, "str": 3 },
+        "accumulate_ap": 81,
+        "effect": ["대미지 150%", "재사용 대기시간 13초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 3, "mp": 1, "sp": 2 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "슈터", "exp": 142000 }],
+        "accumulate_stats": { "hp": 17, "mp": 6, "sp": 11, "str": 4 },
+        "accumulate_ap": 100,
+        "effect": ["대미지 160%", "재사용 대기시간 12.5초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 4, "mp": 1, "sp": 2, "str": 1, "int": 1 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "슈터", "exp": 172000 }],
+        "accumulate_stats": { "hp": 20, "mp": 7, "sp": 13, "str": 4 },
+        "accumulate_ap": 122,
+        "effect": ["대미지 170%", "재사용 대기시간 12초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 4, "mp": 1, "sp": 2, "int": 1 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "슈터", "exp": 203500 }],
+        "accumulate_stats": { "hp": 24, "mp": 8, "sp": 15, "str": 5, "int": 1 },
+        "accumulate_ap": 145,
+        "effect": ["대미지 180%", "재사용 대기시간 11.5초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 6, "mp": 1, "sp": 3, "str": 1, "luck": 1 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "슈터", "exp": 236500 }],
+        "accumulate_stats": { "hp": 28, "mp": 9, "sp": 17, "str": 5, "int": 2 },
+        "accumulate_ap": 169,
+        "effect": ["대미지 190%", "재사용 대기시간 11초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "슈터", "exp": 271000 }],
+        "accumulate_stats": { "hp": 34, "mp": 10, "sp": 20, "str": 6, "int": 2, "luck": 1 },
+        "accumulate_ap": 195,
+        "effect": ["대미지 200%", "재사용 대기시간 10초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 99,
+    "talent": ["gunslinger"],
+    "talent_kor": ["슈터"],
+    "category": "dualgun",
+    "category_kor": "듀얼건",
+    "isPromotion": "",
+    "name_kor": "듀얼건 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 165,
+    "total_stats": { "hp": 51, "str": 1 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "슈터", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 4 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "슈터", "exp": 1000 }],
+        "accumulate_stats": { "hp": 2 },
+        "accumulate_ap": 2,
+        "effect": ["듀얼건 장착시", "최대 대미지 6 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 2200 }],
+        "accumulate_stats": { "hp": 6 },
+        "accumulate_ap": 4,
+        "effect": ["듀얼건 장착시", "최대 대미지 7 증가", "최소 대미지 1 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 4 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 4600 }],
+        "accumulate_stats": { "hp": 8 },
+        "accumulate_ap": 7,
+        "effect": ["듀얼건 장착시", "최대 대미지 8 증가", "최소 대미지 2 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 8200 }],
+        "accumulate_stats": { "hp": 12 },
+        "accumulate_ap": 10,
+        "effect": ["듀얼건 장착시", "최대 대미지 9 증가", "최소 대미지 3 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 4 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 13000 }],
+        "accumulate_stats": { "hp": 14 },
+        "accumulate_ap": 16,
+        "effect": ["듀얼건 장착시", "최대 대미지 10 증가", "최소 대미지 4 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "슈터", "exp": 19000 }],
+        "accumulate_stats": { "hp": 18 },
+        "accumulate_ap": 22,
+        "effect": ["듀얼건 장착시", "최대 대미지 11 증가", "최소 대미지 5 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "슈터", "exp": 28600 }],
+        "accumulate_stats": { "hp": 21 },
+        "accumulate_ap": 31,
+        "effect": ["듀얼건 장착시", "최대 대미지 15 증가", "최소 대미지 6 증가", "크리티컬 +3"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "슈터", "exp": 40600 }],
+        "accumulate_stats": { "hp": 24 },
+        "accumulate_ap": 40,
+        "effect": ["듀얼건 장착시", "최대 대미지 16 증가", "최소 대미지 7 증가", "크리티컬 +3"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "슈터", "exp": 53800 }],
+        "accumulate_stats": { "hp": 27 },
+        "accumulate_ap": 51,
+        "effect": ["듀얼건 장착시", "최대 대미지 17 증가", "최소 대미지 8 증가", "크리티컬 +3"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "슈터", "exp": 68200 }],
+        "accumulate_stats": { "hp": 30 },
+        "accumulate_ap": 62,
+        "effect": ["듀얼건 장착시", "최대 대미지 18 증가", "최소 대미지 9 증가", "크리티컬 +3"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "슈터", "exp": 86200 }],
+        "accumulate_stats": { "hp": 35 },
+        "accumulate_ap": 75,
+        "effect": ["듀얼건 장착시", "최대 대미지 22 증가", "최소 대미지 10 증가", "크리티컬 +5"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "슈터", "exp": 106600 }],
+        "accumulate_stats": { "hp": 38 },
+        "accumulate_ap": 90,
+        "effect": ["듀얼건 장착시", "최대 대미지 23 증가", "최소 대미지 11 증가", "크리티컬 +5"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "슈터", "exp": 129400 }],
+        "accumulate_stats": { "hp": 41 },
+        "accumulate_ap": 107,
+        "effect": ["듀얼건 장착시", "최대 대미지 24 증가", "최소 대미지 12 증가", "크리티컬 +5"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 7, "str": 1 },
+        "need_ap": 39,
+        "accumulate_rp": [{ "title": "슈터", "exp": 153400 }],
+        "accumulate_stats": { "hp": 44 },
+        "accumulate_ap": 126,
+        "effect": ["듀얼건 장착시", "최대 대미지 25 증가", "최소 대미지 13 증가", "크리티컬 +5"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "슈터", "exp": 189400 }],
+        "accumulate_stats": { "hp": 51, "str": 1 },
+        "accumulate_ap": 165,
+        "effect": ["듀얼건 장착시", "최대 대미지 30 증가", "최소 대미지 15 증가", "크리티컬 +6"]
+      }
+    ]
+  },
+  {
+    "skill_id": 100,
+    "talent": ["gunslinger"],
+    "talent_kor": ["슈터"],
+    "category": "dualgun",
+    "category_kor": "듀얼건",
+    "isPromotion": "",
+    "name_kor": "크로스 버스터",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 247,
+    "total_stats": { "hp": 24, "sp": 28, "str": 5, "int": 2, "luck": 4 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "슈터", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대미지 330%", "재사용 대기시간 10초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "슈터", "exp": 1000 }],
+        "accumulate_stats": { "hp": 1, "sp": 1 },
+        "accumulate_ap": 2,
+        "effect": ["대미지 360%", "재사용 대기시간 10초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "슈터", "exp": 2500 }],
+        "accumulate_stats": { "hp": 2, "sp": 2 },
+        "accumulate_ap": 5,
+        "effect": ["대미지 390%", "재사용 대기시간 10초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "슈터", "exp": 5500 }],
+        "accumulate_stats": { "hp": 3, "sp": 3 },
+        "accumulate_ap": 9,
+        "effect": ["대미지 420%", "재사용 대기시간 10초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 10000 }],
+        "accumulate_stats": { "hp": 4, "sp": 4 },
+        "accumulate_ap": 14,
+        "effect": ["대미지 450%", "재사용 대기시간 10초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 1, "sp": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "슈터", "exp": 14500 }],
+        "accumulate_stats": { "hp": 5, "sp": 5 },
+        "accumulate_ap": 20,
+        "effect": ["대미지 480%", "재사용 대기시간 9.5초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 1, "sp": 1, "str": 1 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "슈터", "exp": 19000 }],
+        "accumulate_stats": { "hp": 6, "sp": 6 },
+        "accumulate_ap": 28,
+        "effect": ["대미지 510%", "재사용 대기시간 9.5초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 2, "sp": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "슈터", "exp": 26500 }],
+        "accumulate_stats": { "hp": 7, "sp": 7, "str": 1 },
+        "accumulate_ap": 40,
+        "effect": ["대미지 540%", "재사용 대기시간 9.5초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 2, "sp": 2, "str": 1 },
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "슈터", "exp": 35500 }],
+        "accumulate_stats": { "hp": 9, "sp": 9, "str": 1 },
+        "accumulate_ap": 54,
+        "effect": ["대미지 570%", "재사용 대기시간 9초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2, "sp": 2 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "슈터", "exp": 46000 }],
+        "accumulate_stats": { "hp": 11, "sp": 11, "str": 2 },
+        "accumulate_ap": 70,
+        "effect": ["대미지 600%", "재사용 대기시간 9초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 2, "sp": 3, "int": 1 },
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "슈터", "exp": 58000 }],
+        "accumulate_stats": { "hp": 13, "sp": 13, "str": 2 },
+        "accumulate_ap": 89,
+        "effect": ["대미지 640%", "재사용 대기시간 8.5초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 2, "sp": 3, "luck": 1 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "슈터", "exp": 71500 }],
+        "accumulate_stats": { "hp": 15, "sp": 16, "str": 2, "int": 1 },
+        "accumulate_ap": 110,
+        "effect": ["대미지 670%", "재사용 대기시간 8초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 2, "sp": 3, "int": 1, "luck": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "슈터", "exp": 86500 }],
+        "accumulate_stats": { "hp": 17, "sp": 19, "str": 2, "int": 1, "luck": 1 },
+        "accumulate_ap": 133,
+        "effect": ["대미지 700%", "재사용 대기시간 7.5초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 2, "sp": 3, "str": 1, "luck": 1 },
+        "need_ap": 27,
+        "accumulate_rp": [{ "title": "슈터", "exp": 109000 }],
+        "accumulate_stats": { "hp": 19, "sp": 22, "str": 2, "int": 2, "luck": 2 },
+        "accumulate_ap": 158,
+        "effect": ["대미지 730%", "재사용 대기시간 7초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 3, "sp": 3, "str": 2, "luck": 1 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "슈터", "exp": 139000 }],
+        "accumulate_stats": { "hp": 21, "sp": 25, "str": 3, "int": 2, "luck": 3 },
+        "accumulate_ap": 185,
+        "effect": ["대미지 750%", "재사용 대기시간 6.5초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "슈터", "exp": 184000 }],
+        "accumulate_stats": { "hp": 24, "sp": 28, "str": 5, "int": 2, "luck": 4 },
+        "accumulate_ap": 215,
+        "effect": ["대미지 800%", "재사용 대기시간 6초"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "슈터", "exp": 184000 }],
+        "accumulate_stats": { "hp": 24, "sp": 28, "str": 5, "int": 2, "luck": 4 },
+        "accumulate_ap": 222,
+        "effect": ["대미지 850%", "재사용 대기시간 6초"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "슈터", "exp": 184000 }],
+        "accumulate_stats": { "hp": 24, "sp": 28, "str": 5, "int": 2, "luck": 4 },
+        "accumulate_ap": 232,
+        "effect": ["대미지 900%", "재사용 대기시간 6초"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "슈터", "exp": 184000 }],
+        "accumulate_stats": { "hp": 24, "sp": 28, "str": 5, "int": 2, "luck": 4 },
+        "accumulate_ap": 247,
+        "effect": ["대미지 950%", "재사용 대기시간 6초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 101,
+    "talent": ["gunslinger"],
+    "talent_kor": ["슈터"],
+    "category": "dualgun",
+    "category_kor": "듀얼건",
+    "isPromotion": "",
+    "name_kor": "리로드",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 95,
+    "total_stats": { "hp": 45, "str": 3 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "슈터", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "슈터", "exp": 3600 }],
+        "accumulate_stats": { "hp": 2 },
+        "accumulate_ap": 1,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "슈터", "exp": 7200 }],
+        "accumulate_stats": { "hp": 4 },
+        "accumulate_ap": 2,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "슈터", "exp": 10800 }],
+        "accumulate_stats": { "hp": 6 },
+        "accumulate_ap": 4,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "슈터", "exp": 18000 }],
+        "accumulate_stats": { "hp": 9 },
+        "accumulate_ap": 6,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "슈터", "exp": 25200 }],
+        "accumulate_stats": { "hp": 12 },
+        "accumulate_ap": 10,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "슈터", "exp": 32400 }],
+        "accumulate_stats": { "hp": 17 },
+        "accumulate_ap": 14,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "슈터", "exp": 43200 }],
+        "accumulate_stats": { "hp": 20 },
+        "accumulate_ap": 19,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 54000 }],
+        "accumulate_stats": { "hp": 23 },
+        "accumulate_ap": 24,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 3 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "슈터", "exp": 64800 }],
+        "accumulate_stats": { "hp": 26 },
+        "accumulate_ap": 30,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 6, "str": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "슈터", "exp": 75600 }],
+        "accumulate_stats": { "hp": 29 },
+        "accumulate_ap": 36,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 4 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "슈터", "exp": 93600 }],
+        "accumulate_stats": { "hp": 35, "str": 1 },
+        "accumulate_ap": 44,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 4 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "슈터", "exp": 111600 }],
+        "accumulate_stats": { "hp": 39, "str": 1 },
+        "accumulate_ap": 52,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "슈터", "exp": 129600 }],
+        "accumulate_stats": { "hp": 43, "str": 1 },
+        "accumulate_ap": 62,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 1, "str": 1 },
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "슈터", "exp": 147600 }],
+        "accumulate_stats": { "hp": 44, "str": 2 },
+        "accumulate_ap": 76,
+        "effect": ["리로드 준비 시간 감소"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "슈터", "exp": 177600 }],
+        "accumulate_stats": { "hp": 45, "str": 3 },
+        "accumulate_ap": 95,
+        "effect": ["리로드 준비 시간 감소"]
+      }
+    ]
+  },
+  {
+    "skill_id": 102,
+    "talent": ["medicine"],
+    "talent_kor": ["약사"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "약초학",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 106,
+    "total_stats": { "dex": 11, "int": 21 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "약사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["약초를 채집할 수 있다."]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "약사", "exp": 85000 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 5,
+        "effect": ["약초를 채집할 수 있다.", "베이스 허브를 한 눈에 알아볼 수 있다."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "약사", "exp": 170000 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 10,
+        "effect": ["약초를 채집할 수 있다.", "화이트 허브를 채집할 수 있다."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "약사", "exp": 255000 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 15,
+        "effect": ["약초를 채집할 수 있다.", "골드 허브를 채집할 수 있다."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "약사", "exp": 357000 }],
+        "accumulate_stats": { "int": 4 },
+        "accumulate_ap": 21,
+        "effect": ["약초를 채집할 수 있다.", "블러디 허브를 한 눈에 알아볼 수 있다."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "약사", "exp": 459000 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 27,
+        "effect": ["약초를 채집할 수 있다.", "선라이트 허브를 한 눈에 알아볼 수 있다."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "약사", "exp": 561000 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 33,
+        "effect": ["약초를 채집할 수 있다.", "만드레이크를 채집할 수 있다."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "약사", "exp": 680000 }],
+        "accumulate_stats": { "dex": 1, "int": 7 },
+        "accumulate_ap": 40,
+        "effect": ["약초를 채집할 수 있다.", "마나 허브를 한 눈에 알아볼 수 있다."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "약사", "exp": 799000 }],
+        "accumulate_stats": { "dex": 2, "int": 8 },
+        "accumulate_ap": 47,
+        "effect": ["약초를 채집할 수 있다."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "약사", "exp": 918000 }],
+        "accumulate_stats": { "dex": 3, "int": 9 },
+        "accumulate_ap": 54,
+        "effect": ["약초를 채집할 수 있다."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "약사", "exp": 1054000 }],
+        "accumulate_stats": { "dex": 3, "int": 11 },
+        "accumulate_ap": 62,
+        "effect": ["약초를 채집할 수 있다.", "화이트 허브를 한 눈에 알아볼 수 있다."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "약사", "exp": 1190000 }],
+        "accumulate_stats": { "dex": 3, "int": 13 },
+        "accumulate_ap": 70,
+        "effect": ["약초를 채집할 수 있다.", "해독초를 한 눈에 알아볼 수 있다."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "약사", "exp": 1326000 }],
+        "accumulate_stats": { "dex": 5, "int": 15 },
+        "accumulate_ap": 78,
+        "effect": ["약초를 채집할 수 있다."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "약사", "exp": 1479000 }],
+        "accumulate_stats": { "dex": 7, "int": 17 },
+        "accumulate_ap": 87,
+        "effect": [
+          "약초를 채집할 수 있다.",
+          "골드 허브를 한 눈에 알아볼 수 있다.",
+          "포이즌 허브를 한 눈에 알아볼 수 있다."
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "약사", "exp": 1632000 }],
+        "accumulate_stats": { "dex": 9, "int": 19 },
+        "accumulate_ap": 96,
+        "effect": ["약초를 채집할 수 있다."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "약사", "exp": 1802000 }],
+        "accumulate_stats": { "dex": 11, "int": 21 },
+        "accumulate_ap": 106,
+        "effect": ["약초를 채집할 수 있다.", "만드레이크를 한 눈에 알아볼 수 있다."]
+      }
+    ]
+  },
+  {
+    "skill_id": 103,
+    "talent": ["medicine"],
+    "talent_kor": ["약사"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "포션 조제",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 61,
+    "total_stats": { "dex": 8, "int": 35 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "약사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "약사", "exp": 17000 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 1,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "약사", "exp": 34000 }],
+        "accumulate_stats": { "int": 4 },
+        "accumulate_ap": 2,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "약사", "exp": 51000 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 3,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "약사", "exp": 68000 }],
+        "accumulate_stats": { "int": 8 },
+        "accumulate_ap": 4,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 2 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "약사", "exp": 85000 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 5,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "약사", "exp": 102000 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 6,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "약사", "exp": 136000 }],
+        "accumulate_stats": { "int": 15 },
+        "accumulate_ap": 8,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "약사", "exp": 170000 }],
+        "accumulate_stats": { "int": 18 },
+        "accumulate_ap": 10,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "약사", "exp": 204000 }],
+        "accumulate_stats": { "int": 21 },
+        "accumulate_ap": 12,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "약사", "exp": 238000 }],
+        "accumulate_stats": { "int": 24 },
+        "accumulate_ap": 14,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "약사", "exp": 289000 }],
+        "accumulate_stats": { "int": 27 },
+        "accumulate_ap": 17,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "약사", "exp": 340000 }],
+        "accumulate_stats": { "dex": 2, "int": 29 },
+        "accumulate_ap": 20,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "약사", "exp": 391000 }],
+        "accumulate_stats": { "dex": 4, "int": 31 },
+        "accumulate_ap": 23,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 2, "int": 2 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "약사", "exp": 442000 }],
+        "accumulate_stats": { "dex": 6, "int": 33 },
+        "accumulate_ap": 26,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "약사", "exp": 493000 }],
+        "accumulate_stats": { "dex": 8, "int": 35 },
+        "accumulate_ap": 29,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "약사", "exp": 493000 }],
+        "accumulate_stats": { "dex": 8, "int": 35 },
+        "accumulate_ap": 36,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": null,
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "약사", "exp": 493000 }],
+        "accumulate_stats": { "dex": 8, "int": 35 },
+        "accumulate_ap": 46,
+        "effect": ["포션을 조제할 수 있다."]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "약사", "exp": 493000 }],
+        "accumulate_stats": { "dex": 8, "int": 35 },
+        "accumulate_ap": 61,
+        "effect": ["포션을 조제할 수 있다."]
+      }
+    ]
+  },
+  {
+    "skill_id": 104,
+    "talent": ["medicine"],
+    "talent_kor": ["약사"],
+    "category": "hidden",
+    "category_kor": "히든",
+    "isPromotion": "",
+    "name_kor": "연구 : 포션 중독",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 198,
+    "total_stats": { "hp": 10, "mp": 10, "sp": 10, "luck": 3 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "약사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["스킬을 연습하는 단계"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "약사", "exp": 400 }],
+        "accumulate_stats": { "hp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["회복 포션의 포션 중독 수치 11% 감소", "8% 확률로 회복 포션의 150% 효과 적용"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "약사", "exp": 1000 }],
+        "accumulate_stats": { "hp": 1, "mp": 1 },
+        "accumulate_ap": 6,
+        "effect": ["회복 포션의 포션 중독 수치 12% 감소", "8% 확률로 회복 포션의 155% 효과 적용"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "약사", "exp": 1800 }],
+        "accumulate_stats": { "hp": 1, "mp": 1, "sp": 1 },
+        "accumulate_ap": 11,
+        "effect": ["회복 포션의 포션 중독 수치 13% 감소", "8% 확률로 회복 포션의 160% 효과 적용"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "약사", "exp": 2800 }],
+        "accumulate_stats": { "hp": 2, "mp": 1, "sp": 1 },
+        "accumulate_ap": 16,
+        "effect": ["회복 포션의 포션 중독 수치 14% 감소", "8% 확률로 회복 포션의 165% 효과 적용"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "약사", "exp": 4000 }],
+        "accumulate_stats": { "hp": 2, "mp": 2, "sp": 1 },
+        "accumulate_ap": 23,
+        "effect": ["회복 포션의 포션 중독 수치 15% 감소", "10% 확률로 회복 포션의 170% 효과 적용"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "약사", "exp": 5400 }],
+        "accumulate_stats": { "hp": 2, "mp": 2, "sp": 2 },
+        "accumulate_ap": 32,
+        "effect": ["회복 포션의 포션 중독 수치 16% 감소", "10% 확률로 회복 포션의 174% 효과 적용"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "약사", "exp": 7000 }],
+        "accumulate_stats": { "hp": 4, "mp": 2, "sp": 2 },
+        "accumulate_ap": 44,
+        "effect": ["회복 포션의 포션 중독 수치 18% 감소", "10% 확률로 회복 포션의 180% 효과 적용"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "약사", "exp": 8800 }],
+        "accumulate_stats": { "hp": 4, "mp": 4, "sp": 2 },
+        "accumulate_ap": 58,
+        "effect": ["회복 포션의 포션 중독 수치 20% 감소", "11% 확률로 회복 포션의 185% 효과 적용"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "약사", "exp": 10800 }],
+        "accumulate_stats": { "hp": 4, "mp": 4, "sp": 4 },
+        "accumulate_ap": 73,
+        "effect": ["회복 포션의 포션 중독 수치 22% 감소", "11% 확률로 회복 포션의 190% 효과 적용"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 2 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "약사", "exp": 13200 }],
+        "accumulate_stats": { "hp": 6, "mp": 4, "sp": 4 },
+        "accumulate_ap": 90,
+        "effect": ["회복 포션의 포션 중독 수치 24% 감소", "12% 확률로 회복 포션의 195% 효과 적용"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "약사", "exp": 16000 }],
+        "accumulate_stats": { "hp": 6, "mp": 6, "sp": 4 },
+        "accumulate_ap": 108,
+        "effect": ["회복 포션의 포션 중독 수치 27% 감소", "12% 확률로 회복 포션의 200% 효과 적용"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1, "luck": 1 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "약사", "exp": 19200 }],
+        "accumulate_stats": { "hp": 6, "mp": 6, "sp": 6 },
+        "accumulate_ap": 128,
+        "effect": ["회복 포션의 포션 중독 수치 30% 감소", "12% 확률로 회복 포션의 210% 효과 적용"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 1, "mp": 1, "sp": 1, "luck": 1 },
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "약사", "exp": 22700 }],
+        "accumulate_stats": { "hp": 7, "mp": 7, "sp": 7, "luck": 1 },
+        "accumulate_ap": 150,
+        "effect": ["회복 포션의 포션 중독 수치 33% 감소", "13% 확률로 회복 포션의 220% 효과 적용"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 2, "mp": 2, "sp": 2, "luck": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "약사", "exp": 26500 }],
+        "accumulate_stats": { "hp": 8, "mp": 8, "sp": 8, "luck": 2 },
+        "accumulate_ap": 173,
+        "effect": ["회복 포션의 포션 중독 수치 36% 감소", "13% 확률로 회복 포션의 230% 효과 적용"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "약사", "exp": 30500 }],
+        "accumulate_stats": { "hp": 10, "mp": 10, "sp": 10, "luck": 3 },
+        "accumulate_ap": 198,
+        "effect": ["회복 포션의 포션 중독 수치 40% 감소", "15% 확률로 회복 포션의 250% 효과 적용"]
+      }
+    ]
+  },
+  {
+    "skill_id": 105,
+    "talent": ["adventure"],
+    "talent_kor": ["모험가"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "낚시",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 130,
+    "total_stats": { "sp": 15, "str": 5, "dex": 5, "will": 15 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "will": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 9000 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 1,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 18000 }],
+        "accumulate_stats": { "will": 2 },
+        "accumulate_ap": 2,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "str": 1, "will": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 36000 }],
+        "accumulate_stats": { "dex": 1, "will": 3 },
+        "accumulate_ap": 4,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 3, "will": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 45000 }],
+        "accumulate_stats": { "str": 1, "dex": 1, "will": 4 },
+        "accumulate_ap": 5,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 63000 }],
+        "accumulate_stats": { "sp": 3, "str": 1, "dex": 1, "will": 5 },
+        "accumulate_ap": 7,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 1, "will": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 81000 }],
+        "accumulate_stats": { "sp": 3, "str": 1, "dex": 2, "will": 6 },
+        "accumulate_ap": 9,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 3, "will": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 108000 }],
+        "accumulate_stats": { "sp": 3, "str": 2, "dex": 2, "will": 7 },
+        "accumulate_ap": 12,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 153000 }],
+        "accumulate_stats": { "sp": 6, "str": 2, "dex": 2, "will": 8 },
+        "accumulate_ap": 17,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 1, "will": 1 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "모험가", "exp": 198000 }],
+        "accumulate_stats": { "sp": 6, "str": 2, "dex": 3, "will": 9 },
+        "accumulate_ap": 22,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 3, "will": 1 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 270000 }],
+        "accumulate_stats": { "sp": 6, "str": 3, "dex": 3, "will": 10 },
+        "accumulate_ap": 30,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 360000 }],
+        "accumulate_stats": { "sp": 9, "str": 3, "dex": 3, "will": 11 },
+        "accumulate_ap": 40,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 1, "will": 1 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "모험가", "exp": 495000 }],
+        "accumulate_stats": { "sp": 9, "str": 3, "dex": 4, "will": 12 },
+        "accumulate_ap": 55,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 3, "will": 1 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "모험가", "exp": 675000 }],
+        "accumulate_stats": { "sp": 9, "str": 4, "dex": 4, "will": 13 },
+        "accumulate_ap": 75,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 3, "str": 1, "dex": 1, "will": 1 },
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "모험가", "exp": 900000 }],
+        "accumulate_stats": { "sp": 12, "str": 4, "dex": 4, "will": 14 },
+        "accumulate_ap": 100,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 1170000 }],
+        "accumulate_stats": { "sp": 15, "str": 5, "dex": 5, "will": 15 },
+        "accumulate_ap": 130,
+        "effect": ["더 큰 물고기를 낚을 수 있을 것 같다."]
+      }
+    ]
+  },
+  {
+    "skill_id": 106,
+    "talent": ["adventure"],
+    "talent_kor": ["모험가"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "휴식",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 208,
+    "total_stats": { "hp": 50, "mp": 46, "str": 1 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 10, "str": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 8000 }],
+        "accumulate_stats": { "hp": 5 },
+        "accumulate_ap": 0,
+        "effect": ["생명 회복 속도 120%", "스태미나 회복 속도 150%", "부상 회복 10초당 1point"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 38000 }],
+        "accumulate_stats": { "hp": 15, "str": 1 },
+        "accumulate_ap": 5,
+        "effect": ["생명 회복 속도 200%", "스태미나 회복 속도 200%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 98000 }],
+        "accumulate_stats": { "hp": 20, "str": 1 },
+        "accumulate_ap": 15,
+        "effect": ["생명 회복 속도 250%", "스태미나 회복 속도 250%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 168000 }],
+        "accumulate_stats": { "hp": 25, "str": 1 },
+        "accumulate_ap": 30,
+        "effect": ["생명 회복 속도 275%", "스태미나 회복 속도 275%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 253000 }],
+        "accumulate_stats": { "hp": 30, "str": 1 },
+        "accumulate_ap": 45,
+        "effect": ["생명 회복 속도 300%", "스태미나 회복 속도 300%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 333000 }],
+        "accumulate_stats": { "hp": 35, "str": 1 },
+        "accumulate_ap": 60,
+        "effect": ["생명 회복 속도 325%", "스태미나 회복 속도 325%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 423000 }],
+        "accumulate_stats": { "hp": 40, "str": 1 },
+        "accumulate_ap": 75,
+        "effect": ["생명 회복 속도 350%", "스태미나 회복 속도 350%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 5 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 523000 }],
+        "accumulate_stats": { "hp": 45, "str": 1 },
+        "accumulate_ap": 90,
+        "effect": ["생명 회복 속도 375%", "스태미나 회복 속도 375%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 6 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 633000 }],
+        "accumulate_stats": { "hp": 50, "str": 1 },
+        "accumulate_ap": 105,
+        "effect": ["생명 회복 속도 400%", "스태미나 회복 속도 400%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 7 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "모험가", "exp": 745500 }],
+        "accumulate_stats": { "hp": 50, "mp": 6, "str": 1 },
+        "accumulate_ap": 120,
+        "effect": ["생명 회복 속도 425%", "스테미나 회복 속도 425%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 7 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "모험가", "exp": 860500 }],
+        "accumulate_stats": { "hp": 50, "mp": 13, "str": 1 },
+        "accumulate_ap": 137,
+        "effect": ["생명 회복 속도 450%", "마나 회복 속도 150%", "스테미나 회복 속도 450%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 8 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "모험가", "exp": 978000 }],
+        "accumulate_stats": { "hp": 50, "mp": 20, "str": 1 },
+        "accumulate_ap": 154,
+        "effect": ["생명 회복 속도 475%", "마나 회복 속도 175%", "스테미나 회복 속도 475%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 8 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "모험가", "exp": 1098000 }],
+        "accumulate_stats": { "hp": 50, "mp": 28, "str": 1 },
+        "accumulate_ap": 171,
+        "effect": ["생명 회복 속도 500%", "마나 회복 속도 200%", "스테미나 회복 속도 500%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 10 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "모험가", "exp": 1220500 }],
+        "accumulate_stats": { "hp": 50, "mp": 36, "str": 1 },
+        "accumulate_ap": 188,
+        "effect": ["생명 회복 속도 550%", "마나 회복 속도 250%", "스테미나 회복 속도 550%", "부상 회복 5초당 1point"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 1345500 }],
+        "accumulate_stats": { "hp": 50, "mp": 46, "str": 1 },
+        "accumulate_ap": 208,
+        "effect": ["생명 회복 속도 600%", "마나 회복 속도 300%", "스테미나 회복 속도 600%", "부상 회복 5초당 1point"]
+      }
+    ]
+  },
+  {
+    "skill_id": 107,
+    "talent": ["adventure"],
+    "talent_kor": ["모험가"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "변신 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 385,
+    "total_stats": { "hp": 57, "sp": 57, "str": 24 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 3, "sp": 3, "str": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 3, "sp": 3, "str": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 10000 }],
+        "accumulate_stats": { "hp": 3, "sp": 3, "str": 1 },
+        "accumulate_ap": 2,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 5, 방어 1, 마법방어 1 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 3, "sp": 3, "str": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "모험가", "exp": 20000 }],
+        "accumulate_stats": { "hp": 6, "sp": 6, "str": 2 },
+        "accumulate_ap": 7,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 7, 방어 2, 마법방어 2 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 3, "sp": 3, "str": 1 },
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "모험가", "exp": 30000 }],
+        "accumulate_stats": { "hp": 9, "sp": 9, "str": 3 },
+        "accumulate_ap": 16,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 9, 방어 3, 마법방어 2 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 3, "sp": 3, "str": 1 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "모험가", "exp": 45000 }],
+        "accumulate_stats": { "hp": 12, "sp": 12, "str": 4 },
+        "accumulate_ap": 27,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 11, 방어 4, 마법방어 3 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 3, "sp": 3, "str": 1 },
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "모험가", "exp": 60000 }],
+        "accumulate_stats": { "hp": 15, "sp": 15, "str": 5 },
+        "accumulate_ap": 41,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 13, 방어 5, 마법방어 3 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 4, "sp": 4, "str": 2 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "모험가", "exp": 80000 }],
+        "accumulate_stats": { "hp": 18, "sp": 18, "str": 6 },
+        "accumulate_ap": 58,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 15, 방어 6, 마법방어 3 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 4, "sp": 4, "str": 2 },
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "모험가", "exp": 110000 }],
+        "accumulate_stats": { "hp": 22, "sp": 22, "str": 8 },
+        "accumulate_ap": 78,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 20, 방어 7, 마법방어 4 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 4, "sp": 4, "str": 2 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "모험가", "exp": 135000 }],
+        "accumulate_stats": { "hp": 26, "sp": 26, "str": 10 },
+        "accumulate_ap": 102,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 22, 방어 8, 마법방어 4 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 4, "sp": 4, "str": 2 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "모험가", "exp": 160000 }],
+        "accumulate_stats": { "hp": 30, "sp": 30, "str": 12 },
+        "accumulate_ap": 130,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 24, 방어 9, 마법방어 4 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 4, "sp": 4, "str": 2 },
+        "need_ap": 36,
+        "accumulate_rp": [{ "title": "모험가", "exp": 190000 }],
+        "accumulate_stats": { "hp": 34, "sp": 34, "str": 14 },
+        "accumulate_ap": 162,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 26, 방어 10, 마법방어 5 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 4, "sp": 4, "str": 2 },
+        "need_ap": 40,
+        "accumulate_rp": [{ "title": "모험가", "exp": 225000 }],
+        "accumulate_stats": { "hp": 38, "sp": 38, "str": 16 },
+        "accumulate_ap": 198,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 28, 방어 11, 마법방어 5 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 5, "sp": 5, "str": 2 },
+        "need_ap": 44,
+        "accumulate_rp": [{ "title": "모험가", "exp": 265000 }],
+        "accumulate_stats": { "hp": 42, "sp": 42, "str": 18 },
+        "accumulate_ap": 238,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 30, 방어 12, 마법방어 5 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 5, "sp": 5, "str": 2 },
+        "need_ap": 48,
+        "accumulate_rp": [{ "title": "모험가", "exp": 310000 }],
+        "accumulate_stats": { "hp": 47, "sp": 47, "str": 20 },
+        "accumulate_ap": 282,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 32, 방어 13, 마법방어 6 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 5, "sp": 5, "str": 2 },
+        "need_ap": 55,
+        "accumulate_rp": [{ "title": "모험가", "exp": 360000 }],
+        "accumulate_stats": { "hp": 52, "sp": 52, "str": 22 },
+        "accumulate_ap": 330,
+        "effect": ["스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능", "변신 시 생명력 34, 방어 14, 마법방어 7 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 415000 }],
+        "accumulate_stats": { "hp": 57, "sp": 57, "str": 24 },
+        "accumulate_ap": 385,
+        "effect": [
+          "스킬 랭크 이하 등급 몬스터의 수집과 변신이 가능",
+          "변신 이펙트와 사운드가 진화",
+          "변신 시 생명력 40, 방어 15, 마법방어 8 증가"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 108,
+    "talent": ["adventure"],
+    "talent_kor": ["모험가"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "캠프 파이어",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 68,
+    "total_stats": { "sp": 65 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 10000 }],
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 0,
+        "effect": ["캠프파이어 주변에서 휴식할때 150%의 휴식 효과"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 30000 }],
+        "accumulate_stats": { "sp": 2 },
+        "accumulate_ap": 1,
+        "effect": ["캠프파이어 주변에서 휴식할때 160%의 휴식 효과"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 60000 }],
+        "accumulate_stats": { "sp": 3 },
+        "accumulate_ap": 2,
+        "effect": ["캠프파이어 주변에서 휴식할때 170%의 휴식 효과"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 100000 }],
+        "accumulate_stats": { "sp": 4 },
+        "accumulate_ap": 3,
+        "effect": ["캠프파이어 주변에서 휴식할때 180%의 휴식 효과"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 150000 }],
+        "accumulate_stats": { "sp": 5 },
+        "accumulate_ap": 4,
+        "effect": ["캠프파이어 주변에서 휴식할때 190%의 휴식 효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "모험가", "exp": 210000 }],
+        "accumulate_stats": { "sp": 6 },
+        "accumulate_ap": 5,
+        "effect": ["캠프파이어 주변에서 휴식할때 200%의 휴식 효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 280000 }],
+        "accumulate_stats": { "sp": 8 },
+        "accumulate_ap": 9,
+        "effect": ["캠프파이어 주변에서 휴식할때 250%의 휴식 효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 6 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 360000 }],
+        "accumulate_stats": { "sp": 10 },
+        "accumulate_ap": 11,
+        "effect": ["캠프파이어 주변에서 휴식할때 260%의 휴식 효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 6 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 442000 }],
+        "accumulate_stats": { "sp": 16 },
+        "accumulate_ap": 14,
+        "effect": ["캠프파이어 주변에서 휴식할때 270%의 휴식효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 8 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "모험가", "exp": 526000 }],
+        "accumulate_stats": { "sp": 22 },
+        "accumulate_ap": 19,
+        "effect": ["캠프파이어 주변에서 휴식할때 280%의 휴식효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 8 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "모험가", "exp": 612000 }],
+        "accumulate_stats": { "sp": 30 },
+        "accumulate_ap": 26,
+        "effect": ["캠프파이어 주변에서 휴식할때 300%의 휴식효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 8 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "모험가", "exp": 700000 }],
+        "accumulate_stats": { "sp": 38 },
+        "accumulate_ap": 34,
+        "effect": ["캠프파이어 주변에서 휴식할때 350%의 휴식효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 9 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 790000 }],
+        "accumulate_stats": { "sp": 46 },
+        "accumulate_ap": 43,
+        "effect": ["캠프파이어 주변에서 휴식할때 400%의 휴식효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 10 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 882500 }],
+        "accumulate_stats": { "sp": 55 },
+        "accumulate_ap": 53,
+        "effect": ["캠프파이어 주변에서 휴식할때 450%의 휴식효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 977500 }],
+        "accumulate_stats": { "sp": 65 },
+        "accumulate_ap": 68,
+        "effect": ["캠프파이어 주변에서 휴식할때 500%의 휴식효과", "인챈터 소각시 성공률 보너스가 추가로 적용"]
+      }
+    ]
+  },
+  {
+    "skill_id": 109,
+    "talent": ["adventure"],
+    "talent_kor": ["모험가"],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "야생 동물 조련",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 68,
+    "total_stats": null,
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 5000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 10000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 2,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 15000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 25000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 5,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 35000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 7,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 50000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 10,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "모험가", "exp": 75000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 15,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": null,
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "모험가", "exp": 95000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 19,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": null,
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 115000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 23,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": null,
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "모험가", "exp": 140000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 28,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": null,
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "모험가", "exp": 170000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 34,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": null,
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "모험가", "exp": 205000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 41,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": null,
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "모험가", "exp": 245000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 49,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": null,
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 290000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 58,
+        "effect": ["조련 성공 확률이 증가한다."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 340000 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 68,
+        "effect": ["조련 성공 확률이 증가한다."]
+      }
+    ]
+  },
+  {
+    "skill_id": 110,
+    "talent": ["adventure"],
+    "talent_kor": ["모험가"],
+    "category": "hidden",
+    "category_kor": "히든",
+    "isPromotion": "",
+    "name_kor": "분신술",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 316,
+    "total_stats": { "sp": 18, "str": 23 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "모험가", "exp": 500 }],
+        "accumulate_stats": { "str": 2 },
+        "accumulate_ap": 5,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "모험가", "exp": 1300 }],
+        "accumulate_stats": { "sp": 2, "str": 2 },
+        "accumulate_ap": 11,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 2300 }],
+        "accumulate_stats": { "sp": 2, "str": 4 },
+        "accumulate_ap": 19,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "str": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "모험가", "exp": 3500 }],
+        "accumulate_stats": { "sp": 4, "str": 4 },
+        "accumulate_ap": 29,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 2 },
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "모험가", "exp": 5000 }],
+        "accumulate_stats": { "sp": 4, "str": 6 },
+        "accumulate_ap": 41,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "모험가", "exp": 6800 }],
+        "accumulate_stats": { "sp": 6, "str": 6 },
+        "accumulate_ap": 55,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 3 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "모험가", "exp": 8800 }],
+        "accumulate_stats": { "sp": 6, "str": 9 },
+        "accumulate_ap": 73,
+        "effect": ["분신 대미지 증가", "분신 수 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "모험가", "exp": 11000 }],
+        "accumulate_stats": { "sp": 9, "str": 9 },
+        "accumulate_ap": 93,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 3 },
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "모험가", "exp": 13600 }],
+        "accumulate_stats": { "sp": 9, "str": 12 },
+        "accumulate_ap": 115,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 28,
+        "accumulate_rp": [{ "title": "모험가", "exp": 16600 }],
+        "accumulate_stats": { "sp": 12, "str": 12 },
+        "accumulate_ap": 141,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 3 },
+        "need_ap": 32,
+        "accumulate_rp": [{ "title": "모험가", "exp": 20100 }],
+        "accumulate_stats": { "sp": 12, "str": 15 },
+        "accumulate_ap": 169,
+        "effect": ["분신 대미지 증가", "분신 수 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 3 },
+        "need_ap": 35,
+        "accumulate_rp": [{ "title": "모험가", "exp": 24100 }],
+        "accumulate_stats": { "sp": 15, "str": 15 },
+        "accumulate_ap": 201,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 3 },
+        "need_ap": 38,
+        "accumulate_rp": [{ "title": "모험가", "exp": 28600 }],
+        "accumulate_stats": { "sp": 15, "str": 18 },
+        "accumulate_ap": 236,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 5 },
+        "need_ap": 42,
+        "accumulate_rp": [{ "title": "모험가", "exp": 33600 }],
+        "accumulate_stats": { "sp": 18, "str": 18 },
+        "accumulate_ap": 274,
+        "effect": ["분신 대미지 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 39600 }],
+        "accumulate_stats": { "sp": 18, "str": 23 },
+        "accumulate_ap": 316,
+        "effect": ["분신 대미지 증가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 111,
+    "talent": [""],
+    "talent_kor": [""],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "탐험 마스터리",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 111,
+    "total_stats": { "hp": 47, "mp": 15, "sp": 62, "luck": 16 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 3 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": []
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 3 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 2, "mp": 1, "sp": 3 },
+        "accumulate_ap": 1,
+        "effect": ["탐험 퀘스트 완료 시 탐험 경험치 5% 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 3 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 4, "mp": 2, "sp": 6 },
+        "accumulate_ap": 3,
+        "effect": [
+          "유적 발견 시 탐험 경험치 10% 증가",
+          "유적 스케치 탐험 경험치 10% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 10% 증가"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 6, "mp": 3, "sp": 9 },
+        "accumulate_ap": 5,
+        "effect": [
+          "유적 발견 시 탐험 경험치 15% 증가",
+          "유적 스케치 탐험 경험치 15% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 10% 증가"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 8, "mp": 4, "sp": 12 },
+        "accumulate_ap": 8,
+        "effect": [
+          "유적 발견 시 탐험 경험치 20% 증가",
+          "유적 스케치 탐험 경험치 20% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 15% 증가"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 2, "mp": 1, "sp": 3 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 10, "mp": 5, "sp": 15 },
+        "accumulate_ap": 11,
+        "effect": [
+          "유적 발견 시 탐험 경험치 25% 증가",
+          "유적 스케치 탐험 경험치 25% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 15% 증가"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 3, "mp": 1, "sp": 4 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 12, "mp": 6, "sp": 18 },
+        "accumulate_ap": 14,
+        "effect": [
+          "유적 발견 시 탐험 경험치 30% 증가",
+          "유적 스케치 탐험 경험치 30% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 20% 증가"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 3, "mp": 1, "sp": 4 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 15, "mp": 7, "sp": 22 },
+        "accumulate_ap": 20,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 35% 증가",
+          "유적 스케치 탐험 경험치 35% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 20% 증가"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 3, "mp": 1, "sp": 4 },
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 18, "mp": 8, "sp": 26 },
+        "accumulate_ap": 26,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 40% 증가",
+          "유적 스케치 탐험 경험치 40% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 25% 증가"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 3, "mp": 1, "sp": 4, "luck": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 21, "mp": 9, "sp": 30 },
+        "accumulate_ap": 32,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 45% 증가",
+          "유적 스케치 탐험 경험치 45% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 25% 증가"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 3, "mp": 1, "sp": 4, "luck": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 24, "mp": 10, "sp": 34, "luck": 1 },
+        "accumulate_ap": 41,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 50% 증가",
+          "유적 스케치 탐험 경험치 50% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 30% 증가"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "luck": 2 },
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 27, "mp": 11, "sp": 38, "luck": 3 },
+        "accumulate_ap": 51,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 55% 증가",
+          "유적 스케치 탐험 경험치 55% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 30% 증가"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 8, "mp": 2, "sp": 10, "luck": 3 },
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 27, "mp": 11, "sp": 38, "luck": 5 },
+        "accumulate_ap": 51,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 60% 증가",
+          "유적 스케치 탐험 경험치 60% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 35% 증가"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 5, "mp": 1, "sp": 6, "luck": 3 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 35, "mp": 13, "sp": 48, "luck": 8 },
+        "accumulate_ap": 76,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 65% 증가",
+          "유적 스케치 탐험 경험치 65% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 40% 증가"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 7, "mp": 1, "sp": 8, "luck": 5 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 40, "mp": 14, "sp": 54, "luck": 11 },
+        "accumulate_ap": 91,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 70% 증가",
+          "유적 스케치 탐험 경험치 70% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 45% 증가"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "hp": 47, "mp": 15, "sp": 62, "luck": 16 },
+        "accumulate_ap": 111,
+        "effect": [
+          "탐사 범위 증가",
+          "유적 발견 시 탐험 경험치 80% 증가",
+          "유적 스케치 탐험 경험치 80% 증가",
+          "탐험 퀘스트 완료 시 탐험 경험치 50% 증가"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 112,
+    "talent": [""],
+    "talent_kor": [""],
+    "category": "combat",
+    "category_kor": "전투",
+    "isPromotion": "",
+    "name_kor": "위기 탈출",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 112,
+    "total_stats": { "dex": 15, "will": 25 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "will": 1 },
+        "accumulate_ap": 0,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 7초", "쿨 타임 50초"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "will": 2 },
+        "accumulate_ap": 1,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 8초", "쿨 타임 49초"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "will": 3 },
+        "accumulate_ap": 3,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 9초", "쿨 타임 48초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "will": 4 },
+        "accumulate_ap": 6,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 10초", "쿨 타임 47초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 4, "will": 5 },
+        "accumulate_ap": 11,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 10초", "쿨 타임 46초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1, "will": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 5, "will": 6 },
+        "accumulate_ap": 16,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 11초", "쿨 타임 45초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "will": 7 },
+        "accumulate_ap": 21,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 12초", "쿨 타임 44초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 7, "will": 9 },
+        "accumulate_ap": 28,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 13초", "쿨 타임 43초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 8, "will": 11 },
+        "accumulate_ap": 35,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 14초", "쿨 타임 42초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 9, "will": 13 },
+        "accumulate_ap": 43,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 15초", "쿨 타임 41초"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 10, "will": 15 },
+        "accumulate_ap": 52,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 15초", "쿨 타임 40초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 11, "will": 17 },
+        "accumulate_ap": 62,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 16초", "쿨 타임 39초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 12, "will": 19 },
+        "accumulate_ap": 72,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 17초", "쿨 타임 38초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 13, "will": 21 },
+        "accumulate_ap": 84,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 18초", "쿨 타임 37초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 1, "will": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 14, "will": 23 },
+        "accumulate_ap": 97,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 18초", "쿨 타임 36초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "dex": 15, "will": 25 },
+        "accumulate_ap": 112,
+        "effect": ["몬스터 인식 해제", "스킬 유지 시간 20초", "쿨 타임 35초"]
+      }
+    ]
+  },
+  {
+    "skill_id": 113,
+    "talent": [""],
+    "talent_kor": [""],
+    "category": "life",
+    "category_kor": "생활",
+    "isPromotion": "",
+    "name_kor": "유물조사",
+    "icon": "",
+    "description": "",
+    "total_need_ap": 141,
+    "total_stats": { "int": 16, "luck": 25 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 1, "luck": 1 },
+        "accumulate_ap": 0,
+        "effect": ["유물 감정, 복원 비용 900골드", "쿨타임 3분"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 2, "luck": 2 },
+        "accumulate_ap": 3,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 900골드",
+          "쿨타임 3분"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 3, "luck": 3 },
+        "accumulate_ap": 6,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 900골드",
+          "쿨타임 3분"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 4, "luck": 4 },
+        "accumulate_ap": 11,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 900골드",
+          "쿨타임 3분"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 5, "luck": 5 },
+        "accumulate_ap": 16,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 900골드",
+          "쿨타임 3분"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 6, "luck": 6 },
+        "accumulate_ap": 23,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 900골드",
+          "쿨타임 3분"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 7, "luck": 7 },
+        "accumulate_ap": 30,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 900골드",
+          "쿨타임 2분"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 8, "luck": 8 },
+        "accumulate_ap": 39,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 700골드",
+          "쿨타임 2분"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 9, "luck": 9 },
+        "accumulate_ap": 48,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 700골드",
+          "쿨타임 2분"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1, "luck": 2 },
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 10, "luck": 10 },
+        "accumulate_ap": 57,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 700골드",
+          "쿨타임 1분"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 1, "luck": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 11, "luck": 12 },
+        "accumulate_ap": 67,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 700골드",
+          "쿨타임 1분"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1, "luck": 2 },
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 12, "luck": 14 },
+        "accumulate_ap": 79,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 700골드",
+          "쿨타임 1분"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 1, "luck": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 13, "luck": 16 },
+        "accumulate_ap": 91,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 700골드",
+          "쿨타임 1분"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1, "luck": 2 },
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 14, "luck": 18 },
+        "accumulate_ap": 106,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 500골드",
+          "쿨타임 30초"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 1, "luck": 5 },
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 15, "luck": 20 },
+        "accumulate_ap": 121,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 500골드",
+          "쿨타임 30초"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "모험가", "exp": 0 }],
+        "accumulate_stats": { "int": 16, "luck": 25 },
+        "accumulate_ap": 141,
+        "effect": [
+          "유물 감정 시 감정 가치를 높게 받을 수 있는 확률 증가",
+          "유물 복원 성공 확률 증가",
+          "유물 감정, 복원 비용 500골드",
+          "쿨타임 30초"
         ]
       }
     ]

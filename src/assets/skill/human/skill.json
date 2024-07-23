@@ -2074,7 +2074,7 @@
         "effect": ["대미지 배율 60%", "사정거리 8m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 1,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 0 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 0 }],
         "accumulate_stats": null,
         "accumulate_ap": 0
       },
@@ -2084,7 +2084,7 @@
         "effect": ["대미지 배율 70%", "사정거리 10m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 2,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 1000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 1000 }],
         "accumulate_stats": { "sp": 1 },
         "accumulate_ap": 1
       },
@@ -2094,7 +2094,7 @@
         "effect": ["대미지 배율 80%", "사정거리 10m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 3,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 2500 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 2500 }],
         "accumulate_stats": { "sp": 2 },
         "accumulate_ap": 3
       },
@@ -2107,7 +2107,7 @@
         "effect": ["대미지 배율 90%", "사정거리 10m"],
         "bonus_stats": { "dex": 1 },
         "need_ap": 4,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 5000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 5000 }],
         "accumulate_stats": { "sp": 3 },
         "accumulate_ap": 6
       },
@@ -2120,7 +2120,7 @@
         "effect": ["대미지 배율 100%", "사정거리 10m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 5,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 9000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 9000 }],
         "accumulate_stats": { "sp": 3, "dex": 1 },
         "accumulate_ap": 10
       },
@@ -2134,7 +2134,7 @@
         "effect": ["대미지 배율 110%", "사정거리 10m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 6,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 13000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 13000 }],
         "accumulate_stats": { "sp": 4, "dex": 1 },
         "accumulate_ap": 15
       },
@@ -2148,7 +2148,7 @@
         "effect": ["대미지 배율 120%", "사정거리 10m"],
         "bonus_stats": { "dex": 1 },
         "need_ap": 9,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 19000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 19000 }],
         "accumulate_stats": { "sp": 5, "dex": 1 },
         "accumulate_ap": 21
       },
@@ -2162,7 +2162,7 @@
         "effect": ["대미지 배율 140%", "사정거리 11m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 10,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 26000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 26000 }],
         "accumulate_stats": { "sp": 5, "dex": 2 },
         "accumulate_ap": 30
       },
@@ -2176,7 +2176,7 @@
         "effect": ["대미지 배율 150%", "사정거리 11m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 11,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 35000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 35000 }],
         "accumulate_stats": { "sp": 6, "dex": 2 },
         "accumulate_ap": 40
       },
@@ -2190,7 +2190,7 @@
         "effect": ["대미지 배율 160%", "사정거리 11m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 12,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 45000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 45000 }],
         "accumulate_stats": { "sp": 7, "dex": 2 },
         "accumulate_ap": 51
       },
@@ -2204,7 +2204,7 @@
         "effect": ["대미지 배율 170%", "사정거리 11m"],
         "bonus_stats": { "dex": 1 },
         "need_ap": 15,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 58000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 58000 }],
         "accumulate_stats": { "sp": 8, "dex": 2 },
         "accumulate_ap": 63
       },
@@ -2218,7 +2218,7 @@
         "effect": ["대미지 배율 190%", "사정거리 12m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 16,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 73000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 73000 }],
         "accumulate_stats": { "sp": 8, "dex": 3 },
         "accumulate_ap": 78
       },
@@ -2232,7 +2232,7 @@
         "effect": ["대미지 배율 200%", "사정거리 12m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 17,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 95000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 95000 }],
         "accumulate_stats": { "sp": 9, "dex": 3 },
         "accumulate_ap": 94
       },
@@ -2246,7 +2246,7 @@
         "effect": ["대미지 배율 210%", "사정거리 12m"],
         "bonus_stats": { "sp": 1 },
         "need_ap": 18,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 120000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 120000 }],
         "accumulate_stats": { "sp": 10, "dex": 3 },
         "accumulate_ap": 111
       },
@@ -2260,7 +2260,7 @@
         "effect": ["대미지 배율 220%", "사정거리 12m"],
         "bonus_stats": { "sp": 1, "dex": 1 },
         "need_ap": 25,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 149000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 149000 }],
         "accumulate_stats": { "sp": 11, "dex": 3 },
         "accumulate_ap": 129
       },
@@ -2274,7 +2274,7 @@
         "effect": ["대미지 배율 250%", "사정거리 13m"],
         "bonus_stats": null,
         "need_ap": 0,
-        "accumulate_rp": [{ "title": "인형술사", "exp": 180000 }],
+        "accumulate_rp": [{ "title": "인형사", "exp": 180000 }],
         "accumulate_stats": { "sp": 12, "dex": 4 },
         "accumulate_ap": 154
       }

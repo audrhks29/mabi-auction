@@ -1,6 +1,28 @@
 import Link from "next/link";
 
 import LoginButton from "./LoginButton";
+interface MenuTypes {
+  id: number;
+  text: string;
+  link: string;
+}
+
+const menusArray = [
+  { id: 1, text: "스킬", link: "/skill" },
+  { id: 2, text: "재능등급", link: "/grade" },
+];
+
+function NavMenu({ menu }: { menu: MenuTypes }) {
+  return (
+    <ul className="h-full">
+      <li className="w-[200px] text-center h-full hover:bg-muted cursor-pointer">
+        <Link href={menu.link} className="flex w-full h-full justify-center items-center">
+          {menu.text}
+        </Link>
+      </li>
+    </ul>
+  );
+}
 
 export default function Header() {
   return (
@@ -13,21 +35,9 @@ export default function Header() {
             </Link>
           </h1>
 
-          <ul className="h-full">
-            <li className="w-[200px] text-center h-full hover:bg-muted cursor-pointer">
-              <Link href="/skill" className="flex w-full h-full justify-center items-center">
-                스킬
-              </Link>
-            </li>
-          </ul>
-
-          <ul className="h-full">
-            <li className="w-[200px] text-center h-full hover:bg-muted cursor-pointer">
-              <Link href="/grade" className="flex w-full h-full justify-center items-center">
-                재능등급 계산
-              </Link>
-            </li>
-          </ul>
+          {menusArray.map(menu => (
+            <NavMenu key={menu.id} menu={menu} />
+          ))}
         </div>
 
         <LoginButton />

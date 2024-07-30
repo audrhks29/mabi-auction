@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { PopoverClose } from "@radix-ui/react-popover";
 
 import Link from "next/link";
+import useUserDataStore from "@/store/userData-store";
 
 interface FormData {
   user_id: string;
@@ -15,10 +16,27 @@ interface FormData {
 }
 
 export default function LoginButton() {
+  const { setUserData } = useUserDataStore();
   const { handleSubmit, register } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    console.log(data);
+  const onSubmit = async (data: FormData) => {
+    try {
+      const response = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          user_id: data.user_id,
+          user_password: data.user_password,
+        }),
+      });
+      const responseData = await response.json();
+
+      setUserData(responseData.userData);
+    } catch (error) {
+      console.error("An unexpected error happened:", error);
+    }
   };
 
   return (

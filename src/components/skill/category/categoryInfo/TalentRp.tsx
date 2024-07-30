@@ -24,6 +24,7 @@ export default function TalentRp() {
   // );
 
   // console.log(skills);
+
   return (
     <Card>
       <CardHeader className="pb-1">

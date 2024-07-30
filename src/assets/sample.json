@@ -1,0 +1,30 @@
+[
+  {
+    "user_id": "audrhks98",
+    "user_password": "1234",
+    "server": "하프",
+    "race": "인간",
+    "nickname": "마비굿잡",
+    "skill_data": [
+      {
+        "skill_id": 1,
+        "talent": ["puppeteer"],
+        "talent_kor": ["인형사"],
+        "category": "puppetry",
+        "category_kor": "인형술",
+        "rank": "1",
+        "ap": 0,
+        "hp": 0,
+        "mp": 0,
+        "sp": 0,
+        "str": 0,
+        "dex": 15,
+        "int": 0,
+        "will": 0,
+        "luck": 0,
+        "rp": [{ "title": "인형사", "exp": 160000 }],
+        "accumulate_ap": 135
+      }
+    ]
+  }
+]

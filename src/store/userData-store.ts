@@ -3,6 +3,7 @@ import create from "zustand";
 interface StoreTypes {
   userData: UserDataTypes | null;
   setUserData: (userData: UserDataTypes) => void;
+  deleteUserData: () => void;
 }
 
 const useUserDataStore = create<StoreTypes>((set, getState) => ({
@@ -10,7 +11,10 @@ const useUserDataStore = create<StoreTypes>((set, getState) => ({
 
   setUserData: userData => {
     set({ userData: userData });
-    console.log(getState().userData);
+  },
+
+  deleteUserData: () => {
+    set({ userData: null });
   },
 }));
 

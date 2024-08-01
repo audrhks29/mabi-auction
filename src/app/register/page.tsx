@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 interface FormData {
@@ -17,11 +18,44 @@ interface FormData {
   user_nickName: string;
 }
 
-export default function SignupPage() {
+export default function RegisterPage() {
   const { handleSubmit, register, setValue } = useForm<FormData>();
+  const route = useRouter();
 
-  const onSubmit = (data: FormData) => {
-    console.log(data);
+  const onSubmit = async (data: FormData) => {
+    const confirm = window.confirm(
+      `가입정보를 확인해주세요.\n아이디 : ${data.user_id}\n서버 : ${data.user_server}\n종족 : ${data.user_race}\n닉네임 : ${data.user_nickName}`,
+    );
+
+    if (confirm) {
+      try {
+        const res = await fetch("/api/auth/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            user_id: data.user_id,
+            user_password: data.user_password,
+            server: data.user_server,
+            race: data.user_race,
+            nickname: data.user_nickName,
+            skill_data: [],
+          }),
+        });
+
+        const resData = await res.json();
+
+        if (resData.error) {
+          alert("이미 존재하는 아이디 입니다.");
+        } else {
+          alert("성공적으로 가입되었습니다.");
+          route.push("/");
+        }
+      } catch (error) {
+        console.error("An unexpected error happened:", error);
+      }
+    }
   };
 
   return (

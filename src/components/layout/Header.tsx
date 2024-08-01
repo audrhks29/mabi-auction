@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-import LoginButton from "./LoginButton";
+import UserAuth from "./UserAuth";
+import { cookies } from "next/headers";
 interface MenuTypes {
   id: number;
   text: string;
@@ -25,6 +26,9 @@ function NavMenu({ menu }: { menu: MenuTypes }) {
 }
 
 export default function Header() {
+  const cookieStore = cookies();
+  const accessToken = cookieStore.get("accessToken");
+
   return (
     <header className="fixed bg-background w-full z-40">
       <nav className="flex h-14 justify-between items-center">
@@ -40,7 +44,7 @@ export default function Header() {
           ))}
         </div>
 
-        <LoginButton />
+        <UserAuth accessToken={accessToken} />
       </nav>
     </header>
   );

@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
 interface FormData {
@@ -19,41 +20,52 @@ interface FormData {
 }
 
 export default function RegisterPage() {
-  const { handleSubmit, register, setValue } = useForm<FormData>();
+  const { handleSubmit, register, setValue, watch } = useForm<FormData>();
+  const [isDuplicationId, setIsDuplicationId] = useState<boolean | null>(null);
   const route = useRouter();
 
+  const id = watch("user_id");
+
+  useEffect(() => {
+    setIsDuplicationId(null);
+  }, [id]);
+
   const onSubmit = async (data: FormData) => {
-    const confirm = window.confirm(
-      `가입정보를 확인해주세요.\n아이디 : ${data.user_id}\n서버 : ${data.user_server}\n종족 : ${data.user_race}\n닉네임 : ${data.user_nickName}`,
-    );
+    if (isDuplicationId) alert("가입이 불가능한 아이디입니다.");
+    else if (isDuplicationId === null) alert("아이디 중복을 확인해주세요.");
+    else if (isDuplicationId === false) {
+      const confirm = window.confirm(
+        `가입정보를 확인해주세요.\n아이디 : ${data.user_id}\n서버 : ${data.user_server}\n종족 : ${data.user_race}\n닉네임 : ${data.user_nickName}`,
+      );
 
-    if (confirm) {
-      try {
-        const res = await fetch("/api/auth/register", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            user_id: data.user_id,
-            user_password: data.user_password,
-            server: data.user_server,
-            race: data.user_race,
-            nickname: data.user_nickName,
-            skill_data: [],
-          }),
-        });
+      if (confirm) {
+        try {
+          const res = await fetch("/api/auth/register", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              user_id: data.user_id,
+              user_password: data.user_password,
+              server: data.user_server,
+              race: data.user_race,
+              nickname: data.user_nickName,
+              skill_data: [],
+            }),
+          });
 
-        const resData = await res.json();
+          const resData = await res.json();
 
-        if (resData.error) {
-          alert("이미 존재하는 아이디 입니다.");
-        } else {
-          alert("성공적으로 가입되었습니다.");
-          route.push("/");
+          if (resData.error) {
+            alert("이미 존재하는 아이디 입니다.");
+          } else {
+            alert("성공적으로 가입되었습니다.");
+            route.push("/");
+          }
+        } catch (error) {
+          console.error("An unexpected error happened:", error);
         }
-      } catch (error) {
-        console.error("An unexpected error happened:", error);
       }
     }
   };
@@ -69,7 +81,36 @@ export default function RegisterPage() {
               <div className="grid grid-cols-[90px_1fr_80px] items-center gap-3">
                 <Label htmlFor="user_id">아이디</Label>
                 <Input id="user_id" {...register("user_id", { required: true })} type="text" placeholder="아이디" />
-                <Button type="button">중복확인</Button>
+                <Button
+                  type="button"
+                  onClick={async () => {
+                    try {
+                      const res = await fetch("/api/auth/duplication", {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                          user_id: id,
+                        }),
+                      });
+
+                      const resData = await res.json();
+
+                      if (resData.error) {
+                        alert(resData.error);
+                        setIsDuplicationId(true);
+                      } else if (resData.message) {
+                        alert(resData.message);
+                        setIsDuplicationId(false);
+                      }
+                    } catch (error) {
+                      alert("올바른 접근이 아닙니다.");
+                      console.error("Error fetching user data:", error);
+                    }
+                  }}>
+                  {isDuplicationId === false ? "확인완료" : "중복확인"}
+                </Button>
               </div>
 
               <div className="grid grid-cols-[90px_1fr] items-center gap-3">

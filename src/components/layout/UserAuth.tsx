@@ -39,7 +39,7 @@ function LoginPopover() {
       const resData = await res.json();
 
       if (resData.error) {
-        alert("아이디 혹은 비밀번호가 일치하지 않습니다.");
+        alert("아이디 또는 비밀번호가 일치하지 않습니다.");
       } else {
         setUserData(resData.userData);
         route.push("/");
@@ -132,7 +132,7 @@ export default function UserAuth({ accessToken }: { accessToken: RequestCookie |
       ) : (
         <div className="font-semibold w-[220px] text-[14px] flex justify-around items-center">
           <div>
-            <span className="">[{userData.server}]</span>&nbsp;<span>{userData.nickname}</span>
+            <span>[{userData.server}]</span>&nbsp;<span>{userData.nickname}</span>
           </div>
 
           <Button

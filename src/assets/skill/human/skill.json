@@ -37607,5 +37607,611 @@
         "effect": ["도르카 1 소모", "대미지 850%", "경직 시간 증가"]
       }
     ]
+  },
+  {
+    "skill_id": 27200,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술사"],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "isPromotion": true,
+    "name_kor": "사이드 슬래시",
+    "icon": "",
+    "description": "낫을 휘둘러 먼 거리를 공격하는 스킬. 유능한 점성술사는 인과를 읽는 것에 그치지 않고, 이를 잇거나 자르는 능력에도 눈을 뜨게 된다. 이 스킬은 서로의 위치를 인과 과로 묶은 후 다시 잘라냄으로써 상대가 존재하는 공간 자체에 피해를 주는 공격이다.",
+    "total_need_ap": 239,
+    "total_stats": { "sp": 16, "str": 13, "int": 18, "luck": 11 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 2, "str": 1, "int": 1 },
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [""]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 2.667, "max_count": 45 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 1000 }],
+        "accumulate_stats": { "sp": 2, "str": 1, "int": 1 },
+        "accumulate_ap": 1,
+        "effect": ["마법공격력의 120%로 공격", "(마법공격력의 1%~20%의 대미지 추가)", "공격 가능 거리 5.5m"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 2, "max_count": 60 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 3500 }],
+        "accumulate_stats": { "sp": 2, "str": 1, "int": 2, "luck": 1 },
+        "accumulate_ap": 3,
+        "effect": ["마법공격력의 130%로 공격", "(마법공격력의 1%~20%의 대미지 추가)", "공격 가능 거리 5.5m"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 1.6, "max_count": 75 }],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 7500 }],
+        "accumulate_stats": { "sp": 2, "str": 1, "int": 3, "luck": 1 },
+        "accumulate_ap": 6,
+        "effect": ["마법공격력의 140%로 공격", "(마법공격력의 1%~20%의 대미지 추가)", "공격 가능 거리 5.5m"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.88, "max_count": 90 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 1.8, "max_count": 23 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 13000 }],
+        "accumulate_stats": { "sp": 2, "str": 1, "int": 4, "luck": 1 },
+        "accumulate_ap": 10,
+        "effect": ["마법공격력의 150%로 공격", "(마법공격력의 1%~20%의 대미지 추가)", "공격 가능 거리 5.5m"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.707, "max_count": 113 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 1.294, "max_count": 30 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 20000 }],
+        "accumulate_stats": { "sp": 2, "str": 1, "int": 5, "luck": 2 },
+        "accumulate_ap": 15,
+        "effect": ["마법공격력의 160%로 공격", "(마법공격력의 1%~20%의 대미지 추가)", "공격 가능 거리 5.5m"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 2, "str": 1, "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.347, "max_count": 225 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.88, "max_count": 45 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 28500 }],
+        "accumulate_stats": { "sp": 2, "str": 1, "int": 6, "luck": 2 },
+        "accumulate_ap": 21,
+        "effect": ["마법공격력의 170%로 공격", "(마법공격력의 1%~20%의 대미지 추가)", "공격 가능 거리 5.5m"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.267, "max_count": 300 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.44, "max_count": 60 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.667, "max_count": 23 }
+        ],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 38500 }],
+        "accumulate_stats": { "sp": 4, "str": 2, "int": 7, "luck": 3 },
+        "accumulate_ap": 31,
+        "effect": ["마법공격력의 200%로 공격", "(마법공격력의 2%~30%의 대미지 추가)", "공격 가능 거리 6m"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.174, "max_count": 450 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.374, "max_count": 68 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.4, "max_count": 38 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 50000 }],
+        "accumulate_stats": { "sp": 4, "str": 2, "int": 8, "luck": 3 },
+        "accumulate_ap": 42,
+        "effect": ["마법공격력의 210%로 공격", "(마법공격력의 2%~30%의 대미지 추가)", "공격 가능 거리 6m"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.134, "max_count": 600 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.32, "max_count": 75 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.394, "max_count": 38 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 63000 }],
+        "accumulate_stats": { "sp": 4, "str": 2, "int": 9, "luck": 4 },
+        "accumulate_ap": 54,
+        "effect": ["마법공격력의 220%로 공격", "(마법공격력의 2%~30%의 대미지 추가)", "공격 가능 거리 6m"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 2, "str": 1, "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.107, "max_count": 750 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.28, "max_count": 90 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.327, "max_count": 45 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 79000 }],
+        "accumulate_stats": { "sp": 4, "str": 2, "int": 10, "luck": 4 },
+        "accumulate_ap": 67,
+        "effect": ["마법공격력의 230%로 공격", "(마법공격력의 2%~30%의 대미지 추가)", "공격 가능 거리 6m"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.094, "max_count": 825 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.24, "max_count": 105 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.287, "max_count": 53 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 95000 }],
+        "accumulate_stats": { "sp": 6, "str": 3, "int": 11, "luck": 5 },
+        "accumulate_ap": 82,
+        "effect": ["마법공격력의 240%로 공격", "(마법공격력의 3%~40%의 대미지 추가)", "공격 가능 거리 6.5m"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 1, "str": 2, "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.087, "max_count": 900 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.187, "max_count": 135 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.247, "max_count": 60 }
+        ],
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 117000 }],
+        "accumulate_stats": { "sp": 6, "str": 3, "int": 12, "luck": 5 },
+        "accumulate_ap": 99,
+        "effect": ["마법공격력의 250%로 공격", "(마법공격력의 3%~40%의 대미지 추가)", "공격 가능 거리 7m"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 1, "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.08, "max_count": 975 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.16, "max_count": 150 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.2, "max_count": 75 }
+        ],
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 132000 }],
+        "accumulate_stats": { "sp": 7, "str": 5, "int": 13, "luck": 6 },
+        "accumulate_ap": 118,
+        "effect": ["마법공격력의 260%로 공격", "(마법공격력의 3%~40%의 대미지 추가)", "공격 가능 거리 7.5m"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 2, "str": 2, "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.076, "max_count": 1050 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.147, "max_count": 165 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.167, "max_count": 90 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 161000 }],
+        "accumulate_stats": { "sp": 8, "str": 6, "int": 14, "luck": 7 },
+        "accumulate_ap": 139,
+        "effect": ["마법공격력의 280%로 공격", "(마법공격력의 3%~40%의 대미지 추가)", "공격 가능 거리 8m"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": { "sp": 2, "str": 2, "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.071, "max_count": 1125 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.107, "max_count": 225 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.134, "max_count": 113 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 195000 }],
+        "accumulate_stats": { "sp": 10, "str": 7, "int": 15, "luck": 8 },
+        "accumulate_ap": 164,
+        "effect": ["마법공격력의 300%로 공격", "(마법공격력의 4%~50%의 대미지 추가)", "공격 가능 거리 8.5m"]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": { "sp": 2, "str": 2, "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.071, "max_count": 1125 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.107, "max_count": 225 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.134, "max_count": 113 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 195000 }],
+        "accumulate_stats": { "sp": 12, "str": 9, "int": 16, "luck": 9 },
+        "accumulate_ap": 189,
+        "effect": ["마법공격력의 340%로 공격", "(마법공격력의 4%~50%의 대미지 추가)", "공격 가능 거리 9m"]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": { "sp": 2, "str": 2, "int": 1, "luck": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.071, "max_count": 1125 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.107, "max_count": 225 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.134, "max_count": 113 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 195000 }],
+        "accumulate_stats": { "sp": 14, "str": 11, "int": 17, "luck": 10 },
+        "accumulate_ap": 214,
+        "effect": ["마법공격력의 370%로 공격", "(마법공격력의 4%~50%의 대미지 추가)", "공격 가능 거리 9.5m"]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.071, "max_count": 1125 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.107, "max_count": 225 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.134, "max_count": 113 }
+        ],
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 195000 }],
+        "accumulate_stats": { "sp": 16, "str": 13, "int": 18, "luck": 11 },
+        "accumulate_ap": 239,
+        "effect": ["마법공격력의 400%로 공격", "(마법공격력의 4%~50%의 대미지 추가)", "공격 가능 거리 10m"]
+      }
+    ]
+  },
+  {
+    "skill_id": 27200,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술사"],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "isPromotion": true,
+    "name_kor": "스타 데토네이션",
+    "icon": "",
+    "description": "고밀도로 압축된 에너지 구체를 폭발시켜 넓은 범위를 공격하는 스킬. 한 점을 향해 응축되고 있는 에너지는 빨아들이는 힘에서 해방되는 순간 강렬한 폭발을 일으키며 사방으로 퍼져나간다. 점성술사는 잘라낸 공간 안으로 별의 에너지를 응축해 담은 후 원하는 위치로 던져 해방시킴으로써 넓은 범위에 강력한 대미지를 입힌다.",
+    "total_need_ap": 267,
+    "total_stats": { "mp": 11, "int": 37, "dex": 11 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1, "int": 1, "dex": 1 },
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [
+          "반경 3.5m의 범위를 마법공격력의 400%로 공격",
+          "(마법공격력의 10%~100%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 2.052, "max_count": 59 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 1000 }],
+        "accumulate_stats": { "mp": 1, "int": 1, "dex": 1 },
+        "accumulate_ap": 2,
+        "effect": [
+          "반경 4m의 범위를 마법공격력의 400%로 공격",
+          "(마법공격력의 10%~100%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 1.539, "max_count": 78 }],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 3500 }],
+        "accumulate_stats": { "mp": 1, "int": 2, "dex": 1 },
+        "accumulate_ap": 4,
+        "effect": [
+          "반경 4m의 범위를 마법공격력의 410%로 공격",
+          "(마법공격력의 10%~100%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 1.231, "max_count": 98 }],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 7500 }],
+        "accumulate_stats": { "mp": 1, "int": 3, "dex": 1 },
+        "accumulate_ap": 9,
+        "effect": [
+          "반경 4m의 범위를 마법공격력의 420%로 공격",
+          "(마법공격력의 10%~100%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.693, "max_count": 117 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 1.026, "max_count": 39 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 13000 }],
+        "accumulate_stats": { "mp": 1, "int": 5, "dex": 1 },
+        "accumulate_ap": 14,
+        "effect": [
+          "반경 4.3m의 범위를 마법공격력의 430%로 공격",
+          "(마법공격력의 10%~100%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 1, "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.59, "max_count": 437 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 1.026, "max_count": 39 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 20000 }],
+        "accumulate_stats": { "mp": 1, "int": 6, "dex": 1 },
+        "accumulate_ap": 21,
+        "effect": [
+          "반경 4.3m의 범위를 마법공격력의 440%로 공격",
+          "(마법공격력의 10%~100%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 2, "dex": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.59, "max_count": 437 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 1.026, "max_count": 39 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 28500 }],
+        "accumulate_stats": { "mp": 2, "int": 7, "dex": 1 },
+        "accumulate_ap": 28,
+        "effect": [
+          "반경 4.3m의 범위를 마법공격력의 440%로 공격",
+          "(마법공격력의 10%~100%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.375, "max_count": 215 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.257, "max_count": 98 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.385, "max_count": 39 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 38500 }],
+        "accumulate_stats": { "mp": 2, "int": 9, "dex": 2 },
+        "accumulate_ap": 38,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 470%로 공격",
+          "(마법공격력의 15%~150%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.272, "max_count": 293 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.185, "max_count": 137 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.257, "max_count": 59 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 40000 }],
+        "accumulate_stats": { "mp": 2, "int": 10, "dex": 2 },
+        "accumulate_ap": 48,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 480%로 공격",
+          "(마법공격력의 15%~150%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.231, "max_count": 351 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.211, "max_count": 117 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.257, "max_count": 59 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 53000 }],
+        "accumulate_stats": { "mp": 2, "int": 11, "dex": 2 },
+        "accumulate_ap": 60,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 490%로 공격",
+          "(마법공격력의 15%~150%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 1, "int": 2, "dex": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.19, "max_count": 429 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.159, "max_count": 156 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.193, "max_count": 78 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 69000 }],
+        "accumulate_stats": { "mp": 2, "int": 12, "dex": 2 },
+        "accumulate_ap": 72,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 500%로 공격",
+          "(마법공격력의 15%~150%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.134, "max_count": 488 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.159, "max_count": 156 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.193, "max_count": 78 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.385, "max_count": 39 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 88000 }],
+        "accumulate_stats": { "mp": 3, "int": 14, "dex": 3 },
+        "accumulate_ap": 87,
+        "effect": [
+          "반경 4.7m의 범위를 마법공격력의 550%로 공격",
+          "(마법공격력의 20%~200%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 3 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.113, "max_count": 585 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.139, "max_count": 176 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.154, "max_count": 98 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.257, "max_count": 59 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 110000 }],
+        "accumulate_stats": { "mp": 3, "int": 16, "dex": 3 },
+        "accumulate_ap": 102,
+        "effect": [
+          "반경 4.7m의 범위를 마법공격력의 600%로 공격",
+          "(마법공격력의 20%~200%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.095, "max_count": 683 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.129, "max_count": 195 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.154, "max_count": 98 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.193, "max_count": 78 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 135000 }],
+        "accumulate_stats": { "mp": 3, "int": 19, "dex": 3 },
+        "accumulate_ap": 122,
+        "effect": [
+          "반경 4.7m의 범위를 마법공격력의 650%로 공격",
+          "(마법공격력의 20%~200%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 2, "int": 4, "dex": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.09, "max_count": 722 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.103, "max_count": 234 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.131, "max_count": 117 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.154, "max_count": 98 }
+        ],
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 164000 }],
+        "accumulate_stats": { "mp": 3, "int": 21, "dex": 3 },
+        "accumulate_ap": 147,
+        "effect": [
+          "반경 5m의 범위를 마법공격력의 700%로 공격",
+          "(마법공격력의 20%~200%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": { "mp": 2, "int": 4, "dex": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.075, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.111, "max_count": 137 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.129, "max_count": 117 }
+        ],
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 198000 }],
+        "accumulate_stats": { "mp": 5, "int": 25, "dex": 5 },
+        "accumulate_ap": 177,
+        "effect": [
+          "반경 5.5m의 범위를 마법공격력의 800%로 공격",
+          "(마법공격력의 25%~250%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": { "mp": 2, "int": 4, "dex": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.075, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.111, "max_count": 137 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.129, "max_count": 117 }
+        ],
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 198000 }],
+        "accumulate_stats": { "mp": 7, "int": 29, "dex": 7 },
+        "accumulate_ap": 207,
+        "effect": [
+          "반경 5.5m의 범위를 마법공격력의 900%로 공격",
+          "(마법공격력의 25%~250%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": { "mp": 2, "int": 4, "dex": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.075, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.111, "max_count": 137 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.129, "max_count": 117 }
+        ],
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 198000 }],
+        "accumulate_stats": { "mp": 9, "int": 33, "dex": 9 },
+        "accumulate_ap": 237,
+        "effect": [
+          "반경 5.5m의 범위를 마법공격력의 1000%로 공격",
+          "(마법공격력의 25%~250%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.075, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.111, "max_count": 137 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.129, "max_count": 117 }
+        ],
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 198000 }],
+        "accumulate_stats": { "mp": 11, "int": 37, "dex": 11 },
+        "accumulate_ap": 267,
+        "effect": [
+          "반경 5.5m의 범위를 마법공격력의 1100%로 공격",
+          "(마법공격력의 25%~250%의 대미지 추가)",
+          "재사용 대기 시간 10초"
+        ]
+      }
+    ]
   }
 ]

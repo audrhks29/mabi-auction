@@ -249,7 +249,7 @@
       "gold": "/images/talent/astrologer/gold.png",
       "grandmaster": "/images/talent/astrologer/grandmaster.png"
     },
-    "talent": "점성술사",
-    "link": "astrologer"
+    "talent": "전투 점성술사",
+    "link": "battleastrologer"
   }
 ]

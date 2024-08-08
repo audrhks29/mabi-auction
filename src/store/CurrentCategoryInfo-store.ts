@@ -116,7 +116,7 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
     const result = Object.keys(expSums).map(title => {
       return { title: title, exp: expSums[title] };
     });
-
+    console.log(total_rp_array);
     set({ total_rp: result });
     // set()
   },

@@ -11915,7 +11915,7 @@
     ]
   },
   {
-    "skill_id": 55,
+    "skill_id": 10103,
     "talent": ["glyphwrighting"],
     "talent_kor": ["마기그래퍼"],
     "category": "life",
@@ -12074,7 +12074,7 @@
     ]
   },
   {
-    "skill_id": 56,
+    "skill_id": 10100,
     "talent": ["glyphwrighting"],
     "talent_kor": ["마기그래퍼"],
     "category": "life",
@@ -12237,7 +12237,7 @@
     ]
   },
   {
-    "skill_id": 57,
+    "skill_id": 10101,
     "talent": ["glyphwrighting"],
     "talent_kor": ["마기그래퍼"],
     "category": "life",
@@ -12396,7 +12396,7 @@
     ]
   },
   {
-    "skill_id": 58,
+    "skill_id": 10102,
     "talent": ["glyphwrighting"],
     "talent_kor": ["마기그래퍼"],
     "category": "life",
@@ -12615,7 +12615,7 @@
     ]
   },
   {
-    "skill_id": 59,
+    "skill_id": 10104,
     "talent": ["glyphwrighting"],
     "talent_kor": ["마기그래퍼"],
     "category": "life",
@@ -37609,7 +37609,7 @@
     ]
   },
   {
-    "skill_id": 27200,
+    "skill_id": 27201,
     "talent": ["battleastrology"],
     "talent_kor": ["전투 점성술사"],
     "category": "astrology",
@@ -38211,6 +38211,4215 @@
           "(마법공격력의 25%~250%의 대미지 추가)",
           "재사용 대기 시간 10초"
         ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27202,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "스텔라 브레이크",
+    "icon": "/images/skill/.webp",
+    "description": "찢겨진 공간의 틈새를 날려 직선상의 적들을 공격하는 스킬. 점성술사의 힘으로 찢어낸 공간의 틈새는 그곳에 휘말린 모든 것들을 잘라내버린다. 공격할 영역을 가늠하기 위해 만들어내는 별자리의 투영마저도 잘라내는 모습에서 별을 파괴하는 기술이라고 부르기 시작했다. 시전된 위치에서 멀어지면 공간의 틈새가 닫히기 시작해 그 힘이 급격하게 줄어들다 사라진다. 스킬 버튼을 누르고 있는 것으로 공간의 틈새가 온전히 유지되는 거리를 늘릴 수 있다.",
+    "total_need_ap": 244,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 0, "int": 45, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [
+          "폭 3m, 거리 9m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1300% 대미지",
+          "(마법공격력의 20%~300%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 2.5m 속도로 차지",
+          "나머지 범위는 최소 10%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 2.052, "max_count": 59 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 3,
+        "effect": [
+          "폭 3m, 거리 9m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1300% 대미지",
+          "(마법공격력의 20%~300%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 2.5m 속도로 차지",
+          "나머지 범위는 최소 10%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 1.539, "max_count": 78 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 6,
+        "effect": [
+          "폭 3m, 거리 9m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1350% 대미지",
+          "(마법공격력의 20%~300%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 2.5m 속도로 차지",
+          "나머지 범위는 최소 10%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 1.026, "max_count": 117 }],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 9,
+        "effect": [
+          "폭 3m, 거리 9m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1380% 대미지",
+          "(마법공격력의 20%~300%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 2.5m 속도로 차지",
+          "나머지 범위는 최소 10%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.693, "max_count": 117 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 1.026, "max_count": 39 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 14,
+        "effect": [
+          "폭 3m, 거리 9.5m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1420% 대미지",
+          "(마법공격력의 20%~300%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 2.7m 속도로 차지",
+          "나머지 범위는 최소 15%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.59, "max_count": 137 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.683, "max_count": 59 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 20,
+        "effect": [
+          "폭 3m, 거리 9.5m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1450% 대미지",
+          "(마법공격력의 20%~300%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 2.7m 속도로 차지",
+          "나머지 범위는 최소 15%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 3 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.436, "max_count": 176 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.513, "max_count": 78 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 27,
+        "effect": [
+          "폭 3m, 거리 9.5m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1500% 대미지",
+          "(마법공격력의 20%~300%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 2.7m 속도로 차지",
+          "나머지 범위는 최소 15%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.334, "max_count": 234 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.257, "max_count": 98 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.385, "max_count": 39 }
+        ],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 37,
+        "effect": [
+          "폭 3.5m, 거리 10m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1600% 대미지",
+          "(마법공격력의 30%~350%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 3m 속도로 차지",
+          "나머지 범위는 최소 20%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.272, "max_count": 293 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.211, "max_count": 117 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.257, "max_count": 59 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 11 },
+        "accumulate_ap": 48,
+        "effect": [
+          "폭 3.5m, 거리 10m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1650% 대미지",
+          "(마법공격력의 30%~350%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 3m 속도로 차지",
+          "나머지 범위는 최소 20%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.231, "max_count": 351 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.185, "max_count": 137 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.257, "max_count": 59 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 60,
+        "effect": [
+          "폭 3.5m, 거리 10m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1700% 대미지",
+          "(마법공격력의 30%~350%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 3m 속도로 차지",
+          "나머지 범위는 최소 20%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 3 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.19, "max_count": 429 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.159, "max_count": 156 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.193, "max_count": 78 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 13 },
+        "accumulate_ap": 73,
+        "effect": [
+          "폭 3.5m, 거리 10.5m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1750% 대미지",
+          "(마법공격력의 30%~350%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 3.5m 속도로 차지",
+          "나머지 범위는 최소 20%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.129, "max_count": 507 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.159, "max_count": 156 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.193, "max_count": 78 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.385, "max_count": 39 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 16 },
+        "accumulate_ap": 88,
+        "effect": [
+          "폭 3.5m, 거리 11m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1850% 대미지",
+          "(마법공격력의 40%~400%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 4m 속도로 차지",
+          "나머지 범위는 최소 25%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 4 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.113, "max_count": 585 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.139, "max_count": 176 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.154, "max_count": 98 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.257, "max_count": 59 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 17 },
+        "accumulate_ap": 106,
+        "effect": [
+          "폭 3.5m, 거리 11.5m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 1950% 대미지",
+          "(마법공격력의 40%~400%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 4.5m 속도로 차지",
+          "나머지 범위는 최소 25%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 4 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.098, "max_count": 663 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.129, "max_count": 195 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.154, "max_count": 98 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.193, "max_count": 78 }
+        ],
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 21 },
+        "accumulate_ap": 126,
+        "effect": [
+          "폭 4m, 거리 12m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 2050% 대미지",
+          "(마법공격력의 40%~400%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 5m 속도로 차지",
+          "나머지 범위는 최소 30%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.09, "max_count": 722 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.103, "max_count": 234 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.131, "max_count": 117 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.154, "max_count": 98 }
+        ],
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 25 },
+        "accumulate_ap": 148,
+        "effect": [
+          "폭 4m, 거리 12.5m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 2150% 대미지",
+          "(마법공격력의 40%~400%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 5.5m 속도로 차지",
+          "나머지 범위는 최소 30%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": { "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.075, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.111, "max_count": 137 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.129, "max_count": 117 }
+        ],
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 30 },
+        "accumulate_ap": 172,
+        "effect": [
+          "폭 4m, 거리 13m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 2250% 대미지",
+          "(마법공격력의 40%~400%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 6m 속도로 차지",
+          "나머지 범위는 최소 30%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": { "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.075, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.111, "max_count": 137 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.129, "max_count": 117 }
+        ],
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 35 },
+        "accumulate_ap": 196,
+        "effect": [
+          "폭 4m, 거리 14m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 2400% 대미지",
+          "(마법공격력의 50%~500%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 7m 속도로 차지",
+          "나머지 범위는 최소 35%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": { "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.075, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.111, "max_count": 137 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.129, "max_count": 117 }
+        ],
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 40 },
+        "accumulate_ap": 220,
+        "effect": [
+          "폭 4m, 거리 14m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 2550% 대미지",
+          "(마법공격력의 50%~500%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 7m 속도로 차지",
+          "나머지 범위는 최소 37%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.075, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.111, "max_count": 137 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.129, "max_count": 117 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 45 },
+        "accumulate_ap": 244,
+        "effect": [
+          "폭 4m, 거리 14m를 공격",
+          "스킬 버튼을 눌러 차지한 만큼의 범위에 마법공격력의 2700% 대미지",
+          "(마법공격력의 50%~500%의 대미지 추가)",
+          "최대 거리의 50% 거리부터 초당 7m 속도로 차지",
+          "나머지 범위는 최소 40%까지 거리에 따른 대미지 감소",
+          "재사용 대기 시간 9초"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27203,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "스핀 스퍼트",
+    "icon": "/images/skill/.webp",
+    "description": "목표 위치까지 빠르게 이동하며 동선 상에 3회의 공격을 가하는 스킬. 천체의 움직임을 흉내 내듯 몸을 회전시키며 이동하는 이 기술은 빠른 이동과 공격이라는 두 가지 효과를 동시에 얻을 수 있는 스킬이다.",
+    "total_need_ap": 245,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 8, "dex": 0, "int": 45, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1, "int": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [
+          "최대 6m의 거리 내에서 선택한 지점으로 이동하며 3m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 600% 대미지",
+          "(마법공격력의 10%~120%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 2.052, "max_count": 59 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 1 },
+        "accumulate_ap": 1,
+        "effect": [
+          "최대 7m의 거리 내에서 선택한 지점으로 이동하며 3m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 600% 대미지",
+          "(마법공격력의 10%~120%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 1.539, "max_count": 78 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 2 },
+        "accumulate_ap": 3,
+        "effect": [
+          "최대 7m의 거리 내에서 선택한 지점으로 이동하며 3m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 620% 대미지",
+          "(마법공격력의 10%~120%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 1.026, "max_count": 117 }],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 3 },
+        "accumulate_ap": 6,
+        "effect": [
+          "최대 7m의 거리 내에서 선택한 지점으로 이동하며 3m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 640% 대미지",
+          "(마법공격력의 10%~120%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.693, "max_count": 117 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 1.026, "max_count": 39 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 5 },
+        "accumulate_ap": 11,
+        "effect": [
+          "최대 7m의 거리 내에서 선택한 지점으로 이동하며 3m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 660% 대미지",
+          "(마법공격력의 10%~120%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.59, "max_count": 137 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.683, "max_count": 59 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 6 },
+        "accumulate_ap": 17,
+        "effect": [
+          "최대 7m의 거리 내에서 선택한 지점으로 이동하며 3m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 680% 대미지",
+          "(마법공격력의 10%~120%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 1, "int": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.436, "max_count": 176 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.513, "max_count": 78 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 7 },
+        "accumulate_ap": 25,
+        "effect": [
+          "최대 7m의 거리 내에서 선택한 지점으로 이동하며 3m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 700% 대미지",
+          "(마법공격력의 10%~120%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.375, "max_count": 215 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.257, "max_count": 98 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.385, "max_count": 39 }
+        ],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 9 },
+        "accumulate_ap": 35,
+        "effect": [
+          "최대 7.5m의 거리 내에서 선택한 지점으로 이동하며 3.5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 750% 대미지",
+          "(마법공격력의 14%~170%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.272, "max_count": 293 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.211, "max_count": 117 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.385, "max_count": 39 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 10 },
+        "accumulate_ap": 46,
+        "effect": [
+          "최대 7.5m의 거리 내에서 선택한 지점으로 이동하며 3.5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 770% 대미지",
+          "(마법공격력의 14%~170%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.231, "max_count": 351 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.185, "max_count": 137 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.385, "max_count": 39 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 11 },
+        "accumulate_ap": 58,
+        "effect": [
+          "최대 7.5m의 거리 내에서 선택한 지점으로 이동하며 3.5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 790% 대미지",
+          "(마법공격력의 14%~170%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 1, "int": 3 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.18, "max_count": 429 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.159, "max_count": 156 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.257, "max_count": 59 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 13 },
+        "accumulate_ap": 71,
+        "effect": [
+          "최대 7.5m의 거리 내에서 선택한 지점으로 이동하며 3.5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 810% 대미지",
+          "(마법공격력의 14%~170%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.134, "max_count": 488 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.165, "max_count": 156 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.206, "max_count": 59 },
+          { "title": "3회의 공격을 모두 성공", "training_exp": 0.513, "max_count": 39 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 3, "int": 16 },
+        "accumulate_ap": 86,
+        "effect": [
+          "최대 8m의 거리 내에서 선택한 지점으로 이동하며 4m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 850% 대미지",
+          "(마법공격력의 17%~210%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 1, "int": 4 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.113, "max_count": 585 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.139, "max_count": 176 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.206, "max_count": 59 },
+          { "title": "3회의 공격을 모두 성공", "training_exp": 0.359, "max_count": 59 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 3, "int": 18 },
+        "accumulate_ap": 103,
+        "effect": [
+          "최대 8m의 거리 내에서 선택한 지점으로 이동하며 4m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 870% 대미지",
+          "(마법공격력의 17%~210%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 3 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.103, "max_count": 644 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.129, "max_count": 195 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.154, "max_count": 78 },
+          { "title": "3회의 공격을 모두 성공", "training_exp": 0.257, "max_count": 78 }
+        ],
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 4, "int": 22 },
+        "accumulate_ap": 123,
+        "effect": [
+          "최대 8.5m의 거리 내에서 선택한 지점으로 이동하며 4.5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 900% 대미지",
+          "(마법공격력의 17%~210%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 1, "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.09, "max_count": 722 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.103, "max_count": 234 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.124, "max_count": 98 },
+          { "title": "3회의 공격을 모두 성공", "training_exp": 0.206, "max_count": 98 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 4, "int": 25 },
+        "accumulate_ap": 145,
+        "effect": [
+          "최대 8.5m의 거리 내에서 선택한 지점으로 이동하며 4.5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 950% 대미지",
+          "(마법공격력의 17%~210%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": { "str": 1, "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.077, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.103, "max_count": 117 },
+          { "title": "3회의 공격을 모두 성공", "training_exp": 0.18, "max_count": 117 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 5, "int": 30 },
+        "accumulate_ap": 170,
+        "effect": [
+          "최대 9m의 거리 내에서 선택한 지점으로 이동하며 4.5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 1000% 대미지",
+          "(마법공격력의 20%~240%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": { "str": 1, "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.077, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.103, "max_count": 117 },
+          { "title": "3회의 공격을 모두 성공", "training_exp": 0.18, "max_count": 117 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 6, "int": 35 },
+        "accumulate_ap": 195,
+        "effect": [
+          "최대 9.5m의 거리 내에서 선택한 지점으로 이동하며 5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 1100% 대미지",
+          "(마법공격력의 20%~240%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": { "str": 1, "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.077, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.103, "max_count": 117 },
+          { "title": "3회의 공격을 모두 성공", "training_exp": 0.18, "max_count": 117 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 7, "int": 40 },
+        "accumulate_ap": 220,
+        "effect": [
+          "최대 10m의 거리 내에서 선택한 지점으로 이동하며 5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 1200% 대미지",
+          "(마법공격력의 20%~240%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.077, "max_count": 878 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.088, "max_count": 293 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.103, "max_count": 117 },
+          { "title": "3회의 공격을 모두 성공", "training_exp": 0.18, "max_count": 117 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 8, "int": 45 },
+        "accumulate_ap": 245,
+        "effect": [
+          "최대 10.5m의 거리 내에서 선택한 지점으로 이동하며 5m의 폭으로 3회 공격",
+          "각 공격당 마법공격력의 1300% 대미지",
+          "(마법공격력의 20%~240%의 대미지 추가)",
+          "재사용 대기 시간 12초"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27204,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "리볼브 쇼크",
+    "icon": "/images/skill/.webp",
+    "description": "둘러싼 적들에게 빠르게 대미지를 입혀 큰 경직을 유도하는 스킬. 방출한 별의 에너지를 시전자를 중심으로 공전시켜 주변의 적들을 빠르게 휘몰아친다. 적들을 공전에 휩쓸리게 해 큰 경직과 함께 공격 타이밍을 빼앗아올 수 있는 스킬이다.",
+    "total_need_ap": 135,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 0, "int": 25, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 100%로 공격",
+          "(마법공격력의 1%~20%의 대미지 추가)",
+          "공격 당한 대상은 1.5초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 0.667, "max_count": 180 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 1,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 100%로 공격",
+          "(마법공격력의 1%~20%의 대미지 추가)",
+          "공격 당한 대상은 2초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 0.442, "max_count": 240 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 3,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 110%로 공격",
+          "(마법공격력의 1%~20%의 대미지 추가)",
+          "공격 당한 대상은 2초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 0.334, "max_count": 360 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 5,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 115%로 공격",
+          "(마법공격력의 1%~20%의 대미지 추가)",
+          "공격 당한 대상은 2초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.225, "max_count": 360 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.334, "max_count": 120 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 8,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 120%로 공격",
+          "(마법공격력의 1%~20%의 대미지 추가)",
+          "공격 당한 대상은 2초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.175, "max_count": 420 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.222, "max_count": 180 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 11,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 125%로 공격",
+          "(마법공격력의 1%~20%의 대미지 추가)",
+          "공격 당한 대상은 2초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.142, "max_count": 540 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.167, "max_count": 240 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 14,
+        "effect": [
+          "반경 4.5m의 범위를 마법공격력의 130%로 공격",
+          "(마법공격력의 1%~20%의 대미지 추가)",
+          "공격 당한 대상은 2초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.112, "max_count": 720 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.084, "max_count": 300 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.125, "max_count": 120 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 9 },
+        "accumulate_ap": 20,
+        "effect": [
+          "반경 4.7m의 범위를 마법공격력의 135%로 공격",
+          "(마법공격력의 3%~40%의 대미지 추가)",
+          "공격 당한 대상은 2.5초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.089, "max_count": 900 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.069, "max_count": 360 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.084, "max_count": 180 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 27,
+        "effect": [
+          "반경 4.7m의 범위를 마법공격력의 140%로 공격",
+          "(마법공격력의 3%~40%의 대미지 추가)",
+          "공격 당한 대상은 2.5초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.071, "max_count": 1080 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.06, "max_count": 420 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.084, "max_count": 180 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 11 },
+        "accumulate_ap": 35,
+        "effect": [
+          "반경 4.7m의 범위를 마법공격력의 145%로 공격",
+          "(마법공격력의 3%~40%의 대미지 추가)",
+          "공격 당한 대상은 2.5초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.058, "max_count": 1320 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.052, "max_count": 480 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.063, "max_count": 240 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 44,
+        "effect": [
+          "반경 4.7m의 범위를 마법공격력의 150%로 공격",
+          "(마법공격력의 3%~40%의 대미지 추가)",
+          "공격 당한 대상은 2.5초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.045, "max_count": 1800 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.052, "max_count": 480 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.063, "max_count": 240 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 14 },
+        "accumulate_ap": 56,
+        "effect": [
+          "반경 5m의 범위를 마법공격력의 160%로 공격",
+          "(마법공격력의 5%~70%의 대미지 추가)",
+          "공격 당한 대상은 3초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 3 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.04, "max_count": 1980 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.045, "max_count": 540 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.05, "max_count": 300 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 15 },
+        "accumulate_ap": 71,
+        "effect": [
+          "반경 5m의 범위를 마법공격력의 180%로 공격",
+          "(마법공격력의 5%~70%의 대미지 추가)",
+          "공격 당한 대상은 3초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.036, "max_count": 2220 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.042, "max_count": 600 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.05, "max_count": 300 }
+        ],
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 18 },
+        "accumulate_ap": 89,
+        "effect": [
+          "반경 5.5m의 범위를 마법공격력의 210%로 공격",
+          "(마법공격력의 5%~70%의 대미지 추가)",
+          "공격 당한 대상은 3.5초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 5 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.033, "max_count": 2460 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.034, "max_count": 720 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.043, "max_count": 360 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 110,
+        "effect": [
+          "반경 5.5m의 범위를 마법공격력의 230%로 공격",
+          "(마법공격력의 5%~70%의 대미지 추가)",
+          "공격 당한 대상은 3.5초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.03, "max_count": 2700 },
+          { "title": "3명 이상의 적을 동시에 공격", "training_exp": 0.034, "max_count": 720 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.036, "max_count": 420 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 25 },
+        "accumulate_ap": 135,
+        "effect": [
+          "반경 5.5m의 범위를 마법공격력의 250%로 공격",
+          "(마법공격력의 5%~70%의 대미지 추가)",
+          "공격 당한 대상은 4초 경직",
+          "재사용 대기 시간 15초"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27205,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "스타사인 스프레드",
+    "icon": "/images/skill/.webp",
+    "description": "적의 공격 능력을 감소시키는 동시에 아군의 생명력을 회복시키는 스킬. 다양한 효과를 가진 별자리를 전개해 범위 안의 적과 아군 모두에게 영향을 준다. 이 특별한 별자리는 시전자와 대상들의 인과 연에 반응해 긍정적인 영향을 가진 상대에겐 치유를, 부정적인 인과를 초래하는 상대에겐 그 칼날을 무디게 해 약화시키는 능력을 가지고 있다.",
+    "total_need_ap": 139,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 5, "int": 20, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [
+          "반경 5m 범위 내의 파티원 생명력 150 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 9초간 1% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "적에게 스킬을 성공", "training_exp": 1, "max_count": 120 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 1 },
+        "accumulate_ap": 2,
+        "effect": [
+          "반경 5m 범위 내의 파티원 생명력 200 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 9초간 1% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "적에게 스킬을 성공", "training_exp": 0.667, "max_count": 180 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 2 },
+        "accumulate_ap": 4,
+        "effect": [
+          "반경 5m 범위 내의 파티원 생명력 200 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 10초간 1.5% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "적에게 스킬을 성공", "training_exp": 0.5, "max_count": 240 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 3 },
+        "accumulate_ap": 6,
+        "effect": [
+          "반경 5m 범위 내의 파티원 생명력 200 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 11초간 2% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.334, "max_count": 240 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.667, "max_count": 60 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 4 },
+        "accumulate_ap": 9,
+        "effect": [
+          "반경 5m 범위 내의 파티원 생명력 200 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 12초간 2.5% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.267, "max_count": 300 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.334, "max_count": 120 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 5 },
+        "accumulate_ap": 13,
+        "effect": [
+          "반경 5m 범위 내의 파티원 생명력 200 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 13초간 3% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1, "int": 2 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.217, "max_count": 360 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.334, "max_count": 120 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 6 },
+        "accumulate_ap": 18,
+        "effect": [
+          "반경 5m 범위 내의 파티원 생명력 200 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 14초간 3.5% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.192, "max_count": 420 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.139, "max_count": 180 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.25, "max_count": 60 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 8 },
+        "accumulate_ap": 25,
+        "effect": [
+          "반경 5.5m 범위 내의 파티원 생명력 250 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 15초간 4% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.134, "max_count": 600 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.137, "max_count": 180 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.25, "max_count": 60 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 9 },
+        "accumulate_ap": 33,
+        "effect": [
+          "반경 5.5m 범위 내의 파티원 생명력 250 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 16초간 4.5% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.111, "max_count": 720 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.105, "max_count": 240 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.125, "max_count": 120 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 10 },
+        "accumulate_ap": 42,
+        "effect": [
+          "반경 5.5m 범위 내의 파티원 생명력 250 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 17초간 5% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 1, "int": 2 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.092, "max_count": 900 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.104, "max_count": 240 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.125, "max_count": 120 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 11 },
+        "accumulate_ap": 52,
+        "effect": [
+          "반경 5.5m 범위 내의 파티원 생명력 250 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 18초간 5.5% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.064, "max_count": 1020 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.104, "max_count": 240 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.125, "max_count": 120 },
+          { "title": "3명 이상의 적에게 스킬을 성공", "training_exp": 0.25, "max_count": 60 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 13 },
+        "accumulate_ap": 64,
+        "effect": [
+          "반경 5.5m 범위 내의 파티원 생명력 300 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 20초간 6% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.055, "max_count": 1200 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.08, "max_count": 300 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.084, "max_count": 180 },
+          { "title": "3명 이상의 적에게 스킬을 성공", "training_exp": 0.125, "max_count": 120 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 14 },
+        "accumulate_ap": 77,
+        "effect": [
+          "반경 5.5m 범위 내의 파티원 생명력 300 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 21초간 6.5% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.04, "max_count": 1620 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.084, "max_count": 300 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.084, "max_count": 180 },
+          { "title": "3명 이상의 적에게 스킬을 성공", "training_exp": 0.125, "max_count": 120 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 4, "int": 15 },
+        "accumulate_ap": 94,
+        "effect": [
+          "반경 6m 범위 내의 파티원 생명력 350 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 24초간 7% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 1, "int": 3 },
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.044, "max_count": 1500 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.067, "max_count": 360 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.084, "max_count": 180 },
+          { "title": "3명 이상의 적에게 스킬을 성공", "training_exp": 0.084, "max_count": 180 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 4, "int": 17 },
+        "accumulate_ap": 114,
+        "effect": [
+          "반경 6m 범위 내의 파티원 생명력 400 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 27초간 7.5% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "적에게 스킬을 성공", "training_exp": 0.037, "max_count": 1800 },
+          { "title": "아군에게 스킬을 성공", "training_exp": 0.061, "max_count": 420 },
+          { "title": "2명 이상의 적에게 스킬을 성공", "training_exp": 0.063, "max_count": 240 },
+          { "title": "3명 이상의 적에게 스킬을 성공", "training_exp": 0.084, "max_count": 180 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 5, "int": 20 },
+        "accumulate_ap": 139,
+        "effect": [
+          "반경 6m 범위 내의 파티원 생명력 500 회복",
+          "같은 범위 내 적의 최소, 최대 대미지와 마법공격력을 30초간 8% 감소",
+          "재사용 대기 시간 20초"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27206,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "그라비테이셔널 풀",
+    "icon": "/images/skill/.webp",
+    "description": "강한 중력장을 이용해 원하는 곳으로 빠르게 이동하는 스킬 모든 것을 빨아들이는 공간을 만들고 그 힘에 몸을 맡겨 빠르게 이동한다. 스킬 발동 후 시간이 지날수록 이동할 수 있는 범위가 넓어진다.",
+    "total_need_ap": 160,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 3, "dex": 0, "int": 15, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1, "int": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [
+          "이동 가능 최대 범위 반경 6m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.4m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬 사용에 성공", "training_exp": 2.667, "max_count": 45 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 1 },
+        "accumulate_ap": 1,
+        "effect": [
+          "이동 가능 최대 범위 반경 6m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.4m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬 사용에 성공", "training_exp": 1.767, "max_count": 60 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 2 },
+        "accumulate_ap": 3,
+        "effect": [
+          "이동 가능 최대 범위 반경 6.2m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.4m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬 사용에 성공", "training_exp": 1.334, "max_count": 90 }],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 3 },
+        "accumulate_ap": 6,
+        "effect": [
+          "이동 가능 최대 범위 반경 6.4m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.4m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬 사용에 성공", "training_exp": 1.067, "max_count": 105 }],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 4 },
+        "accumulate_ap": 11,
+        "effect": [
+          "이동 가능 최대 범위 반경 6.6m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.4m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬 사용에 성공", "training_exp": 0.887, "max_count": 135 }],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 5 },
+        "accumulate_ap": 17,
+        "effect": [
+          "이동 가능 최대 범위 반경 6.8m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.4m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 1, "int": 1 },
+        "training_list": [{ "title": "스킬 사용에 성공", "training_exp": 0.7, "max_count": 165 }],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 6 },
+        "accumulate_ap": 24,
+        "effect": [
+          "이동 가능 최대 범위 반경 7m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.4m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.467, "max_count": 165 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 1.334, "max_count": 30 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 7 },
+        "accumulate_ap": 33,
+        "effect": [
+          "이동 가능 최대 범위 반경 7.2m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.8m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.354, "max_count": 225 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.667, "max_count": 60 }
+        ],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 8 },
+        "accumulate_ap": 43,
+        "effect": [
+          "이동 가능 최대 범위 반경 7.4m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.8m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.284, "max_count": 270 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.434, "max_count": 90 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 9 },
+        "accumulate_ap": 54,
+        "effect": [
+          "이동 가능 최대 범위 반경 7.6m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.8m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.24, "max_count": 330 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.334, "max_count": 120 }
+        ],
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 10 },
+        "accumulate_ap": 66,
+        "effect": [
+          "이동 가능 최대 범위 반경 7.8m",
+          "최대 이동 가능 범위의 60%로 시작",
+          "초당 2.8m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.164, "max_count": 390 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.367, "max_count": 150 }
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 11 },
+        "accumulate_ap": 80,
+        "effect": [
+          "이동 가능 최대 범위 반경 8m",
+          "최대 이동 가능 범위의 65%로 시작",
+          "초당 3m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.147, "max_count": 450 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.3, "max_count": 180 }
+        ],
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 12 },
+        "accumulate_ap": 96,
+        "effect": [
+          "이동 가능 최대 범위 반경 8.3m",
+          "최대 이동 가능 범위의 65%로 시작",
+          "초당 3m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.13, "max_count": 495 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.267, "max_count": 210 }
+        ],
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 13 },
+        "accumulate_ap": 115,
+        "effect": [
+          "이동 가능 최대 범위 반경 8.6m",
+          "최대 이동 가능 범위의 65%로 시작",
+          "초당 3m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 1, "int": 1 },
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.117, "max_count": 555 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.234, "max_count": 240 }
+        ],
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 14 },
+        "accumulate_ap": 136,
+        "effect": [
+          "이동 가능 최대 범위 반경 9m",
+          "최대 이동 가능 범위의 65%로 시작",
+          "초당 3.2m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬 사용에 성공", "training_exp": 0.097, "max_count": 675 },
+          { "title": "100% 차지 상태로 스킬을 성공", "training_exp": 0.184, "max_count": 300 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 3, "int": 15 },
+        "accumulate_ap": 160,
+        "effect": [
+          "이동 가능 최대 범위 반경 9.5m",
+          "최대 이동 가능 범위의 65%로 시작",
+          "초당 3.5m씩 이동 가능 범위 증가",
+          "재사용 대기 시간 9초"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27207,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "전투 점성술 마스터리",
+    "icon": "/images/skill/.webp",
+    "description": "점성술은 별로부터 얻은 지식을 활용, 발전시켜 에린 생명체들의 가능성을 읽는 능력이다. 숙련된 점성술사는 단순한 예측을 넘어 작은 범위 안에서나마 인과의 연결과 흐름을 자르고 잇는 것이 가능해지는데 이를 전투에 활용한 것이 점성술사의 전투 방식이다. 별의 힘과 점술 카드를 통해 전투의 흐름을 읽고 최선의 수를 판단하며, 적과의 인과 관계를 낫으로 잘라내 피하기 힘든 대미지를 주는 이 전투 방식은 무턱대고 돌진하는 상대에게 공포를 안겨줄 것이다.",
+    "total_need_ap": 150,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 5, "dex": 0, "int": 45, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1, "int": 2 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["대형 낫 장착 시 마법 공격력 5 증가"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 2 },
+        "training_list": [{ "title": "점성술 스킬로 적을 공격", "training_exp": 1.334, "max_count": 90 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 2 },
+        "accumulate_ap": 1,
+        "effect": ["대형 낫 장착 시 마법 공격력 15 증가"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 2 },
+        "training_list": [{ "title": "점성술 스킬로 적을 공격", "training_exp": 1, "max_count": 120 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 4 },
+        "accumulate_ap": 3,
+        "effect": ["대형 낫 장착 시 마법 공격력 20 증가"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 3 },
+        "training_list": [{ "title": "점성술 스킬로 적을 공격", "training_exp": 0.8, "max_count": 150 }],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 6 },
+        "accumulate_ap": 6,
+        "effect": ["대형 낫 장착 시 마법 공격력 25 증가"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 2 },
+        "training_list": [{ "title": "점성술 스킬로 적을 공격", "training_exp": 0.667, "max_count": 180 }],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 9 },
+        "accumulate_ap": 10,
+        "effect": ["대형 낫 장착 시 마법 공격력 30 증가"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 2 },
+        "training_list": [{ "title": "점성술 스킬로 적을 공격", "training_exp": 0.534, "max_count": 225 }],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 11 },
+        "accumulate_ap": 15,
+        "effect": ["대형 낫 장착 시 마법 공격력 35 증가"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "str": 1, "int": 3 },
+        "training_list": [{ "title": "점성술 스킬로 적을 공격", "training_exp": 0.267, "max_count": 450 }],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 1, "int": 13 },
+        "accumulate_ap": 21,
+        "effect": ["대형 낫 장착 시 마법 공격력 40 증가"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.167, "max_count": 600 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.2, "max_count": 75 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 16 },
+        "accumulate_ap": 29,
+        "effect": ["대형 낫 장착 시 마법 공격력 50 증가"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.114, "max_count": 900 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.14, "max_count": 105 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 18 },
+        "accumulate_ap": 38,
+        "effect": ["대형 낫 장착 시 마법 공격력 55 증가"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 3 },
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.087, "max_count": 1200 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.11, "max_count": 135 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 20 },
+        "accumulate_ap": 48,
+        "effect": ["대형 낫 장착 시 마법 공격력 60 증가"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "str": 1, "int": 3 },
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.067, "max_count": 1500 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.09, "max_count": 165 }
+        ],
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 2, "int": 23 },
+        "accumulate_ap": 60,
+        "effect": ["대형 낫 장착 시 마법 공격력 65 증가"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 3 },
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.054, "max_count": 1650 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.067, "max_count": 225 },
+          { "title": "점성술 스킬 공격으로 마지막 일격을 가함", "training_exp": 0.5, "max_count": 30 }
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 3, "int": 26 },
+        "accumulate_ap": 74,
+        "effect": ["대형 낫 장착 시 마법 공격력 75 증가"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 1, "int": 5 },
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.05, "max_count": 1800 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.057, "max_count": 270 },
+          { "title": "점성술 스킬 공격으로 마지막 일격을 가함", "training_exp": 0.24, "max_count": 60 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 3, "int": 29 },
+        "accumulate_ap": 90,
+        "effect": ["대형 낫 장착 시 마법 공격력 80 증가"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 4 },
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.044, "max_count": 1950 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.05, "max_count": 300 },
+          { "title": "점성술 스킬 공격으로 마지막 일격을 가함", "training_exp": 0.167, "max_count": 90 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 4, "int": 34 },
+        "accumulate_ap": 108,
+        "effect": ["대형 낫 장착 시 마법 공격력 90 증가"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "str": 1, "int": 7 },
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.04, "max_count": 2250 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.046, "max_count": 330 },
+          { "title": "점성술 스킬 공격으로 마지막 일격을 가함", "training_exp": 0.1, "max_count": 150 }
+        ],
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 4, "int": 38 },
+        "accumulate_ap": 128,
+        "effect": ["대형 낫 장착 시 마법 공격력 95 증가"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "점성술 스킬로 적을 공격", "training_exp": 0.037, "max_count": 2400 },
+          { "title": "점성술 스킬 공격이 크리티컬로 발동", "training_exp": 0.04, "max_count": 375 },
+          { "title": "점성술 스킬 공격으로 마지막 일격을 가함", "training_exp": 0.08, "max_count": 180 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "str": 5, "int": 45 },
+        "accumulate_ap": 150,
+        "effect": ["대형 낫 장착 시 마법 공격력 100 증가"]
+      }
+    ]
+  },
+  {
+    "skill_id": 27208,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "그랜드 컨정션",
+    "icon": "/images/skill/.webp",
+    "description": "점성술로 행하는 공격 기술들에 다양한 효과를 부여하는 스킬. 점성술사는 자신의 스킬들에 별의 힘과 흐름을 이음으로써 본래의 능력을 넘어선 다양한 추가 효과를 가져올 수 있다. 스킬에 연결시키는 이 별의 힘과 흐름을 스텔라라고 칭하며, 어떤 스텔라들을 배치하는가에 따라 각 스킬은 공격형, 지원형, 방해형, 행운형 중 하나의 스타일이 뚜렷해진다. 별의 힘과 흐름을 인위적으로 가져와야만 하는 기술인 만큼 별의 성채에 존재하는 가능성을 잣는 물레의 도움을 받아야만 한다. 숙련될수록 스킬들에 배치할 수 있는 스텔라의 수도 증가하며, 더 강력한 스텔라도 활용할 수 있게 된다.",
+    "total_need_ap": 140,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 7, "int": 15, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["커스터마이즈 효과 10개 배치 가능"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 2, "max_count": 60 }
+        ],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 1 },
+        "accumulate_ap": 1,
+        "effect": ["커스터마이즈 효과 20개 배치 가능"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 1.334, "max_count": 90 }
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 2 },
+        "accumulate_ap": 2,
+        "effect": ["커스터마이즈 효과 21개 배치 가능"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 1, "max_count": 120 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 3 },
+        "accumulate_ap": 4,
+        "effect": ["커스터마이즈 효과 22개 배치 가능"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.834, "max_count": 120 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 4 },
+        "accumulate_ap": 7,
+        "effect": ["커스터마이즈 효과 24개 배치 가능"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 150 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 5 },
+        "accumulate_ap": 11,
+        "effect": ["커스터마이즈 효과 26개 배치 가능"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.554, "max_count": 180 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 6 },
+        "accumulate_ap": 16,
+        "effect": ["커스터마이즈 효과 28개 배치 가능"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.75, "max_count": 120 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 7 },
+        "accumulate_ap": 24,
+        "effect": ["커스터마이즈 효과 30개 배치 가능"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 135 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 8 },
+        "accumulate_ap": 33,
+        "effect": ["커스터마이즈 효과 32개 배치 가능"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.6, "max_count": 150 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 }
+        ],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 9 },
+        "accumulate_ap": 43,
+        "effect": ["커스터마이즈 효과 34개 배치 가능"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.546, "max_count": 165 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 15 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 10 },
+        "accumulate_ap": 54,
+        "effect": ["커스터마이즈 효과 36개 배치 가능"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.5, "max_count": 120 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 30 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 30 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.667, "max_count": 30 }
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 4, "int": 11 },
+        "accumulate_ap": 69,
+        "effect": ["커스터마이즈 효과 40개 배치 가능"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.444, "max_count": 135 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.444, "max_count": 45 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.444, "max_count": 45 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.444, "max_count": 45 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 4, "int": 12 },
+        "accumulate_ap": 85,
+        "effect": ["커스터마이즈 효과 42개 배치 가능"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.25, "max_count": 120 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.25, "max_count": 120 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.25, "max_count": 120 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.25, "max_count": 120 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 5, "int": 13 },
+        "accumulate_ap": 102,
+        "effect": ["커스터마이즈 효과 44개 배치 가능"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 2, "int": 1 },
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.222, "max_count": 135 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.222, "max_count": 135 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.222, "max_count": 135 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.222, "max_count": 135 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 5, "int": 14 },
+        "accumulate_ap": 120,
+        "effect": ["커스터마이즈 효과 48개 배치 가능"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "공격형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.2, "max_count": 150 },
+          { "title": "지원형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.2, "max_count": 150 },
+          { "title": "방해형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.2, "max_count": 150 },
+          { "title": "행운형으로 커스터마이즈한 스킬의 사용에 성공", "training_exp": 0.2, "max_count": 150 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 7, "int": 15 },
+        "accumulate_ap": 140,
+        "effect": ["커스터마이즈 효과 53개 배치 가능"]
+      }
+    ]
+  },
+  {
+    "skill_id": 27209,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "데스티니 위빙",
+    "icon": "/images/skill/.webp",
+    "description": "점성술사는 점술 카드를 통해 별의 흐름을 읽어 전투에서 최선의 수를 판단하는 특별한 능력을 가지고 있다. 카드를 뽑는 일련의 행위를 통해 전투의 승기를 가져올 수 있는 흐름을 판단해 가져오거나, 상대에게 치명적인 피해를 줄 수 있는 최적의 기술을 예측하기도 한다. 특히 카드를 어떻게 구성하느냐에 따라 원하는 결과들만 집중해서 읽어낼 수 있게 된다. 자신의 전투 스타일에 맞춰 카드를 구성하는 일련의 과정을 체계화한 것이 바로 이 데스티니 위빙 스킬이다.",
+    "total_need_ap": 140,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 0, "int": 20, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["배치할 수 있는 점술 카드 3개", "드로우에 필요한 스킬 사용 횟수 10", "최대 마나 +0"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 2, "max_count": 15 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 2, "max_count": 15 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 2, "max_count": 15 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 2, "max_count": 15 }
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 1 },
+        "accumulate_ap": 1,
+        "effect": ["배치할 수 있는 점술 카드 3개", "드로우에 필요한 스킬 사용 횟수 10", "최대 마나 +5"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 2, "max_count": 15 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 2, "max_count": 15 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 2, "max_count": 15 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 2, "max_count": 15 }
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 3,
+        "effect": ["배치할 수 있는 점술 카드 3개", "드로우에 필요한 스킬 사용 횟수 10", "최대 마나 +7"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 1, "max_count": 30 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 1, "max_count": 30 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 1, "max_count": 30 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 1, "max_count": 30 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 3 },
+        "accumulate_ap": 5,
+        "effect": ["배치할 수 있는 점술 카드 3개", "드로우에 필요한 스킬 사용 횟수 10", "최대 마나 +9"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 1, "max_count": 30 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 1, "max_count": 30 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 1, "max_count": 30 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 1, "max_count": 30 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 5 },
+        "accumulate_ap": 8,
+        "effect": ["배치할 수 있는 점술 카드 3개", "드로우에 필요한 스킬 사용 횟수 10", "최대 마나 +11"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.667, "max_count": 45 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.667, "max_count": 45 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.667, "max_count": 45 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.667, "max_count": 45 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 6 },
+        "accumulate_ap": 11,
+        "effect": ["배치할 수 있는 점술 카드 3개", "드로우에 필요한 스킬 사용 횟수 10", "최대 마나 +13"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.667, "max_count": 45 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.667, "max_count": 45 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.667, "max_count": 45 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.667, "max_count": 45 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 7 },
+        "accumulate_ap": 16,
+        "effect": ["배치할 수 있는 점술 카드 3개", "드로우에 필요한 스킬 사용 횟수 10", "최대 마나 +15"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.5, "max_count": 60 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.5, "max_count": 60 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.5, "max_count": 60 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.5, "max_count": 60 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 9 },
+        "accumulate_ap": 24,
+        "effect": [
+          "배치할 수 있는 점술 카드 4개",
+          "드로우에 필요한 스킬 사용 횟수 9",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "최대 마나 +15"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.5, "max_count": 60 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.5, "max_count": 60 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.5, "max_count": 60 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.5, "max_count": 60 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 10 },
+        "accumulate_ap": 33,
+        "effect": [
+          "배치할 수 있는 점술 카드 4개",
+          "드로우에 필요한 스킬 사용 횟수 9",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "최대 마나 +17"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.4, "max_count": 75 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.4, "max_count": 75 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.4, "max_count": 75 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.4, "max_count": 75 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 11 },
+        "accumulate_ap": 43,
+        "effect": [
+          "배치할 수 있는 점술 카드 4개",
+          "드로우에 필요한 스킬 사용 횟수 9",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "최대 마나 +19"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.334, "max_count": 90 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.334, "max_count": 90 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.334, "max_count": 90 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.334, "max_count": 90 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 12 },
+        "accumulate_ap": 55,
+        "effect": [
+          "배치할 수 있는 점술 카드 4개",
+          "드로우에 필요한 스킬 사용 횟수 9",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "최대 마나 +21"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.3, "max_count": 105 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.3, "max_count": 105 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.3, "max_count": 105 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.3, "max_count": 105 }
+        ],
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 13 },
+        "accumulate_ap": 68,
+        "effect": [
+          "배치할 수 있는 점술 카드 5개",
+          "드로우에 필요한 스킬 사용 횟수 8",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "최대 마나 +21"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.234, "max_count": 135 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.234, "max_count": 135 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.234, "max_count": 135 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.234, "max_count": 135 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 14 },
+        "accumulate_ap": 82,
+        "effect": [
+          "배치할 수 있는 점술 카드 5개",
+          "드로우에 필요한 스킬 사용 횟수 8",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "최대 마나 +23"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.2, "max_count": 150 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.2, "max_count": 150 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.2, "max_count": 150 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.2, "max_count": 150 }
+        ],
+        "need_ap": 19,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 16 },
+        "accumulate_ap": 99,
+        "effect": [
+          "배치할 수 있는 점술 카드 5개",
+          "드로우에 필요한 스킬 사용 횟수 8",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "5개의 동일 타입 카드 배치로 더욱 강한 시너지 효과",
+          "최대 마나 +23"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "int": 3 },
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.167, "max_count": 180 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.167, "max_count": 180 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.167, "max_count": 180 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.167, "max_count": 180 }
+        ],
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 17 },
+        "accumulate_ap": 118,
+        "effect": [
+          "배치할 수 있는 점술 카드 5개",
+          "드로우에 필요한 스킬 사용 횟수 8",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "5개의 동일 타입 카드 배치로 더욱 강한 시너지 효과",
+          "최대 마나 +25"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "공격형 카드를 드로우해서 발동", "training_exp": 0.134, "max_count": 225 },
+          { "title": "지원형 카드를 드로우해서 발동", "training_exp": 0.134, "max_count": 225 },
+          { "title": "방해형 카드를 드로우해서 발동", "training_exp": 0.134, "max_count": 225 },
+          { "title": "행운형 카드를 드로우해서 발동", "training_exp": 0.134, "max_count": 225 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "int": 20 },
+        "accumulate_ap": 140,
+        "effect": [
+          "배치할 수 있는 점술 카드 5개",
+          "드로우에 필요한 스킬 사용 횟수 7",
+          "2개의 같은 타입 카드 배치 시 시너지 효과 발동",
+          "5개의 동일 타입 카드 배치로 더욱 강한 시너지 효과",
+          "최대 마나 +25"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27210,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "페이탈 크러시",
+    "icon": "/images/skill/.webp",
+    "description": "점술 카드는 별의 흐름을 읽는 매개체이자 그 자체로 큰 힘을 가진 도구이다. 페이탈 크러시는 이 점술 카드를 던져 힘을 폭발시키는 것으로 적에게 큰 피해를 주는 점성술사의 또 다른 공격 기술이다. 데스티니 위빙 스킬을 통해 세팅한 카드들을 모두 한차례 이상 드로우 후 발동에 성공 시 이 스킬을 사용할 수 있으며 카드의 종류에 따라 다양한 효과가 추가된다.",
+    "total_need_ap": 120,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 3, "int": 15, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": [
+          "최대 15m 거리 내 적을 마법공격력의 1100%로 공격",
+          "(마법공격력의 100%~300%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 4, "max_count": 30 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 1 },
+        "accumulate_ap": 1,
+        "effect": [
+          "최대 15m 거리 내 적을 마법공격력의 1100%로 공격",
+          "(마법공격력의 100%~300%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 4, "max_count": 30 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 2 },
+        "accumulate_ap": 3,
+        "effect": [
+          "최대 15m 거리 내 적을 마법공격력의 1150%로 공격",
+          "(마법공격력의 100%~300%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "int": 1 },
+        "training_list": [{ "title": "스킬로 적을 공격", "training_exp": 2.667, "max_count": 45 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 3 },
+        "accumulate_ap": 5,
+        "effect": [
+          "최대 15.5m 거리 내 적을 마법공격력의 1200%로 공격",
+          "(마법공격력의 100%~300%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 1.734, "max_count": 45 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 2.7, "max_count": 15 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 4 },
+        "accumulate_ap": 8,
+        "effect": [
+          "최대 15.5m 거리 내 적을 마법공격력의 1300%로 공격",
+          "(마법공격력의 100%~300%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 1.3, "max_count": 60 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 2.587, "max_count": 15 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 5 },
+        "accumulate_ap": 11,
+        "effect": [
+          "최대 16m 거리 내 적을 마법공격력의 1350%로 공격",
+          "(마법공격력의 100%~300%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 1.034, "max_count": 75 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 1.32, "max_count": 30 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 6 },
+        "accumulate_ap": 15,
+        "effect": [
+          "최대 16m 거리 내 적을 마법공격력의 1400%로 공격",
+          "(마법공격력의 100%~300%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.767, "max_count": 105 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.88, "max_count": 30 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 1, "max_count": 15 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 7 },
+        "accumulate_ap": 20,
+        "effect": [
+          "최대 17m 거리 내 적을 마법공격력의 1450%로 공격",
+          "(마법공격력의 120%~400%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.52, "max_count": 150 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.56, "max_count": 45 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 1, "max_count": 15 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1, "int": 8 },
+        "accumulate_ap": 26,
+        "effect": [
+          "최대 17m 거리 내 적을 마법공격력의 1500%로 공격",
+          "(마법공격력의 120%~400%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.434, "max_count": 180 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.534, "max_count": 45 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.967, "max_count": 15 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 9 },
+        "accumulate_ap": 33,
+        "effect": [
+          "최대 17m 거리 내 적을 마법공격력의 1550%로 공격",
+          "(마법공격력의 120%~400%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.367, "max_count": 210 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.42, "max_count": 60 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.534, "max_count": 30 }
+        ],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 10 },
+        "accumulate_ap": 41,
+        "effect": [
+          "최대 17m 거리 내 적을 마법공격력의 1600%로 공격",
+          "(마법공격력의 120%~400%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.32, "max_count": 240 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.42, "max_count": 60 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.5, "max_count": 30 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 11 },
+        "accumulate_ap": 52,
+        "effect": [
+          "최대 18m 거리 내 적을 마법공격력의 1650%로 공격",
+          "(마법공격력의 150%~450%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.287, "max_count": 270 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.334, "max_count": 75 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.494, "max_count": 30 }
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 12 },
+        "accumulate_ap": 65,
+        "effect": [
+          "최대 18m 거리 내 적을 마법공격력의 1700%로 공격",
+          "(마법공격력의 150%~450%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.254, "max_count": 300 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.32, "max_count": 75 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.367, "max_count": 45 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 13 },
+        "accumulate_ap": 81,
+        "effect": [
+          "최대 19m 거리 내 적을 마법공격력의 1800%로 공격",
+          "(마법공격력의 150%~450%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 1, "int": 1 },
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.214, "max_count": 375 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.307, "max_count": 75 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.334, "max_count": 45 }
+        ],
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2, "int": 14 },
+        "accumulate_ap": 99,
+        "effect": [
+          "최대 19m 거리 내 적을 마법공격력의 1900%로 공격",
+          "(마법공격력의 150%~450%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬로 적을 공격", "training_exp": 0.177, "max_count": 450 },
+          { "title": "적에게 마지막 일격을 가함", "training_exp": 0.227, "max_count": 105 },
+          { "title": "공격이 크리티컬로 발동", "training_exp": 0.267, "max_count": 60 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 15 },
+        "accumulate_ap": 120,
+        "effect": [
+          "최대 20m 거리 내 적을 마법공격력의 2000%로 공격",
+          "(마법공격력의 150%~450%의 대미지 추가)",
+          "데스티니 위빙으로 세팅한 카드 수에 비례해 증가",
+          "세팅한 카드의 종류에 따라 추가 효과",
+          "공격 타입 카드 1장당 보너스 대미지 5%",
+          "지원 타입 카드 1장당 파티원 생명력 150 회복",
+          "방해 타입 카드 1장당 대상의 마법방어 5, 마법보호 3 무시",
+          "행운 타입 카드 1장당 크리티컬 대미지 2% 증가",
+          "카드를 세팅한 수만큼 드로우해서 발동 성공 시 사용 가능"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27211,
+    "talent": ["battleastrology"],
+    "talent_kor": ["전투 점성술 "],
+    "category": "astrology",
+    "category_kor": "점성술",
+    "name_kor": "스타 시타델",
+    "icon": "/images/skill/.webp",
+    "description": "점성술사만이 인지 가능한 공간인 별의 성채로 이동하는 스킬. 숙련될 수록 공간과의 연결이 강해져, 별의 성채로부터 흘러나오는 마나를 자신의 마나로 활용할 수 있게 된다.",
+    "total_need_ap": 89,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 10, "int": 0, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "dex": 1 },
+        "training_list": [{ "title": "임시", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +5"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 1.334, "max_count": 75 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 1.2, "max_count": 15 }
+        ],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 1,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +10"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "dex": 1 },
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 1, "max_count": 105 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.6, "max_count": 30 }
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 1 },
+        "accumulate_ap": 2,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +15"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.667, "max_count": 150 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.4, "max_count": 45 }
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 4,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +20"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "dex": 1 },
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.467, "max_count": 225 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.4, "max_count": 45 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 2 },
+        "accumulate_ap": 6,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +25"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "dex": 1 },
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.334, "max_count": 300 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.4, "max_count": 45 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 3 },
+        "accumulate_ap": 9,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +30"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 1 },
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.267, "max_count": 375 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.4, "max_count": 45 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 4 },
+        "accumulate_ap": 12,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +35"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.234, "max_count": 450 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 17,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +50"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.2, "max_count": 525 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 22,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +60"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.167, "max_count": 600 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 28,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +70"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 1 },
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.134, "max_count": 750 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 5 },
+        "accumulate_ap": 35,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +80"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.1, "max_count": 900 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 43,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +100"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "dex": 1 },
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.087, "max_count": 1050 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 6 },
+        "accumulate_ap": 52,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +110"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "dex": 1 },
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.077, "max_count": 1200 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 7 },
+        "accumulate_ap": 62,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +120"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 2 },
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.067, "max_count": 1350 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 8 },
+        "accumulate_ap": 74,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +130"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "그랜드 컨정션이 가능한 점성술 스킬을 사용", "training_exp": 0.062, "max_count": 1500 },
+          { "title": "이 스킬을 사용해 별의 성채로 이동", "training_exp": 0.267, "max_count": 75 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "전투 점성술사", "exp": 0 }],
+        "accumulate_stats": { "dex": 10 },
+        "accumulate_ap": 89,
+        "effect": ["시전 시 별의 성채로 이동", "최대 마나 +150"]
+      }
+    ]
+  },
+  {
+    "skill_id": 27100,
+    "talent": ["pettraining"],
+    "talent_kor": ["펫 핸들러 "],
+    "category": "life",
+    "category_kor": "생활",
+    "name_kor": "피니 캐칭",
+    "icon": "/images/skill/.webp",
+    "description": "피니는 자유롭게 에린을 떠도는 요정 중 한 종류로, 아주 약하고 여린 영체의 일종으로 볼 수 있다. 이런 피니 중 일부는 에린의 몬스터의 몸에 깃들어 자력으로 빠져나오지 못하고 있다. 피니가 몬스터의 몸에서 빠져나오지 못한 채 지나치게 오랜 시간이 지나면, 머물러있는 몬스터와 자신에게 악영향을 미치게 된다. 하지만 핀의 힘을 운용할 수 있는 자라면 깃들어 있는 피니를 꺼내는 것이 가능하다. [피니 캐칭]은 피니를 집어 내어 [피니 젬] 형태로 만들어내는 스킬이다. 몬스터에 따라 깃들어 있는 피니의 종류와 강한 정도에는 차이가 있으며, 피니가 갇혀 있는 몬스터는 [피니 젬]의 형상이 보이는지를 통해 알 수 있다고 한다.",
+    "total_need_ap": 148,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 0, "int": 0, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "training_list": [{ "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "training_list": [{ "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 80, "max_count": 2 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "training_list": [{ "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 40, "max_count": 3 }],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 2,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 20, "max_count": 5 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 80, "max_count": 2 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 5,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 10, "max_count": 10 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 40, "max_count": 3 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 9,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 20, "max_count": 5 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 14,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 4, "max_count": 25 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 10, "max_count": 10 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 80, "max_count": 2 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 20,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 3.2, "max_count": 32 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 4, "max_count": 25 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 40, "max_count": 3 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 27,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 2.4, "max_count": 42 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 3.2, "max_count": 32 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 32, "max_count": 4 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 35,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 2.4, "max_count": 42 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 24, "max_count": 5 },
+          { "title": "B 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 80, "max_count": 2 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 44,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.8, "max_count": 250 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 16, "max_count": 7 },
+          { "title": "B 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 40, "max_count": 3 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 54,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.8, "max_count": 125 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "B 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 32, "max_count": 4 }
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 69,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 4, "max_count": 25 },
+          { "title": "B 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 24, "max_count": 5 },
+          { "title": "A 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 40, "max_count": 3 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 85,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 3.2, "max_count": 32 },
+          { "title": "B 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 16, "max_count": 7 },
+          { "title": "A 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 30, "max_count": 4 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 103,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 2.4, "max_count": 42 },
+          { "title": "B 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "A 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 20, "max_count": 5 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 123,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "D 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "C 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "B 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 4, "max_count": 25 },
+          { "title": "A 등급 몬스터에게 피니 젬을 습득한다.", "training_exp": 10, "max_count": 10 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 148,
+        "effect": ["피니가 깃들어 있는 몬스터 처치 시 피니 젬 드랍 확률이 증가한다."]
+      }
+    ]
+  },
+  {
+    "skill_id": 27101,
+    "talent": ["pettraining"],
+    "talent_kor": ["펫 핸들러 "],
+    "category": "life",
+    "category_kor": "생활",
+    "name_kor": "피니 블루밍",
+    "icon": "/images/skill/.webp",
+    "description": "[피니 캐칭]을 통해 얻은 [피니 젬] 속에는 약해진 피니가 깃들어 있다. 젬 속의 피니는 포근하고 안정적인 환경이 갖춰지면 깨어나 [피니 펫]이 되는데, [피니 블루밍]은 이를 가능하게 하는 스킬이다. 낭만 농장에 설치한 [블루밍 케이지]를 통해 [피니 젬]을 블루밍하면, 젬 속의 피니가 천천히 깨어나 세상으로 나올 준비를 마치게 된다. 블루밍을 마친 [피니 펫]은 주인을 따르기 가장 좋은 모습으로 나타나 안긴다고 한다. 젬 속의 피니가 깨어나는 데에는 충분한 시간이 필요하니 편안한 마음으로 기다리자.",
+    "total_need_ap": 195,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 0, "int": 0, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "training_list": [{ "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["블루밍 시간 1% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "training_list": [{ "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["블루밍 시간 2% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "training_list": [{ "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["블루밍 시간 4% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 80, "max_count": 2 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["블루밍 시간 6% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 40, "max_count": 3 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 7,
+        "effect": ["블루밍 시간 8% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 20, "max_count": 5 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 13,
+        "effect": ["블루밍 시간 10% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 80, "max_count": 2 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 21,
+        "effect": ["블루밍 시간 12% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 6.4, "max_count": 16 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 40, "max_count": 3 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 31,
+        "effect": ["블루밍 시간 14% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 4.8, "max_count": 21 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 14,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 43,
+        "effect": ["블루밍 시간 16% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 3.2, "max_count": 32 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 6.4, "max_count": 16 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 80, "max_count": 2 },
+          { "title": "B 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 57,
+        "effect": ["블루밍 시간 18% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 4.8, "max_count": 21 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 40, "max_count": 3 },
+          { "title": "B 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 73,
+        "effect": ["블루밍 시간 20% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.8, "max_count": 125 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 3.2, "max_count": 32 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "B 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 80, "max_count": 2 }
+        ],
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 93,
+        "effect": ["블루밍 시간 22% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.56, "max_count": 179 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 5.6, "max_count": 18 },
+          { "title": "B 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 40, "max_count": 3 },
+          { "title": "A 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 80, "max_count": 2 }
+        ],
+        "need_ap": 24,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 115,
+        "effect": ["블루밍 시간 24% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.8, "max_count": 125 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 4, "max_count": 25 },
+          { "title": "B 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 20, "max_count": 5 },
+          { "title": "A 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 56, "max_count": 2 }
+        ],
+        "need_ap": 26,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 139,
+        "effect": ["블루밍 시간 26% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.24, "max_count": 417 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.56, "max_count": 179 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 2.4, "max_count": 42 },
+          { "title": "B 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 16, "max_count": 7 },
+          { "title": "A 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 40, "max_count": 3 }
+        ],
+        "need_ap": 30,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 165,
+        "effect": ["블루밍 시간 28% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "E 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.08, "max_count": 1250 },
+          { "title": "D 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.4, "max_count": 250 },
+          { "title": "C 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 0.8, "max_count": 125 },
+          { "title": "B 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 8, "max_count": 13 },
+          { "title": "A 등급 피니 젬의 블루밍에 성공한다.", "training_exp": 24, "max_count": 5 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 195,
+        "effect": ["블루밍 시간 30% 단축.", "블루밍 시 설정되는 피니 펫의 레벨 기준 증가."]
+      }
+    ]
+  },
+  {
+    "skill_id": 27102,
+    "talent": ["pettraining"],
+    "talent_kor": ["펫 핸들러 "],
+    "category": "life",
+    "category_kor": "생활",
+    "name_kor": "핀 싱크",
+    "icon": "/images/skill/.webp",
+    "description": "펫을 소환한 상태에서 [핀 벨]을 들면, 피니의 속삭임과 기운이 펫의 몸 어딘가에서 강하게 휘몰아치는 것을 느낄 수 있다. 이때 핀의 힘을 잘 운용하면, 소환된 펫을 주체로 삼아 서로 다른 펫에게 깃들어 있는 피니를 동조시켜 하나되게 만들 수 있다. 빗물이 모여 강을 만들듯, 피니가 모여 싱크에 성공하면 주체였던 펫은 핀의 힘의 영향을 받아 보다 강력한 존재인 [핀 펫]이 된다. 더 많은 피니가 핀의 힘을 통해 싱크에 성공할수록 [핀 펫]은 거듭 강해진다고 하는데, 이는 주인의 곁을 항시 지키는 든든한 동반자가 되고 싶은 피니의 의지때문인 것 같다.",
+    "total_need_ap": 148,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 10, "dex": 0, "int": 0, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["펫 특기 획득 확률 0%", "핀 싱크 가능."]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 1 },
+        "accumulate_ap": 0,
+        "effect": ["펫 특기 획득 확률 1%", "핀 싱크 가능."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 2 },
+        "accumulate_ap": 2,
+        "effect": ["펫 특기 획득 확률 2%", "핀 싱크 가능."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 3 },
+        "accumulate_ap": 5,
+        "effect": ["펫 특기 획득 확률 3%", "핀 싱크 가능."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 96, "max_count": 1 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 80, "max_count": 1 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 3 },
+        "accumulate_ap": 9,
+        "effect": ["펫 특기 획득 확률 4%", "핀 싱크, 속성 변경 핀 싱크 가능."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 80, "max_count": 1 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 80, "max_count": 1 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 4 },
+        "accumulate_ap": 14,
+        "effect": ["펫 특기 획득 확률 5%", "핀 싱크, 속성 변경 핀 싱크 가능."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 80, "max_count": 1 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 80, "max_count": 1 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 5 },
+        "accumulate_ap": 20,
+        "effect": ["펫 특기 획득 확률 6%", "핀 싱크, 속성 변경 핀 싱크 가능."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 24, "max_count": 2 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 40, "max_count": 1 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 5 },
+        "accumulate_ap": 27,
+        "effect": ["펫 특기 획득 확률 7%", "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크 가능."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 16, "max_count": 3 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 40, "max_count": 1 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 6 },
+        "accumulate_ap": 35,
+        "effect": ["펫 특기 획득 확률 8%", "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크 가능."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 16, "max_count": 3 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 40, "max_count": 1 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 7 },
+        "accumulate_ap": 44,
+        "effect": ["펫 특기 획득 확률 9%", "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크 가능."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 12.8, "max_count": 4 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 40, "max_count": 1 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 8 },
+        "accumulate_ap": 54,
+        "effect": ["펫 특기 획득 확률 10%", "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크 가능."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 8, "max_count": 5 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 16, "max_count": 2 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 32, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "친구 소환 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 8 },
+        "accumulate_ap": 69,
+        "effect": [
+          "펫 특기 획득 확률 11%",
+          "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크, 친구 소환 슬롯 확장 핀 싱크 가능."
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 8, "max_count": 5 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 16, "max_count": 2 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 32, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "친구 소환 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 8 },
+        "accumulate_ap": 85,
+        "effect": [
+          "펫 특기 획득 확률 12%",
+          "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크, 친구 소환 슬롯 확장 핀 싱크 가능."
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "str": 1 },
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 6.4, "max_count": 7 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 16, "max_count": 2 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 32, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "친구 소환 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 9 },
+        "accumulate_ap": 103,
+        "effect": [
+          "펫 특기 획득 확률 13%",
+          "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크, 친구 소환 슬롯 확장 핀 싱크 가능."
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 4.8, "max_count": 9 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 16, "max_count": 2 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 32, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "친구 소환 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 10 },
+        "accumulate_ap": 123,
+        "effect": [
+          "펫 특기 획득 확률 14%",
+          "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크, 친구 소환 슬롯 확장 핀 싱크 가능."
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "핀 싱크에 성공한다.", "training_exp": 4, "max_count": 10 },
+          { "title": "핀 싱크에 대성공 한다.", "training_exp": 16, "max_count": 2 },
+          { "title": "속성 변경 핀 싱크에 성공한다.", "training_exp": 32, "max_count": 1 },
+          { "title": "핀즈비즈 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "친구 소환 슬롯 확장 핀 싱크에 성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "str": 10 },
+        "accumulate_ap": 148,
+        "effect": [
+          "펫 특기 획득 확률 15%",
+          "핀 싱크, 속성 변경 핀 싱크, 핀즈비즈 슬롯 확장 핀 싱크, 친구 소환 슬롯 확장 핀 싱크 가능."
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 27103,
+    "talent": ["pettraining"],
+    "talent_kor": ["펫 핸들러 "],
+    "category": "life",
+    "category_kor": "생활",
+    "name_kor": "핀즈 크래프트",
+    "icon": "/images/skill/.webp",
+    "description": "[핀 벨]을 장착하여 핀의 힘을 잘 운용하면, 신기하고 재미있는 다양한 아이템을 만들 수 있다. 피니가 좋아하는 맛 좋은 간식이나 특별한 능력을 발휘할 수 있도록 돕는 신기한 물건을 비롯하여, 유용한 여러가지를 만들 수 있으니 펫과의 풍요롭고 즐거운 생활을 누려보도록 하자.",
+    "total_need_ap": 187,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 10, "int": 10, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["1%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 60초 증가."]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["2%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 60초 증가."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 80, "max_count": 1 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["3%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 60초 증가."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 96, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["4%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 60초 증가."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 96, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 96, "max_count": 1 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 7,
+        "effect": ["5%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 120초 증가."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 32, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 64, "max_count": 1 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 13,
+        "effect": ["6%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 120초 증가."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 3 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 32, "max_count": 2 },
+          { "title": "제작에 실패한다.", "training_exp": 16, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 32, "max_count": 1 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 21,
+        "effect": ["7%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 120초 증가."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 16, "max_count": 4 },
+          { "title": "제작에 실패한다.", "training_exp": 12.8, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 16, "max_count": 2 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 2 },
+        "accumulate_ap": 31,
+        "effect": ["8%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 180초 증가."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 12.8, "max_count": 5 },
+          { "title": "제작에 실패한다.", "training_exp": 9.6, "max_count": 2 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 12.8, "max_count": 3 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 4 },
+        "accumulate_ap": 44,
+        "effect": ["9%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 180초 증가."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 9.6, "max_count": 7 },
+          { "title": "제작에 실패한다.", "training_exp": 6.4, "max_count": 2 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 9.6, "max_count": 4 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 4 },
+        "accumulate_ap": 59,
+        "effect": ["10%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 180초 증가."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 3 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 6.4, "max_count": 10 },
+          { "title": "제작에 실패한다.", "training_exp": 3.2, "max_count": 4 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 6.4, "max_count": 5 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 6 },
+        "accumulate_ap": 76,
+        "effect": ["12%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 240초 증가."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 3.2, "max_count": 19 },
+          { "title": "제작에 실패한다.", "training_exp": 1.6, "max_count": 7 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 3.2, "max_count": 10 }
+        ],
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "int": 6 },
+        "accumulate_ap": 96,
+        "effect": ["14%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 240초 증가."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 1.6, "max_count": 38 },
+          { "title": "제작에 실패한다.", "training_exp": 1.28, "max_count": 8 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 1.6, "max_count": 19 }
+        ],
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "int": 8 },
+        "accumulate_ap": 117,
+        "effect": ["15%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 240초 증가."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 1.28, "max_count": 47 },
+          { "title": "제작에 실패한다.", "training_exp": 0.96, "max_count": 11 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 1.28, "max_count": 24 }
+        ],
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "int": 8 },
+        "accumulate_ap": 139,
+        "effect": ["16%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 300초 증가."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 4, "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 0.96, "max_count": 63 },
+          { "title": "제작에 실패한다.", "training_exp": 0.64, "max_count": 16 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 0.96, "max_count": 32 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "int": 8 },
+        "accumulate_ap": 162,
+        "effect": ["18%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 300초 증가."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 0.64, "max_count": 94 },
+          { "title": "제작에 실패한다.", "training_exp": 0.32, "max_count": 32 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 0.64, "max_count": 47 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 10, "int": 10 },
+        "accumulate_ap": 187,
+        "effect": ["20%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 360초 증가."]
+      }
+    ]
+  },
+  {
+    "skill_id": 27103,
+    "talent": ["pettraining"],
+    "talent_kor": ["펫 핸들러 "],
+    "category": "life",
+    "category_kor": "생활",
+    "name_kor": "핀즈 크래프트",
+    "icon": "/images/skill/.webp",
+    "description": "[핀 벨]을 장착하여 핀의 힘을 잘 운용하면, 신기하고 재미있는 다양한 아이템을 만들 수 있다. 피니가 좋아하는 맛 좋은 간식이나 특별한 능력을 발휘할 수 있도록 돕는 신기한 물건을 비롯하여, 유용한 여러가지를 만들 수 있으니 펫과의 풍요롭고 즐거운 생활을 누려보도록 하자.",
+    "total_need_ap": 187,
+    "total_stats": { "hp": 0, "mp": 0, "sp": 0, "str": 0, "dex": 10, "int": 10, "luck": 0, "will": 0 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["1%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 60초 증가."]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["2%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 60초 증가."]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 80, "max_count": 1 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 2,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 1,
+        "effect": ["3%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 60초 증가."]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 96, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 3,
+        "effect": ["4%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 60초 증가."]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 96, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 96, "max_count": 1 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 7,
+        "effect": ["5%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 120초 증가."]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 64, "max_count": 1 },
+          { "title": "제작에 실패한다.", "training_exp": 32, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 64, "max_count": 1 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 13,
+        "effect": ["6%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 120초 증가."]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "dex": 3 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 32, "max_count": 2 },
+          { "title": "제작에 실패한다.", "training_exp": 16, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 32, "max_count": 1 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "int": 2 },
+        "accumulate_ap": 21,
+        "effect": ["7%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 120초 증가."]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 16, "max_count": 4 },
+          { "title": "제작에 실패한다.", "training_exp": 12.8, "max_count": 1 },
+          { "title": "제작에 대성공한다.", "training_exp": 40, "max_count": 2 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 16, "max_count": 2 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 2 },
+        "accumulate_ap": 31,
+        "effect": ["8%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 180초 증가."]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 12.8, "max_count": 5 },
+          { "title": "제작에 실패한다.", "training_exp": 9.6, "max_count": 2 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 12.8, "max_count": 3 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 4 },
+        "accumulate_ap": 44,
+        "effect": ["9%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 180초 증가."]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 9.6, "max_count": 7 },
+          { "title": "제작에 실패한다.", "training_exp": 6.4, "max_count": 2 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 9.6, "max_count": 4 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 4 },
+        "accumulate_ap": 59,
+        "effect": ["10%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 180초 증가."]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "dex": 3 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 6.4, "max_count": 10 },
+          { "title": "제작에 실패한다.", "training_exp": 3.2, "max_count": 4 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 6.4, "max_count": 5 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 3, "int": 6 },
+        "accumulate_ap": 76,
+        "effect": ["12%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 240초 증가."]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 3.2, "max_count": 19 },
+          { "title": "제작에 실패한다.", "training_exp": 1.6, "max_count": 7 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 3.2, "max_count": 10 }
+        ],
+        "need_ap": 21,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "int": 6 },
+        "accumulate_ap": 96,
+        "effect": ["14%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 240초 증가."]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 1.6, "max_count": 38 },
+          { "title": "제작에 실패한다.", "training_exp": 1.28, "max_count": 8 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 1.6, "max_count": 19 }
+        ],
+        "need_ap": 22,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "int": 8 },
+        "accumulate_ap": 117,
+        "effect": ["15%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 240초 증가."]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 1.28, "max_count": 47 },
+          { "title": "제작에 실패한다.", "training_exp": 0.96, "max_count": 11 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 1.28, "max_count": 24 }
+        ],
+        "need_ap": 23,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "int": 8 },
+        "accumulate_ap": 139,
+        "effect": ["16%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 300초 증가."]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "dex": 4, "int": 2 },
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 0.96, "max_count": 63 },
+          { "title": "제작에 실패한다.", "training_exp": 0.64, "max_count": 16 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 0.96, "max_count": 32 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 6, "int": 8 },
+        "accumulate_ap": 162,
+        "effect": ["18%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 300초 증가."]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "제작에 성공한다.", "training_exp": 0.64, "max_count": 94 },
+          { "title": "제작에 실패한다.", "training_exp": 0.32, "max_count": 32 },
+          { "title": "제작에 대성공한다.", "training_exp": 20, "max_count": 3 },
+          { "title": "핀 싱크 재료 아이템을 제작한다.", "training_exp": 0.64, "max_count": 47 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": { "dex": 10, "int": 10 },
+        "accumulate_ap": 187,
+        "effect": ["20%의 확률로 대성공 가능.", "펫 먹이 아이템 버프 지속시간 360초 증가."]
       }
     ]
   }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { TableCell } from "@/components/ui/table";
@@ -22,17 +22,13 @@ const initialStats = {
 const initialAp = 0;
 
 export default function SelectRank({ skill }: { skill: SkillsTypes }) {
-  const { setApTable, setStatsTable, setRpTable } = useCurrentCategoryInfoStore();
+  const params = useParams();
   const router = useRouter();
+  const { setApTable, setStatsTable, setRpTable } = useCurrentCategoryInfoStore();
 
   const [rankByAp, setRankByAp] = useState(initialAp);
   const [rankByStats, setRankByStats] = useState(initialStats);
   // const [rankByRp, setRankByRp] = useState<RpTypes[]>();
-
-  // detail 버튼 클릭 함수
-  const handleClickDetail = (talent: string, id: number) => {
-    router.push(`/skill/${talent}/${id}`);
-  };
 
   // 랭크 선택 함수
   const handleSelectRank = (value: string) => {
@@ -115,7 +111,12 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
       </TableCell>
 
       <TableCell>
-        <Button onClick={() => handleClickDetail(skill.category, skill.skill_id)}>자세히</Button>
+        <Button
+          onClick={() => {
+            router.push(`/skill/${params.type}/${params.tab}/${skill.skill_id}`);
+          }}>
+          자세히
+        </Button>
       </TableCell>
     </>
   );

@@ -6,17 +6,14 @@ import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 
-export default function SameTalentSkills() {
+export default function SameTypeSkills() {
   const [isMoreSkill, setIsMoreSkill] = useState(false);
   const params = useParams();
-
   const router = useRouter();
 
-  const sameTalentSkillLists = skillLists.filter(item => item.category === params.category);
-
-  const handleClickSkillName = (id: number) => {
-    router.push(`/skill/${params.category}/${id}`);
-  };
+  const sameTalentSkillLists = skillLists.filter(skillList =>
+    params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab as string),
+  );
 
   return (
     <div className="mb-3 text-center" style={{ display: !params.id ? "none" : "block" }}>
@@ -33,7 +30,11 @@ export default function SameTalentSkills() {
           {sameTalentSkillLists.map(skill => (
             <li key={skill.skill_id} className="p-3 grid gap-3">
               <Image src={skill.icon} width={30} height={30} alt={skill.name_kor} className="m-auto" />
-              <p onClick={() => handleClickSkillName(skill.skill_id)} className="cursor-pointer hover:font-bold">
+              <p
+                onClick={() => {
+                  router.push(`/skill/${params.category}/${skill.skill_id}`);
+                }}
+                className="cursor-pointer hover:font-bold">
                 {skill.name_kor}
               </p>
             </li>

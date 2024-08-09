@@ -1,3 +1,5 @@
+"use client";
+
 import { useParams } from "next/navigation";
 import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 
@@ -8,6 +10,7 @@ import { useLayoutEffect } from "react";
 
 export default function StatsTable() {
   const params = useParams();
+
   const { total_ap, total_stats, initialTable } = useCurrentCategoryInfoStore();
 
   // params 변동 시 Table 초기화
@@ -15,14 +18,8 @@ export default function StatsTable() {
     initialTable();
   }, [initialTable, params]);
 
-  const skills = skillLists.filter(
-    skillList =>
-      (Array.isArray(params.category)
-        ? params.category.includes(skillList.category)
-        : skillList.category === params.category) ||
-      (Array.isArray(params.category)
-        ? params.category.some(cat => skillList.talent.includes(cat))
-        : skillList.talent.includes(params.category)),
+  const skills = skillLists.filter(skillList =>
+    params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab as string),
   );
 
   const calculateTotals = (skills: SkillsTypes[]) => {

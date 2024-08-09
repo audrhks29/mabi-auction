@@ -28,11 +28,12 @@ interface Items {
   id: number;
   text: string;
   list: TalentListsTypes[] | CategoryListsTypes[];
+  type: string;
 }
 
 const itemsArray = [
-  { id: 1, text: "분류별 스킬", list: categoryLists },
-  { id: 2, text: "재능별 스킬", list: talentLists },
+  { id: 1, text: "분류별 스킬", list: categoryLists, type: "category" },
+  { id: 2, text: "재능별 스킬", list: talentLists, type: "talent" },
 ];
 
 function ItemGroup({ list }: { list: Items }) {
@@ -45,18 +46,18 @@ function ItemGroup({ list }: { list: Items }) {
       <Separator />
 
       <CardContent className="p-6 text-[14px]">
-        <SkillEdge lists={list.list} />
+        <SkillEdge lists={list.list} type={list.type} />
       </CardContent>
     </Card>
   );
 }
 
-function SkillEdge({ lists }: { lists: TalentListsTypes[] | CategoryListsTypes[] }) {
+function SkillEdge({ lists, type }: { lists: TalentListsTypes[] | CategoryListsTypes[]; type: string }) {
   return (
-    <ul className="grid grid-cols-2 gap-1">
+    <ul className="grid grid-cols-3 gap-1">
       {lists.map(item => (
         <li key={item.id} className="text-center">
-          <Link href={`/skill/${item.link}`} className="hover:underline">
+          <Link href={`/skill/${type}/${item.link}`} className="hover:underline">
             {"category" in item ? item.category : item.talent}
           </Link>
         </li>
@@ -67,7 +68,7 @@ function SkillEdge({ lists }: { lists: TalentListsTypes[] | CategoryListsTypes[]
 
 export default function AllSkillPage() {
   return (
-    <section className="grid grid-cols-3 gap-3">
+    <section className="grid grid-cols-2 gap-3">
       {itemsArray.map(item => (
         <ItemGroup key={item.id} list={item} />
       ))}

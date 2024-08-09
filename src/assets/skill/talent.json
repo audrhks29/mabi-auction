@@ -251,5 +251,16 @@
     },
     "talent": "전투 점성술사",
     "link": "battleastrologer"
+  },
+  {
+    "id": 24,
+    "image": {
+      "bronze": "/images/talent/astrologer/bronze.png",
+      "silver": "/images/talent/astrologer/silver.png",
+      "gold": "/images/talent/astrologer/gold.png",
+      "grandmaster": "/images/talent/astrologer/grandmaster.png"
+    },
+    "talent": "생활 점성술사",
+    "link": "lifeastrologer"
   }
 ]

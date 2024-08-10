@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 
 import categoryLists from "@/assets/skill/skillCategory.json";
 import talentLists from "@/assets/skill/talent.json";
+import Image from "next/image";
 
 interface TalentListsTypes {
   id: number;
@@ -22,6 +23,7 @@ interface CategoryListsTypes {
   id: number;
   category: string;
   link: string;
+  image: string;
 }
 
 interface Items {
@@ -56,10 +58,14 @@ function SkillEdge({ lists, type }: { lists: TalentListsTypes[] | CategoryListsT
   return (
     <ul className="grid grid-cols-3 gap-1">
       {lists.map(item => (
-        <li key={item.id} className="text-center">
-          <Link href={`/skill/${type}/${item.link}`} className="hover:underline">
-            {"category" in item ? item.category : item.talent}
-          </Link>
+        <li
+          key={item.id}
+          className="text-center flex-col items-center p-3 hover:bg-primary-foreground hover:underline cursor-pointer">
+          <div className="flex justify-center">
+            <Image src={"category" in item ? item.image : item.image.bronze} width={40} height={40} alt={item.link} />
+          </div>
+
+          <Link href={`/skill/${type}/${item.link}`}>{"category" in item ? item.category : item.talent}</Link>
         </li>
       ))}
     </ul>

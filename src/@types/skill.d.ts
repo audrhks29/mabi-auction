@@ -34,7 +34,7 @@ interface SkillByRankTypes {
   training_list: TrainingListTypes[];
   effect: string[];
   need_ap: number;
-  accumulate_rp: RpTypes[];
+  accumulate_rp: RpTypes[] | null;
   accumulate_stats: StatsTypes | null;
   accumulate_ap: number;
 }

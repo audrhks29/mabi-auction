@@ -92505,5 +92505,1059 @@
         ]
       }
     ]
+  },
+  {
+    "skill_id": 35022,
+    "talent": [""],
+    "talent_kor": [" "],
+    "category": "alchemy",
+    "category_kor": "연금술",
+    "name_kor": "엘리멘탈 웨이브",
+    "icon": "/images/skill/35022.webp",
+    "description": "4대 속성 에너지를 폭발시켜 연금술을 강화하는 스킬. 한 번의 강화 스킬 사용으로도 속성 에너지는 모두 소멸함으로 신중히 사용해야 한다. (강화 대상 스킬 : 히트 버스터, 프로즌 블래스트, 골렘 연성, 스파크, 라이프 드레인)",
+    "total_need_ap": 375,
+    "total_stats": { "hp": 26, "mp": 21 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "hp": 1, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 2,
+        "accumulate_rp": null,
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["연금술 일부 스킬 강화"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "hp": 1, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 3,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 1, "mp": 1 },
+        "accumulate_ap": 2,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 2% 증가 ",
+          "스파크 추가 대미지 1% 증가 ",
+          "스파크 추가 범위 증가",
+          "라이프 드레인 추가 대미지 2% 증가 ",
+          "라이프 드레인 추가 회복량 1% 증가 ",
+          "골렘 능력치 증가"
+        ]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "hp": 1, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 4,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 2, "mp": 2 },
+        "accumulate_ap": 5,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 2% 증가 ",
+          "스파크 추가 대미지 2% 증가",
+          "라이프 드레인 추가 대미지 3% 증가 ",
+          "라이프 드레인 추가 회복량 1% 증가"
+        ]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "hp": 1, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 5,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 3, "mp": 3 },
+        "accumulate_ap": 9,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 3% 증가 ",
+          "스파크 추가 대미지 3% 증가",
+          "라이프 드레인 추가 대미지 5% 증가 ",
+          "라이프 드레인 추가 회복량 2% 증가"
+        ]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "hp": 1, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 6,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 4, "mp": 4 },
+        "accumulate_ap": 14,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 3% 증가 ",
+          "스파크 추가 대미지 3% 증가",
+          "라이프 드레인 추가 대미지 5% 증가 ",
+          "라이프 드레인 추가 회복량 2% 증가 ",
+          "골렘 능력치 증가"
+        ]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "hp": 1, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 100, "max_count": 2 }],
+        "need_ap": 8,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 5, "mp": 5 },
+        "accumulate_ap": 20,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 5% 증가 ",
+          "스파크 추가 대미지 4% 증가",
+          "라이프 드레인 추가 대미지 8% 증가 ",
+          "라이프 드레인 추가 회복량 3% 증가"
+        ]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "hp": 1, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 80, "max_count": 2 }],
+        "need_ap": 12,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 6, "mp": 6 },
+        "accumulate_ap": 28,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 8% 증가 ",
+          "스파크 추가 대미지 4% 증가",
+          "스파크 추가 범위 증가",
+          "라이프 드레인 추가 대미지 8% 증가 ",
+          "라이프 드레인 추가 회복량 3% 증가"
+        ]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "hp": 1, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 60, "max_count": 3 }],
+        "need_ap": 18,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 7, "mp": 7 },
+        "accumulate_ap": 40,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 10% 증가",
+          "스파크 추가 대미지 5% 증가",
+          "라이프 드레인 추가 대미지 10% 증가 ",
+          "라이프 드레인 추가 회복량 4% 증가 ",
+          "골렘 능력치 증가"
+        ]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "hp": 2, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 40, "max_count": 3 }],
+        "need_ap": 25,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 8, "mp": 8 },
+        "accumulate_ap": 58,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 10% 증가",
+          "스파크 추가 대미지 5% 증가",
+          "라이프 드레인 추가 대미지 11% 증가",
+          "라이프 드레인 추가 회복량 4% 증가"
+        ]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "hp": 2, "mp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 36, "max_count": 4 }],
+        "need_ap": 31,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 10, "mp": 9 },
+        "accumulate_ap": 83,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 12% 증가 ",
+          "스파크 추가 대미지 6% 증가",
+          "라이프 드레인 추가 대미지 12% 증가 ",
+          "라이프 드레인 추가 회복량 5% 증가"
+        ]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "hp": 2, "mp": 2 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 20, "max_count": 8 }],
+        "need_ap": 38,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 12, "mp": 10 },
+        "accumulate_ap": 114,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 12% 증가 ",
+          "스파크 추가 대미지 6% 증가 ",
+          "라이프 드레인 추가 대미지 13% 증가 ",
+          "라이프 드레인 추가 회복량 5% 증가"
+        ]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "hp": 2, "mp": 2 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 8, "max_count": 15 }],
+        "need_ap": 48,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 14, "mp": 12 },
+        "accumulate_ap": 152,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 14% 증가 ",
+          "스파크 추가 대미지 7% 증가",
+          "라이프 드레인 추가 대미지 14% 증가 ",
+          "라이프 드레인 추가 회복량 6% 증가 ",
+          "골렘 능력치 증가"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "hp": 3, "mp": 2 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 4, "max_count": 30 }],
+        "need_ap": 52,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 16, "mp": 14 },
+        "accumulate_ap": 200,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 14% 증가 ",
+          "스파크 추가 대미지 7% 증가",
+          "라이프 드레인 추가 대미지 16% 증가 ",
+          "라이프 드레인 추가 회복량 7% 증가"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "hp": 3, "mp": 2 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 3.2, "max_count": 38 }],
+        "need_ap": 58,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 19, "mp": 16 },
+        "accumulate_ap": 252,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 16% 증가 ",
+          "스파크 추가 대미지 8% 증가",
+          "라이프 드레인 추가 대미지 19% 증가 ",
+          "라이프 드레인 추가 회복량 7% 증가"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "hp": 4, "mp": 3 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 2, "max_count": 50 }],
+        "need_ap": 65,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 22, "mp": 18 },
+        "accumulate_ap": 310,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 18% 증가 ",
+          "스파크 추가 대미지 8% 증가 ",
+          "라이프 드레인 추가 대미지 20% 증가 ",
+          "라이프 드레인 추가 회복량 8% 증가"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 1.6, "max_count": 75 }],
+        "need_ap": null,
+        "accumulate_rp": null,
+        "accumulate_stats": { "hp": 26, "mp": 21 },
+        "accumulate_ap": 375,
+        "effect": [
+          "연금술 일부 스킬 강화",
+          "히트 버스터 추가 대미지 25% 증가 ",
+          "스파크 추가 대미지 10% 증가 ",
+          "스파크 추가 범위 증가",
+          "라이프 드레인 추가 대미지 25% 증가 ",
+          "라이프 드레인 추가 회복량 10% 증가 ",
+          "골렘 능력치 증가"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 35024,
+    "talent": [""],
+    "talent_kor": [" "],
+    "category": "alchemy",
+    "category_kor": "연금술",
+    "name_kor": "하이드라 연성",
+    "icon": "/images/skill/35024.webp",
+    "description": "소환된 하이드라의 맹독으로 부식시켜 마법 방어도와 보호도를 감소시키고 주기적으로 대미지를 입히는 스킬. 대미지는 최대 5회까지 중첩되며, 최대생명력, 최대마나, 최대스태미나의 평균치가 높을수록 증가한다. (결정 재료 : 흙의 결정 5개)",
+    "total_need_ap": 329,
+    "total_stats": { "sp": 40 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 4,
+        "accumulate_rp": null,
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["스킬을 연습하는 단계"]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 2 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 40, "max_count": 3 }],
+        "need_ap": 7,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 4,
+        "effect": ["대미지 21~30", "15초간 효과 지속"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 16, "max_count": 8 },
+          { "title": "한번에 2명 이상의 적에게 효과를 입힌다.", "training_exp": 24, "max_count": 3 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 3 },
+        "accumulate_ap": 11,
+        "effect": ["대미지 24~33", "16초간 효과 지속"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 2 },
+        "training_list": [{ "title": "스킬을 성공시킨다.", "training_exp": 8, "max_count": 7 }],
+        "need_ap": 12,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 5 },
+        "accumulate_ap": 21,
+        "effect": ["대미지 27~36", "17초간 효과 지속"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 5.6, "max_count": 10 },
+          { "title": "한번에 2명 이상의 적에게 효과를 입힌다.", "training_exp": 16, "max_count": 4 },
+          { "title": "한번에 3명 이상의 적에게 효과를 입힌다.", "training_exp": 24, "max_count": 3 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 7 },
+        "accumulate_ap": 33,
+        "effect": ["대미지 30~39", "18초간 효과 지속"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 2 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 1.6, "max_count": 13 },
+          { "title": "한번에 2명 이상의 적에게 효과를 입힌다.", "training_exp": 9.6, "max_count": 9 },
+          { "title": "한번에 3명 이상의 적에게 효과를 입힌다.", "training_exp": 11.2, "max_count": 8 },
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 12.8, "max_count": 7 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 16, "max_count": 5 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 9 },
+        "accumulate_ap": 48,
+        "effect": ["대미지 33~42", "19초간 효과 지속"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "스킬을 성공시킨다.", "training_exp": 0.8, "max_count": 25 },
+          { "title": "한번에 2명 이상의 적에게 효과를 입힌다.", "training_exp": 8, "max_count": 10 },
+          { "title": "한번에 3명 이상의 적에게 효과를 입힌다.", "training_exp": 9.6, "max_count": 9 },
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 11.2, "max_count": 8 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 12.8, "max_count": 7 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 16, "max_count": 5 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 11 },
+        "accumulate_ap": 66,
+        "effect": ["대미지 36~45", "20초간 효과 지속"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "한번에 3명 이상의 적에게 효과를 입힌다.", "training_exp": 10.4, "max_count": 10 },
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 12, "max_count": 9 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 13.6, "max_count": 8 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 16, "max_count": 7 }
+        ],
+        "need_ap": 23,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 14 },
+        "accumulate_ap": 86,
+        "effect": ["대미지 51~60", "마법 방어 3, 마법 보호 2 감소", "21초간 효과 지속"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "한번에 3명 이상의 적에게 효과를 입힌다.", "training_exp": 9.6, "max_count": 12 },
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 10.4, "max_count": 10 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 12, "max_count": 9 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 13.6, "max_count": 8 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 17 },
+        "accumulate_ap": 109,
+        "effect": ["대미지 54~63", "마법 방어 6, 마법 보호 4 감소 ", "22초간 효과 지속"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "한번에 3명 이상의 적에게 효과를 입힌다.", "training_exp": 8, "max_count": 13 },
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 9.6, "max_count": 12 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 10.4, "max_count": 10 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 12, "max_count": 9 }
+        ],
+        "need_ap": 27,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 20 },
+        "accumulate_ap": 134,
+        "effect": ["대미지 57~66", "마법 방어 9, 마법 보호 6 감소", "23초간 효과 지속"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "한번에 3명 이상의 적에게 효과를 입힌다.", "training_exp": 5.6, "max_count": 19 },
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 8, "max_count": 13 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 9.6, "max_count": 12 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 10.4, "max_count": 10 }
+        ],
+        "need_ap": 29,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 23 },
+        "accumulate_ap": 161,
+        "effect": ["대미지 60~69", "마법 방어 12, 마법 보호 8 감소", "24초간 효과 지속"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 4, "max_count": 25 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 5.6, "max_count": 19 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 8, "max_count": 13 },
+          { "title": "한번에 7명 이상의 적에게 효과를 입힌다.", "training_exp": 9.6, "max_count": 12 }
+        ],
+        "need_ap": 31,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 26 },
+        "accumulate_ap": 190,
+        "effect": ["대미지 63~72", "마법 방어 15, 마법 보호 10 감소 ", "25초간 효과 지속"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 2.8, "max_count": 38 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 4, "max_count": 25 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 5.6, "max_count": 19 },
+          { "title": "한번에 7명 이상의 적에게 효과를 입힌다.", "training_exp": 8, "max_count": 13 }
+        ],
+        "need_ap": 33,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 29 },
+        "accumulate_ap": 221,
+        "effect": ["대미지 66~75", "마법 방어 18, 마법 보호 12 감소 ", "26초간 효과 지속"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 4 },
+        "training_list": [
+          { "title": "한번에 4명 이상의 적에게 효과를 입힌다.", "training_exp": 2, "max_count": 50 },
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 2.8, "max_count": 38 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 4, "max_count": 25 },
+          { "title": "한번에 7명 이상의 적에게 효과를 입힌다.", "training_exp": 5.6, "max_count": 19 }
+        ],
+        "need_ap": 35,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 32 },
+        "accumulate_ap": 254,
+        "effect": ["대미지 69~78", "마법 방어 21, 마법 보호 14 감소", "28초간 효과 지속"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 4 },
+        "training_list": [
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 2, "max_count": 50 },
+          { "title": "한번에 7명 이상의 적에게 효과를 입힌다.", "training_exp": 2.8, "max_count": 38 }
+        ],
+        "need_ap": 40,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 36 },
+        "accumulate_ap": 289,
+        "effect": ["대미지 72~81", "마법 방어 24, 마법 보호 16 감소", "29초간 효과 지속"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "한번에 5명 이상의 적에게 효과를 입힌다.", "training_exp": 1.6, "max_count": 63 },
+          { "title": "한번에 6명 이상의 적에게 효과를 입힌다.", "training_exp": 2, "max_count": 50 },
+          { "title": "한번에 7명 이상의 적에게 효과를 입힌다.", "training_exp": 2.8, "max_count": 38 },
+          { "title": "한번에 8명 이상의 적에게 효과를 입힌다.", "training_exp": 4, "max_count": 25 }
+        ],
+        "need_ap": null,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 40 },
+        "accumulate_ap": 329,
+        "effect": ["대미지 90~99", "마법 방어 35, 마법 보호 18 감소 ", "30초간 효과 지속"]
+      }
+    ]
+  },
+  {
+    "skill_id": 27104,
+    "talent": ["pettraining"],
+    "talent_kor": ["펫 핸들러"],
+    "category": "생활",
+    "category_kor": "life",
+    "isPromotion": "",
+    "name_kor": "핀즈비즈 샤이닝",
+    "icon": "/images/skill/27104.webp",
+    "description": "[핀즈비즈]는 일반적인 보석과는 다른 광물로, 요정들이 좋아하는 반짝이는 구슬이다. [핀즈비즈]는 [핀 벨]을 장착한 상태에서 핀의 힘을 불어넣어 빛을 찾는 과정에서 숨겨진 힘을 각성할 수 있다. 이 과정을 샤이닝이라 한다. 샤이닝을 마쳐 각성한 [핀즈비즈]는 고유의 능력을 가지고 있는데, [핀즈비즈]를 장착한 [핀 펫]은 [핀즈비즈]에 남겨진 핀의 힘에 반응하여 특별한 힘을 사용할 수 있게 된다.",
+    "total_need_ap": 232,
+    "total_stats": { "mp": 39, "luck": 10 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "mp": 1 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 시도한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 0 }],
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": null
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "mp": 1 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 시도한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 1,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 1500 }],
+        "accumulate_stats": { "mp": 1 },
+        "accumulate_ap": 0,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "mp": 1, "luck": 1 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 시도한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 3,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 3500 }],
+        "accumulate_stats": { "mp": 2 },
+        "accumulate_ap": 1,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "mp": 1 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 시도한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 5,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 7500 }],
+        "accumulate_stats": { "mp": 3, "luck": 1 },
+        "accumulate_ap": 4,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "mp": 2 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 시도한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 100, "max_count": 1 }
+        ],
+        "need_ap": 7,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 13500 }],
+        "accumulate_stats": { "mp": 4, "luck": 1 },
+        "accumulate_ap": 9,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "mp": 2 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 시도한다.", "training_exp": 80, "max_count": 2 },
+          { "title": "핀즈비즈 샤이닝을 성공한다.", "training_exp": 100, "max_count": 1 },
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 80, "max_count": 1 }
+        ],
+        "need_ap": 9,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 23500 }],
+        "accumulate_stats": { "mp": 6, "luck": 1 },
+        "accumulate_ap": 16,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "mp": 2, "luck": 2 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 20, "max_count": 1 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 5, "max_count": 8 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 10, "max_count": 7 }
+        ],
+        "need_ap": 10,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 38500 }],
+        "accumulate_stats": { "mp": 8, "luck": 1 },
+        "accumulate_ap": 25,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능", "언샤인드 중급 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "mp": 3 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 20, "max_count": 1 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 5, "max_count": 8 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 10, "max_count": 7 }
+        ],
+        "need_ap": 11,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 56500 }],
+        "accumulate_stats": { "mp": 10, "luck": 3 },
+        "accumulate_ap": 35,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능", "언샤인드 중급 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "mp": 3 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 20, "max_count": 1 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 5, "max_count": 8 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 10, "max_count": 7 }
+        ],
+        "need_ap": 12,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 78500 }],
+        "accumulate_stats": { "mp": 13, "luck": 3 },
+        "accumulate_ap": 46,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능", "언샤인드 중급 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "mp": 3 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 20, "max_count": 1 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 5, "max_count": 8 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 10, "max_count": 7 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 103500 }],
+        "accumulate_stats": { "mp": 16, "luck": 3 },
+        "accumulate_ap": 58,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능", "언샤인드 중급 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "mp": 4, "luck": 3 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 20, "max_count": 1 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 5, "max_count": 8 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 10, "max_count": 7 }
+        ],
+        "need_ap": 15,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 132500 }],
+        "accumulate_stats": { "mp": 19, "luck": 3 },
+        "accumulate_ap": 71,
+        "effect": ["언샤인드 일반 핀즈비즈 샤이닝 가능", "언샤인드 중급 핀즈비즈 샤이닝 가능"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "mp": 4 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 8, "max_count": 3 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 2, "max_count": 20 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 4, "max_count": 10 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 8, "max_count": 7 }
+        ],
+        "need_ap": 16,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 168500 }],
+        "accumulate_stats": { "mp": 23, "luck": 6 },
+        "accumulate_ap": 86,
+        "effect": [
+          "언샤인드 일반 핀즈비즈 샤이닝 가능",
+          "언샤인드 중급 핀즈비즈 샤이닝 가능",
+          "언샤인드 고급 핀즈비즈 샤이닝 가능"
+        ]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "mp": 4 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 8, "max_count": 3 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 2, "max_count": 20 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 4, "max_count": 10 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 8, "max_count": 7 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 212500 }],
+        "accumulate_stats": { "mp": 27, "luck": 6 },
+        "accumulate_ap": 102,
+        "effect": [
+          "언샤인드 일반 핀즈비즈 샤이닝 가능",
+          "언샤인드 중급 핀즈비즈 샤이닝 가능",
+          "언샤인드 고급 핀즈비즈 샤이닝 가능"
+        ]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "mp": 4 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 8, "max_count": 3 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 2, "max_count": 20 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 4, "max_count": 10 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 8, "max_count": 7 }
+        ],
+        "need_ap": 18,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 262500 }],
+        "accumulate_stats": { "mp": 31, "luck": 6 },
+        "accumulate_ap": 119,
+        "effect": [
+          "언샤인드 일반 핀즈비즈 샤이닝 가능",
+          "언샤인드 중급 핀즈비즈 샤이닝 가능",
+          "언샤인드 고급 핀즈비즈 샤이닝 가능"
+        ]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "mp": 5, "luck": 4 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 8, "max_count": 3 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 2, "max_count": 20 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 4, "max_count": 10 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 8, "max_count": 7 }
+        ],
+        "need_ap": 20,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 322500 }],
+        "accumulate_stats": { "mp": 35, "luck": 6 },
+        "accumulate_ap": 137,
+        "effect": [
+          "언샤인드 일반 핀즈비즈 샤이닝 가능",
+          "언샤인드 중급 핀즈비즈 샤이닝 가능",
+          "언샤인드 고급 핀즈비즈 샤이닝 가능"
+        ]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": { "dex": 3, "luck": 3 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 8, "max_count": 3 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 2, "max_count": 20 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 4, "max_count": 10 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 8, "max_count": 7 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 397500 }],
+        "accumulate_stats": { "mp": 40, "luck": 10 },
+        "accumulate_ap": 157,
+        "effect": [
+          "언샤인드 일반 핀즈비즈 샤이닝 가능",
+          "언샤인드 중급 핀즈비즈 샤이닝 가능",
+          "언샤인드 고급 핀즈비즈 샤이닝 가능"
+        ]
+      },
+      {
+        "rank": "1단",
+        "bonus_stats": { "dex": 3, "luck": 3 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 4, "max_count": 5 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 0.8, "max_count": 50 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 2, "max_count": 20 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 4, "max_count": 13 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 8, "max_count": 7 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 397500 }],
+        "accumulate_stats": { "mp": 40, "dex": 3, "luck": 13 },
+        "accumulate_ap": 182,
+        "effect": [
+          "언샤인드 일반 핀즈비즈 샤이닝 가능",
+          "언샤인드 중급 핀즈비즈 샤이닝 가능",
+          "언샤인드 고급 핀즈비즈 샤이닝 가능",
+          "언샤인드 최고급 핀즈비즈 샤이닝 가능"
+        ]
+      },
+      {
+        "rank": "2단",
+        "bonus_stats": { "dex": 3, "luck": 4 },
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 4, "max_count": 5 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 0.8, "max_count": 50 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 2, "max_count": 20 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 4, "max_count": 13 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 8, "max_count": 7 }
+        ],
+        "need_ap": 25,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 397500 }],
+        "accumulate_stats": { "mp": 40, "dex": 6, "luck": 16 },
+        "accumulate_ap": 207,
+        "effect": [
+          "언샤인드 일반 핀즈비즈 샤이닝 가능",
+          "언샤인드 중급 핀즈비즈 샤이닝 가능",
+          "언샤인드 고급 핀즈비즈 샤이닝 가능",
+          "언샤인드 최고급 핀즈비즈 샤이닝 가능"
+        ]
+      },
+      {
+        "rank": "3단",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "핀즈비즈 샤이닝을 실패한다.", "training_exp": 4, "max_count": 5 },
+          { "title": "언샤인드 일반 핀즈비즈 샤이닝을 성공한다.", "training_exp": 0.8, "max_count": 50 },
+          { "title": "언샤인드 중급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 2, "max_count": 20 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 4, "max_count": 13 },
+          { "title": "언샤인드 고급 핀즈비즈 샤이닝을 성공한다.", "training_exp": 8, "max_count": 7 }
+        ],
+        "need_ap": 0,
+        "accumulate_rp": [{ "title": "펫 핸들러", "exp": 397500 }],
+        "accumulate_stats": { "mp": 40, "dex": 10, "luck": 20 },
+        "accumulate_ap": 232,
+        "effect": [
+          "언샤인드 일반 핀즈비즈 샤이닝 가능",
+          "언샤인드 중급 핀즈비즈 샤이닝 가능",
+          "언샤인드 고급 핀즈비즈 샤이닝 가능",
+          "언샤인드 최고급 핀즈비즈 샤이닝 가능"
+        ]
+      }
+    ]
+  },
+  {
+    "skill_id": 35023,
+    "talent": [""],
+    "talent_kor": [""],
+    "category": "연금술",
+    "category_kor": "alchemy",
+    "isPromotion": "",
+    "name_kor": "골든 타임",
+    "icon": "/images/skill/35023.webp",
+    "description": "시간을 제어하여 4대 속성 에너지를 단숨에 증폭시키는 스킬. 에너지를 증폭하는 시간은 한정되어 있음으로, 제한 시간 내 엘리멘탈 웨이브를 사용해야 한다.",
+    "total_need_ap": 285,
+    "total_stats": { "sp": 25 },
+    "skill_by_rank": [
+      {
+        "rank": "연습",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 100, "max_count": 1 }],
+        "need_ap": 3,
+        "accumulate_rp": null,
+        "accumulate_stats": null,
+        "accumulate_ap": 0,
+        "effect": ["4대 속성 에너지를 단숨에 증폭시킨다."]
+      },
+      {
+        "rank": "F",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [{ "title": "스킬을 사용해본다.", "training_exp": 80, "max_count": 2 }],
+        "need_ap": 4,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 1 },
+        "accumulate_ap": 3,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 10초", "재사용 가능 시간 5분"]
+      },
+      {
+        "rank": "E",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 28, "max_count": 4 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 32, "max_count": 3 }
+        ],
+        "need_ap": 4,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 2 },
+        "accumulate_ap": 7,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 11초", "재사용 가능 시간 4분 50초"]
+      },
+      {
+        "rank": "D",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 24, "max_count": 4 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 28, "max_count": 4 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 3 },
+        "accumulate_ap": 11,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 12초", "재사용 가능 시간 4분 50초"]
+      },
+      {
+        "rank": "C",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 20, "max_count": 4 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 24, "max_count": 4 }
+        ],
+        "need_ap": 6,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 4 },
+        "accumulate_ap": 17,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 13초", "재사용 가능 시간 4분 50초"]
+      },
+      {
+        "rank": "B",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 16, "max_count": 5 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 20, "max_count": 4 }
+        ],
+        "need_ap": 8,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 5 },
+        "accumulate_ap": 23,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 14초", "재사용 가능 시간 4분 40초"]
+      },
+      {
+        "rank": "A",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 12, "max_count": 8 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 16, "max_count": 4 }
+        ],
+        "need_ap": 11,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 6 },
+        "accumulate_ap": 31,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 15초", "재사용 가능 시간 4분 40초"]
+      },
+      {
+        "rank": "9",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 8, "max_count": 8 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 12, "max_count": 5 }
+        ],
+        "need_ap": 13,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 7 },
+        "accumulate_ap": 42,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 18초", "재사용 가능 시간 4분 20초"]
+      },
+      {
+        "rank": "8",
+        "bonus_stats": { "sp": 1 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 6.4, "max_count": 13 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 8, "max_count": 8 }
+        ],
+        "need_ap": 17,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 8 },
+        "accumulate_ap": 55,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 20초", "재사용 가능 시간 4분 10초"]
+      },
+      {
+        "rank": "7",
+        "bonus_stats": { "sp": 2 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 4, "max_count": 13 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 6.4, "max_count": 9 }
+        ],
+        "need_ap": 21,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 9 },
+        "accumulate_ap": 72,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 22초", "재사용 가능 시간 4분"]
+      },
+      {
+        "rank": "6",
+        "bonus_stats": { "sp": 2 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 2.4, "max_count": 19 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 4, "max_count": 19 }
+        ],
+        "need_ap": 26,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 11 },
+        "accumulate_ap": 93,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 24초", "재사용 가능 시간 3분 50초"]
+      },
+      {
+        "rank": "5",
+        "bonus_stats": { "sp": 2 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 1.6, "max_count": 25 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 3.2, "max_count": 25 }
+        ],
+        "need_ap": 32,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 13 },
+        "accumulate_ap": 119,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 28초", "재사용 가능 시간 3분 40초"]
+      },
+      {
+        "rank": "4",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 0.8, "max_count": 38 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 2.4, "max_count": 38 }
+        ],
+        "need_ap": 38,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 15 },
+        "accumulate_ap": 151,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 30초", "재사용 가능 시간 3분 30초"]
+      },
+      {
+        "rank": "3",
+        "bonus_stats": { "sp": 3 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 0.64, "max_count": 50 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 1.6, "max_count": 50 }
+        ],
+        "need_ap": 46,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 18 },
+        "accumulate_ap": 189,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 33초", "재사용 가능 시간 3분 20초"]
+      },
+      {
+        "rank": "2",
+        "bonus_stats": { "sp": 4 },
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 0.48, "max_count": 63 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 1.44, "max_count": 63 }
+        ],
+        "need_ap": 50,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 21 },
+        "accumulate_ap": 235,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 35초", "재사용 가능 시간 3분 10초"]
+      },
+      {
+        "rank": "1",
+        "bonus_stats": null,
+        "training_list": [
+          { "title": "스킬을 사용해본다.", "training_exp": 0.4, "max_count": 75 },
+          { "title": "스킬 제한 시간 내에 연금술 스킬 강화에 성공한다.", "training_exp": 1.2, "max_count": 75 }
+        ],
+        "need_ap": -103,
+        "accumulate_rp": null,
+        "accumulate_stats": { "sp": 25 },
+        "accumulate_ap": 285,
+        "effect": ["엘리멘탈 웨이브 사용 가능", "스킬 지속 시간 40초", "재사용 가능 시간 3분"]
+      }
+    ]
   }
 ]

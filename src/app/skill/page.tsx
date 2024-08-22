@@ -56,16 +56,20 @@ function ItemGroup({ list }: { list: Items }) {
 
 function SkillEdge({ lists, type }: { lists: TalentListsTypes[] | CategoryListsTypes[]; type: string }) {
   return (
-    <ul className="grid grid-cols-3 gap-1">
+    <ul className="grid grid-cols-4 gap-1">
       {lists.map(item => (
-        <li
-          key={item.id}
-          className="text-center flex-col items-center p-3 hover:bg-primary-foreground hover:underline cursor-pointer">
-          <div className="flex justify-center">
-            <Image src={"category" in item ? item.image : item.image.bronze} width={40} height={40} alt={item.link} />
-          </div>
+        <li key={item.id} className="text-center p-3 hover:bg-primary-foreground hover:underline cursor-pointer">
+          <Link href={`/skill/${type}/${item.link}`} className="block">
+            <Image
+              src={"category" in item ? item.image : item.image.bronze}
+              width={40}
+              height={40}
+              alt={item.link}
+              className="block m-auto"
+            />
 
-          <Link href={`/skill/${type}/${item.link}`}>{"category" in item ? item.category : item.talent}</Link>
+            <span>{"category" in item ? item.category : item.talent}</span>
+          </Link>
         </li>
       ))}
     </ul>

@@ -23,6 +23,7 @@ export default function CurrentRank({ skill }: { skill: SkillsTypes | undefined 
 
   const handleSelectRank = (value: string) => {
     const selectRankIndex = skill?.skill_by_rank.findIndex(skill => skill.rank === value);
+
     if (selectRankIndex) {
       const newRankByAP = skill?.skill_by_rank[selectRankIndex].accumulate_ap;
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { getFitsSkillData } from "@/server/skill";
 import dbConnect from "@/lib/mongodb";
-import SelectRank from "@/components/skill/category/SelectRank";
+import SelectRank from "@/components/skill/SelectRank";
 
 // async function getUserSkillData(category: string) {
 //   const user_skill = await getFitsSkillData(category);

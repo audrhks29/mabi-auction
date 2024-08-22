@@ -5,11 +5,11 @@ import skillLists from "@/assets/skill/human/skill.json";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-import CurrentRank from "@/components/skill/category/CurrentRank";
-import Training from "@/components/skill/category/skillCard/Training";
-import AbilityPoint from "@/components/skill/category/skillCard/AbilityPoint";
-import Stats from "@/components/skill/category/skillCard/Stats";
-import DetailDescription from "@/components/skill/category/skillCard/DetailDescription";
+import CurrentRank from "@/components/skill/detail/CurrentRank";
+import Training from "@/components/skill/detail/skillCard/Training";
+import AbilityPoint from "@/components/skill/detail/skillCard/AbilityPoint";
+import Stats from "@/components/skill/detail/skillCard/Stats";
+import DetailDescription from "@/components/skill/detail/skillCard/DetailDescription";
 
 export default function SkillDetailPage({
   params,
@@ -62,7 +62,7 @@ export default function SkillDetailPage({
                   <DetailDescription description={findSkill.description} />
 
                   <div className="border p-3 rounded-sm">
-                    {rank?.effect.map((effect, index) => <p key={index}>{effect}</p>)}
+                    {rank?.effect?.map((effect, index) => <p key={index}>{effect}</p>)}
                   </div>
 
                   {/* --- 수련방법 --- */}

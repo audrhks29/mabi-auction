@@ -15,7 +15,7 @@
   { "id": 14, "category": "팔라딘", "link": "", "image": "/images/skill/40001.webp" },
   { "id": 15, "category": "반신화", "link": "demigod", "image": "/images/skill/45004.webp" },
   { "id": 16, "category": "기사단", "link": "crusader", "image": "/images/skill/46001.webp" },
-  { "id": 17, "category": "이신화", "link": "divinity", "image": "/images/skill/00000.webp" },
+  { "id": 17, "category": "이신화", "link": "divinity", "image": "/images/skill/46005.webp" },
   { "id": 18, "category": "엘리멘탈 나이트", "link": "", "image": "/images/skill/59026.webp" },
   { "id": 19, "category": "세인트 바드", "link": "", "image": "/images/skill/59000.webp" },
   { "id": 20, "category": "다크 메이지", "link": "", "image": "/images/skill/59040.webp" },

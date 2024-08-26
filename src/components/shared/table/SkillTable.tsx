@@ -3,7 +3,6 @@ import skillLists from "@/assets/skill/human/skill.json";
 import Image from "next/image";
 
 import { getFitsSkillData } from "@/server/skill";
-import dbConnect from "@/lib/mongodb";
 import SelectRank from "@/components/skill/SelectRank";
 
 // async function getUserSkillData(category: string) {

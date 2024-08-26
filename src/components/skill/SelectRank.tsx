@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { memo, useCallback, useLayoutEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
+import useUserDataStore from "@/store/userData-store";
 
 const initialStats = {
   hp: 0,
@@ -21,47 +22,56 @@ const initialStats = {
 
 const initialAp = 0;
 
-export default function SelectRank({ skill }: { skill: SkillsTypes }) {
+function SelectRank({ skill }: { skill: SkillsTypes }) {
   const params = useParams();
   const router = useRouter();
   const { setApTable, setStatsTable, setRpTable } = useCurrentCategoryInfoStore();
+  const { userData } = useUserDataStore();
+  const thisSkillRank = userData?.skill_data?.find(r => r.skill_id === skill.skill_id)?.rank;
 
   const [rankByAp, setRankByAp] = useState(initialAp);
   const [rankByStats, setRankByStats] = useState(initialStats);
   // const [rankByRp, setRankByRp] = useState<RpTypes[]>();
 
   // 랭크 선택 함수
-  const handleSelectRank = (value: string) => {
-    const selectRankIndex = skill.skill_by_rank.findIndex(skill => skill.rank === value);
-    const newRankByAP = skill.skill_by_rank[selectRankIndex].accumulate_ap;
+  const handleSelectRank = useCallback(
+    (value: string) => {
+      const selectRankIndex = skill.skill_by_rank.findIndex(skill => skill.rank === value);
+      const newRankByAP = skill.skill_by_rank[selectRankIndex].accumulate_ap;
 
-    const newRankByStats = {
-      hp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.hp || 0,
-      mp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.mp || 0,
-      sp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.sp || 0,
-      str: skill.skill_by_rank[selectRankIndex].accumulate_stats?.str || 0,
-      dex: skill.skill_by_rank[selectRankIndex].accumulate_stats?.dex || 0,
-      int: skill.skill_by_rank[selectRankIndex].accumulate_stats?.int || 0,
-      will: skill.skill_by_rank[selectRankIndex].accumulate_stats?.will || 0,
-      luck: skill.skill_by_rank[selectRankIndex].accumulate_stats?.luck || 0,
-    };
+      const newRankByStats = {
+        hp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.hp || 0,
+        mp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.mp || 0,
+        sp: skill.skill_by_rank[selectRankIndex].accumulate_stats?.sp || 0,
+        str: skill.skill_by_rank[selectRankIndex].accumulate_stats?.str || 0,
+        dex: skill.skill_by_rank[selectRankIndex].accumulate_stats?.dex || 0,
+        int: skill.skill_by_rank[selectRankIndex].accumulate_stats?.int || 0,
+        will: skill.skill_by_rank[selectRankIndex].accumulate_stats?.will || 0,
+        luck: skill.skill_by_rank[selectRankIndex].accumulate_stats?.luck || 0,
+      };
 
-    const newRp = skill.skill_by_rank[selectRankIndex].accumulate_rp;
+      const newRp = skill.skill_by_rank[selectRankIndex].accumulate_rp;
 
-    setRankByAp(newRankByAP);
-    setRankByStats(newRankByStats);
+      setRankByAp(newRankByAP);
+      setRankByStats(newRankByStats);
 
-    setApTable(skill, newRankByAP);
-    setStatsTable(skill, newRankByStats);
-    setRpTable(skill.skill_id, newRp);
-  };
+      setApTable(skill, newRankByAP);
+      setStatsTable(skill, newRankByStats);
+      setRpTable(skill.skill_id, newRp);
+    },
+    [skill, setRankByAp, setRankByStats, setApTable, setStatsTable, setRpTable],
+  );
+
+  useLayoutEffect(() => {
+    if (thisSkillRank) handleSelectRank(thisSkillRank);
+  }, [handleSelectRank, thisSkillRank]);
 
   return (
     <>
       <TableCell>
         <Select onValueChange={value => handleSelectRank(value)}>
           <SelectTrigger>
-            <SelectValue placeholder="연습" />
+            <SelectValue placeholder={thisSkillRank || "연습"} />
           </SelectTrigger>
 
           <SelectContent>
@@ -121,3 +131,5 @@ export default function SelectRank({ skill }: { skill: SkillsTypes }) {
     </>
   );
 }
+
+export default memo(SelectRank);

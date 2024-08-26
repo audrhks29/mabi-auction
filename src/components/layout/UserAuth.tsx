@@ -10,7 +10,7 @@ import { PopoverClose } from "@radix-ui/react-popover";
 import Link from "next/link";
 import useUserDataStore from "@/store/userData-store";
 import { useRouter } from "next/navigation";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 
 interface FormData {
@@ -92,7 +92,7 @@ export default function UserAuth({ accessToken }: { accessToken: RequestCookie |
   const { userData, deleteUserData, setUserData } = useUserDataStore();
   const route = useRouter();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const fetchUserData = async () => {
       try {
         const res = await fetch("/api/auth/userData", {
@@ -118,7 +118,7 @@ export default function UserAuth({ accessToken }: { accessToken: RequestCookie |
       fetchUserData();
     }
   }, [accessToken, setUserData]);
-
+  // console.log(userData);
   return (
     <>
       {!userData ? (

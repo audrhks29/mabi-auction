@@ -2,12 +2,15 @@
 
 import { memo, useCallback, useLayoutEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
+
+import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
+import useUserDataStore from "@/store/userData-store";
+
 import { shallow } from "zustand/shallow";
+
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
-import useUserDataStore from "@/store/userData-store";
 
 const initialStats = {
   hp: 0,

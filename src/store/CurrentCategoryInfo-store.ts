@@ -27,8 +27,7 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
 
   // ap 데이터
   setApTable: (skill, newRankByAP) => {
-    const state = getState();
-    const total_ap_array = state.total_ap_array;
+    const total_ap_array = getState().total_ap_array;
 
     const newSumAp = {
       id: skill.skill_id,

@@ -25,13 +25,16 @@ const initialAp = 0;
 function SelectRank({ skill }: { skill: SkillsTypes }) {
   const params = useParams();
   const router = useRouter();
-  const { setApTable, setStatsTable, setRpTable } = useCurrentCategoryInfoStore();
+
+  const setApTable = useCurrentCategoryInfoStore(state => state.setApTable);
+  const setStatsTable = useCurrentCategoryInfoStore(state => state.setStatsTable);
+  const setRpTable = useCurrentCategoryInfoStore(state => state.setRpTable);
+
   const { userData } = useUserDataStore();
   const thisSkillRank = userData?.skill_data?.find(r => r.skill_id === skill.skill_id)?.rank;
 
   const [rankByAp, setRankByAp] = useState(initialAp);
   const [rankByStats, setRankByStats] = useState(initialStats);
-  // const [rankByRp, setRankByRp] = useState<RpTypes[]>();
 
   // 랭크 선택 함수
   const handleSelectRank = useCallback(
@@ -59,7 +62,7 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
       setStatsTable(skill, newRankByStats);
       setRpTable(skill.skill_id, newRp);
     },
-    [skill, setRankByAp, setRankByStats, setApTable, setStatsTable, setRpTable],
+    [skill, setApTable, setStatsTable, setRpTable],
   );
 
   useLayoutEffect(() => {

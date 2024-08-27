@@ -2,7 +2,7 @@
 
 import { memo, useCallback, useLayoutEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-
+import { shallow } from "zustand/shallow";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
@@ -26,9 +26,14 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
   const params = useParams();
   const router = useRouter();
 
-  const setApTable = useCurrentCategoryInfoStore(state => state.setApTable);
-  const setStatsTable = useCurrentCategoryInfoStore(state => state.setStatsTable);
-  const setRpTable = useCurrentCategoryInfoStore(state => state.setRpTable);
+  const { setApTable, setStatsTable, setRpTable } = useCurrentCategoryInfoStore(
+    state => ({
+      setApTable: state.setApTable,
+      setStatsTable: state.setStatsTable,
+      setRpTable: state.setRpTable,
+    }),
+    shallow,
+  );
 
   const { userData } = useUserDataStore();
   const thisSkillRank = userData?.skill_data?.find(r => r.skill_id === skill.skill_id)?.rank;

@@ -38,7 +38,8 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
     shallow,
   );
 
-  const { userData } = useUserDataStore();
+  const { userData, setUserSkillData } = useUserDataStore();
+
   const thisSkillRank = userData?.skill_data?.find(r => r.skill_id === skill.skill_id)?.rank;
 
   const [rankByAp, setRankByAp] = useState(initialAp);
@@ -48,6 +49,7 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
   const handleSelectRank = useCallback(
     (value: string) => {
       const selectRankIndex = skill.skill_by_rank.findIndex(skill => skill.rank === value);
+
       const newRankByAP = skill.skill_by_rank[selectRankIndex].accumulate_ap;
 
       const newRankByStats = {
@@ -80,9 +82,14 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
   return (
     <>
       <TableCell>
-        <Select onValueChange={value => handleSelectRank(value)}>
+        <Select
+          value={thisSkillRank ? thisSkillRank : "연습"}
+          onValueChange={value => {
+            handleSelectRank(value);
+            setUserSkillData(skill.skill_id, value);
+          }}>
           <SelectTrigger>
-            <SelectValue placeholder={thisSkillRank || "연습"} />
+            <SelectValue placeholder="연습" />
           </SelectTrigger>
 
           <SelectContent>

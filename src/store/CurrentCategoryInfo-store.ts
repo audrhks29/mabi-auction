@@ -10,6 +10,7 @@ interface StoreType {
   total_ap: number;
   total_stats: StatsIncludeIdTypes;
   total_rp: RpTypes[];
+
   setApTable(skill: SkillsTypes, newRankByAP: number): void;
   setStatsTable(skill: SkillsTypes, newRankByStats: StatsTypes): void;
   setRpTable(skill: number, newRp: RpTypes[]): void;

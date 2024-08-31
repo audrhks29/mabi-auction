@@ -1,28 +1,16 @@
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import skillLists from "@/assets/skill/human/skill.json";
 import Image from "next/image";
 
-import { getFitsSkillData } from "@/server/skill";
-import SelectRank from "@/components/skill/SelectRank";
+import skillLists from "@/assets/skill/human/skill.json";
 
-// async function getUserSkillData(category: string) {
-//   const user_skill = await getFitsSkillData(category);
-//   console.log(user_skill);
-// }
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+
+import SelectRank from "./SelectRank";
 
 export default function SkillTable({ params }: { params: { type: string; tab: string } }) {
   const skill = skillLists.filter(skillList =>
     params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab),
   );
 
-  // getUserSkillData(params.category);
-  // async function getUserSkillData() {
-  //   const client = await dbConnect;
-  //   const db = client.db("data");
-  //   const skills = await db.collection("data").find().toArray();
-  //   console.log(skills);
-  // }
-  // getUserSkillData();
   return (
     <article>
       <Table>

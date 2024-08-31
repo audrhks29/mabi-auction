@@ -1,9 +1,12 @@
-import create from "zustand";
+import { create } from "zustand";
 
 interface StoreTypes {
   userData: UserDataTypes | null;
+
   setUserData: (userData: UserDataTypes) => void;
   deleteUserData: () => void;
+
+  setUserSkillData: (skill_id: number, rank: string) => void;
   resetUserSkillData: () => void;
 }
 
@@ -23,13 +26,13 @@ const useUserDataStore = create<StoreTypes>((set, getState) => ({
       return {
         userData: {
           ...state.userData,
-          skill_data: [],
+          skill_data: null,
         },
       };
     });
   },
 
-  setUserSkillData: (skill_id, rank) => {
+  setUserSkillData: (skill_id: number, rank: string) => {
     const userSkillData = getState().userData?.skill_data;
     let changedUserSkill = userSkillData?.find(item => item.skill_id === skill_id);
 
@@ -43,8 +46,6 @@ const useUserDataStore = create<StoreTypes>((set, getState) => ({
     } else {
       changedUserSkill?.rank ? rank : "";
     }
-
-    console.log(userSkillData);
   },
 }));
 

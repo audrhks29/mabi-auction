@@ -3,15 +3,13 @@ interface SkillsTypes {
   talent: string[];
   talent_kor: string[];
   category: string;
-  isPromotion: boolean;
   name_kor: string;
   icon: string;
   description: string;
   total_need_ap: number;
-  total_stats: StatsTypes;
+  total_stats: StatsTypes | null;
   skill_by_rank: SkillByRankTypes[];
 }
-[];
 
 interface StatsTypes {
   hp?: number;
@@ -30,10 +28,10 @@ interface StatsIncludeIdTypes extends StatsTypes {
 
 interface SkillByRankTypes {
   rank: string;
-  bonus_stats: StatsTypes | null;
-  training_list: TrainingListTypes[];
-  effect: string[];
-  need_ap: number;
+  bonus_stats?: StatsTypes | null;
+  training_list?: TrainingListTypes[];
+  effect: string[] | null;
+  need_ap: number | null;
   accumulate_rp: RpTypes[] | null;
   accumulate_stats: StatsTypes | null;
   accumulate_ap: number;

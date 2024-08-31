@@ -1,4 +1,4 @@
-import create from "zustand";
+import { create } from "zustand";
 
 interface StoreType {
   total_ap_array: {
@@ -13,7 +13,7 @@ interface StoreType {
 
   setApTable(skill: SkillsTypes, newRankByAP: number): void;
   setStatsTable(skill: SkillsTypes, newRankByStats: StatsTypes): void;
-  setRpTable(skill: number, newRp: RpTypes[]): void;
+  setRpTable(skill: number, newRp: RpTypes[] | null): void;
   initialTable(): void;
 }
 
@@ -86,23 +86,23 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
   setRpTable: (skill_id, newRp) => {
     const state = getState();
     const total_rp_array = state.total_rp_array;
+    if (newRp)
+      for (const index in newRp) {
+        const findSkillRp = total_rp_array.findIndex(r => r.id === skill_id && r.title === newRp[index].title);
 
-    for (const index in newRp) {
-      const findSkillRp = total_rp_array.findIndex(r => r.id === skill_id && r.title === newRp[index].title);
+        const SkillRp = {
+          id: skill_id,
+          ...newRp[index],
+        };
 
-      const SkillRp = {
-        id: skill_id,
-        ...newRp[index],
-      };
-
-      if (findSkillRp === -1) {
-        total_rp_array.push(SkillRp);
-      } else {
-        total_rp_array[findSkillRp] = SkillRp;
+        if (findSkillRp === -1) {
+          total_rp_array.push(SkillRp);
+        } else {
+          total_rp_array[findSkillRp] = SkillRp;
+        }
       }
-    }
 
-    const expSums = {};
+    const expSums: { [key: string]: number } = {};
 
     total_rp_array.forEach(entry => {
       const { title, exp } = entry;

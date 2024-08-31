@@ -1,12 +1,13 @@
 "use client";
 
+import { useLayoutEffect } from "react";
 import { useParams } from "next/navigation";
+
 import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 import skillLists from "@/assets/skill/human/skill.json";
-import { useLayoutEffect } from "react";
 
 export default function StatsTable() {
   const params = useParams();

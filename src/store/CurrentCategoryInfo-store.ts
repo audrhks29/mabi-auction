@@ -51,8 +51,7 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
 
   // stats 데이터
   setStatsTable: (skill, newRankByStats) => {
-    const state = getState();
-    const total_stats_array = state.total_stats_array;
+    const total_stats_array = getState().total_stats_array;
 
     const newSumStats = {
       id: skill.skill_id,

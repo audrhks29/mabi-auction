@@ -7,9 +7,16 @@ interface StoreType {
   }[];
   total_stats_array: StatsIncludeIdTypes[];
   total_rp_array: any[];
+
   total_ap: number;
   total_stats: StatsIncludeIdTypes;
   total_rp: RpTypes[];
+
+  current_category_skill_array: { skill_id: number; rank: string }[];
+
+  setCurrentCategorySkill(skill: SkillsTypes[], userSkillData: { skill_id: number; rank: string }[] | undefined): void;
+  setSelectedSkillRank(skill_id: number, rank: string): void;
+  initialCurrentCategorySkill(skill: SkillsTypes[]): void;
 
   setApTable(skill: SkillsTypes, newRankByAP: number): void;
   setStatsTable(skill: SkillsTypes, newRankByStats: StatsTypes): void;
@@ -29,7 +36,7 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
   current_category_skill_array: [],
 
   setCurrentCategorySkill: (skill, userSkillData) => {
-    const newSkill = skill.map((skillList, index) => {
+    const newSkill = skill.map(skillList => {
       return {
         skill_id: skillList.skill_id,
         rank: userSkillData?.find(item => item.skill_id === skillList.skill_id)?.rank || "연습",
@@ -47,7 +54,7 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
   },
 
   initialCurrentCategorySkill: skill => {
-    const newSkill = skill.map((skillList, index) => {
+    const newSkill = skill.map(skillList => {
       return {
         skill_id: skillList.skill_id,
         rank: "연습",

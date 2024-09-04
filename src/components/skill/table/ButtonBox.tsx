@@ -17,7 +17,7 @@ export default function ButtonBox() {
   const params = useParams();
 
   const skill = skillLists.filter(skillList =>
-    params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab),
+    params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab as string),
   );
 
   useEffect(() => {

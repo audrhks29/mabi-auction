@@ -100,7 +100,7 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
       setStatsTable(skill, newRank_stats_ap_rp);
       setRpTable(skill.skill_id, newRank_stats_ap_rp.rp);
     },
-    [skill, setApTable, setStatsTable, setRpTable],
+    [skill, setSelectedSkillRank, setApTable, setStatsTable, setRpTable],
   );
 
   useLayoutEffect(() => {

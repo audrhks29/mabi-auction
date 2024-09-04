@@ -26,6 +26,36 @@ const useCurrentCategoryInfoStore = create<StoreType>((set, getState) => ({
   total_stats: {},
   total_rp: [],
 
+  current_category_skill_array: [],
+
+  setCurrentCategorySkill: (skill, userSkillData) => {
+    const newSkill = skill.map((skillList, index) => {
+      return {
+        skill_id: skillList.skill_id,
+        rank: userSkillData?.find(item => item.skill_id === skillList.skill_id)?.rank || "연습",
+      };
+    });
+
+    set({ current_category_skill_array: newSkill });
+  },
+
+  setSelectedSkillRank: (skill_id, rank) => {
+    const currentSkills = getState().current_category_skill_array;
+    const updatedSkills = currentSkills.map(skill => (skill.skill_id === skill_id ? { ...skill, rank } : skill));
+
+    set({ current_category_skill_array: updatedSkills });
+  },
+
+  initialCurrentCategorySkill: skill => {
+    const newSkill = skill.map((skillList, index) => {
+      return {
+        skill_id: skillList.skill_id,
+        rank: "연습",
+      };
+    });
+
+    set({ current_category_skill_array: newSkill });
+  },
   // ap 데이터
   setApTable: (skill, newRankByAP) => {
     const total_ap_array = getState().total_ap_array;

@@ -4,10 +4,25 @@ import { Button } from "@/components/ui/button";
 
 import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 import useUserDataStore from "@/store/userData-store";
+import skillLists from "@/assets/skill/human/skill.json";
+import { useParams } from "next/navigation";
+import { useEffect } from "react";
 
 export default function ButtonBox() {
+  const setCurrentCategorySkill = useCurrentCategoryInfoStore(state => state.setCurrentCategorySkill);
+  const userData = useUserDataStore(state => state.userData);
   const resetUserSkillData = useUserDataStore(state => state.resetUserSkillData);
   const initialTable = useCurrentCategoryInfoStore(state => state.initialTable);
+  const initialCurrentCategorySkill = useCurrentCategoryInfoStore(state => state.initialCurrentCategorySkill);
+  const params = useParams();
+
+  const skill = skillLists.filter(skillList =>
+    params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab),
+  );
+
+  useEffect(() => {
+    setCurrentCategorySkill(skill, userData?.skill_data);
+  }, [params, setCurrentCategorySkill, skill, userData]);
 
   return (
     <div className="flex flex-col justify-between">
@@ -22,6 +37,7 @@ export default function ButtonBox() {
             if (confirmMessage) {
               resetUserSkillData();
               initialTable();
+              initialCurrentCategorySkill(skill);
             }
           }}>
           초기화

@@ -39,14 +39,25 @@ const initial_stats_ap_rp = {
 };
 
 function SelectRank({ skill }: { skill: SkillsTypes }) {
+  // console.log(skill);
   const params = useParams();
   const router = useRouter();
 
-  const { setApTable, setStatsTable, setRpTable } = useCurrentCategoryInfoStore(
+  const {
+    setApTable,
+    setStatsTable,
+    setRpTable,
+    current_category_skill_array,
+    setCurrentCategorySkill,
+    setSelectedSkillRank,
+  } = useCurrentCategoryInfoStore(
     state => ({
       setApTable: state.setApTable,
       setStatsTable: state.setStatsTable,
       setRpTable: state.setRpTable,
+      current_category_skill_array: state.current_category_skill_array,
+      setCurrentCategorySkill: state.setCurrentCategorySkill,
+      setSelectedSkillRank: state.setSelectedSkillRank,
     }),
     shallow,
   );
@@ -58,8 +69,10 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
     }),
     shallow,
   );
+  // console.log(current_category_skill_array);
+  const thisSkillRank = current_category_skill_array?.find(r => r.skill_id === skill.skill_id)?.rank;
 
-  const thisSkillRank = userData?.skill_data?.find(r => r.skill_id === skill.skill_id)?.rank;
+  // console.log(thisSkillRank);
 
   const [selectedRank_stats_ap_rp, setSelectRank_stats_ap_rp] = useState<Stats_ap_rpType>(initial_stats_ap_rp);
   // 랭크 선택 함수
@@ -81,6 +94,7 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
       };
 
       setSelectRank_stats_ap_rp(newRank_stats_ap_rp);
+      setSelectedSkillRank(skill.skill_id, selectedRank.rank);
 
       setApTable(skill, newRank_stats_ap_rp.ap);
       setStatsTable(skill, newRank_stats_ap_rp);
@@ -91,13 +105,16 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
 
   useLayoutEffect(() => {
     if (thisSkillRank) handleSelectRank(thisSkillRank);
+    // setSelectedSkillRank(skill, thisSkillRank);
   }, [handleSelectRank, thisSkillRank]);
+
+  // useLayoutEffect(() => {}, []);
 
   return (
     <>
       <TableCell>
         <Select
-          value={thisSkillRank ? thisSkillRank : "연습"}
+          value={thisSkillRank}
           onValueChange={value => {
             handleSelectRank(value);
             setUserSkillData(skill.skill_id, value);

@@ -1,24 +1,37 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
+import { useParams } from "next/navigation";
+import { shallow } from "zustand/shallow";
 
 import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 import useUserDataStore from "@/store/userData-store";
-import skillLists from "@/assets/skill/human/skill.json";
-import { useParams } from "next/navigation";
-import { useEffect } from "react";
+
+import { Button } from "@/components/ui/button";
+
+import { loadSkillLists } from "@/utils/loadSkillLists";
 
 export default function ButtonBox() {
-  const setCurrentCategorySkill = useCurrentCategoryInfoStore(state => state.setCurrentCategorySkill);
-  const userData = useUserDataStore(state => state.userData);
-  const resetUserSkillData = useUserDataStore(state => state.resetUserSkillData);
-  const initialTable = useCurrentCategoryInfoStore(state => state.initialTable);
-  const initialCurrentCategorySkill = useCurrentCategoryInfoStore(state => state.initialCurrentCategorySkill);
   const params = useParams();
 
-  const skill = skillLists.filter(skillList =>
-    params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab as string),
+  const { setCurrentCategorySkill, initialTable, initialCurrentCategorySkill } = useCurrentCategoryInfoStore(
+    state => ({
+      setCurrentCategorySkill: state.setCurrentCategorySkill,
+      initialTable: state.initialTable,
+      initialCurrentCategorySkill: state.initialCurrentCategorySkill,
+    }),
+    shallow,
   );
+
+  const { userData, resetUserSkillData } = useUserDataStore(
+    state => ({
+      userData: state.userData,
+      resetUserSkillData: state.resetUserSkillData,
+    }),
+    shallow,
+  );
+
+  const skill = loadSkillLists(params);
 
   useEffect(() => {
     setCurrentCategorySkill(skill, userData?.skill_data);

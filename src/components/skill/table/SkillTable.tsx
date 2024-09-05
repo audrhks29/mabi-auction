@@ -1,15 +1,14 @@
 import Image from "next/image";
-
-import skillLists from "@/assets/skill/human/skill.json";
+import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 import SelectRank from "./SelectRank";
 
-export default function SkillTable({ params }: { params: { type: string; tab: string } }) {
-  const skill = skillLists.filter(skillList =>
-    params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab),
-  );
+import { loadSkillLists } from "@/utils/loadSkillLists";
+
+export default function SkillTable({ params }: { params: Params }) {
+  const skill = loadSkillLists(params);
 
   return (
     <article>

@@ -7,7 +7,7 @@ import useCurrentCategoryInfoStore from "@/store/CurrentCategoryInfo-store";
 
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
-import skillLists from "@/assets/skill/human/skill.json";
+import { loadSkillLists } from "@/utils/loadSkillLists";
 
 export default function StatsTable() {
   const params = useParams();
@@ -19,9 +19,7 @@ export default function StatsTable() {
     initialTable();
   }, [initialTable, params]);
 
-  const skills = skillLists.filter(skillList =>
-    params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab as string),
-  );
+  const skills = loadSkillLists(params);
 
   const calculateTotals = (skills: SkillsTypes[]) => {
     const ap = skills.reduce((sum, skill) => sum + skill.total_need_ap, 0);

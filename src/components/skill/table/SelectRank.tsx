@@ -39,7 +39,6 @@ const initial_stats_ap_rp = {
 };
 
 function SelectRank({ skill }: { skill: SkillsTypes }) {
-  // console.log(skill);
   const params = useParams();
   const router = useRouter();
 
@@ -62,17 +61,14 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
     shallow,
   );
 
-  const { userData, setUserSkillData } = useUserDataStore(
+  const { setUserSkillData } = useUserDataStore(
     state => ({
-      userData: state.userData,
       setUserSkillData: state.setUserSkillData,
     }),
     shallow,
   );
-  // console.log(current_category_skill_array);
-  const thisSkillRank = current_category_skill_array?.find(r => r.skill_id === skill.skill_id)?.rank;
 
-  // console.log(thisSkillRank);
+  const thisSkillRank = current_category_skill_array?.find(r => r.skill_id === skill.skill_id)?.rank;
 
   const [selectedRank_stats_ap_rp, setSelectRank_stats_ap_rp] = useState<Stats_ap_rpType>(initial_stats_ap_rp);
   // 랭크 선택 함수
@@ -105,10 +101,7 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
 
   useLayoutEffect(() => {
     if (thisSkillRank) handleSelectRank(thisSkillRank);
-    // setSelectedSkillRank(skill, thisSkillRank);
   }, [handleSelectRank, thisSkillRank]);
-
-  // useLayoutEffect(() => {}, []);
 
   return (
     <>

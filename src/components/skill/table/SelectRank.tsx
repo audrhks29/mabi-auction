@@ -12,6 +12,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 
+type StatsTypes = "hp" | "mp" | "sp" | "str" | "dex" | "int" | "will" | "luck";
+
 type Stats_ap_rpType = {
   ap: number;
   hp: number;
@@ -37,6 +39,8 @@ const initial_stats_ap_rp = {
   luck: 0,
   rp: null,
 };
+
+const stats: StatsTypes[] = ["hp", "mp", "sp", "str", "dex", "int", "will", "luck"];
 
 function SelectRank({ skill }: { skill: SkillsTypes }) {
   const params = useParams();
@@ -130,37 +134,11 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
         {selectedRank_stats_ap_rp.ap || 0}/{skill.total_need_ap || 0}
       </TableCell>
 
-      <TableCell>
-        {selectedRank_stats_ap_rp.hp || 0}/{skill?.total_stats?.hp || 0}
-      </TableCell>
-
-      <TableCell>
-        {selectedRank_stats_ap_rp.mp || 0}/{skill?.total_stats?.mp || 0}
-      </TableCell>
-
-      <TableCell>
-        {selectedRank_stats_ap_rp.sp || 0}/{skill?.total_stats?.sp || 0}
-      </TableCell>
-
-      <TableCell>
-        {selectedRank_stats_ap_rp.str || 0}/{skill?.total_stats?.str || 0}
-      </TableCell>
-
-      <TableCell>
-        {selectedRank_stats_ap_rp.dex || 0}/{skill?.total_stats?.dex || 0}
-      </TableCell>
-
-      <TableCell>
-        {selectedRank_stats_ap_rp.int || 0}/{skill?.total_stats?.int || 0}
-      </TableCell>
-
-      <TableCell>
-        {selectedRank_stats_ap_rp.will || 0}/{skill?.total_stats?.will || 0}
-      </TableCell>
-
-      <TableCell>
-        {selectedRank_stats_ap_rp.luck || 0}/{skill?.total_stats?.luck || 0}
-      </TableCell>
+      {stats.map(stat => (
+        <TableCell key={stat}>
+          {selectedRank_stats_ap_rp[stat] || 0}/{skill?.total_stats?.[stat] || 0}
+        </TableCell>
+      ))}
 
       <TableCell>
         <Button

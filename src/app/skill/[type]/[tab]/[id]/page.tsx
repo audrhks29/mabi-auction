@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import skillLists from "@/assets/skill/human/skill.json";
@@ -10,6 +12,7 @@ import Training from "@/components/skill/detail/skillCard/Training";
 import AbilityPoint from "@/components/skill/detail/skillCard/AbilityPoint";
 import Stats from "@/components/skill/detail/skillCard/Stats";
 import DetailDescription from "@/components/skill/detail/skillCard/DetailDescription";
+import { useEffect, useState } from "react";
 
 export default function SkillDetailPage({
   params,
@@ -20,6 +23,33 @@ export default function SkillDetailPage({
     id: string;
   };
 }) {
+  const [userSkillData, setUserSkillData] = useState("F");
+
+  useEffect(() => {
+    const fetchUserSkillData = async () => {
+      try {
+        const res = await fetch(`/api/auth/userData/skill/${params.id}`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        const resData = await res.json();
+
+        if (res) {
+          setUserSkillData(resData);
+        } else if (resData.error) {
+          console.error(resData.error);
+        }
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      }
+    };
+
+    fetchUserSkillData();
+  }, [params.id]);
+
   const findSkill = skillLists.find(skillList =>
     params.type === "category"
       ? skillList.category === params.tab && skillList.skill_id === Number(params.id)
@@ -30,7 +60,7 @@ export default function SkillDetailPage({
     <section className="grid gap-3">
       <CurrentRank skill={findSkill} />
 
-      <Tabs defaultValue="F" className="grid gap-3">
+      <Tabs className="grid gap-3" defaultValue={userSkillData?.rank ? userSkillData?.rank : "F"}>
         <TabsList className="block w-fit m-auto">
           {findSkill?.skill_by_rank.map(item => (
             <TabsTrigger className="w-12" key={item.rank} value={item.rank}>

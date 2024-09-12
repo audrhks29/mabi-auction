@@ -22,7 +22,7 @@ const useUserDataStore = create<StoreTypes>((set, getState) => ({
   },
 
   resetUserSkillData: () => {
-    set(state => {
+    set((state: StoreTypes): Partial<StoreTypes> => {
       return {
         userData: {
           ...state.userData,

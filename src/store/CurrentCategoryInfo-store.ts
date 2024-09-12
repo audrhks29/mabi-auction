@@ -14,7 +14,10 @@ interface StoreType {
 
   current_category_skill_array: { skill_id: number; rank: string }[];
 
-  setCurrentCategorySkill(skill: SkillsTypes[], userSkillData: { skill_id: number; rank: string }[] | undefined): void;
+  setCurrentCategorySkill(
+    skill: SkillsTypes[],
+    userSkillData: { skill_id: number; rank: string }[] | undefined | null,
+  ): void;
   setSelectedSkillRank(skill_id: number, rank: string): void;
   initialCurrentCategorySkill(skill: SkillsTypes[]): void;
 

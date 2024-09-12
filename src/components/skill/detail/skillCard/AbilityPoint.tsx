@@ -1,4 +1,10 @@
-export default function AbilityPoint({ needAp, accumulateAP }: { needAp: number; accumulateAP: number }) {
+export default function AbilityPoint({
+  needAp,
+  accumulateAP,
+}: {
+  needAp: number | null | undefined;
+  accumulateAP: number;
+}) {
   return (
     <div className="border text-left text-[12px] p-3 rounded-sm">
       <h3 className="font-bold text-[14px] pb-3">AP</h3>

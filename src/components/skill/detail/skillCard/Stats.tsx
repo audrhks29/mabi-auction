@@ -2,7 +2,7 @@ export default function Stats({
   bonusStats,
   accumulateStats,
 }: {
-  bonusStats: StatsTypes | null;
+  bonusStats: StatsTypes | null | undefined;
   accumulateStats: StatsTypes | null;
 }) {
   const bonusStatsArray = bonusStats && Object.entries(bonusStats);

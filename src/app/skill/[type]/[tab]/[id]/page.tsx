@@ -13,6 +13,7 @@ import AbilityPoint from "@/components/skill/detail/skillCard/AbilityPoint";
 import Stats from "@/components/skill/detail/skillCard/Stats";
 import DetailDescription from "@/components/skill/detail/skillCard/DetailDescription";
 import { useEffect, useState } from "react";
+import { fetchUserSkillData } from "@/server/skill";
 
 export default function SkillDetailPage({
   params,
@@ -23,32 +24,11 @@ export default function SkillDetailPage({
     id: string;
   };
 }) {
-  const [userSkillData, setUserSkillData] = useState("F");
+  const [userSkillData, setUserSkillData] = useState("연습");
 
   useEffect(() => {
-    const fetchUserSkillData = async () => {
-      try {
-        const res = await fetch(`/api/auth/userData/skill/${params.id}`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-
-        const resData = await res.json();
-
-        if (res) {
-          setUserSkillData(resData);
-        } else if (resData.error) {
-          console.error(resData.error);
-        }
-      } catch (error) {
-        console.error("Error fetching user data:", error);
-      }
-    };
-
-    fetchUserSkillData();
-  }, [params.id]);
+    fetchUserSkillData(params, setUserSkillData);
+  }, [params]);
 
   const findSkill = skillLists.find(skillList =>
     params.type === "category"
@@ -58,9 +38,14 @@ export default function SkillDetailPage({
 
   return (
     <section className="grid gap-3">
-      <CurrentRank skill={findSkill} />
+      <CurrentRank skill={findSkill} userSkillData={userSkillData} setUserSkillData={setUserSkillData} />
 
-      <Tabs className="grid gap-3" defaultValue={userSkillData?.rank ? userSkillData?.rank : "F"}>
+      <Tabs
+        className="grid gap-3"
+        value={userSkillData}
+        onValueChange={value => {
+          setUserSkillData(value);
+        }}>
         <TabsList className="block w-fit m-auto">
           {findSkill?.skill_by_rank.map(item => (
             <TabsTrigger className="w-12" key={item.rank} value={item.rank}>

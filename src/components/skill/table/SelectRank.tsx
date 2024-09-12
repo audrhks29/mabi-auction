@@ -11,36 +11,8 @@ import { shallow } from "zustand/shallow";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { TableCell } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-
-type StatsTypes = "hp" | "mp" | "sp" | "str" | "dex" | "int" | "will" | "luck";
-
-type Stats_ap_rpType = {
-  ap: number;
-  hp: number;
-  mp: number;
-  sp: number;
-  str: number;
-  dex: number;
-  int: number;
-  will: number;
-  luck: number;
-  rp: RpTypes[] | null;
-};
-
-const initial_stats_ap_rp = {
-  ap: 0,
-  hp: 0,
-  mp: 0,
-  sp: 0,
-  str: 0,
-  dex: 0,
-  int: 0,
-  will: 0,
-  luck: 0,
-  rp: null,
-};
-
-const stats: StatsTypes[] = ["hp", "mp", "sp", "str", "dex", "int", "will", "luck"];
+import { statsTitle } from "@/utils/stats/statsTitle";
+import { initial_stats_ap_rp } from "@/utils/stats/initialStats";
 
 function SelectRank({ skill }: { skill: SkillsTypes }) {
   const params = useParams();
@@ -74,7 +46,7 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
 
   const thisSkillRank = current_category_skill_array?.find(r => r.skill_id === skill.skill_id)?.rank;
 
-  const [selectedRank_stats_ap_rp, setSelectRank_stats_ap_rp] = useState<Stats_ap_rpType>(initial_stats_ap_rp);
+  const [selectedRank_stats_ap_rp, setSelectRank_stats_ap_rp] = useState(initial_stats_ap_rp);
   // 랭크 선택 함수
   const handleSelectRank = useCallback(
     (value: string) => {
@@ -134,7 +106,7 @@ function SelectRank({ skill }: { skill: SkillsTypes }) {
         {selectedRank_stats_ap_rp.ap || 0}/{skill.total_need_ap || 0}
       </TableCell>
 
-      {stats.map(stat => (
+      {statsTitle.map(stat => (
         <TableCell key={stat}>
           {selectedRank_stats_ap_rp[stat] || 0}/{skill?.total_stats?.[stat] || 0}
         </TableCell>

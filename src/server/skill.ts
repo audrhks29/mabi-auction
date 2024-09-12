@@ -1,33 +1,23 @@
-export async function getAllSkillData() {
-  try {
-    const response = await fetch(`http://localhost:3000/api/skill`, {
-      headers: {
-        Accept: "application/json",
-        method: "GET",
-      },
-    });
-    if (response) {
-      const data = await response.json();
-      return data;
-    }
-  } catch (err) {
-    console.log(err);
-  }
-}
+import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
+import { Dispatch, SetStateAction } from "react";
 
-export async function getFitsSkillData(category: string) {
+export const fetchUserSkillData = async (params: Params, setUserSkillData: Dispatch<SetStateAction<string>>) => {
   try {
-    const response = await fetch(`http://localhost:3000/api/skill/${category}`, {
+    const res = await fetch(`/api/auth/userData/skill/${params.id}`, {
+      method: "GET",
       headers: {
-        Accept: "application/json",
-        method: "GET",
+        "Content-Type": "application/json",
       },
     });
-    if (response) {
-      const data = await response.json();
-      return data;
+
+    const resData = await res.json();
+
+    if (resData.rank) {
+      setUserSkillData(resData.rank);
+    } else if (resData.error) {
+      console.error(resData.error);
     }
-  } catch (err) {
-    console.log(err);
+  } catch (error) {
+    console.error("Error fetching user data:", error);
   }
-}
+};

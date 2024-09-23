@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "talent": "상인",
+    "link": "merchant",
+    "description": "재화의 흐름을 파악하여 여기 저기 돌아다니며 교역하는 것이 무역 재능입니다.",
+    "skills": [
+      { "skill_id": 55100, "name_kor": "교역 마스터리", "icon": "/images/skill/55100.webp" },
+      { "skill_id": 23106, "name_kor": "골드 스트라이크", "icon": "/images/skill/23106.webp" }
+    ],
+    "bonus_stats": [
+      { "order": 1, "grade": "풋내기", "stats": { "행운": 1, "최대 생명력": 2, "의지": 1 } },
+      { "order": 2, "grade": "초보", "stats": { "행운": 2, "최대 생명력": 4, "의지": 2 } },
+      { "order": 3, "grade": "견습", "stats": { "행운": 3, "최대 생명력": 6, "의지": 3 } },
+      { "order": 4, "grade": "길거리", "stats": { "행운": 4, "최대 생명력": 8, "의지": 4 } },
+      { "order": 5, "grade": "용병", "stats": { "행운": 5, "최대 생명력": 10, "의지": 5 } },
+      { "order": 6, "grade": "베테랑", "stats": { "행운": 6, "최대 생명력": 12, "의지": 6 } },
+      { "order": 7, "grade": "수석", "stats": { "행운": 7, "최대 생명력": 14, "의지": 7 } },
+      { "order": 8, "grade": "상급", "stats": { "행운": 8, "최대 생명력": 16, "의지": 8 } },
+      { "order": 9, "grade": "일류", "stats": { "행운": 9, "최대 생명력": 18, "의지": 9 } },
+      { "order": 10, "grade": "특급", "stats": { "행운": 10, "최대 생명력": 20, "의지": 10 } },
+      { "order": 11, "grade": "달인", "stats": { "행운": 10, "최대 생명력": 22, "의지": 11 } },
+      { "order": 12, "grade": "로얄", "stats": { "행운": 12, "최대 생명력": 24, "의지": 12 } },
+      { "order": 13, "grade": "챔피언", "stats": { "행운": 13, "최대 생명력": 26, "의지": 13 } },
+      { "order": 14, "grade": "대", "stats": { "행운": 14, "최대 생명력": 28, "의지": 14 } },
+      { "order": 15, "grade": "마스터", "stats": { "행운": 15, "최대 생명력": 30, "의지": 15 } },
+      { "order": 16, "grade": "그랜드마스터", "stats": { "행운": 40, "최대 생명력": 30, "의지": 25 } }
+    ],
+    "grand_master_effect": {}
+  },
+  {
+    "id": 2,
+    "image": {
+      "bronze": "/images/talent/pettraining/bronze.png",
+      "silver": "/images/talent/pettraining/silver.png",
+      "gold": "/images/talent/pettraining/gold.png",
+      "grandmaster": "/images/talent/pettraining/grandmaster.png"
+    },
+    "talent": "펫 핸들러",
+    "link": "pettraining"
+  },
+  {
+    "id": 3,
+    "image": {
+      "bronze": "/images/talent/chainslash/bronze.png",
+      "silver": "/images/talent/chainslash/silver.png",
+      "gold": "/images/talent/chainslash/gold.png",
+      "grandmaster": "/images/talent/chainslash/grandmaster.png"
+    },
+    "talent": "체인 슬래셔",
+    "link": "chainslash"
+  },
+  {
+    "id": 4,
+    "image": {
+      "bronze": "/images/talent/gunslinger/bronze.png",
+      "silver": "/images/talent/gunslinger/silver.png",
+      "gold": "/images/talent/gunslinger/gold.png",
+      "grandmaster": "/images/talent/gunslinger/grandmaster.png"
+    },
+    "talent": "슈터",
+    "link": "gunslinger"
+  },
+  {
+    "id": 5,
+    "talent": "전사",
+    "link": "closecombat",
+    "description": "근엄하고 용맹한 마음가짐, 동료들을 위해 희생하는 정신이 근접 전투의 기본 자세입니다. 근접 전투는 검, 둔기, 도끼, 방패를 사용하여 전투를 펼치는 재능입니다.",
+    "skills": [
+      { "skill_id": 23002, "name_kor": "컴뱃 마스터리", "icon": "/images/skill/23002.webp" },
+      { "skill_id": 20001, "name_kor": "디펜스", "icon": "/images/skill/20001.webp" },
+      { "skill_id": 20002, "name_kor": "스매시", "icon": "/images/skill/20002.webp" },
+      { "skill_id": 22001, "name_kor": "윈드밀", "icon": "/images/skill/22001.webp" },
+      { "skill_id": 20003, "name_kor": "카운터 어택", "icon": "/images/skill/20003.webp" },
+      { "skill_id": 20011, "name_kor": "돌진", "icon": "/images/skill/20011.webp" },
+      { "skill_id": 23003, "name_kor": "크리티컬 히트", "icon": "/images/skill/23003.webp" },
+      { "skill_id": 20012, "name_kor": "다운 어택", "icon": "/images/skill/20012.webp" },
+      { "skill_id": 23043, "name_kor": "회피", "icon": "/images/skill/23043.webp" },
+      { "skill_id": 23012, "name_kor": "소드 마스터리", "icon": "/images/skill/23012.webp" },
+      { "skill_id": 23014, "name_kor": "블런트 마스터리", "icon": "/images/skill/23014.webp" },
+      { "skill_id": 23013, "name_kor": "액스 마스터리", "icon": "/images/skill/23013.webp" },
+      { "skill_id": 22004, "name_kor": "파이널 히트", "icon": "/images/skill/22004.webp" },
+      { "skill_id": 0, "name_kor": "윈드브레이커", "icon": "/images/skill/00.webp" },
+      { "skill_id": 0, "name_kor": "타운트", "icon": "/images/skill/00.webp" },
+      { "skill_id": 0, "name_kor": "던지기 공격", "icon": "/images/skill/00.webp" },
+      { "skill_id": 23019, "name_kor": "라이트 아머 마스터리", "icon": "/images/skill/23019.webp" },
+      { "skill_id": 23018, "name_kor": "헤비 아머 마스터리", "icon": "/images/skill/23018.webp" },
+      { "skill_id": 23016, "name_kor": "실드 마스터리", "icon": "/images/skill/23016.webp" },
+      { "skill_id": 23064, "name_kor": "듀얼 웨폰 마스터리", "icon": "/images/skill/23064.webp" },
+      { "skill_id": 20019, "name_kor": "배쉬", "icon": "/images/skill/20019.webp" },
+      { "skill_id": 20018, "name_kor": "레이지 임팩트", "icon": "/images/skill/20018.webp" }
+    ],
+    "bonus_stats": [
+      {
+        "order": 1,
+        "grade": "풋내기",
+        "stats": { "체력": 4, "최대 생명력": 1 },
+        "giant_stats": { "체력": 5, "최대 생명력": 1 }
+      },
+      {
+        "order": 2,
+        "grade": "초보",
+        "stats": { "체력": 8, "최대 생명력": 2 },
+        "giant_stats": { "체력": 10, "최대 생명력": 2 }
+      },
+      {
+        "order": 3,
+        "grade": "견습",
+        "stats": { "체력": 12, "최대 생명력": 3 },
+        "giant_stats": { "체력": 15, "최대 생명력": 3 }
+      },
+      {
+        "order": 4,
+        "grade": "길거리",
+        "stats": { "체력": 16, "최대 생명력": 4 },
+        "giant_stats": { "체력": 20, "최대 생명력": 4 }
+      },
+      {
+        "order": 5,
+        "grade": "용병",
+        "stats": { "체력": 20, "최대 생명력": 5 },
+        "giant_stats": { "체력": 25, "최대 생명력": 5 }
+      },
+      {
+        "order": 6,
+        "grade": "베테랑",
+        "stats": { "체력": 24, "최대 생명력": 7 },
+        "giant_stats": { "체력": 30, "최대 생명력": 7 }
+      },
+      {
+        "order": 7,
+        "grade": "수석",
+        "stats": { "체력": 28, "최대 생명력": 9 },
+        "giant_stats": { "체력": 35, "최대 생명력": 9 }
+      },
+      {
+        "order": 8,
+        "grade": "상급",
+        "stats": { "체력": 32, "최대 생명력": 11 },
+        "giant_stats": { "체력": 40, "최대 생명력": 11 }
+      },
+      {
+        "order": 9,
+        "grade": "일류",
+        "stats": { "체력": 36, "최대 생명력": 13 },
+        "giant_stats": { "체력": 45, "최대 생명력": 13 }
+      },
+      {
+        "order": 10,
+        "grade": "특급",
+        "stats": { "체력": 40, "최대 생명력": 15 },
+        "giant_stats": { "체력": 50, "최대 생명력": 15 }
+      },
+      {
+        "order": 11,
+        "grade": "달인",
+        "stats": { "체력": 44, "최대 생명력": 17 },
+        "giant_stats": { "체력": 55, "최대 생명력": 17 }
+      },
+      {
+        "order": 12,
+        "grade": "로얄",
+        "stats": { "체력": 48, "최대 생명력": 19 },
+        "giant_stats": { "체력": 60, "최대 생명력": 19 }
+      },
+      {
+        "order": 13,
+        "grade": "챔피언",
+        "stats": { "체력": 52, "최대 생명력": 21 },
+        "giant_stats": { "체력": 65, "최대 생명력": 21 }
+      },
+      {
+        "order": 14,
+        "grade": "대",
+        "stats": { "체력": 56, "최대 생명력": 23 },
+        "giant_stats": { "체력": 70, "최대 생명력": 23 }
+      },
+      {
+        "order": 15,
+        "grade": "마스터",
+        "stats": { "체력": 60, "최대 생명력": 25 },
+        "giant_stats": { "체력": 75, "최대 생명력": 25 }
+      },
+      {
+        "order": 16,
+        "grade": "그랜드마스터",
+        "stats": { "체력": 90, "최대 생명력": 30 },
+        "giant_stats": { "체력": 115, "최대 생명력": 30 }
+      }
+    ],
+    "grand_master_effect": "근접 무기 최소, 최대 대미지 30 증가"
+  },
+  {
+    "id": 6,
+    "image": {
+      "bronze": "/images/talent/magician/bronze.png",
+      "silver": "/images/talent/magician/silver.png",
+      "gold": "/images/talent/magician/gold.png",
+      "grandmaster": "/images/talent/magician/grandmaster.png"
+    },
+    "talent": "마법사",
+    "link": "magician"
+  },
+  {
+    "id": 7,
+    "image": {
+      "bronze": "/images/talent/archery/bronze.png",
+      "silver": "/images/talent/archery/silver.png",
+      "gold": "/images/talent/archery/gold.png",
+      "grandmaster": "/images/talent/archery/grandmaster.png"
+    },
+    "talent": "궁수",
+    "link": "archery"
+  },
+  {
+    "id": 8,
+    "image": {
+      "bronze": "/images/talent/battleAlchemy/bronze.png",
+      "silver": "/images/talent/battleAlchemy/silver.png",
+      "gold": "/images/talent/battleAlchemy/gold.png",
+      "grandmaster": "/images/talent/battleAlchemy/grandmaster.png"
+    },
+    "talent": "전투 연금술사",
+    "link": "battlealchemy"
+  },
+  {
+    "id": 9,
+    "image": {
+      "bronze": "/images/talent/music/bronze.png",
+      "silver": "/images/talent/music/silver.png",
+      "gold": "/images/talent/music/gold.png",
+      "grandmaster": "/images/talent/music/grandmaster.png"
+    },
+    "talent": "음유시인",
+    "link": "music"
+  },
+  {
+    "id": 10,
+    "image": {
+      "bronze": "/images/talent/holyarts/bronze.png",
+      "silver": "/images/talent/holyarts/silver.png",
+      "gold": "/images/talent/holyarts/gold.png",
+      "grandmaster": "/images/talent/holyarts/grandmaster.png"
+    },
+    "talent": "사제",
+    "link": "holyarts"
+  },
+  {
+    "id": 11,
+    "image": {
+      "bronze": "/images/talent/tailoring/bronze.png",
+      "silver": "/images/talent/tailoring/silver.png",
+      "gold": "/images/talent/tailoring/gold.png",
+      "grandmaster": "/images/talent/tailoring/grandmaster.png"
+    },
+    "talent": "재단사",
+    "link": "tailoring"
+  },
+  {
+    "id": 12,
+    "image": {
+      "bronze": "/images/talent/lancecombat/bronze.png",
+      "silver": "/images/talent/lancecombat/silver.png",
+      "gold": "/images/talent/lancecombat/gold.png",
+      "grandmaster": "/images/talent/lancecombat/grandmaster.png"
+    },
+    "talent": "랜서",
+    "link": "lancecombat"
+  },
+  {
+    "id": 13,
+    "image": {
+      "bronze": "/images/talent/cooking/bronze.png",
+      "silver": "/images/talent/cooking/silver.png",
+      "gold": "/images/talent/cooking/gold.png",
+      "grandmaster": "/images/talent/cooking/grandmaster.png"
+    },
+    "talent": "요리사",
+    "link": "cooking"
+  },
+  {
+    "id": 14,
+    "image": {
+      "bronze": "/images/talent/adventure/bronze.png",
+      "silver": "/images/talent/adventure/silver.png",
+      "gold": "/images/talent/adventure/gold.png",
+      "grandmaster": "/images/talent/adventure/grandmaster.png"
+    },
+    "talent": "모험가",
+    "link": "adventure"
+  },
+  {
+    "id": 15,
+    "image": {
+      "bronze": "/images/talent/martialarts/bronze.png",
+      "silver": "/images/talent/martialarts/silver.png",
+      "gold": "/images/talent/martialarts/gold.png",
+      "grandmaster": "/images/talent/martialarts/grandmaster.png"
+    },
+    "talent": "격투가",
+    "link": "martialarts"
+  },
+  {
+    "id": 16,
+    "image": {
+      "bronze": "/images/talent/transmutation/bronze.png",
+      "silver": "/images/talent/transmutation/silver.png",
+      "gold": "/images/talent/transmutation/gold.png",
+      "grandmaster": "/images/talent/transmutation/grandmaster.png"
+    },
+    "talent": "연성 연금술사",
+    "link": "transmutation"
+  },
+  {
+    "id": 17,
+    "image": {
+      "bronze": "/images/talent/carpentry/bronze.png",
+      "silver": "/images/talent/carpentry/silver.png",
+      "gold": "/images/talent/carpentry/gold.png",
+      "grandmaster": "/images/talent/carpentry/grandmaster.png"
+    },
+    "talent": "목수",
+    "link": "carpentry"
+  },
+  {
+    "id": 18,
+    "image": {
+      "bronze": "/images/talent/medicine/bronze.png",
+      "silver": "/images/talent/medicine/silver.png",
+      "gold": "/images/talent/medicine/gold.png",
+      "grandmaster": "/images/talent/medicine/grandmaster.png"
+    },
+    "talent": "약사",
+    "link": "medicine"
+  },
+  {
+    "id": 19,
+    "image": {
+      "bronze": "/images/talent/smithing/bronze.png",
+      "silver": "/images/talent/smithing/silver.png",
+      "gold": "/images/talent/smithing/gold.png",
+      "grandmaster": "/images/talent/smithing/grandmaster.png"
+    },
+    "talent": "대장장이",
+    "link": "smithing"
+  },
+  {
+    "id": 20,
+    "image": {
+      "bronze": "/images/talent/puppeteer/bronze.png",
+      "silver": "/images/talent/puppeteer/silver.png",
+      "gold": "/images/talent/puppeteer/gold.png",
+      "grandmaster": "/images/talent/puppeteer/grandmaster.png"
+    },
+    "talent": "인형사",
+    "link": "puppeteer"
+  },
+  {
+    "id": 21,
+    "image": {
+      "bronze": "/images/talent/ninja/bronze.png",
+      "silver": "/images/talent/ninja/silver.png",
+      "gold": "/images/talent/ninja/gold.png",
+      "grandmaster": "/images/talent/ninja/grandmaster.png"
+    },
+    "talent": "닌자",
+    "link": "ninja"
+  },
+  {
+    "id": 22,
+    "image": {
+      "bronze": "/images/talent/glyphwrighting/bronze.png",
+      "silver": "/images/talent/glyphwrighting/silver.png",
+      "gold": "/images/talent/glyphwrighting/gold.png",
+      "grandmaster": "/images/talent/glyphwrighting/grandmaster.png"
+    },
+    "talent": "마기그래퍼",
+    "link": "glyphwrighting"
+  },
+  {
+    "id": 23,
+    "image": {
+      "bronze": "/images/talent/astrologer/bronze.png",
+      "silver": "/images/talent/astrologer/silver.png",
+      "gold": "/images/talent/astrologer/gold.png",
+      "grandmaster": "/images/talent/astrologer/grandmaster.png"
+    },
+    "talent": "전투 점성술사",
+    "link": "battleastrologer"
+  },
+  {
+    "id": 24,
+    "image": {
+      "bronze": "/images/talent/astrologer/bronze.png",
+      "silver": "/images/talent/astrologer/silver.png",
+      "gold": "/images/talent/astrologer/gold.png",
+      "grandmaster": "/images/talent/astrologer/grandmaster.png"
+    },
+    "talent": "생활 점성술사",
+    "link": "lifeastrologer"
+  }
+]

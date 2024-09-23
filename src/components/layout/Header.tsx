@@ -10,8 +10,9 @@ interface MenuTypes {
 
 const menusArray = [
   { id: 1, text: "경매장", link: "/auction" },
-  { id: 2, text: "스킬", link: "/skill" },
-  { id: 3, text: "재능등급", link: "/grade" },
+  { id: 2, text: "거대한 뿔피리", link: "/bighornofshout" },
+  { id: 3, text: "스킬", link: "/skill" },
+  { id: 4, text: "재능등급", link: "/grade" },
 ];
 
 function NavMenu({ menu }: { menu: MenuTypes }) {

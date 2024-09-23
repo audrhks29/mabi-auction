@@ -1,16 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import skillLists from "@/assets/skill/human/skill.json";
 
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
-import { useState } from "react";
 
 export default function SameTypeSkills() {
   const [isMoreSkill, setIsMoreSkill] = useState(false);
   const params = useParams();
   const router = useRouter();
 
+  const thisSkillsTalent = skillLists.find(skillList => skillList.skill_id === Number(params.id))?.talent_kor;
   const sameTalentSkillLists = skillLists.filter(skillList =>
     params.type === "category" ? skillList.category === params.tab : skillList.talent.includes(params.tab as string),
   );
@@ -18,7 +19,10 @@ export default function SameTypeSkills() {
   return (
     <div className="mb-3 text-center" style={{ display: !params.id ? "none" : "block" }}>
       <div className="border">
-        <h2 className="p-1 font-bold border-b bg-muted">{sameTalentSkillLists[0]?.category_kor} 스킬 목록</h2>
+        <h2 className="p-1 font-bold border-b bg-muted">
+          {params.type === "category" ? sameTalentSkillLists[0]?.category_kor : thisSkillsTalent}
+          &nbsp;스킬 목록
+        </h2>
 
         <span className="p-1 text-[14px] cursor-pointer" onClick={() => setIsMoreSkill(!isMoreSkill)}>
           {isMoreSkill ? "닫기" : "보기"}
@@ -32,7 +36,7 @@ export default function SameTypeSkills() {
               <Image src={skill.icon} width={30} height={30} alt={skill.name_kor} className="m-auto" />
               <p
                 onClick={() => {
-                  router.push(`/skill/${params.category}/${skill.skill_id}`);
+                  router.push(`/skill/${params.type}/${params.tab}/${skill.skill_id}`);
                 }}
                 className="cursor-pointer hover:font-bold">
                 {skill.name_kor}

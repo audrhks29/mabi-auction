@@ -31,6 +31,21 @@ export default function ButtonBox() {
     shallow,
   );
 
+  const fetchUserData = async () => {
+    try {
+      const res = await fetch("/api/userData", {
+        method: "PUT",
+        body: JSON.stringify(userData),
+      });
+      console.log(res);
+      const resData = await res.json();
+
+      console.log(resData);
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
+
   const skill = loadSkillLists(params);
 
   useEffect(() => {
@@ -47,6 +62,7 @@ export default function ButtonBox() {
           className="mr-2"
           onClick={() => {
             const confirmMessage = confirm("해당 스킬목록을 초기화 하시겠습니까?");
+
             if (confirmMessage) {
               resetUserSkillData();
               initialTable();
@@ -56,7 +72,13 @@ export default function ButtonBox() {
           초기화
         </Button>
 
-        <Button type="button">저장</Button>
+        <Button
+          type="button"
+          onClick={() => {
+            fetchUserData();
+          }}>
+          저장
+        </Button>
       </div>
     </div>
   );

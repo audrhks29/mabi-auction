@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect } from "react";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -7,10 +9,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PopoverClose } from "@radix-ui/react-popover";
 
-import Link from "next/link";
 import useUserDataStore from "@/store/userData-store";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 
 interface FormData {
@@ -118,7 +118,7 @@ export default function UserAuth({ accessToken }: { accessToken: RequestCookie |
       fetchUserData();
     }
   }, [accessToken, setUserData]);
-  // console.log(userData);
+
   return (
     <>
       {!userData ? (

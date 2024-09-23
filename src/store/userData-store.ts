@@ -34,6 +34,7 @@ const useUserDataStore = create<StoreTypes>((set, getState) => ({
 
   setUserSkillData: (skill_id: number, rank: string) => {
     const userSkillData = getState().userData?.skill_data;
+
     let changedUserSkill = userSkillData?.find(item => item.skill_id === skill_id);
 
     if (!changedUserSkill) {

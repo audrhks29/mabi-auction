@@ -8,11 +8,6 @@ import itemCategories from "@/assets/auction/itemCategories.json";
 function CategoryBar({ category_name, detail_category, category, setCategory }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleSelectedCategory = (category_name, detail_category_id) => {
-    console.log(category);
-    setCategory({ category: category_name, detailCategory: detail_category_id });
-  };
-
   return (
     <ul>
       <li>
@@ -34,7 +29,7 @@ function CategoryBar({ category_name, detail_category, category, setCategory }) 
               <li key={detail_category_id}>
                 <span
                   className={`${category.detailCategory === detail_category_id ? "font-bold" : ""} cursor-pointer hover:font-bold`}
-                  onClick={() => handleSelectedCategory(category_name, detail_category_id)}>
+                  onClick={() => setCategory({ category: category_name, detailCategory: detail_category_id })}>
                   {detail_category_name}
                 </span>
               </li>

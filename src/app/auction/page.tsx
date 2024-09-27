@@ -6,11 +6,7 @@ import { Tabs } from "@radix-ui/react-tabs";
 export default function AuctionPage() {
   return (
     <main className="inner">
-      <Card>
-        <CardHeader>
-          <CardTitle>경매장</CardTitle>
-        </CardHeader>
-
+      <Card className="pt-6">
         <CardContent>
           <Tabs defaultValue="auction" className="mb-3">
             <TabsList>

@@ -27,14 +27,33 @@ import { Button } from "@/components/ui/button";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
-export default function ItemLists({ category }) {
+export default function ItemLists({ category, inputText }) {
   const [data, setData] = useState([]);
   const [sorting, setSorting] = useState<SortingState>([]);
 
   useEffect(() => {
-    const filteredDataByCategory = itemLists.filter(item => item.category_detail === category.detailCategory);
-    setData(filteredDataByCategory);
-  }, [category]);
+    // 검색어만 입력시
+    if (inputText && !category.detailCategory) {
+      const filteredData = itemLists.filter(item => item.textName1.includes(inputText));
+      setData(filteredData);
+    }
+
+    // 카테고리만 클릭시
+    else if (inputText === "" && category.detailCategory) {
+      const filteredData = itemLists.filter(item => item.category_detail === category.detailCategory);
+      setData(filteredData);
+    }
+
+    // 검색어 입력 및 카테고리 클릭
+    else if (inputText !== "" && category.detailCategory) {
+      const filteredData = itemLists.filter(
+        item => item.category_detail === category.detailCategory && item.textName1.includes(inputText),
+      );
+      setData(filteredData);
+    } else {
+      setData([]);
+    }
+  }, [category, inputText]);
 
   const columns = [
     {

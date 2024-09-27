@@ -1,10 +1,17 @@
 import { useState } from "react";
-import { Card } from "@/components/ui/card";
-import itemCategories from "@/assets/auction/itemCategories.json";
-import { ScrollArea } from "../ui/scroll-area";
 
-function CategoryBar({ category_name, detail_category, detailCategory, setDetailCategory }) {
+import { Card } from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
+
+import itemCategories from "@/assets/auction/itemCategories.json";
+
+function CategoryBar({ category_name, detail_category, category, setCategory }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleSelectedCategory = (category_name, detail_category_id) => {
+    console.log(category);
+    setCategory({ category: category_name, detailCategory: detail_category_id });
+  };
 
   return (
     <ul>
@@ -20,14 +27,14 @@ function CategoryBar({ category_name, detail_category, detailCategory, setDetail
 
       {isOpen && (
         <ul className="ml-5">
-          {detail_category.map(category => {
-            const { detail_category_id, detail_category_name } = category;
+          {detail_category.map(item => {
+            const { detail_category_id, detail_category_name } = item;
 
             return (
               <li key={detail_category_id}>
                 <span
-                  className={`${detailCategory.detailCategory === detail_category_name ? "font-bold" : ""} cursor-pointer hover:font-bold`}
-                  onClick={() => setDetailCategory({ category: category_name, detailCategory: detail_category_name })}>
+                  className={`${category.detailCategory === detail_category_id ? "font-bold" : ""} cursor-pointer hover:font-bold`}
+                  onClick={() => handleSelectedCategory(category_name, detail_category_id)}>
                   {detail_category_name}
                 </span>
               </li>
@@ -39,17 +46,17 @@ function CategoryBar({ category_name, detail_category, detailCategory, setDetail
   );
 }
 
-export default function Categories({ detailCategory, setDetailCategory }) {
+export default function Categories({ category, setCategory }) {
   return (
     <ScrollArea className="">
       <Card className="p-3">
-        {itemCategories.map(category => (
+        {itemCategories.map(item => (
           <CategoryBar
-            key={category.category_id}
-            detailCategory={detailCategory}
-            category_name={category.category_name}
-            detail_category={category.detail_category}
-            setDetailCategory={setDetailCategory}
+            key={item.category_id}
+            category_name={item.category_name}
+            detail_category={item.detail_category}
+            category={category}
+            setCategory={setCategory}
           />
         ))}
       </Card>

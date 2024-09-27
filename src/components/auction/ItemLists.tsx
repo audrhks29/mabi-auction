@@ -1,9 +1,7 @@
-import { Card } from "@/components/ui/card";
-import { Pagination, PaginationContent, PaginationItem, PaginationLink } from "@/components/ui/pagination";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 
 import itemLists from "@/assets/auction/itemLists.json";
-import Image from "next/image";
-import { useState } from "react";
 
 import {
   flexRender,
@@ -12,8 +10,6 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../ui/table";
 
 import {
   ArrowUpDownIcon,
@@ -24,13 +20,21 @@ import {
   ChevronsLeft,
   ChevronsRight,
 } from "lucide-react";
-import { Button } from "../ui/button";
+
+import { Card } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
-export default function ItemLists() {
-  const [data, setData] = useState(itemLists);
-  const [sorting, setSorting] = useState<SortingState>([]); // Add sorting state
+export default function ItemLists({ category }) {
+  const [data, setData] = useState([]);
+  const [sorting, setSorting] = useState<SortingState>([]);
+
+  useEffect(() => {
+    const filteredDataByCategory = itemLists.filter(item => item.category_detail === category.detailCategory);
+    setData(filteredDataByCategory);
+  }, [category]);
 
   const columns = [
     {

@@ -18,158 +18,158 @@
     "category_id": 2,
     "category_name": "원거리 장비",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "활" },
-      { "detail_category_id": 2, "detail_category_name": "석궁" },
-      { "detail_category_id": 3, "detail_category_name": "듀얼건" },
-      { "detail_category_id": 4, "detail_category_name": "수리검" },
-      { "detail_category_id": 5, "detail_category_name": "아틀라틀" },
-      { "detail_category_id": 6, "detail_category_name": "원거리 소모품" }
+      { "detail_category_id": 10, "detail_category_name": "활" },
+      { "detail_category_id": 11, "detail_category_name": "석궁" },
+      { "detail_category_id": 12, "detail_category_name": "듀얼건" },
+      { "detail_category_id": 13, "detail_category_name": "수리검" },
+      { "detail_category_id": 14, "detail_category_name": "아틀라틀" },
+      { "detail_category_id": 15, "detail_category_name": "원거리 소모품" }
     ]
   },
   {
     "category_id": 3,
     "category_name": "마법 장비",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "실린더" },
-      { "detail_category_id": 2, "detail_category_name": "스태프" },
-      { "detail_category_id": 3, "detail_category_name": "원드" },
-      { "detail_category_id": 4, "detail_category_name": "마도서" },
-      { "detail_category_id": 5, "detail_category_name": "오브" }
+      { "detail_category_id": 16, "detail_category_name": "실린더" },
+      { "detail_category_id": 17, "detail_category_name": "스태프" },
+      { "detail_category_id": 18, "detail_category_name": "원드" },
+      { "detail_category_id": 19, "detail_category_name": "마도서" },
+      { "detail_category_id": 20, "detail_category_name": "오브" }
     ]
   },
   {
     "category_id": 4,
     "category_name": "갑옷 장비",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "중갑옷" },
-      { "detail_category_id": 2, "detail_category_name": "경갑옷" },
-      { "detail_category_id": 3, "detail_category_name": "천옷" }
+      { "detail_category_id": 21, "detail_category_name": "중갑옷" },
+      { "detail_category_id": 22, "detail_category_name": "경갑옷" },
+      { "detail_category_id": 23, "detail_category_name": "천옷" }
     ]
   },
   {
     "category_id": 5,
     "category_name": "방어 장비",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "장갑" },
-      { "detail_category_id": 2, "detail_category_name": "신발" },
-      { "detail_category_id": 3, "detail_category_name": "모자/가발" },
-      { "detail_category_id": 4, "detail_category_name": "방패" },
-      { "detail_category_id": 5, "detail_category_name": "로브" }
+      { "detail_category_id": 24, "detail_category_name": "장갑" },
+      { "detail_category_id": 25, "detail_category_name": "신발" },
+      { "detail_category_id": 26, "detail_category_name": "모자/가발" },
+      { "detail_category_id": 27, "detail_category_name": "방패" },
+      { "detail_category_id": 28, "detail_category_name": "로브" }
     ]
   },
   {
     "category_id": 6,
     "category_name": "액세서리",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "얼굴 장식" },
-      { "detail_category_id": 2, "detail_category_name": "액세서리" },
-      { "detail_category_id": 3, "detail_category_name": "날개" },
-      { "detail_category_id": 4, "detail_category_name": "꼬리" }
+      { "detail_category_id": 29, "detail_category_name": "얼굴 장식" },
+      { "detail_category_id": 30, "detail_category_name": "액세서리" },
+      { "detail_category_id": 31, "detail_category_name": "날개" },
+      { "detail_category_id": 32, "detail_category_name": "꼬리" }
     ]
   },
   {
     "category_id": 7,
     "category_name": "특수 장비",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "악기" },
-      { "detail_category_id": 2, "detail_category_name": "생활도구" },
-      { "detail_category_id": 3, "detail_category_name": "마리오네트" },
-      { "detail_category_id": 4, "detail_category_name": "에코스톤" },
-      { "detail_category_id": 5, "detail_category_name": "에이도스" },
-      { "detail_category_id": 6, "detail_category_name": "팔리아스 유물" },
-      { "detail_category_id": 7, "detail_category_name": "기타 장비" }
+      { "detail_category_id": 33, "detail_category_name": "악기" },
+      { "detail_category_id": 34, "detail_category_name": "생활도구" },
+      { "detail_category_id": 35, "detail_category_name": "마리오네트" },
+      { "detail_category_id": 36, "detail_category_name": "에코스톤" },
+      { "detail_category_id": 37, "detail_category_name": "에이도스" },
+      { "detail_category_id": 38, "detail_category_name": "팔리아스 유물" },
+      { "detail_category_id": 39, "detail_category_name": "기타 장비" }
     ]
   },
   {
     "category_id": 8,
     "category_name": "설치물",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "의자/사물" },
-      { "detail_category_id": 2, "detail_category_name": "낭만농장/달빛섬" }
+      { "detail_category_id": 40, "detail_category_name": "의자/사물" },
+      { "detail_category_id": 41, "detail_category_name": "낭만농장/달빛섬" }
     ]
   },
   {
     "category_id": 9,
     "category_name": "인챈트 용품",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "인챈트 스크롤" },
-      { "detail_category_id": 2, "detail_category_name": "마법가루" }
+      { "detail_category_id": 42, "detail_category_name": "인챈트 스크롤" },
+      { "detail_category_id": 43, "detail_category_name": "마법가루" }
     ]
   },
   {
     "category_id": 10,
     "category_name": "스크롤",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "도면" },
-      { "detail_category_id": 2, "detail_category_name": "옷본" },
-      { "detail_category_id": 3, "detail_category_name": "마족 스크롤" },
-      { "detail_category_id": 4, "detail_category_name": "기타 스크롤" }
+      { "detail_category_id": 44, "detail_category_name": "도면" },
+      { "detail_category_id": 45, "detail_category_name": "옷본" },
+      { "detail_category_id": 46, "detail_category_name": "마족 스크롤" },
+      { "detail_category_id": 47, "detail_category_name": "기타 스크롤" }
     ]
   },
   {
     "category_id": 11,
     "category_name": "마기그래피 용품",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "마기그래프" },
-      { "detail_category_id": 2, "detail_category_name": "마기그래프 도안" },
-      { "detail_category_id": 3, "detail_category_name": "기타재료" }
+      { "detail_category_id": 48, "detail_category_name": "마기그래프" },
+      { "detail_category_id": 49, "detail_category_name": "마기그래프 도안" },
+      { "detail_category_id": 50, "detail_category_name": "기타재료" }
     ]
   },
   {
     "category_id": 12,
     "category_name": "서적",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "책" },
-      { "detail_category_id": 2, "detail_category_name": "마비노벨" },
-      { "detail_category_id": 3, "detail_category_name": "페이지" }
+      { "detail_category_id": 51, "detail_category_name": "책" },
+      { "detail_category_id": 52, "detail_category_name": "마비노벨" },
+      { "detail_category_id": 53, "detail_category_name": "페이지" }
     ]
   },
   {
     "category_id": 13,
     "category_name": "소모품",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "포션" },
-      { "detail_category_id": 2, "detail_category_name": "음식" },
-      { "detail_category_id": 3, "detail_category_name": "허브" },
-      { "detail_category_id": 4, "detail_category_name": "던전 통행증" },
-      { "detail_category_id": 5, "detail_category_name": "알반 훈련석" },
-      { "detail_category_id": 6, "detail_category_name": "개조석" },
-      { "detail_category_id": 7, "detail_category_name": "보석" },
-      { "detail_category_id": 8, "detail_category_name": "변신 메달" },
-      { "detail_category_id": 9, "detail_category_name": "염색 앰플" },
-      { "detail_category_id": 10, "detail_category_name": "스케치" },
-      { "detail_category_id": 11, "detail_category_name": "핀즈비즈" },
-      { "detail_category_id": 12, "detail_category_name": "기타 소모품" }
+      { "detail_category_id": 54, "detail_category_name": "포션" },
+      { "detail_category_id": 55, "detail_category_name": "음식" },
+      { "detail_category_id": 56, "detail_category_name": "허브" },
+      { "detail_category_id": 57, "detail_category_name": "던전 통행증" },
+      { "detail_category_id": 58, "detail_category_name": "알반 훈련석" },
+      { "detail_category_id": 59, "detail_category_name": "개조석" },
+      { "detail_category_id": 60, "detail_category_name": "보석" },
+      { "detail_category_id": 61, "detail_category_name": "변신 메달" },
+      { "detail_category_id": 62, "detail_category_name": "염색 앰플" },
+      { "detail_category_id": 63, "detail_category_name": "스케치" },
+      { "detail_category_id": 64, "detail_category_name": "핀즈비즈" },
+      { "detail_category_id": 65, "detail_category_name": "기타 소모품" }
     ]
   },
   {
     "category_id": 14,
     "category_name": "토템",
-    "detail_category": [{ "detail_category_id": 1, "detail_category_name": "토템" }]
+    "detail_category": [{ "detail_category_id": 66, "detail_category_name": "토템" }]
   },
   {
     "category_id": 15,
     "category_name": "생활 재료",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "주머니" },
-      { "detail_category_id": 2, "detail_category_name": "천옷/방직" },
-      { "detail_category_id": 3, "detail_category_name": "제련/블랙스미스" },
-      { "detail_category_id": 4, "detail_category_name": "힐웬 공학" },
-      { "detail_category_id": 5, "detail_category_name": "매직 크래프트" }
+      { "detail_category_id": 67, "detail_category_name": "주머니" },
+      { "detail_category_id": 68, "detail_category_name": "천옷/방직" },
+      { "detail_category_id": 69, "detail_category_name": "제련/블랙스미스" },
+      { "detail_category_id": 70, "detail_category_name": "힐웬 공학" },
+      { "detail_category_id": 71, "detail_category_name": "매직 크래프트" }
     ]
   },
   {
     "category_id": 16,
     "category_name": "기타",
     "detail_category": [
-      { "detail_category_id": 1, "detail_category_name": "제스처" },
-      { "detail_category_id": 2, "detail_category_name": "말풍선 스티커" },
-      { "detail_category_id": 3, "detail_category_name": "피니 펫" },
-      { "detail_category_id": 4, "detail_category_name": "불타래" },
-      { "detail_category_id": 5, "detail_category_name": "퍼퓸" },
-      { "detail_category_id": 6, "detail_category_name": "분양 메달" },
-      { "detail_category_id": 7, "detail_category_name": "뷰티 쿠폰" },
-      { "detail_category_id": 8, "detail_category_name": "기타" }
+      { "detail_category_id": 72, "detail_category_name": "제스처" },
+      { "detail_category_id": 73, "detail_category_name": "말풍선 스티커" },
+      { "detail_category_id": 74, "detail_category_name": "피니 펫" },
+      { "detail_category_id": 75, "detail_category_name": "불타래" },
+      { "detail_category_id": 76, "detail_category_name": "퍼퓸" },
+      { "detail_category_id": 77, "detail_category_name": "분양 메달" },
+      { "detail_category_id": 78, "detail_category_name": "뷰티 쿠폰" },
+      { "detail_category_id": 79, "detail_category_name": "기타" }
     ]
   }
 ]

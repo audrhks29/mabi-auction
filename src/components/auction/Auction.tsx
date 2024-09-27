@@ -6,7 +6,7 @@ import ItemLists from "./ItemLists";
 import SearchBox from "./SearchBox";
 
 export default function Auction() {
-  const [detailCategory, setDetailCategory] = useState({
+  const [category, setCategory] = useState({
     category: null,
     detailCategory: null,
   });
@@ -15,8 +15,8 @@ export default function Auction() {
     <article className="text-[14px]">
       <SearchBox />
       <div className="grid grid-cols-[200px_auto] gap-3">
-        <Categories detailCategory={detailCategory} setDetailCategory={setDetailCategory} />
-        <ItemLists />
+        <Categories category={category} setCategory={setCategory} />
+        <ItemLists category={category} />
       </div>
     </article>
   );

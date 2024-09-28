@@ -50,7 +50,9 @@ export default function ItemLists({ category, inputText }) {
         item => item.category_detail === category.detailCategory && item.textName1.includes(inputText),
       );
       setData(filteredData);
-    } else {
+    }
+    // 초기화
+    else {
       setData([]);
     }
   }, [category, inputText]);

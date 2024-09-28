@@ -1,9 +1,11 @@
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { Dispatch, SetStateAction } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import talentGradeDetailList from "@/assets/grade/talentGradeDetail.json";
 import Image from "next/image";
 import Link from "next/link";
+
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+import talentGradeDetailList from "@/assets/grade/talentGradeDetail.json";
 
 export default function TalentsGradeDetail({
   selectedTalent,

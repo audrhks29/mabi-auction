@@ -14,7 +14,8 @@ export default function Auction() {
 
   return (
     <article className="text-[14px]">
-      <SearchBox inputText={inputText} setInputText={setInputText} setCategory={setCategory} />
+      <SearchBox inputText={inputText} setInputText={setInputText} category={category} setCategory={setCategory} />
+
       <div className="grid grid-cols-[200px_auto] gap-3">
         <Categories category={category} setCategory={setCategory} />
         <ItemLists category={category} inputText={inputText} />

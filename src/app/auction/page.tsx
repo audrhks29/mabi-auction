@@ -1,7 +1,6 @@
-import Auction from "@/components/auction/Auction";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Tabs } from "@radix-ui/react-tabs";
+import Auction from "@/components/auction/auction/Auction";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function AuctionPage() {
   return (

@@ -24,6 +24,8 @@ import {
 import { Card } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import ItemDetail from "./ItemDetail";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
@@ -147,11 +149,17 @@ export default function ItemLists({ category, searchKeyword }) {
 
         <TableBody>
           {table.getRowModel().rows.map(row => (
-            <TableRow key={row.id} className="cursor-pointer">
-              {row.getVisibleCells().map(cell => (
-                <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
-              ))}
-            </TableRow>
+            <Dialog key={row.id}>
+              <DialogTrigger asChild>
+                <TableRow className="cursor-pointer">
+                  {row.getVisibleCells().map(cell => (
+                    <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
+                  ))}
+                </TableRow>
+              </DialogTrigger>
+
+              <ItemDetail row={row} />
+            </Dialog>
           ))}
         </TableBody>
       </Table>

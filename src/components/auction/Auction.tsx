@@ -6,7 +6,7 @@ import ItemLists from "./ItemLists";
 import SearchBox from "./SearchBox";
 
 export default function Auction() {
-  const [inputText, setInputText] = useState("");
+  const [searchKeyword, setSearchKeyword] = useState("");
   const [category, setCategory] = useState({
     category: null,
     detailCategory: null,
@@ -14,11 +14,11 @@ export default function Auction() {
 
   return (
     <article className="text-[14px]">
-      <SearchBox inputText={inputText} setInputText={setInputText} category={category} setCategory={setCategory} />
+      <SearchBox category={category} setCategory={setCategory} setSearchKeyword={setSearchKeyword} />
 
       <div className="grid grid-cols-[200px_auto] gap-3">
         <Categories category={category} setCategory={setCategory} />
-        <ItemLists category={category} inputText={inputText} />
+        <ItemLists category={category} searchKeyword={searchKeyword} />
       </div>
     </article>
   );

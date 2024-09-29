@@ -2,14 +2,17 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 import itemCategories from "@/assets/auction/itemCategories.json";
+import { useState } from "react";
 
-export default function SearchBox({ inputText, setInputText, category, setCategory }) {
+export default function SearchBox({ category, setCategory, setSearchKeyword }) {
+  const [inputText, setInputText] = useState("");
+
   const detailCategoryName = itemCategories
     .find(item => item.category_name === category.category)
     ?.detail_category.find(item => item.detail_category_id === category.detailCategory)?.detail_category_name;
 
   return (
-    <section className="grid grid-rows-2 gap-2 pb-2">
+    <section className="grid grid-rows-2 gap-1 pb-2">
       <div className="grid grid-cols-[auto_120px] gap-2">
         <Input
           type="text"
@@ -17,14 +20,18 @@ export default function SearchBox({ inputText, setInputText, category, setCatego
           value={inputText}
           onChange={e => setInputText(e.target.value)}
         />
-        <Button type="button" className="w-28">
+        <Button type="submit" className="w-28" onClick={() => setSearchKeyword(inputText)}>
           찾기
         </Button>
       </div>
 
       <div className="grid grid-cols-[auto_120px] gap-2 items-center">
         <div>
-          {category.category} {">"} {detailCategoryName}
+          {category.category && category.detailCategory && (
+            <span className="ml-3">
+              {category.category} {">"} {detailCategoryName}
+            </span>
+          )}
         </div>
         <Button
           type="button"

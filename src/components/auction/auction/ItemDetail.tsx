@@ -3,8 +3,31 @@ import Image from "next/image";
 import { DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import useUserDataStore from "@/store/userData-store";
 
 export default function ItemDetail({ row }) {
+  const userData = useUserDataStore(state => state.userData);
+
+  const addData = async () => {
+    const data = row.original;
+
+    const response = await fetch("/api/auction/favorites", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!userData) {
+      alert("로그인 후 가능한 기능입니다.");
+    }
+
+    if (response.status === 201) {
+      alert("즐겨찾기에 등록되었습니다.");
+    }
+  };
+
   return (
     <DialogContent className="sm:max-w-[425px] text-[14px]">
       <DialogHeader>
@@ -40,7 +63,9 @@ export default function ItemDetail({ row }) {
 
         <div>
           <Button type="button">내 경매 등록</Button>
-          <Button type="button">즐겨찾기 등록</Button>
+          <Button type="button" onClick={addData}>
+            즐겨찾기 등록
+          </Button>
           <Button type="button">닫기</Button>
         </div>
       </div>

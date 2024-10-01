@@ -10,23 +10,14 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 
-import {
-  ArrowUpDownIcon,
-  ChevronFirst,
-  ChevronLast,
-  ChevronLeft,
-  ChevronRight,
-  ChevronsLeft,
-  ChevronsRight,
-} from "lucide-react";
-
 import { Card } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+
 import ItemDetail from "./ItemDetail";
-import { columns } from "@/utils/auction/tableColumns";
 import Pagination from "./Pagination";
+
+import { columns } from "@/utils/auction/tableColumns";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 

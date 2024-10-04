@@ -16,11 +16,15 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import ItemDetail from "../auction/ItemDetail";
 
 import { columns } from "@/utils/favorites/tableColumns";
+import useUserDataStore from "@/store/userData-store";
+import Pagination from "../auction/Pagination";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
 export default function Favorites() {
-  const [data, setData] = useState([]);
+  const userData = useUserDataStore(state => state.userData);
+
+  const [data, setData] = useState(userData?.favorites || []);
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const table = useReactTable({
@@ -34,8 +38,7 @@ export default function Favorites() {
     getSortedRowModel: getSortedRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
   });
-  // const { userData } = useUserDataStore(state => state.userData);
-  // console.log(userData);
+
   return (
     <Card className="p-3">
       <Table>
@@ -66,7 +69,7 @@ export default function Favorites() {
         </TableBody>
       </Table>
 
-      {/* <Pagination table={table} /> */}
+      <Pagination table={table} />
     </Card>
   );
 }

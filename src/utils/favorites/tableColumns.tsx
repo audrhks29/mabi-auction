@@ -3,22 +3,13 @@ import Image from "next/image";
 
 export const columns = [
   {
-    accessorKey: "textName1",
-    header: ({ column }) => (
+    accessorKey: "id",
+    header: () => (
       <div className="flex gap-3 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">경매 현황</span>
       </div>
     ),
-    cell: props => {
-      const rowData = props.row.original;
-
-      return (
-        <div className="flex items-center">
-          <Image src={rowData.img} width={30} height={30} alt={rowData.textName1} />
-          <span className="ml-2">{props.getValue()}</span>
-        </div>
-      );
-    },
+    cell: props => <p>판매중</p>,
   },
   {
     accessorKey: "textName1",

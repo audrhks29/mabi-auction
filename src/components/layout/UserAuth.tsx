@@ -1,9 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
-
-import { Button } from "@/components/ui/button";
 
 import useUserDataStore from "@/store/userData-store";
 
@@ -13,8 +10,7 @@ import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 import LogoutPopover from "./LogoutPopover";
 
 export default function UserAuth({ accessToken }: { accessToken: RequestCookie | undefined }) {
-  const { userData, deleteUserData, setUserData } = useUserDataStore();
-  const route = useRouter();
+  const { userData, setUserData } = useUserDataStore();
 
   useEffect(() => {
     const fetchUserData = async () => {

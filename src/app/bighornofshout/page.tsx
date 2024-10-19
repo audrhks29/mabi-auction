@@ -8,14 +8,8 @@ import SearchBox from "@/components/bigHornOfShout/SearchBox";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
-interface FormData {
-  inputText: string;
-  searchType: string | undefined;
-  serverType: string;
-}
-
 export default function BigHornOfShoutPage() {
-  const { handleSubmit, register, getValues, setValue, watch } = useForm<FormData>();
+  const { handleSubmit, register, getValues, setValue, watch } = useForm<hornSearchFormTypes>();
 
   const server = watch("serverType");
   const encodeServer = encodeURI(server);
@@ -25,11 +19,12 @@ export default function BigHornOfShoutPage() {
       const urlString = `https://open.api.nexon.com/mabinogi/v1/horn-bugle-world/history?server_name=${encodeServer}`;
       const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
       try {
+        const headers: HeadersInit = API_KEY ? { "x-nxopen-api-key": API_KEY } : {};
+
         const res = await fetch(urlString, {
-          headers: {
-            "x-nxopen-api-key": API_KEY,
-          },
+          headers,
         });
+
         const resData = await res.json();
         return resData;
       } catch (error) {

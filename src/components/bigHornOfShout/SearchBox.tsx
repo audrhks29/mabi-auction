@@ -1,14 +1,32 @@
 import { useState } from "react";
 
+import { QueryObserverResult, RefetchOptions } from "@tanstack/react-query";
+import { UseFormGetValues, UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
+
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 import useBigHornListsStore from "@/store/bigHornLists-store";
+
 import { RotateCcw, SearchIcon } from "lucide-react";
 
-export default function SearchBox({ data, refetch, handleSubmit, register, getValues, setValue }) {
-  const [selectedServer, setSelectedServer] = useState(undefined);
+export default function SearchBox({
+  data,
+  refetch,
+  handleSubmit,
+  register,
+  getValues,
+  setValue,
+}: {
+  data: hornListTypes[];
+  refetch: (options?: RefetchOptions) => Promise<QueryObserverResult<any, Error>>;
+  handleSubmit: UseFormHandleSubmit<hornSearchFormTypes, undefined>;
+  register: UseFormRegister<hornSearchFormTypes>;
+  getValues: UseFormGetValues<hornSearchFormTypes>;
+  setValue: UseFormSetValue<hornSearchFormTypes>;
+}) {
+  const [selectedServer, setSelectedServer] = useState<string | undefined>(undefined);
   const [selectedSearchType, setSelectedSearchType] = useState("keyword");
   const setFilteredData = useBigHornListsStore(state => state.setFilteredData);
 
@@ -16,14 +34,20 @@ export default function SearchBox({ data, refetch, handleSubmit, register, getVa
     const inputText = getValues().inputText;
     const searchType = getValues().searchType;
 
+    // 닉네임 검색
     if (searchType === "nickName") {
       const filteredData = data.filter((item: hornListTypes) => item.character_name === inputText);
       setFilteredData(filteredData);
-    } else if (searchType === "keyword" || searchType === undefined) {
-      const filteredData = data.filter((item: hornListTypes) => item.message.includes(inputText));
+    }
 
+    // 키워드 검색
+    else if (searchType === "keyword" || searchType === undefined) {
+      const filteredData = data.filter((item: hornListTypes) => item.message.includes(inputText));
       setFilteredData(filteredData);
-    } else {
+    }
+
+    // 전체 검색,
+    else {
       setFilteredData(data);
     }
   };
@@ -35,9 +59,11 @@ export default function SearchBox({ data, refetch, handleSubmit, register, getVa
           <Select
             value={selectedServer}
             onValueChange={value => {
-              setSelectedServer(value);
-              setValue("inputText", "");
-              setValue(`serverType`, value);
+              if (typeof value === "string") {
+                setSelectedServer(value);
+                setValue("inputText", "");
+                setValue(`serverType`, value);
+              }
             }}>
             <SelectTrigger className="w-[100px]" type="button">
               <SelectValue placeholder="서버" />
@@ -81,14 +107,18 @@ export default function SearchBox({ data, refetch, handleSubmit, register, getVa
         <Button
           type="button"
           onClick={() => {
-            // if()
             setFilteredData([]);
             setValue(`inputText`, "");
           }}>
           전체보기
         </Button>
 
-        <Button type="button" onClick={() => refetch()}>
+        <Button
+          type="button"
+          onClick={() => {
+            refetch();
+            setValue("inputText", "");
+          }}>
           <i>
             <RotateCcw className="w-4 h-4" />
           </i>

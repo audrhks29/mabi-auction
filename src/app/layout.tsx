@@ -4,7 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/layout/Header";
 import { Separator } from "@/components/ui/separator";
-
+import Providers from "@/utils/provider";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -23,9 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
-        <Header />
-        <Separator className="fixed top-14" />
-        {children}
+        <Providers>
+          <Header />
+          <Separator className="fixed top-14" />
+          {children}
+          <ReactQueryDevtools initialIsOpen={true} />
+        </Providers>
       </body>
     </html>
   );

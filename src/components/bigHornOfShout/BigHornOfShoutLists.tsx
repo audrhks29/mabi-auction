@@ -2,9 +2,11 @@ import { v4 as uuidv4 } from "uuid";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import useBigHornListsStore from "@/store/bigHornLists-store";
 import { UseFormGetValues } from "react-hook-form";
+import { ServerCrash } from "lucide-react";
+import React from "react";
 
 // 거뿔 테이블 렌더링 컴포넌트
-function RenderContent({ renderData }: { renderData: hornListTypes[] | [] }) {
+function RenderContent({ renderData, isLoading }: { renderData: hornListTypes[] | []; isLoading: boolean }) {
   // 날짜 한국시간으로 변환 함수
   const convertToKoreanTime = (isoString: string) => {
     const date = new Date(isoString);
@@ -38,20 +40,33 @@ function RenderContent({ renderData }: { renderData: hornListTypes[] | [] }) {
     );
   };
 
-  return renderData?.map((item: hornListTypes) => (
-    <TableRow key={uuidv4()}>
-      <TableCell>{convertToKoreanTime(item.date_send)}</TableCell>
-      <TableCell>{item.character_name}</TableCell>
-      <TableCell className="text-left">{item.message}</TableCell>
+  return !isLoading && renderData && renderData.length > 0 ? (
+    renderData?.map((item: hornListTypes) => (
+      <TableRow key={uuidv4()}>
+        <TableCell>{convertToKoreanTime(item.date_send)}</TableCell>
+        <TableCell>{item.character_name}</TableCell>
+        <TableCell className="text-left">{item.message}</TableCell>
+      </TableRow>
+    ))
+  ) : (
+    <TableRow className="border-b-0 h-[150px]">
+      <TableCell colSpan={3}>
+        <div className="flex justify-center items-center flex-col gap-3 h-">
+          <ServerCrash className="w-11 h-11" />
+          <span>검색된 결과가 없습니다.</span>
+        </div>
+      </TableCell>
     </TableRow>
-  ));
+  );
 }
 
 export default function BigHornOfShoutLists({
   data,
+  isLoading,
   getValues,
 }: {
   data: hornListTypes[] | [];
+  isLoading: boolean;
   getValues: UseFormGetValues<hornSearchFormTypes>;
 }) {
   const filteredData = useBigHornListsStore(state => state.filteredData);
@@ -69,7 +84,11 @@ export default function BigHornOfShoutLists({
         </TableHeader>
 
         <TableBody>
-          {inputText !== "" ? <RenderContent renderData={filteredData} /> : <RenderContent renderData={data} />}
+          {inputText !== "" ? (
+            <RenderContent renderData={filteredData} isLoading={isLoading} />
+          ) : (
+            <RenderContent renderData={data} isLoading={isLoading} />
+          )}
         </TableBody>
       </Table>
     </section>

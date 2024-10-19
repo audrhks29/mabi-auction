@@ -35,7 +35,7 @@ export default function BigHornOfShoutPage() {
     }
   };
 
-  const { data, refetch } = useQuery({
+  const { data, refetch, isLoading } = useQuery({
     queryKey: [encodeServer],
     queryFn: fetchHornLists,
     select: data => {

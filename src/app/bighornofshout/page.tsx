@@ -56,7 +56,7 @@ export default function BigHornOfShoutPage() {
             setValue={setValue}
           />
           <Separator />
-          <BigHornOfShoutLists data={data} getValues={getValues} />
+          <BigHornOfShoutLists data={data} getValues={getValues} isLoading={isLoading} />
         </CardContent>
       </Card>
     </main>

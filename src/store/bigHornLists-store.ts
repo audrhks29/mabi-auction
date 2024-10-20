@@ -1,8 +1,8 @@
 import create from "zustand";
 
 interface StoreTypes {
-  filteredData: hornListTypes[] | [];
-  setFilteredData: (data: hornListTypes[] | []) => void;
+  filteredData: HornListTypes[] | [];
+  setFilteredData: (data: HornListTypes[] | []) => void;
 }
 
 const useBigHornListsStore = create<StoreTypes>((set, getState) => ({

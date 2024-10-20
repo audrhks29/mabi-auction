@@ -1,10 +1,10 @@
-interface hornSearchFormTypes {
+interface HornSearchFormTypes {
   inputText: string;
   searchType: string | undefined;
   serverType: string;
 }
 
-interface hornListTypes {
+interface HornListTypes {
   character_name: string;
   message: string;
   date_send: string;

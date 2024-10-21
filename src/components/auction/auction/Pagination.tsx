@@ -1,7 +1,10 @@
+import { Table } from "@tanstack/react-table";
+
 import { Button } from "@/components/ui/button";
+
 import { ChevronFirst, ChevronLast, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 
-export default function Pagination({ table }) {
+export default function Pagination({ table }: { table: Table<ItemListsTypes> }) {
   return (
     <div className="flex justify-center items-center pt-6 pb-3">
       <ul className="flex gap-3">

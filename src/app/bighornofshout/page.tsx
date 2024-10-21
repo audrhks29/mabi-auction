@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 export default function BigHornOfShoutPage() {
-  const { handleSubmit, register, getValues, setValue, watch } = useForm<hornSearchFormTypes>();
+  const { handleSubmit, register, getValues, setValue, watch } = useForm<HornSearchFormTypes>();
 
   const server = watch("serverType");
   const encodeServer = encodeURI(server);

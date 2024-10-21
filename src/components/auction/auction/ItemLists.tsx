@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-
-import itemLists from "@/assets/auction/itemLists.json";
+import { useState } from "react";
 
 import {
   flexRender,
@@ -21,29 +19,36 @@ import { columns } from "@/utils/auction/tableColumns";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
-export default function ItemLists({ category, searchKeyword }) {
-  const [data, setData] = useState([]);
+export default function ItemLists({
+  data,
+  category,
+  searchKeyword,
+}: {
+  data: ItemListsTypes[];
+  category: ItemCategoryTypes;
+  searchKeyword: string;
+}) {
   const [sorting, setSorting] = useState<SortingState>([]);
 
-  useEffect(() => {
-    let filteredData = [];
+  // useEffect(() => {
+  //   let filteredData = [];
 
-    // 검색어만 입력시
-    if (searchKeyword && !category.detailCategory) {
-      filteredData = itemLists.filter(item => item.textName1.includes(searchKeyword));
-    }
-    // 카테고리만 클릭시
-    else if (searchKeyword === "" && category.detailCategory) {
-      filteredData = itemLists.filter(item => item.category_detail === category.detailCategory);
-    }
-    // 검색어 입력 및 카테고리 클릭
-    else if (searchKeyword !== "" && category.detailCategory) {
-      filteredData = itemLists.filter(
-        item => item.category_detail === category.detailCategory && item.textName1.includes(searchKeyword),
-      );
-    }
-    setData(filteredData);
-  }, [category, searchKeyword]);
+  //   // 검색어만 입력시
+  //   if (searchKeyword && !category.detailCategory) {
+  //     filteredData = itemLists.filter(item => item.textName1.includes(searchKeyword));
+  //   }
+  //   // 카테고리만 클릭시
+  //   else if (searchKeyword === "" && category.detailCategory) {
+  //     filteredData = itemLists.filter(item => item.category_detail === category.detailCategory);
+  //   }
+  //   // 검색어 입력 및 카테고리 클릭
+  //   else if (searchKeyword !== "" && category.detailCategory) {
+  //     filteredData = itemLists.filter(
+  //       item => item.category_detail === category.detailCategory && item.textName1.includes(searchKeyword),
+  //     );
+  //   }
+  //   setData(filteredData);
+  // }, [category, searchKeyword]);
 
   const table = useReactTable({
     data,
@@ -59,19 +64,21 @@ export default function ItemLists({ category, searchKeyword }) {
 
   return (
     <Card className="p-3">
-      <Table>
+      <Table className="table-auto w-full">
         <TableHeader>
           {table.getHeaderGroups().map(headerGroup => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map(header => (
-                <TableHead key={header.id}>{flexRender(header.column.columnDef.header, header.getContext())}</TableHead>
+                <TableHead key={header.id} className={`w-[${header.getSize()}px]`}>
+                  {flexRender(header.column.columnDef.header, header.getContext())}
+                </TableHead>
               ))}
             </TableRow>
           ))}
         </TableHeader>
 
         <TableBody>
-          {table.getRowModel().rows.map(row => (
+          {table?.getRowModel()?.rows?.map(row => (
             <Dialog key={row.id}>
               <DialogTrigger asChild>
                 <TableRow className="cursor-pointer">

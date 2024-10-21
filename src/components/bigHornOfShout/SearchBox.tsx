@@ -19,12 +19,12 @@ export default function SearchBox({
   getValues,
   setValue,
 }: {
-  data: hornListTypes[];
+  data: HornListTypes[];
   refetch: (options?: RefetchOptions) => Promise<QueryObserverResult<any, Error>>;
-  handleSubmit: UseFormHandleSubmit<hornSearchFormTypes, undefined>;
-  register: UseFormRegister<hornSearchFormTypes>;
-  getValues: UseFormGetValues<hornSearchFormTypes>;
-  setValue: UseFormSetValue<hornSearchFormTypes>;
+  handleSubmit: UseFormHandleSubmit<HornSearchFormTypes, undefined>;
+  register: UseFormRegister<HornSearchFormTypes>;
+  getValues: UseFormGetValues<HornSearchFormTypes>;
+  setValue: UseFormSetValue<HornSearchFormTypes>;
 }) {
   const [selectedServer, setSelectedServer] = useState<string | undefined>(undefined);
   const [selectedSearchType, setSelectedSearchType] = useState("keyword");
@@ -36,13 +36,13 @@ export default function SearchBox({
 
     // 닉네임 검색
     if (searchType === "nickName") {
-      const filteredData = data.filter((item: hornListTypes) => item.character_name === inputText);
+      const filteredData = data.filter((item: HornListTypes) => item.character_name === inputText);
       setFilteredData(filteredData);
     }
 
     // 키워드 검색
     else if (searchType === "keyword" || searchType === undefined) {
-      const filteredData = data.filter((item: hornListTypes) => item.message.includes(inputText));
+      const filteredData = data.filter((item: HornListTypes) => item.message.includes(inputText));
       setFilteredData(filteredData);
     }
 

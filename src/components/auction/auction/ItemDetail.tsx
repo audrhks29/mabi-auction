@@ -1,11 +1,14 @@
-import Image from "next/image";
+import { Row } from "@tanstack/react-table";
+
+import useUserDataStore from "@/store/userData-store";
 
 import { DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import useUserDataStore from "@/store/userData-store";
 
-export default function ItemDetail({ row }) {
+import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
+
+export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
   const userData = useUserDataStore(state => state.userData);
 
   const addData = async () => {
@@ -27,38 +30,36 @@ export default function ItemDetail({ row }) {
       alert("즐겨찾기에 등록되었습니다.");
     }
   };
-
+  // console.log(Object.entries(row.item_option[0]));
   return (
     <DialogContent className="sm:max-w-[425px] text-[14px]">
       <DialogHeader>
-        <DialogTitle>아이템 상세정보</DialogTitle>
+        <DialogTitle className="text-center">아이템 상세정보</DialogTitle>
       </DialogHeader>
 
       <Separator />
 
       <div>
-        <div className="text-center">
-          <h4>{row.original.textName1}</h4>
-          <h3>{row.original.textName0}</h3>
+        <div className="text-center text-[16px] font-semibold">
+          <h4>{row.original.item_display_name}</h4>
         </div>
 
         <div className="flex gap-3 items-center">
-          <div className="w-14 h-20 flex justify-center items-center border">
-            <Image src={row.original.img} width={50} height={50} alt={row.original.textName1} />
-          </div>
-          <div>
-            <p>평균 판매가 : </p>
-            <p>등록 최저가 : </p>
-            <p>판매 수량 : {row.original.amount}</p>
-          </div>
+          <p>판매 수량 : {row.original.item_count}</p>
         </div>
 
         <Separator />
 
         <div>
-          <p>판매가 : {(row.original.amount * row.original.cost).toLocaleString()} Gold</p>
+          <p>판매가 : {convertToKoreanUnits(row.original.item_count * row.original.auction_price_per_unit)} Gold</p>
+          <p>개당 : {convertToKoreanUnits(row.original.auction_price_per_unit)} Gold</p>
+        </div>
 
-          <p>개당 : {row.original.cost.toLocaleString()} Gold</p>
+        <Separator />
+
+        <div>
+          <p>판매가 : {convertToKoreanUnits(row.original.item_count * row.original.auction_price_per_unit)} Gold</p>
+          <p>개당 : {convertToKoreanUnits(row.original.auction_price_per_unit)} Gold</p>
         </div>
 
         <div>
@@ -66,7 +67,6 @@ export default function ItemDetail({ row }) {
           <Button type="button" onClick={addData}>
             즐겨찾기 등록
           </Button>
-          <Button type="button">닫기</Button>
         </div>
       </div>
     </DialogContent>

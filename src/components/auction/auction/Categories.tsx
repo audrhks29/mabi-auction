@@ -76,7 +76,7 @@ export default function Categories({
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   return (
-    <ScrollArea className="max-h-[550px] border rounded-md">
+    <ScrollArea className="h-[707.5px] border rounded-md">
       <Card className="p-3 border-none">
         {itemCategories.map(item => (
           <CategoryBar

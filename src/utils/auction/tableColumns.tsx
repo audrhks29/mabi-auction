@@ -8,7 +8,6 @@ import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
 export const columns: ColumnDef<ItemListsTypes, any>[] = [
   {
     accessorKey: "item_display_name",
-    size: 500,
     header: ({ column }) => (
       <div className="flex gap-3 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">아이템</span>
@@ -22,7 +21,6 @@ export const columns: ColumnDef<ItemListsTypes, any>[] = [
   },
   {
     accessorKey: "date_auction_expire",
-    size: 150,
     header: ({ column }) => (
       <div className="flex gap-3 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">남은 시간</span>
@@ -40,7 +38,6 @@ export const columns: ColumnDef<ItemListsTypes, any>[] = [
   },
   {
     accessorKey: "auction_price_per_unit",
-    size: 190,
     header: ({ column }) => (
       <div className="flex gap-3 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">가격</span>

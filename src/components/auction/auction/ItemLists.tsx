@@ -37,13 +37,16 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
   return (
     <Card className="p-3">
       <Table className="table-auto w-full">
+        <colgroup>
+          <col width="520px" />
+          <col width="130px" />
+          <col width="70px" />
+        </colgroup>
         <TableHeader>
           {table.getHeaderGroups().map(headerGroup => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map(header => (
-                <TableHead key={header.id} className={`w-[${header.getSize()}px]`}>
-                  {flexRender(header.column.columnDef.header, header.getContext())}
-                </TableHead>
+                <TableHead key={header.id}>{flexRender(header.column.columnDef.header, header.getContext())}</TableHead>
               ))}
             </TableRow>
           ))}
@@ -55,12 +58,14 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
               <DialogTrigger asChild>
                 <TableRow className="cursor-pointer">
                   {row.getVisibleCells().map(cell => (
-                    <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
+                    <TableCell key={cell.id} className="px-1">
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </TableCell>
                   ))}
                 </TableRow>
               </DialogTrigger>
 
-              <ItemDetail row={row} />
+              {/* <ItemDetail row={row} /> */}
             </Dialog>
           ))}
         </TableBody>

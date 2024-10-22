@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 
 import { QueryObserverResult, RefetchOptions } from "@tanstack/react-query";
 
@@ -10,14 +10,16 @@ import { Button } from "@/components/ui/button";
 
 import searchLists from "@/assets/auction/searchLists.json";
 export default function SearchBox({
-  data,
+  category,
+  setCategory,
   refetch,
   handleSubmit,
   register,
   getValues,
   setValue,
 }: {
-  data: ItemListsTypes[];
+  category: ItemCategoryStateType;
+  setCategory: Dispatch<SetStateAction<ItemCategoryStateType>>;
   refetch: (options?: RefetchOptions) => Promise<QueryObserverResult<any, Error>>;
   handleSubmit: UseFormHandleSubmit<AuctionSearchFormTypes, undefined>;
   register: UseFormRegister<AuctionSearchFormTypes>;
@@ -26,10 +28,7 @@ export default function SearchBox({
 }) {
   const [recommendInputText, setRecommendInputText] = useState("");
   const [isDropdownVisible, setDropdownVisible] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null); // Ref for the dropdown
-  // const detailCategoryName = itemCategories
-  //   .find(item => item.category_name === category.category)
-  //   ?.detail_category.find(item => item.detail_category_id === category.detailCategory)?.detail_category_name;
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -45,6 +44,7 @@ export default function SearchBox({
   }, []);
 
   const onSubmit = () => {
+    setCategory({ category: null, detailCategory: null });
     refetch();
   };
 
@@ -95,21 +95,20 @@ export default function SearchBox({
         </div>
 
         <div className="grid grid-cols-[auto_120px] gap-2 items-center">
-          {/* <div>
+          <div>
             {category.category && category.detailCategory && (
               <span className="ml-3">
-                {category.category} {">"} {detailCategoryName}
+                {category.category} {">"} {category.detailCategory}
               </span>
             )}
-          </div> */}
-          <p>카테고리</p>
+          </div>
 
           <Button
             type="button"
             className="w-[120px]"
             onClick={() => {
               setValue("inputText", "");
-              // setCategory({ category: null, detailCategory: null });
+              setCategory({ category: null, detailCategory: null });
             }}>
             검색 초기화
           </Button>

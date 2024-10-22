@@ -2,6 +2,11 @@ interface AuctionSearchFormTypes {
   inputText: string;
 }
 
+interface ItemCategoryStateType {
+  category: string | null;
+  detailCategory: string | null;
+}
+
 interface ItemListsTypes {
   item_name: string;
   item_display_name: string;

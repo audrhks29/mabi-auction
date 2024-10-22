@@ -19,36 +19,8 @@ import { columns } from "@/utils/auction/tableColumns";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
-export default function ItemLists({
-  data,
-  category,
-  searchKeyword,
-}: {
-  data: ItemListsTypes[];
-  category: ItemCategoryTypes;
-  searchKeyword: string;
-}) {
+export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
   const [sorting, setSorting] = useState<SortingState>([]);
-
-  // useEffect(() => {
-  //   let filteredData = [];
-
-  //   // 검색어만 입력시
-  //   if (searchKeyword && !category.detailCategory) {
-  //     filteredData = itemLists.filter(item => item.textName1.includes(searchKeyword));
-  //   }
-  //   // 카테고리만 클릭시
-  //   else if (searchKeyword === "" && category.detailCategory) {
-  //     filteredData = itemLists.filter(item => item.category_detail === category.detailCategory);
-  //   }
-  //   // 검색어 입력 및 카테고리 클릭
-  //   else if (searchKeyword !== "" && category.detailCategory) {
-  //     filteredData = itemLists.filter(
-  //       item => item.category_detail === category.detailCategory && item.textName1.includes(searchKeyword),
-  //     );
-  //   }
-  //   setData(filteredData);
-  // }, [category, searchKeyword]);
 
   const table = useReactTable({
     data,

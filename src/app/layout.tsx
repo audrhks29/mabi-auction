@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import { Separator } from "@/components/ui/separator";
 import Providers from "@/utils/provider";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -25,10 +26,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
+        <SidebarProvider>
           <Header />
           <Separator className="fixed top-14" />
+          <SidebarTrigger />
           {children}
           <ReactQueryDevtools initialIsOpen={true} />
+          </SidebarProvider>
         </Providers>
       </body>
     </html>

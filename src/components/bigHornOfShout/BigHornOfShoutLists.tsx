@@ -9,6 +9,7 @@ import useBigHornListsStore from "@/store/bigHornLists-store";
 import convertToKoreanTime from "@/utils/convertToKoreanTime";
 
 import { ServerCrash } from "lucide-react";
+import NonData from "../shared/NonData";
 
 // 거뿔 테이블 렌더링 컴포넌트
 function RenderContent({ renderData, isLoading }: { renderData: HornListTypes[] | []; isLoading: boolean }) {
@@ -29,10 +30,7 @@ function RenderContent({ renderData, isLoading }: { renderData: HornListTypes[] 
   ) : (
     <TableRow className="border-b-0 h-[150px]">
       <TableCell colSpan={3}>
-        <div className="flex justify-center items-center flex-col gap-3 h-">
-          <ServerCrash className="w-11 h-11" />
-          <span>검색된 결과가 없습니다.</span>
-        </div>
+        <NonData />
       </TableCell>
     </TableRow>
   );

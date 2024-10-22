@@ -1,46 +1,37 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useForm } from "react-hook-form";
 
 import Categories from "./Categories";
 import ItemLists from "./ItemLists";
 import SearchBox from "./SearchBox";
-import { useForm } from "react-hook-form";
+
+import NonData from "@/components/shared/NonData";
 
 export default function Auction() {
-  const { handleSubmit, register, getValues, setValue, watch } = useForm<AuctionSearchFormTypes>();
-  const [searchKeyword, setSearchKeyword] = useState("");
-  const [category, setCategory] = useState({
+  const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
+  const [category, setCategory] = useState<ItemCategoryStateType>({
     category: null,
     detailCategory: null,
   });
 
-  // const aa = async () => {
-  //   // https://mabiapi2.pril.cc/prilus.mabiapi/ItemJson
-  //   const urlString = `https://tacask-cdn.com/mabi-labanyu/content/item/all-list.json`;
-  //   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-  //   try {
-  //     const res = await fetch(urlString);
-
-  //     const resData = await res.json();
-  //     // console.log(res);
-  //     console.log(resData);
-  //     // return resData;
-  //   } catch (error) {
-  //     console.error("An unexpected error happened:", error);
-  //   }
-  // };
-  // useEffect(() => {
-  //   aa();
-  // }, []);
-
   const fetchItemLists = async () => {
     const inputText = getValues().inputText;
-    const inputTextEncoded = encodeURI(inputText);
 
-    if (inputText !== "") {
-      const urlString = `https://open.api.nexon.com/mabinogi/v1/auction/list?item_name=${inputTextEncoded}`;
+    if (inputText !== "" || category.detailCategory) {
+      let urlString;
+      if (category.detailCategory) {
+        // 카테고리 클릭시 검색
+        const detailCategoryEncoded = encodeURI(category.detailCategory);
+        urlString = `https://open.api.nexon.com/mabinogi/v1/auction/list?auction_item_category=${detailCategoryEncoded}`;
+      } else {
+        // 검색어 입력시 검색
+        const inputTextEncoded = encodeURI(inputText);
+        urlString = `https://open.api.nexon.com/mabinogi/v1/auction/list?item_name=${inputTextEncoded}`;
+      }
+
       const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
       try {
         const headers: HeadersInit = API_KEY ? { "x-nxopen-api-key": API_KEY } : {};
@@ -50,8 +41,6 @@ export default function Auction() {
         });
 
         const resData = await res.json();
-        // console.log(res);
-        // console.log(resData);
         return resData;
       } catch (error) {
         console.error("An unexpected error happened:", error);
@@ -62,7 +51,7 @@ export default function Auction() {
   };
 
   const { data, refetch, isFetching } = useQuery({
-    queryKey: ["itemLists", getValues().inputText],
+    queryKey: ["itemLists", getValues().inputText || category.detailCategory],
     queryFn: fetchItemLists,
     select: data => {
       return data.auction_item;
@@ -75,7 +64,6 @@ export default function Auction() {
       <SearchBox
         category={category}
         setCategory={setCategory}
-        setSearchKeyword={setSearchKeyword}
         refetch={refetch}
         handleSubmit={handleSubmit}
         register={register}
@@ -84,8 +72,9 @@ export default function Auction() {
       />
 
       <div className="grid grid-cols-[200px_auto] gap-3">
-        <Categories category={category} setCategory={setCategory} />
-        {!isFetching && data?.length > 0 && <ItemLists data={data} category={category} searchKeyword={searchKeyword} />}
+        <Categories category={category} setCategory={setCategory} refetch={refetch} setValue={setValue} />
+        {!isFetching && data?.length > 0 && <ItemLists data={data} />}
+        {data?.length === 0 && <NonData />}
       </div>
     </article>
   );

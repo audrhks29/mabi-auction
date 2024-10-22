@@ -68,7 +68,7 @@ export default function SearchBox({
           {/* 검색결과 추천 */}
           {isDropdownVisible && recommendInputText !== "" && (
             <div ref={dropdownRef} className="absolute top-11 left-0 w-[1096px] border rounded-md">
-              <ScrollArea className="h-[130px] z-50 bg-slate-100">
+              <ScrollArea className="max-h-[130px] z-50 bg-slate-100">
                 {searchLists
                   .filter(
                     list => list.name.replace(/\s/g, "").includes(recommendInputText.replace(/\s/g, "")), // 공백 제거 후 필터링

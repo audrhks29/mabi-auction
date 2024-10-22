@@ -9,7 +9,6 @@ import ItemLists from "./ItemLists";
 import SearchBox from "./SearchBox";
 
 import NonData from "@/components/shared/NonData";
-import { fetchItemLists } from "@/services/auctionApi";
 
 import { fetchItemLists } from "@/services/auctionApi";
 

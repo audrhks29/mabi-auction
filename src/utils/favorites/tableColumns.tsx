@@ -1,18 +1,13 @@
-import { ArrowUpDownIcon } from "lucide-react";
-import Image from "next/image";
+import { ColumnDef } from "@tanstack/react-table";
 
-export const columns = [
+import { ArrowUpDownIcon } from "lucide-react";
+
+import convertToRemainingTime from "@/utils/convertToRemainingTime";
+import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
+
+export const columns: ColumnDef<ItemListsTypes, any>[] = [
   {
-    accessorKey: "id",
-    header: () => (
-      <div className="flex gap-3 align-middle justify-center items-center">
-        <span className="font-bold cursor-pointer">경매 현황</span>
-      </div>
-    ),
-    cell: props => <p>판매중</p>,
-  },
-  {
-    accessorKey: "textName1",
+    accessorKey: "item_display_name",
     header: ({ column }) => (
       <div className="flex gap-3 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">아이템</span>
@@ -22,19 +17,10 @@ export const columns = [
       </div>
     ),
 
-    cell: props => {
-      const rowData = props.row.original;
-
-      return (
-        <div className="flex items-center">
-          <Image src={rowData.img} width={30} height={30} alt={rowData.textName1} />
-          <span className="ml-2">{props.getValue()}</span>
-        </div>
-      );
-    },
+    cell: props => <span className="ml-2">{props.getValue()}</span>,
   },
   {
-    accessorKey: "date",
+    accessorKey: "date_auction_expire",
     header: ({ column }) => (
       <div className="flex gap-3 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">남은 시간</span>
@@ -43,10 +29,15 @@ export const columns = [
         </button>
       </div>
     ),
+    cell: props => <p>{convertToRemainingTime(props.getValue())}</p>,
+  },
+  {
+    accessorKey: "item_count",
+    header: "갯수",
     cell: props => <p>{props.getValue()}</p>,
   },
   {
-    accessorKey: "cost",
+    accessorKey: "auction_price_per_unit",
     header: ({ column }) => (
       <div className="flex gap-3 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">가격</span>
@@ -60,8 +51,8 @@ export const columns = [
 
       return (
         <div>
-          <p>개당 : {props.getValue().toLocaleString()} Gold</p>
-          <p>전체 : {(props.getValue() * rowData.amount).toLocaleString()} Gold</p>
+          <p>개당 : {convertToKoreanUnits(props.getValue())} Gold</p>
+          <p>전체 : {convertToKoreanUnits(props.getValue() * rowData.item_count)} Gold</p>
         </div>
       );
     },

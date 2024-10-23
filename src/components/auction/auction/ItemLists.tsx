@@ -65,7 +65,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
                 </TableRow>
               </DialogTrigger>
 
-              {/* <ItemDetail row={row} /> */}
+              <ItemDetail row={row} />
             </Dialog>
           ))}
         </TableBody>

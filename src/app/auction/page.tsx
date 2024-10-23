@@ -1,5 +1,6 @@
 import Auction from "@/components/auction/auction/Auction";
 import Favorites from "@/components/auction/favorites/Favorites";
+import Developing from "@/components/shared/Developing";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -20,10 +21,13 @@ export default function AuctionPage() {
             </TabsContent>
 
             <TabsContent value="favorites" className="border p-3 rounded-sm">
-              <Favorites />
+              {/* <Favorites /> */}
+              <Developing />
             </TabsContent>
 
-            <TabsContent value="myauctions" className="border p-3 rounded-sm"></TabsContent>
+            <TabsContent value="myauctions" className="border p-3 rounded-sm">
+              <Developing />
+            </TabsContent>
           </Tabs>
         </CardContent>
       </Card>

@@ -10,4 +10,5 @@ interface UserDataTypes {
         rank: string;
       }[]
     | null;
+  favorites?: any[];
 }

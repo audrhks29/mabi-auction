@@ -14,10 +14,10 @@ import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 import ItemDetail from "../auction/ItemDetail";
+import Pagination from "../auction/Pagination";
 
 import { columns } from "@/utils/favorites/tableColumns";
 import useUserDataStore from "@/store/userData-store";
-import Pagination from "../auction/Pagination";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 

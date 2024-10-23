@@ -27,7 +27,6 @@ export default function Auction() {
     },
   });
 
-  // console.log(data);
   return (
     <article className="text-[14px]">
       <SearchBox

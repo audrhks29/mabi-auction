@@ -2,7 +2,7 @@ function convertToRemainingTime(isoString: string) {
   const targetTime = new Date(isoString);
   const currentTime = new Date();
 
-  const remainingTime = targetTime - currentTime;
+  const remainingTime = targetTime.getTime() - currentTime.getTime();
 
   const hoursRemaining = Math.floor(remainingTime / (1000 * 60 * 60));
   const minutesRemaining = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));

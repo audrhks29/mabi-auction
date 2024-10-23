@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
+import { cookies } from "next/headers";
 
 import UserAuth from "./UserAuth";
-import { cookies } from "next/headers";
 interface MenuTypes {
   id: number;
   text: string;
@@ -35,9 +36,9 @@ export default function Header() {
     <header className="fixed bg-background w-full z-40">
       <nav className="flex h-14 justify-between items-center">
         <div className="flex h-14">
-          <h1 className="w-16 cursor-pointer">
+          <h1 className="w-36 cursor-pointer">
             <Link href="/" className="flex w-full h-full justify-center items-center">
-              로고
+              <Image width={100} height={64} alt="logo" src={"/logo_black_v2.svg"} />
             </Link>
           </h1>
 

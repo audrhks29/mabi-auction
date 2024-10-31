@@ -1,21 +1,20 @@
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 
 import { QueryObserverResult, RefetchOptions } from "@tanstack/react-query";
-
-import { UseFormGetValues, UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
+import { UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 import searchLists from "@/assets/auction/searchLists.json";
+
 export default function SearchBox({
   category,
   setCategory,
   refetch,
   handleSubmit,
   register,
-  getValues,
   setValue,
 }: {
   category: ItemCategoryStateType;
@@ -23,18 +22,17 @@ export default function SearchBox({
   refetch: (options?: RefetchOptions) => Promise<QueryObserverResult<any, Error>>;
   handleSubmit: UseFormHandleSubmit<AuctionSearchFormTypes, undefined>;
   register: UseFormRegister<AuctionSearchFormTypes>;
-  getValues: UseFormGetValues<AuctionSearchFormTypes>;
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   const [recommendInputText, setRecommendInputText] = useState("");
   const [isDropdownVisible, setDropdownVisible] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-      setDropdownVisible(false);
-    }
-  };
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const filteredLists = searchLists.filter(list =>
+    list.name.replace(/\s/g, "").includes(recommendInputText.replace(/\s/g, "")),
+  );
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
@@ -43,9 +41,59 @@ export default function SearchBox({
     };
   }, []);
 
+  useEffect(() => {
+    if (selectedIndex !== null && itemRefs.current[selectedIndex]) {
+      requestAnimationFrame(() => {
+        itemRefs.current[selectedIndex]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      });
+    }
+  }, [selectedIndex]);
+
   const onSubmit = () => {
     setCategory({ category: null, detailCategory: null });
     refetch();
+  };
+
+  // 추천검색어 영역 밖 클릭
+  const handleClickOutside = (event: MouseEvent) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      setDropdownVisible(false);
+      setSelectedIndex(null);
+    }
+  };
+
+  // 키다운 이벤트(추천검색어 이동)
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (!isDropdownVisible || filteredLists.length === 0) return;
+
+    switch (event.key) {
+      case "ArrowDown":
+        event.preventDefault();
+        setSelectedIndex(prevIndex =>
+          prevIndex === null || prevIndex === filteredLists.length - 1 ? 0 : prevIndex + 1,
+        );
+        break;
+      case "ArrowUp":
+        event.preventDefault();
+        setSelectedIndex(prevIndex =>
+          prevIndex === null || prevIndex === 0 ? filteredLists.length - 1 : prevIndex - 1,
+        );
+        break;
+      case "Enter":
+        event.preventDefault();
+        if (selectedIndex !== null) {
+          const selectedItem = filteredLists[selectedIndex];
+          setRecommendInputText(selectedItem.name);
+          setValue("inputText", selectedItem.name);
+          setDropdownVisible(false);
+          setSelectedIndex(null);
+        }
+        break;
+      case "Escape":
+        setDropdownVisible(false);
+        setSelectedIndex(null);
+        break;
+    }
   };
 
   return (
@@ -61,7 +109,9 @@ export default function SearchBox({
             onChange={e => {
               setRecommendInputText(e.target.value);
               setDropdownVisible(e.target.value !== "");
+              setSelectedIndex(null);
             }}
+            onKeyDown={handleKeyDown}
             onClick={() => setDropdownVisible(recommendInputText !== "")}
           />
 
@@ -69,22 +119,24 @@ export default function SearchBox({
           {isDropdownVisible && recommendInputText !== "" && (
             <div ref={dropdownRef} className="absolute top-11 left-0 w-[1096px] border rounded-md">
               <ScrollArea className="max-h-[130px] z-50 bg-slate-100">
-                {searchLists
-                  .filter(
-                    list => list.name.replace(/\s/g, "").includes(recommendInputText.replace(/\s/g, "")), // 공백 제거 후 필터링
-                  )
-                  .map(filteredList => (
-                    <div
-                      key={filteredList.id}
-                      className="indent-3 h-6 hover:font-semibold cursor-pointer"
-                      onClick={() => {
-                        setRecommendInputText(filteredList.name);
-                        setValue("inputText", filteredList.name);
-                        setDropdownVisible(false);
-                      }}>
-                      {filteredList.name}
-                    </div>
-                  ))}
+                {filteredLists.map((filteredList, index) => (
+                  <div
+                    key={filteredList.id}
+                    ref={el => {
+                      itemRefs.current[index] = el;
+                    }}
+                    className={`indent-3 h-6 cursor-pointer ${
+                      index === selectedIndex ? "bg-blue-200 font-semibold" : "hover:font-semibold"
+                    }`}
+                    onClick={() => {
+                      setRecommendInputText(filteredList.name);
+                      setValue("inputText", filteredList.name);
+                      setDropdownVisible(false);
+                      setSelectedIndex(null);
+                    }}>
+                    {filteredList.name}
+                  </div>
+                ))}
               </ScrollArea>
             </div>
           )}

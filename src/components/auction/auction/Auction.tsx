@@ -35,14 +35,13 @@ export default function Auction() {
         refetch={refetch}
         handleSubmit={handleSubmit}
         register={register}
-        getValues={getValues}
         setValue={setValue}
       />
 
       <div className="grid grid-cols-[200px_auto] gap-3">
         <Categories category={category} setCategory={setCategory} refetch={refetch} setValue={setValue} />
         {!isFetching && data?.length > 0 && <ItemLists data={data} />}
-        {data?.length === 0 && <NonData />}
+        {(data?.length === 0 || !data) && <NonData />}
       </div>
     </article>
   );

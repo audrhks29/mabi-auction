@@ -49,7 +49,7 @@ export default function Pagination({ table }: { table: Table<ItemListsTypes> }) 
           variant="outline"
           disabled={!table.getCanNextPage()}
           onClick={() => {
-            if (table.getState().pagination.pageIndex + 10 > table.getPageCount()) {
+            if (table.getState().pagination.pageIndex + 10 >= table.getPageCount()) {
               table.setPageIndex(table.getPageCount() - 1);
             } else {
               table.setPageIndex(table.getState().pagination.pageIndex + 10);

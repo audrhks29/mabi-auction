@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { ChevronFirst, ChevronLast, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react";
 
 export default function Pagination({ table }: { table: Table<ItemListsTypes> }) {
+  console.log(`현재 테이블의 index 번호 = ${table.getState().pagination.pageIndex}`);
+  console.log(`마지막 페이지 번호 = ${table.getPageCount()}`);
   return (
     <div className="flex justify-center items-center pt-6 pb-3">
       <ul className="flex gap-3">
@@ -49,7 +51,7 @@ export default function Pagination({ table }: { table: Table<ItemListsTypes> }) 
           variant="outline"
           disabled={!table.getCanNextPage()}
           onClick={() => {
-            if (table.getState().pagination.pageIndex + 10 > table.getPageCount()) {
+            if (table.getState().pagination.pageIndex + 10 >= table.getPageCount()) {
               table.setPageIndex(table.getPageCount() - 1);
             } else {
               table.setPageIndex(table.getState().pagination.pageIndex + 10);

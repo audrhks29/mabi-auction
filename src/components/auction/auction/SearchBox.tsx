@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 import searchLists from "@/assets/auction/searchLists.json";
+import { Badge } from "@/components/ui/badge";
 
 export default function SearchBox({
   category,
@@ -149,8 +150,9 @@ export default function SearchBox({
         <div className="grid grid-cols-[auto_120px] gap-2 items-center">
           <div>
             {category.category && category.detailCategory && (
-              <span className="ml-3">
-                {category.category} {">"} {category.detailCategory}
+              <span className="flex gap-2">
+                <Badge variant={"outline"}>{category.category}</Badge>
+                <Badge variant={"outline"}>{category.detailCategory}</Badge>
               </span>
             )}
           </div>

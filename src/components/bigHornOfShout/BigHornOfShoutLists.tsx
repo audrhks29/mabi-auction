@@ -8,7 +8,6 @@ import useBigHornListsStore from "@/store/bigHornLists-store";
 
 import convertToKoreanTime from "@/utils/convertToKoreanTime";
 
-import { ServerCrash } from "lucide-react";
 import NonData from "../shared/NonData";
 
 // 거뿔 테이블 렌더링 컴포넌트
@@ -28,7 +27,7 @@ function RenderContent({ renderData, isLoading }: { renderData: HornListTypes[] 
       </TableRow>
     ))
   ) : (
-    <TableRow className="border-b-0 h-[150px]">
+    <TableRow className="border-b-0 h-[200px]">
       <TableCell colSpan={3}>
         <NonData />
       </TableCell>

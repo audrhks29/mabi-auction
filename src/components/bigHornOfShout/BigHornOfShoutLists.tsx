@@ -9,39 +9,56 @@ import useBigHornListsStore from "@/store/bigHornLists-store";
 import convertToKoreanTime from "@/utils/convertToKoreanTime";
 
 import NonData from "../shared/NonData";
+import Loading from "../shared/Loading";
 
 // 거뿔 테이블 렌더링 컴포넌트
-function RenderContent({ renderData, isLoading }: { renderData: HornListTypes[] | []; isLoading: boolean }) {
-  return !isLoading && renderData && renderData.length > 0 ? (
-    renderData?.map((item: HornListTypes) => (
-      <TableRow key={uuidv4()}>
-        <TableCell>
-          <div>
-            {convertToKoreanTime(item.date_send).formattedDate}
-            <br />
-            {convertToKoreanTime(item.date_send).formattedTime}
-          </div>
+function RenderContent({ renderData, isFetching }: { renderData: HornListTypes[] | []; isFetching: boolean }) {
+  if (isFetching) {
+    return (
+      <TableRow className="border-b-0 h-[150px]">
+        <TableCell colSpan={3}>
+          <Loading />
         </TableCell>
-        <TableCell>{item.character_name}</TableCell>
-        <TableCell className="text-left">{item.message}</TableCell>
       </TableRow>
-    ))
-  ) : (
-    <TableRow className="border-b-0 h-[200px]">
-      <TableCell colSpan={3}>
-        <NonData />
-      </TableCell>
-    </TableRow>
-  );
+    );
+  }
+
+  if (renderData && renderData.length > 0) {
+    return (
+      <>
+        {renderData.map((item: HornListTypes) => (
+          <TableRow key={uuidv4()}>
+            <TableCell>
+              <div>
+                {convertToKoreanTime(item.date_send).formattedDate}
+                <br />
+                {convertToKoreanTime(item.date_send).formattedTime}
+              </div>
+            </TableCell>
+            <TableCell>{item.character_name}</TableCell>
+            <TableCell className="text-left">{item.message}</TableCell>
+          </TableRow>
+        ))}
+      </>
+    );
+  } else {
+    return (
+      <TableRow className="border-b-0 h-[150px]">
+        <TableCell colSpan={3}>
+          <NonData />
+        </TableCell>
+      </TableRow>
+    );
+  }
 }
 
 export default function BigHornOfShoutLists({
   data,
-  isLoading,
+  isFetching,
   getValues,
 }: {
   data: HornListTypes[] | [];
-  isLoading: boolean;
+  isFetching: boolean;
   getValues: UseFormGetValues<HornSearchFormTypes>;
 }) {
   const filteredData = useBigHornListsStore(state => state.filteredData);
@@ -60,9 +77,9 @@ export default function BigHornOfShoutLists({
 
         <TableBody>
           {inputText !== "" ? (
-            <RenderContent renderData={filteredData} isLoading={isLoading} />
+            <RenderContent renderData={filteredData} isFetching={isFetching} />
           ) : (
-            <RenderContent renderData={data} isLoading={isLoading} />
+            <RenderContent renderData={data} isFetching={isFetching} />
           )}
         </TableBody>
       </Table>

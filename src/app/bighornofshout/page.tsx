@@ -35,7 +35,7 @@ export default function BigHornOfShoutPage() {
     }
   };
 
-  const { data, refetch, isLoading } = useQuery({
+  const { data, refetch, isFetching } = useQuery({
     queryKey: [encodeServer],
     queryFn: fetchHornLists,
     select: data => {
@@ -56,7 +56,7 @@ export default function BigHornOfShoutPage() {
             setValue={setValue}
           />
           <Separator />
-          <BigHornOfShoutLists data={data} getValues={getValues} isLoading={isLoading} />
+          <BigHornOfShoutLists data={data} getValues={getValues} isFetching={isFetching} />
         </CardContent>
       </Card>
     </main>

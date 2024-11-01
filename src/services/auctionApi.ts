@@ -4,6 +4,7 @@ export const fetchItemLists = async (
   getValues: UseFormGetValues<AuctionSearchFormTypes>,
   category: ItemCategoryStateType,
 ) => {
+  const data = [];
   const inputText = getValues().inputText;
 
   if (inputText !== "" || category.detailCategory) {
@@ -19,15 +20,21 @@ export const fetchItemLists = async (
     }
 
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+    const headers: HeadersInit = API_KEY ? { "x-nxopen-api-key": API_KEY } : {};
+    let nextCursor: string | undefined = undefined;
+
     try {
-      const headers: HeadersInit = API_KEY ? { "x-nxopen-api-key": API_KEY } : {};
+      do {
+        const fetchUrl: string = nextCursor ? `${urlString}&cursor=${nextCursor}` : urlString;
 
-      const res = await fetch(urlString, {
-        headers,
-      });
+        const res = await fetch(fetchUrl, { headers });
+        const resData = await res.json();
+        data.push(...resData.auction_item);
 
-      const resData = await res.json();
-      return resData;
+        nextCursor = resData.next_cursor;
+      } while (nextCursor);
+
+      return data;
     } catch (error) {
       console.error("An unexpected error happened:", error);
     }

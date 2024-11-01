@@ -9,9 +9,9 @@ import ItemLists from "./ItemLists";
 import SearchBox from "./SearchBox";
 
 import NonData from "@/components/shared/NonData";
+import Loading from "@/components/shared/Loading";
 
 import { fetchItemLists } from "@/services/auctionApi";
-import Loading from "@/components/shared/Loading";
 
 export default function Auction() {
   const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
@@ -23,9 +23,6 @@ export default function Auction() {
   const { data, refetch, isFetching } = useQuery({
     queryKey: ["itemLists", getValues().inputText || category.detailCategory],
     queryFn: () => fetchItemLists(getValues, category),
-    select: data => {
-      return data.auction_item;
-    },
   });
 
   return (
@@ -41,7 +38,7 @@ export default function Auction() {
 
       <div className="grid grid-cols-[200px_auto] gap-3">
         <Categories category={category} setCategory={setCategory} refetch={refetch} setValue={setValue} />
-        {!isFetching && data?.length > 0 && <ItemLists data={data} />}
+        {!isFetching && data && data?.length > 0 && <ItemLists data={data} />}
         {!isFetching && (data?.length === 0 || !data) && <NonData />}
         {isFetching && <Loading />}
       </div>

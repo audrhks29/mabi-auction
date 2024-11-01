@@ -1,14 +1,13 @@
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
-
 import { QueryObserverResult, RefetchOptions } from "@tanstack/react-query";
 import { UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 import searchLists from "@/assets/auction/searchLists.json";
-import { Badge } from "@/components/ui/badge";
 
 export default function SearchBox({
   category,
@@ -149,11 +148,13 @@ export default function SearchBox({
 
         <div className="grid grid-cols-[auto_120px] gap-2 items-center">
           <div>
-            {category.category && category.detailCategory && (
+            {category.category && category.detailCategory ? (
               <span className="flex gap-2">
                 <Badge variant={"outline"}>{category.category}</Badge>
                 <Badge variant={"outline"}>{category.detailCategory}</Badge>
               </span>
+            ) : (
+              <Badge variant={"outline"}>카테고리 없음</Badge>
             )}
           </div>
 

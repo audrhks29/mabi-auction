@@ -34,6 +34,7 @@ export const fetchItemLists = async (
         nextCursor = resData.next_cursor;
       } while (nextCursor);
 
+      data.sort((a, b) => a.auction_price_per_unit - b.auction_price_per_unit);
       return data;
     } catch (error) {
       console.error("An unexpected error happened:", error);

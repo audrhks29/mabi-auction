@@ -51,7 +51,6 @@ function CategoryBar({
                   onClick={() => {
                     setValue("inputText", "");
                     setCategory({ category: category_name, detailCategory: detail_category_name });
-                    refetch();
                   }}>
                   {detail_category_name}
                 </span>

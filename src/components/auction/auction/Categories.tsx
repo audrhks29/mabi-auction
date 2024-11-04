@@ -12,7 +12,6 @@ function CategoryBar({
   detail_category,
   category,
   setCategory,
-  refetch,
   setValue,
 }: {
   category_name: string;
@@ -22,7 +21,6 @@ function CategoryBar({
   }[];
   category: ItemCategoryStateType;
   setCategory: Dispatch<SetStateAction<ItemCategoryStateType>>;
-  refetch: (options?: RefetchOptions) => Promise<QueryObserverResult<any, Error>>;
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,12 +64,10 @@ function CategoryBar({
 export default function Categories({
   category,
   setCategory,
-  refetch,
   setValue,
 }: {
   category: ItemCategoryStateType;
   setCategory: Dispatch<SetStateAction<ItemCategoryStateType>>;
-  refetch: (options?: RefetchOptions) => Promise<QueryObserverResult<any, Error>>;
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   return (
@@ -84,7 +80,6 @@ export default function Categories({
             detail_category={item.detail_category}
             category={category}
             setCategory={setCategory}
-            refetch={refetch}
             setValue={setValue}
           />
         ))}

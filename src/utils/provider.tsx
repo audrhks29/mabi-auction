@@ -8,7 +8,13 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
     () =>
       new QueryClient({
         defaultOptions: {
-          queries: { refetchOnMount: false, refetchOnWindowFocus: false, refetchOnReconnect: false },
+          queries: {
+            refetchOnMount: false,
+            refetchOnWindowFocus: false,
+            refetchOnReconnect: false,
+            gcTime: 300000,
+            staleTime: 300000,
+          },
         },
       }),
   );

@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-import { QueryObserverResult, RefetchOptions } from "@tanstack/react-query";
 import { UseFormGetValues, UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
 import { Input } from "@/components/ui/input";
@@ -13,14 +11,12 @@ import { RotateCcw, SearchIcon } from "lucide-react";
 
 export default function SearchBox({
   data,
-  refetch,
   handleSubmit,
   register,
   getValues,
   setValue,
 }: {
   data: HornListTypes[];
-  refetch: (options?: RefetchOptions) => Promise<QueryObserverResult<any, Error>>;
   handleSubmit: UseFormHandleSubmit<HornSearchFormTypes, undefined>;
   register: UseFormRegister<HornSearchFormTypes>;
   getValues: UseFormGetValues<HornSearchFormTypes>;
@@ -116,7 +112,6 @@ export default function SearchBox({
         <Button
           type="button"
           onClick={() => {
-            refetch();
             setValue("inputText", "");
           }}>
           <i>

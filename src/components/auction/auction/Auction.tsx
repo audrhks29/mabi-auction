@@ -20,7 +20,7 @@ export default function Auction() {
     detailCategory: null,
   });
 
-  const { data, refetch, isFetching } = useQuery({
+  const { data, isFetching } = useQuery({
     queryKey: ["itemLists", getValues().inputText || category.detailCategory],
     queryFn: () => fetchItemLists(getValues, category),
   });
@@ -30,14 +30,13 @@ export default function Auction() {
       <SearchBox
         category={category}
         setCategory={setCategory}
-        refetch={refetch}
         handleSubmit={handleSubmit}
         register={register}
         setValue={setValue}
       />
 
       <div className="grid grid-cols-[200px_auto] gap-3">
-        <Categories category={category} setCategory={setCategory} refetch={refetch} setValue={setValue} />
+        <Categories category={category} setCategory={setCategory} setValue={setValue} />
         {!isFetching && data && data?.length > 0 && <ItemLists data={data} />}
         {!isFetching && (data?.length === 0 || !data) && <NonData />}
         {isFetching && <Loading />}

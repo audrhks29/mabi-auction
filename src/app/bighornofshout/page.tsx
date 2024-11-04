@@ -35,7 +35,7 @@ export default function BigHornOfShoutPage() {
     }
   };
 
-  const { data, refetch, isFetching } = useQuery({
+  const { data, isFetching } = useQuery({
     queryKey: [encodeServer],
     queryFn: fetchHornLists,
     select: data => {
@@ -49,7 +49,6 @@ export default function BigHornOfShoutPage() {
         <CardContent className="flex gap-6 flex-col justify-center items-center">
           <SearchBox
             data={data}
-            refetch={refetch}
             handleSubmit={handleSubmit}
             register={register}
             getValues={getValues}

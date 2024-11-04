@@ -1,5 +1,4 @@
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
-import { QueryObserverResult, RefetchOptions } from "@tanstack/react-query";
 import { UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -12,14 +11,12 @@ import searchLists from "@/assets/auction/searchLists.json";
 export default function SearchBox({
   category,
   setCategory,
-  refetch,
   handleSubmit,
   register,
   setValue,
 }: {
   category: ItemCategoryStateType;
   setCategory: Dispatch<SetStateAction<ItemCategoryStateType>>;
-  refetch: (options?: RefetchOptions) => Promise<QueryObserverResult<any, Error>>;
   handleSubmit: UseFormHandleSubmit<AuctionSearchFormTypes, undefined>;
   register: UseFormRegister<AuctionSearchFormTypes>;
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
@@ -51,7 +48,6 @@ export default function SearchBox({
 
   const onSubmit = () => {
     setCategory({ category: null, detailCategory: null });
-    refetch();
   };
 
   // 추천검색어 영역 밖 클릭

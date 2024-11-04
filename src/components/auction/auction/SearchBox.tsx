@@ -15,8 +15,8 @@ export default function SearchBox({
   register,
   setValue,
 }: {
-  category: ItemCategoryStateType;
-  setCategory: Dispatch<SetStateAction<ItemCategoryStateType>>;
+  category: ItemCategoryStateTypes;
+  setCategory: Dispatch<SetStateAction<ItemCategoryStateTypes>>;
   handleSubmit: UseFormHandleSubmit<AuctionSearchFormTypes, undefined>;
   register: UseFormRegister<AuctionSearchFormTypes>;
   setValue: UseFormSetValue<AuctionSearchFormTypes>;

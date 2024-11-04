@@ -2,7 +2,7 @@ import { UseFormGetValues } from "react-hook-form";
 
 export const fetchItemLists = async (
   getValues: UseFormGetValues<AuctionSearchFormTypes>,
-  category: ItemCategoryStateType,
+  category: ItemCategoryStateTypes,
 ) => {
   const data = [];
   const inputText = getValues().inputText;

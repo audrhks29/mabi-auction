@@ -87,7 +87,23 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    ({ addUtilities }: { addUtilities: any }) => {
+      addUtilities({
+        ".option-box": {
+          "@apply relative border-2 pt-4 pb-1 px-2 mb-4 rounded-lg": "",
+        },
+        ".option-box b": {
+          "@apply font-bold": "",
+        },
+        ".option-title": {
+          "@apply text-[14px] absolute -top-3 left-2 bg-card text-card-foreground shadow-sm border-2 font-bold px-2":
+            "",
+        },
+      });
+    },
+  ],
 } satisfies Config;
 
 export default config;

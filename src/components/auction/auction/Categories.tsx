@@ -19,8 +19,8 @@ function CategoryBar({
     detail_category_id: number;
     detail_category_name: string;
   }[];
-  category: ItemCategoryStateType;
-  setCategory: Dispatch<SetStateAction<ItemCategoryStateType>>;
+  category: ItemCategoryStateTypes;
+  setCategory: Dispatch<SetStateAction<ItemCategoryStateTypes>>;
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,8 +66,8 @@ export default function Categories({
   setCategory,
   setValue,
 }: {
-  category: ItemCategoryStateType;
-  setCategory: Dispatch<SetStateAction<ItemCategoryStateType>>;
+  category: ItemCategoryStateTypes;
+  setCategory: Dispatch<SetStateAction<ItemCategoryStateTypes>>;
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   return (

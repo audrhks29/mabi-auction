@@ -15,7 +15,7 @@ import { fetchItemLists } from "@/services/auctionApi";
 
 export default function Auction() {
   const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
-  const [category, setCategory] = useState<ItemCategoryStateType>({
+  const [category, setCategory] = useState<ItemCategoryStateTypes>({
     category: null,
     detailCategory: null,
   });

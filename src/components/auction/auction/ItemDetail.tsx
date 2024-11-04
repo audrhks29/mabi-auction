@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
 import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
-
+import ItemOptions from "./ItemOptions";
 export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
   const userData = useUserDataStore(state => state.userData);
 
@@ -30,7 +30,7 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
       alert("즐겨찾기에 등록되었습니다.");
     }
   };
-  // console.log(Object.entries(row.item_option[0]));
+
   return (
     <DialogContent className="sm:max-w-[425px] text-[14px]">
       <DialogHeader>
@@ -57,10 +57,7 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
 
         <Separator />
 
-        <div>
-          <p>판매가 : {convertToKoreanUnits(row.original.item_count * row.original.auction_price_per_unit)} Gold</p>
-          <p>개당 : {convertToKoreanUnits(row.original.auction_price_per_unit)} Gold</p>
-        </div>
+        <ItemOptions options={row.original.item_option} />
 
         <div>
           <Button type="button">내 경매 등록</Button>

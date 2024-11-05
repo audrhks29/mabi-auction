@@ -122,7 +122,7 @@ export default function SearchBox({
                       itemRefs.current[index] = el;
                     }}
                     className={`indent-3 h-6 cursor-pointer ${
-                      index === selectedIndex ? "bg-blue-200 font-semibold" : "hover:font-semibold"
+                      index === selectedIndex ? "bg-blue-200 font-bold" : "hover:font-bold"
                     }`}
                     onClick={() => {
                       setRecommendInputText(filteredList.name);

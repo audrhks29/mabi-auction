@@ -13,61 +13,60 @@ export default function Attribute({ attributeOptions }: { attributeOptions: Exte
 
   return (
     attributeOptions.some(option => option.isDisplay) && (
-      <div className="option-box">
+      <article className="option-box mt-3">
         <h3 className="option-title">아이템 속성</h3>
-        <div>
-          {attack?.isDisplay && (
-            <p>
-              <b>공격</b> {attack?.option_value} ~ {attack?.option_value2}
-            </p>
-          )}
-          {injury_rate?.isDisplay && (
-            <p>
-              <b>부상률</b> {injury_rate?.option_value} ~ {injury_rate?.option_value2}
-            </p>
-          )}
-          {critical?.isDisplay && (
-            <p>
-              <b>크리티컬</b> {critical?.option_value}
-            </p>
-          )}
-          {balance?.isDisplay && (
-            <p>
-              <b>밸런스</b> {balance?.option_value}
-            </p>
-          )}
-          {defensive?.isDisplay && (
-            <p>
-              <b>방어</b> {defensive?.option_value}
-            </p>
-          )}
-          {safety?.isDisplay && (
-            <p>
-              <b>보호</b> {safety?.option_value}
-            </p>
-          )}
-          {magicalDefensive?.isDisplay && (
-            <p>
-              <b>마법 방어력</b> {magicalDefensive?.option_value}
-            </p>
-          )}
-          {magicalSafety?.isDisplay && (
-            <p>
-              <b>마법 보호</b> {magicalSafety?.option_value}
-            </p>
-          )}
-          {durability?.isDisplay && (
-            <p>
-              <b>내구력</b> {durability?.option_value}/{durability?.option_value2}
-            </p>
-          )}
-          {proficiency?.isDisplay && (
-            <p>
-              <b>숙련</b> {proficiency?.option_value}
-            </p>
-          )}
-        </div>
-      </div>
+
+        {attack?.isDisplay && (
+          <p>
+            <b>공격</b> {attack?.option_value} ~ {attack?.option_value2}
+          </p>
+        )}
+        {injury_rate?.isDisplay && (
+          <p>
+            <b>부상률</b> {injury_rate?.option_value} ~ {injury_rate?.option_value2}
+          </p>
+        )}
+        {critical?.isDisplay && (
+          <p>
+            <b>크리티컬</b> {critical?.option_value}
+          </p>
+        )}
+        {balance?.isDisplay && (
+          <p>
+            <b>밸런스</b> {balance?.option_value}
+          </p>
+        )}
+        {defensive?.isDisplay && (
+          <p>
+            <b>방어</b> {defensive?.option_value}
+          </p>
+        )}
+        {safety?.isDisplay && (
+          <p>
+            <b>보호</b> {safety?.option_value}
+          </p>
+        )}
+        {magicalDefensive?.isDisplay && (
+          <p>
+            <b>마법 방어력</b> {magicalDefensive?.option_value}
+          </p>
+        )}
+        {magicalSafety?.isDisplay && (
+          <p>
+            <b>마법 보호</b> {magicalSafety?.option_value}
+          </p>
+        )}
+        {durability?.isDisplay && (
+          <p>
+            <b>내구력</b> {durability?.option_value}/{durability?.option_value2}
+          </p>
+        )}
+        {proficiency?.isDisplay && (
+          <p>
+            <b>숙련</b> {proficiency?.option_value}
+          </p>
+        )}
+      </article>
     )
   );
 }

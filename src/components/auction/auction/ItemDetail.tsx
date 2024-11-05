@@ -2,12 +2,14 @@ import { Row } from "@tanstack/react-table";
 
 import useUserDataStore from "@/store/userData-store";
 
-import { DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
 import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
+
 import ItemOptions from "./ItemOptions";
+
 export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
   const userData = useUserDataStore(state => state.userData);
 
@@ -35,37 +37,45 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
     <DialogContent className="sm:max-w-[425px] text-[14px]">
       <DialogHeader>
         <DialogTitle className="text-center">아이템 상세정보</DialogTitle>
+        <DialogDescription></DialogDescription>
       </DialogHeader>
 
       <Separator />
 
-      <div>
-        <div className="text-center text-[16px] font-semibold">
+      <section>
+        <div className="text-center text-[15px] font-bold">
           <h4>{row.original.item_display_name}</h4>
         </div>
 
-        <div className="flex gap-3 items-center">
-          <p>판매 수량 : {row.original.item_count}</p>
+        <div className="text-right px-3 py-2">
+          <span className="font-bold">판매 수량&nbsp;&nbsp;</span>
+          <span>{row.original.item_count}</span>
         </div>
 
         <Separator />
 
-        <div>
-          <p>판매가 : {convertToKoreanUnits(row.original.item_count * row.original.auction_price_per_unit)} Gold</p>
-          <p>개당 : {convertToKoreanUnits(row.original.auction_price_per_unit)} Gold</p>
-        </div>
+        <article className="px-3 py-2">
+          <div className="flex justify-between">
+            <span className="font-bold">판매가</span>
+            <span>{convertToKoreanUnits(row.original.item_count * row.original.auction_price_per_unit)} Gold</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="font-bold">개당</span>
+            <span>{convertToKoreanUnits(row.original.auction_price_per_unit)} Gold</span>
+          </div>
+        </article>
 
         <Separator />
 
         <ItemOptions options={row.original.item_option} />
 
-        <div>
+        <article className="flex justify-center gap-6">
           <Button type="button">내 경매 등록</Button>
           <Button type="button" onClick={addData}>
             즐겨찾기 등록
           </Button>
-        </div>
-      </div>
+        </article>
+      </section>
     </DialogContent>
   );
 }

@@ -1,22 +1,22 @@
 export default function convertOptionsArray(options: ItemOptionTypes[]) {
   // 아이템 속성
-  const attack = options.find(option => option.option_type === "공격");
-  const injury_rate = options.find(option => option.option_type === "부상률");
-  const critical = options.find(option => option.option_type === "크리티컬");
-  const balance = options.find(option => option.option_type === "밸런스");
-  const durability = options.find(option => option.option_type === "내구력");
-  const proficiency = options.find(option => option.option_type === "숙련");
-  const defensive = options.find(option => option.option_type === "방어력");
-  const safety = options.find(option => option.option_type === "보호");
-  const magicalDefensive = options.find(option => option.option_type === "마법 방어력");
-  const magicalSafety = options.find(option => option.option_type === "마법 보호");
+  const attack = options?.find(option => option.option_type === "공격");
+  const injury_rate = options?.find(option => option.option_type === "부상률");
+  const critical = options?.find(option => option.option_type === "크리티컬");
+  const balance = options?.find(option => option.option_type === "밸런스");
+  const durability = options?.find(option => option.option_type === "내구력");
+  const proficiency = options?.find(option => option.option_type === "숙련");
+  const defensive = options?.find(option => option.option_type === "방어력");
+  const safety = options?.find(option => option.option_type === "보호");
+  const magicalDefensive = options?.find(option => option.option_type === "마법 방어력");
+  const magicalSafety = options?.find(option => option.option_type === "마법 보호");
 
   // 인챈트 인지 판별
-  const isEnchant = options.some(option => option.option_type === "인챈트 종류");
+  const isEnchant = options?.some(option => option.option_type === "인챈트 종류");
 
   // 인챈트
-  const enchant_head = options.find(option => option?.option_sub_type === "접두");
-  const enchant_tail = options.find(option => option?.option_sub_type === "접미");
+  const enchant_head = options?.find(option => option?.option_sub_type === "접두");
+  const enchant_tail = options?.find(option => option?.option_sub_type === "접미");
   const enchant_head_option = !isEnchant
     ? Array.isArray(enchant_head?.option_desc)
       ? enchant_head.option_desc
@@ -31,63 +31,63 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
         ? enchant_tail.option_desc.split(",")
         : []
     : [];
-  const canEnchant = options.find(option => option?.option_sub_type === "인챈트 불가능");
+  const canEnchant = options?.find(option => option?.option_sub_type === "인챈트 불가능");
 
   // 개조
-  const general_modification = options.find(option => option.option_type === "일반 개조");
-  const gem_modification = options.find(option => option.option_type === "보석 개조");
-  const craftsman_modification = options.find(option => option.option_type === "장인 개조");
-  const special_modification = options.find(option => option.option_type === "특별 개조");
+  const general_modification = options?.find(option => option.option_type === "일반 개조");
+  const gem_modification = options?.find(option => option.option_type === "보석 개조");
+  const craftsman_modification = options?.find(option => option.option_type === "장인 개조");
+  const special_modification = options?.find(option => option.option_type === "특별 개조");
 
   // 세공
-  const reforge_rank = options.find(option => option.option_type === "세공 랭크");
-  const reforge_option1 = options.find(option => option.option_type === "세공 옵션" && option.option_sub_type === "1");
-  const reforge_option2 = options.find(option => option.option_type === "세공 옵션" && option.option_sub_type === "2");
-  const reforge_option3 = options.find(option => option.option_type === "세공 옵션" && option.option_sub_type === "3");
+  const reforge_rank = options?.find(option => option.option_type === "세공 랭크");
+  const reforge_option1 = options?.find(option => option.option_type === "세공 옵션" && option.option_sub_type === "1");
+  const reforge_option2 = options?.find(option => option.option_type === "세공 옵션" && option.option_sub_type === "2");
+  const reforge_option3 = options?.find(option => option.option_type === "세공 옵션" && option.option_sub_type === "3");
 
   // 에르그
-  const erg = options.find(option => option.option_type === "에르그");
+  const erg = options?.find(option => option.option_type === "에르그");
 
   // 세트 효과
-  const setEffect1 = options.find(option => option.option_type === "세트 효과" && option.option_sub_type === "1");
-  const setEffect2 = options.find(option => option.option_type === "세트 효과" && option.option_sub_type === "2");
-  const setEffect3 = options.find(option => option.option_type === "세트 효과" && option.option_sub_type === "3");
-  const setEffect4 = options.find(option => option.option_type === "세트 효과" && option.option_sub_type === "4");
-  const setEffect5 = options.find(option => option.option_type === "세트 효과" && option.option_sub_type === "5");
+  const setEffect1 = options?.find(option => option.option_type === "세트 효과" && option.option_sub_type === "1");
+  const setEffect2 = options?.find(option => option.option_type === "세트 효과" && option.option_sub_type === "2");
+  const setEffect3 = options?.find(option => option.option_type === "세트 효과" && option.option_sub_type === "3");
+  const setEffect4 = options?.find(option => option.option_type === "세트 효과" && option.option_sub_type === "4");
+  const setEffect5 = options?.find(option => option.option_type === "세트 효과" && option.option_sub_type === "5");
 
   // 아이템 색상
-  const itemColor1 = options.find(
+  const itemColor1 = options?.find(
     option => option.option_type === "아이템 색상" && option.option_sub_type === "파트 A",
   );
-  const itemColor2 = options.find(
+  const itemColor2 = options?.find(
     option => option.option_type === "아이템 색상" && option.option_sub_type === "파트 B",
   );
-  const itemColor3 = options.find(
+  const itemColor3 = options?.find(
     option => option.option_type === "아이템 색상" && option.option_sub_type === "파트 C",
   );
-  const itemColor4 = options.find(
+  const itemColor4 = options?.find(
     option => option.option_type === "아이템 색상" && option.option_sub_type === "파트 D",
   );
-  const itemColor5 = options.find(
+  const itemColor5 = options?.find(
     option => option.option_type === "아이템 색상" && option.option_sub_type === "파트 E",
   );
-  const itemColor6 = options.find(
+  const itemColor6 = options?.find(
     option => option.option_type === "아이템 색상" && option.option_sub_type === "파트 F",
   );
 
   // 전용 해제
-  const unlock = options.find(option => option.option_type === "남은 전용 해제 가능 횟수");
+  const unlock = options?.find(option => option.option_type === "남은 전용 해제 가능 횟수");
 
   // 아이템 보호
-  const enchantProtect = options.find(
+  const enchantProtect = options?.find(
     option => option.option_type === "아이템 보호" && option.option_value === "수리 실패",
   );
-  const repairProtect = options.find(
+  const repairProtect = options?.find(
     option => option.option_type === "아이템 보호" && option.option_value === "인챈트 실패",
   );
 
   // 피어싱 레벨
-  const piercing = options.find(option => option.option_type === "피어싱 레벨");
+  const piercing = options?.find(option => option.option_type === "피어싱 레벨");
   const optionsArray = <ExtendedItemOptionTypes[]>[
     {
       id: 1,
@@ -341,7 +341,7 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
       isDisplay: Boolean(itemColor5),
     },
     {
-      id: 29,
+      id: 30,
       option_type: "아이템 색상",
       type: "color",
       option_sub_type: "파트 F",
@@ -349,13 +349,6 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
       option_value2: itemColor6?.option_value2,
       option_desc: itemColor6?.option_desc,
       isDisplay: Boolean(itemColor6),
-    },
-    {
-      id: 30,
-      type: "attribute",
-      option_type: "남은 전용 해제 가능 횟수",
-      option_value: unlock?.option_value,
-      isDisplay: Boolean(unlock),
     },
     {
       id: 31,
@@ -366,27 +359,34 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
     },
     {
       id: 32,
+      type: "attribute",
+      option_type: "남은 전용 해제 가능 횟수",
+      option_value: unlock?.option_value,
+      isDisplay: Boolean(unlock),
+    },
+    {
+      id: 33,
       type: "enchant",
       option_type: "인챈트 불가능",
       option_value: canEnchant?.option_value,
       isDisplay: Boolean(canEnchant),
     },
     {
-      id: 33,
+      id: 34,
       type: "attribute",
       option_type: "아이템 보호",
       option_value: enchantProtect?.option_value,
       isDisplay: Boolean(enchantProtect),
     },
     {
-      id: 34,
+      id: 35,
       type: "attribute",
       option_type: "아이템 보호",
       option_value: repairProtect?.option_value,
       isDisplay: Boolean(repairProtect),
     },
     {
-      id: 35,
+      id: 36,
       option_type: "에르그",
       type: "erg",
       option_sub_type: erg?.option_sub_type,
@@ -395,7 +395,7 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
       isDisplay: Boolean(erg),
     },
     {
-      id: 36,
+      id: 37,
       option_type: "피어싱 레벨",
       type: "attribute",
       option_value: piercing?.option_value,

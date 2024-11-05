@@ -33,7 +33,7 @@ export default function LogoutPopover() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="font-semibold w-[220px] text-[14px] flex justify-around items-center">
+      className="font-bold w-[220px] text-[14px] flex justify-around items-center">
       <div>
         <span>[{userData?.server}]</span>&nbsp;<span>{userData?.nickname}</span>
       </div>

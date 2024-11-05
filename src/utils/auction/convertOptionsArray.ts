@@ -82,12 +82,15 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
   const enchantProtect = options?.find(
     option => option.option_type === "아이템 보호" && option.option_value === "수리 실패",
   );
+
+  // 인챈트 보호
   const repairProtect = options?.find(
     option => option.option_type === "아이템 보호" && option.option_value === "인챈트 실패",
   );
 
   // 피어싱 레벨
   const piercing = options?.find(option => option.option_type === "피어싱 레벨");
+
   const optionsArray = <ExtendedItemOptionTypes[]>[
     {
       id: 1,
@@ -359,27 +362,20 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
     },
     {
       id: 32,
-      type: "attribute",
-      option_type: "남은 전용 해제 가능 횟수",
-      option_value: unlock?.option_value,
-      isDisplay: Boolean(unlock),
-    },
-    {
-      id: 33,
       type: "enchant",
       option_type: "인챈트 불가능",
       option_value: canEnchant?.option_value,
       isDisplay: Boolean(canEnchant),
     },
     {
-      id: 34,
+      id: 33,
       type: "attribute",
       option_type: "아이템 보호",
       option_value: enchantProtect?.option_value,
       isDisplay: Boolean(enchantProtect),
     },
     {
-      id: 35,
+      id: 34,
       type: "attribute",
       option_type: "아이템 보호",
       option_value: repairProtect?.option_value,

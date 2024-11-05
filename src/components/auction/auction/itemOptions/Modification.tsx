@@ -23,7 +23,7 @@ export default function Modification({ modificationOptions }: { modificationOpti
         {Array.isArray(craftsman_modification?.option_value) && craftsman_modification?.option_value && (
           <>
             <b>장인 개조</b>
-            <p>{craftsman_modification.option_value?.map(desc => <p key={desc}>{desc}</p>)}</p>
+            <div>{craftsman_modification.option_value?.map(desc => <p key={desc}>{desc}</p>)}</div>
           </>
         )}
 

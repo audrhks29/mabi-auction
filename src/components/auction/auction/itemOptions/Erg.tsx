@@ -1,3 +1,5 @@
+// TODO: refactor
+
 export default function Erg({ ergOptions }: { ergOptions: ExtendedItemOptionTypes }) {
   return (
     ergOptions?.option_value && (

@@ -1,3 +1,5 @@
+// TODO: refactor
+
 export default function Set({ setOptions }: { setOptions: ExtendedItemOptionTypes[] }) {
   return (
     setOptions.some(set => set.isDisplay) && (

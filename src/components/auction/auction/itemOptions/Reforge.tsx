@@ -1,3 +1,5 @@
+// TODO: refactor
+
 import React from "react";
 
 export default function Reforge({ reforgeOptions }: { reforgeOptions: ExtendedItemOptionTypes[] }) {

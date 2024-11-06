@@ -1,3 +1,5 @@
+// TODO: refactor
+
 export default function Enchant({ enchantOptions }: { enchantOptions: ExtendedItemOptionTypes[] }) {
   const enchant_head = enchantOptions.find(option => option?.option_sub_type === "접두");
   const enchant_tail = enchantOptions.find(option => option?.option_sub_type === "접미");

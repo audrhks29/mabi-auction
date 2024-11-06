@@ -1,3 +1,5 @@
+// TODO: refactor
+
 export default function Modification({ modificationOptions }: { modificationOptions: ExtendedItemOptionTypes[] }) {
   const general_modification = modificationOptions.find(option => option.option_type === "일반 개조");
   const gem_modification = modificationOptions.find(option => option.option_type === "보석 개조");

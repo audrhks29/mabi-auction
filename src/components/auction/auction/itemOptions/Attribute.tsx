@@ -1,3 +1,5 @@
+// TODO: refactor
+
 export default function Attribute({ attributeOptions }: { attributeOptions: ExtendedItemOptionTypes[] }) {
   // 아이템 속성
   const attack = attributeOptions.find(option => option.option_type === "공격");

@@ -1,3 +1,5 @@
+// TODO: refactor
+
 export default function convertOptionsArray(options: ItemOptionTypes[]) {
   // 아이템 속성
   const attack = options?.find(option => option.option_type === "공격");

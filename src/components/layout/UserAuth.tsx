@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 import useUserDataStore from "@/store/userData-store";
 
@@ -39,5 +39,5 @@ export default function UserAuth({ accessToken }: { accessToken: RequestCookie |
     }
   }, [accessToken, setUserData]);
 
-  return <>{!userData ? <LoginPopover /> : <LogoutPopover />}</>;
+  return <React.Fragment>{!userData ? <LoginPopover /> : <LogoutPopover />}</React.Fragment>;
 }

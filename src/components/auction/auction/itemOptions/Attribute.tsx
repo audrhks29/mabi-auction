@@ -1,5 +1,7 @@
 // TODO: refactor
 
+import React from "react";
+
 export default function Attribute({ attributeOptions }: { attributeOptions: ExtendedItemOptionTypes[] }) {
   // 아이템 속성
   const ecoStoneTier = attributeOptions.find(option => option.option_type === "에코스톤 등급");
@@ -189,7 +191,7 @@ export default function Attribute({ attributeOptions }: { attributeOptions: Exte
           )}
 
           {dyeingColor?.isDisplay && Array.isArray(dyeingColor?.option_value) && (
-            <>
+            <React.Fragment>
               <li className="uppercase">{`#${dyeingColor.option_value
                 .map(value => {
                   const hex = parseInt(value, 10).toString(16).padStart(2, "0");
@@ -204,7 +206,7 @@ export default function Attribute({ attributeOptions }: { attributeOptions: Exte
                   </span>
                 ))}
               </li>
-            </>
+            </React.Fragment>
           )}
 
           {totemEffect?.isDisplay &&

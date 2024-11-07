@@ -72,7 +72,7 @@
     "category_name": "특수 장비",
     "detail_category": [
       { "detail_category_id": 33, "detail_category_name": "악기" },
-      { "detail_category_id": 34, "detail_category_name": "생활도구" },
+      { "detail_category_id": 34, "detail_category_name": "생활 도구" },
       { "detail_category_id": 35, "detail_category_name": "마리오네트" },
       { "detail_category_id": 36, "detail_category_name": "에코스톤" },
       { "detail_category_id": 37, "detail_category_name": "에이도스" },

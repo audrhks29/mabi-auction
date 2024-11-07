@@ -1,13 +1,19 @@
-import convertOptionsArray from "@/utils/auction/convertOptionsArray";
+// TODO: refactor
+
 import React from "react";
+
+import convertOptionsArray from "@/utils/auction/convertOptionsArray";
+
+import { ScrollArea } from "@/components/ui/scroll-area";
+
 import Attribute from "./itemOptions/Attribute";
 import Enchant from "./itemOptions/Enchant";
 import Modification from "./itemOptions/Modification";
 import Erg from "./itemOptions/Erg";
 import Reforge from "./itemOptions/Reforge";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import Set from "./itemOptions/Set";
 import Color from "./itemOptions/Color";
+import SeasoningEffect from "./itemOptions/SeasoningEffect";
 
 export default function ItemOptions({ options }: { options: ItemOptionTypes[] }) {
   const optionsArray = convertOptionsArray(options);
@@ -19,6 +25,7 @@ export default function ItemOptions({ options }: { options: ItemOptionTypes[] })
   const reforgeOptions = optionsArray.filter(option => option.type === "reforge");
   const setOptions = optionsArray.filter(option => option.type === "set");
   const colorOptions = optionsArray.filter(option => option.type === "color");
+  const seasoningOptions = optionsArray.find(option => option.type === "seasoningEffect");
 
   return (
     <div>
@@ -29,6 +36,7 @@ export default function ItemOptions({ options }: { options: ItemOptionTypes[] })
       <ScrollArea className="text-[12px] h-[400px] pt-3">
         {/* 아이템 속성 */}
         <Attribute attributeOptions={attributeOptions} />
+
         {/* 인챈트 */}
         <Enchant enchantOptions={enchantOptions} />
 
@@ -46,6 +54,9 @@ export default function ItemOptions({ options }: { options: ItemOptionTypes[] })
 
         {/* 색상 */}
         <Color colorOptions={colorOptions} />
+
+        {/* 조미료 효과 */}
+        {seasoningOptions?.isDisplay && <SeasoningEffect seasoningOptions={seasoningOptions} />}
       </ScrollArea>
     </div>
   );

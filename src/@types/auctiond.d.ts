@@ -15,6 +15,7 @@ interface ItemListsTypes {
   date_auction_expire: string;
   item_option: ItemOptionTypes[];
 }
+
 interface ItemOptionTypes {
   option_type: string | undefined;
   option_sub_type: string | undefined;
@@ -22,6 +23,7 @@ interface ItemOptionTypes {
   option_value2: string | undefined;
   option_desc: string | string[] | undefined;
 }
+
 interface ItemCategoryTypes {
   category: null;
   detailCategory: null;

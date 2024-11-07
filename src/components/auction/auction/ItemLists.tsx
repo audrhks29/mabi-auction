@@ -20,6 +20,12 @@ import { columns } from "@/utils/auction/tableColumns";
 type SortingState = Array<{ id: string; desc: boolean }>;
 
 export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
+  // 확인용
+  // function getOptionTypes(data: ItemListsTypes[]): string[] {
+  //   const optionTypes = Array.from(new Set(data.flatMap(item => item.item_option?.map(option => option.option_type))));
+  //   return optionTypes;
+  // }
+  // console.log(getOptionTypes(data));
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const table = useReactTable({

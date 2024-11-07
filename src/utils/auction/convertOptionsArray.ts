@@ -2,6 +2,9 @@
 
 export default function convertOptionsArray(options: ItemOptionTypes[]) {
   // 아이템 속성
+  const ecoStoneTier = options?.find(option => option.option_type === "에코스톤 등급");
+  const ecoStoneAbility = options?.find(option => option.option_type === "에코스톤 고유 능력");
+  const ecoStoneArousalAbility = options?.find(option => option.option_type === "에코스톤 각성 능력");
   const attack = options?.find(option => option.option_type === "공격");
   const injury_rate = options?.find(option => option.option_type === "부상률");
   const critical = options?.find(option => option.option_type === "크리티컬");
@@ -12,6 +15,15 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
   const safety = options?.find(option => option.option_type === "보호");
   const magicalDefensive = options?.find(option => option.option_type === "마법 방어력");
   const magicalSafety = options?.find(option => option.option_type === "마법 보호");
+  const size = options?.find(option => option.option_type === "크기");
+  const dyeingColor = options?.find(option => option.option_type === "색상");
+
+  const enchantDurability = options?.find(option => option.option_type === "내구도");
+  const kindOfEnchant = options?.find(option => option.option_type === "인챈트 종류");
+  const transactionsRemaining = options?.find(option => option.option_type === "남은 거래 횟수");
+  const totemEffect = options?.filter(option => option.option_type === "토템 효과");
+  const totemAdditional = options?.find(option => option.option_type === "토템 추가 옵션");
+  const totemLimits = options?.filter(option => option.option_type === "토템 강화 제한");
 
   // 인챈트 인지 판별
   const isEnchant = options?.some(option => option.option_type === "인챈트 종류");
@@ -93,6 +105,18 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
   // 피어싱 레벨
   const piercing = options?.find(option => option.option_type === "피어싱 레벨");
 
+  // 품질
+  const quality = options?.find(option => option.option_type === "품질");
+
+  // 사용 효과
+  const effectOfIntake = options?.filter(option => option.option_type === "사용 효과").map(item => item.option_value);
+
+  // 조미료 효과
+  const seasoningEffect = options
+    ?.filter(option => option.option_type === "조미료 효과")
+    .map(item => item.option_value);
+
+  const petInfo = options?.filter(option => option.option_type === "펫 정보");
   const optionsArray = <ExtendedItemOptionTypes[]>[
     {
       id: 1,
@@ -177,7 +201,7 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
       option_sub_type: "접두",
       option_value: enchant_head?.option_value,
       option_desc: enchant_head_option,
-      isDisplay: Boolean(enchant_head),
+      isDisplay: !isEnchant && Boolean(enchant_head),
     },
     {
       id: 12,
@@ -186,7 +210,7 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
       option_sub_type: "접미",
       option_value: enchant_tail?.option_value,
       option_desc: enchant_tail_option,
-      isDisplay: Boolean(enchant_tail),
+      isDisplay: !isEnchant && Boolean(enchant_tail),
     },
     {
       id: 13,
@@ -399,6 +423,120 @@ export default function convertOptionsArray(options: ItemOptionTypes[]) {
       option_value: piercing?.option_value,
       option_value2: piercing?.option_value2,
       isDisplay: Boolean(piercing),
+    },
+    {
+      id: 38,
+      option_type: "에코스톤 등급",
+      type: "attribute",
+      option_value: ecoStoneTier?.option_value,
+      isDisplay: Boolean(ecoStoneTier),
+    },
+    {
+      id: 39,
+      option_type: "에코스톤 고유 능력",
+      type: "attribute",
+      option_sub_type: ecoStoneAbility?.option_sub_type,
+      option_value: ecoStoneAbility?.option_value,
+      isDisplay: Boolean(ecoStoneAbility),
+    },
+    {
+      id: 40,
+      option_type: "에코스톤 각성 능력",
+      type: "attribute",
+      option_value: ecoStoneArousalAbility?.option_value,
+      isDisplay: Boolean(ecoStoneArousalAbility),
+    },
+    {
+      id: 41,
+      option_type: "내구도",
+      type: "attribute",
+      option_value: enchantDurability?.option_value,
+      isDisplay: Boolean(enchantDurability),
+    },
+    {
+      id: 42,
+      option_type: "인챈트 종류",
+      type: "attribute",
+      option_sub_type: kindOfEnchant?.option_sub_type,
+      option_value: kindOfEnchant?.option_value,
+      isDisplay: Boolean(kindOfEnchant),
+    },
+    {
+      id: 43,
+      option_type: "남은 거래 횟수",
+      type: "attribute",
+      option_value: transactionsRemaining?.option_value,
+      isDisplay: Boolean(transactionsRemaining),
+    },
+    {
+      id: 44,
+      option_type: "품질",
+      type: "attribute",
+      option_value: quality?.option_value,
+      isDisplay: Boolean(quality),
+    },
+    {
+      id: 45,
+      option_type: "사용 효과",
+      type: "attribute",
+      option_value: effectOfIntake,
+      isDisplay: Boolean(effectOfIntake?.length),
+    },
+    {
+      id: 46,
+      option_type: "조미료 효과",
+      type: "seasoningEffect",
+      option_value: seasoningEffect,
+      isDisplay: Boolean(seasoningEffect?.length),
+    },
+    {
+      id: 47,
+      option_type: "크기",
+      type: "attribute",
+      option_value: size?.option_value,
+      isDisplay: Boolean(size),
+    },
+    {
+      id: 48,
+      option_type: "색상",
+      type: "attribute",
+      option_value: typeof dyeingColor?.option_value === "string" && dyeingColor?.option_value.split(","),
+      isDisplay: Boolean(dyeingColor),
+    },
+    {
+      id: 49,
+      option_type: "토템 효과",
+      type: "attribute",
+      option_value: totemEffect?.map(effect => ({
+        [effect?.option_sub_type || "unknown"]: effect.option_value,
+      })),
+      isDisplay: Boolean(totemEffect),
+    },
+    {
+      id: 50,
+      option_type: "토템 추가 옵션",
+      type: "attribute",
+      option_sub_type: totemAdditional?.option_sub_type,
+      option_value: totemAdditional?.option_value,
+      isDisplay: Boolean(totemAdditional),
+    },
+    {
+      id: 51,
+      option_type: "토템 강화 제한",
+      type: "attribute",
+      option_value: totemLimits?.map(effect => ({
+        [effect?.option_sub_type || "unknown"]: effect.option_value,
+      })),
+      isDisplay: Boolean(totemLimits),
+    },
+    {
+      id: 52,
+      option_type: "펫 정보",
+      type: "attribute",
+      option_value: petInfo?.map(effect => ({
+        [effect?.option_sub_type || "unknown"]: effect.option_value,
+      })),
+      isDisplay: Boolean(petInfo),
     },
   ];
 

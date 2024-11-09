@@ -1,0 +1,175 @@
+[
+  {
+    "option_type": "아이템 보호",
+    "option_sub_type": null,
+    "option_value": "수리 실패",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "아이템 보호",
+    "option_sub_type": null,
+    "option_value": "인챈트 실패",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "공격",
+    "option_sub_type": null,
+    "option_value": "20",
+    "option_value2": "45",
+    "option_desc": null
+  },
+  {
+    "option_type": "크리티컬",
+    "option_sub_type": null,
+    "option_value": "28%",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "밸런스",
+    "option_sub_type": null,
+    "option_value": "70%",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "숙련",
+    "option_sub_type": null,
+    "option_value": "100",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "내구력",
+    "option_sub_type": null,
+    "option_value": "26",
+    "option_value2": "26",
+    "option_desc": null
+  },
+  {
+    "option_type": "아이템 색상",
+    "option_sub_type": "파트 A",
+    "option_value": "0,0,0",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "아이템 색상",
+    "option_sub_type": "파트 B",
+    "option_value": "0,0,0",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "아이템 색상",
+    "option_sub_type": "파트 C",
+    "option_value": "51,59,41",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "아이템 색상",
+    "option_sub_type": "파트 D",
+    "option_value": "51,59,41",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "인챈트",
+    "option_sub_type": "접두",
+    "option_value": "불가사의한 (랭크 3)",
+    "option_value2": null,
+    "option_desc": "수리비 20% 감소,체력 30 감소,최대마나 30 증가,지력 12 증가,마법 공격력 20 증가"
+  },
+  {
+    "option_type": "인챈트",
+    "option_sub_type": "접미",
+    "option_value": "나이트폴 (랭크 4)",
+    "option_value2": null,
+    "option_desc": "최대마나 82 증가,마나 소비 감소 8% 증가,마법 공격력 55 증가"
+  },
+  {
+    "option_type": "일반 개조",
+    "option_sub_type": null,
+    "option_value": "5",
+    "option_value2": "5",
+    "option_desc": null
+  },
+  {
+    "option_type": "보석 개조",
+    "option_sub_type": null,
+    "option_value": "1",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "특별 개조",
+    "option_sub_type": "S",
+    "option_value": "7",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "세공 랭크",
+    "option_sub_type": null,
+    "option_value": "1",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "세공 옵션",
+    "option_sub_type": "1",
+    "option_value": "마법 공격력(17레벨:68 증가)",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "세공 옵션",
+    "option_sub_type": "2",
+    "option_value": "라이트닝볼트 최소 대미지(11레벨:16.50 증가)",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "세공 옵션",
+    "option_sub_type": "3",
+    "option_value": "캐스팅 속도(18레벨:27.00 % 증가, 원드에는 2회 적용)",
+    "option_value2": null,
+    "option_desc": null
+  },
+  {
+    "option_type": "에르그",
+    "option_sub_type": "S",
+    "option_value": "50",
+    "option_value2": "50",
+    "option_desc": null
+  },
+  {
+    "option_type": "세트 효과",
+    "option_sub_type": "1",
+    "option_value": "헤일스톰 강화",
+    "option_value2": "10",
+    "option_desc": null
+  },
+  {
+    "option_type": "남은 전용 해제 가능 횟수",
+    "option_sub_type": null,
+    "option_value": "5",
+    "option_value2": null,
+    "option_desc": null
+  }
+]
+1
+: 
+{option_type: '방어력', option_sub_type: null, option_value: '22', option_value2: null, option_desc: null}
+2
+: 
+{option_type: '보호', option_sub_type: null, option_value: '19', option_value2: null, option_desc: null}
+3
+: 
+{option_type: '마법 방어력', option_sub_type: null, option_value: '4', option_value2: null, option_desc: null}
+4
+: 
+{option_type: '마법 보호', option_sub_type: null, option_value: '2', option_value2: null, option_desc: null}

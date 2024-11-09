@@ -13,8 +13,11 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Mabi Auction",
-  description: "마비옥션에서 마비노기 경매장 아이템들을 검색해보세요.",
+  title: {
+    template: "Mabi Auction | %s",
+    default: "Mabi Auction",
+  },
+  description: "마비옥션에서 마비노기 경매장 아이템들과 뿔피리 내역을 검색해보세요.",
   icons: {
     icon: "/auction.png",
   },

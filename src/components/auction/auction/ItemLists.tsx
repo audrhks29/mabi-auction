@@ -22,7 +22,7 @@ type SortingState = Array<{ id: string; desc: boolean }>;
 export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
   // 확인용
   // function getOptionTypes(data: ItemListsTypes[]): string[] {
-  //   const optionTypes = Array.from(new Set(data.flatMap(item => item.item_option?.map(option => option.option_type))));
+  //   const optionTypes = Array.from(new Set(data.flatMap(item => item.item_display_name)));
   //   return optionTypes;
   // }
   // console.log(getOptionTypes(data));

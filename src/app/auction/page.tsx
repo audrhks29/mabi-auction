@@ -1,37 +1,15 @@
-import Auction from "@/components/auction/auction/Auction";
-import Favorites from "@/components/auction/favorites/Favorites";
-import Developing from "@/components/shared/Developing";
+import { Metadata } from "next";
 
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import AuctionIndex from "@/components/auction/Index";
+
+export const metadata: Metadata = {
+  title: "경매장",
+};
 
 export default function AuctionPage() {
   return (
     <main className="inner">
-      <Card className="pt-6">
-        <CardContent>
-          <Tabs defaultValue="auction" className="mb-3">
-            <TabsList>
-              <TabsTrigger value="auction">경매장</TabsTrigger>
-              <TabsTrigger value="favorites">즐겨찾기</TabsTrigger>
-              <TabsTrigger value="myauctions">내 경매</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="auction" className="border p-3 rounded-sm">
-              <Auction />
-            </TabsContent>
-
-            <TabsContent value="favorites" className="border p-3 rounded-sm">
-              {/* <Favorites /> */}
-              <Developing />
-            </TabsContent>
-
-            <TabsContent value="myauctions" className="border p-3 rounded-sm">
-              <Developing />
-            </TabsContent>
-          </Tabs>
-        </CardContent>
-      </Card>
+      <AuctionIndex />
     </main>
   );
 }

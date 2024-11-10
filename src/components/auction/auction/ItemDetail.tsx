@@ -13,26 +13,26 @@ import ItemOptions from "./ItemOptions";
 export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
   const userData = useUserDataStore(state => state.userData);
 
-  const addData = async () => {
-    const data = row.original;
+  // const addData = async () => {
+  //   const data = row.original;
 
-    const response = await fetch("/api/auction/favorites", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+  //   const response = await fetch("/api/auction/favorites", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(data),
+  //   });
 
-    // if (!userData) {
-    //   alert("로그인 후 가능한 기능입니다.");
-    // }
+  //   if (!userData) {
+  //     alert("로그인 후 가능한 기능입니다.");
+  //   }
 
-    // if (response.status === 201) {
-    //   alert("즐겨찾기에 등록되었습니다.");
-    // }
-    alert("개발중인 기능입니다.");
-  };
+  //   if (response.status === 201) {
+  //     alert("즐겨찾기에 등록되었습니다.");
+  //   }
+  //   alert("개발중인 기능입니다.");
+  // };
 
   return (
     <DialogContent className="sm:max-w-[425px] text-[14px]">
@@ -78,7 +78,11 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
             }}>
             내 경매 등록
           </Button>
-          <Button type="button" onClick={addData}>
+          <Button
+            type="button"
+            onClick={() => {
+              alert("개발중인 기능입니다.");
+            }}>
             즐겨찾기 등록
           </Button>
         </article>

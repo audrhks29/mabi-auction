@@ -13,32 +13,21 @@ export default function BigHornOfShoutIndex() {
   const { handleSubmit, register, getValues, setValue, watch } = useForm<HornSearchFormTypes>();
 
   const server = watch("serverType");
-  const encodeServer = encodeURI(server);
-
-  const fetchHornLists = async () => {
-    if (server) {
-      const urlString = `https://open.api.nexon.com/mabinogi/v1/horn-bugle-world/history?server_name=${encodeServer}`;
-      const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-      try {
-        const headers: HeadersInit = API_KEY ? { "x-nxopen-api-key": API_KEY } : {};
-
-        const res = await fetch(urlString, {
-          headers,
-        });
-
-        const resData = await res.json();
-        return resData;
-      } catch (error) {
-        console.error("An unexpected error happened:", error);
-      }
-    } else {
-      return [];
-    }
-  };
+  const encodeServer = encodeURI(server as string);
 
   const { data, isFetching } = useQuery({
     queryKey: [encodeServer],
-    queryFn: fetchHornLists,
+    queryFn: async () => {
+      if (server !== undefined) {
+        const response = await fetch(`/api/bighornofshout?server=${encodeServer}`, {
+          method: "GET",
+        });
+        if (!response.ok) {
+          throw new Error("Failed to fetch item lists");
+        }
+        return response.json();
+      }
+    },
     select: data => {
       return data.horn_bugle_world_history;
     },

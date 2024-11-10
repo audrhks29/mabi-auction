@@ -11,8 +11,6 @@ import SearchBox from "./SearchBox";
 import NonData from "@/components/shared/NonData";
 import Loading from "@/components/shared/Loading";
 
-import { fetchItemLists } from "@/services/auctionApi";
-
 export default function Auction() {
   const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
   const [category, setCategory] = useState<ItemCategoryStateTypes>({
@@ -22,7 +20,19 @@ export default function Auction() {
 
   const { data, isFetching } = useQuery({
     queryKey: ["itemLists", getValues().inputText || category.detailCategory],
-    queryFn: () => fetchItemLists(getValues, category),
+    queryFn: async () => {
+      const inputText = getValues().inputText == "" ? null : getValues().inputText;
+      const detailCategory = category.detailCategory;
+      if (inputText || category.detailCategory) {
+        const response = await fetch(`/api/auction?inputText=${inputText}&detailCategory=${detailCategory}`, {
+          method: "GET",
+        });
+        if (!response.ok) {
+          throw new Error("Failed to fetch item lists");
+        }
+        return response.json();
+      }
+    },
   });
 
   return (

@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+
+import Providers from "@/utils/provider";
+
 import { cn } from "@/lib/utils";
+
 import Header from "@/components/layout/Header";
 import { Separator } from "@/components/ui/separator";
-import Providers from "@/utils/provider";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import Footer from "@/components/layout/Footer";
+
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -21,6 +26,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/auction.png",
   },
+  verification: {
+    google: "ZPrVlMyX2ZF_7nmMXyiH00jA7dezY2IkUz0Zh16CYpw",
+  },
 };
 
 export default function RootLayout({
@@ -32,13 +40,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
-          <SidebarProvider>
-            <Header />
-            <Separator className="fixed top-14" />
-            <SidebarTrigger />
-            {children}
-            <ReactQueryDevtools initialIsOpen={true} />
-          </SidebarProvider>
+          <Header />
+
+          <Separator className="fixed top-14" />
+
+          {children}
+          <ReactQueryDevtools initialIsOpen={true} />
+
+          <Footer />
         </Providers>
       </body>
     </html>

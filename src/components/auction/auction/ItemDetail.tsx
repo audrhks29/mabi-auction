@@ -24,13 +24,14 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
       body: JSON.stringify(data),
     });
 
-    if (!userData) {
-      alert("로그인 후 가능한 기능입니다.");
-    }
+    // if (!userData) {
+    //   alert("로그인 후 가능한 기능입니다.");
+    // }
 
-    if (response.status === 201) {
-      alert("즐겨찾기에 등록되었습니다.");
-    }
+    // if (response.status === 201) {
+    //   alert("즐겨찾기에 등록되었습니다.");
+    // }
+    alert("개발중인 기능입니다.");
   };
 
   return (
@@ -70,7 +71,13 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
         <ItemOptions options={row.original.item_option} />
 
         <article className="flex justify-center gap-6">
-          <Button type="button">내 경매 등록</Button>
+          <Button
+            type="button"
+            onClick={() => {
+              alert("개발중인 기능입니다.");
+            }}>
+            내 경매 등록
+          </Button>
           <Button type="button" onClick={addData}>
             즐겨찾기 등록
           </Button>

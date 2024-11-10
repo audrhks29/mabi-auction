@@ -25,7 +25,7 @@ function RenderContent({ renderData, isFetching }: { renderData: HornListTypes[]
 
   if (renderData && renderData.length > 0) {
     return (
-      <>
+      <React.Fragment>
         {renderData.map((item: HornListTypes) => (
           <TableRow key={uuidv4()}>
             <TableCell>
@@ -39,7 +39,7 @@ function RenderContent({ renderData, isFetching }: { renderData: HornListTypes[]
             <TableCell className="text-left">{item.message}</TableCell>
           </TableRow>
         ))}
-      </>
+      </React.Fragment>
     );
   } else {
     return (

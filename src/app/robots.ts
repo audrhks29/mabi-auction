@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://mabinogi.vercel.app/sitemap.xml",
-    host: "https://mabinogi.vercel.app",
+    sitemap: "https://mabiauction.vercel.app/sitemap.xml",
+    host: "https://mabiauction.vercel.app",
   };
 }

@@ -3,19 +3,19 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://mabinogi.vercel.app",
+      url: "https://mabiauction.vercel.app",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://mabinogi.vercel.app/auction",
+      url: "https://mabiauction.vercel.app/auction",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://mabinogi.vercel.app/bighornofshout",
+      url: "https://mabiauction.vercel.app/bighornofshout",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

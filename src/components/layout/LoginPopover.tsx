@@ -46,12 +46,12 @@ export default function LoginPopover() {
   };
 
   return (
-    <Popover>
-      <PopoverTrigger className="border border-input bg-background hover:bg-accent hover:text-accent-foreground inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2">
-        <span>로그인</span>
-      </PopoverTrigger>
+    <div className="dropdown dropdown-bottom dropdown-end">
+      <div tabIndex={0} role="button" className="btn m-1">
+        로그인
+      </div>
 
-      <PopoverContent className="absolute -right-10">
+      <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-64 p-2 shadow">
         <form onSubmit={handleSubmit(onSubmit)} className="p-3">
           <div className="grid gap-4">
             <div className="grid gap-2">
@@ -71,21 +71,19 @@ export default function LoginPopover() {
               />
             </div>
 
-            <Button type="submit" className="w-full">
+            <button type="submit" className="btn">
               로그인
-            </Button>
+            </button>
           </div>
 
           <div className="mt-4 text-center text-sm">
             계정이 없으신가요?&nbsp;
-            <PopoverClose asChild>
-              <Link href="/register" className="underline">
-                회원가입
-              </Link>
-            </PopoverClose>
+            <a href="/register" className="underline">
+              회원가입
+            </a>
           </div>
         </form>
-      </PopoverContent>
-    </Popover>
+      </ul>
+    </div>
   );
 }

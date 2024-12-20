@@ -4,6 +4,9 @@ const config = {
   darkMode: ["class"],
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
   theme: {
     container: {
       center: true,
@@ -103,6 +106,7 @@ const config = {
         },
       });
     },
+    require("daisyui"),
   ],
 } satisfies Config;
 

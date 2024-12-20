@@ -40,12 +40,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
           <Header />
-
-          <Separator className="fixed top-14" />
 
           {children}
           <ReactQueryDevtools initialIsOpen={true} />

@@ -95,7 +95,7 @@ const config = {
     ({ addUtilities }: { addUtilities: any }) => {
       addUtilities({
         ".option-box": {
-          "@apply relative border-2 pt-4 pb-1 px-2 mb-4 rounded-lg mt-3": "",
+          "@apply relative border-2 pt-4 pb-1 px-2 mb-4 rounded-lg mt-3 text-left": "",
         },
         ".option-box b": {
           "@apply font-bold": "",

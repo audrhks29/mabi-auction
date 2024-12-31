@@ -28,8 +28,8 @@ export default function Reforge({ reforgeOptions }: { reforgeOptions: ExtendedIt
               const desc = match[2];
               return (
                 <React.Fragment key={options.option_sub_type}>
-                  <p>{title}</p>
-                  <p>{desc}</p>
+                  <p className="font-semibold">{title}</p>
+                  <p>({desc})</p>
                 </React.Fragment>
               );
             }

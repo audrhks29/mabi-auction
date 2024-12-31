@@ -4,8 +4,6 @@ import React from "react";
 
 import convertOptionsArray from "@/utils/auction/convertOptionsArray";
 
-import { ScrollArea } from "@/components/ui/scroll-area";
-
 import Attribute from "./itemOptions/Attribute";
 import Enchant from "./itemOptions/Enchant";
 import Modification from "./itemOptions/Modification";
@@ -33,7 +31,7 @@ export default function ItemOptions({ options }: { options: ItemOptionTypes[] })
         <span>아이템 옵션</span>
       </div>
 
-      <ScrollArea className="text-[12px] h-[400px] pt-3">
+      <section className="text-[12px] max-h-[400px] pt-3 overflow-y-scroll">
         {/* 아이템 속성 */}
         <Attribute attributeOptions={attributeOptions} />
 
@@ -57,7 +55,7 @@ export default function ItemOptions({ options }: { options: ItemOptionTypes[] })
 
         {/* 조미료 효과 */}
         {seasoningOptions?.isDisplay && <SeasoningEffect seasoningOptions={seasoningOptions} />}
-      </ScrollArea>
+      </section>
     </div>
   );
 }

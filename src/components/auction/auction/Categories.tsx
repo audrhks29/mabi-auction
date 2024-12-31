@@ -1,65 +1,7 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import { QueryObserverResult, RefetchOptions } from "@tanstack/react-query";
 import { UseFormSetValue } from "react-hook-form";
 
-import { Card } from "@/components/ui/card";
-import { ScrollArea } from "@/components/ui/scroll-area";
-
 import itemCategories from "@/assets/auction/itemCategories.json";
-
-function CategoryBar({
-  category_name,
-  detail_category,
-  category,
-  setCategory,
-  setValue,
-}: {
-  category_name: string;
-  detail_category: {
-    detail_category_id: number;
-    detail_category_name: string;
-  }[];
-  category: ItemCategoryStateTypes;
-  setCategory: Dispatch<SetStateAction<ItemCategoryStateTypes>>;
-  setValue: UseFormSetValue<AuctionSearchFormTypes>;
-}) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <ul>
-      <li>
-        <span
-          className={`${isOpen ? "font-bold" : ""} cursor-pointer hover:font-bold`}
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}>
-          {isOpen ? "-" : "+"} {category_name}
-        </span>
-      </li>
-
-      {isOpen && (
-        <ul className="ml-5">
-          {detail_category.map(item => {
-            const { detail_category_id, detail_category_name } = item;
-
-            return (
-              <li key={detail_category_id}>
-                <span
-                  className={`${category.detailCategory === detail_category_name ? "font-bold" : ""} cursor-pointer hover:font-bold`}
-                  onClick={() => {
-                    setValue("inputText", "");
-                    setCategory({ category: category_name, detailCategory: detail_category_name });
-                  }}>
-                  {detail_category_name}
-                </span>
-              </li>
-            );
-          })}
-        </ul>
-      )}
-    </ul>
-  );
-}
 
 export default function Categories({
   category,
@@ -71,19 +13,29 @@ export default function Categories({
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   return (
-    <ScrollArea className="h-[707.5px] border rounded-md">
-      <Card className="p-3 border-none">
-        {itemCategories.map(item => (
-          <CategoryBar
-            key={item.category_id}
-            category_name={item.category_name}
-            detail_category={item.detail_category}
-            category={category}
-            setCategory={setCategory}
-            setValue={setValue}
-          />
+    <section>
+      <ul className="menu bg-base-200 max-h-[602px] overflow-y-scroll block">
+        {itemCategories.map(category => (
+          <li key={category.category_id}>
+            <details>
+              <summary>{category.category_name}</summary>
+
+              <ul>
+                {category.detail_category.map(detail => (
+                  <li
+                    key={detail.detail_category_id}
+                    onClick={() => {
+                      setValue("inputText", "");
+                      setCategory({ category: category.category_name, detailCategory: detail.detail_category_name });
+                    }}>
+                    <a>{detail.detail_category_name}</a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </li>
         ))}
-      </Card>
-    </ScrollArea>
+      </ul>
+    </section>
   );
 }

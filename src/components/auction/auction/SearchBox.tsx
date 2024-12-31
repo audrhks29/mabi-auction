@@ -1,11 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-
 import searchLists from "@/assets/auction/searchLists.json";
 
 export default function SearchBox({
@@ -96,12 +91,12 @@ export default function SearchBox({
     <section>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-rows-2 gap-2 pb-2">
         <div className="relative grid grid-cols-[auto_120px] gap-2">
-          <Input
+          <input
             type="text"
             placeholder="아이템 이름을 입력하세요."
             id="inputText"
             {...register("inputText")}
-            className="bg-slate-100"
+            className="input input-bordered bg-base-200"
             onChange={e => {
               setRecommendInputText(e.target.value);
               setDropdownVisible(e.target.value !== "");
@@ -113,8 +108,8 @@ export default function SearchBox({
 
           {/* 검색결과 추천 */}
           {isDropdownVisible && recommendInputText !== "" && (
-            <div ref={dropdownRef} className="absolute top-11 left-0 w-[1096px] border rounded-md">
-              <ScrollArea className="max-h-[130px] z-50 bg-slate-100">
+            <div ref={dropdownRef} className="absolute z-50 top-14 left-0 w-[1122px] border rounded-md">
+              <div className="max-h-[130px]  bg-base-200 overflow-y-scroll">
                 {filteredLists.map((filteredList, index) => (
                   <div
                     key={filteredList.id}
@@ -133,36 +128,36 @@ export default function SearchBox({
                     {filteredList.name}
                   </div>
                 ))}
-              </ScrollArea>
+              </div>
             </div>
           )}
 
-          <Button type="submit" className="w-[120px]">
+          <button type="submit" className="w-[120px] btn btn-neutral">
             찾기
-          </Button>
+          </button>
         </div>
 
         <div className="grid grid-cols-[auto_120px] gap-2 items-center">
           <div>
             {category.category && category.detailCategory ? (
-              <span className="flex gap-2">
-                <Badge variant={"outline"}>{category.category}</Badge>
-                <Badge variant={"outline"}>{category.detailCategory}</Badge>
-              </span>
+              <div className="flex gap-2">
+                <span className="badge badge-outline text-[12px]">{category.category}</span>
+                <span className="badge badge-outline text-[12px]">{category.detailCategory}</span>
+              </div>
             ) : (
-              <Badge variant={"outline"}>카테고리 없음</Badge>
+              <span className="badge badge-outline text-[12px]">카테고리 없음</span>
             )}
           </div>
 
-          <Button
+          <button
             type="button"
-            className="w-[120px]"
+            className="w-[120px] btn btn-neutral"
             onClick={() => {
               setValue("inputText", "");
               setCategory({ category: null, detailCategory: null });
             }}>
             검색 초기화
-          </Button>
+          </button>
         </div>
       </form>
     </section>

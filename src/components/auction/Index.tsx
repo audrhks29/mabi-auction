@@ -1,35 +1,25 @@
 import Auction from "@/components/auction/auction/Auction";
-import Favorites from "@/components/auction/favorites/Favorites";
 import Developing from "@/components/shared/Developing";
-
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function AuctionIndex() {
   return (
-    <Card className="pt-6">
-      <CardContent>
-        <Tabs defaultValue="auction" className="mb-3">
-          <TabsList>
-            <TabsTrigger value="auction">경매장</TabsTrigger>
-            <TabsTrigger value="favorites">즐겨찾기</TabsTrigger>
-            <TabsTrigger value="myauctions">내 경매</TabsTrigger>
-          </TabsList>
+    <section className="pt-6">
+      <div role="tablist" className="tabs tabs-lifted">
+        <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="경매장" defaultChecked />
+        <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+          <Auction />
+        </div>
 
-          <TabsContent value="auction" className="border p-3 rounded-sm">
-            <Auction />
-          </TabsContent>
+        <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="즐겨찾기" />
+        <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+          <Developing />
+        </div>
 
-          <TabsContent value="favorites" className="border p-3 rounded-sm">
-            {/* <Favorites /> */}
-            <Developing />
-          </TabsContent>
-
-          <TabsContent value="myauctions" className="border p-3 rounded-sm">
-            <Developing />
-          </TabsContent>
-        </Tabs>
-      </CardContent>
-    </Card>
+        <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="내 경매" />
+        <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+          <Developing />
+        </div>
+      </div>
+    </section>
   );
 }

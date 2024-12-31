@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import {
   flexRender,
@@ -7,10 +7,6 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-
-import { Card } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 
 import ItemDetail from "./ItemDetail";
 import Pagination from "./Pagination";
@@ -41,43 +37,44 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
   });
 
   return (
-    <Card className="p-3">
-      <Table className="table-auto w-full">
+    <section>
+      <table className="table table-sm">
         <colgroup>
           <col width="520px" />
           <col width="130px" />
           <col width="70px" />
         </colgroup>
-        <TableHeader>
-          {table.getHeaderGroups().map(headerGroup => (
-            <TableRow key={headerGroup.id}>
-              {headerGroup.headers.map(header => (
-                <TableHead key={header.id}>{flexRender(header.column.columnDef.header, header.getContext())}</TableHead>
-              ))}
-            </TableRow>
-          ))}
-        </TableHeader>
 
-        <TableBody>
+        <thead>
+          {table.getHeaderGroups().map(headerGroup => (
+            <tr key={headerGroup.id}>
+              {headerGroup.headers.map(header => (
+                <th key={header.id}>{flexRender(header.column.columnDef.header, header.getContext())}</th>
+              ))}
+            </tr>
+          ))}
+        </thead>
+
+        <tbody className="text-center">
           {table?.getRowModel()?.rows?.map(row => (
-            <Dialog key={row.id}>
-              <DialogTrigger asChild>
-                <TableRow className="cursor-pointer">
-                  {row.getVisibleCells().map(cell => (
-                    <TableCell key={cell.id} className="px-1">
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              </DialogTrigger>
+            <React.Fragment key={row.id}>
+              <tr
+                className="cursor-pointer"
+                onClick={() => (document.getElementById(`my_modal_${row.id}`) as HTMLDialogElement).showModal()}>
+                {row.getVisibleCells().map(cell => (
+                  <td key={cell.id} className="px-1">
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </td>
+                ))}
+              </tr>
 
               <ItemDetail row={row} />
-            </Dialog>
+            </React.Fragment>
           ))}
-        </TableBody>
-      </Table>
+        </tbody>
+      </table>
 
       <Pagination table={table} />
-    </Card>
+    </section>
   );
 }

@@ -46,7 +46,7 @@ export default function Auction() {
       />
 
       <div className="grid grid-cols-[200px_auto] gap-3">
-        <Categories category={category} setCategory={setCategory} setValue={setValue} />
+        <Categories setCategory={setCategory} setValue={setValue} />
         {!isFetching && data && data?.length > 0 && <ItemLists data={data} />}
         {!isFetching && (data?.length === 0 || !data) && <NonData />}
         {isFetching && <Loading />}

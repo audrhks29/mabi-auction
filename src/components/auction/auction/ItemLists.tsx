@@ -73,7 +73,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
           ))}
         </tbody>
       </table>
-
+      {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}
       <Pagination table={table} />
     </section>
   );

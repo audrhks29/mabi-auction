@@ -4,11 +4,9 @@ import { UseFormSetValue } from "react-hook-form";
 import itemCategories from "@/assets/auction/itemCategories.json";
 
 export default function Categories({
-  category,
   setCategory,
   setValue,
 }: {
-  category: ItemCategoryStateTypes;
   setCategory: Dispatch<SetStateAction<ItemCategoryStateTypes>>;
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {

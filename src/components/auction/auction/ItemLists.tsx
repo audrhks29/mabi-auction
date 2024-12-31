@@ -59,7 +59,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
           {table?.getRowModel()?.rows?.map(row => (
             <React.Fragment key={row.id}>
               <tr
-                className="cursor-pointer"
+                className="cursor-pointer hover:bg-base-200"
                 onClick={() => (document.getElementById(`my_modal_${row.id}`) as HTMLDialogElement).showModal()}>
                 {row.getVisibleCells().map(cell => (
                   <td key={cell.id} className="px-1">

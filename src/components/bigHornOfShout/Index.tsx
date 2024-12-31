@@ -6,9 +6,6 @@ import { useForm } from "react-hook-form";
 import BigHornOfShoutLists from "@/components/bigHornOfShout/BigHornOfShoutLists";
 import SearchBox from "@/components/bigHornOfShout/SearchBox";
 
-import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-
 export default function BigHornOfShoutIndex() {
   const { handleSubmit, register, getValues, setValue, watch } = useForm<HornSearchFormTypes>();
 
@@ -34,8 +31,8 @@ export default function BigHornOfShoutIndex() {
   });
 
   return (
-    <Card>
-      <CardContent className="flex gap-6 flex-col justify-center items-center">
+    <section>
+      <div className="flex gap-1 flex-col justify-center items-center">
         <SearchBox
           data={data}
           handleSubmit={handleSubmit}
@@ -43,9 +40,9 @@ export default function BigHornOfShoutIndex() {
           getValues={getValues}
           setValue={setValue}
         />
-        <Separator />
+        <div className="divider m-0"></div>
         <BigHornOfShoutLists data={data} getValues={getValues} isFetching={isFetching} />
-      </CardContent>
-    </Card>
+      </div>
+    </section>
   );
 }

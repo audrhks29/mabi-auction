@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { UseFormGetValues, UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-
 import useBigHornListsStore from "@/store/bigHornLists-store";
 
 import { RotateCcw, SearchIcon } from "lucide-react";
@@ -51,73 +47,66 @@ export default function SearchBox({
   return (
     <section className="pt-6 flex gap-2 max-w-[950px]">
       <form onSubmit={handleSubmit(onSubmit)} className="flex gap-2">
-        <div>
-          <Select
-            value={selectedServer}
-            onValueChange={value => {
-              if (typeof value === "string") {
-                setSelectedServer(value);
-                setValue("inputText", "");
-                setValue(`serverType`, value);
-              }
-            }}>
-            <SelectTrigger className="w-[100px]" type="button">
-              <SelectValue placeholder="서버" />
-            </SelectTrigger>
+        <select
+          value={selectedServer}
+          onChange={e => {
+            if (typeof e.target.value === "string") {
+              setSelectedServer(e.target.value);
+              setValue("inputText", "");
+              setValue(`serverType`, e.target.value);
+            }
+          }}
+          className="select select-bordered">
+          <option value="류트">류트</option>
+          <option value="만돌린">만돌린</option>
+          <option value="하프">하프</option>
+          <option value="울프">울프</option>
+        </select>
 
-            <SelectContent>
-              <SelectItem value="류트">류트</SelectItem>
-              <SelectItem value="만돌린">만돌린</SelectItem>
-              <SelectItem value="하프">하프</SelectItem>
-              <SelectItem value="울프">울프</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
+        <select
+          value={selectedSearchType}
+          defaultValue="keyword"
+          onChange={e => {
+            setSelectedSearchType(e.target.value);
+            setValue(`searchType`, e.target.value);
+          }}
+          className="select select-bordered">
+          <option value="keyword">키워드 검색</option>
+          <option value="nickName">닉네임 검색</option>
+        </select>
 
-        <div>
-          <Select
-            value={selectedSearchType}
-            defaultValue="keyword"
-            onValueChange={value => {
-              setSelectedSearchType(value);
-              setValue(`searchType`, value);
-            }}>
-            <SelectTrigger className="w-[150px]" type="button">
-              <SelectValue />
-            </SelectTrigger>
-
-            <SelectContent>
-              <SelectItem value="keyword">키워드 검색</SelectItem>
-              <SelectItem value="nickName">닉네임 검색</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-
-        <Input placeholder="검색어를 입력해주세요." id="inputText" {...register("inputText")} className="w-[200px]" />
-        <Button type="submit">
+        <input
+          placeholder="검색어를 입력해주세요."
+          id="inputText"
+          {...register("inputText")}
+          className="input input-bordered bg-base-200 w-[200px]"
+        />
+        <button type="submit" className="btn">
           <i>
             <SearchIcon className="w-4 h-4" />
           </i>
-        </Button>
+        </button>
 
-        <Button
+        <button
           type="button"
+          className="btn"
           onClick={() => {
             setFilteredData([]);
             setValue(`inputText`, "");
           }}>
           전체보기
-        </Button>
+        </button>
 
-        <Button
+        <button
           type="button"
+          className="btn"
           onClick={() => {
             setValue("inputText", "");
           }}>
           <i>
             <RotateCcw className="w-4 h-4" />
           </i>
-        </Button>
+        </button>
       </form>
     </section>
   );

@@ -1,8 +1,6 @@
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
-import { Button } from "@/components/ui/button";
-
 import useUserDataStore from "@/store/userData-store";
 
 export default function LogoutPopover() {
@@ -38,9 +36,9 @@ export default function LogoutPopover() {
         <span>[{userData?.server}]</span>&nbsp;<span>{userData?.nickname}</span>
       </div>
 
-      <Button variant="outline" type="submit">
+      <button type="submit" className="btn">
         로그아웃
-      </Button>
+      </button>
     </form>
   );
 }

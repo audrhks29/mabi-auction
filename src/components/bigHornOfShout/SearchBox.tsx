@@ -57,6 +57,9 @@ export default function SearchBox({
             }
           }}
           className="select select-bordered">
+          <option disabled selected>
+            서버
+          </option>
           <option value="류트">류트</option>
           <option value="만돌린">만돌린</option>
           <option value="하프">하프</option>

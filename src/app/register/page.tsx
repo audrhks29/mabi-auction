@@ -1,13 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 interface FormData {
@@ -74,103 +68,111 @@ export default function RegisterPage() {
     <main className="inner grid gap-3">
       <h2 className="text-center text-[24px] font-bold">회원가입</h2>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <Card className="m-auto w-[450px]">
-          <CardContent className="p-6">
-            <div className="grid gap-4">
-              <div className="grid grid-cols-[90px_1fr_80px] items-center gap-3">
-                <Label htmlFor="user_id">아이디</Label>
-                <Input id="user_id" {...register("user_id", { required: true })} type="text" placeholder="아이디" />
-                <Button
-                  type="button"
-                  onClick={async () => {
-                    try {
-                      const res = await fetch("/api/auth/duplication", {
-                        method: "POST",
-                        headers: {
-                          "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify({
-                          user_id: id,
-                        }),
-                      });
+      <form onSubmit={handleSubmit(onSubmit)} className="m-auto w-[450px] text-[14px]">
+        <div className="grid gap-4">
+          <div className="grid grid-cols-[90px_1fr_90px] items-center gap-3">
+            <label htmlFor="user_id">아이디</label>
+            <input
+              id="user_id"
+              {...register("user_id", { required: true })}
+              type="text"
+              placeholder="아이디"
+              className="input input-bordered"
+            />
+            <button
+              type="button"
+              onClick={async () => {
+                try {
+                  const res = await fetch("/api/auth/duplication", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                      user_id: id,
+                    }),
+                  });
 
-                      const resData = await res.json();
+                  const resData = await res.json();
 
-                      if (resData.error) {
-                        alert(resData.error);
-                        setIsDuplicationId(true);
-                      } else if (resData.message) {
-                        alert(resData.message);
-                        setIsDuplicationId(false);
-                      }
-                    } catch (error) {
-                      alert("올바른 접근이 아닙니다.");
-                      console.error("Error fetching user data:", error);
-                    }
-                  }}>
-                  {isDuplicationId === false ? "확인완료" : "중복확인"}
-                </Button>
-              </div>
+                  if (resData.error) {
+                    alert(resData.error);
+                    setIsDuplicationId(true);
+                  } else if (resData.message) {
+                    alert(resData.message);
+                    setIsDuplicationId(false);
+                  }
+                } catch (error) {
+                  alert("올바른 접근이 아닙니다.");
+                  console.error("Error fetching user data:", error);
+                }
+              }}
+              className="btn btn-neutral">
+              {isDuplicationId === false ? "확인완료" : "중복확인"}
+            </button>
+          </div>
 
-              <div className="grid grid-cols-[90px_1fr] items-center gap-3">
-                <Label htmlFor="user_password">비밀번호</Label>
-                <Input id="user_password" {...register("user_password", { required: true })} type="password" />
-              </div>
+          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+            <label htmlFor="user_password">비밀번호</label>
+            <input
+              id="user_password"
+              {...register("user_password", { required: true })}
+              type="password"
+              className="input input-bordered"
+              placeholder="비밀번호"
+            />
+          </div>
 
-              <div className="grid grid-cols-[90px_1fr] items-center gap-3">
-                <Label htmlFor="user_password_confirm">비밀번호 확인</Label>
-                <Input
-                  id="user_password_confirm"
-                  {...register("user_password_confirm", { required: true })}
-                  type="password"
-                />
-              </div>
+          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+            <label htmlFor="user_password_confirm">비밀번호 확인</label>
+            <input
+              id="user_password_confirm"
+              {...register("user_password_confirm", { required: true })}
+              type="password"
+              className="input input-bordered"
+              placeholder="비밀번호 확인"
+            />
+          </div>
 
-              <div className="grid grid-cols-[90px_1fr] items-center gap-3">
-                <Label htmlFor="user_server">서버</Label>
-                <Select onValueChange={value => setValue("user_server", value)}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="서버를 선택해주세요" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectItem value="류트">류트</SelectItem>
-                      <SelectItem value="만돌린">만돌린</SelectItem>
-                      <SelectItem value="하프">하프</SelectItem>
-                      <SelectItem value="울프">울프</SelectItem>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </div>
+          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+            <label htmlFor="user_server">서버</label>
+            <select onChange={e => setValue("user_server", e.target.value)} className="select select-bordered">
+              <option disabled selected>
+                서버를 선택해주세요
+              </option>
+              <option value="류트">류트</option>
+              <option value="만돌린">만돌린</option>
+              <option value="하프">하프</option>
+              <option value="울프">울프</option>
+            </select>
+          </div>
 
-              <div className="grid grid-cols-[90px_1fr] items-center gap-3">
-                <Label htmlFor="user_race">종족</Label>
-                <Select onValueChange={value => setValue("user_race", value)}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="종족을 선택해주세요" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectItem value="인간">인간</SelectItem>
-                      <SelectItem value="엘프">엘프</SelectItem>
-                      <SelectItem value="자이언트">자이언트</SelectItem>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </div>
+          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+            <label htmlFor="user_race">종족</label>
+            <select onChange={e => setValue("user_race", e.target.value)} className="select select-bordered">
+              <option disabled selected>
+                종족을 선택해주세요
+              </option>
+              <option value="인간">인간</option>
+              <option value="엘프">엘프</option>
+              <option value="자이언트">자이언트</option>
+            </select>
+          </div>
 
-              <div className="grid grid-cols-[90px_1fr] items-center gap-3">
-                <Label htmlFor="user_nickName">닉네임</Label>
-                <Input id="user_nickName" {...register("user_nickName", { required: true })} type="text" />
-              </div>
+          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+            <label htmlFor="user_nickName">닉네임</label>
+            <input
+              id="user_nickName"
+              {...register("user_nickName", { required: true })}
+              type="text"
+              className="input input-bordered"
+            />
+          </div>
 
-              <Button type="submit" className="w-full">
-                회원가입
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+          <button type="submit" className="w-full btn btn-neutral">
+            회원가입
+          </button>
+        </div>
       </form>
     </main>
   );

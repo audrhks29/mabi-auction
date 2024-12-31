@@ -9,7 +9,6 @@ import Providers from "@/utils/provider";
 import { cn } from "@/lib/utils";
 
 import Header from "@/components/layout/Header";
-import { Separator } from "@/components/ui/separator";
 import Footer from "@/components/layout/Footer";
 
 const fontSans = FontSans({

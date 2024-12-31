@@ -1,10 +1,4 @@
-import Link from "next/link";
 import { useForm } from "react-hook-form";
-
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { PopoverClose } from "@radix-ui/react-popover";
 
 import useUserDataStore from "@/store/userData-store";
 import { useRouter } from "next/navigation";
@@ -55,15 +49,17 @@ export default function LoginPopover() {
         <form onSubmit={handleSubmit(onSubmit)} className="p-3">
           <div className="grid gap-4">
             <div className="grid gap-2">
-              <Input
+              <input
                 id="user_id"
+                className="input input-bordered"
                 {...register("user_id", { required: true })}
                 type="text"
                 placeholder="아이디"
                 required
               />
-              <Input
+              <input
                 id="user_password"
+                className="input input-bordered"
                 {...register("user_password", { required: true })}
                 type="password"
                 placeholder="비밀번호"

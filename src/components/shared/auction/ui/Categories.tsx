@@ -11,8 +11,8 @@ export default function Categories({
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   return (
-    <section>
-      <ul className="menu bg-base-200 max-h-[602px] overflow-y-scroll block">
+    <section className="hidden lg:block">
+      <ul className="menu bg-base-200 max-h-[583px] overflow-y-scroll block">
         {itemCategories.map(category => (
           <li key={category.category_id}>
             <details>

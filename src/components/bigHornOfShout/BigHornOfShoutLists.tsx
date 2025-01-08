@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { UseFormGetValues } from "react-hook-form";
 
@@ -64,7 +64,7 @@ export default function BigHornOfShoutLists({
 
   return (
     <section>
-      <table className="table table-sm">
+      <table className="table table-xs md:table-sm">
         <thead className="text-center">
           <tr>
             <th className="w-[160px]">날짜</th>
@@ -74,7 +74,7 @@ export default function BigHornOfShoutLists({
         </thead>
 
         <tbody>
-          {inputText !== "" ? (
+          {Boolean(inputText) ? (
             <RenderContent renderData={filteredData} isFetching={isFetching} />
           ) : (
             <RenderContent renderData={data} isFetching={isFetching} />

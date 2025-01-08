@@ -18,8 +18,6 @@ export default function SearchBox({
   getValues: UseFormGetValues<HornSearchFormTypes>;
   setValue: UseFormSetValue<HornSearchFormTypes>;
 }) {
-  const [selectedServer, setSelectedServer] = useState<string | undefined>(undefined);
-  const [selectedSearchType, setSelectedSearchType] = useState("keyword");
   const setFilteredData = useBigHornListsStore(state => state.setFilteredData);
 
   const onSubmit = () => {
@@ -45,35 +43,12 @@ export default function SearchBox({
   };
 
   return (
-    <section className="pt-6 flex gap-2 max-w-[950px]">
-      <form onSubmit={handleSubmit(onSubmit)} className="flex gap-2">
+    <section className="pt-6 flex gap-2">
+      <form onSubmit={handleSubmit(onSubmit)} className="flex gap-1">
         <select
-          value={selectedServer}
-          onChange={e => {
-            if (typeof e.target.value === "string") {
-              setSelectedServer(e.target.value);
-              setValue("inputText", "");
-              setValue(`serverType`, e.target.value);
-            }
-          }}
-          className="select select-bordered">
-          <option disabled selected>
-            서버
-          </option>
-          <option value="류트">류트</option>
-          <option value="만돌린">만돌린</option>
-          <option value="하프">하프</option>
-          <option value="울프">울프</option>
-        </select>
-
-        <select
-          value={selectedSearchType}
           defaultValue="keyword"
-          onChange={e => {
-            setSelectedSearchType(e.target.value);
-            setValue(`searchType`, e.target.value);
-          }}
-          className="select select-bordered">
+          onChange={e => setValue(`searchType`, e.target.value)}
+          className="select select-bordered text-[12px] md:text-[14px] pl-2 pr-7 md:pl-4 md:pr-10">
           <option value="keyword">키워드 검색</option>
           <option value="nickName">닉네임 검색</option>
         </select>
@@ -82,17 +57,18 @@ export default function SearchBox({
           placeholder="검색어를 입력해주세요."
           id="inputText"
           {...register("inputText")}
-          className="input input-bordered bg-base-200 w-[200px]"
+          className="input input-bordered bg-base-200 text-[12px] md:text-[14px]"
         />
-        <button type="submit" className="btn">
+
+        <button type="submit" className="btn p-2 md:p-4">
           <i>
-            <SearchIcon className="w-4 h-4" />
+            <SearchIcon className="w-3 h-3" />
           </i>
         </button>
 
         <button
           type="button"
-          className="btn"
+          className="btn p-2 md:p-4 text-[12px] md:text-[14px]"
           onClick={() => {
             setFilteredData([]);
             setValue(`inputText`, "");
@@ -102,12 +78,12 @@ export default function SearchBox({
 
         <button
           type="button"
-          className="btn"
+          className="btn p-2 md:p-4"
           onClick={() => {
             setValue("inputText", "");
           }}>
           <i>
-            <RotateCcw className="w-4 h-4" />
+            <RotateCcw className="w-3 h-3" />
           </i>
         </button>
       </form>

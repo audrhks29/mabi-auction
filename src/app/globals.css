@@ -2,15 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-nav,
+/* nav,
 footer,
 .inner {
   width: 1300px;
   margin: 0 auto;
-}
+  @media (min-width: 640px) {
+    width: 300px;
+  }
+  @media (min-width: 768px) {
+    width: 600px;
+  }
+} */
 .inner {
-  padding-top: 76px;
+  padding-top: 96px;
   padding-bottom: 12px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @layer base {

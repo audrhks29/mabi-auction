@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "text": "경매장",
+    "sub_menu": [
+      {
+        "id": 11,
+        "sub_text": "경매장",
+        "link": "/auction/auction"
+      },
+      {
+        "id": 12,
+        "sub_text": "거래 내역",
+        "link": "/auction/history"
+      },
+      {
+        "id": 13,
+        "sub_text": "내 경매",
+        "link": "/auction/my-auction"
+      },
+      {
+        "id": 14,
+        "sub_text": "즐겨찾기",
+        "link": "/auction/favorites"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "뿔피리",
+    "sub_menu": [
+      {
+        "id": 21,
+        "sub_text": "류트",
+        "link": "/bighornofshout/lute"
+      },
+      {
+        "id": 22,
+        "sub_text": "만돌린",
+        "link": "/bighornofshout/mandolin"
+      },
+      {
+        "id": 23,
+        "sub_text": "하프",
+        "link": "/bighornofshout/harp"
+      },
+      {
+        "id": 24,
+        "sub_text": "울프",
+        "link": "/bighornofshout/wolf"
+      }
+    ]
+  },
+  { "id": 3, "text": "NPC 상점", "link": "/npc-shop" }
+]

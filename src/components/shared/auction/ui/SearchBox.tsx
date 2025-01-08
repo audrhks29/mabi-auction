@@ -89,14 +89,14 @@ export default function SearchBox({
 
   return (
     <section>
-      <form onSubmit={handleSubmit(onSubmit)} className="grid grid-rows-2 gap-2 pb-2">
-        <div className="relative grid grid-cols-[auto_120px] gap-2">
+      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2 pb-2">
+        <div className="relative flex gap-1 justify-center">
           <input
             type="text"
             placeholder="아이템 이름을 입력하세요."
             id="inputText"
             {...register("inputText")}
-            className="input input-bordered bg-base-200"
+            className="input input-bordered bg-base-200 w-5/6 max-w-[400px] min-w-[250px] h-10 min-h-10"
             onChange={e => {
               setRecommendInputText(e.target.value);
               setDropdownVisible(e.target.value !== "");
@@ -132,32 +132,30 @@ export default function SearchBox({
             </div>
           )}
 
-          <button type="submit" className="w-[120px] btn btn-neutral">
+          <button type="submit" className="btn btn-neutral h-10 min-h-10">
             찾기
           </button>
-        </div>
-
-        <div className="grid grid-cols-[auto_120px] gap-2 items-center">
-          <div>
-            {category.category && category.detailCategory ? (
-              <div className="flex gap-2">
-                <span className="badge badge-outline text-[12px]">{category.category}</span>
-                <span className="badge badge-outline text-[12px]">{category.detailCategory}</span>
-              </div>
-            ) : (
-              <span className="badge badge-outline text-[12px]">카테고리 없음</span>
-            )}
-          </div>
 
           <button
             type="button"
-            className="w-[120px] btn btn-neutral"
+            className="btn btn-neutral h-10 min-h-10"
             onClick={() => {
               setValue("inputText", "");
               setCategory({ category: null, detailCategory: null });
             }}>
-            검색 초기화
+            초기화
           </button>
+        </div>
+
+        <div>
+          {category.category && category.detailCategory ? (
+            <div className="flex gap-2">
+              <span className="badge badge-outline text-[12px]">{category.category}</span>
+              <span className="badge badge-outline text-[12px]">{category.detailCategory}</span>
+            </div>
+          ) : (
+            <span className="badge badge-outline text-[12px]">카테고리 없음</span>
+          )}
         </div>
       </form>
     </section>

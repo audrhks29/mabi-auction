@@ -6,17 +6,28 @@ import { useForm } from "react-hook-form";
 import BigHornOfShoutLists from "@/components/bigHornOfShout/BigHornOfShoutLists";
 import SearchBox from "@/components/bigHornOfShout/SearchBox";
 
-export default function BigHornOfShoutIndex() {
-  const { handleSubmit, register, getValues, setValue, watch } = useForm<HornSearchFormTypes>();
+export default function BigHornOfShoutIndex({ params }: { params: { server: string } }) {
+  const { handleSubmit, register, getValues, setValue } = useForm<HornSearchFormTypes>();
 
-  const server = watch("serverType");
-  const encodeServer = encodeURI(server as string);
+  const serverMap: Record<string, string> = {
+    lute: "류트",
+    mandolin: "만돌린",
+    harp: "하프",
+    wolf: "울프",
+  };
+
+  function server(params: { server: string }): string {
+    const serverName = serverMap[params.server] || ""; // 기본값 처리
+    return encodeURI(serverName);
+  }
+
+  const encodedServerName = server(params);
 
   const { data, isFetching } = useQuery({
-    queryKey: [encodeServer],
+    queryKey: [encodedServerName],
     queryFn: async () => {
-      if (server !== undefined) {
-        const response = await fetch(`/api/bighornofshout?server=${encodeServer}`, {
+      if (encodedServerName !== undefined) {
+        const response = await fetch(`/api/bighornofshout?server=${encodedServerName}`, {
           method: "GET",
         });
         if (!response.ok) {
@@ -32,6 +43,10 @@ export default function BigHornOfShoutIndex() {
 
   return (
     <section>
+      <h3 className="text-[18px] text-center font-bold">
+        {serverMap[params.server]}서버 뿔피리&nbsp;<span className="badge badge-primary">+ {data?.length}</span>
+      </h3>
+
       <div className="flex gap-1 flex-col justify-center items-center">
         <SearchBox
           data={data}
@@ -40,7 +55,9 @@ export default function BigHornOfShoutIndex() {
           getValues={getValues}
           setValue={setValue}
         />
+
         <div className="divider m-0"></div>
+
         <BigHornOfShoutLists data={data} getValues={getValues} isFetching={isFetching} />
       </div>
     </section>

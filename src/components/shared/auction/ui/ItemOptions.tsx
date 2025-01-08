@@ -4,14 +4,14 @@ import React from "react";
 
 import convertOptionsArray from "@/utils/auction/convertOptionsArray";
 
-import Attribute from "./itemOptions/Attribute";
-import Enchant from "./itemOptions/Enchant";
-import Modification from "./itemOptions/Modification";
-import Erg from "./itemOptions/Erg";
-import Reforge from "./itemOptions/Reforge";
-import Set from "./itemOptions/Set";
-import Color from "./itemOptions/Color";
-import SeasoningEffect from "./itemOptions/SeasoningEffect";
+import Attribute from "../itemOptions/Attribute";
+import Enchant from "../itemOptions/Enchant";
+import Modification from "../itemOptions/Modification";
+import Erg from "../itemOptions/Erg";
+import Reforge from "../itemOptions/Reforge";
+import Set from "../itemOptions/Set";
+import Color from "../itemOptions/Color";
+import SeasoningEffect from "../itemOptions/SeasoningEffect";
 
 export default function ItemOptions({ options }: { options: ItemOptionTypes[] }) {
   const optionsArray = convertOptionsArray(options);

@@ -38,7 +38,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
 
   return (
     <section>
-      <table className="table table-sm">
+      <table className="table text-sm leading-5">
         <colgroup>
           <col width="520px" />
           <col width="130px" />
@@ -49,7 +49,9 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
           {table.getHeaderGroups().map(headerGroup => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map(header => (
-                <th key={header.id}>{flexRender(header.column.columnDef.header, header.getContext())}</th>
+                <th key={header.id} className="text-center">
+                  {flexRender(header.column.columnDef.header, header.getContext())}
+                </th>
               ))}
             </tr>
           ))}
@@ -62,7 +64,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
                 className="cursor-pointer hover:bg-base-200"
                 onClick={() => (document.getElementById(`my_modal_${row.id}`) as HTMLDialogElement).showModal()}>
                 {row.getVisibleCells().map(cell => (
-                  <td key={cell.id} className="px-1">
+                  <td key={cell.id} className="p-1">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}

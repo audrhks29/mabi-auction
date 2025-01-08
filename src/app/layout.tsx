@@ -18,8 +18,8 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: {
-    template: "Mabi Auction | %s",
-    default: "Mabi Auction",
+    template: "마비옥션 | %s",
+    default: "마비옥션",
   },
   description: "마비옥션에서 마비노기 경매장 아이템들과 뿔피리 내역을 검색해보세요.",
   icons: {

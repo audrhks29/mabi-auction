@@ -4,14 +4,13 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 
-import Categories from "./Categories";
-import ItemLists from "./ItemLists";
-import SearchBox from "./SearchBox";
-
+import Categories from "@/components/shared/auction/ui/Categories";
+import ItemLists from "@/components/shared/auction/ui/ItemLists";
+import SearchBox from "@/components/shared/auction/ui/SearchBox";
 import NonData from "@/components/shared/NonData";
 import Loading from "@/components/shared/Loading";
 
-export default function Auction() {
+export default function AuctionIndex() {
   const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
   const [category, setCategory] = useState<ItemCategoryStateTypes>({
     category: null,
@@ -45,7 +44,7 @@ export default function Auction() {
         setValue={setValue}
       />
 
-      <div className="grid grid-cols-[200px_auto] gap-3">
+      <div className="lg:grid lg:grid-cols-[200px_auto] lg:gap-3">
         <Categories setCategory={setCategory} setValue={setValue} />
         {!isFetching && data && data?.length > 0 && <ItemLists data={data} />}
         {!isFetching && (data?.length === 0 || !data) && <NonData />}

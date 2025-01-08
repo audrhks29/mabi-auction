@@ -13,10 +13,11 @@ import { Card } from "@/components/ui/card";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
-import ItemDetail from "../auction/ItemDetail";
-import Pagination from "../auction/Pagination";
+import ItemDetail from "@/components/shared/auction/ui/ItemDetail";
+import Pagination from "@/components/shared/auction/ui/Pagination";
 
 import { columns } from "@/utils/favorites/tableColumns";
+
 import useUserDataStore from "@/store/userData-store";
 
 type SortingState = Array<{ id: string; desc: boolean }>;

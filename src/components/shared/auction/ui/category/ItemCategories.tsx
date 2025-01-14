@@ -31,7 +31,7 @@ export default function ItemCategories({
                     setValue("inputText", "");
                     setCategory({ category: category.category_name, detailCategory: detail.detail_category_name });
                     setActiveCategory(detail.detail_category_id);
-                    toggleCategoriesVisibility();
+                    toggleCategoriesVisibility?.();
                   }}>
                   <a className={`${activeCategory === detail.detail_category_id ? "active" : ""}`}>
                     {detail.detail_category_name}

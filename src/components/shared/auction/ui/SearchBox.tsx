@@ -99,7 +99,7 @@ export default function SearchBox({
               placeholder="아이템 이름을 입력하세요."
               id="inputText"
               {...register("inputText")}
-              className="input input-bordered bg-base-200 min-w-[230px] max-w-[400px] h-10 min-h-10 text-[12px] md:text-[14px]"
+              className="input input-bordered bg-base-200 w-[240px] md:w-[280px] lg:w-[400px] h-10 min-h-10 text-[12px] md:text-[14px]"
               onChange={e => {
                 setRecommendInputText(e.target.value);
                 setDropdownVisible(e.target.value !== "");

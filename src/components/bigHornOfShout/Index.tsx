@@ -43,7 +43,7 @@ export default function BigHornOfShoutIndex({ params }: { params: { server: stri
 
   return (
     <section>
-      <h3 className="text-[18px] text-center font-bold">
+      <h3 className="text-[18px] text-center font-bold pb-6">
         {serverMap[params.server]}서버 뿔피리&nbsp;<span className="badge badge-primary">+ {data?.length}</span>
       </h3>
 

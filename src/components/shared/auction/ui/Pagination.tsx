@@ -4,7 +4,7 @@ import { ChevronFirst, ChevronLast, ChevronLeft, ChevronRight, ChevronsLeft, Che
 
 export default function Pagination({ table }: { table: Table<ItemListsTypes> }) {
   return (
-    <div className="flex justify-center items-center pt-3 pb-3 text-[14px]">
+    <div className="flex justify-center items-center text-[14px]">
       <div className="flex gap-1">
         <button
           className="w-7 h-7 p-0 rounded-md cursor-pointer hover:bg-base-300"

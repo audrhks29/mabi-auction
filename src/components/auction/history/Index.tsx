@@ -4,11 +4,11 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 
-import Categories from "@/components/shared/auction/ui/Categories";
 import ItemLists from "@/components/shared/auction/ui/ItemLists";
 import SearchBox from "@/components/shared/auction/ui/SearchBox";
 import NonData from "@/components/shared/NonData";
 import Loading from "@/components/shared/Loading";
+import SideBarCategory from "@/components/shared/auction/ui/category/SideBarCategory";
 
 export default function HistoryIndex() {
   const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
@@ -35,21 +35,21 @@ export default function HistoryIndex() {
   });
 
   return (
-    <article className="text-[14px]">
-      <SearchBox
-        category={category}
-        setCategory={setCategory}
-        handleSubmit={handleSubmit}
-        register={register}
-        setValue={setValue}
-      />
+    <section>
+      <h3 className="text-[18px] text-center font-bold pb-6">거래 내역</h3>
 
-      <div className="lg:grid lg:grid-cols-[200px_auto] lg:gap-3">
-        <Categories setCategory={setCategory} setValue={setValue} />
-        {!isFetching && data && data?.length > 0 && <ItemLists data={data} />}
-        {!isFetching && (data?.length === 0 || !data) && <NonData />}
-        {isFetching && <Loading />}
-      </div>
-    </article>
+      <article className="text-[14px]">
+        <SearchBox setCategory={setCategory} handleSubmit={handleSubmit} register={register} setValue={setValue} />
+
+        <div className="divider m-0"></div>
+
+        <div className="lg:grid lg:grid-cols-[200px_auto] lg:gap-3">
+          <SideBarCategory setCategory={setCategory} setValue={setValue} />
+          {!isFetching && data && data?.length > 0 && <ItemLists data={data} />}
+          {!isFetching && (data?.length === 0 || !data) && <NonData />}
+          {isFetching && <Loading />}
+        </div>
+      </article>
+    </section>
   );
 }

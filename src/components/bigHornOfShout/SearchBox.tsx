@@ -43,7 +43,7 @@ export default function SearchBox({
   };
 
   return (
-    <section className="pt-6 flex gap-2">
+    <section className="flex gap-2">
       <form onSubmit={handleSubmit(onSubmit)} className="flex gap-1">
         <select
           defaultValue="keyword"

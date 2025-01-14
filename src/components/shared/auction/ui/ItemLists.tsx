@@ -37,12 +37,13 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
   });
 
   return (
-    <section>
-      <table className="table text-sm leading-5">
+    <section className="flex flex-col justify-between">
+      <table className="table table-xs md:table-sm">
         <colgroup>
-          <col width="520px" />
-          <col width="130px" />
-          <col width="70px" />
+          <col />
+          <col width="80px" />
+          <col width="50px" />
+          <col width="220px" />
         </colgroup>
 
         <thead>
@@ -64,9 +65,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
                 className="cursor-pointer hover:bg-base-200"
                 onClick={() => (document.getElementById(`my_modal_${row.id}`) as HTMLDialogElement).showModal()}>
                 {row.getVisibleCells().map(cell => (
-                  <td key={cell.id} className="p-1">
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </td>
+                  <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
                 ))}
               </tr>
 
@@ -75,6 +74,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
           ))}
         </tbody>
       </table>
+
       {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}
       <Pagination table={table} />
     </section>

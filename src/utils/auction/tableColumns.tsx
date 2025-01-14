@@ -9,7 +9,7 @@ export const columns: ColumnDef<ItemListsTypes, any>[] = [
   {
     accessorKey: "item_display_name",
     header: ({ column }) => (
-      <div className="flex gap-3 align-middle justify-center items-center">
+      <div className="flex gap-1 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">아이템</span>
         <button onClick={() => column.toggleSorting()}>
           <ArrowUpDownIcon className="w-4 h-4" />
@@ -22,7 +22,7 @@ export const columns: ColumnDef<ItemListsTypes, any>[] = [
   {
     accessorKey: "date_auction_expire",
     header: ({ column }) => (
-      <div className="flex gap-3 align-middle justify-center items-center">
+      <div className="flex gap-1 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">남은 시간</span>
         <button onClick={() => column.toggleSorting()}>
           <ArrowUpDownIcon className="w-4 h-4" />
@@ -39,7 +39,7 @@ export const columns: ColumnDef<ItemListsTypes, any>[] = [
   {
     accessorKey: "auction_price_per_unit",
     header: ({ column }) => (
-      <div className="flex gap-3 align-middle justify-center items-center">
+      <div className="flex gap-1 align-middle justify-center items-center">
         <span className="font-bold cursor-pointer">가격</span>
         <button onClick={() => column.toggleSorting()}>
           <ArrowUpDownIcon className="w-4 h-4" />

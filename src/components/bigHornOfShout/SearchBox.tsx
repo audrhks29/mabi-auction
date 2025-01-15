@@ -43,8 +43,8 @@ export default function SearchBox({
   };
 
   return (
-    <section className="flex gap-2">
-      <form onSubmit={handleSubmit(onSubmit)} className="flex gap-1">
+    <section className="w-full">
+      <form onSubmit={handleSubmit(onSubmit)} className="flex gap-1 w-full justify-center">
         <select
           defaultValue="keyword"
           onChange={e => setValue(`searchType`, e.target.value)}
@@ -57,7 +57,7 @@ export default function SearchBox({
           placeholder="검색어를 입력해주세요."
           id="inputText"
           {...register("inputText")}
-          className="input input-bordered bg-base-200 text-[12px] md:text-[14px]"
+          className="input input-bordered bg-base-200 w-full md:w-1/3 text-[12px] md:text-[14px]"
         />
 
         <button type="submit" className="btn p-2 md:p-4">
@@ -68,7 +68,7 @@ export default function SearchBox({
 
         <button
           type="button"
-          className="btn p-2 md:p-4 text-[12px] md:text-[14px]"
+          className="hidden sm:btn p-2 md:p-4 text-[12px] md:text-[14px]"
           onClick={() => {
             setFilteredData([]);
             setValue(`inputText`, "");
@@ -78,7 +78,7 @@ export default function SearchBox({
 
         <button
           type="button"
-          className="btn p-2 md:p-4"
+          className="hidden sm:btn p-2 md:p-4"
           onClick={() => {
             setValue("inputText", "");
           }}>

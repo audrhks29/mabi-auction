@@ -73,33 +73,33 @@ export default function SearchBox({
   return (
     <section>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2">
-        <div className="flex gap-1 justify-center w-full ">
-          <div className="dropdown" ref={dropdownRef}>
-            <div
-              tabIndex={0}
-              role="button"
-              onClick={toggleCategoriesVisibility}
-              className="btn btn-neutral m-0 flex lg:hidden min-w-24 h-10 min-h-10 text-[12px] md:text-[14px] justify-center">
-              카테고리
-            </div>
-
-            {isCategoriesVisible && (
-              <ItemCategories
-                setCategory={setCategory}
-                setValue={setValue}
-                className="dropdown-content z-[1] w-52 h-[300px]"
-                toggleCategoriesVisibility={toggleCategoriesVisibility}
-              />
-            )}
+        <div className="dropdown" ref={dropdownRef}>
+          <div
+            tabIndex={0}
+            role="button"
+            onClick={toggleCategoriesVisibility}
+            className="btn btn-neutral m-0 flex lg:hidden min-w-24 h-10 min-h-10 text-[12px] md:text-[14px] justify-center">
+            카테고리
           </div>
 
-          <div className="relative">
+          {isCategoriesVisible && (
+            <ItemCategories
+              setCategory={setCategory}
+              setValue={setValue}
+              className="dropdown-content z-[1] w-52 h-[300px]"
+              toggleCategoriesVisibility={toggleCategoriesVisibility}
+            />
+          )}
+        </div>
+
+        <div className="flex gap-1 justify-center">
+          <div className="relative w-full">
             <input
               type="text"
               placeholder="아이템 이름을 입력하세요."
               id="inputText"
               {...register("inputText")}
-              className="input input-bordered bg-base-200 md:w-[300px] lg:w-[450px] h-10 min-h-10 text-[12px] md:text-[14px]"
+              className="input input-bordered bg-base-200 w-full h-10 min-h-10 text-[12px] md:text-[14px]"
               onChange={e => {
                 setRecommendInputText(e.target.value);
                 setDropdownVisible(e.target.value !== "");

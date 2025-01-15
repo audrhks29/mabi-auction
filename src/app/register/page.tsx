@@ -65,20 +65,21 @@ export default function RegisterPage() {
   };
 
   return (
-    <main className="inner grid gap-3">
-      <h2 className="text-center text-[24px] font-bold">회원가입</h2>
+    <main className="inner">
+      <h3 className="text-[18px] text-center font-bold pb-6">회원가입</h3>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="m-auto w-[450px] text-[14px]">
+      <form onSubmit={handleSubmit(onSubmit)} className="max-w-[450px] m-auto text-[12px] lg:text-[14px]">
         <div className="grid gap-4">
-          <div className="grid grid-cols-[90px_1fr_90px] items-center gap-3">
+          <div className="grid grid-cols-[90px_1fr_90px] items-center gap-1">
             <label htmlFor="user_id">아이디</label>
             <input
               id="user_id"
               {...register("user_id", { required: true })}
               type="text"
               placeholder="아이디"
-              className="input input-bordered"
+              className="input input-bordered text-[12px] md:text-[14px]"
             />
+
             <button
               type="button"
               onClick={async () => {
@@ -112,31 +113,33 @@ export default function RegisterPage() {
             </button>
           </div>
 
-          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+          <div className="grid grid-cols-[90px_1fr] items-center gap-1">
             <label htmlFor="user_password">비밀번호</label>
             <input
               id="user_password"
               {...register("user_password", { required: true })}
               type="password"
-              className="input input-bordered"
+              className="input input-bordered text-[12px] md:text-[14px]"
               placeholder="비밀번호"
             />
           </div>
 
-          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+          <div className="grid grid-cols-[90px_1fr] items-center gap-1">
             <label htmlFor="user_password_confirm">비밀번호 확인</label>
             <input
               id="user_password_confirm"
               {...register("user_password_confirm", { required: true })}
               type="password"
-              className="input input-bordered"
+              className="input input-bordered text-[12px] md:text-[14px]"
               placeholder="비밀번호 확인"
             />
           </div>
 
-          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+          <div className="grid grid-cols-[90px_1fr] items-center gap-1">
             <label htmlFor="user_server">서버</label>
-            <select onChange={e => setValue("user_server", e.target.value)} className="select select-bordered">
+            <select
+              onChange={e => setValue("user_server", e.target.value)}
+              className="select select-bordered text-[12px] md:text-[14px]">
               <option disabled selected>
                 서버를 선택해주세요
               </option>
@@ -147,9 +150,11 @@ export default function RegisterPage() {
             </select>
           </div>
 
-          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+          <div className="grid grid-cols-[90px_1fr] items-center gap-1">
             <label htmlFor="user_race">종족</label>
-            <select onChange={e => setValue("user_race", e.target.value)} className="select select-bordered">
+            <select
+              onChange={e => setValue("user_race", e.target.value)}
+              className="select select-bordered text-[12px] md:text-[14px]">
               <option disabled selected>
                 종족을 선택해주세요
               </option>
@@ -159,13 +164,13 @@ export default function RegisterPage() {
             </select>
           </div>
 
-          <div className="grid grid-cols-[90px_1fr] items-center gap-3">
+          <div className="grid grid-cols-[90px_1fr] items-center gap-1">
             <label htmlFor="user_nickName">닉네임</label>
             <input
               id="user_nickName"
               {...register("user_nickName", { required: true })}
               type="text"
-              className="input input-bordered"
+              className="input input-bordered text-[12px] md:text-[14px]"
             />
           </div>
 

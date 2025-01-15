@@ -73,7 +73,7 @@ export default function SearchBox({
   return (
     <section>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2">
-        <div className="flex gap-1 justify-center">
+        <div className="flex gap-1 justify-center w-full ">
           <div className="dropdown" ref={dropdownRef}>
             <div
               tabIndex={0}
@@ -99,7 +99,7 @@ export default function SearchBox({
               placeholder="아이템 이름을 입력하세요."
               id="inputText"
               {...register("inputText")}
-              className="input input-bordered bg-base-200 w-[240px] md:w-[280px] lg:w-[400px] h-10 min-h-10 text-[12px] md:text-[14px]"
+              className="input input-bordered bg-base-200 md:w-[300px] lg:w-[450px] h-10 min-h-10 text-[12px] md:text-[14px]"
               onChange={e => {
                 setRecommendInputText(e.target.value);
                 setDropdownVisible(e.target.value !== "");
@@ -152,18 +152,6 @@ export default function SearchBox({
             초기화
           </button>
         </div>
-
-        {/* 카테고리 노출 */}
-        {/* <div>
-          {category.category && category.detailCategory ? (
-            <div className="flex gap-2">
-              <span className="badge badge-outline text-[12px]">{category.category}</span>
-              <span className="badge badge-outline text-[12px]">{category.detailCategory}</span>
-            </div>
-          ) : (
-            <span className="badge badge-outline text-[12px]">카테고리 없음</span>
-          )}
-        </div> */}
       </form>
     </section>
   );

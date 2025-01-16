@@ -41,6 +41,7 @@
     "string-width": "^7.2.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
+    "theme-change": "^2.5.0",
     "uuid": "^10.0.0",
     "wide-align": "^1.1.5",
     "zustand": "^4.5.2"

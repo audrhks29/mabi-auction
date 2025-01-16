@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { UseFormGetValues } from "react-hook-form";
 
@@ -10,7 +10,15 @@ import NonData from "../shared/NonData";
 import Loading from "../shared/Loading";
 
 // 거뿔 테이블 렌더링 컴포넌트
-function RenderContent({ renderData, isFetching }: { renderData: HornListTypes[] | []; isFetching: boolean }) {
+function RenderContent({
+  renderData,
+  isFetching,
+  // inputText,
+}: {
+  renderData: HornListTypes[] | [];
+  isFetching: boolean;
+  // inputText?: string | undefined;
+}) {
   if (isFetching) {
     return (
       <tr className="border-b-0 h-[150px]">
@@ -24,19 +32,21 @@ function RenderContent({ renderData, isFetching }: { renderData: HornListTypes[]
   if (renderData && renderData.length > 0) {
     return (
       <React.Fragment>
-        {renderData.map((item: HornListTypes) => (
-          <tr key={uuidv4()} className="text-center hover:bg-base-200 cursor-pointer">
-            <td>
-              <div>
-                {convertToKoreanTime(item.date_send).formattedDate}
-                <br />
-                {convertToKoreanTime(item.date_send).formattedTime}
-              </div>
-            </td>
-            <td>{item.character_name}</td>
-            <td className="text-left">{item.message}</td>
-          </tr>
-        ))}
+        {renderData.map((item: HornListTypes) => {
+          return (
+            <tr key={uuidv4()} className="text-center hover:bg-base-200 cursor-pointer">
+              <td>
+                <div>
+                  {convertToKoreanTime(item.date_send).formattedDate}
+                  <br />
+                  {convertToKoreanTime(item.date_send).formattedTime}
+                </div>
+              </td>
+              <td>{item.character_name}</td>
+              <td className="text-left">{item.message}</td>
+            </tr>
+          );
+        })}
       </React.Fragment>
     );
   } else {
@@ -77,6 +87,7 @@ export default function BigHornOfShoutLists({
           {Boolean(inputText) ? (
             <RenderContent renderData={filteredData} isFetching={isFetching} />
           ) : (
+            // <RenderContent renderData={filteredData} isFetching={isFetching} inputText={inputText}/>
             <RenderContent renderData={data} isFetching={isFetching} />
           )}
         </tbody>

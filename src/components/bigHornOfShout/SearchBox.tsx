@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { UseFormGetValues, UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
 import useBigHornListsStore from "@/store/bigHornLists-store";

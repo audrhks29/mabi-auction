@@ -6,6 +6,7 @@ import UserAuth from "./UserAuth";
 
 import SideBar from "./SideBar";
 import MenuBar from "./MenuBar";
+import ThemeController from "./ThemeController";
 
 export default function Header() {
   const cookieStore = cookies();
@@ -26,7 +27,8 @@ export default function Header() {
         </div>
 
         {/* 로그인, 로그아웃 */}
-        <div className="navbar-end">
+        <div className="navbar-end gap-3">
+          <ThemeController />
           <UserAuth accessToken={accessToken} />
         </div>
       </div>

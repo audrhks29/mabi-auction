@@ -51,7 +51,7 @@ export default function LoginPopover() {
             <div className="grid gap-2">
               <input
                 id="user_id"
-                className="input input-bordered"
+                className="input input-bordered w-full"
                 {...register("user_id", { required: true })}
                 type="text"
                 placeholder="아이디"
@@ -59,7 +59,7 @@ export default function LoginPopover() {
               />
               <input
                 id="user_password"
-                className="input input-bordered"
+                className="input input-bordered w-full"
                 {...register("user_password", { required: true })}
                 type="password"
                 placeholder="비밀번호"
@@ -67,7 +67,7 @@ export default function LoginPopover() {
               />
             </div>
 
-            <button type="submit" className="btn">
+            <button type="submit" className="btn w-full">
               로그인
             </button>
           </div>

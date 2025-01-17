@@ -113,8 +113,8 @@ export default function SearchBox({
             {isDropdownVisible && recommendInputText !== "" && (
               <div
                 ref={searchRecommendRef}
-                className="absolute w-full z-50 top-14 left-0 border rounded-md text-[12px] md:text-[14px]">
-                <div className="max-h-[130px] bg-base-200 overflow-y-scroll">
+                className="absolute w-full z-50 top-12 left-0 rounded-md text-[12px] md:text-[14px]">
+                <div className="max-h-[130px] bg-base-300 overflow-y-scroll">
                   {filteredLists.map((filteredList, index) => (
                     <div
                       key={filteredList.id}

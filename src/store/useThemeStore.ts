@@ -6,8 +6,8 @@ type Store = {
 };
 
 const useThemeStore = create<Store>()(set => ({
-  theme: localStorage.getItem("football-League-theme")
-    ? localStorage.getItem("football-League-theme")
+  theme: localStorage.getItem("mabiAuction-theme")
+    ? localStorage.getItem("mabiAuction-theme")
     : window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light",

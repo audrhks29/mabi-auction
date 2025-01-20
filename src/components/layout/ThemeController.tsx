@@ -1,26 +1,36 @@
 "use client";
+
 import { useEffect, useState } from "react";
 
 export default function ThemeController() {
-  const [theme, setTheme] = useState("light");
+  const [mounted, setMounted] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("mabiAuction-theme") || "light";
-    setTheme(savedTheme);
-    document.documentElement.setAttribute("data-theme", savedTheme);
+    const localTheme = localStorage.getItem("mabiAuction-theme");
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    const currentTheme = localTheme || systemTheme;
+
+    setIsDark(currentTheme === "dark");
+    setMounted(true);
   }, []);
+
+  // hydration 문제를 방지
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <label className="swap swap-rotate">
       <input
         type="checkbox"
         className="theme-controller"
-        checked={theme === "dark"}
+        checked={isDark}
         onChange={e => {
           const newTheme = e.target.checked ? "dark" : "light";
-          setTheme(newTheme);
           localStorage.setItem("mabiAuction-theme", newTheme);
-          document.documentElement.setAttribute("data-theme", newTheme);
+          document.querySelector("html")?.setAttribute("data-theme", newTheme);
+          setIsDark(newTheme === "dark");
         }}
       />
       <svg className="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

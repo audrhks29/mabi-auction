@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { setColorsByTheme } from "@/script/setColorsByTheme";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -33,6 +34,12 @@ export const metadata: Metadata = {
   },
 };
 
+const ScriptTag = () => {
+  const stringifyFn = setColorsByTheme;
+  const fnToRunOnClient = `(${stringifyFn})()`;
+  return <script dangerouslySetInnerHTML={{ __html: fnToRunOnClient }} />;
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +50,7 @@ export default function RootLayout({
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
           <Header />
+          <ScriptTag />
 
           {children}
           <ReactQueryDevtools initialIsOpen={true} />

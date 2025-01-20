@@ -1,6 +1,13 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { UseFormGetValues } from "react-hook-form";
+import {
+  flexRender,
+  getCoreRowModel,
+  getPaginationRowModel,
+  getSortedRowModel,
+  useReactTable,
+} from "@tanstack/react-table";
 
 import useBigHornListsStore from "@/store/bigHornLists-store";
 
@@ -69,6 +76,16 @@ export default function BigHornOfShoutLists({
   isFetching: boolean;
   getValues: UseFormGetValues<HornSearchFormTypes>;
 }) {
+  // console.log(data);
+  // const table = useReactTable({
+  //   data,
+  //   columns,
+
+  //   getCoreRowModel: getCoreRowModel(),
+  //   getSortedRowModel: getSortedRowModel(),
+  //   getPaginationRowModel: getPaginationRowModel(),
+  // });
+
   const filteredData = useBigHornListsStore(state => state.filteredData);
   const inputText = getValues().inputText;
 
@@ -76,6 +93,15 @@ export default function BigHornOfShoutLists({
     <section>
       <table className="table table-xs md:table-sm">
         <thead className="text-center">
+          {/* {table.getHeaderGroups().map(headerGroup => (
+            <tr key={headerGroup.id}>
+              {headerGroup.headers.map(header => (
+                <th key={header.id} className="text-center">
+                  {flexRender(header.column.columnDef.header, header.getContext())}
+                </th>
+              ))}
+            </tr>
+          ))} */}
           <tr>
             <th className="w-[160px]">날짜</th>
             <th className="w-[160px]">닉네임</th>

@@ -1,21 +1,30 @@
 import { ColumnDef } from "@tanstack/react-table";
 
-import convertToRemainingTime from "@/utils/convertToRemainingTime";
+import convertToKoreanTime from "../convertToKoreanTime";
 
-export const columns: ColumnDef<ItemListsTypes, any>[] = [
+export const columns: ColumnDef<HornListTypes, any>[] = [
   {
     accessorKey: "date_send",
     header: "날짜",
-    cell: props => <span className="ml-2">{props.getValue()}</span>,
+    cell: props => (
+      <p className="text-center w-[100px] max-w-[160px]">
+        {convertToKoreanTime(props.getValue()).formattedDate}
+        <br />
+        {convertToKoreanTime(props.getValue()).formattedTime}
+      </p>
+    ),
+    enableColumnFilter: false,
   },
   {
     accessorKey: "character_name",
     header: "닉네임",
-    cell: props => <p>{convertToRemainingTime(props.getValue())}</p>,
+    cell: props => <p className="text-center w-[100px] max-w-[160px]">{props.getValue()}</p>,
+    enableColumnFilter: true,
   },
   {
     accessorKey: "message",
     header: "내용",
-    cell: props => <p>{props.getValue()}</p>,
+    cell: props => <p className="max-w-[600px]">{props.getValue()}</p>,
+    enableColumnFilter: true,
   },
 ];

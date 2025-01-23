@@ -9,7 +9,7 @@ import {
 } from "@tanstack/react-table";
 
 import ItemDetail from "./ItemDetail";
-import Pagination from "./Pagination";
+import Pagination from "@/components/shared/ui/Pagination";
 
 import { columns } from "@/utils/auction/tableColumns";
 
@@ -68,11 +68,11 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
                   <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
                 ))}
               </tr>
-
-              <ItemDetail row={row} />
             </React.Fragment>
           ))}
         </tbody>
+
+        {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}
       </table>
 
       {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}

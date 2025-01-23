@@ -1,55 +1,37 @@
+import { Dispatch, useState } from "react";
 import { UseFormGetValues, UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
-
-import useBigHornListsStore from "@/store/bigHornLists-store";
-
 import { RotateCcw, SearchIcon } from "lucide-react";
 
 export default function SearchBox({
-  data,
   handleSubmit,
   register,
   getValues,
   setValue,
+  setColumnFilters,
 }: {
-  data: HornListTypes[];
   handleSubmit: UseFormHandleSubmit<HornSearchFormTypes, undefined>;
   register: UseFormRegister<HornSearchFormTypes>;
   getValues: UseFormGetValues<HornSearchFormTypes>;
   setValue: UseFormSetValue<HornSearchFormTypes>;
+  setColumnFilters: Dispatch<any>;
 }) {
-  const setFilteredData = useBigHornListsStore(state => state.setFilteredData);
+  const [searchType, setSearchType] = useState("message");
 
   const onSubmit = () => {
     const inputText = getValues().inputText;
-    const searchType = getValues().searchType;
 
-    // 닉네임 검색
-    if (searchType === "nickName") {
-      const filteredData = data.filter((item: HornListTypes) => item.character_name === inputText);
-      setFilteredData(filteredData);
-    }
-
-    // 키워드 검색
-    else if (searchType === "keyword" || searchType === undefined) {
-      const filteredData = data.filter((item: HornListTypes) => item.message.includes(inputText));
-      setFilteredData(filteredData);
-    }
-
-    // 전체 검색,
-    else {
-      setFilteredData(data);
-    }
+    setColumnFilters([{ id: searchType, value: inputText }]);
   };
 
   return (
     <section className="w-full">
       <form onSubmit={handleSubmit(onSubmit)} className="flex gap-1 w-full justify-center">
         <select
-          defaultValue="keyword"
-          onChange={e => setValue(`searchType`, e.target.value)}
+          value={searchType}
+          onChange={e => setSearchType(e.target.value)}
           className="select select-bordered text-[12px] md:text-[14px] pl-2 pr-7 md:pl-4 md:pr-10">
-          <option value="keyword">키워드 검색</option>
-          <option value="nickName">닉네임 검색</option>
+          <option value="message">키워드 검색</option>
+          <option value="character_name">닉네임 검색</option>
         </select>
 
         <input
@@ -67,19 +49,10 @@ export default function SearchBox({
 
         <button
           type="button"
-          className="hidden sm:btn p-2 md:p-4 text-[12px] md:text-[14px]"
-          onClick={() => {
-            setFilteredData([]);
-            setValue(`inputText`, "");
-          }}>
-          전체보기
-        </button>
-
-        <button
-          type="button"
           className="hidden sm:btn p-2 md:p-4"
           onClick={() => {
             setValue("inputText", "");
+            setColumnFilters([]);
           }}>
           <i>
             <RotateCcw className="w-3 h-3" />

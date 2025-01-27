@@ -54,7 +54,7 @@ export default function BigHornOfShoutIndex({ params }: { params: { server: stri
 
   const table = useReactTable({
     data,
-    columns,
+    columns: columns(columnFilters),
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getPaginationRowModel: getPaginationRowModel(),

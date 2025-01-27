@@ -1,6 +1,7 @@
-import menuLists from "@/assets/menuLists.json";
 import Image from "next/image";
 import Link from "next/link";
+
+import menuLists from "@/assets/menuLists.json";
 
 export default function Footer() {
   return (

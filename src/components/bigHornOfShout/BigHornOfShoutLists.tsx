@@ -19,7 +19,7 @@ export default function BigHornOfShoutLists({
     <section className="flex flex-col gap-3">
       <table className="table table-xs md:table-sm">
         <thead className="text-center">
-          {table.getHeaderGroups().map(headerGroup => (
+          {table?.getHeaderGroups().map(headerGroup => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map(header => (
                 <th key={header.id} className="text-center">

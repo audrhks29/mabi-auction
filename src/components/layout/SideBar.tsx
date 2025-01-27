@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import menuLists from "@/assets/auction/menuLists.json";
+import menuLists from "@/assets/menuLists.json";
 
 export default function SideBar() {
   return (

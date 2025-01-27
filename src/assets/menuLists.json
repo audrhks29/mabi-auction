@@ -2,25 +2,30 @@
   {
     "id": 1,
     "text": "경매장",
+    "english_text": "Auction",
     "sub_menu": [
       {
         "id": 11,
         "sub_text": "경매장",
+        "english_sub_text": "Auction",
         "link": "/auction/auction"
       },
       {
         "id": 12,
         "sub_text": "거래 내역",
+        "english_sub_text": "History",
         "link": "/auction/history"
       },
       {
         "id": 13,
         "sub_text": "내 경매",
+        "english_sub_text": "My Auction",
         "link": "/auction/my-auction"
       },
       {
         "id": 14,
         "sub_text": "즐겨찾기",
+        "english_sub_text": "Favorites",
         "link": "/auction/favorites"
       }
     ]
@@ -28,28 +33,33 @@
   {
     "id": 2,
     "text": "뿔피리",
+    "english_text": "Big Horn Of Shout",
     "sub_menu": [
       {
         "id": 21,
         "sub_text": "류트",
+        "english_sub_text": "Lute",
         "link": "/bighornofshout/lute"
       },
       {
         "id": 22,
         "sub_text": "만돌린",
+        "english_sub_text": "Mandolin",
         "link": "/bighornofshout/mandolin"
       },
       {
         "id": 23,
         "sub_text": "하프",
+        "english_sub_text": "Harp",
         "link": "/bighornofshout/harp"
       },
       {
         "id": 24,
         "sub_text": "울프",
+        "english_sub_text": "Wolf",
         "link": "/bighornofshout/wolf"
       }
     ]
   },
-  { "id": 3, "text": "NPC 상점", "link": "/npc-shop" }
+  { "id": 3, "text": "NPC 상점", "english_text": "NPC Shop", "link": "/npc-shop" }
 ]

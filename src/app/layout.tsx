@@ -47,14 +47,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
-      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+      <body className={cn("bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
           <Header />
           <ScriptTag />
-
-          {children}
+          <div id="wrap">{children}</div>
           <ReactQueryDevtools initialIsOpen={true} />
-
           <Footer />
         </Providers>
       </body>

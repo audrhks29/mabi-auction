@@ -2,23 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* nav,
-footer,
-.inner {
-  width: 1300px;
-  margin: 0 auto;
-  @media (min-width: 640px) {
-    width: 300px;
-  }
-  @media (min-width: 768px) {
-    width: 600px;
-  }
-} */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#wrap {
+  flex-grow: 1;
+}
+
 .inner {
   padding-top: 96px;
-  padding-bottom: 12px;
+  padding-bottom: 30px;
+  width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  height: auto;
 }

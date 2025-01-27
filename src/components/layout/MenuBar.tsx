@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import menuLists from "@/assets/auction/menuLists.json";
+import menuLists from "@/assets/menuLists.json";
 import { useEffect, useRef } from "react";
 
 export default function MenuBar() {

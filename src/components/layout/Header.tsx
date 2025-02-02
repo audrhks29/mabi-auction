@@ -13,8 +13,8 @@ export default function Header() {
   const accessToken = cookieStore.get("accessToken");
 
   return (
-    <header className="navbar fixed z-10 bg-base-100 block p-0">
-      <div className="navbar bg-base-100">
+    <header className="navbar fixed z-10 bg-base-200 block p-0">
+      <div className="navbar bg-base-200">
         <div className="navbar-start">
           <SideBar />
           <Link href="/">
@@ -32,7 +32,6 @@ export default function Header() {
           <UserAuth accessToken={accessToken} />
         </div>
       </div>
-      <div className="divider m-0 h-0"></div>
     </header>
   );
 }

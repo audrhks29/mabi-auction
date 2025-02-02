@@ -42,7 +42,7 @@ export default function MenuBar() {
                 detailsRefs.current[menu.id] = el as HTMLDetailsElement;
               }}>
               <summary>{menu.text}</summary>
-              <ul className="p-2 w-[150px]">
+              <ul className="p-2 w-[150px] bg-base-300">
                 {menu.sub_menu.map(subMenu => (
                   <li key={subMenu.id} onClick={() => handleSubMenuClick(menu.id)}>
                     <Link href={subMenu.link}>{subMenu.sub_text}</Link>

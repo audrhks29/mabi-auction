@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 
 export async function POST(req: NextRequest, res: NextResponse) {
   const body = await req.json();
-  const { user_id, user_password, server, race, nickname, skill_data } = body;
+  const { user_id, user_password, user_server, user_race, user_nickname } = body;
 
   const hashedPassword = await bcrypt.hash(user_password, 10);
 
@@ -19,10 +19,9 @@ export async function POST(req: NextRequest, res: NextResponse) {
     await db.collection("data").insertOne({
       user_id,
       user_password: hashedPassword,
-      server,
-      race,
-      nickname,
-      skill_data,
+      user_server,
+      user_race,
+      user_nickname,
     });
     return NextResponse.json({ message: "User registered successfully" });
   }

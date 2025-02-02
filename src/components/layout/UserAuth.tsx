@@ -5,9 +5,9 @@ import React, { useEffect } from "react";
 import useUserDataStore from "@/store/userData-store";
 
 import LoginPopover from "./LoginPopover";
+import LogoutPopover from "./LogoutPopover";
 
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
-import LogoutPopover from "./LogoutPopover";
 
 export default function UserAuth({ accessToken }: { accessToken: RequestCookie | undefined }) {
   const { userData, setUserData } = useUserDataStore();

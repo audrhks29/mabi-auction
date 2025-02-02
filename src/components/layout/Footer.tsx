@@ -5,7 +5,7 @@ import menuLists from "@/assets/menuLists.json";
 
 export default function Footer() {
   return (
-    <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+    <footer className="footer hidden sm:grid sm:footer-horizontal bg-base-200 text-base-content p-10">
       <aside className="m-auto ml-0">
         <Link href="/">
           <Image width={120} height={64} alt="logo" src={"/logo_black_v2.svg"} />

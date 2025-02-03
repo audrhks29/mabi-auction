@@ -36,6 +36,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  creator: "마비옥션",
   icons: {
     icon: "/logo_dark.png",
   },

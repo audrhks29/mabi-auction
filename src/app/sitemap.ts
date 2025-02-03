@@ -20,5 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: "https://mabiauction.vercel.app/notice",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 }

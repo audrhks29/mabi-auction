@@ -1,13 +1,10 @@
-import Link from "next/link";
-import Image from "next/image";
 import { cookies } from "next/headers";
 
 import UserAuth from "./UserAuth";
-
 import SideBar from "./SideBar";
 import MenuBar from "./MenuBar";
-import ThemeController from "./ThemeController";
 import Logo from "./Logo";
+import ThemeController from "./ThemeController";
 
 export default function Header() {
   const cookieStore = cookies();

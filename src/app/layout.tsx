@@ -23,8 +23,21 @@ export const metadata: Metadata = {
     default: "마비옥션",
   },
   description: "마비옥션에서 마비노기 경매장 아이템들과 뿔피리 내역을 검색해보세요.",
+  keywords: ["마비노기", "경매장", "뿔피리"],
+  openGraph: {
+    type: "website",
+    url: "https://mabiauction.vercel.app/",
+    title: "마비옥션",
+    description: "마비옥션에서 마비노기 경매장 아이템들과 뿔피리 내역을 검색해보세요.",
+    siteName: "마비옥션",
+    images: [
+      {
+        url: "/logo_light.png",
+      },
+    ],
+  },
   icons: {
-    icon: "/auction.png",
+    icon: "/logo_dark.png",
   },
   verification: {
     google: "ZPrVlMyX2ZF_7nmMXyiH00jA7dezY2IkUz0Zh16CYpw",

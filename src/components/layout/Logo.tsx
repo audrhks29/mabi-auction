@@ -23,7 +23,7 @@ export default function Logo() {
     return () => observer.disconnect();
   }, []);
 
-  const logoSrc = theme === "dark" ? "/logo_black.png" : "/logo_light.png";
+  const logoSrc = theme === "dark" ? "/logo_dark.png" : "/logo_light.png";
 
   return (
     <Link href="/">

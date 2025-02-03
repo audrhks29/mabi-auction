@@ -7,6 +7,7 @@ import UserAuth from "./UserAuth";
 import SideBar from "./SideBar";
 import MenuBar from "./MenuBar";
 import ThemeController from "./ThemeController";
+import Logo from "./Logo";
 
 export default function Header() {
   const cookieStore = cookies();
@@ -17,9 +18,7 @@ export default function Header() {
       <div className="navbar bg-base-200">
         <div className="navbar-start">
           <SideBar />
-          <Link href="/">
-            <Image width={120} height={64} alt="logo" src={"/logo_black_v2.svg"} />
-          </Link>
+          <Logo />
         </div>
 
         <div className="navbar-center hidden lg:flex">

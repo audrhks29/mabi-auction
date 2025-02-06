@@ -36,6 +36,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  metadataBase: new URL("https://mabiauction.vercel.app"),
   creator: "마비옥션",
   icons: {
     icon: "/logo_dark.png",
@@ -63,8 +64,8 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
       <body className={cn("bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
-          <Header />
           <ScriptTag />
+          <Header />
           <div id="wrap">{children}</div>
           <ReactQueryDevtools initialIsOpen={true} />
           <Footer />

@@ -1,0 +1,4 @@
+{
+  "name": "마비옥션",
+  "builds": [{ "src": "package.json", "use": "@vercel/next" }]
+}

@@ -5,7 +5,7 @@ import useUserDataStore from "@/store/userData-store";
 
 import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
 
-import ItemOptions from "./ItemOptions";
+import ItemDescription from "./ItemDescription";
 
 export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
   const userData = useUserDataStore(state => state.userData);
@@ -32,7 +32,7 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
   // };
 
   return (
-    <dialog id={`my_modal_${row.id}`} className="modal">
+    <dialog id={`itemDetail_modal_${row.id}`} className="modal">
       <div className="modal-box">
         <div className="text-center text-[15px] font-bold">
           <h4>{row.original.item_display_name}</h4>
@@ -58,7 +58,7 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
 
         <div className="divider m-0"></div>
 
-        <ItemOptions options={row.original.item_option} />
+        <ItemDescription options={row.original.item_option} />
 
         <article className="flex justify-center gap-6">
           <button

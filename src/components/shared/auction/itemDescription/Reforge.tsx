@@ -32,6 +32,8 @@ export default function Reforge({ reforgeOptions }: { reforgeOptions: ExtendedIt
                   <p>({desc})</p>
                 </React.Fragment>
               );
+            } else {
+              return <p key={options.option_value}>{options.option_value}</p>;
             }
           }
         })}

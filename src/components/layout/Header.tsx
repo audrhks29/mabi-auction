@@ -1,4 +1,4 @@
-import { cookies } from "next/headers";
+import { cookies, type UnsafeUnwrappedCookies } from "next/headers";
 
 import UserAuth from "./UserAuth";
 import SideBar from "./SideBar";
@@ -6,8 +6,8 @@ import MenuBar from "./MenuBar";
 import Logo from "./Logo";
 import ThemeController from "./ThemeController";
 
-export default function Header() {
-  const cookieStore = cookies();
+export default async function Header() {
+  const cookieStore = await (cookies() as unknown as UnsafeUnwrappedCookies);
   const accessToken = cookieStore.get("accessToken");
 
   return (

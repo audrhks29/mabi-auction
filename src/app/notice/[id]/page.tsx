@@ -2,13 +2,13 @@ import Link from "next/link";
 
 import noticeList from "@/assets/notice.json";
 
-export default function NoticePage({ params }: { params: { id: string } }) {
+export default async function NoticePage(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const noticeData = noticeList.find(notice => String(notice.id) === params.id);
 
   return (
-    <main className="inner">
+    (<main className="inner">
       <h3 className="text-[18px] text-center font-bold pb-6">업데이트 내역</h3>
-
       <section>
         <div className="flex gap-3 items-center bg-base-300 p-6">
           <span className="badge badge-neutral">{noticeData?.type}</span>
@@ -27,14 +27,12 @@ export default function NoticePage({ params }: { params: { id: string } }) {
           ))}
         </article>
       </section>
-
       <div className="divider my-2 p-0"></div>
-
       <Link href={"/"}>
         <button type="button" className="btn btn-neutral">
           목록
         </button>
       </Link>
-    </main>
+    </main>)
   );
 }

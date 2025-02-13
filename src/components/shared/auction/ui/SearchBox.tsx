@@ -36,7 +36,7 @@ export default function SearchBox({
   };
 
   // 추천 검색어 관련 -------------------------------------------------
-  const searchRecommendRef = useRef<HTMLDivElement>(null);
+  const searchRecommendRef = useRef<HTMLDivElement>(null!);
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useOutsideClickDropdownMenu(searchRecommendRef, () => {
@@ -67,7 +67,7 @@ export default function SearchBox({
 
   // 드롭다운 메뉴 관련 이벤트(모바일)
   const [isCategoriesVisible, setCategoriesVisible] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null!);
 
   const toggleCategoriesVisibility = () => {
     setCategoriesVisible(prev => !prev);

@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import clientPromise from "@/lib/mongodb";
 import bcrypt from "bcrypt";
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
   const SECRET_KEY = process.env.ACCESS_SECRET_KEY!;
   try {
     const body = await req.json();

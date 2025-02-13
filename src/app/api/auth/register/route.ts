@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import clientPromise from "@/lib/mongodb";
 import bcrypt from "bcrypt";
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
   const body = await req.json();
   const { user_id, user_password, user_server, user_race, user_nickname } = body;
 

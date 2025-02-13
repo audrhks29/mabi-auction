@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST() {
   try {
     // 로그아웃 시 쿠키 삭제
     const response = NextResponse.json({ message: "Logout successful" });

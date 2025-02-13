@@ -4,16 +4,16 @@ import React from "react";
 
 import convertOptionsArray from "@/utils/auction/convertOptionsArray";
 
-import Attribute from "../itemOptions/Attribute";
-import Enchant from "../itemOptions/Enchant";
-import Modification from "../itemOptions/Modification";
-import Erg from "../itemOptions/Erg";
-import Reforge from "../itemOptions/Reforge";
-import Set from "../itemOptions/Set";
-import Color from "../itemOptions/Color";
-import SeasoningEffect from "../itemOptions/SeasoningEffect";
+import Attribute from "../itemDescription/Attribute";
+import Enchant from "../itemDescription/Enchant";
+import Modification from "../itemDescription/Modification";
+import Erg from "../itemDescription/Erg";
+import Reforge from "../itemDescription/Reforge";
+import Set from "../itemDescription/Set";
+import Color from "../itemDescription/Color";
+import SeasoningEffect from "../itemDescription/SeasoningEffect";
 
-export default function ItemOptions({ options }: { options: ItemOptionTypes[] }) {
+export default function ItemDescription({ options }: { options: ItemOptionTypes[] }) {
   const optionsArray = convertOptionsArray(options);
 
   const attributeOptions = optionsArray.filter(option => option.type === "attribute");

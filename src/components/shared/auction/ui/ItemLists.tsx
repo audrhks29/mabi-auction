@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 
 import {
   flexRender,
@@ -13,19 +13,26 @@ import Pagination from "@/components/shared/ui/Pagination";
 
 import { columns } from "@/utils/auction/tableColumns";
 
+import useItemOptionStore from "@/store/itemOption-store";
+
 type SortingState = Array<{ id: string; desc: boolean }>;
 
 export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
-  // 확인용
-  // function getOptionTypes(data: ItemListsTypes[]): string[] {
-  //   const optionTypes = Array.from(new Set(data.flatMap(item => item.item_display_name)));
-  //   return optionTypes;
-  // }
-  // console.log(getOptionTypes(data));
+  const { selectedItemOptions, isFiltered } = useItemOptionStore(state => ({
+    selectedItemOptions: state.selectedItemOptions,
+    isFiltered: state.isFiltered,
+  }));
+
+  const filteredData = useMemo(() => {
+    return isFiltered
+      ? data.filter((item: any) => selectedItemOptions.every(option => option?.calcFunc?.(item)))
+      : data;
+  }, [isFiltered, data, selectedItemOptions]);
+
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const table = useReactTable({
-    data,
+    data: filteredData,
     columns,
     state: {
       sorting,
@@ -63,7 +70,9 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
             <React.Fragment key={row.id}>
               <tr
                 className="cursor-pointer hover:bg-base-200"
-                onClick={() => (document.getElementById(`my_modal_${row.id}`) as HTMLDialogElement).showModal()}>
+                onClick={() =>
+                  (document.getElementById(`itemDetail_modal_${row.id}`) as HTMLDialogElement).showModal()
+                }>
                 {row.getVisibleCells().map(cell => (
                   <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
                 ))}

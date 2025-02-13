@@ -19,7 +19,7 @@ export default function IdField({
   errors: FieldErrors<UserDataTypes>;
 }) {
   const id = watch("user_id");
-  console.log(isDuplicationId);
+
   useEffect(() => {
     setIsDuplicationId(null);
   }, [id, setIsDuplicationId]);

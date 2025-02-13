@@ -39,7 +39,13 @@ export default function AuctionIndex() {
       <h3 className="text-[18px] text-center font-bold pb-6">경매장</h3>
 
       <article>
-        <SearchBox setCategory={setCategory} handleSubmit={handleSubmit} register={register} setValue={setValue} />
+        <SearchBox
+          data={data}
+          setCategory={setCategory}
+          handleSubmit={handleSubmit}
+          register={register}
+          setValue={setValue}
+        />
 
         <div className="divider m-0"></div>
 

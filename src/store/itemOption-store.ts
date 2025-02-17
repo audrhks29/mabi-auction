@@ -3,8 +3,9 @@ import create from "zustand";
 interface StoreTypes {
   selectedItemOptions: OptionTypes[];
   isFiltered: boolean;
-  setSelectedItemOptions: (index: number, newOption: Partial<OptionTypes>) => void;
+  setSelectedItemOptions: (data: OptionTypes[]) => void;
   addItemOption: () => void;
+  removeItemOption: (index: number) => void;
   clearItemOptions: () => void;
   setIsFilter: (value: boolean) => void;
 }
@@ -13,17 +14,24 @@ const useItemOptionStore = create<StoreTypes>((set, getState) => ({
   selectedItemOptions: [],
   isFiltered: false,
 
-  setSelectedItemOptions: (index, newOption) => {
-    set(state => {
-      const updatedOptions = [...state.selectedItemOptions];
-      updatedOptions[index] = { ...updatedOptions[index], ...newOption };
-      return { selectedItemOptions: updatedOptions };
-    });
+  setSelectedItemOptions: data => {
+    set({ selectedItemOptions: data });
   },
 
   addItemOption: () => {
+    const selectedItemOptions = getState().selectedItemOptions;
+    if (selectedItemOptions.length < 5) {
+      set(state => ({
+        selectedItemOptions: [...state.selectedItemOptions, { option_type: "" }],
+      }));
+    } else {
+      alert("5개 이상으로 추가할 수 없습니다.");
+    }
+  },
+
+  removeItemOption: (index: number) => {
     set(state => ({
-      selectedItemOptions: [...state.selectedItemOptions, { option_type: "" }],
+      selectedItemOptions: state.selectedItemOptions.filter((_, i) => i !== index),
     }));
   },
 

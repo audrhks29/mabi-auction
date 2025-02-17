@@ -30,6 +30,8 @@ export default function AuctionIndex() {
           throw new Error("Failed to fetch item lists");
         }
         return response.json();
+      } else {
+        return [];
       }
     },
   });

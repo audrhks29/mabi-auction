@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-interface PetInformationType {
-  option: OptionTypes;
-  index: number;
-  setSelectedItemOptions: (index: number, newOption: Partial<OptionTypes>) => void;
-}
+type PetInfoType = {
+  id: string;
+  info_name: string;
+  type: string;
+  min_value: string;
+  max_value: string;
+};
 
-export default function PetInformation({ option, index, setSelectedItemOptions }: PetInformationType) {
-  const [petInfo, setPetInfo] = useState([
+export default function PetInformation({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
+  const [petInfo, setPetInfo] = useState<PetInfoType[]>([
     {
+      id: crypto.randomUUID(),
       info_name: "",
       type: "",
       min_value: "",
@@ -16,31 +19,41 @@ export default function PetInformation({ option, index, setSelectedItemOptions }
     },
   ]);
 
-  useEffect(() => {
-    setSelectedItemOptions(index, {
-      calcFunc: (item: any) => {
-        const matchingOptions = item?.item_option?.filter((opt: any) => opt.option_type === option.option_type);
+  const handleSetValue = (newPetInfo: PetInfoType[]) => {
+    setPetInfo(newPetInfo);
 
-        return (
-          matchingOptions &&
-          petInfo.every(t =>
-            matchingOptions.some(
-              (opt: any) =>
-                t.info_name !== "" &&
-                (t.info_name === "종족명"
-                  ? opt.option_value.includes(t.type)
-                  : t.info_name === opt.option_sub_type &&
-                    opt.option_value >= (Number(t.min_value) || 0) &&
-                    opt.option_value <= (Number(t.max_value) || 100000)),
-            ),
-          )
-        );
-      },
+    setValue(`options.${index}.calcFunc`, (item: any) => {
+      const matchingOptions = item?.item_option?.filter((opt: any) => opt.option_type === currentOptionType);
+
+      return (
+        matchingOptions &&
+        newPetInfo.every(t =>
+          matchingOptions.some(
+            (opt: any) =>
+              t.info_name !== "" &&
+              (t.info_name === "종족명"
+                ? opt.option_value.includes(t.type)
+                : t.info_name === opt.option_sub_type &&
+                  opt.option_value >= (Number(t.min_value) || 0) &&
+                  opt.option_value <= (Number(t.max_value) || 100000)),
+          ),
+        )
+      );
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [petInfo]);
+  };
 
-  const info = [
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>, idx: number) => {
+    const { name, value } = e.target;
+    const newPetInfo = petInfo.map((t, i) => (i === idx ? { ...t, [name]: value } : t));
+    handleSetValue(newPetInfo);
+  };
+
+  const handleRemove = (idx: number) => {
+    const newPetInfo = [...petInfo.slice(0, idx), ...petInfo.slice(idx + 1)];
+    handleSetValue(newPetInfo);
+  };
+
+  const optionArray = [
     "종족명",
     "펫 포인트",
     "레벨",
@@ -60,40 +73,23 @@ export default function PetInformation({ option, index, setSelectedItemOptions }
 
   return (
     <>
-      <button
-        type="button"
-        className="btn"
-        onClick={() =>
-          setPetInfo(prev => [
-            ...prev,
-            {
-              info_name: "",
-              type: "",
-              min_value: "",
-              max_value: "",
-            },
-          ])
-        }>
-        추가
-      </button>
+      {petInfo.map((info, idx) => {
+        const selectedEffects = petInfo.map(t => t.info_name).filter(e => e !== "");
 
-      {petInfo.map((_, index) => {
         return (
-          <React.Fragment key={index}>
+          <React.Fragment key={info.id}>
             <div className="flex gap-3">
               <label className="label w-16">능력</label>
 
-              <select
-                className="select w-full"
-                onChange={e =>
-                  setPetInfo(prev => prev.map((t, i) => (i === index ? { ...t, info_name: e.target.value } : t)))
-                }>
+              <select name="info_name" className="select w-full" onChange={e => handleChange(e, idx)} required>
                 <option value="">없음</option>
-                {info.map((item, index) => (
-                  <option key={index} value={item}>
-                    {item}
-                  </option>
-                ))}
+                {optionArray
+                  .filter(e => !selectedEffects.includes(e) || e === info.info_name)
+                  .map(option => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
               </select>
             </div>
 
@@ -101,13 +97,7 @@ export default function PetInformation({ option, index, setSelectedItemOptions }
               <div className="flex gap-3">
                 <label className="label w-16">종족</label>
 
-                <input
-                  type="text"
-                  className="input w-full"
-                  onChange={e =>
-                    setPetInfo(prev => prev.map((t, i) => (i === index ? { ...t, type: e.target.value } : t)))
-                  }
-                />
+                <input type="text" name="type" className="input w-full" onChange={e => handleChange(e, idx)} />
               </div>
             ) : (
               <div className="flex gap-3">
@@ -116,29 +106,49 @@ export default function PetInformation({ option, index, setSelectedItemOptions }
                 <div className="flex gap-3 items-center justify-between w-full">
                   <input
                     type="text"
+                    name="min_value"
                     className="input w-32"
-                    placeholder="최솟값"
-                    onChange={e =>
-                      setPetInfo(prev => prev.map((t, i) => (i === index ? { ...t, min_value: e.target.value } : t)))
-                    }
+                    placeholder="0"
+                    onChange={e => handleChange(e, idx)}
                   />
 
                   <span>~</span>
 
                   <input
                     type="text"
+                    name="max_value"
                     className="input w-32"
-                    placeholder="최댓값"
-                    onChange={e =>
-                      setPetInfo(prev => prev.map((t, i) => (i === index ? { ...t, max_value: e.target.value } : t)))
-                    }
+                    placeholder="100000"
+                    onChange={e => handleChange(e, idx)}
                   />
                 </div>
               </div>
             )}
+
+            <button type="button" className="btn  btn-outline btn-primary" onClick={() => handleRemove(idx)}>
+              펫 옵션 삭제
+            </button>
           </React.Fragment>
         );
       })}
+
+      <button
+        type="button"
+        className="btn btn-outline btn-primary"
+        onClick={() =>
+          setPetInfo(prev => [
+            ...prev,
+            {
+              id: crypto.randomUUID(),
+              info_name: "",
+              type: "",
+              min_value: "",
+              max_value: "",
+            },
+          ])
+        }>
+        펫 옵션 추가
+      </button>
     </>
   );
 }

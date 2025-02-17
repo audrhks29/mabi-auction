@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-
 import Providers from "@/utils/provider";
-
 import { cn } from "@/lib/utils";
-
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { setColorsByTheme } from "@/script/setColorsByTheme";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -49,11 +44,18 @@ export const metadata: Metadata = {
   },
 };
 
-const ScriptTag = () => {
-  const stringifyFn = setColorsByTheme;
-  const fnToRunOnClient = `(${stringifyFn})()`;
-  return <script dangerouslySetInnerHTML={{ __html: fnToRunOnClient }} />;
-};
+const themeScript = `
+  (function() {
+    function getTheme() {
+      const localTheme = localStorage.getItem("mabiAuction-theme");
+      if (localTheme) return localTheme;
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    
+    const theme = getTheme();
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+`;
 
 export default function RootLayout({
   children,
@@ -61,13 +63,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="ko" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className={cn("bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
-          <ScriptTag />
           <Header />
           <div id="wrap">{children}</div>
-          <ReactQueryDevtools initialIsOpen={true} />
+          <ReactQueryDevtools initialIsOpen={false} />
           <Footer />
         </Providers>
       </body>

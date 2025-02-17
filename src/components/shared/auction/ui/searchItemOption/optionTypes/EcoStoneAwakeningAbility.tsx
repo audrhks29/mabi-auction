@@ -1,39 +1,31 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-interface EcoStoneAwakeningAbilityType {
-  option: OptionTypes;
-  index: number;
-  setSelectedItemOptions: (index: number, newOption: Partial<OptionTypes>) => void;
-}
-
-export default function EcoStoneAwakeningAbility({
-  option,
-  index,
-  setSelectedItemOptions,
-}: EcoStoneAwakeningAbilityType) {
+export default function EcoStoneAwakeningAbility({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [ecoStoneOption, setEcoStoneOption] = useState({
     awakeningAbility_name: "",
     min_level: "",
     max_level: "",
   });
 
-  useEffect(() => {
-    setSelectedItemOptions(index, {
-      calcFunc: (item: any) => {
-        const matchingOptions = item?.item_option?.filter((opt: any) => opt.option_type === option.option_type);
-        const extractNumbers = (value: string): number => Number(value.replace(/\D/g, ""));
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    const updated = { ...ecoStoneOption, [name]: value };
 
-        return matchingOptions?.some((opt: any) => {
-          return (
-            opt.option_value.includes(ecoStoneOption.awakeningAbility_name) &&
-            extractNumbers(opt.option_value) >= Number(ecoStoneOption.min_level || 0) &&
-            extractNumbers(opt.option_value) <= Number(ecoStoneOption.max_level || 20)
-          );
-        });
-      },
+    setEcoStoneOption(updated);
+
+    setValue(`options.${index}.calcFunc`, (item: any) => {
+      const matchingOptions = item?.item_option?.filter((opt: any) => opt.option_type === currentOptionType);
+      const extractNumbers = (val: string): number => Number(val.replace(/\D/g, ""));
+
+      return matchingOptions?.some((opt: any) => {
+        return (
+          opt.option_value.includes(updated.awakeningAbility_name) &&
+          extractNumbers(opt.option_value) >= Number(updated.min_level || 0) &&
+          extractNumbers(opt.option_value) <= Number(updated.max_level || 20)
+        );
+      });
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ecoStoneOption, index, option.option_type]);
+  };
 
   return (
     <>
@@ -42,10 +34,11 @@ export default function EcoStoneAwakeningAbility({
 
         <input
           type="text"
+          name="awakeningAbility_name"
           className="input w-full"
           placeholder="명칭"
-          value={ecoStoneOption.awakeningAbility_name || ""}
-          onChange={e => setEcoStoneOption({ ...ecoStoneOption, awakeningAbility_name: e.target.value })}
+          onChange={handleChange}
+          required
         />
       </div>
 
@@ -53,23 +46,11 @@ export default function EcoStoneAwakeningAbility({
         <label className="label w-16">범위</label>
 
         <div className="flex items-center justify-between w-full">
-          <input
-            type="text"
-            className="input w-32"
-            placeholder="최소 레벨"
-            value={ecoStoneOption.min_level || ""}
-            onChange={e => setEcoStoneOption({ ...ecoStoneOption, min_level: e.target.value })}
-          />
+          <input type="text" name="min_level" className="input w-32" placeholder="최소 레벨" onChange={handleChange} />
 
           <span>~</span>
 
-          <input
-            type="text"
-            className="input w-32"
-            value={ecoStoneOption.max_level || ""}
-            placeholder="최대 레벨"
-            onChange={e => setEcoStoneOption({ ...ecoStoneOption, max_level: e.target.value })}
-          />
+          <input type="text" name="max_level" className="input w-32" placeholder="최대 레벨" onChange={handleChange} />
         </div>
       </div>
     </>

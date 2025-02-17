@@ -1,59 +1,67 @@
-interface MoreOrLessType {
-  option: OptionTypes;
-  index: number;
-  setSelectedItemOptions: (index: number, newOption: Partial<OptionTypes>) => void;
-}
+import { useState } from "react";
 
-// selectedOption.name === "사용 효과" ||
-// selectedOption.name === "조미료 효과" ||
-export default function MoreOrLess({ option, index, setSelectedItemOptions }: MoreOrLessType) {
+export default function MoreOrLess({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
+  const [isSearchMore, setIsSearchMore] = useState<boolean>(true);
+  const [searchOptionValue, setSearchOptionValue] = useState<string | "">("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newSearchOptionValue = e.target.value;
+    setSearchOptionValue(newSearchOptionValue);
+    handleSetValue(newSearchOptionValue, isSearchMore);
+  };
+
+  const handleSetValue = (optionValue: string, isMore: boolean) => {
+    setValue(`options.${index}.calcFunc`, (item: any) => {
+      return item.item_option.some((opt: any) => {
+        if (
+          [
+            "공격",
+            "내구력",
+            "남은 전용 해제 가능 횟수",
+            "마법 방어력",
+            "마법 보호",
+            "방어력",
+            "보호",
+            "내구도",
+            "남은 거래 횟수",
+            "남은 사용 횟수",
+            "품질",
+          ].includes(currentOptionType)
+        ) {
+          return isMore
+            ? Number(opt.option_value2) >= Number(optionValue)
+            : Number(opt.option_value2) <= Number(optionValue);
+        } else if (currentOptionType === "숙련") {
+          return isMore
+            ? Number(opt.option_value) >= Number(optionValue)
+            : Number(opt.option_value) <= Number(optionValue);
+        } else if (["크리티컬", "밸런스"].includes(currentOptionType)) {
+          return isMore
+            ? Number(opt.option_value?.replace("%", "") || 0) >= Number(optionValue)
+            : Number(opt.option_value?.replace("%", "") || 0) <= Number(optionValue);
+        }
+        return false;
+      });
+    });
+  };
+
+  const toggleSearchMode = () => {
+    const newIsSearchMore = !isSearchMore;
+    setIsSearchMore(newIsSearchMore);
+    handleSetValue(searchOptionValue, newIsSearchMore);
+  };
+
   return (
     <div className="flex gap-3">
       <label className="label w-16">값</label>
 
-      <input
-        type="text"
-        className="input w-full"
-        placeholder="값"
-        value={option.option_value || ""}
-        onChange={e => {
-          const inputValue = e.target.value;
-          setSelectedItemOptions(index, {
-            option_value: inputValue,
-            calcFunc: item => {
-              if (
-                option.option_type === "공격" ||
-                option.option_type === "내구력" ||
-                option.option_type === "남은 전용 해제 가능 횟수" ||
-                option.option_type === "마법 방어력" ||
-                option.option_type === "마법 보호" ||
-                option.option_type === "방어력" ||
-                option.option_type === "보호" ||
-                option.option_type === "내구도" ||
-                option.option_type === "남은 거래 횟수" ||
-                option.option_type === "남은 사용 횟수" ||
-                option.option_type === "품질"
-              ) {
-                return item.item_option.some(
-                  (opt: any) =>
-                    opt.option_type === option.option_type && Number(opt.option_value2) >= Number(inputValue),
-                );
-              } else if (option.option_type === "숙련") {
-                return item.item_option.some(
-                  (opt: any) =>
-                    opt.option_type === option.option_type && Number(opt.option_value) >= Number(inputValue),
-                );
-              } else if (option.option_type === "크리티컬" || option.option_type === "밸런스") {
-                return item.item_option.some(
-                  (opt: any) =>
-                    opt.option_type === option.option_type &&
-                    Number(opt.option_value?.replace("%", "") || 0) >= Number(inputValue),
-                );
-              }
-            },
-          });
-        }}
-      />
+      <div className="flex join w-full">
+        <input type="text" className="input w-full join-item" placeholder="값" onChange={handleChange} required />
+
+        <button type="button" className="btn btn-primary join-item" onClick={toggleSearchMode}>
+          {isSearchMore ? "이상" : "이하"}
+        </button>
+      </div>
     </div>
   );
 }

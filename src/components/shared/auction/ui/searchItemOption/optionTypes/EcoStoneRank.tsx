@@ -1,10 +1,4 @@
-interface EcoStoneRankType {
-  option: OptionTypes;
-  index: number;
-  setSelectedItemOptions: (index: number, newOption: Partial<OptionTypes>) => void;
-}
-
-export default function EcoStoneRank({ option, index, setSelectedItemOptions }: EcoStoneRankType) {
+export default function EcoStoneRank({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const numbers = Array.from({ length: 30 }, (_, i) => i + 1);
 
   return (
@@ -16,16 +10,13 @@ export default function EcoStoneRank({ option, index, setSelectedItemOptions }: 
         onChange={e => {
           const selectedValue = e.target.value;
 
-          setSelectedItemOptions(index, {
-            option_value: selectedValue,
-
-            calcFunc: item => {
-              return item?.item_option?.some(
-                (opt: any) => opt.option_type === option.option_type && opt.option_value === selectedValue,
-              );
-            },
+          setValue(`options.${index}.calcFunc`, (item: any) => {
+            return item?.item_option?.some(
+              (opt: any) => opt.option_type === currentOptionType && opt.option_value === selectedValue,
+            );
           });
-        }}>
+        }}
+        required>
         <option value="">없음</option>
         {numbers.map(num => (
           <option key={num} value={num}>

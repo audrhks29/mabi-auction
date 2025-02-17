@@ -81,7 +81,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
           ))}
         </tbody>
 
-        {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}
+        {/* {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)} */}
       </table>
 
       {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}

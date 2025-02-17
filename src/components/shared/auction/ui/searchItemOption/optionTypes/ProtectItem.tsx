@@ -1,10 +1,4 @@
-interface ProtectItemType {
-  option: OptionTypes;
-  index: number;
-  setSelectedItemOptions: (index: number, newOption: Partial<OptionTypes>) => void;
-}
-
-export default function ProtectItem({ option, index, setSelectedItemOptions }: ProtectItemType) {
+export default function ProtectItem({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   return (
     <div className="flex gap-3">
       <label className="label w-16">선택</label>
@@ -14,16 +8,13 @@ export default function ProtectItem({ option, index, setSelectedItemOptions }: P
         onChange={e => {
           const selectedValue = e.target.value;
 
-          setSelectedItemOptions(index, {
-            option_value: selectedValue,
-
-            calcFunc: item => {
-              return item?.item_option?.some(
-                (opt: any) => opt.option_type === option.option_type && opt.option_value === selectedValue,
-              );
-            },
+          setValue(`options.${index}.calcFunc`, (item: any) => {
+            return item?.item_option?.some(
+              (opt: any) => opt.option_type === currentOptionType && opt.option_value === selectedValue,
+            );
           });
-        }}>
+        }}
+        required>
         <option value="">없음</option>
         <option value="수리 실패">수리 실패</option>
         <option value="인챈트 실패">인챈트 실패</option>

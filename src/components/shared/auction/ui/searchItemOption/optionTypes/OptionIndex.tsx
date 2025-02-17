@@ -1,10 +1,10 @@
-import Enchant from "./Enchant";
 import MoreOrLess from "./MoreOrLess";
+import ReforgeRank from "./ReforgeRank";
+import ReforgeOption from "./ReforgeOption";
+import Enchant from "./Enchant";
+import Unusable from "./Unusable";
 import ProtectItem from "./ProtectItem";
 import ModificationItem from "./ModificationItem";
-import Unusable from "./Unusable";
-import ReforgeOption from "./ReforgeOption";
-import ReforgeRank from "./ReforgeRank";
 import SpecialModificationItem from "./SpecialModificationItem";
 import Erg from "./Erg";
 import EcoStoneRank from "./EcoStoneRank";
@@ -15,103 +15,59 @@ import TotemModificationLimit from "./TotemModificationLimit";
 import TotemAdditionalOption from "./TotemAdditionalOption";
 import PetInformation from "./PetInformation";
 
-export default function OptionIndex({
-  selectedOption,
-  option,
-  index,
-  setSelectedItemOptions,
-}: {
-  selectedOption: { name: string; displayName?: string };
-  option: OptionTypes;
-  index: number;
-  setSelectedItemOptions: (index: number, newOption: Partial<OptionTypes>) => void;
-}) {
+export default function OptionIndex({ currentOptionType, setValue, index }: SearchOptionPropsTypes) {
+  const commonProps = { currentOptionType, index, setValue };
   return (
     <>
-      {(selectedOption.name === "공격" ||
-        selectedOption.name === "크리티컬" ||
-        selectedOption.name === "밸런스" ||
-        selectedOption.name === "내구력" ||
-        selectedOption.name === "숙련" ||
-        selectedOption.name === "남은 전용 해제 가능 횟수" ||
-        selectedOption.name === "마법 방어력" ||
-        selectedOption.name === "마법 보호" ||
-        selectedOption.name === "방어력" ||
-        selectedOption.name === "보호" ||
-        selectedOption.name === "내구도" ||
-        selectedOption.name === "남은 거래 횟수" ||
-        selectedOption.name === "남은 사용 횟수" ||
-        selectedOption.name === "품질" ||
-        selectedOption.name === "사용 효과" ||
-        selectedOption.name === "조미료 효과" ||
-        selectedOption.name === "크기" ||
-        selectedOption.name === "색상") && (
-        <MoreOrLess option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {(currentOptionType === "공격" ||
+        currentOptionType === "크리티컬" ||
+        currentOptionType === "밸런스" ||
+        currentOptionType === "내구력" ||
+        currentOptionType === "숙련" ||
+        currentOptionType === "남은 전용 해제 가능 횟수" ||
+        currentOptionType === "마법 방어력" ||
+        currentOptionType === "마법 보호" ||
+        currentOptionType === "방어력" ||
+        currentOptionType === "보호" ||
+        currentOptionType === "내구도" ||
+        currentOptionType === "남은 거래 횟수" ||
+        currentOptionType === "남은 사용 횟수" ||
+        currentOptionType === "품질") && <MoreOrLess {...commonProps} />}
 
-      {selectedOption.name === "세공 랭크" && (
-        <ReforgeRank option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "세공 랭크" && <ReforgeRank {...commonProps} />}
 
-      {selectedOption.name === "세공 옵션" && (
-        <ReforgeOption option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "세공 옵션" && <ReforgeOption {...commonProps} />}
 
-      {(selectedOption.name === "인챈트" || selectedOption.name === "인챈트 종류") && (
-        <Enchant option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {(currentOptionType === "인챈트" || currentOptionType === "인챈트 종류") && <Enchant {...commonProps} />}
 
-      {(selectedOption.name === "인챈트 불가능" || selectedOption.name === "전용 해제 거래 보증서 사용 불가") && (
-        <Unusable option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
+      {(currentOptionType === "인챈트 불가능" || currentOptionType === "전용 해제 거래 보증서 사용 불가") && (
+        <Unusable {...commonProps} />
       )}
+      {currentOptionType === "일반 개조" && <ModificationItem {...commonProps} />}
 
-      {selectedOption.name === "일반 개조" && (
-        <ModificationItem option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "아이템 보호" && <ProtectItem {...commonProps} />}
 
-      {selectedOption.name === "아이템 보호" && (
-        <ProtectItem option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
-
-      {selectedOption.name === "특별 개조" && (
-        <SpecialModificationItem option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "특별 개조" && <SpecialModificationItem {...commonProps} />}
 
       {/* 세트효과 */}
 
-      {selectedOption.name === "에르그" && (
-        <Erg option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "에르그" && <Erg {...commonProps} />}
 
       {/* 피어싱 */}
 
-      {selectedOption.name === "에코스톤 등급" && (
-        <EcoStoneRank option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "에코스톤 등급" && <EcoStoneRank {...commonProps} />}
 
-      {selectedOption.name === "에코스톤 고유 능력" && (
-        <EcoStoneUniqueAbility option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "에코스톤 고유 능력" && <EcoStoneUniqueAbility {...commonProps} />}
 
-      {selectedOption.name === "에코스톤 각성 능력" && (
-        <EcoStoneAwakeningAbility option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "에코스톤 각성 능력" && <EcoStoneAwakeningAbility {...commonProps} />}
 
-      {selectedOption.name === "토템 효과" && (
-        <TotemEffect option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "토템 효과" && <TotemEffect {...commonProps} />}
 
-      {selectedOption.name === "토템 강화 제한" && (
-        <TotemModificationLimit option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "토템 강화 제한" && <TotemModificationLimit {...commonProps} />}
 
-      {selectedOption.name === "토템 추가 옵션" && (
-        <TotemAdditionalOption option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "토템 추가 옵션" && <TotemAdditionalOption {...commonProps} />}
 
-      {selectedOption.name === "펫 정보" && (
-        <PetInformation option={option} index={index} setSelectedItemOptions={setSelectedItemOptions} />
-      )}
+      {currentOptionType === "펫 정보" && <PetInformation {...commonProps} />}
     </>
   );
 }

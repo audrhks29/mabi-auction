@@ -1,10 +1,4 @@
-interface ModificationItemType {
-  option: OptionTypes;
-  index: number;
-  setSelectedItemOptions: (index: number, newOption: Partial<OptionTypes>) => void;
-}
-
-export default function ModificationItem({ option, index, setSelectedItemOptions }: ModificationItemType) {
+export default function ModificationItem({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   return (
     <div className="flex gap-3">
       <label className="label w-16">단계</label>
@@ -13,16 +7,13 @@ export default function ModificationItem({ option, index, setSelectedItemOptions
         onChange={e => {
           const selectedValue = e.target.value;
 
-          setSelectedItemOptions(index, {
-            option_value: selectedValue,
-
-            calcFunc: item => {
-              return item?.item_option?.some(
-                (opt: any) => opt.option_type === option.option_type && opt.option_value === selectedValue,
-              );
-            },
+          setValue(`options.${index}.calcFunc`, (item: any) => {
+            return item?.item_option?.some(
+              (opt: any) => opt.option_type === currentOptionType && opt.option_value === selectedValue,
+            );
           });
-        }}>
+        }}
+        required>
         <option value="">없음</option>
         <option value="1">업그레이드 1단계</option>
         <option value="2">업그레이드 2단계</option>

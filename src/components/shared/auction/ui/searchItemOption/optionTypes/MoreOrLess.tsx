@@ -39,6 +39,10 @@ export default function MoreOrLess({ currentOptionType, index, setValue }: Searc
           return isMore
             ? Number(opt.option_value?.replace("%", "") || 0) >= Number(optionValue)
             : Number(opt.option_value?.replace("%", "") || 0) <= Number(optionValue);
+        } else if (["크기"].includes(currentOptionType)) {
+          return isMore
+            ? Number(opt.option_value?.replace("cm", "") || 0) >= Number(optionValue)
+            : Number(opt.option_value?.replace("cm", "") || 0) <= Number(optionValue);
         }
         return false;
       });

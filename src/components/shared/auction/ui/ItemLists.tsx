@@ -14,10 +14,13 @@ import Pagination from "@/components/shared/ui/Pagination";
 import { columns } from "@/utils/auction/tableColumns";
 
 import useItemOptionStore from "@/store/itemOption-store";
+import { useParams, usePathname } from "next/navigation";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
 export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
+  const pathName = usePathname();
+
   const { selectedItemOptions, isFiltered } = useItemOptionStore(state => ({
     selectedItemOptions: state.selectedItemOptions,
     isFiltered: state.isFiltered,
@@ -33,7 +36,7 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
 
   const table = useReactTable({
     data: filteredData,
-    columns,
+    columns: columns(pathName),
     state: {
       sorting,
     },
@@ -47,10 +50,10 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
     <section className="flex flex-col justify-between">
       <table className="table table-xs md:table-sm">
         <colgroup>
+          <col width="35%" />
+          <col width="20%" />
           <col />
-          <col width="80px" />
-          <col width="50px" />
-          <col width="220px" />
+          <col width="35%" />
         </colgroup>
 
         <thead>

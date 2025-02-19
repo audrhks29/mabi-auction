@@ -12,12 +12,14 @@ import OptionModal from "./searchItemOption/OptionModal";
 
 export default function SearchBox({
   data,
+  category,
   setCategory,
   handleSubmit,
   register,
   setValue,
 }: {
   data: any;
+  category: ItemCategoryStateTypes;
   setCategory: Dispatch<SetStateAction<ItemCategoryStateTypes>>;
   handleSubmit: UseFormHandleSubmit<AuctionSearchFormTypes, undefined>;
   register: UseFormRegister<AuctionSearchFormTypes>;
@@ -31,8 +33,11 @@ export default function SearchBox({
     list.name.replace(/\s/g, "").includes(recommendInputText.replace(/\s/g, "")),
   );
 
-  const onSubmit = () => {
-    setCategory({ category: null, detailCategory: null });
+  const onSubmit = (submitData: { inputText: string }) => {
+    const selectedItemDetailCategory = searchLists.find(item => item.name.includes(submitData.inputText));
+
+    if (selectedItemDetailCategory)
+      setCategory({ category: null, detailCategory: selectedItemDetailCategory.detail_category });
   };
 
   // 추천 검색어 관련 -------------------------------------------------
@@ -98,7 +103,7 @@ export default function SearchBox({
       </div>
 
       <div className="flex gap-2">
-        <OptionModal data={data} />
+        <OptionModal data={data} category={category} />
 
         <form onSubmit={handleSubmit(onSubmit)} className="w-full">
           <div className="flex gap-1 justify-center">

@@ -1,31 +1,31 @@
 import React, { useState } from "react";
 
-type ReforgeOptionType = {
+type SetEffectType = {
   id: string;
   name: string;
   min_value: string;
   max_value: string;
 };
 
-export default function ReforgeOption({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
-  const [reforgeAmount, setReforgeAmount] = useState("0");
-  const [reforgeOption, setReforgeOption] = useState<ReforgeOptionType[]>([]);
+export default function SetEffect({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
+  const [setEffectAmount, setSetEffectAmount] = useState("0");
+  const [setEffectOption, setSetEffectOption] = useState<SetEffectType[]>([]);
 
-  const handleSetValue = (newReforgeOption: ReforgeOptionType[], newReforgeAmount: string) => {
-    setReforgeOption(newReforgeOption);
+  const handleSetValue = (newSetEffectOption: SetEffectType[], newSetEffectAmount: string) => {
+    setSetEffectOption(newSetEffectOption);
 
     setValue(`options.${index}.calcFunc`, (item: any) => {
       const matchingOptions = item?.item_option?.filter((opt: any) => opt.option_type === currentOptionType);
 
       return (
-        matchingOptions?.length === Number(newReforgeAmount) &&
-        newReforgeOption.every(t =>
+        matchingOptions?.length === Number(newSetEffectAmount) &&
+        newSetEffectOption.every(t =>
           matchingOptions.some(
             (opt: any) =>
               t.name !== "" &&
               opt.option_value.includes(t.name) &&
-              Number(opt.option_value.match(/(\d+)\s*레벨/)[1]) >= (Number(t.min_value) || 0) &&
-              Number(opt.option_value.match(/(\d+)\s*레벨/)[1]) <= (Number(t.max_value) || 25),
+              Number(opt.option_value2) >= (Number(t.min_value) || 0) &&
+              Number(opt.option_value2) <= (Number(t.max_value) || 10),
           ),
         )
       );
@@ -34,19 +34,19 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>, idx: number) => {
     const { name, value } = e.target;
-    const newReforgeOption = reforgeOption.map((t, i) => (i === idx ? { ...t, [name]: value } : t));
-    handleSetValue(newReforgeOption, reforgeAmount);
+    const newSetEffectOption = setEffectOption.map((t, i) => (i === idx ? { ...t, [name]: value } : t));
+    handleSetValue(newSetEffectOption, setEffectAmount);
   };
 
   const handleAmountChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newReforgeAmount = e.target.value;
-    setReforgeAmount(newReforgeAmount);
-    handleSetValue(reforgeOption, newReforgeAmount);
+    const newSetEffectAmount = e.target.value;
+    setSetEffectAmount(newSetEffectAmount);
+    handleSetValue(setEffectOption, newSetEffectAmount);
   };
 
   const handleRemove = (idx: number) => {
-    const newReforgeOption = [...reforgeOption.slice(0, idx), ...reforgeOption.slice(idx + 1)];
-    handleSetValue(newReforgeOption, reforgeAmount);
+    const newSetEffectOption = [...setEffectOption.slice(0, idx), ...setEffectOption.slice(idx + 1)];
+    handleSetValue(newSetEffectOption, setEffectAmount);
   };
 
   return (
@@ -64,7 +64,7 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
         </select>
       </div>
 
-      {reforgeOption.map((item, idx) => {
+      {setEffectOption.map((item, idx) => {
         return (
           <React.Fragment key={item.id}>
             <div className="divider m-0 p-0"></div>
@@ -106,7 +106,7 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
             </div>
 
             <button type="button" className="btn btn-outline btn-primary" onClick={() => handleRemove(idx)}>
-              세공 옵션 삭제
+              세트 효과 삭제
             </button>
           </React.Fragment>
         );
@@ -116,8 +116,8 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
         type="button"
         className="btn btn-outline btn-primary"
         onClick={() => {
-          reforgeOption.length !== 3
-            ? setReforgeOption(prev => [
+          setEffectOption.length !== 3
+            ? setSetEffectOption(prev => [
                 ...prev,
                 {
                   id: crypto.randomUUID(),
@@ -128,7 +128,7 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
               ])
             : alert("옵션을 더 이상 추가할 수 없습니다.");
         }}>
-        세공 옵션 추가
+        세트 효과 추가
       </button>
     </>
   );

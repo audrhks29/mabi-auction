@@ -5,9 +5,31 @@ import OptionIndex from "./optionTypes/OptionIndex";
 import useItemOptionStore from "@/store/itemOption-store";
 
 import itemOptionLists from "@/assets/auction/itemOptionLists.json";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-export default function OptionModal({ data }: { data: any }) {
+type searchOptionType = {
+  name: string;
+  displayName: string | undefined;
+};
+
+export default function OptionModal({ data, category }: { data: any; category: ItemCategoryStateTypes }) {
+  const [searchableOptions, setSearchableOptions] = useState<searchOptionType[]>([]);
+
+  useEffect(() => {
+    const findSearchOptions = (itemOptionLists: any[], category: ItemCategoryStateTypes) => {
+      return itemOptionLists
+        ?.filter(item => item.searchCategory.includes(category.detailCategory))
+        .map(item => ({
+          name: item.name,
+          displayName: item.displayName,
+        }));
+    };
+
+    const newSearchableOptions = findSearchOptions(itemOptionLists, category);
+
+    setSearchableOptions(newSearchableOptions);
+  }, [category]);
+
   const { register, control, handleSubmit, setValue, watch, reset } = useForm<SearchOptionFormTypes>({
     defaultValues: {
       options: [{ option_type: null, calcFunc: undefined }],
@@ -68,7 +90,7 @@ export default function OptionModal({ data }: { data: any }) {
                   <select className="select w-full" {...register(`options.${index}.option_type`)} required>
                     <option value="">옵션 타입 선택</option>
 
-                    {itemOptionLists
+                    {searchableOptions
                       .filter(
                         optionList =>
                           !selectedOptions.includes(optionList.name) || optionList.name === currentOptionType,

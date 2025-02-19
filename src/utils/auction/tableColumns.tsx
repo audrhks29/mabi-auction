@@ -4,8 +4,9 @@ import { ArrowUpDownIcon } from "lucide-react";
 
 import convertToRemainingTime from "@/utils/convertToRemainingTime";
 import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
+import convertToKoreanTime from "../convertToKoreanTime";
 
-export const columns: ColumnDef<ItemListsTypes, any>[] = [
+export const columns = (pathName: string): ColumnDef<ItemListsTypes, any>[] => [
   {
     accessorKey: "item_display_name",
     header: ({ column }) => (
@@ -20,16 +21,27 @@ export const columns: ColumnDef<ItemListsTypes, any>[] = [
     cell: props => <span className="ml-2">{props.getValue()}</span>,
   },
   {
-    accessorKey: "date_auction_expire",
+    accessorKey: pathName === "/auction/auction" ? "date_auction_expire" : "date_auction_buy",
     header: ({ column }) => (
       <div className="flex gap-1 align-middle justify-center items-center">
-        <span className="font-bold cursor-pointer">남은 시간</span>
+        <span className="font-bold cursor-pointer">{pathName === "/auction/auction" ? "남은 시간" : "판매 시간"}</span>
         <button onClick={() => column.toggleSorting()}>
           <ArrowUpDownIcon className="w-4 h-4" />
         </button>
       </div>
     ),
-    cell: props => <p>{convertToRemainingTime(props.getValue())}</p>,
+    cell: props => (
+      <>
+        {pathName === "/auction/auction" ? (
+          <p>{convertToRemainingTime(props.getValue())}</p>
+        ) : (
+          <p>
+            {convertToKoreanTime(props.getValue()).formattedDate} <br />{" "}
+            {convertToKoreanTime(props.getValue()).formattedTime}
+          </p>
+        )}
+      </>
+    ),
   },
   {
     accessorKey: "item_count",

@@ -4,7 +4,7 @@ import { UseFormSetValue } from "react-hook-form";
 
 type UseHandleKeyDownProps = {
   isDropdownVisible: boolean;
-  filteredLists: { id: string; name: string }[];
+  filteredLists: { id: number; name: string; detail_category: string }[];
   selectedIndex: number | null;
   setSelectedIndex: Dispatch<SetStateAction<number | null>>;
   setRecommendInputText: Dispatch<SetStateAction<string>>;

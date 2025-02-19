@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useQuery } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
+
+import { useAuctionItemLists } from "@/hooks/auction/useAuctionItemLists";
 
 import ItemLists from "@/components/shared/auction/ui/ItemLists";
 import SearchBox from "@/components/shared/auction/ui/SearchBox";
@@ -17,24 +18,10 @@ export default function AuctionIndex() {
     detailCategory: null,
   });
 
-  const { data, isFetching } = useQuery({
-    queryKey: ["itemLists", getValues().inputText || category.detailCategory],
-    queryFn: async () => {
-      const inputText = getValues().inputText == "" ? null : getValues().inputText;
-      const detailCategory = category.detailCategory;
-      if (inputText || category.detailCategory) {
-        const response = await fetch(`/api/auction?inputText=${inputText}&detailCategory=${detailCategory}`, {
-          method: "GET",
-        });
-        if (!response.ok) {
-          throw new Error("Failed to fetch item lists");
-        }
-        return response.json();
-      } else {
-        return [];
-      }
-    },
-  });
+  const inputText = getValues().inputText === "" ? null : getValues().inputText;
+  const detailCategory = inputText ? null : category.detailCategory;
+
+  const { data, isFetching } = useAuctionItemLists("itemLists", "auction", inputText, detailCategory);
 
   return (
     <section>
@@ -43,6 +30,7 @@ export default function AuctionIndex() {
       <article>
         <SearchBox
           data={data}
+          category={category}
           setCategory={setCategory}
           handleSubmit={handleSubmit}
           register={register}

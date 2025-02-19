@@ -6,7 +6,9 @@ import Unusable from "./Unusable";
 import ProtectItem from "./ProtectItem";
 import ModificationItem from "./ModificationItem";
 import SpecialModificationItem from "./SpecialModificationItem";
+import SetEffect from "./SetEffect";
 import Erg from "./Erg";
+import Piercing from "./Piercing";
 import EcoStoneRank from "./EcoStoneRank";
 import EcoStoneUniqueAbility from "./EcoStoneUniqueAbility";
 import EcoStoneAwakeningAbility from "./EcoStoneAwakeningAbility";
@@ -32,7 +34,8 @@ export default function OptionIndex({ currentOptionType, setValue, index }: Sear
         currentOptionType === "내구도" ||
         currentOptionType === "남은 거래 횟수" ||
         currentOptionType === "남은 사용 횟수" ||
-        currentOptionType === "품질") && <MoreOrLess {...commonProps} />}
+        currentOptionType === "품질" ||
+        currentOptionType === "크기") && <MoreOrLess {...commonProps} />}
 
       {currentOptionType === "세공 랭크" && <ReforgeRank {...commonProps} />}
 
@@ -49,11 +52,11 @@ export default function OptionIndex({ currentOptionType, setValue, index }: Sear
 
       {currentOptionType === "특별 개조" && <SpecialModificationItem {...commonProps} />}
 
-      {/* 세트효과 */}
+      {currentOptionType === "세트 효과" && <SetEffect {...commonProps} />}
 
       {currentOptionType === "에르그" && <Erg {...commonProps} />}
 
-      {/* 피어싱 */}
+      {currentOptionType === "피어싱 레벨" && <Piercing {...commonProps} />}
 
       {currentOptionType === "에코스톤 등급" && <EcoStoneRank {...commonProps} />}
 

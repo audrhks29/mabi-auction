@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+    <img src="public/logo_dark.png" alt="마비옥션" width="100px">
+    <img src="public/logo_light.png" alt="마비옥션" width="100px">
+</p>
 
-## Getting Started
+# 마비옥션
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Generic badge](https://img.shields.io/badge/version-0.2.4-red.svg) ![Generic badge](https://img.shields.io/badge/yarn-1.22.19-green.svg) ![Generic badge](https://img.shields.io/badge/nextjs-15.1.7-blue.svg)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+본 사이트는 Nexon OPEN API를 이용하여 제작되었습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[마비옥션](https://mabiauction.vercel.app/)
+[Nexon OPEN API](https://openapi.nexon.com/ko//)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 기능
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 경매장 매물 조회
+- 거래 내역 조회
+- 각 서버 뿔피리 내역 조회

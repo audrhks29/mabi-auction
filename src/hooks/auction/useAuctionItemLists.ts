@@ -1,10 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 
-interface ItemHistoryParams {
-  inputText: string | null;
-  detailCategory: string | null;
-}
-
 export const useAuctionItemLists = (
   queryKey: string,
   type: string,

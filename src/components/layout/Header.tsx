@@ -1,15 +1,10 @@
-import { cookies, type UnsafeUnwrappedCookies } from "next/headers";
-
 import UserAuth from "./UserAuth";
 import SideBar from "./SideBar";
 import MenuBar from "./MenuBar";
 import Logo from "./Logo";
 import ThemeController from "./ThemeController";
 
-export default async function Header() {
-  const cookieStore = await (cookies() as unknown as UnsafeUnwrappedCookies);
-  const accessToken = cookieStore.get("accessToken");
-
+export default function Header() {
   return (
     <header className="navbar fixed z-10 bg-base-200 block p-0">
       <div className="navbar bg-base-200">
@@ -25,7 +20,7 @@ export default async function Header() {
         {/* 로그인, 로그아웃 */}
         <div className="navbar-end gap-3">
           <ThemeController />
-          <UserAuth accessToken={accessToken} />
+          <UserAuth />
         </div>
       </div>
     </header>

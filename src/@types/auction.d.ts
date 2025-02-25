@@ -1,3 +1,5 @@
+import { ObjectId } from "mongodb";
+
 interface AuctionSearchFormTypes {
   inputText: string;
 }
@@ -6,14 +8,16 @@ interface ItemCategoryStateTypes {
   category: string | null;
   detailCategory: string | null;
 }
-
-interface ItemListsTypes {
-  item_name: string;
-  item_display_name: string;
-  item_count: number;
-  auction_price_per_unit: number;
-  date_auction_expire: string;
-  item_option: ItemOptionTypes[];
+declare global {
+  interface ItemListsTypes {
+    _id?: ObjectId;
+    item_name: string;
+    item_display_name: string;
+    item_count: number;
+    auction_price_per_unit: number;
+    date_auction_expire: string;
+    item_option: ItemOptionTypes[];
+  }
 }
 
 interface ItemOptionTypes {

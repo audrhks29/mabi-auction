@@ -2,20 +2,18 @@ import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 
-import useUserDataStore from "@/store/userData-store";
-
-import loginSubmit from "@/utils/auth/loginSubmit";
+import { useSubmitLogin } from "@/hooks/auth/useSubmitLogin";
 
 export default function LoginPopover() {
-  const { setUserData } = useUserDataStore();
   const { handleSubmit, register } = useForm<UserLoginTypes>();
 
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
   const route = useRouter();
 
-  const onSubmit = (data: UserLoginTypes) => loginSubmit(data, setUserData, route);
+  const { mutate } = useSubmitLogin(route);
+
+  const onSubmit = (data: UserLoginTypes) => mutate(data);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {

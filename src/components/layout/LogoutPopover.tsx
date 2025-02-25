@@ -1,31 +1,19 @@
-import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
-import useUserDataStore from "@/store/userData-store";
+import { useUserData } from "@/hooks/auth/useUserData";
+import { useLogout } from "@/hooks/auth/useSubmitLogout";
+import { useRouter } from "next/navigation";
 
 export default function LogoutPopover() {
-  const { userData, deleteUserData } = useUserDataStore();
+  const { data: userData } = useUserData();
   const { handleSubmit } = useForm();
+  const logoutMutation = useLogout();
   const route = useRouter();
 
-  const onSubmit = async () => {
-    try {
-      await fetch("/api/auth/logout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-
-      const confirm = window.confirm("로그아웃 하시겠습니까?");
-
-      if (confirm) {
-        deleteUserData();
-        route.push("/");
-      }
-    } catch (error) {
-      console.error("An unexpected error happened:", error);
-    }
+  const onSubmit = () => {
+    logoutMutation.mutateAsync();
+    // window.location.reload();
+    // route.push("/");
   };
 
   return (
@@ -37,7 +25,7 @@ export default function LogoutPopover() {
       </div>
 
       <button type="submit" className="btn btn-neutral m-1">
-        로그아웃
+        {logoutMutation.isPending ? "로그아웃 중..." : "로그아웃"}
       </button>
     </form>
   );

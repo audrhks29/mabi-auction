@@ -14,7 +14,7 @@ import Pagination from "@/components/shared/ui/Pagination";
 import { columns } from "@/utils/auction/tableColumns";
 
 import useItemOptionStore from "@/store/itemOption-store";
-import { useParams, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
@@ -83,8 +83,6 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
             </React.Fragment>
           ))}
         </tbody>
-
-        {/* {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)} */}
       </table>
 
       {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}

@@ -5,6 +5,7 @@ interface UserDataTypes {
   user_server: string;
   user_race: string;
   user_nickname: string;
+  my_auction?: any[];
 }
 
 interface UserLoginTypes {

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import Developing from "@/components/shared/Developing";
+import MyAuctionIndex from "@/components/auction/my-auction/Index";
 
 export const metadata: Metadata = {
   title: "내 경매",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function MyAuctionPage() {
   return (
     <main className="inner">
-      <Developing />
+      <MyAuctionIndex />
     </main>
   );
 }

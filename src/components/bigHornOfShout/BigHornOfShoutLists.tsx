@@ -1,10 +1,12 @@
 import React from "react";
 
-import { flexRender, Table } from "@tanstack/react-table";
+import { Table } from "@tanstack/react-table";
 
 import NonData from "../shared/NonData";
 import Loading from "../shared/Loading";
 import Pagination from "@/components/shared/ui/Pagination";
+import DataTableHead from "@/components/shared/ui/DataTableHead";
+import DataTableBody from "@/components/shared/ui/DataTableBody";
 
 export default function BigHornOfShoutLists({
   data,
@@ -17,47 +19,21 @@ export default function BigHornOfShoutLists({
 }) {
   return (
     <section className="flex flex-col gap-3">
-      <table className="table table-xs md:table-sm">
-        <thead className="text-center">
-          {table?.getHeaderGroups().map(headerGroup => (
-            <tr key={headerGroup.id}>
-              {headerGroup.headers.map(header => (
-                <th key={header.id} className="text-center">
-                  {flexRender(header.column.columnDef.header, header.getContext())}
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
+      {isFetching ? (
+        <Loading />
+      ) : data ? (
+        <>
+          <table className="table table-xs md:table-sm">
+            <DataTableHead table={table} />
 
-        {
-          <tbody>
-            {isFetching ? (
-              <tr className="border-b-0 h-[150px]">
-                <td colSpan={3}>
-                  <Loading />
-                </td>
-              </tr>
-            ) : data ? (
-              table?.getRowModel()?.rows?.map(row => (
-                <tr key={row.id} className="cursor-pointer hover:bg-base-200">
-                  {row.getVisibleCells().map(cell => (
-                    <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
-                  ))}
-                </tr>
-              ))
-            ) : (
-              <tr className="border-b-0 h-[150px]">
-                <td colSpan={3}>
-                  <NonData />
-                </td>
-              </tr>
-            )}
-          </tbody>
-        }
-      </table>
+            <DataTableBody table={table} />
+          </table>
 
-      {data && <Pagination table={table} />}
+          <Pagination table={table} />
+        </>
+      ) : (
+        <NonData />
+      )}
     </section>
   );
 }

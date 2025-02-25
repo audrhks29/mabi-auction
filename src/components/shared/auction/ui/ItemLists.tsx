@@ -1,20 +1,15 @@
 import React, { useMemo, useState } from "react";
-
-import {
-  flexRender,
-  getCoreRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  useReactTable,
-} from "@tanstack/react-table";
-
-import ItemDetail from "./ItemDetail";
-import Pagination from "@/components/shared/ui/Pagination";
+import { getCoreRowModel, getPaginationRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
+import { usePathname } from "next/navigation";
 
 import { columns } from "@/utils/auction/tableColumns";
 
+import ItemDetail from "@/components/shared/auction/ui/ItemDetail";
+import Pagination from "@/components/shared/ui/Pagination";
+import DataTableHead from "@/components/shared/ui/DataTableHead";
+import DataTableBody from "@/components/shared/ui/DataTableBody";
+
 import useItemOptionStore from "@/store/itemOption-store";
-import { useParams, usePathname } from "next/navigation";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
@@ -56,38 +51,13 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
           <col width="35%" />
         </colgroup>
 
-        <thead>
-          {table.getHeaderGroups().map(headerGroup => (
-            <tr key={headerGroup.id}>
-              {headerGroup.headers.map(header => (
-                <th key={header.id} className="text-center">
-                  {flexRender(header.column.columnDef.header, header.getContext())}
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
+        <DataTableHead table={table} />
 
-        <tbody className="text-center">
-          {table?.getRowModel()?.rows?.map(row => (
-            <React.Fragment key={row.id}>
-              <tr
-                className="cursor-pointer hover:bg-base-200"
-                onClick={() =>
-                  (document.getElementById(`itemDetail_modal_${row.id}`) as HTMLDialogElement).showModal()
-                }>
-                {row.getVisibleCells().map(cell => (
-                  <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
-                ))}
-              </tr>
-            </React.Fragment>
-          ))}
-        </tbody>
-
-        {/* {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)} */}
+        <DataTableBody table={table} />
       </table>
 
       {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}
+
       <Pagination table={table} />
     </section>
   );

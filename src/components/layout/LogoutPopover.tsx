@@ -8,12 +8,10 @@ export default function LogoutPopover() {
   const { data: userData } = useUserData();
   const { handleSubmit } = useForm();
   const logoutMutation = useLogout();
-  const route = useRouter();
 
-  const onSubmit = () => {
-    logoutMutation.mutateAsync();
-    // window.location.reload();
-    // route.push("/");
+  const onSubmit = async () => {
+    await logoutMutation.mutateAsync();
+    alert("로그아웃이 완료되었습니다.");
   };
 
   return (

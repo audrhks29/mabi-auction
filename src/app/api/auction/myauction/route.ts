@@ -19,6 +19,10 @@ export async function PUT(req: NextRequest) {
       return NextResponse.json({ error: "사용자를 찾을 수 없습니다." }, { status: 404 });
     }
 
+    if (user?.my_auction?.length >= 12) {
+      return NextResponse.json({ error: "더 이상 추가할 수 없습니다." }, { status: 404 });
+    }
+
     const isDuplicate = user.my_auction?.some(
       (item: any) =>
         item.item_display_name === newMyAuction.item_display_name &&

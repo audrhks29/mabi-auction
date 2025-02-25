@@ -7,9 +7,12 @@ import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
 import { handleAddData } from "@/utils/auction/my-auction/myAuctionHandler";
 
 import ItemDescription from "./ItemDescription";
+import { usePathname } from "next/navigation";
 
 export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
   const { data: userData, refetch } = useUserData();
+  const pathName = usePathname();
+  const isMyAuctionPage = pathName.includes("my-auction");
 
   return (
     <dialog id={`itemDetail_modal_${row.id}`} className="modal">
@@ -40,20 +43,22 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
 
         <ItemDescription options={row.original.item_option} />
 
-        <article className="flex justify-center gap-6">
-          <button className="btn" type="button" onClick={() => handleAddData(userData, row, refetch)}>
-            내 경매 등록
-          </button>
+        {!isMyAuctionPage && (
+          <article className="flex justify-center gap-6">
+            <button className="btn" type="button" onClick={() => handleAddData(userData, row, refetch)}>
+              내 경매 등록
+            </button>
 
-          <button
-            className="btn"
-            type="button"
-            onClick={() => {
-              alert("개발중인 기능입니다.");
-            }}>
-            즐겨찾기 등록
-          </button>
-        </article>
+            <button
+              className="btn"
+              type="button"
+              onClick={() => {
+                alert("개발중인 기능입니다.");
+              }}>
+              즐겨찾기 등록
+            </button>
+          </article>
+        )}
       </div>
 
       <form method="dialog" className="modal-backdrop">

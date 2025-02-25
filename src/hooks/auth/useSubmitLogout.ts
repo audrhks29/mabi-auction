@@ -12,6 +12,7 @@ export const useLogout = () => {
     },
     onSuccess: () => {
       queryClient.removeQueries({ queryKey: ["user"] });
+      window.location.reload();
     },
   });
 };

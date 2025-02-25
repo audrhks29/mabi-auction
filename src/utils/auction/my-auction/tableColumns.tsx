@@ -6,33 +6,33 @@ import convertToRemainingTime from "@/utils/convertToRemainingTime";
 import convertToKoreanUnits from "@/utils/convertToKoreanUnits";
 
 export const columns = (updatedAuctionData: boolean[]): ColumnDef<ItemListsTypes, any>[] => [
-  // {
-  //   accessorKey: "none",
-  //   header: ({ table }) => (
-  //     <input
-  //       type="checkbox"
-  //       onChange={e => table.toggleAllRowsSelected(e.target.checked)}
-  //       checked={table.getIsAllRowsSelected()}
-  //     />
-  //   ),
-  //   cell: ({ row }) => (
-  //     <input type="checkbox" checked={row.getIsSelected()} onChange={row.getToggleSelectedHandler()} />
-  //   ),
-  // },
-  // {
-  //   accessorKey: "none",
-  //   header: () => (
-  //     <div className="flex gap-3 align-middle justify-center items-center">
-  //       <span className="font-bold cursor-pointer">내 경매 현황</span>
-  //     </div>
-  //   ),
+  {
+    accessorKey: "none_1",
+    header: ({ table }) => (
+      <input
+        type="checkbox"
+        onChange={e => table.toggleAllRowsSelected(e.target.checked)}
+        checked={table.getIsAllRowsSelected()}
+      />
+    ),
+    cell: ({ row }) => (
+      <input type="checkbox" checked={row.getIsSelected()} onChange={row.getToggleSelectedHandler()} />
+    ),
+  },
+  {
+    accessorKey: "none_2",
+    header: () => (
+      <div className="flex gap-3 align-middle justify-center items-center">
+        <span className="font-bold cursor-pointer">내 경매 현황</span>
+      </div>
+    ),
 
-  //   cell: props => {
-  //     const currentPropsIndex = props.cell.row.index;
+    cell: props => {
+      const currentPropsIndex = props.cell.row.index;
 
-  //     return <span className="ml-2">{updatedAuctionData[currentPropsIndex] ? "판매중" : "판매완료/삭제"}</span>;
-  //   },
-  // },
+      return <span className="ml-2">{updatedAuctionData[currentPropsIndex] ? "판매중" : "판매완료/삭제"}</span>;
+    },
+  },
   {
     accessorKey: "item_display_name",
     header: ({ column }) => (

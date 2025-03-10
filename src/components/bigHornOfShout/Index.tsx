@@ -35,7 +35,7 @@ export default function BigHornOfShoutIndex({ params }: { params: { server: stri
   const encodedServerName = server(params);
 
   const { data, isFetching } = useQuery({
-    queryKey: [encodedServerName],
+    queryKey: [encodedServerName + "bighornofshout"],
     queryFn: async () => {
       if (encodedServerName !== undefined) {
         const response = await fetch(`/api/bighornofshout?server=${encodedServerName}`, {

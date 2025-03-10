@@ -1,4 +1,4 @@
-import BigHornOfShoutIndex from "@/components/bigHornOfShout/Index";
+import NpcShopIndex from "@/components/npc-shop/Index";
 
 export async function generateMetadata(props: { params: Promise<{ server: string }> }) {
   const params = await props.params;
@@ -10,14 +10,14 @@ export async function generateMetadata(props: { params: Promise<{ server: string
   };
 
   const serverName = serverMap[params.server] || "";
-  return { title: `${serverName}서버 뿔피리` };
+  return { title: `${serverName}서버 NPC 상점` };
 }
 
-export default async function BigHornOfShoutServerPage(props: { params: Promise<{ server: string }> }) {
+export default async function NpcShopPage(props: { params: Promise<{ server: string }> }) {
   const params = await props.params;
   return (
     <main className="inner">
-      <BigHornOfShoutIndex params={params} />
+      <NpcShopIndex params={params} />
     </main>
   );
 }

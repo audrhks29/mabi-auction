@@ -3,6 +3,7 @@ interface NpcTypes {
   date_shop_next_update: string;
   shop: ShopTypes[];
   shop_tab_count: number;
+  error?: { name: string };
 }
 
 interface NpcShopTypes {

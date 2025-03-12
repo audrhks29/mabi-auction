@@ -44,20 +44,11 @@ export default function ItemDetail({ row }: { row: Row<ItemListsTypes> }) {
         <ItemDescription options={row.original.item_option} />
 
         {!isMyAuctionPage && (
-          <article className="flex justify-center gap-6">
+          <div className="flex justify-end mt-3">
             <button className="btn" type="button" onClick={() => handleAddData(userData, row, refetch)}>
               내 경매 등록
             </button>
-
-            <button
-              className="btn"
-              type="button"
-              onClick={() => {
-                alert("개발중인 기능입니다.");
-              }}>
-              즐겨찾기 등록
-            </button>
-          </article>
+          </div>
         )}
       </div>
 

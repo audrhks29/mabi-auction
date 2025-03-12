@@ -1,12 +1,7 @@
 "use client";
 
-import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-
-import BigHornOfShoutLists from "@/components/bigHornOfShout/BigHornOfShoutLists";
-import SearchBox from "@/components/bigHornOfShout/SearchBox";
-
-import { columns } from "@/utils/bighornofshout/tableColumns";
 import {
   getCoreRowModel,
   getFilteredRowModel,
@@ -14,43 +9,19 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { useState } from "react";
+
+import BigHornOfShoutLists from "@/components/bigHornOfShout/BigHornOfShoutLists";
+import SearchBox from "@/components/bigHornOfShout/SearchBox";
+
+import { columns } from "@/utils/bighornofshout/tableColumns";
+import { serverMap } from "@/utils/serverMap";
+import { useBigHornOfShoutLists } from "@/hooks/bighornofshout/useBigHornOfShoutLists";
 
 export default function BigHornOfShoutIndex({ params }: { params: { server: string } }) {
   const [columnFilters, setColumnFilters] = useState<any>([]);
   const { handleSubmit, register, getValues, setValue } = useForm<HornSearchFormTypes>();
 
-  const serverMap: Record<string, string> = {
-    lute: "류트",
-    mandolin: "만돌린",
-    harp: "하프",
-    wolf: "울프",
-  };
-
-  function server(params: { server: string }): string {
-    const serverName = serverMap[params.server] || ""; // 기본값 처리
-    return encodeURI(serverName);
-  }
-
-  const encodedServerName = server(params);
-
-  const { data, isFetching } = useQuery({
-    queryKey: [encodedServerName + "bighornofshout"],
-    queryFn: async () => {
-      if (encodedServerName !== undefined) {
-        const response = await fetch(`/api/bighornofshout?server=${encodedServerName}`, {
-          method: "GET",
-        });
-        if (!response.ok) {
-          throw new Error("Failed to fetch item lists");
-        }
-        return response.json();
-      }
-    },
-    select: data => {
-      return data.horn_bugle_world_history;
-    },
-  });
+  const { data, isFetching } = useBigHornOfShoutLists(params);
 
   const table = useReactTable({
     data,

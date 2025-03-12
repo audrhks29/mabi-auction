@@ -1,5 +1,10 @@
+import { useParams } from "next/navigation";
+
 import npcLists from "@/assets/npc/npcLists.json";
-const channelLists = Array.from({ length: 15 }, (_, i) => i + 1);
+
+import { serverMap } from "@/utils/serverMap";
+
+type ParamsType = { server: string };
 
 export default function SelectOptions({
   setNpcName,
@@ -8,6 +13,12 @@ export default function SelectOptions({
   setNpcName: React.Dispatch<React.SetStateAction<string>>;
   setChannel: React.Dispatch<React.SetStateAction<string>>;
 }) {
+  const params = useParams<ParamsType>();
+  const serverName = serverMap[params.server] || "";
+
+  const serverLength = serverName === "류트" ? 41 : serverName === "하프" ? 24 : 15;
+
+  const channelLists = Array.from({ length: serverLength }, (_, i) => i + 1);
   return (
     <div className="flex gap-3">
       <SelectArea selectTitle="NPC" setStateFunction={setNpcName} optionLists={npcLists} />

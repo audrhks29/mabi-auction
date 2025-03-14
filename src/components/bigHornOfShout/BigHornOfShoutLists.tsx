@@ -1,12 +1,11 @@
 import React from "react";
-
 import { Table } from "@tanstack/react-table";
 
-import NonData from "../shared/NonData";
-import Loading from "../shared/Loading";
+import NonData from "@/components/shared/NonData";
 import Pagination from "@/components/shared/ui/Pagination";
 import DataTableHead from "@/components/shared/ui/DataTableHead";
 import DataTableBody from "@/components/shared/ui/DataTableBody";
+import TableSkeleton from "@/components/bigHornOfShout/TableSkeleton";
 
 export default function BigHornOfShoutLists({
   data,
@@ -18,22 +17,21 @@ export default function BigHornOfShoutLists({
   isFetching: boolean;
 }) {
   return (
-    <section className="flex flex-col gap-3">
-      {isFetching ? (
-        <Loading />
-      ) : data ? (
-        <>
-          <table className="table table-xs md:table-sm">
-            <DataTableHead table={table} />
+    <section className="flex flex-col gap-3 w-full">
+      <table className="table table-xs md:table-sm">
+        <colgroup>
+          <col width="20%" />
+          <col width="20%" />
+        </colgroup>
 
-            <DataTableBody table={table} />
-          </table>
+        <DataTableHead table={table} />
 
-          <Pagination table={table} />
-        </>
-      ) : (
-        <NonData />
-      )}
+        {isFetching && <TableSkeleton />}
+        {!isFetching && data && <DataTableBody table={table} />}
+        {!isFetching && !data && <NonData />}
+      </table>
+
+      {!isFetching && data && <Pagination table={table} />}
     </section>
   );
 }

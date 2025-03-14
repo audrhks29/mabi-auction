@@ -1,6 +1,6 @@
-import { flexRender, Table } from "@tanstack/react-table";
-import { usePathname } from "next/navigation";
 import React from "react";
+import { usePathname } from "next/navigation";
+import { flexRender, Table } from "@tanstack/react-table";
 
 type DataTableBodyProps = {
   table: Table<ItemListsTypes> | Table<HornListTypes>; // 정확한 타입을 명시

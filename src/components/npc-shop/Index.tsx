@@ -20,7 +20,7 @@ export default function NpcShopIndex({ params }: { params: { server: string } })
     setTabNumber(0);
   }, [npcName, channel]);
 
-  const { data, isFetching } = useNpcShopLists(params, npcName, channel);
+  const { data } = useNpcShopLists(params, npcName, channel);
 
   return (
     <section className="text-[12px] md:text-[14px]">
@@ -35,12 +35,13 @@ export default function NpcShopIndex({ params }: { params: { server: string } })
 
         <div className="divider m-0"></div>
 
-        {isFetching && <Loading />}
-
-        {data?.error?.name === "OPENAPI00009" && <div className="mt-3">API 서버에서 데이터를 갱신중입니다.</div>}
-        {data && data?.shop && !data.error && (
-          <TabMenuIndex data={data} tabNumber={tabNumber} setTabNumber={setTabNumber} />
-        )}
+        <TabMenuIndex
+          params={params}
+          npcName={npcName}
+          channel={channel}
+          tabNumber={tabNumber}
+          setTabNumber={setTabNumber}
+        />
       </div>
     </section>
   );

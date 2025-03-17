@@ -1,3 +1,5 @@
+"use client";
+
 import UserAuth from "./UserAuth";
 import SideBar from "./SideBar";
 import MenuBar from "./MenuBar";

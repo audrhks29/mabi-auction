@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "마비옥션",
   },
   description: "마비옥션에서 마비노기 경매장 아이템들과 뿔피리 내역을 검색해보세요.",
-  keywords: ["마비노기", "경매장", "뿔피리"],
+  keywords: ["마비노기", "마비노기 경매장", "마비노기 뿔피리", "마비노기 주머니 색", "마비노기 오픈퀘스트"],
   openGraph: {
     type: "website",
     url: "https://mabiauction.vercel.app/",
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     siteName: "마비옥션",
     images: [
       {
-        url: "/logo_light.png",
+        url: "/logo_default.png",
       },
     ],
   },
   metadataBase: new URL("https://mabiauction.vercel.app"),
-  creator: "마비옥션",
+  creator: "HP마비굿잡",
   icons: {
-    icon: "/logo_dark.png",
+    icon: "/logo_default.png",
   },
   verification: {
     google: "ZPrVlMyX2ZF_7nmMXyiH00jA7dezY2IkUz0Zh16CYpw",
@@ -48,11 +48,13 @@ const themeScript = `
   (function() {
     function getTheme() {
       const localTheme = localStorage.getItem("mabiAuction-theme");
+      console.log("자바스크립트 실행", localTheme);
       if (localTheme) return localTheme;
       return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
-    
+
     const theme = getTheme();
+    localStorage.setItem("mabiAuction-theme", theme);
     document.documentElement.setAttribute("data-theme", theme);
   })();
 `;

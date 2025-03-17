@@ -1,6 +1,5 @@
 <p align="center">
-    <img src="public/logo_dark.png" alt="마비옥션" width="100px">
-    <img src="public/logo_light.png" alt="마비옥션" width="100px">
+    <img src="public/logo_default.png" alt="마비옥션" width="100px">
 </p>
 
 # 마비옥션

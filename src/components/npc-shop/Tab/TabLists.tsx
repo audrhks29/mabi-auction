@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
+
 import NpcItemModal from "./NpcItemModal";
+
+import { useImageLoader } from "@/hooks/npcShop/useImageLoader";
 
 type PropsTypes = {
   data: NpcTypes;
@@ -8,9 +11,11 @@ type PropsTypes = {
 };
 
 export default function TabLists({ data, tabNumber }: PropsTypes) {
+  const { totalImages, allImagesLoaded, handleImageLoad, handleImageError } = useImageLoader(data, tabNumber);
+
   return (
-    <div className="w-full h-[500px] overflow-y-auto text-center bg-base-200">
-      <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 p-3">
+    <div className={`w-full h-[500px] overflow-y-auto text-center bg-base-200`}>
+      <ul className={`grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 p-3 $`}>
         {data?.shop?.map(
           (shop: NpcShopTypes, index: number) =>
             tabNumber === index &&
@@ -31,7 +36,11 @@ export default function TabLists({ data, tabNumber }: PropsTypes) {
                         fill
                         sizes="100%"
                         style={{ objectFit: "contain" }}
+                        className={`${!allImagesLoaded ? "opacity-0" : ""}`}
+                        onLoad={() => handleImageLoad(item.image_url)}
+                        onError={() => handleImageError(item.image_url)}
                       />
+                      {!allImagesLoaded && totalImages > 0 && <div className="skeleton w-[60px] h-[60px]"></div>}
                     </div>
                     <span>{item.item_display_name}</span>
                   </div>

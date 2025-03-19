@@ -1,16 +1,15 @@
 "use client";
 
-import { LoaderCircle } from "lucide-react";
 import { useEffect, useState } from "react";
+import { LoaderCircle } from "lucide-react";
 import { themeChange } from "theme-change";
+
 export default function ThemeController() {
   const [theme, setTheme] = useState<string | null>(null);
 
   useEffect(() => {
     themeChange(false);
-  }, []);
 
-  useEffect(() => {
     const currentTheme = document.documentElement.getAttribute("data-theme");
     setTheme(currentTheme);
 

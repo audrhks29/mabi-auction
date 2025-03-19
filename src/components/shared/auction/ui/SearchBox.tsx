@@ -1,14 +1,13 @@
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { UseFormHandleSubmit, UseFormRegister, UseFormSetValue } from "react-hook-form";
 
-import { useOutsideClickDropdownMenu } from "@/hooks/outsideClick/useOutsideClickDropdownMenu";
-
 import searchLists from "@/assets/auction/searchLists.json";
-
-import { useHandleKeyDown } from "@/hooks/handle/useHandleKeyDown";
 
 import ItemCategories from "./category/ItemCategories";
 import OptionModal from "./searchItemOption/OptionModal";
+
+import { useOutsideClickDropdownMenu } from "@/hooks/useOutsideClickDropdownMenu";
+import { useHandleKeyDown } from "@/hooks/auction/useHandleKeyDown";
 
 export default function SearchBox({
   data,

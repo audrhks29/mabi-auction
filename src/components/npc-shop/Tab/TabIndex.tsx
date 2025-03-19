@@ -1,8 +1,9 @@
-import { useNpcShopLists } from "@/hooks/npcShop/useNpcShopLists";
+import { LoaderCircle, RefreshCcw } from "lucide-react";
+
 import TabLists from "./TabLists";
 import TabMenu from "./TabMenu";
-import { LoaderCircle, LucideProps, RefreshCcw } from "lucide-react";
-import { ForwardRefExoticComponent, RefAttributes } from "react";
+
+import { useNpcShopLists } from "@/hooks/npcShop/useNpcShopLists";
 
 type PropsTypes = {
   params: { server: string };

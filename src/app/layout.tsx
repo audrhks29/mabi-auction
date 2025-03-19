@@ -48,7 +48,7 @@ const themeScript = `
   (function() {
     function getTheme() {
       const localTheme = localStorage.getItem("mabiAuction-theme");
-      console.log("자바스크립트 실행", localTheme);
+
       if (localTheme) return localTheme;
       return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }

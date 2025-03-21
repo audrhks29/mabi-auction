@@ -27,6 +27,9 @@ const config = {
         ".option-title": {
           "@apply text-[14px] absolute -top-3 left-2 bg-base-200 shadow-sm border font-bold px-2": "",
         },
+        ".quest-custom-border": {
+          "@apply rounded-lg border-neutral-content dark:border-opacity-50": "",
+        },
       });
     },
   ],

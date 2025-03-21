@@ -1,11 +1,11 @@
+import { usePathname } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 
-export const useAuctionItemLists = (
-  queryKey: string,
-  type: string,
-  inputText: string | null,
-  detailCategory: string | null,
-) => {
+export const useAuctionItemLists = (inputText: string | null, detailCategory: string | null) => {
+  const pathName = usePathname();
+  const queryKey = pathName.includes("auction/auction") ? "auction" : "history";
+  const type = pathName.includes("auction/auction") ? "auction" : "history";
+
   const { data, isFetching } = useQuery({
     queryKey: [queryKey, inputText || detailCategory || "NonData"],
     queryFn: async () => {

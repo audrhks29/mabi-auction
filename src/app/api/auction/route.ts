@@ -19,20 +19,25 @@ export async function GET(req: NextRequest) {
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
     const headers: HeadersInit = API_KEY ? { "x-nxopen-api-key": API_KEY } : {};
     let nextCursor: string | undefined = undefined;
-    const data = [];
+    const data: { auction_item: any[]; error?: any[] } = { auction_item: [] };
 
     try {
       do {
         const fetchUrl: string = nextCursor ? `${urlString}&cursor=${nextCursor}` : urlString;
-
         const res = await fetch(fetchUrl, { headers });
         const resData = await res.json();
-        data.push(...resData.auction_item);
+
+        if (resData.error) {
+          return NextResponse.json(resData);
+        }
+
+        data.auction_item.push(...resData.auction_item);
 
         nextCursor = resData.next_cursor;
       } while (nextCursor);
 
-      data.sort((a, b) => a.auction_price_per_unit - b.auction_price_per_unit);
+      data.auction_item.sort((a, b) => a.auction_price_per_unit - b.auction_price_per_unit);
+
       return NextResponse.json(data);
     } catch (error) {
       console.error("An unexpected error happened:", error);

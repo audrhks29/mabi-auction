@@ -7,9 +7,9 @@ import { useAuctionItemLists } from "@/hooks/auction/useAuctionItemLists";
 
 import ItemLists from "@/components/shared/auction/ui/ItemLists";
 import SearchBox from "@/components/shared/auction/ui/SearchBox";
-import NonData from "@/components/shared/NonData";
-import Loading from "@/components/shared/Loading";
+
 import SideBarCategory from "@/components/shared/auction/ui/category/SideBarCategory";
+import { ErrorData, FetchingData, NonData } from "../shared/DataState";
 
 export default function AuctionIndex() {
   const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
@@ -21,7 +21,10 @@ export default function AuctionIndex() {
   const inputText = getValues().inputText === "" ? null : getValues().inputText;
   const detailCategory = inputText ? null : category.detailCategory;
 
-  const { data, isFetching } = useAuctionItemLists("itemLists", "auction", inputText, detailCategory);
+  const { data, isFetching }: { data: AuctionTypes; isFetching: boolean } = useAuctionItemLists(
+    inputText,
+    detailCategory,
+  );
 
   return (
     <section>
@@ -29,7 +32,7 @@ export default function AuctionIndex() {
 
       <article>
         <SearchBox
-          data={data}
+          data={data?.auction_item}
           category={category}
           setCategory={setCategory}
           handleSubmit={handleSubmit}
@@ -41,11 +44,21 @@ export default function AuctionIndex() {
 
         <div className="lg:grid lg:grid-cols-[200px_auto] lg:gap-3">
           <SideBarCategory setCategory={setCategory} setValue={setValue} />
-          {!isFetching && data && data?.length > 0 && <ItemLists data={data} />}
-          {!isFetching && (data?.length === 0 || !data) && <NonData />}
-          {isFetching && <Loading />}
+          <DataContainer data={data} isFetching={isFetching} />
         </div>
       </article>
     </section>
   );
+}
+
+function DataContainer({ data, isFetching }: { data: AuctionTypes; isFetching: boolean }) {
+  if (isFetching) return <FetchingData cn="h-[460px] lg:h-auto" />;
+
+  if (data?.error?.name) {
+    return <ErrorData error={data.error} cn="h-[500px] lg:h-auto" />;
+  }
+
+  if (data?.auction_item?.length === 0 || !data) return <NonData cn="h-[500px] lg:h-auto" />;
+
+  return <ItemLists data={data?.auction_item} />;
 }

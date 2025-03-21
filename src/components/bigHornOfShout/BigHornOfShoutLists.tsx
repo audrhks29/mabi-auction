@@ -1,12 +1,11 @@
 import React, { ReactElement } from "react";
 import { Table } from "@tanstack/react-table";
 
-import NonData from "@/components/shared/NonData";
 import Pagination from "@/components/shared/ui/Pagination";
 import DataTableHead from "@/components/shared/ui/DataTableHead";
 import DataTableBody from "@/components/shared/ui/DataTableBody";
 import TableSkeleton from "@/components/bigHornOfShout/TableSkeleton";
-import { ErrorData } from "@/components/shared/DataState";
+import { ErrorData, NonData } from "@/components/shared/DataState";
 
 export default function BigHornOfShoutLists({
   data,
@@ -20,33 +19,28 @@ export default function BigHornOfShoutLists({
   // 데이터 패치중
   if (isFetching)
     return (
-      <ListContainer table={table} isFetching={isFetching} data={data}>
+      <BigHornOfShoutListsContainer table={table} isFetching={isFetching} data={data}>
         <TableSkeleton />
-      </ListContainer>
+      </BigHornOfShoutListsContainer>
     );
 
   // API Error
   if (data?.error?.name) {
-    return <ErrorData data={data} />;
+    return <ErrorData error={data.error} cn="h-[500px]" />;
   }
 
   // 데이터 없음
-  if (data.horn_bugle_world_history.length === 0)
-    return (
-      <ListContainer table={table} isFetching={isFetching} data={data}>
-        <NonData />
-      </ListContainer>
-    );
+  if (data.horn_bugle_world_history.length === 0) return <NonData cn="h-[500px]" />;
 
   // 데이터 패치 완료 및 데이터 있음
   return (
-    <ListContainer table={table} isFetching={isFetching} data={data}>
+    <BigHornOfShoutListsContainer table={table} isFetching={isFetching} data={data}>
       <DataTableBody table={table} />
-    </ListContainer>
+    </BigHornOfShoutListsContainer>
   );
 }
 
-function ListContainer({
+function BigHornOfShoutListsContainer({
   children,
   table,
   isFetching,

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import HistoryIndex from "@/components/auction/history/Index";
+import HistoryIndex from "@/components/auction/Index";
 
 export const metadata: Metadata = {
   title: "거래 내역",

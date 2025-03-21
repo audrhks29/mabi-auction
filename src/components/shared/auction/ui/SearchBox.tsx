@@ -7,7 +7,7 @@ import ItemCategories from "./category/ItemCategories";
 import OptionModal from "./searchItemOption/OptionModal";
 
 import { useOutsideClickDropdownMenu } from "@/hooks/useOutsideClickDropdownMenu";
-import { useHandleKeyDown } from "@/hooks/auction/useHandleKeyDown";
+import { useHandleKeyDown } from "@/hooks/auction/actions/useHandleKeyDown";
 
 export default function SearchBox({
   data,

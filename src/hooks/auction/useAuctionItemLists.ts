@@ -6,7 +6,7 @@ export const useAuctionItemLists = (
   inputText: string | null,
   detailCategory: string | null,
 ) => {
-  return useQuery({
+  const { data, isFetching } = useQuery({
     queryKey: [queryKey, inputText || detailCategory || "NonData"],
     queryFn: async () => {
       if (!inputText && !detailCategory) return null;
@@ -19,4 +19,6 @@ export const useAuctionItemLists = (
       }
     },
   });
+
+  return { data, isFetching };
 };

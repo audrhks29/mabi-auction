@@ -18,7 +18,7 @@ export const useBigHornOfShoutLists = (params: { server: string }) => {
       }
     },
     select: data => {
-      return data.horn_bugle_world_history;
+      return data;
     },
   });
 

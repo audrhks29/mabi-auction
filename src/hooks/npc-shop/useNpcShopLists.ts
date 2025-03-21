@@ -1,5 +1,6 @@
-import { encodeServer } from "@/utils/serverMap";
 import { useQuery } from "@tanstack/react-query";
+
+import { encodeServer } from "@/utils/serverMap";
 
 export const useNpcShopLists = (params: { server: string }, npcName: string, channel: string) => {
   const encodedServerName = encodeServer(params);
@@ -10,7 +11,7 @@ export const useNpcShopLists = (params: { server: string }, npcName: string, cha
     queryFn: async () => {
       if (encodedServerName !== undefined) {
         const response = await fetch(
-          `/api/npc?npc_name=${encodedNpcName}&server=${encodedServerName}&channel=${channel}`,
+          `/api/npc-shop?npc_name=${encodedNpcName}&server=${encodedServerName}&channel=${channel}`,
           {
             method: "GET",
           },

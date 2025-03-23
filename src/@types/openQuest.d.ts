@@ -31,17 +31,21 @@ interface QuestDetailTypes {
   liked: string;
   challenge_state: string;
   tags: string;
-  mission: {
-    description: string;
-    goal: string;
-    current: string;
-  }[];
-  hall_of_fame: {
-    rank: number;
-    server_name: string;
-    character_name: string;
-    complete_time: number;
-    like_count: number;
-    liked: string;
-  }[];
+  mission: MissionTypes[];
+  hall_of_fame: HallOfFameTypes[];
+}
+
+interface HallOfFameTypes {
+  rank: number;
+  server_name: string;
+  character_name: string;
+  complete_time: number;
+  like_count: number;
+  liked: string;
+}
+
+interface MissionTypes {
+  description: string;
+  goal: string;
+  current: string;
 }

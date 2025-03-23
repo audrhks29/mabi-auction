@@ -1,30 +1,33 @@
 "use client";
 
-import { useQuestDetail } from "@/hooks/open-quest/useQuestDetail";
-import Image from "next/image";
-import Tag from "./Tag";
-import { CircleUserIcon, Clock, Heart, User } from "lucide-react";
-import CreatorInfo from "./CreatorInfo";
 import { useState } from "react";
+import Image from "next/image";
+import { CircleUserIcon, Clock, Heart, User } from "lucide-react";
 
-export default function QuestDetailIndex({ params }: { params: { id: string } }) {
+import Tag from "./Tag";
+import CreatorInfo from "./CreatorInfo";
+import Rank from "./Rank";
+
+import { useQuestDetail } from "@/hooks/open-quest/useQuestDetail";
+import Mission from "./Mission";
+
+export default function Index({ params }: { params: { id: string } }) {
   const { data }: { data: QuestDetailTypes } = useQuestDetail(params.id);
   const match = data && data.image_url.match(/openquest\/([^/]+)$/);
-  console.log(data);
 
   if (data?.error?.name) {
     return <div>에러입니다.</div>;
   }
 
   return (
-    <section>
+    <section className="text-[12px] md:text-[14px]">
       <h3 className="text-[18px] text-center font-bold pb-6">OPEN QUEST</h3>
 
-      <div className="divider m-0 p-0 before:bg-neutral-content after:bg-neutral-content"></div>
+      <div className="divider m-0 p-0"></div>
 
       {data && !data.error && (
-        <div className="flex gap-3">
-          <div className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] flex flex-col gap-1">
+        <div className="flex gap-10">
+          <article className="hidden lg:w-[300px] lg:flex lg:flex-col lg:gap-1 lg:flex-shrink-0">
             <ImageContainer match={match} title={data.title} />
             <CountContainer challenger_count={data.challenger_count} like_count={data.like_count} />
 
@@ -32,18 +35,22 @@ export default function QuestDetailIndex({ params }: { params: { id: string } })
               <Clock />
               도전기간 {data.challenge_period}일
             </div>
-          </div>
+          </article>
 
-          <div className="flex flex-col gap-1">
-            <Tag tag={data.tags} />
-            <p className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] font-bold">
-              {data.title}
-            </p>
-            <div className="flex gap-1 items-center">
-              <CircleUserIcon />
-              <CreatorInfo name={data.creator_character_name} server={data.creator_server_name} />
-            </div>
-            <ul></ul>
+          <div className="flex flex-col gap-6 w-full">
+            <article className="flex flex-col gap-2">
+              <Tag tag={data.tags} />
+              <p className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] font-bold">
+                {data.title}
+              </p>
+              <div className="flex gap-1 items-center">
+                <CircleUserIcon />
+                <CreatorInfo name={data.creator_character_name} server={data.creator_server_name} />
+              </div>
+            </article>
+
+            <Mission mission={data?.mission} />
+            <Rank rank={data?.hall_of_fame} />
           </div>
         </div>
       )}

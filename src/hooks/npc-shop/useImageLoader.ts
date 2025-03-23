@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 
-export function useImageLoader(data: NpcTypes, tabNumber: number) {
+export function useImageLoader(data: any, tabNumber: number) {
   const [loadedImages, setLoadedImages] = useState<string[]>([]);
   const [failedImages, setFailedImages] = useState<string[]>([]);
-  const totalImages = data?.shop?.[tabNumber]?.item?.length || 0;
+  const totalImages = data?.[tabNumber]?.item?.length || data?.length || 0;
+  // const a = data?.find(item => item.image_url);
+  // if (!a) {
+  //   console.log(a);
+  // }
 
   useEffect(() => {
     setLoadedImages([]);

@@ -21,8 +21,8 @@ export function FetchingData({ cn }: { cn?: string }) {
 
 import { ServerCrash } from "lucide-react";
 
-export function NonData({ cn }: { cn?: string }) {
-  return <Container icon={<ServerCrash size={40} />} text="검색된 결과가 없습니다." cn={cn} />;
+export function NonData({ cn, text }: { cn?: string; text?: string }) {
+  return <Container icon={<ServerCrash size={40} />} text={text ? text : "검색된 결과가 없습니다."} cn={cn} />;
 }
 
 function Container({ icon, text, cn }: { icon: any; text: string; cn?: string }) {

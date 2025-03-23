@@ -1,0 +1,8 @@
+[
+  { "id": 1, "category": "ALL", "text": "전체" },
+  { "id": 2, "category": "CHALLENGE_COUNT", "text": "최다 도전 퀘스트" },
+  { "id": 3, "category": "LIKE_COUNT", "text": "최다 좋아요 퀘스트" },
+  { "id": 4, "category": "GM", "text": "마비노기 GM 제작 퀘스트" },
+  { "id": 5, "category": "NEWEST", "text": "신작 퀘스트" },
+  { "id": 6, "category": "GUILD", "text": "길드 퀘스트" }
+]

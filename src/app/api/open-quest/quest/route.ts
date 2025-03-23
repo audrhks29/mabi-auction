@@ -1,7 +1,10 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET() {
-  const urlString = `https://open.api.nexon.com/mabinogi/v1/openquest/quest?category=CHALLENGE_COUNT`;
+export async function GET(req: NextRequest) {
+  const searchParams = req.nextUrl.searchParams;
+  const category = searchParams.get("category");
+
+  const urlString = `https://open.api.nexon.com/mabinogi/v1/openquest/quest?category=${category}`;
 
   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 

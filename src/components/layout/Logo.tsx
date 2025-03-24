@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <Link href="/">
       <h1 className="flex items-center gap-3">
-        <Image width={40} height={40} alt="logo" src="/logo_default.png" />
+        <Image width={40} height={40} alt="logo" src="/logo_default.png" unoptimized />
         <span className="text-[20px] font-bold">마비옥션</span>
       </h1>
     </Link>

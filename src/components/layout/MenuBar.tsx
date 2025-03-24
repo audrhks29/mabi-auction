@@ -33,24 +33,30 @@ export default function MenuBar() {
 
   return (
     <ul className="menu menu-horizontal px-1">
-      {menuLists.map(menu => (
-        <li key={menu.id}>
-          <details
-            id={`side_bar_${menu.id}`}
-            ref={el => {
-              detailsRefs.current[menu.id] = el as HTMLDetailsElement;
-            }}>
-            <summary>{menu.text}</summary>
-            <ul className="p-2 w-[150px] bg-base-300">
-              {menu.sub_menu.map(subMenu => (
-                <li key={subMenu.id} onClick={() => handleSubMenuClick(menu.id)}>
-                  <Link href={subMenu.link}>{subMenu.sub_text}</Link>
-                </li>
-              ))}
-            </ul>
-          </details>
-        </li>
-      ))}
+      {menuLists.map(menu =>
+        menu.sub_menu ? (
+          <li key={menu.id}>
+            <details
+              id={`side_bar_${menu.id}`}
+              ref={el => {
+                detailsRefs.current[menu.id] = el as HTMLDetailsElement;
+              }}>
+              <summary>{menu.text}</summary>
+              <ul className="p-2 w-[150px] bg-base-300">
+                {menu.sub_menu.map(subMenu => (
+                  <li key={subMenu.id} onClick={() => handleSubMenuClick(menu.id)}>
+                    <Link href={subMenu.link}>{subMenu.sub_text}</Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </li>
+        ) : (
+          <li key={menu.id} onClick={() => handleSubMenuClick(menu.id)}>
+            <Link href={menu.link}>{menu.text}</Link>
+          </li>
+        ),
+      )}
     </ul>
   );
 }

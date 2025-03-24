@@ -7,7 +7,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: "https://mabiauction.vercel.app",
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
-      priority: 1,
+      priority: 0.9,
+    },
+    {
+      url: "https://mabiauction.vercel.app/open-quest",
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
     },
   ];
 
@@ -16,8 +22,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const dynamicAuctionUrls = dynamicAuctionName.map(url => ({
     url: `https://mabiauction.vercel.app/auction/${url}`,
     lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.9,
+    changeFrequency: "weekly" as const,
+    priority: 1,
   }));
 
   const dynamicUrlsName = ["bighornofshout", "npc-shop"];

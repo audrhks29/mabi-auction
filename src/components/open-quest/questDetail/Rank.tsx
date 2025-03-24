@@ -1,4 +1,4 @@
-import { NonData } from "@/components/shared/DataState";
+import { FetchingData, NonData } from "@/components/shared/DataState";
 
 export default function Rank({ rank }: { rank: HallOfFameTypes[] }) {
   return (
@@ -7,44 +7,49 @@ export default function Rank({ rank }: { rank: HallOfFameTypes[] }) {
 
       <div className="divider m-0 p-0 before:bg-primary after:bg-primary h-1"></div>
 
-      <div className="max-h-[500px] overflow-y-auto"></div>
-
-      {rank.length > 0 ? <Table rank={rank} /> : <NonData cn="h-[500px]" text="랭킹정보가 없습니다." />}
+      <Container rank={rank} />
     </article>
   );
 }
 
+function Container({ rank }: { rank: HallOfFameTypes[] }) {
+  if (!rank) return <FetchingData cn="h-[500px]" />;
+  if (rank.length === 0) return <NonData cn="h-[500px]" text="랭킹정보가 없습니다." />;
+  return <Table rank={rank} />;
+}
 function Table({ rank }: { rank: HallOfFameTypes[] }) {
   return (
-    <table className="table w-full text-center">
-      <colgroup>
-        <col />
-        <col />
-        <col />
-        <col />
-      </colgroup>
+    <div className="max-h-[500px] overflow-auto">
+      <table className="table w-full text-center">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+        </colgroup>
 
-      <thead className="h-11">
-        <tr>
-          <th>랭킹</th>
-          <th>닉네임</th>
-          <th>달성시간</th>
-          <th>좋아요</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        {rank.map((hall, index) => (
-          <tr key={index} className="h-9 hover:bg-base-200 cursor-pointer">
-            <td className="font-bold">{hall.rank}</td>
-            <td className="text-left font-bold">
-              [{hall.server_name}] {hall.character_name}
-            </td>
-            <td>{hall.complete_time} </td>
-            <td>{hall.like_count}</td>
+        <thead className="h-11">
+          <tr>
+            <th>랭킹</th>
+            <th>닉네임</th>
+            <th>달성시간</th>
+            <th>좋아요</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+
+        <tbody>
+          {rank.map((hall, index) => (
+            <tr key={index} className="h-9 hover:bg-base-200 cursor-pointer">
+              <td className="font-bold">{hall.rank}</td>
+              <td className="text-left font-bold">
+                [{hall.server_name}] {hall.character_name}
+              </td>
+              <td>{hall.complete_time} </td>
+              <td>{hall.like_count}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

@@ -12,11 +12,7 @@ export default function Quest() {
   return (
     <article>
       <Category category={category} setCategory={setCategory} />
-      {category === "ALL" ? (
-        <QuestByAll category={category} setCategory={setCategory} />
-      ) : (
-        <QuestByCategory category={category} />
-      )}
+      {category === "ALL" ? <QuestByAll setCategory={setCategory} /> : <QuestByCategory category={category} />}
     </article>
   );
 }

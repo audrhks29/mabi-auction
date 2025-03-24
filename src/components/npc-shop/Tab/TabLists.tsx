@@ -11,7 +11,7 @@ type PropsTypes = {
 };
 
 export default function TabLists({ data, tabNumber }: PropsTypes) {
-  const { totalImages, allImagesLoaded, handleImageLoad, handleImageError } = useImageLoader(data, tabNumber);
+  const { totalImages, allImagesLoaded, handleImageLoad, handleImageError } = useImageLoader(data.shop, tabNumber);
 
   return (
     <div className="w-full h-[500px] overflow-y-auto text-center bg-base-200">

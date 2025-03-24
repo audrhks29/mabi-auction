@@ -1,19 +1,19 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import { CircleUserIcon, Clock, Heart, User } from "lucide-react";
+import { Clock, Heart, User } from "lucide-react";
 
 import Tag from "./Tag";
 import CreatorInfo from "./CreatorInfo";
 import Rank from "./Rank";
+import Mission from "./Mission";
+import Title from "./Title";
 
 import { useQuestDetail } from "@/hooks/open-quest/useQuestDetail";
-import Mission from "./Mission";
 
 export default function Index({ params }: { params: { id: string } }) {
   const { data }: { data: QuestDetailTypes } = useQuestDetail(params.id);
-  const match = data && data.image_url.match(/openquest\/([^/]+)$/);
+  const match = data?.image_url?.match(/openquest\/([^/]+)$/);
 
   if (data?.error?.name) {
     return <div>에러입니다.</div>;
@@ -25,45 +25,38 @@ export default function Index({ params }: { params: { id: string } }) {
 
       <div className="divider m-0 p-0"></div>
 
-      {data && !data.error && (
-        <div className="flex gap-10">
-          <article className="hidden lg:w-[300px] lg:flex lg:flex-col lg:gap-1 lg:flex-shrink-0">
-            <ImageContainer match={match} title={data.title} />
-            <CountContainer challenger_count={data.challenger_count} like_count={data.like_count} />
+      <div className="flex gap-10">
+        <article className="hidden lg:w-[300px] lg:flex lg:flex-col lg:gap-1 lg:flex-shrink-0">
+          <ImageContainer match={match} title={data?.title} />
+          <CountContainer challenger_count={data?.challenger_count} like_count={data?.like_count} />
 
-            <div className="border-2 quest-custom-border p-3 flex gap-2 justify-center text-[12px] md:text-[14px] items-center font-bold">
-              <Clock />
-              도전기간 {data.challenge_period}일
-            </div>
+          <div className="border-2 quest-custom-border p-3 flex gap-2 justify-center text-[12px] md:text-[14px] items-center font-bold">
+            <Clock />
+            도전기간 {data?.challenge_period}일
+          </div>
+        </article>
+
+        <div className="flex flex-col gap-6 w-full">
+          <article className="flex flex-col gap-2">
+            <Tag tag={data?.tags} />
+
+            <Title title={data?.title} />
+
+            <CreatorInfo name={data?.creator_character_name} server={data?.creator_server_name} />
           </article>
 
-          <div className="flex flex-col gap-6 w-full">
-            <article className="flex flex-col gap-2">
-              <Tag tag={data.tags} />
-              <p className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] font-bold">
-                {data.title}
-              </p>
-              <div className="flex gap-1 items-center">
-                <CircleUserIcon />
-                <CreatorInfo name={data.creator_character_name} server={data.creator_server_name} />
-              </div>
-            </article>
-
-            <Mission mission={data?.mission} />
-            <Rank rank={data?.hall_of_fame} />
-          </div>
+          <Mission mission={data?.mission} />
+          <Rank rank={data?.hall_of_fame} />
         </div>
-      )}
+      </div>
     </section>
   );
 }
 
 function ImageContainer({ match, title }: { match: RegExpMatchArray | null; title: string }) {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
   return (
-    <div className="relative aspect-[9/6] overflow-hidden w-full">
-      {match && (
+    <div className="relative aspect-[9/6] overflow-hidden w-full rounded-lg">
+      {match && title ? (
         <Image
           src={`https://openquest-image.nexon.com/${match[1]}`}
           fill
@@ -72,10 +65,10 @@ function ImageContainer({ match, title }: { match: RegExpMatchArray | null; titl
           style={{ objectFit: "cover" }}
           alt={title}
           unoptimized
-          onLoad={() => setIsImageLoaded(true)}
         />
+      ) : (
+        <div className="skeleton rounded-lg aspect-[9/6]"></div>
       )}
-      {!isImageLoaded && <div className="skeleton w-full aspect-[9/6]"></div>}
     </div>
   );
 }
@@ -85,12 +78,12 @@ function CountContainer({ challenger_count, like_count }: { challenger_count: nu
     <div className="relative grid grid-cols-[1fr_1px_1fr]">
       <div className="p-3 flex gap-2 justify-center text-[12px] md:text-[14px] items-center">
         <User />
-        {challenger_count.toLocaleString()}
+        <span className={`${!challenger_count && "skeleton h-5 w-16"}`}>{challenger_count?.toLocaleString()}</span>
       </div>
       <div className="divider divider-horizontal p-0 m-0 after:bg-neutral-content before:bg-neutral-content py-3"></div>
       <div className="p-3 flex gap-2 justify-center text-[12px] md:text-[14px] items-center">
         <Heart />
-        {like_count.toLocaleString()}
+        <span className={`${!like_count && "skeleton h-5 w-16"}`}>{like_count?.toLocaleString()}</span>
       </div>
     </div>
   );

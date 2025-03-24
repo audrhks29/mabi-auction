@@ -5,20 +5,14 @@ import QuestLists from "./QuestLists";
 import categoryArray from "@/assets/open-quest/category.json";
 
 import { useAllQuestLists } from "@/hooks/open-quest/useAllQuestLists";
-export default function QuestByAll({
-  category,
-  setCategory,
-}: {
-  category: string;
-  setCategory: Dispatch<SetStateAction<string>>;
-}) {
+export default function QuestByAll({ setCategory }: { setCategory: Dispatch<SetStateAction<string>> }) {
   const { data } = useAllQuestLists();
 
   return (
     <>
-      {data?.map((arr, index) => {
+      {data.map((arr, index) => {
         const slicedData = arr.data?.quest?.slice(0, 5);
-        const matchCategory = categoryArray.find(item => item.id === index + 1);
+        const matchCategory = categoryArray.find(item => item.id === index + 2);
 
         return (
           <div key={index} className="py-5">
@@ -40,7 +34,7 @@ export default function QuestByAll({
 
             <div className="divider m-0 p-0 before:bg-primary after:bg-primary h-1"></div>
 
-            <QuestLists data={slicedData} category={category} />
+            <QuestLists data={slicedData} />
           </div>
         );
       })}

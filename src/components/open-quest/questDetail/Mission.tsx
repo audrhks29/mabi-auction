@@ -6,14 +6,21 @@ export default function Mission({ mission }: { mission: MissionTypes[] }) {
       <div className="divider m-0 p-0 before:bg-primary after:bg-primary"></div>
 
       <ul className="text-[14px] md:text-[16px] flex flex-col gap-3">
-        {mission?.map((item, index) => (
-          <li key={index} className="p-3 border rounded-lg border-neutral-content dark:border-opacity-50">
-            <span className="badge bg-neutral text-neutral-content rounded-md p-4 mr-3 font-bold">
-              MISSION {index + 1}
-            </span>
-            <span>{item.description}</span>
+        {mission ? (
+          mission?.map((item, index) => (
+            <li key={index} className="p-3 border rounded-lg border-neutral-content dark:border-opacity-50">
+              <span className="badge bg-neutral text-neutral-content rounded-md p-4 mr-3 font-bold">
+                MISSION {index + 1}
+              </span>
+              <span>{item.description}</span>
+            </li>
+          ))
+        ) : (
+          <li className="p-3 border rounded-lg border-neutral-content dark:border-opacity-50">
+            <span className="badge bg-neutral text-neutral-content rounded-md p-4 mr-3 font-bold">MISSION 1</span>
+            <span className="skeleton text-base-300 text-opacity-0">미션 내용을 설명하는 스켈레톤 구역입니다.</span>
           </li>
-        ))}
+        )}
       </ul>
     </article>
   );

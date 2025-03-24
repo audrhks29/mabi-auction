@@ -23,27 +23,40 @@ export default function SideBar() {
       <div className="drawer-side z-20">
         <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
         <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-          {menuLists.map(menu => (
-            <li key={menu.id}>
-              <details>
-                <summary>{menu.text}</summary>
-                <ul className="p-2">
-                  {menu.sub_menu.map(subMenu => (
-                    <li
-                      key={subMenu.id}
-                      onClick={() => {
-                        const drawerCheckbox = document.getElementById("my-drawer") as HTMLInputElement;
-                        if (drawerCheckbox) {
-                          drawerCheckbox.checked = false;
-                        }
-                      }}>
-                      <Link href={subMenu.link}>{subMenu.sub_text}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </details>
-            </li>
-          ))}
+          {menuLists.map(menu =>
+            menu.sub_menu ? (
+              <li key={menu.id}>
+                <details>
+                  <summary>{menu.text}</summary>
+                  <ul className="p-2">
+                    {menu.sub_menu.map(subMenu => (
+                      <li
+                        key={subMenu.id}
+                        onClick={() => {
+                          const drawerCheckbox = document.getElementById("my-drawer") as HTMLInputElement;
+                          if (drawerCheckbox) {
+                            drawerCheckbox.checked = false;
+                          }
+                        }}>
+                        <Link href={subMenu.link}>{subMenu.sub_text}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
+            ) : (
+              <li
+                key={menu.id}
+                onClick={() => {
+                  const drawerCheckbox = document.getElementById("my-drawer") as HTMLInputElement;
+                  if (drawerCheckbox) {
+                    drawerCheckbox.checked = false;
+                  }
+                }}>
+                <Link href={menu.link}>{menu.text}</Link>
+              </li>
+            ),
+          )}
         </ul>
       </div>
     </div>

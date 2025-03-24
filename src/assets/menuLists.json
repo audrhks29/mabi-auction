@@ -85,5 +85,11 @@
         "link": "/npc-shop/wolf"
       }
     ]
+  },
+  {
+    "id": 4,
+    "text": "오픈 퀘스트",
+    "english_text": "Open Quest",
+    "link": "/open-quest"
   }
 ]

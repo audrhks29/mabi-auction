@@ -6,7 +6,7 @@ import { serverMap } from "@/utils/serverMap";
 
 type ParamsType = { server: string };
 
-export default function SelectOptions({
+export default function Options({
   setNpcName,
   setChannel,
 }: {

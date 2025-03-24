@@ -1,6 +1,11 @@
 import { ObjectId } from "mongodb";
 
 declare global {
+  interface AuctionTypes {
+    error?: { name: string };
+    auction_item: ItemListsTypes[];
+  }
+
   interface ItemListsTypes {
     _id?: ObjectId;
     item_name: string;

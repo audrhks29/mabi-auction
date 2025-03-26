@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Inter as FontSans } from "next/font/google";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+
 import "./globals.css";
+
 import Providers from "@/utils/provider";
 import { cn } from "@/lib/utils";
+
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import GoogleAnalytics from "@/lib/GoogleAnalytics";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -67,12 +71,16 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <head>
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className={cn("bg-background font-sans antialiased", fontSans.variable)}>
         <Providers>
           <Header />
           <div id="wrap">{children}</div>
+
           <ReactQueryDevtools initialIsOpen={false} />
           <Footer />
         </Providers>

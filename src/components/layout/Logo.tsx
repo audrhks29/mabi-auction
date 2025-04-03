@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Logo({ cn, isMobile }: { cn?: string; isMobile: boolean }) {
+export default function Logo({ cn, isMobile }: { cn?: string; isMobile?: boolean }) {
   return (
     <Link href="/" className={isMobile ? cn : ""}>
       <h1 className="flex items-center gap-3">

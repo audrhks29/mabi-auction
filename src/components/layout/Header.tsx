@@ -3,15 +3,15 @@
 import dynamic from "next/dynamic";
 
 import UserAuth from "./UserAuth";
-
 import SideBar from "./SideBar";
 import MenuBar from "./MenuBar";
 import Logo from "./Logo";
-import { SidebarTrigger } from "../ui/sidebar";
-import { useIsMobile } from "@/hooks/use-mobile";
+
 const ModeToggle = dynamic(() => import("./ModeToggle"), {
   ssr: false,
 });
+
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function Header() {
   const isMobile = useIsMobile();

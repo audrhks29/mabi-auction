@@ -1,30 +1,14 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 import menuLists from "@/assets/menuLists.json";
 
-import { Drawer, DrawerContent, DrawerPortal, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
-import { Calendar, Home, Inbox, Menu, Search, Settings, X } from "lucide-react";
-
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarGroupLabel,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
-import { Button } from "../ui/button";
-import { useEffect, useState } from "react";
-import { Separator } from "../ui/separator";
-import { ScrollArea } from "../ui/scroll-area";
 import UserAuth from "./UserAuth";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 export default function SideBar({ isMobile }: { isMobile: boolean }) {
   const [isOpen, setIsOpen] = useState(false);

@@ -4,61 +4,93 @@ import Link from "next/link";
 
 import menuLists from "@/assets/menuLists.json";
 
-export default function SideBar() {
+import { Drawer, DrawerContent, DrawerPortal, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
+import { Calendar, Home, Inbox, Menu, Search, Settings, X } from "lucide-react";
+
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
+import { Button } from "../ui/button";
+import { useEffect, useState } from "react";
+import { Separator } from "../ui/separator";
+import { ScrollArea } from "../ui/scroll-area";
+import UserAuth from "./UserAuth";
+
+export default function SideBar({ isMobile }: { isMobile: boolean }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) document.body.style.overflow = "hidden";
+    else document.body.style.removeProperty("overflow");
+
+    return () => {
+      document.body.style.removeProperty("overflow");
+    };
+  }, [isOpen]);
+
   return (
-    <div className="drawer w-fit mr-3 lg:hidden">
-      <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content">
-        <label htmlFor="my-drawer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block h-6 w-6 stroke-current btn btn-square btn-ghost">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </label>
+    <div className="text-[14px]">
+      <div>
+        <Button className="button" variant="outline" onClick={() => setIsOpen(true)}>
+          <Menu />
+        </Button>
       </div>
 
-      <div className="drawer-side z-20">
-        <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-          {menuLists.map(menu =>
-            menu.sub_menu ? (
-              <li key={menu.id}>
-                <details>
-                  <summary>{menu.text}</summary>
-                  <ul className="p-2">
+      {isOpen && (
+        <aside className="absolute left-0 top-0 z-10 bg-sidebar w-screen h-screen animate-sidebar overflow-auto">
+          {/* 헤더 */}
+          <div className="h-16 flex items-center px-3 bg-secondary justify-between">
+            <div onClick={() => setIsOpen(false)} className="w-12 cursor-pointer">
+              <X />
+            </div>
+
+            {isMobile && <UserAuth />}
+          </div>
+
+          <Separator />
+
+          <div className="p-3 flex flex-col gap-3">
+            {menuLists.map(menu =>
+              menu.sub_menu ? (
+                <div key={menu.id}>
+                  <p className="py-3 font-bold text-sidebar-foreground/50">{menu.text}</p>
+                  <hr />
+                  <div className="px-3 flex flex-col gap-3 pt-3">
                     {menu.sub_menu.map(subMenu => (
-                      <li
+                      <Link
                         key={subMenu.id}
-                        onClick={() => {
-                          const drawerCheckbox = document.getElementById("my-drawer") as HTMLInputElement;
-                          if (drawerCheckbox) {
-                            drawerCheckbox.checked = false;
-                          }
-                        }}>
-                        <Link href={subMenu.link}>{subMenu.sub_text}</Link>
-                      </li>
+                        href={subMenu.link}
+                        onClick={() => setIsOpen(false)}
+                        className="hover:underline">
+                        {subMenu.sub_text}
+                      </Link>
                     ))}
-                  </ul>
-                </details>
-              </li>
-            ) : (
-              <li
-                key={menu.id}
-                onClick={() => {
-                  const drawerCheckbox = document.getElementById("my-drawer") as HTMLInputElement;
-                  if (drawerCheckbox) {
-                    drawerCheckbox.checked = false;
-                  }
-                }}>
-                <Link href={menu.link}>{menu.text}</Link>
-              </li>
-            ),
-          )}
-        </ul>
-      </div>
+                  </div>
+                </div>
+              ) : (
+                <div key={menu.id}>
+                  <Link
+                    href={menu.link}
+                    onClick={() => setIsOpen(false)}
+                    className="font-bold text-sidebar-foreground/50 hover:underline">
+                    {menu.text}
+                  </Link>
+                </div>
+              ),
+            )}
+          </div>
+        </aside>
+      )}
     </div>
   );
 }

@@ -42,7 +42,7 @@ export default function AuctionIndex() {
 
         <div className="divider m-0"></div>
 
-        <div className="lg:grid lg:grid-cols-[200px_auto] lg:gap-3">
+        <div className="lg:grid lg:grid-cols-[200px_auto] lg:gap-3 cos">
           <SideBarCategory setCategory={setCategory} setValue={setValue} />
           <DataContainer data={data} isFetching={isFetching} />
         </div>

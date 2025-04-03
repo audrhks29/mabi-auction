@@ -1,29 +1,36 @@
 "use client";
 
+import dynamic from "next/dynamic";
+
 import UserAuth from "./UserAuth";
+
 import SideBar from "./SideBar";
 import MenuBar from "./MenuBar";
 import Logo from "./Logo";
-import ThemeController from "./ThemeController";
+import { SidebarTrigger } from "../ui/sidebar";
+import { useIsMobile } from "@/hooks/use-mobile";
+const ModeToggle = dynamic(() => import("./ModeToggle"), {
+  ssr: false,
+});
 
 export default function Header() {
+  const isMobile = useIsMobile();
+
   return (
-    <header className="navbar fixed z-10 bg-base-200 block p-0">
-      <div className="navbar bg-base-200">
-        <div className="navbar-start">
-          <SideBar />
-          <Logo />
-        </div>
+    <header className="fixed z-10 px-3 flex w-full items-center justify-between h-16 bg-secondary">
+      <div className="flex gap-3 items-center">
+        {isMobile && <SideBar isMobile={isMobile} />}
+        <Logo cn="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform" isMobile={isMobile} />
+      </div>
 
-        <div className="navbar-center hidden lg:flex">
-          <MenuBar />
-        </div>
+      <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform md:block">
+        <MenuBar />
+      </div>
 
-        {/* 로그인, 로그아웃 */}
-        <div className="navbar-end gap-3">
-          <ThemeController />
-          <UserAuth />
-        </div>
+      {/* 로그인, 로그아웃 */}
+      <div className="flex gap-3">
+        <ModeToggle />
+        {!isMobile && <UserAuth />}
       </div>
     </header>
   );

@@ -1,62 +1,49 @@
 "use client";
 
+import React, { useRef } from "react";
 import Link from "next/link";
 
 import menuLists from "@/assets/menuLists.json";
-import { useEffect, useRef } from "react";
+
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 export default function MenuBar() {
-  const detailsRefs = useRef<{ [key: number]: HTMLDetailsElement | null }>({});
-
-  const handleSubMenuClick = (menuId: number) => {
-    const currentRef = detailsRefs.current[menuId];
-    if (currentRef) {
-      currentRef.open = false;
-    }
-  };
-
-  // 영역 밖 클릭시 메인메뉴 닫기
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      Object.values(detailsRefs.current).forEach(ref => {
-        if (ref && ref.open && !ref.contains(event.target as Node)) {
-          ref.open = false;
-        }
-      });
-    };
-
-    document.addEventListener("click", handleClickOutside);
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
-
   return (
-    <ul className="menu menu-horizontal px-1">
-      {menuLists.map(menu =>
-        menu.sub_menu ? (
-          <li key={menu.id}>
-            <details
-              id={`side_bar_${menu.id}`}
-              ref={el => {
-                detailsRefs.current[menu.id] = el as HTMLDetailsElement;
-              }}>
-              <summary>{menu.text}</summary>
-              <ul className="p-2 w-[150px] bg-base-300">
-                {menu.sub_menu.map(subMenu => (
-                  <li key={subMenu.id} onClick={() => handleSubMenuClick(menu.id)}>
-                    <Link href={subMenu.link}>{subMenu.sub_text}</Link>
-                  </li>
-                ))}
-              </ul>
-            </details>
-          </li>
-        ) : (
-          <li key={menu.id} onClick={() => handleSubMenuClick(menu.id)}>
-            <Link href={menu.link}>{menu.text}</Link>
-          </li>
-        ),
-      )}
-    </ul>
+    <NavigationMenu>
+      <NavigationMenuList>
+        {menuLists.map(menu =>
+          menu.sub_menu ? (
+            <NavigationMenuItem key={menu.id}>
+              <NavigationMenuTrigger className="cursor-pointer bg-secondary">{menu.text}</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="w-[100px] absolute top-11 left-0 bg-popover rounded-md border shadow p-1">
+                  {menu.sub_menu.map(subMenu => (
+                    <li key={subMenu.id} className="w-full">
+                      <NavigationMenuLink href={subMenu.link} className="w-full block">
+                        {subMenu.sub_text}
+                      </NavigationMenuLink>
+                    </li>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          ) : (
+            <NavigationMenuItem key={menu.id} className="hover:underline">
+              <Link href="/open-quest" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>{menu.text}</NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          ),
+        )}
+      </NavigationMenuList>
+    </NavigationMenu>
   );
 }

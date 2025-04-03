@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-
 import { useQueries } from "@tanstack/react-query";
 
 import {
@@ -22,6 +21,7 @@ import NeedLogin from "@/components/shared/NeedLogin";
 import Loading from "@/components/shared/Loading";
 
 import { useUserData } from "@/hooks/auth/useUserData";
+import { Table } from "@/components/ui/table";
 
 export default function MyAuctionIndex() {
   const [sorting, setSorting] = useState<SortingState>([]);
@@ -74,7 +74,7 @@ export default function MyAuctionIndex() {
 
       {userData && !isFetching && (
         <>
-          <table className="table table-xs md:table-sm">
+          <Table>
             <colgroup>
               <col />
               <col width="10%" />
@@ -87,7 +87,7 @@ export default function MyAuctionIndex() {
             <DataTableHead table={table} />
 
             <DataTableBody table={table} />
-          </table>
+          </Table>
 
           {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}
 

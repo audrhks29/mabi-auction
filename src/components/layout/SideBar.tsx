@@ -44,34 +44,23 @@ export default function SideBar({ isMobile }: { isMobile: boolean }) {
           <Separator />
 
           <div className="p-3 flex flex-col gap-3">
-            {menuLists.map(menu =>
-              menu.sub_menu ? (
-                <div key={menu.id}>
-                  <p className="py-3 font-bold text-sidebar-foreground/50">{menu.text}</p>
-                  <hr />
-                  <div className="px-3 flex flex-col gap-3 pt-3">
-                    {menu.sub_menu.map(subMenu => (
-                      <Link
-                        key={subMenu.id}
-                        href={subMenu.link}
-                        onClick={() => setIsOpen(false)}
-                        className="hover:underline">
-                        {subMenu.sub_text}
-                      </Link>
-                    ))}
-                  </div>
+            {menuLists.map(menu => (
+              <div key={menu.id}>
+                <p className="py-3 font-bold text-sidebar-foreground/50">{menu.text}</p>
+                <hr />
+                <div className="px-3 flex flex-col gap-3 pt-3">
+                  {menu.sub_menu.map(subMenu => (
+                    <Link
+                      key={subMenu.id}
+                      href={subMenu.link}
+                      onClick={() => setIsOpen(false)}
+                      className="hover:underline">
+                      {subMenu.sub_text}
+                    </Link>
+                  ))}
                 </div>
-              ) : (
-                <div key={menu.id}>
-                  <Link
-                    href={menu.link}
-                    onClick={() => setIsOpen(false)}
-                    className="font-bold text-sidebar-foreground/50 hover:underline">
-                    {menu.text}
-                  </Link>
-                </div>
-              ),
-            )}
+              </div>
+            ))}
           </div>
         </aside>
       )}

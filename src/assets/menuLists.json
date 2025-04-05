@@ -61,25 +61,25 @@
     "english_text": "NPC Shop",
     "sub_menu": [
       {
-        "id": 21,
+        "id": 31,
         "sub_text": "류트",
         "english_sub_text": "Lute",
         "link": "/npc-shop/lute"
       },
       {
-        "id": 22,
+        "id": 32,
         "sub_text": "만돌린",
         "english_sub_text": "Mandolin",
         "link": "/npc-shop/mandolin"
       },
       {
-        "id": 23,
+        "id": 33,
         "sub_text": "하프",
         "english_sub_text": "Harp",
         "link": "/npc-shop/harp"
       },
       {
-        "id": 24,
+        "id": 34,
         "sub_text": "울프",
         "english_sub_text": "Wolf",
         "link": "/npc-shop/wolf"
@@ -90,6 +90,13 @@
     "id": 4,
     "text": "오픈 퀘스트",
     "english_text": "Open Quest",
-    "link": "/open-quest"
+    "sub_menu": [
+      {
+        "id": 41,
+        "sub_text": "오픈 퀘스트",
+        "english_sub_text": "Open Quest",
+        "link": "/open-quest"
+      }
+    ]
   }
 ]

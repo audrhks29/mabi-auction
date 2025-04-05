@@ -17,17 +17,14 @@ export default function Footer() {
             <div key={menu.id} className="border-t ">
               <p className="text-card-foreground/50 py-2 font-bold">{menu.english_text}</p>
               <div className="flex flex-col gap-1">
-                {menu.sub_menu ? (
-                  menu.sub_menu.map(subMenu => (
-                    <Link key={subMenu.id + index} href={subMenu.link} className="">
-                      {subMenu.english_sub_text}
-                    </Link>
-                  ))
-                ) : (
-                  <Link key={menu.id + index} href={menu.link} className="">
-                    {menu.english_text}
+                {menu.sub_menu.map(subMenu => (
+                  <Link
+                    key={subMenu.id + index}
+                    href={subMenu.link}
+                    className="hover:underline hover:underline-offset-4">
+                    {subMenu.english_sub_text}
                   </Link>
-                )}
+                ))}
               </div>
             </div>
           ))}

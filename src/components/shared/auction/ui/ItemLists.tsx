@@ -4,12 +4,14 @@ import { usePathname } from "next/navigation";
 
 import { columns } from "@/utils/auction/tableColumns";
 
-import ItemDetail from "@/components/shared/auction/ui/ItemDetail";
-import Pagination from "@/components/shared/ui/Pagination";
+import Paging from "@/components/shared/ui/Paging";
 import DataTableHead from "@/components/shared/ui/DataTableHead";
 import DataTableBody from "@/components/shared/ui/DataTableBody";
 
 import useItemOptionStore from "@/store/itemOption-store";
+
+import { Table } from "@/components/ui/table";
+import { Card, CardContent } from "@/components/ui/card";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
@@ -42,23 +44,23 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
   });
 
   return (
-    <section className="flex flex-col justify-between">
-      <table className="table table-xs md:table-sm">
-        <colgroup>
-          <col width="35%" />
-          <col width="20%" />
-          <col />
-          <col width="35%" />
-        </colgroup>
+    <Card>
+      <CardContent className="flex flex-col justify-between h-full">
+        <Table className="w-full">
+          <colgroup>
+            <col width="35%" />
+            <col width="20%" />
+            <col />
+            <col width="35%" />
+          </colgroup>
 
-        <DataTableHead table={table} />
+          <DataTableHead table={table} />
 
-        <DataTableBody table={table} />
-      </table>
+          <DataTableBody table={table} />
+        </Table>
 
-      {table?.getRowModel()?.rows?.map(row => <ItemDetail row={row} key={row.id} />)}
-
-      <Pagination table={table} />
-    </section>
+        <Paging table={table} />
+      </CardContent>
+    </Card>
   );
 }

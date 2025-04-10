@@ -40,7 +40,7 @@ export default function ModeToggle() {
       <Drawer open={open} onOpenChange={setOpen}>
         <DrawerTrigger asChild>
           <Button type="button" variant="outline" className="cursor-pointer">
-            {theme === "light" ? <Sun /> : <Moon />}{" "}
+            {theme === "light" ? <Sun /> : <Moon />}
           </Button>
         </DrawerTrigger>
 

@@ -1,11 +1,17 @@
+import { useEffect, useState } from "react";
 import { useFieldArray, useForm } from "react-hook-form";
-
-import OptionIndex from "./optionTypes/OptionIndex";
 
 import useItemOptionStore from "@/store/itemOption-store";
 
 import itemOptionLists from "@/assets/auction/itemOptionLists.json";
-import { useEffect, useState } from "react";
+
+import OptionIndex from "./optionTypes/OptionIndex";
+
+import { DialogClose, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 type searchOptionType = {
   name: string;
@@ -30,7 +36,7 @@ export default function OptionModal({ data, category }: { data: any; category: I
     setSearchableOptions(newSearchableOptions);
   }, [category]);
 
-  const { register, control, handleSubmit, setValue, watch, reset } = useForm<SearchOptionFormTypes>({
+  const { control, handleSubmit, setValue, watch, reset } = useForm<SearchOptionFormTypes>({
     defaultValues: {
       options: [{ option_type: null, calcFunc: undefined }],
     },
@@ -47,6 +53,7 @@ export default function OptionModal({ data, category }: { data: any; category: I
   }));
 
   const onSubmit = (value: SearchOptionFormTypes) => {
+    setIsFilter(true);
     setSelectedItemOptions(value.options);
   };
 
@@ -57,100 +64,80 @@ export default function OptionModal({ data, category }: { data: any; category: I
   }, [data, reset, setSelectedItemOptions]);
 
   return (
-    <>
-      <label
-        htmlFor="search_option_modal"
-        className="btn btn-neutral h-10 min-h-10 text-[12px] md:text-[14px]"
-        onClick={e => {
-          if (data?.length === 0 || data === undefined) {
-            alert("데이터를 검색하신 후 실행해주세요.");
-            e.preventDefault();
-          }
-        }}>
-        옵션 선택
-      </label>
+    <DialogContent className="w-5/6">
+      <DialogHeader>
+        <DialogTitle className="text-center">옵션검색</DialogTitle>
+        <DialogDescription></DialogDescription>
+      </DialogHeader>
 
-      <input type="checkbox" id="search_option_modal" className="modal-toggle" />
-
-      <form className="modal" role="dialog" onSubmit={handleSubmit(onSubmit)}>
-        <div className="modal-box bg-base-200">
-          <h3 className="text-lg font-bold text-center mb-3">옵션검색</h3>
-
-          <div className="divider m-0 p-0"></div>
-
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="grid gap-3">
           {fields.map((field, index) => {
             const currentOptionType = watch(`options.${index}.option_type`);
             const selectedOptions = watch("options").map(opt => opt.option_type);
 
             return (
-              <div key={field.id} className="border border-base-100 rounded-xl p-3 flex flex-col gap-3">
-                <div className="flex gap-3">
-                  <label className="label w-16">옵션</label>
+              <div key={field.id} className="grid gap-3">
+                <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+                  <Label>옵션</Label>
 
-                  <select className="select w-full" {...register(`options.${index}.option_type`)} required>
-                    <option value="">옵션 타입 선택</option>
+                  <Select onValueChange={value => setValue(`options.${index}.option_type`, value)}>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="옵션 타입 선택" />
+                    </SelectTrigger>
 
-                    {searchableOptions
-                      .filter(
-                        optionList =>
-                          !selectedOptions.includes(optionList.name) || optionList.name === currentOptionType,
-                      )
-                      .map(optionList => (
-                        <option key={optionList.name} value={optionList.name}>
-                          {optionList.displayName ? optionList.displayName : optionList.name}
-                        </option>
-                      ))}
-                  </select>
+                    <SelectContent>
+                      {searchableOptions
+                        .filter(
+                          optionList =>
+                            !selectedOptions.includes(optionList.name) || optionList.name === currentOptionType,
+                        )
+                        .map(optionList => (
+                          <SelectItem key={optionList.name} value={optionList.name}>
+                            {optionList.displayName ? optionList.displayName : optionList.name}
+                          </SelectItem>
+                        ))}
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 {currentOptionType && (
                   <OptionIndex currentOptionType={currentOptionType} setValue={setValue} index={index} />
                 )}
 
-                <button type="button" className="btn btn-primary" onClick={() => remove(index)}>
+                <Button type="button" onClick={() => remove(index)}>
                   옵션 삭제
-                </button>
+                </Button>
               </div>
             );
           })}
 
-          <div className="divider m-0 p-0"></div>
+          <Separator />
 
-          <div className="modal-action">
-            <label htmlFor="search_option_modal" className="btn btn-neutral absolute top-4 right-6">
-              닫기
-            </label>
+          <div className="ml-auto flex gap-3">
+            <DialogClose asChild>
+              <Button type="button" className="absolute top-4 right-6">
+                닫기
+              </Button>
+            </DialogClose>
 
-            <button
+            <Button
               type="button"
-              className="btn btn-primary"
               onClick={() => {
                 setIsFilter(false);
                 reset();
               }}>
               초기화
-            </button>
+            </Button>
 
-            <button
-              type="button"
-              className="btn btn-primary"
-              onClick={() => append({ option_type: "", calcFunc: undefined })}>
+            <Button type="button" onClick={() => append({ option_type: "", calcFunc: undefined })}>
               옵션 추가
-            </button>
+            </Button>
 
-            <button
-              type="submit"
-              onClick={() => {
-                setIsFilter(true);
-                const modalCheckbox = document.getElementById("search_option_modal") as HTMLInputElement;
-                if (modalCheckbox) modalCheckbox.checked = false;
-              }}
-              className="btn btn-primary">
-              확인
-            </button>
+            <Button type="submit">확인</Button>
           </div>
         </div>
       </form>
-    </>
+    </DialogContent>
   );
 }

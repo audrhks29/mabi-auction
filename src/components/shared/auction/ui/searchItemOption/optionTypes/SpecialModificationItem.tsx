@@ -1,20 +1,19 @@
 import { useState } from "react";
+
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 export default function SpecialModificationItem({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [searchSubType, setSearchSubtype] = useState<string | "">("");
   const [searchOptionValue, setSearchOptionValue] = useState<string | "">("");
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
-    type: "search_sub_type" | "search_option_value",
-  ) => {
+  const handleChange = (value: string, type: "search_sub_type" | "search_option_value") => {
     if (type === "search_sub_type") {
-      const newSearchSubType = e.target.value;
-      setSearchSubtype(newSearchSubType);
-      handleSetValue(newSearchSubType, searchOptionValue);
+      setSearchSubtype(value);
+      handleSetValue(value, searchOptionValue);
     } else {
-      const newSearchOptionValue = e.target.value;
-      setSearchOptionValue(newSearchOptionValue);
-      handleSetValue(searchSubType, newSearchOptionValue);
+      setSearchOptionValue(value);
+      handleSetValue(searchSubType, value);
     }
   };
 
@@ -27,30 +26,42 @@ export default function SpecialModificationItem({ currentOptionType, index, setV
 
   return (
     <>
-      <div className="flex gap-3">
-        <label className="label w-16">강화</label>
+      <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+        <Label>강화</Label>
 
-        <select className="select w-full" onChange={e => handleChange(e, "search_sub_type")} required>
-          <option value="">없음</option>
-          <option value="R">R 강화</option>
-          <option value="S">S 강화</option>
-        </select>
+        <Select onValueChange={value => handleChange(value, "search_sub_type")} required>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="없음" />
+          </SelectTrigger>
+
+          <SelectContent>
+            <SelectItem value="">없음</SelectItem>
+            <SelectItem value="R">R 강화</SelectItem>
+            <SelectItem value="S">S 강화</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
 
       {searchSubType !== "" && (
-        <div className="flex gap-3">
-          <label className="label w-16">단계</label>
+        <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+          <Label>단계</Label>
 
-          <select className="select w-full" onChange={e => handleChange(e, "search_option_value")} required>
-            <option value="">없음</option>
-            <option value="1">업그레이드 1단계</option>
-            <option value="2">업그레이드 2단계</option>
-            <option value="3">업그레이드 3단계</option>
-            <option value="4">업그레이드 4단계</option>
-            <option value="5">업그레이드 5단계</option>
-            <option value="6">업그레이드 6단계</option>
-            <option value="7">업그레이드 7단계</option>
-          </select>
+          <Select onValueChange={value => handleChange(value, "search_option_value")} required>
+            <SelectTrigger className="w-full">
+              <SelectValue placeholder="없음" />
+            </SelectTrigger>
+
+            <SelectContent>
+              <SelectItem value="">없음</SelectItem>
+              <SelectItem value="1">업그레이드 1단계</SelectItem>
+              <SelectItem value="2">업그레이드 2단계</SelectItem>
+              <SelectItem value="3">업그레이드 3단계</SelectItem>
+              <SelectItem value="4">업그레이드 4단계</SelectItem>
+              <SelectItem value="5">업그레이드 5단계</SelectItem>
+              <SelectItem value="6">업그레이드 6단계</SelectItem>
+              <SelectItem value="7">업그레이드 7단계</SelectItem>
+            </SelectContent>
+          </Select>
         </div>
       )}
     </>

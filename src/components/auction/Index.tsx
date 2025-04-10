@@ -7,9 +7,10 @@ import { useAuctionItemLists } from "@/hooks/auction/useAuctionItemLists";
 
 import ItemLists from "@/components/shared/auction/ui/ItemLists";
 import SearchBox from "@/components/shared/auction/ui/SearchBox";
+import { ErrorData, FetchingData, NonData } from "@/components/shared/DataState";
 
 import SideBarCategory from "@/components/shared/auction/ui/category/SideBarCategory";
-import { ErrorData, FetchingData, NonData } from "../shared/DataState";
+import { Separator } from "@/components/ui/separator";
 
 export default function AuctionIndex() {
   const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
@@ -28,9 +29,9 @@ export default function AuctionIndex() {
 
   return (
     <section>
-      <h3 className="text-[18px] text-center font-bold pb-6">경매장</h3>
+      <h3 className="text-[18px] font-bold pb-6">경매장</h3>
 
-      <article>
+      <article className="grid gap-3">
         <SearchBox
           data={data?.auction_item}
           category={category}
@@ -40,10 +41,9 @@ export default function AuctionIndex() {
           setValue={setValue}
         />
 
-        <div className="divider m-0"></div>
-
-        <div className="lg:grid lg:grid-cols-[200px_auto] lg:gap-3 cos">
+        <div className="md:grid md:grid-cols-[200px_1fr] md:gap-3">
           <SideBarCategory setCategory={setCategory} setValue={setValue} />
+
           <DataContainer data={data} isFetching={isFetching} />
         </div>
       </article>

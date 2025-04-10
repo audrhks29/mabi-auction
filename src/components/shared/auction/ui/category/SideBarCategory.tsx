@@ -3,6 +3,8 @@ import { UseFormSetValue } from "react-hook-form";
 
 import ItemCategories from "./ItemCategories";
 
+import { Card, CardContent } from "@/components/ui/card";
+
 export default function SideBarCategory({
   setCategory,
   setValue,
@@ -11,8 +13,10 @@ export default function SideBarCategory({
   setValue: UseFormSetValue<AuctionSearchFormTypes>;
 }) {
   return (
-    <section className="hidden lg:block">
-      <ItemCategories setCategory={setCategory} setValue={setValue} className="h-[655px]" />
-    </section>
+    <Card className="hidden md:block overflow-y-auto">
+      <CardContent>
+        <ItemCategories setCategory={setCategory} setValue={setValue} className="h-[655px]" />
+      </CardContent>
+    </Card>
   );
 }

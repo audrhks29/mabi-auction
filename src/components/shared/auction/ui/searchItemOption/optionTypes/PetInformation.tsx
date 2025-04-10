@@ -1,4 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Separator } from "@/components/ui/separator";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 type PetInfoType = {
   id: string;
@@ -42,8 +48,7 @@ export default function PetInformation({ currentOptionType, index, setValue }: S
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>, idx: number) => {
-    const { name, value } = e.target;
+  const handleChange = (name: string, value: string, idx: number) => {
     const newPetInfo = petInfo.map((t, i) => (i === idx ? { ...t, [name]: value } : t));
     handleSetValue(newPetInfo);
   };
@@ -78,63 +83,59 @@ export default function PetInformation({ currentOptionType, index, setValue }: S
 
         return (
           <React.Fragment key={info.id}>
-            <div className="flex gap-3">
-              <label className="label w-16">능력</label>
+            <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+              <Label>능력</Label>
 
-              <select name="info_name" className="select w-full" onChange={e => handleChange(e, idx)} required>
-                <option value="">없음</option>
-                {optionArray
-                  .filter(e => !selectedEffects.includes(e) || e === info.info_name)
-                  .map(option => (
-                    <option key={option} value={option}>
-                      {option}
-                    </option>
-                  ))}
-              </select>
+              <Select onValueChange={value => handleChange("info_name", value, idx)} required>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="없음" />
+                </SelectTrigger>
+
+                <SelectContent>
+                  {optionArray
+                    .filter(e => !selectedEffects.includes(e) || e === info.info_name)
+                    .map(option => (
+                      <SelectItem key={option} value={option}>
+                        {option}
+                      </SelectItem>
+                    ))}
+                </SelectContent>
+              </Select>
             </div>
 
             {petInfo[index].info_name === "종족명" ? (
               <div className="flex gap-3">
-                <label className="label w-16">종족</label>
+                <Label>종족</Label>
 
-                <input type="text" name="type" className="input w-full" onChange={e => handleChange(e, idx)} />
+                <Input type="text" onChange={e => handleChange("type", e.target.value, idx)} />
               </div>
             ) : (
-              <div className="flex gap-3">
-                <label className="label w-16">범위</label>
+              <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+                <Label>범위</Label>
 
-                <div className="flex gap-3 items-center justify-between w-full">
-                  <input
-                    type="text"
-                    name="min_value"
-                    className="input w-32"
-                    placeholder="0"
-                    onChange={e => handleChange(e, idx)}
-                  />
+                <div className="grid grid-cols-[1fr_30px_1fr] gap-3 items-center text-center">
+                  <Input type="text" placeholder="0" onChange={e => handleChange("min_value", e.target.value, idx)} />
 
                   <span>~</span>
 
-                  <input
+                  <Input
                     type="text"
-                    name="max_value"
-                    className="input w-32"
                     placeholder="100000"
-                    onChange={e => handleChange(e, idx)}
+                    onChange={e => handleChange("max_value", e.target.value, idx)}
                   />
                 </div>
               </div>
             )}
 
-            <button type="button" className="btn  btn-outline btn-primary" onClick={() => handleRemove(idx)}>
+            <Button type="button" onClick={() => handleRemove(idx)}>
               펫 옵션 삭제
-            </button>
+            </Button>
           </React.Fragment>
         );
       })}
 
-      <button
+      <Button
         type="button"
-        className="btn btn-outline btn-primary"
         onClick={() =>
           setPetInfo(prev => [
             ...prev,
@@ -148,7 +149,7 @@ export default function PetInformation({ currentOptionType, index, setValue }: S
           ])
         }>
         펫 옵션 추가
-      </button>
+      </Button>
     </>
   );
 }

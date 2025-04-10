@@ -1,28 +1,32 @@
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 export default function Unusable({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   return (
-    <div className="flex gap-3">
-      <label className="label w-16">여부</label>
+    <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+      <Label>여부</Label>
 
-      <select
-        className="select w-full"
-        onChange={e => {
-          const selectedValue = e.target.value;
-
+      <Select
+        onValueChange={value => {
           setValue(`options.${index}.calcFunc`, (item: any) => {
             return item?.item_option?.some((opt: any) => {
-              if (selectedValue === "false") {
-                return !(opt.option_type === currentOptionType && opt.option_value === selectedValue);
+              if (value === "false") {
+                return !(opt.option_type === currentOptionType && opt.option_value === value);
               }
 
-              return opt.option_type === currentOptionType && opt.option_value === selectedValue;
+              return opt.option_type === currentOptionType && opt.option_value === value;
             });
           });
-        }}
-        required>
-        <option value="">없음</option>
-        <option value="false">가능</option>
-        <option value="true">불가능</option>
-      </select>
+        }}>
+        <SelectTrigger className="w-full">
+          <SelectValue placeholder="없음" />
+        </SelectTrigger>
+
+        <SelectContent>
+          <SelectItem value="false">가능</SelectItem>
+          <SelectItem value="true">불가능</SelectItem>
+        </SelectContent>
+      </Select>
     </div>
   );
 }

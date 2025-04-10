@@ -18,7 +18,7 @@ export const columns = (pathName: string): ColumnDef<ItemListsTypes, any>[] => [
       </div>
     ),
 
-    cell: props => <span className="ml-2">{props.getValue()}</span>,
+    cell: props => <span>{props.getValue()}</span>,
   },
   {
     accessorKey: pathName === "/auction/auction" ? "date_auction_expire" : "date_auction_buy",

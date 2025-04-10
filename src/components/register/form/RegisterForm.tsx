@@ -10,10 +10,10 @@ import { Form, FormField, FormItem, FormLabel, FormMessage } from "@/components/
 
 import registerSubmit from "@/utils/register/registerSubmit";
 import { registerSchema } from "@/utils/validators/register";
+import { registerFormArray } from "@/utils/register/form";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { registerFormArray } from "@/utils/register/form";
 
 export default function RegisterForm() {
   const form = useForm({

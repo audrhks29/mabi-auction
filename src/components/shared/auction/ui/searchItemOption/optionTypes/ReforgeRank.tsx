@@ -1,25 +1,28 @@
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 export default function ReforgeRank({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   return (
-    <div className="flex gap-3">
-      <label className="label w-16">랭크</label>
+    <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+      <Label>랭크</Label>
 
-      <select
-        className="select w-full"
-        defaultValue=""
-        onChange={e => {
-          const selectedValue = e.target.value;
-
+      <Select
+        onValueChange={value => {
           setValue(`options.${index}.calcFunc`, (item: any) => {
             return item.item_option.some(
-              (opt: any) => opt.option_type === currentOptionType && opt.option_value === selectedValue,
+              (opt: any) => opt.option_type === currentOptionType && opt.option_value === value,
             );
           });
         }}>
-        <option value="">없음</option>
-        <option value="3">3 랭크</option>
-        <option value="2">2 랭크</option>
-        <option value="1">1 랭크</option>
-      </select>
+        <SelectTrigger className="w-full">
+          <SelectValue placeholder="없음" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="3">3 랭크</SelectItem>
+          <SelectItem value="2">2 랭크</SelectItem>
+          <SelectItem value="1">1 랭크</SelectItem>
+        </SelectContent>
+      </Select>
     </div>
   );
 }

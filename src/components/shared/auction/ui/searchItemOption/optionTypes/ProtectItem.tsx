@@ -1,24 +1,28 @@
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 export default function ProtectItem({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   return (
-    <div className="flex gap-3">
-      <label className="label w-16">선택</label>
+    <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+      <Label>선택</Label>
 
-      <select
-        className="select w-full"
-        onChange={e => {
-          const selectedValue = e.target.value;
-
+      <Select
+        onValueChange={value => {
           setValue(`options.${index}.calcFunc`, (item: any) => {
             return item?.item_option?.some(
-              (opt: any) => opt.option_type === currentOptionType && opt.option_value === selectedValue,
+              (opt: any) => opt.option_type === currentOptionType && opt.option_value === value,
             );
           });
-        }}
-        required>
-        <option value="">없음</option>
-        <option value="수리 실패">수리 실패</option>
-        <option value="인챈트 실패">인챈트 실패</option>
-      </select>
+        }}>
+        <SelectTrigger className="w-full">
+          <SelectValue placeholder="없음" />
+        </SelectTrigger>
+
+        <SelectContent>
+          <SelectItem value="수리 실패">수리 실패</SelectItem>
+          <SelectItem value="인챈트 실패">인챈트 실패</SelectItem>
+        </SelectContent>
+      </Select>
     </div>
   );
 }

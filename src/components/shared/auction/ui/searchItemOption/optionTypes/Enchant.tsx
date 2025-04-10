@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Separator } from "@/components/ui/separator";
+
 type EnchantType = {
   id: string;
-  type: "접두" | "접미" | string;
-  name: string;
+  type: "접두" | "접미" | string | null;
+  name: string | null;
 };
 
 export default function Enchant({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [enchant, setEnchant] = useState<EnchantType[]>([
     {
       id: crypto.randomUUID(),
-      type: "",
-      name: "",
+      type: null,
+      name: null,
     },
   ]);
 
@@ -32,8 +38,7 @@ export default function Enchant({ currentOptionType, index, setValue }: SearchOp
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>, idx: number) => {
-    const { name, value } = e.target;
+  const handleChange = (name: string, value: string, idx: number) => {
     const newEnchant = enchant.map((t, i) => (i === idx ? { ...t, [name]: value } : t));
     handleSetValue(newEnchant);
   };
@@ -52,48 +57,50 @@ export default function Enchant({ currentOptionType, index, setValue }: SearchOp
 
         return (
           <React.Fragment key={item.id}>
-            <div className="divider m-0 p-0"></div>
+            <Separator />
 
-            <div className="flex gap-3">
-              <label className="label w-16">위치</label>
+            <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+              <Label>위치</Label>
 
-              <select name="type" className="select w-full" onChange={e => handleChange(e, idx)} required>
-                <option value="">없음</option>
-                {optionArray
-                  .filter(e => !selectedEffects.includes(e) || e === item.type)
-                  .map(option => (
-                    <option key={option} value={option}>
-                      {option}
-                    </option>
-                  ))}
-              </select>
+              <Select onValueChange={value => handleChange("type", value, idx)}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="옵션 타입 선택" />
+                </SelectTrigger>
+                <SelectContent>
+                  {optionArray
+                    .filter(e => !selectedEffects.includes(e) || e === item.type)
+                    .map(option => (
+                      <SelectItem key={option} value={option}>
+                        {option}
+                      </SelectItem>
+                    ))}
+                </SelectContent>
+              </Select>
             </div>
 
-            <div className="flex gap-3">
-              <label className="label w-16">명칭</label>
+            <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+              <Label>명칭</Label>
 
-              <input
+              <Input
                 type="text"
-                className="input w-full"
                 placeholder="인챈트 이름"
-                name="name"
-                onChange={e => handleChange(e, idx)}
+                onChange={e => handleChange("name", e.target.value, idx)}
                 required
               />
             </div>
 
             {currentOptionType === "인챈트" && (
-              <button type="button" className="btn  btn-outline btn-primary" onClick={() => handleRemove(idx)}>
+              <Button type="button" onClick={() => handleRemove(idx)}>
                 인챈트 삭제
-              </button>
+              </Button>
             )}
           </React.Fragment>
         );
       })}
+
       {currentOptionType === "인챈트" && (
-        <button
+        <Button
           type="button"
-          className="btn"
           onClick={() => {
             Enchant.length !== 2
               ? setEnchant(prev => [
@@ -107,7 +114,7 @@ export default function Enchant({ currentOptionType, index, setValue }: SearchOp
               : alert("조건을 더 이상 추가할 수 없습니다.");
           }}>
           인챈트 추가
-        </button>
+        </Button>
       )}
     </>
   );

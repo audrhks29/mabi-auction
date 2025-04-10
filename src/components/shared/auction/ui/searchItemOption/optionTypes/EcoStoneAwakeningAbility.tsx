@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+
 export default function EcoStoneAwakeningAbility({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [ecoStoneOption, setEcoStoneOption] = useState({
     awakeningAbility_name: "",
@@ -29,28 +32,21 @@ export default function EcoStoneAwakeningAbility({ currentOptionType, index, set
 
   return (
     <>
-      <div className="flex gap-3">
-        <label className="label w-16">명칭</label>
+      <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+        <Label>명칭</Label>
 
-        <input
-          type="text"
-          name="awakeningAbility_name"
-          className="input w-full"
-          placeholder="명칭"
-          onChange={handleChange}
-          required
-        />
+        <Input type="text" name="awakeningAbility_name" placeholder="명칭" onChange={handleChange} required />
       </div>
 
-      <div className="flex gap-3">
-        <label className="label w-16">범위</label>
+      <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+        <Label>범위</Label>
 
-        <div className="flex items-center justify-between w-full">
-          <input type="text" name="min_level" className="input w-32" placeholder="최소 레벨" onChange={handleChange} />
+        <div className="grid grid-cols-[1fr_30px_1fr] gap-3 items-center text-center">
+          <Input type="text" name="min_level" placeholder="최소 레벨" onChange={handleChange} />
 
           <span>~</span>
 
-          <input type="text" name="max_level" className="input w-32" placeholder="최대 레벨" onChange={handleChange} />
+          <Input type="text" name="max_level" placeholder="최대 레벨" onChange={handleChange} />
         </div>
       </div>
     </>

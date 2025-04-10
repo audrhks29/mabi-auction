@@ -17,6 +17,7 @@ export default function Home() {
           <col />
           <col width="10%" />
         </colgroup>
+
         <TableHeader>
           <TableRow>
             <TableHead>번호</TableHead>

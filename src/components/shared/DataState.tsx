@@ -1,4 +1,5 @@
 import { LoaderCircle, RefreshCcw, Wrench } from "lucide-react";
+import { ServerCrash } from "lucide-react";
 
 export function ErrorData({ error, cn }: { error: { name: string }; cn?: string }) {
   if (error?.name === "OPENAPI00009")
@@ -18,8 +19,6 @@ export function FetchingData({ cn }: { cn?: string }) {
     <Container icon={<LoaderCircle size={40} className="animate-spin" />} text="데이터를 불러오는중입니다." cn={cn} />
   );
 }
-
-import { ServerCrash } from "lucide-react";
 
 export function NonData({ cn, text }: { cn?: string; text?: string }) {
   return <Container icon={<ServerCrash size={40} />} text={text ? text : "검색된 결과가 없습니다."} cn={cn} />;

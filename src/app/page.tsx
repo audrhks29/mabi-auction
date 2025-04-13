@@ -12,7 +12,7 @@ export default function Home() {
 
       <Table className="text-[12px]">
         <colgroup>
-          <col width="2%" />
+          <col width="5%" />
           <col width="10%" />
           <col />
           <col width="10%" />

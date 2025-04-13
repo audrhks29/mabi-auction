@@ -15,7 +15,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
-export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
+export default function ItemLists({ data }: { data: ItemListsTypes[] | undefined }) {
   const pathName = usePathname();
 
   const { selectedItemOptions, isFiltered } = useItemOptionStore(state => ({
@@ -25,14 +25,14 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] }) {
 
   const filteredData = useMemo(() => {
     return isFiltered
-      ? data.filter((item: any) => selectedItemOptions.every(option => option?.calcFunc?.(item)))
+      ? data?.filter((item: any) => selectedItemOptions.every(option => option?.calcFunc?.(item)))
       : data;
   }, [isFiltered, data, selectedItemOptions]);
 
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const table = useReactTable({
-    data: filteredData,
+    data: filteredData || [],
     columns: columns(pathName),
     state: {
       sorting,

@@ -1,11 +1,12 @@
 import React, { ReactElement } from "react";
-import { Table } from "@tanstack/react-table";
+import { Table as ReactTable } from "@tanstack/react-table";
 
-import Pagination from "@/components/shared/ui/Pagination";
+import Paging from "@/components/shared/ui/Paging";
 import DataTableHead from "@/components/shared/ui/DataTableHead";
 import DataTableBody from "@/components/shared/ui/DataTableBody";
 import TableSkeleton from "@/components/bigHornOfShout/TableSkeleton";
 import { ErrorData, NonData } from "@/components/shared/DataState";
+import { Table } from "@/components/ui/table";
 
 export default function BigHornOfShoutLists({
   data,
@@ -13,7 +14,7 @@ export default function BigHornOfShoutLists({
   isFetching,
 }: {
   data: HornTypes;
-  table: Table<HornListTypes>;
+  table: ReactTable<HornListTypes>;
   isFetching: boolean;
 }) {
   // 데이터 패치중
@@ -30,7 +31,7 @@ export default function BigHornOfShoutLists({
   }
 
   // 데이터 없음
-  if (data.horn_bugle_world_history.length === 0) return <NonData cn="h-[500px]" />;
+  if (!data.horn_bugle_world_history || data.horn_bugle_world_history.length === 0) return <NonData cn="h-[500px]" />;
 
   // 데이터 패치 완료 및 데이터 있음
   return (
@@ -47,13 +48,13 @@ function BigHornOfShoutListsContainer({
   data,
 }: {
   children: ReactElement;
-  table: Table<HornListTypes>;
+  table: ReactTable<HornListTypes>;
   isFetching: boolean;
   data: HornTypes;
 }) {
   return (
     <section className="flex flex-col gap-3 w-full">
-      <table className="table table-xs md:table-sm">
+      <Table>
         <colgroup>
           <col width="20%" />
           <col width="20%" />
@@ -62,9 +63,9 @@ function BigHornOfShoutListsContainer({
         <DataTableHead table={table} />
 
         {children}
-      </table>
+      </Table>
 
-      {!isFetching && data.horn_bugle_world_history.length > 0 && <Pagination table={table} />}
+      {!isFetching && data.horn_bugle_world_history.length > 0 && <Paging table={table} />}
     </section>
   );
 }

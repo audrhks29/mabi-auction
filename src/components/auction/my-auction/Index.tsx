@@ -84,14 +84,16 @@ export default function MyAuctionIndex() {
 
       <DataTable isFetching={isFetching} userData={userData} updatedAuctionData={updatedAuctionData} table={table} />
 
-      <div className="flex justify-end">
-        <Button
-          type="button"
-          className="mt-4"
-          onClick={() => handleDeleteData(table, userData, setRowSelection, refetch)}>
-          선택 항목 삭제
-        </Button>
-      </div>
+      {!isFetching && userData && (
+        <div className="flex justify-end">
+          <Button
+            type="button"
+            className="mt-4"
+            onClick={() => handleDeleteData(table, userData, setRowSelection, refetch)}>
+            선택 항목 삭제
+          </Button>
+        </div>
+      )}
     </section>
   );
 }

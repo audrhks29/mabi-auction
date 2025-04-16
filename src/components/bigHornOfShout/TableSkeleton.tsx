@@ -1,19 +1,22 @@
 import React from "react";
 
+import { TableBody, TableCell, TableRow } from "@/components/ui/table";
+import { Skeleton } from "@/components/ui/skeleton";
+
 export default function TableSkeleton() {
   return (
-    <tbody className="text-center">
+    <TableBody className="text-center">
       {[...Array(10)].map((_, index) => (
-        <tr key={index}>
+        <TableRow key={index}>
           {[2, 1, 1].map((count, countIndex) => (
-            <td key={countIndex}>
+            <TableCell key={countIndex}>
               {[...Array(count)].map((_, idx) => (
-                <div key={idx} className="skeleton w-3/5 h-4 m-auto mt-1"></div>
+                <Skeleton key={idx} className="w-3/5 h-4 m-auto mt-1"></Skeleton>
               ))}
-            </td>
+            </TableCell>
           ))}
-        </tr>
+        </TableRow>
       ))}
-    </tbody>
+    </TableBody>
   );
 }

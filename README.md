@@ -6,7 +6,7 @@
 
 ---
 
-![Generic badge](https://img.shields.io/badge/version-0.2.4-red.svg) ![Generic badge](https://img.shields.io/badge/yarn-1.22.19-green.svg) ![Generic badge](https://img.shields.io/badge/nextjs-15.1.7-blue.svg)
+![Generic badge](https://img.shields.io/badge/version-0.2.8-red.svg) ![Generic badge](https://img.shields.io/badge/yarn-1.22.19-yellow.svg) ![Generic badge](https://img.shields.io/badge/react-19.0.0-blue.svg) ![Generic badge](https://img.shields.io/badge/nextjs-15.1.7-black.svg) ![Generic badge](https://img.shields.io/badge/tailwindcss-4.0.0-white.svg) ![Generic badge](https://img.shields.io/badge/mongodb-6.13.1-green.svg)
 
 본 사이트는 Nexon OPEN API를 이용하여 제작되었습니다.
 

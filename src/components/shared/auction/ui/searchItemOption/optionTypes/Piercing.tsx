@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+
 export default function Piercing({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [searchOptionValue, setSearchOptionValue] = useState<string | "">("");
   const [isSearchMore, setIsSearchMore] = useState<boolean>(true);
@@ -31,16 +35,14 @@ export default function Piercing({ currentOptionType, index, setValue }: SearchO
   };
 
   return (
-    <div className="flex gap-3">
-      <label className="label w-16">값</label>
+    <div className="grid grid-cols-[30px_1fr_60px] gap-3 items-center">
+      <Label>값</Label>
 
-      <div className="flex join w-full">
-        <input type="text" className="input w-full join-item" placeholder="값" onChange={handleChange} required />
+      <Input type="text" placeholder="값" onChange={handleChange} required />
 
-        <button type="button" className="btn btn-primary join-item" onClick={toggleSearchMode}>
-          {isSearchMore ? "이상" : "이하"}
-        </button>
-      </div>
+      <Button type="button" onClick={toggleSearchMode}>
+        {isSearchMore ? "이상" : "이하"}
+      </Button>
     </div>
   );
 }

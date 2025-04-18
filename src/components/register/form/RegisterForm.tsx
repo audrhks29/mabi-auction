@@ -1,46 +1,89 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
+import { ControllerRenderProps, useForm, UseFormReturn } from "react-hook-form";
 import { useRouter } from "next/navigation";
-import { useForm } from "react-hook-form";
 
-import IdField from "./field/IdField";
-import PasswordField from "./field/PasswordField";
-import SelectField from "./field/SelectField";
-import NicknameField from "./field/NicknameField";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+import { Form, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 
 import registerSubmit from "@/utils/register/registerSubmit";
+import { registerSchema } from "@/utils/validators/register";
+import { registerFormArray } from "@/utils/register/form";
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function RegisterForm() {
-  const {
-    handleSubmit,
-    register,
-    watch,
-    formState: { errors },
-  } = useForm<UserDataTypes>();
+  const form = useForm({
+    resolver: zodResolver(registerSchema),
+    defaultValues: {
+      user_id: "",
+      user_nickname: "",
+      user_server: "",
+      user_race: "",
+      user_password: "",
+      user_password_confirm: "",
+    },
+  });
+
   const route = useRouter();
   const [isDuplicationId, setIsDuplicationId] = useState<boolean | null>(null);
 
   const onSubmit = (data: UserDataTypes) => registerSubmit(data, isDuplicationId, route);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="max-w-[450px] m-auto text-[12px] lg:text-[14px]">
-      <div className="grid gap-2">
-        <IdField
-          register={register}
-          watch={watch}
-          isDuplicationId={isDuplicationId}
-          setIsDuplicationId={setIsDuplicationId}
-          errors={errors}
-        />
-        <PasswordField register={register} watch={watch} errors={errors} />
-        <SelectField register={register} errors={errors} />
-        <NicknameField register={register} errors={errors} />
+    <div className="max-w-[450px] m-auto text-[12px] lg:text-[14px]">
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-2xl text-center">회원가입</CardTitle>
+        </CardHeader>
 
-        <button type="submit" className="w-full btn btn-neutral">
-          회원가입
-        </button>
-      </div>
-    </form>
+        <CardContent>
+          <Form {...form}>
+            <form
+              onSubmit={form.handleSubmit(onSubmit)}
+              className="flex flex-col gap-3 max-w-[450px] m-auto text-[12px] lg:text-[14px]">
+              {registerFormArray(isDuplicationId, setIsDuplicationId).map(arr => (
+                <FormContainer key={arr.fieldName} fieldName={arr.fieldName} form={form} labelText={arr.labelText}>
+                  {arr.component}
+                </FormContainer>
+              ))}
+
+              <Button type="submit" className="w-full">
+                회원가입
+              </Button>
+            </form>
+          </Form>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
+
+function FormContainer({
+  fieldName,
+  form,
+  labelText,
+  children,
+}: {
+  fieldName: FieldNameTypes;
+  form: UseFormReturn<any>;
+  labelText: string;
+  children: (field: ControllerRenderProps<any, FieldNameTypes>) => React.ReactNode;
+}) {
+  return (
+    <FormField
+      name={fieldName}
+      control={form.control}
+      render={({ field }) => (
+        <FormItem>
+          <FormLabel className="font-bold">{labelText}</FormLabel>
+          {children(field)}
+          <FormMessage />
+        </FormItem>
+      )}
+    />
   );
 }

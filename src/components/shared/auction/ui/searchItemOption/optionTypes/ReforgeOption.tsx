@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Separator } from "@/components/ui/separator";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+
 type ReforgeOptionType = {
   id: string;
   name: string;
@@ -38,10 +44,9 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
     handleSetValue(newReforgeOption, reforgeAmount);
   };
 
-  const handleAmountChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newReforgeAmount = e.target.value;
-    setReforgeAmount(newReforgeAmount);
-    handleSetValue(reforgeOption, newReforgeAmount);
+  const handleAmountChange = (value: string) => {
+    setReforgeAmount(value);
+    handleSetValue(reforgeOption, value);
   };
 
   const handleRemove = (idx: number) => {
@@ -51,72 +56,58 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
 
   return (
     <>
-      <div className="flex gap-3">
-        <label className="label w-16">갯수</label>
+      <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+        <Label>갯수</Label>
 
-        <select className="select w-full" onChange={handleAmountChange} required>
-          <option value="">없음</option>
-          {[1, 2, 3].map(num => (
-            <option key={num} value={num}>
-              {num}개
-            </option>
-          ))}
-        </select>
+        <Select onValueChange={value => handleAmountChange(value)}>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="없음" />
+          </SelectTrigger>
+
+          <SelectContent>
+            {["1", "2", "3"].map(amount => (
+              <SelectItem key={amount} value={amount}>
+                {amount}개
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
       </div>
 
       {reforgeOption.map((item, idx) => {
         return (
           <React.Fragment key={item.id}>
-            <div className="divider m-0 p-0"></div>
+            <Separator />
 
-            <div className="flex gap-3">
-              <label className="label w-16">명칭</label>
+            <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+              <Label>명칭</Label>
 
-              <input
-                type="text"
-                name="name"
-                className="input w-full"
-                placeholder="명칭"
-                onChange={e => handleChange(e, idx)}
-              />
+              <Input type="text" name="name" placeholder="명칭" onChange={e => handleChange(e, idx)} />
             </div>
 
-            <div className="flex gap-3">
-              <label className="label w-16">레벨</label>
+            <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+              <Label>레벨</Label>
 
-              <div className="flex gap-3 items-center justify-between w-full">
-                <input
-                  type="text"
-                  name="min_value"
-                  className="input w-32"
-                  placeholder="0"
-                  onChange={e => handleChange(e, idx)}
-                />
+              <div className="grid grid-cols-[1fr_30px_1fr] gap-3 items-center text-center">
+                <Input type="text" name="min_value" placeholder="0" onChange={e => handleChange(e, idx)} />
 
                 <span>~</span>
 
-                <input
-                  type="text"
-                  name="max_value"
-                  className="input w-32"
-                  placeholder="25"
-                  onChange={e => handleChange(e, idx)}
-                />
+                <Input type="text" name="max_value" placeholder="25" onChange={e => handleChange(e, idx)} />
               </div>
             </div>
 
-            <button type="button" className="btn btn-outline btn-primary" onClick={() => handleRemove(idx)}>
+            <Button type="button" variant="outline" onClick={() => handleRemove(idx)}>
               세공 옵션 삭제
-            </button>
+            </Button>
           </React.Fragment>
         );
       })}
 
-      <button
+      <Button
         type="button"
-        className="btn btn-outline btn-primary"
         onClick={() => {
-          reforgeOption.length !== 3
+          reforgeOption.length !== Number(reforgeAmount)
             ? setReforgeOption(prev => [
                 ...prev,
                 {
@@ -129,7 +120,7 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
             : alert("옵션을 더 이상 추가할 수 없습니다.");
         }}>
         세공 옵션 추가
-      </button>
+      </Button>
     </>
   );
 }

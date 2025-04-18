@@ -3,13 +3,16 @@ import { Inter as FontSans } from "next/font/google";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import "./globals.css";
+import "./css/selectBox.css";
 
-import Providers from "@/utils/provider";
+import QueryProviders from "@/utils/provider/QueryProviders";
+
 import { cn } from "@/lib/utils";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import GoogleAnalytics from "@/lib/GoogleAnalytics";
+import { ThemeProvider } from "@/utils/provider/theme-provider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -48,21 +51,6 @@ export const metadata: Metadata = {
   },
 };
 
-const themeScript = `
-  (function() {
-    function getTheme() {
-      const localTheme = localStorage.getItem("mabiAuction-theme");
-
-      if (localTheme) return localTheme;
-      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
-
-    const theme = getTheme();
-    localStorage.setItem("mabiAuction-theme", theme);
-    document.documentElement.setAttribute("data-theme", theme);
-  })();
-`;
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -74,16 +62,17 @@ export default function RootLayout({
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         ) : null}
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className={cn("bg-background font-sans antialiased", fontSans.variable)}>
-        <Providers>
-          <Header />
-          <div id="wrap">{children}</div>
+        <QueryProviders>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+            <Header />
+            <div id="wrap">{children}</div>
 
-          <ReactQueryDevtools initialIsOpen={false} />
-          <Footer />
-        </Providers>
+            <ReactQueryDevtools initialIsOpen={false} />
+            <Footer />
+          </ThemeProvider>
+        </QueryProviders>
       </body>
     </html>
   );

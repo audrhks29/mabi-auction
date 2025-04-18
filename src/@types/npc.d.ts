@@ -1,14 +1,14 @@
 interface NpcTypes {
   date_inquire: string;
   date_shop_next_update: string;
-  shop: ShopTypes[];
+  shop: NpcShopTypes[];
   shop_tab_count: number;
   error?: { name: string };
 }
 
 interface NpcShopTypes {
   tab_name: string;
-  item: NpcItemsTypes[];
+  item?: NpcItemsTypes[];
 }
 
 interface NpcItemsTypes {

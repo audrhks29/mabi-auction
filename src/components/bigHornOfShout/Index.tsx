@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 
 import BigHornOfShoutLists from "@/components/bigHornOfShout/BigHornOfShoutLists";
 import SearchBox from "@/components/bigHornOfShout/SearchBox";
+import { Separator } from "@/components/ui/separator";
 
 import { serverMap } from "@/utils/serverMap";
 
@@ -20,12 +21,9 @@ export default function BigHornOfShoutIndex({ params }: { params: { server: stri
 
   return (
     <section>
-      <h3 className="text-[18px] text-center font-bold pb-6">
-        {serverMap[params.server]}서버 뿔피리&nbsp;
-        <span className="badge badge-primary">+ {data?.horn_bugle_world_history?.length}</span>
-      </h3>
+      <h3 className="text-[18px] font-bold pb-6">{serverMap[params.server]}서버 뿔피리&nbsp;</h3>
 
-      <div className="flex gap-1 flex-col justify-center items-center">
+      <div className="grid gap-3">
         <SearchBox
           handleSubmit={handleSubmit}
           register={register}
@@ -34,7 +32,13 @@ export default function BigHornOfShoutIndex({ params }: { params: { server: stri
           setColumnFilters={setColumnFilters}
         />
 
-        <div className="divider m-0"></div>
+        <div>
+          <p className="text-right text-[12px] text-card-foreground/60">
+            {data?.horn_bugle_world_history?.length || 0}개의 검색결과가 있습니다.
+          </p>
+
+          <Separator />
+        </div>
 
         <BigHornOfShoutLists data={data} table={table} isFetching={isFetching} />
       </div>

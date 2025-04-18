@@ -27,11 +27,11 @@ export default function ItemDescription({ options }: { options: ItemOptionTypes[
 
   return (
     <div>
-      <div className="font-bold text-center pt-3">
-        <span>아이템 옵션</span>
+      <div className="text-center pt-3">
+        <span className="font-bold">아이템 옵션</span>
       </div>
 
-      <section className="text-[12px] max-h-[400px] pt-3 overflow-y-scroll">
+      <section className="max-h-[400px] pt-3 grid gap-3 overflow-y-auto">
         {/* 아이템 속성 */}
         <Attribute attributeOptions={attributeOptions} />
 

@@ -30,7 +30,7 @@ export const columns = (updatedAuctionData: boolean[]): ColumnDef<ItemListsTypes
     cell: props => {
       const currentPropsIndex = props.cell.row.index;
 
-      return <span className="ml-2">{updatedAuctionData[currentPropsIndex] ? "판매중" : "판매완료/삭제"}</span>;
+      return <span>{updatedAuctionData[currentPropsIndex] ? "판매중" : "판매완료/삭제"}</span>;
     },
   },
   {
@@ -44,7 +44,7 @@ export const columns = (updatedAuctionData: boolean[]): ColumnDef<ItemListsTypes
       </div>
     ),
 
-    cell: props => <span className="ml-2">{props.getValue()}</span>,
+    cell: props => <span>{props.getValue()}</span>,
   },
   {
     accessorKey: "date_auction_expire",

@@ -2,6 +2,8 @@
 
 import React from "react";
 
+import { Badge } from "@/components/ui/badge";
+
 export default function Attribute({ attributeOptions }: { attributeOptions: ExtendedItemOptionTypes[] }) {
   // 아이템 속성
   const ecoStoneTier = attributeOptions.find(option => option.option_type === "에코스톤 등급");
@@ -32,12 +34,17 @@ export default function Attribute({ attributeOptions }: { attributeOptions: Exte
   const totemAdditional = attributeOptions?.find(option => option.option_type === "토템 추가 옵션");
   const totemLimits = attributeOptions?.find(option => option.option_type === "토템 강화 제한");
   const petInfo = attributeOptions?.find(option => option.option_type === "펫 정보");
+  console.log(petInfo);
   return (
     attributeOptions.some(option => option.isDisplay) && (
-      <article className="option-box mt-3">
-        <h3 className="option-title">아이템 속성</h3>
+      <fieldset className="border rounded-2xl">
+        <legend className="ml-3">
+          <Badge variant="secondary" className="border border-border shadow-lg">
+            아이템 속성
+          </Badge>
+        </legend>
 
-        <ul>
+        <ul className="py-1 px-3 text-card-foreground/90">
           {ecoStoneTier?.isDisplay && (
             <li className="text-yellow-600 text-[13px]">
               <b>{ecoStoneTier?.option_value}등급</b>
@@ -268,7 +275,7 @@ export default function Attribute({ attributeOptions }: { attributeOptions: Exte
             </li>
           )}
         </ul>
-      </article>
+      </fieldset>
     )
   );
 }

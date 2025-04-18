@@ -1,7 +1,8 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
+import { UseFormReset } from "react-hook-form";
 
-export const useSubmitLogin = (route: AppRouterInstance) => {
+export const useSubmitLogin = (route: AppRouterInstance, reset: UseFormReset<UserLoginTypes>) => {
   const queryClient = useQueryClient();
 
   return useMutation({
@@ -31,6 +32,7 @@ export const useSubmitLogin = (route: AppRouterInstance) => {
 
     onError: error => {
       alert(error.message);
+      reset();
     },
   });
 };

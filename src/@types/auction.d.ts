@@ -3,7 +3,8 @@ import { ObjectId } from "mongodb";
 declare global {
   interface AuctionTypes {
     error?: { name: string };
-    auction_item: ItemListsTypes[];
+    auction_item?: ItemListsTypes[];
+    auction_history?: ItemListsTypes[];
   }
 
   interface ItemListsTypes {
@@ -12,7 +13,8 @@ declare global {
     item_display_name: string;
     item_count: number;
     auction_price_per_unit: number;
-    date_auction_expire: string;
+    date_auction_expire?: string;
+    date_auction_buy?: string;
     item_option: ItemOptionTypes[];
   }
 

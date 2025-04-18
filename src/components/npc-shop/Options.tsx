@@ -16,11 +16,12 @@ export default function Options({
   const params = useParams<ParamsType>();
   const serverName = serverMap[params.server] || "";
 
+  // 채널 갯수
   const serverLength = serverName === "류트" ? 41 : serverName === "하프" ? 24 : 15;
-
   const channelLists = Array.from({ length: serverLength }, (_, i) => i + 1);
+
   return (
-    <div className="flex gap-3">
+    <div className="w-full flex gap-3 justify-center items-center">
       <SelectArea selectTitle="NPC" setStateFunction={setNpcName} optionLists={npcLists} />
       <SelectArea selectTitle="채널" setStateFunction={setChannel} optionLists={channelLists} />
     </div>
@@ -40,9 +41,7 @@ function SelectArea({
     <div className="flex gap-3 items-center">
       <p className="font-bold">{selectTitle}</p>
 
-      <select
-        className="select select-bordered text-[12px] md:text-[14px]"
-        onChange={e => setStateFunction(e.target.value)}>
+      <select className="w-[100px]" onChange={e => setStateFunction(e.target.value)}>
         {optionLists.map(list => (
           <option key={list} value={list}>
             {list}

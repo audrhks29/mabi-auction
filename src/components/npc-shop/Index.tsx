@@ -10,6 +10,9 @@ import { serverMap } from "@/utils/serverMap";
 
 import { useNpcShopLists } from "@/hooks/npc-shop/useNpcShopLists";
 
+import { Skeleton } from "@/components/ui/skeleton";
+import { Separator } from "@/components/ui/separator";
+
 export default function NpcShopIndex({ params }: { params: { server: string } }) {
   const [npcName, setNpcName] = useState("델");
   const [channel, setChannel] = useState("1");
@@ -22,17 +25,18 @@ export default function NpcShopIndex({ params }: { params: { server: string } })
   const { data } = useNpcShopLists(params, npcName, channel);
 
   return (
-    <section className="text-[12px] md:text-[14px]">
-      <h3 className="text-[18px] text-center font-bold pb-6">{serverMap[params.server]}서버 NPC 상점</h3>
+    <section>
+      <h3 className="text-[18px] font-bold pb-6">{serverMap[params.server]}서버 NPC 상점</h3>
 
-      <div className="flex gap-1 flex-col justify-center items-center w-full">
+      <div className="grid gap-3 w-full">
         <Options setNpcName={setNpcName} setChannel={setChannel} />
-        <div className="text-[12px] md:text-[14px]">
+
+        <div className="text-card-foreground/60">
           <UpdateTime data={data} title="기준" />
           <UpdateTime data={data} title="갱신" />
         </div>
 
-        <div className="divider m-0"></div>
+        <Separator />
 
         <TabMenuIndex
           params={params}
@@ -48,15 +52,15 @@ export default function NpcShopIndex({ params }: { params: { server: string } })
 
 function UpdateTime({ data, title }: { data: NpcTypes; title: string }) {
   return (
-    <div className="flex items-center">
-      {title}:&nbsp;
+    <div className="flex gap-2 justify-end">
+      <span className="text-[12px]">{title}</span>
       {data && !data.error ? (
-        <>
+        <span className="text-[12px]">
           {convertToKoreanTime(data.date_inquire).formattedDate}&nbsp;
           {convertToKoreanTime(data.date_inquire).formattedTime}
-        </>
+        </span>
       ) : (
-        <div className="skeleton h-4 w-40"></div>
+        <Skeleton className="h-4 w-40"></Skeleton>
       )}
     </div>
   );

@@ -1,22 +1,22 @@
 import { useState } from "react";
 
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+
 export default function EcoStoneUniqueAbility({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [searchSubType, setSearchSubtype] = useState<string | "">("");
   const [searchOptionValue, setSearchOptionValue] = useState<string | "">("");
   const [isSearchMore, setIsSearchMore] = useState<boolean>(true);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
-    type: "search_sub_type" | "search_option_value",
-  ) => {
+  const handleChange = (value: string, type: "search_sub_type" | "search_option_value") => {
     if (type === "search_sub_type") {
-      const newSearchSubType = e.target.value;
-      setSearchSubtype(newSearchSubType);
-      handleSetValue(newSearchSubType, searchOptionValue, isSearchMore);
+      setSearchSubtype(value);
+      handleSetValue(value, searchOptionValue, isSearchMore);
     } else {
-      const newSearchOptionValue = e.target.value;
-      setSearchOptionValue(newSearchOptionValue);
-      handleSetValue(searchSubType, newSearchOptionValue, isSearchMore);
+      setSearchOptionValue(value);
+      handleSetValue(searchSubType, value, isSearchMore);
     }
   };
 
@@ -40,36 +40,38 @@ export default function EcoStoneUniqueAbility({ currentOptionType, index, setVal
 
   return (
     <>
-      <div className="flex gap-3">
-        <label className="label w-16">능력</label>
+      <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+        <Label>능력</Label>
 
-        <select className="select w-full" onChange={e => handleChange(e, "search_sub_type")} required>
-          <option value="">없음</option>
-          <option value="생명력, 마나, 스태미나">생명력, 마나, 스태미나</option>
-          <option value="체력">체력</option>
-          <option value="지력">지력</option>
-          <option value="솜씨">솜씨</option>
-          <option value="의지">의지</option>
-        </select>
+        <Select onValueChange={value => handleChange(value, "search_sub_type")} required>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="없음" />
+          </SelectTrigger>
+
+          <SelectContent>
+            <SelectItem value="생명력, 마나, 스태미나">생명력, 마나, 스태미나</SelectItem>
+            <SelectItem value="체력">체력</SelectItem>
+            <SelectItem value="지력">지력</SelectItem>
+            <SelectItem value="솜씨">솜씨</SelectItem>
+            <SelectItem value="의지">의지</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
 
       {searchSubType && (
-        <div className="flex gap-3">
-          <label className="label w-16">값</label>
+        <div className="grid grid-cols-[30px_1fr_60px] gap-3 items-center">
+          <Label>값</Label>
 
-          <div className="flex join w-full">
-            <input
-              type="text"
-              className="input w-full join-item"
-              placeholder="값"
-              onChange={e => handleChange(e, "search_option_value")}
-              required
-            />
+          <Input
+            type="text"
+            placeholder="값"
+            onChange={e => handleChange(e.target.value, "search_option_value")}
+            required
+          />
 
-            <button type="button" className="btn btn-primary join-item" onClick={toggleSearchMode}>
-              {isSearchMore ? "이상" : "이하"}
-            </button>
-          </div>
+          <Button type="button" onClick={toggleSearchMode}>
+            {isSearchMore ? "이상" : "이하"}
+          </Button>
         </div>
       )}
     </>

@@ -1,19 +1,21 @@
 import { useState } from "react";
 
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+
 export default function TotemAdditionalOption({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [searchSubType, setSearchSubtype] = useState<string | "">("");
   const [searchOptionValue, setSearchOptionValue] = useState<string | "">("");
   const [isSearchMore, setIsSearchMore] = useState<boolean>(true);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>, type: "search_sub_type" | "search_option_value") => {
+  const handleChange = (value: string, type: "search_sub_type" | "search_option_value") => {
     if (type === "search_sub_type") {
-      const newSearchSubType = e.target.value;
-      setSearchSubtype(newSearchSubType);
-      handleSetValue(newSearchSubType, searchOptionValue, isSearchMore);
+      setSearchSubtype(value);
+      handleSetValue(value, searchOptionValue, isSearchMore);
     } else {
-      const newSearchOptionValue = e.target.value;
-      setSearchOptionValue(newSearchOptionValue);
-      handleSetValue(searchSubType, newSearchOptionValue, isSearchMore);
+      setSearchOptionValue(value);
+      handleSetValue(searchSubType, value, isSearchMore);
     }
   };
 
@@ -37,33 +39,31 @@ export default function TotemAdditionalOption({ currentOptionType, index, setVal
 
   return (
     <>
-      <div className="flex gap-3">
-        <label className="label w-16">명칭</label>
+      <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+        <Label>명칭</Label>
 
-        <input
+        <Input
           type="text"
           className="input w-full"
           placeholder="명칭"
-          onChange={e => handleChange(e, "search_sub_type")}
+          onChange={e => handleChange(e.target.value, "search_sub_type")}
           required
         />
       </div>
 
-      <div className="flex gap-3">
-        <label className="label w-16">값</label>
+      <div className="grid grid-cols-[30px_1fr_60px] gap-3 items-center">
+        <Label>값</Label>
 
-        <div className="flex join w-full">
-          <input
-            type="text"
-            className="input w-full join-item"
-            placeholder="값"
-            onChange={e => handleChange(e, "search_option_value")}
-            required
-          />
-          <button type="button" className="btn btn-primary join-item" onClick={toggleSearchMode}>
-            {isSearchMore ? "이상" : "이하"}
-          </button>
-        </div>
+        <Input
+          type="text"
+          placeholder="값"
+          onChange={e => handleChange(e.target.value, "search_option_value")}
+          required
+        />
+
+        <Button type="button" variant="outline" onClick={toggleSearchMode}>
+          {isSearchMore ? "이상" : "이하"}
+        </Button>
       </div>
     </>
   );

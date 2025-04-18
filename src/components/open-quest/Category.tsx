@@ -1,22 +1,16 @@
 import { Dispatch, SetStateAction } from "react";
+
 import categoryArray from "@/assets/open-quest/category.json";
-export default function Category({
-  category,
-  setCategory,
-}: {
-  category: string;
-  setCategory: Dispatch<SetStateAction<string>>;
-}) {
+
+import { Button } from "@/components/ui/button";
+
+export default function Category({ setCategory }: { setCategory: Dispatch<SetStateAction<string>> }) {
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-2">
       {categoryArray.map(arr => (
-        <button
-          type="button"
-          key={arr.id}
-          className={`btn btn-xs sm:btn-sm md:btn-md text-[14px] font-bold ${category === arr.category ? "btn-primary" : "btn-neutral"}`}
-          onClick={() => setCategory(arr.category)}>
+        <Button type="button" key={arr.id} onClick={() => setCategory(arr.category)}>
           {arr.text}
-        </button>
+        </Button>
       ))}
     </div>
   );

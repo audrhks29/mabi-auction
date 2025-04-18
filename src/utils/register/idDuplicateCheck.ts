@@ -4,12 +4,6 @@ export default async function idDuplicateCheck(
   id: string,
   setIsDuplicationId: Dispatch<SetStateAction<boolean | null>>,
 ) {
-  const idRegex = /^[a-zA-Z0-9]{6,20}$/;
-  if (!idRegex.test(id)) {
-    alert("아이디는 6~20자의 영문과 숫자로만 구성되어야 합니다.");
-    return;
-  }
-
   try {
     const res = await fetch("/api/auth/duplication", {
       method: "POST",

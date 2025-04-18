@@ -11,7 +11,11 @@ export const metadata: Metadata = {
 export default function AuctionPage() {
   return (
     <main className="inner">
-      <AuctionIndex />
+      <section>
+        <h3 className="text-[18px] font-bold pb-6">경매장</h3>
+
+        <AuctionIndex />
+      </section>
     </main>
   );
 }

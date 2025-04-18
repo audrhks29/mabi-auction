@@ -1,17 +1,19 @@
 import { flexRender, Table } from "@tanstack/react-table";
 
+import { TableHead, TableHeader, TableRow } from "@/components/ui/table";
+
 export default function DataTableHead({ table }: { table: Table<ItemListsTypes> | Table<HornListTypes> }) {
   return (
-    <thead>
+    <TableHeader>
       {table?.getHeaderGroups()?.map(headerGroup => (
-        <tr key={headerGroup.id}>
+        <TableRow key={headerGroup.id}>
           {headerGroup.headers.map((header: any) => (
-            <th key={header.id} className="text-center">
+            <TableHead key={header.id} className="text-center">
               {flexRender(header.column.columnDef.header, header.getContext())}
-            </th>
+            </TableHead>
           ))}
-        </tr>
+        </TableRow>
       ))}
-    </thead>
+    </TableHeader>
   );
 }

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import HistoryIndex from "@/components/auction/Index";
+import AuctionIndex from "@/components/auction/Index";
 
 export const metadata: Metadata = {
   title: "거래 내역",
@@ -11,7 +11,11 @@ export const metadata: Metadata = {
 export default function HistoryPage() {
   return (
     <main className="inner">
-      <HistoryIndex />
+      <section>
+        <h3 className="text-[18px] font-bold pb-6">거래 내역</h3>
+
+        <AuctionIndex />
+      </section>
     </main>
   );
 }

@@ -1,14 +1,19 @@
 // TODO: refactor
 
+import { Badge } from "@/components/ui/badge";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Color({ colorOptions }: { colorOptions: ExtendedItemOptionTypes[] }) {
   return (
     colorOptions.some(color => color.isDisplay) && (
-      <article className="option-box">
-        <h3 className="option-title">아이템 색상</h3>
+      <fieldset className="border rounded-2xl">
+        <legend className="ml-3">
+          <Badge variant="secondary" className="border border-border shadow-lg">
+            아이템 색상
+          </Badge>
+        </legend>
 
-        <article className="grid grid-cols-2 gap-1">
+        <ul className="grid grid-cols-2 gap-1 py-1 px-3 text-card-foreground/90">
           {colorOptions.map(option => {
             if (option?.option_value !== undefined || option?.option_desc !== undefined) {
               const [r, g, b] =
@@ -18,7 +23,7 @@ export default function Color({ colorOptions }: { colorOptions: ExtendedItemOpti
               const backgroundColor = `rgb(${r},${g},${b})`;
 
               return (
-                <section key={option?.id}>
+                <li key={option?.id}>
                   <p className="font-bold">{option?.option_sub_type}</p>
                   <div className="flex gap-1">
                     {/* 빤짝이는 색상 - option_value기 null이면 빤짝이*/}
@@ -43,12 +48,12 @@ export default function Color({ colorOptions }: { colorOptions: ExtendedItemOpti
                       </div>
                     )}
                   </div>
-                </section>
+                </li>
               );
             }
           })}
-        </article>
-      </article>
+        </ul>
+      </fieldset>
     )
   );
 }

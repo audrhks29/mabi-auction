@@ -2,9 +2,11 @@ import { Info } from "lucide-react";
 
 export default function NeedLogin() {
   return (
-    <div className="flex justify-center items-center flex-col gap-3 h-56 border border-base-200">
-      <Info className="w-11 h-11" />
-      <span>로그인이 필요합니다.</span>
+    <div className="flex flex-col justify-center items-center min-h-[150px]">
+      <div>
+        <Info className="w-11 h-11" />
+      </div>
+      <div className="text-[12px] md:text-[14px]"> 로그인이 필요합니다.</div>
     </div>
   );
 }

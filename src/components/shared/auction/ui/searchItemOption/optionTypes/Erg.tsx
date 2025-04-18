@@ -1,22 +1,22 @@
 import { useState } from "react";
 
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 export default function Erg({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [searchSubType, setSearchSubtype] = useState<string | "">("");
   const [searchOptionValue, setSearchOptionValue] = useState<string | "">("");
   const [isSearchMore, setIsSearchMore] = useState<boolean>(true);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
-    type: "search_sub_type" | "search_option_value",
-  ) => {
+  const handleChange = (value: string, type: "search_sub_type" | "search_option_value") => {
     if (type === "search_sub_type") {
-      const newSearchSubType = e.target.value;
-      setSearchSubtype(newSearchSubType);
-      handleSetValue(newSearchSubType, searchOptionValue, isSearchMore);
+      setSearchSubtype(value);
+      handleSetValue(value, searchOptionValue, isSearchMore);
     } else {
-      const newSearchOptionValue = e.target.value;
-      setSearchOptionValue(newSearchOptionValue);
-      handleSetValue(searchSubType, newSearchOptionValue, isSearchMore);
+      setSearchOptionValue(value);
+      handleSetValue(searchSubType, value, isSearchMore);
     }
   };
 
@@ -40,32 +40,35 @@ export default function Erg({ currentOptionType, index, setValue }: SearchOption
 
   return (
     <>
-      <div className="flex gap-3">
-        <label className="label w-16">등급</label>
+      <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+        <Label>등급</Label>
 
-        <select className="select w-full" onChange={e => handleChange(e, "search_sub_type")} required>
-          <option value="">없음</option>
-          <option value="S">S 등급</option>
-          <option value="A">A 등급</option>
-          <option value="B">B 등급</option>
-        </select>
+        <Select onValueChange={value => handleChange(value, "search_sub_type")}>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="없음" />
+          </SelectTrigger>
+
+          <SelectContent>
+            <SelectItem value="S">S 등급</SelectItem>
+            <SelectItem value="A">A 등급</SelectItem>
+            <SelectItem value="B">B 등급</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
 
-      <div className="flex gap-3">
-        <label className="label w-16">등급</label>
-        <div className="flex join w-full">
-          <input
-            type="text"
-            className="input w-full join-item"
-            placeholder="값"
-            onChange={e => handleChange(e, "search_option_value")}
-            required
-          />
+      <div className="grid grid-cols-[30px_1fr_60px] gap-3 items-center">
+        <Label>레벨</Label>
 
-          <button type="button" className="btn btn-primary join-item" onClick={toggleSearchMode}>
-            {isSearchMore ? "이상" : "이하"}
-          </button>
-        </div>
+        <Input
+          type="text"
+          placeholder="값"
+          onChange={e => handleChange(e.target.value, "search_option_value")}
+          required
+        />
+
+        <Button type="button" variant="outline" onClick={toggleSearchMode}>
+          {isSearchMore ? "이상" : "이하"}
+        </Button>
       </div>
     </>
   );

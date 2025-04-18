@@ -1,9 +1,21 @@
 import React from "react";
 import { usePathname } from "next/navigation";
-import { flexRender, Table } from "@tanstack/react-table";
+import { flexRender, Row, Table } from "@tanstack/react-table";
+
+import ItemDetailDialog from "@/components/shared/auction/ui/ItemDetailDialog";
+
+import { TableBody, TableCell, TableRow } from "@/components/ui/table";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 type DataTableBodyProps = {
-  table: Table<ItemListsTypes> | Table<HornListTypes>; // 정확한 타입을 명시
+  table: Table<ItemListsTypes> | Table<HornListTypes>;
 };
 
 export default function DataTableBody({ table }: DataTableBodyProps) {
@@ -11,21 +23,33 @@ export default function DataTableBody({ table }: DataTableBodyProps) {
   const isAuctionPage = pathName.includes("auction");
 
   return (
-    <tbody className="text-center">
+    <TableBody className="text-center">
       {table?.getRowModel()?.rows?.map(row => (
         <React.Fragment key={row.id}>
-          <tr
-            className="cursor-pointer hover:bg-base-200"
-            onClick={() => {
-              if (isAuctionPage)
-                (document.getElementById(`itemDetail_modal_${row.id}`) as HTMLDialogElement).showModal();
-            }}>
+          <TableRow className="cursor-pointer">
             {row.getVisibleCells().map((cell: any) => (
-              <td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
+              <Dialog key={cell.id}>
+                <DialogTrigger asChild>
+                  <TableCell>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
+                </DialogTrigger>
+
+                {isAuctionPage && (
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle className="text-center">
+                        {(row as Row<ItemListsTypes>).original.item_display_name}
+                      </DialogTitle>
+                      <DialogDescription className="hidden"></DialogDescription>
+                    </DialogHeader>
+
+                    <ItemDetailDialog row={row as Row<ItemListsTypes>} />
+                  </DialogContent>
+                )}
+              </Dialog>
             ))}
-          </tr>
+          </TableRow>
         </React.Fragment>
       ))}
-    </tbody>
+    </TableBody>
   );
 }

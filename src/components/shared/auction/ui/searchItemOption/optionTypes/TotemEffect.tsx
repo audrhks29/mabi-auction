@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Separator } from "@/components/ui/separator";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+
 type TotemType = {
   id: string;
   effect: string;
@@ -38,8 +44,7 @@ export default function TotemEffect({ currentOptionType, index, setValue }: Sear
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>, idx: number) => {
-    const { name, value } = e.target;
+  const handleChange = (name: string, value: string, idx: number) => {
     const newTotem = totem.map((t, i) => (i === idx ? { ...t, [name]: value } : t));
     handleSetValue(newTotem);
   };
@@ -58,57 +63,49 @@ export default function TotemEffect({ currentOptionType, index, setValue }: Sear
 
         return (
           <React.Fragment key={item.id}>
-            <div className="divider m-0 p-0"></div>
+            <Separator />
 
-            <div className="flex gap-3">
-              <label className="label w-16">능력</label>
+            <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+              <Label>능력</Label>
 
-              <select name="effect" className="select w-full" onChange={e => handleChange(e, idx)} required>
-                <option value="">없음</option>
-                {optionArray
-                  .filter(e => !selectedEffects.includes(e) || e === item.effect)
-                  .map(option => (
-                    <option key={option} value={option}>
-                      {option}
-                    </option>
-                  ))}
-              </select>
+              <Select onValueChange={value => handleChange("effect", value, idx)} required>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="없음" />
+                </SelectTrigger>
+
+                <SelectContent>
+                  {optionArray
+                    .filter(e => !selectedEffects.includes(e) || e === item.effect)
+                    .map(option => (
+                      <SelectItem key={option} value={option}>
+                        {option}
+                      </SelectItem>
+                    ))}
+                </SelectContent>
+              </Select>
             </div>
 
-            <div className="flex gap-3">
-              <label className="label w-16">범위</label>
+            <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
+              <Label>범위</Label>
 
-              <div className="flex gap-3 items-center justify-between w-full">
-                <input
-                  type="text"
-                  name="min_value"
-                  className="input w-32"
-                  placeholder="0"
-                  onChange={e => handleChange(e, idx)}
-                />
+              <div className="grid grid-cols-[1fr_30px_1fr] gap-3 items-center text-center">
+                <Input type="text" placeholder="0" onChange={e => handleChange("min_value", e.target.value, idx)} />
 
                 <span>~</span>
 
-                <input
-                  type="text"
-                  name="max_value"
-                  className="input w-32"
-                  placeholder="40"
-                  onChange={e => handleChange(e, idx)}
-                />
+                <Input type="text" placeholder="40" onChange={e => handleChange("max_value", e.target.value, idx)} />
               </div>
             </div>
 
-            <button type="button" className="btn  btn-outline btn-primary" onClick={() => handleRemove(idx)}>
+            <Button type="button" onClick={() => handleRemove(idx)}>
               토템 효과 삭제
-            </button>
+            </Button>
           </React.Fragment>
         );
       })}
 
-      <button
+      <Button
         type="button"
-        className="btn btn-outline btn-primary"
         onClick={() => {
           totem.length !== 8
             ? setTotem(prev => [
@@ -123,7 +120,7 @@ export default function TotemEffect({ currentOptionType, index, setValue }: Sear
             : alert("조건을 더 이상 추가할 수 없습니다.");
         }}>
         토템 효과 추가
-      </button>
+      </Button>
     </>
   );
 }

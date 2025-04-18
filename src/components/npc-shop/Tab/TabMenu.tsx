@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { useEffect, useRef, useState } from "react";
+
+import { Button } from "@/components/ui/button";
 
 type PropsTypes = {
   data: NpcTypes;

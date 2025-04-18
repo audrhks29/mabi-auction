@@ -32,7 +32,7 @@ export default function TabLists({ data, tabNumber }: PropsTypes) {
         {data?.shop?.map(
           (shop: NpcShopTypes, index: number) =>
             tabNumber === index &&
-            shop.item.map((item, idx) => (
+            shop?.item?.map((item, idx) => (
               <Dialog key={item.item_display_name + idx}>
                 <DialogTrigger asChild>
                   <Card className="p-3 cursor-pointer hover:bg-accent">
@@ -83,25 +83,4 @@ export default function TabLists({ data, tabNumber }: PropsTypes) {
       </div>
     </ScrollArea>
   );
-}
-
-{
-  /* <Dialog key={cell.id}>
-<DialogTrigger asChild>
-  <TableCell>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
-</DialogTrigger>
-
-{isAuctionPage && (
-  <DialogContent>
-    <DialogHeader>
-      <DialogTitle className="text-center">
-        {(row as Row<ItemListsTypes>).original.item_display_name}
-      </DialogTitle>
-      <DialogDescription className="hidden"></DialogDescription>
-    </DialogHeader>
-
-    <ItemDetailDialog row={row as Row<ItemListsTypes>} />
-  </DialogContent>
-)}
-</Dialog> */
 }

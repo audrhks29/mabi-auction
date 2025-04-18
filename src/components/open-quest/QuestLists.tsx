@@ -3,67 +3,63 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-import Tag from "./questDetail/Tag";
-import CreatorInfo from "./questDetail/CreatorInfo";
+import Tag from "./questDetail/container/Tag";
+import CreatorInfo from "./questDetail/container/CreatorInfo";
+
+import { Card, CardContent } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
+import QuestImage from "./questDetail/container/QuestImage";
 
 export default function QuestLists({ data }: { data: QuestTypes[] }) {
   const route = useRouter();
 
-  if (!data) return <Skeleton />;
+  if (!data) return <SkeletonContainer />;
 
   return (
-    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 xl:grid-cols-5 gap-3 p-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 xl:grid-cols-5 gap-3 p-3">
       {data?.map(quest => {
         const match = quest.image_url.match(/openquest\/([^/]+)$/);
 
         return (
-          <li
+          <Card
             key={quest.quest_id}
-            className="group w-[240px] mx-auto gap-2 cursor-pointer border quest-custom-border"
+            className="group w-[240px] mx-auto gap-2 p-0 cursor-pointer border hover:bg-accent"
             onClick={() => route.push(`/open-quest/${quest.quest_id}`)}>
-            <div className="relative w-full aspect-[9/6] overflow-hidden rounded-t-lg">
-              {match && (
-                <Image
-                  src={`https://openquest-image.nexon.com/${match[1]}`}
-                  fill
-                  sizes="100%"
-                  style={{ objectFit: "cover" }}
-                  alt={quest.title}
-                  quality={50}
-                />
-              )}
-            </div>
+            <CardContent className="p-0">
+              <QuestImage match={match} title={quest.title} cn="rounded-t-xl" />
 
-            <div className="p-2 flex flex-col gap-2">
-              <p className="text-[14px] group-hover:link font-bold">{quest.title}</p>
-              <CreatorInfo name={quest.creator_character_name} server={quest.creator_server_name} />
+              <div className="p-2 flex flex-col gap-2">
+                <p className="group-hover:underline font-bold">{quest.title}</p>
+                <CreatorInfo name={quest.creator_character_name} server={quest.creator_server_name} />
 
-              <Tag tag={quest.tags} />
-            </div>
-          </li>
+                <Tag tag={quest.tags} />
+              </div>
+            </CardContent>
+          </Card>
         );
       })}
-    </ul>
+    </div>
   );
 }
 
-function Skeleton() {
+function SkeletonContainer() {
   const listArray = Array.from({ length: 5 }, (_, i) => i + 1);
-  return (
-    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 xl:grid-cols-5 gap-3 p-3">
-      {listArray.map((_, index) => (
-        <li key={index} className="group w-[240px] mx-auto gap-2 cursor-pointer border quest-custom-border">
-          <div className="relative w-full aspect-[9/6] overflow-hidden rounded-t-lg">
-            <div className="skeleton w-full aspect-[9/6]"></div>
-          </div>
 
-          <div className="p-2 flex flex-col gap-2">
-            <p className="skeleton w-[120px] h-[21px]"></p>
-            <span className="skeleton w-[90px] h-[18px]"></span>
-            <span className="skeleton bg-neutral w-[60px] h-[20px]"></span>
-          </div>
-        </li>
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 xl:grid-cols-5 gap-3 p-3">
+      {listArray.map((_, index) => (
+        <Card key={index} className="p-0 w-[240px] mx-auto gap-2 border rounded-xl">
+          <CardContent className="p-0">
+            <Skeleton className="w-full aspect-[9/6]"></Skeleton>
+
+            <div className="p-2 flex flex-col gap-2">
+              <Skeleton className="w-[120px] h-[21px]"></Skeleton>
+              <Skeleton className="w-[90px] h-[18px]"></Skeleton>
+              <Skeleton className="w-[60px] h-[20px]"></Skeleton>
+            </div>
+          </CardContent>
+        </Card>
       ))}
-    </ul>
+    </div>
   );
 }

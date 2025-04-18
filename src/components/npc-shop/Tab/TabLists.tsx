@@ -55,7 +55,7 @@ export default function TabLists({ data, tabNumber }: PropsTypes) {
                         <span>{item.item_display_name}</span>
                       </div>
 
-                      <div className="text-right px-2 bg-base-100 rounded-b-lg">
+                      <div className="text-right px-2 rounded-b-lg">
                         {item.price.map((price, index) => (
                           <span key={index}>
                             {price.price_value.toLocaleString()}&nbsp;

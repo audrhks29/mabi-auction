@@ -33,7 +33,7 @@ export default function BigHornOfShoutIndex({ params }: { params: { server: stri
         />
 
         <div>
-          <p className="text-right font-[12px] text-card-foreground/80">
+          <p className="text-right text-[12px] text-card-foreground/60">
             {data?.horn_bugle_world_history?.length || 0}개의 검색결과가 있습니다.
           </p>
 

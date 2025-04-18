@@ -20,14 +20,14 @@ export default function TabIndex({ params, npcName, channel, tabNumber, setTabNu
   if (isFetching)
     return (
       <PreparingDataContainer>
-        <FetchingData cn="h-[500px] bg-base-200" />
+        <FetchingData cn="h-[500px]" />
       </PreparingDataContainer>
     );
 
   if (data?.error?.name)
     return (
       <PreparingDataContainer>
-        <ErrorData error={data.error} cn="h-[500px] bg-base-200" />
+        <ErrorData error={data.error} cn="h-[500px]" />
       </PreparingDataContainer>
     );
 

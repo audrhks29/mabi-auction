@@ -34,6 +34,7 @@ export default function Attribute({ attributeOptions }: { attributeOptions: Exte
   const totemAdditional = attributeOptions?.find(option => option.option_type === "토템 추가 옵션");
   const totemLimits = attributeOptions?.find(option => option.option_type === "토템 강화 제한");
   const petInfo = attributeOptions?.find(option => option.option_type === "펫 정보");
+  console.log(petInfo);
   return (
     attributeOptions.some(option => option.isDisplay) && (
       <fieldset className="border rounded-2xl">

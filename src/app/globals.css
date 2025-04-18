@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 #wrap {
   flex-grow: 1;
 }
@@ -41,10 +42,6 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   height: auto;
-}
-
-.skeleton {
-  animation: skeleton 0.8s ease-in-out infinite;
 }
 
 /*

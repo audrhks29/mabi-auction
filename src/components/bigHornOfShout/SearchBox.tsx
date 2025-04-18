@@ -45,7 +45,7 @@ export default function SearchBox({
           placeholder="검색어를 입력해주세요."
           id="inputText"
           {...register("inputText")}
-          className="w-full md:w-1/3 text-[12px] md:text-[14px]"
+          className="w-full md:w-1/3"
         />
 
         <Button type="submit">

@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import "./globals.css";
+import "./css/selectBox.css";
 
 import QueryProviders from "@/utils/provider/QueryProviders";
 

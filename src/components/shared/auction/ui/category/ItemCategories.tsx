@@ -1,31 +1,25 @@
 import { Dispatch, SetStateAction, useState } from "react";
-import { UseFormSetValue } from "react-hook-form";
+import { useFormContext } from "react-hook-form";
 import { ChevronRight } from "lucide-react";
 
 import itemCategories from "@/assets/auction/itemCategories.json";
+import useItemSearchStore from "@/store/itemSearch-store";
 
-export default function ItemCategories({
-  setCategory,
-  setValue,
-  className,
-  setOpen,
-}: {
-  setCategory: Dispatch<SetStateAction<ItemCategoryStateTypes>>;
-  setValue: UseFormSetValue<AuctionSearchFormTypes>;
-  className: string;
-  setOpen?: Dispatch<SetStateAction<boolean>>;
-}) {
-  const [activeCategory, setActiveCategory] = useState<number | null>(null);
-  const [openCategoryIds, setOpenCategoryIds] = useState<number[]>([]);
+export default function ItemCategories({ cn, setOpen }: { cn: string; setOpen?: Dispatch<SetStateAction<boolean>> }) {
+  const { activeCategory, openCategoryIds, setCategory, setActiveCategory, setOpenCategoryIds } = useItemSearchStore(
+    state => ({
+      activeCategory: state.activeCategory,
+      openCategoryIds: state.openCategoryIds,
+      setCategory: state.setCategory,
+      setActiveCategory: state.setActiveCategory,
+      setOpenCategoryIds: state.setOpenCategoryIds,
+    }),
+  );
 
-  const toggleCategory = (categoryId: number) => {
-    setOpenCategoryIds(prev =>
-      prev.includes(categoryId) ? prev.filter(id => id !== categoryId) : [...prev, categoryId],
-    );
-  };
+  const { setValue } = useFormContext<AuctionSearchFormTypes>();
 
   return (
-    <ul className={`${className} flex flex-col gap-1`}>
+    <ul className={`${cn} flex flex-col gap-1`}>
       {itemCategories.map(category => {
         const isOpen = openCategoryIds.includes(category.category_id);
 
@@ -34,7 +28,7 @@ export default function ItemCategories({
             <div>
               <summary
                 className="cursor-pointer hover:font-bold flex justify-between items-center"
-                onClick={() => toggleCategory(category.category_id)}>
+                onClick={() => setOpenCategoryIds(category.category_id)}>
                 {category.category_name}
                 <ChevronRight size={18} className={`transition-all duration-300 ${isOpen ? "rotate-90" : ""}`} />
               </summary>
@@ -48,7 +42,7 @@ export default function ItemCategories({
                       className={`cursor-pointer hover:font-bold ${activeCategory === detail.detail_category_id ? "border-b border-b-sidebar-foreground/50 font-bold" : ""}`}
                       onClick={() => {
                         setValue("inputText", "");
-                        setCategory({ category: category.category_name, detailCategory: detail.detail_category_name });
+                        setCategory(category.category_name, detail.detail_category_name);
                         setActiveCategory(detail.detail_category_id);
                         setOpen?.(false);
                       }}>

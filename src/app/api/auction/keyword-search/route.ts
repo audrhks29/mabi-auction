@@ -2,21 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;
-
   const inputText = searchParams.get("inputText");
   const detailCategory = searchParams.get("detailCategory");
+  const inputTextEncoded = encodeURI(inputText as string);
 
-  let urlString;
-  if (inputText !== "null" || detailCategory !== "null") {
-    if (detailCategory !== "null") {
-      // 카테고리 클릭시 검색
-      const detailCategoryEncoded = encodeURI(detailCategory as string);
-      urlString = `https://open.api.nexon.com/mabinogi/v1/auction/list?auction_item_category=${detailCategoryEncoded}`;
-    } else {
-      // 검색어 입력시 검색
-      const inputTextEncoded = encodeURI(inputText as string);
-      urlString = `https://open.api.nexon.com/mabinogi/v1/auction/list?item_name=${inputTextEncoded}`;
-    }
+  const urlString = `https://open.api.nexon.com/mabinogi/v1/auction/keyword-search?keyword=${inputTextEncoded};`;
+  if (inputText !== "null") {
     const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
     const headers: HeadersInit = API_KEY ? { "x-nxopen-api-key": API_KEY } : {};
     let nextCursor: string | undefined = undefined;
@@ -32,9 +23,9 @@ export async function GET(req: NextRequest) {
           return NextResponse.json(resData);
         }
 
-        if (inputText !== "null" && detailCategory !== "null") {
+        if (detailCategory !== "null") {
           const matchCategoryData = resData.auction_item.filter(
-            (item: any) => item.auction_item_category === detailCategory && item.item_name === inputText,
+            (item: any) => item.auction_item_category === detailCategory,
           );
 
           data.auction_item.push(...matchCategoryData);

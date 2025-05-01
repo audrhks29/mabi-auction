@@ -1,46 +1,50 @@
 "use client";
 
-import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useEffect } from "react";
+import { useForm, FormProvider } from "react-hook-form";
+import { usePathname } from "next/navigation";
 
 import { useAuctionItemLists } from "@/hooks/auction/useAuctionItemLists";
 
-import SearchBox from "@/components/shared/auction/ui/SearchBox";
-
 import SideBarCategory from "@/components/shared/auction/ui/category/SideBarCategory";
-import DataContainer from "../shared/auction/ui/DataContainer";
+import SearchBox from "@/components/shared/auction/ui/SearchBox";
+import DataContainer from "@/components/shared/auction/ui/DataContainer";
+
+import useItemSearchStore from "@/store/itemSearch-store";
 
 export default function AuctionIndex() {
-  const { handleSubmit, register, getValues, setValue } = useForm<AuctionSearchFormTypes>();
-  const [category, setCategory] = useState<ItemCategoryStateTypes>({
-    category: null,
-    detailCategory: null,
-  });
+  const { submitInputText, submitSearchOption, category, initialAll } = useItemSearchStore(state => ({
+    submitInputText: state.submitInputText,
+    submitSearchOption: state.submitSearchOption,
+    category: state.category,
+    initialAll: state.initialAll,
+  }));
 
-  const inputText = getValues().inputText === "" ? null : getValues().inputText;
-  const detailCategory = inputText ? null : category.detailCategory;
+  const methods = useForm<AuctionSearchFormTypes>();
+
+  const pathName = usePathname();
+
+  useEffect(() => {
+    initialAll();
+  }, [initialAll, pathName]);
 
   const { data, isFetching }: { data: AuctionTypes; isFetching: boolean } = useAuctionItemLists(
-    inputText,
-    detailCategory,
+    submitInputText,
+    category.detailCategory,
+    submitSearchOption,
   );
 
   return (
     <article className="grid gap-3">
-      <SearchBox
-        data={data?.auction_item || data?.auction_history}
-        category={category}
-        setCategory={setCategory}
-        handleSubmit={handleSubmit}
-        register={register}
-        setValue={setValue}
-      />
+      <FormProvider {...methods}>
+        <SearchBox data={data} isFetching={isFetching} />
 
-      <div className="md:grid md:grid-cols-[200px_1fr] md:gap-3">
-        <SideBarCategory setCategory={setCategory} setValue={setValue} />
+        <div className="md:grid md:grid-cols-[200px_1fr] md:gap-3">
+          <SideBarCategory />
 
-        <DataContainer data={data} isFetching={isFetching} />
-      </div>
+          <DataContainer data={data} isFetching={isFetching} />
+        </div>
+      </FormProvider>
     </article>
   );
 }

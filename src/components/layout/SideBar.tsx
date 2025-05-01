@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -10,20 +10,11 @@ import UserAuth from "./UserAuth";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-export default function SideBar({ isMobile }: { isMobile: boolean }) {
+export default function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    if (isOpen) document.body.style.overflow = "hidden";
-    else document.body.style.removeProperty("overflow");
-
-    return () => {
-      document.body.style.removeProperty("overflow");
-    };
-  }, [isOpen]);
-
   return (
-    <div className="text-[14px]">
+    <div className="block md:hidden">
       <div>
         <Button className="button" variant="outline" onClick={() => setIsOpen(true)}>
           <Menu />
@@ -38,7 +29,7 @@ export default function SideBar({ isMobile }: { isMobile: boolean }) {
               <X />
             </div>
 
-            {isMobile && <UserAuth />}
+            <UserAuth />
           </div>
 
           <Separator />

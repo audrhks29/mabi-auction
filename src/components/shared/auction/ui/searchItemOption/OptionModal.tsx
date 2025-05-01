@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useFieldArray, useForm } from "react-hook-form";
 
 import useItemOptionStore from "@/store/itemOption-store";
+import useItemSearchStore from "@/store/itemSearch-store";
 
 import itemOptionLists from "@/assets/auction/itemOptionLists.json";
 
@@ -13,28 +14,17 @@ import { Separator } from "@/components/ui/separator";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-type searchOptionType = {
-  name: string;
-  displayName: string | undefined;
-};
+export default function OptionModal({ data }: { data: any }) {
+  const { category } = useItemSearchStore(state => ({
+    category: state.category,
+  }));
 
-export default function OptionModal({ data, category }: { data: any; category: ItemCategoryStateTypes }) {
-  const [searchableOptions, setSearchableOptions] = useState<searchOptionType[]>([]);
-
-  useEffect(() => {
-    const findSearchOptions = (itemOptionLists: any[], category: ItemCategoryStateTypes) => {
-      return itemOptionLists
-        ?.filter(item => item.searchCategory.includes(category.detailCategory))
-        .map(item => ({
-          name: item.name,
-          displayName: item.displayName,
-        }));
-    };
-
-    const newSearchableOptions = findSearchOptions(itemOptionLists, category);
-
-    setSearchableOptions(newSearchableOptions);
-  }, [category]);
+  const searchableOptions = itemOptionLists
+    ?.filter(item => item.searchCategory.includes(category.detailCategory!!))
+    .map(item => ({
+      name: item.name,
+      displayName: item.displayName,
+    }));
 
   const { control, handleSubmit, setValue, watch, reset } = useForm<SearchOptionFormTypes>({
     defaultValues: {
@@ -88,7 +78,7 @@ export default function OptionModal({ data, category }: { data: any; category: I
 
                     <SelectContent>
                       {searchableOptions
-                        .filter(
+                        ?.filter(
                           optionList =>
                             !selectedOptions.includes(optionList.name) || optionList.name === currentOptionType,
                         )

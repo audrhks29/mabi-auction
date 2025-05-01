@@ -9,21 +9,25 @@ import { useLogout } from "@/hooks/auth/useSubmitLogout";
 
 import { Button } from "@/components/ui/button";
 
-export default function UserAuth() {
+export default function UserAuth({ cn }: { cn?: string }) {
   const { data: userData } = useUserData();
 
-  return <React.Fragment>{!userData ? <LoginButton /> : <LogoutButton userData={userData} />}</React.Fragment>;
+  return (
+    <React.Fragment>
+      {!userData ? <LoginButton cn={cn} /> : <LogoutButton userData={userData} cn={cn} />}
+    </React.Fragment>
+  );
 }
 
-function LoginButton() {
+function LoginButton({ cn }: { cn?: string }) {
   return (
-    <Link href={"/login"}>
+    <Link href={"/login"} className={cn}>
       <Button type="button">로그인</Button>
     </Link>
   );
 }
 
-function LogoutButton({ userData }: { userData: any }) {
+function LogoutButton({ userData, cn }: { userData: any; cn?: string }) {
   const { handleSubmit } = useForm();
   const logoutMutation = useLogout();
 
@@ -35,7 +39,7 @@ function LogoutButton({ userData }: { userData: any }) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="font-bold w-[220px] text-[14px] flex justify-around items-center">
+      className={`${cn} font-bold w-[220px] text-[14px] flex justify-around items-center`}>
       <div>
         <span className="mr-1">[{userData?.user_server}]</span>
         <span>{userData?.user_nickname}</span>

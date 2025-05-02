@@ -6,15 +6,15 @@ import itemCategories from "@/assets/auction/itemCategories.json";
 import useItemSearchStore from "@/store/itemSearch-store";
 
 export default function ItemCategories({ cn, setOpen }: { cn: string; setOpen?: Dispatch<SetStateAction<boolean>> }) {
-  const { activeCategory, openCategoryIds, setCategory, setActiveCategory, setOpenCategoryIds } = useItemSearchStore(
-    state => ({
+  const { activeCategory, openCategoryIds, setSubmitInputText, setCategory, setActiveCategory, setOpenCategoryIds } =
+    useItemSearchStore(state => ({
       activeCategory: state.activeCategory,
       openCategoryIds: state.openCategoryIds,
+      setSubmitInputText: state.setSubmitInputText,
       setCategory: state.setCategory,
       setActiveCategory: state.setActiveCategory,
       setOpenCategoryIds: state.setOpenCategoryIds,
-    }),
-  );
+    }));
 
   const { setValue } = useFormContext<AuctionSearchFormTypes>();
 
@@ -42,6 +42,7 @@ export default function ItemCategories({ cn, setOpen }: { cn: string; setOpen?: 
                       className={`cursor-pointer hover:font-bold ${activeCategory === detail.detail_category_id ? "border-b border-b-sidebar-foreground/50 font-bold" : ""}`}
                       onClick={() => {
                         setValue("inputText", "");
+                        setSubmitInputText(null);
                         setCategory(category.category_name, detail.detail_category_name);
                         setActiveCategory(detail.detail_category_id);
                         setOpen?.(false);

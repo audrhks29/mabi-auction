@@ -37,7 +37,7 @@ export default function AuctionIndex() {
   return (
     <article className="grid gap-3">
       <FormProvider {...methods}>
-        <SearchBox data={data} isFetching={isFetching} />
+        <SearchBox data={data} />
 
         <div className="md:grid md:grid-cols-[200px_1fr] md:gap-3">
           <SideBarCategory />

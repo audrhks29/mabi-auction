@@ -2,6 +2,7 @@ import { LoaderCircle, RefreshCcw, Wrench } from "lucide-react";
 import { ServerCrash } from "lucide-react";
 
 export function ErrorData({ error, cn }: { error: { name: string }; cn?: string }) {
+  if (error?.name === "OPENAPI00004") return <NonData cn="h-[500px] lg:h-auto" />;
   if (error?.name === "OPENAPI00009")
     return (
       <Container

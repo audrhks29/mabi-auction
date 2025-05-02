@@ -39,6 +39,7 @@ declare global {
 
   interface AuctionSearchFormTypes {
     inputText: string;
+    searchOption: string;
   }
 
   interface ItemCategoryStateTypes {

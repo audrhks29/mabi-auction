@@ -17,8 +17,9 @@ import TotemModificationLimit from "./TotemModificationLimit";
 import TotemAdditionalOption from "./TotemAdditionalOption";
 import PetInformation from "./PetInformation";
 
-export default function OptionIndex({ currentOptionType, setValue, index }: SearchOptionPropsTypes) {
-  const commonProps = { currentOptionType, index, setValue };
+export default function OptionIndex({ watch, currentOptionType, setValue, index }: SearchOptionPropsTypes) {
+  const commonProps = { watch, currentOptionType, index, setValue };
+
   return (
     <>
       {(currentOptionType === "공격" ||

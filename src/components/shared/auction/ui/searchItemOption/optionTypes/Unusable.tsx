@@ -1,13 +1,15 @@
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-export default function Unusable({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
+export default function Unusable({ watch, currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   return (
     <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
       <Label>여부</Label>
 
       <Select
+        value={watch(`options.${index}.option_value1`) || ""}
         onValueChange={value => {
+          setValue(`options.${index}.option_value1`, value);
           setValue(`options.${index}.calcFunc`, (item: any) => {
             return item?.item_option?.some((opt: any) => {
               if (value === "false") {

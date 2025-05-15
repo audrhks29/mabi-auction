@@ -13,11 +13,15 @@ type SetEffectType = {
   max_value: string;
 };
 
-export default function SetEffect({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
-  const [setEffectAmount, setSetEffectAmount] = useState("0");
-  const [setEffectOption, setSetEffectOption] = useState<SetEffectType[]>([]);
+export default function SetEffect({ watch, currentOptionType, index, setValue }: SearchOptionPropsTypes) {
+  const [setEffectAmount, setSetEffectAmount] = useState(watch(`options.${index}.option_value1`) || "");
+  const [setEffectOption, setSetEffectOption] = useState<SetEffectType[]>(
+    watch(`options.${index}.option_value2`) || [],
+  );
 
   const handleSetValue = (newSetEffectOption: SetEffectType[], newSetEffectAmount: string) => {
+    setValue(`options.${index}.option_value1`, newSetEffectAmount);
+    setValue(`options.${index}.option_value2`, newSetEffectOption);
     setSetEffectOption(newSetEffectOption);
 
     setValue(`options.${index}.calcFunc`, (item: any) => {
@@ -59,9 +63,9 @@ export default function SetEffect({ currentOptionType, index, setValue }: Search
       <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
         <Label>갯수</Label>
 
-        <Select onValueChange={handleAmountChange}>
+        <Select onValueChange={handleAmountChange} value={watch(`options.${index}.option_value1`) || ""}>
           <SelectTrigger className="w-full">
-            <SelectValue placeholder="없음" />
+            <SelectValue placeholder="갯수를 선택해주세요" />
           </SelectTrigger>
 
           <SelectContent>
@@ -82,18 +86,36 @@ export default function SetEffect({ currentOptionType, index, setValue }: Search
             <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
               <Label>명칭</Label>
 
-              <Input type="text" name="name" placeholder="명칭" onChange={e => handleChange(e, idx)} />
+              <Input
+                type="text"
+                name="name"
+                placeholder="명칭"
+                onChange={e => handleChange(e, idx)}
+                value={item.name}
+              />
             </div>
 
             <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
               <Label>레벨</Label>
 
               <div className="grid grid-cols-[1fr_30px_1fr] gap-3 items-center text-center">
-                <Input type="text" name="min_value" placeholder="0" onChange={e => handleChange(e, idx)} />
+                <Input
+                  type="text"
+                  name="min_value"
+                  placeholder="0"
+                  onChange={e => handleChange(e, idx)}
+                  value={item.min_value}
+                />
 
                 <span>~</span>
 
-                <Input type="text" name="max_value" placeholder="25" onChange={e => handleChange(e, idx)} />
+                <Input
+                  type="text"
+                  name="max_value"
+                  placeholder="25"
+                  onChange={e => handleChange(e, idx)}
+                  value={item.max_value}
+                />
               </div>
             </div>
 

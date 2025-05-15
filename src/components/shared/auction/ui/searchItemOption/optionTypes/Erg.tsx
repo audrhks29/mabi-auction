@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-export default function Erg({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
+export default function Erg({ watch, currentOptionType, index, setValue }: SearchOptionPropsTypes) {
   const [searchSubType, setSearchSubtype] = useState<string | "">("");
   const [searchOptionValue, setSearchOptionValue] = useState<string | "">("");
   const [isSearchMore, setIsSearchMore] = useState<boolean>(true);

@@ -22,13 +22,13 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] | undefined
     selectedItemOptions: state.selectedItemOptions,
     isFiltered: state.isFiltered,
   }));
-
+  // console.log(selectedItemOptions);
   const filteredData = useMemo(() => {
     return isFiltered
       ? data?.filter((item: any) => selectedItemOptions.every(option => option?.calcFunc?.(item)))
       : data;
   }, [isFiltered, data, selectedItemOptions]);
-
+  console.log(filteredData);
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const table = useReactTable({

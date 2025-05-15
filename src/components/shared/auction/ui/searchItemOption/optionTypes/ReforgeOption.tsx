@@ -13,11 +13,14 @@ type ReforgeOptionType = {
   max_value: string;
 };
 
-export default function ReforgeOption({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
-  const [reforgeAmount, setReforgeAmount] = useState("0");
-  const [reforgeOption, setReforgeOption] = useState<ReforgeOptionType[]>([]);
+export default function ReforgeOption({ watch, currentOptionType, index, setValue }: SearchOptionPropsTypes) {
+  const [reforgeAmount, setReforgeAmount] = useState(watch(`options.${index}.option_value1`) || "");
+  const [reforgeOption, setReforgeOption] = useState<ReforgeOptionType[]>(
+    watch(`options.${index}.option_value2`) || [],
+  );
 
   const handleSetValue = (newReforgeOption: ReforgeOptionType[], newReforgeAmount: string) => {
+    setValue(`options.${index}.option_value2`, newReforgeOption);
     setReforgeOption(newReforgeOption);
 
     setValue(`options.${index}.calcFunc`, (item: any) => {
@@ -45,6 +48,7 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
   };
 
   const handleAmountChange = (value: string) => {
+    setValue(`options.${index}.option_value1`, value);
     setReforgeAmount(value);
     handleSetValue(reforgeOption, value);
   };
@@ -59,9 +63,9 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
       <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
         <Label>갯수</Label>
 
-        <Select onValueChange={value => handleAmountChange(value)}>
+        <Select value={reforgeAmount} onValueChange={value => handleAmountChange(value)}>
           <SelectTrigger className="w-full">
-            <SelectValue placeholder="없음" />
+            <SelectValue placeholder="옵션 갯수를 선택해주세요" />
           </SelectTrigger>
 
           <SelectContent>
@@ -82,18 +86,36 @@ export default function ReforgeOption({ currentOptionType, index, setValue }: Se
             <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
               <Label>명칭</Label>
 
-              <Input type="text" name="name" placeholder="명칭" onChange={e => handleChange(e, idx)} />
+              <Input
+                type="text"
+                name="name"
+                placeholder="명칭"
+                onChange={e => handleChange(e, idx)}
+                value={item.name}
+              />
             </div>
 
             <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
               <Label>레벨</Label>
 
               <div className="grid grid-cols-[1fr_30px_1fr] gap-3 items-center text-center">
-                <Input type="text" name="min_value" placeholder="0" onChange={e => handleChange(e, idx)} />
+                <Input
+                  type="text"
+                  name="min_value"
+                  placeholder="0"
+                  onChange={e => handleChange(e, idx)}
+                  value={item.min_value}
+                />
 
                 <span>~</span>
 
-                <Input type="text" name="max_value" placeholder="25" onChange={e => handleChange(e, idx)} />
+                <Input
+                  type="text"
+                  name="max_value"
+                  placeholder="25"
+                  onChange={e => handleChange(e, idx)}
+                  value={item.max_value}
+                />
               </div>
             </div>
 

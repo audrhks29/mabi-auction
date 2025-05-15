@@ -8,20 +8,23 @@ import { Separator } from "@/components/ui/separator";
 
 type EnchantType = {
   id: string;
-  type: "접두" | "접미" | string | null;
-  name: string | null;
+  type: "접두" | "접미" | string;
+  name: string;
 };
 
-export default function Enchant({ currentOptionType, index, setValue }: SearchOptionPropsTypes) {
-  const [enchant, setEnchant] = useState<EnchantType[]>([
-    {
-      id: crypto.randomUUID(),
-      type: null,
-      name: null,
-    },
-  ]);
-
+export default function Enchant({ watch, currentOptionType, index, setValue }: SearchOptionPropsTypes) {
+  const [enchant, setEnchant] = useState<EnchantType[]>(
+    watch(`options.${index}.option_value1`) || [
+      {
+        id: crypto.randomUUID(),
+        type: "",
+        name: "",
+      },
+    ],
+  );
+  // console.log(enchant);
   const handleSetValue = (newEnchant: EnchantType[]) => {
+    setValue(`options.${index}.option_value1`, newEnchant);
     setEnchant(newEnchant);
 
     setValue(`options.${index}.calcFunc`, (item: any) => {
@@ -62,10 +65,11 @@ export default function Enchant({ currentOptionType, index, setValue }: SearchOp
             <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
               <Label>위치</Label>
 
-              <Select onValueChange={value => handleChange("type", value, idx)}>
+              <Select value={item.type} onValueChange={value => handleChange("type", value, idx)}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="옵션 타입 선택" />
                 </SelectTrigger>
+
                 <SelectContent>
                   {optionArray
                     .filter(e => !selectedEffects.includes(e) || e === item.type)
@@ -85,6 +89,7 @@ export default function Enchant({ currentOptionType, index, setValue }: SearchOp
                 type="text"
                 placeholder="인챈트 이름"
                 onChange={e => handleChange("name", e.target.value, idx)}
+                value={item.name}
                 required
               />
             </div>

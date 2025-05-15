@@ -28,7 +28,7 @@ export default function OptionModal({ data }: { data: any }) {
 
   const { control, handleSubmit, setValue, watch, reset } = useForm<SearchOptionFormTypes>({
     defaultValues: {
-      options: [{ option_type: null, calcFunc: undefined }],
+      options: [{ option_type: null, calcFunc: undefined, option_value1: null, option_value2: null, isMore: true }],
     },
   });
 
@@ -38,6 +38,7 @@ export default function OptionModal({ data }: { data: any }) {
   });
 
   const { setSelectedItemOptions, setIsFilter } = useItemOptionStore(state => ({
+    selectedItemOptions: state.selectedItemOptions,
     setSelectedItemOptions: state.setSelectedItemOptions,
     setIsFilter: state.setIsFilter,
   }));
@@ -71,7 +72,9 @@ export default function OptionModal({ data }: { data: any }) {
                 <div className="grid grid-cols-[30px_1fr] gap-3 items-center">
                   <Label>옵션</Label>
 
-                  <Select onValueChange={value => setValue(`options.${index}.option_type`, value)}>
+                  <Select
+                    value={currentOptionType || ""}
+                    onValueChange={value => setValue(`options.${index}.option_type`, value)}>
                     <SelectTrigger className="w-full">
                       <SelectValue placeholder="옵션 타입 선택" />
                     </SelectTrigger>
@@ -92,7 +95,7 @@ export default function OptionModal({ data }: { data: any }) {
                 </div>
 
                 {currentOptionType && (
-                  <OptionIndex currentOptionType={currentOptionType} setValue={setValue} index={index} />
+                  <OptionIndex watch={watch} currentOptionType={currentOptionType} setValue={setValue} index={index} />
                 )}
 
                 <Button type="button" onClick={() => remove(index)}>

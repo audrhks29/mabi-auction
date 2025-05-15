@@ -10,11 +10,6 @@ export default function ReforgeRank({ watch, currentOptionType, index, setValue 
         value={watch(`options.${index}.option_value1`) || ""}
         onValueChange={value => {
           setValue(`options.${index}.option_value1`, value);
-          setValue(`options.${index}.calcFunc`, (item: any) => {
-            return item.item_option.some(
-              (opt: any) => opt.option_type === currentOptionType && opt.option_value === value,
-            );
-          });
         }}>
         <SelectTrigger className="w-full">
           <SelectValue placeholder="랭크를 선택해주세요" />

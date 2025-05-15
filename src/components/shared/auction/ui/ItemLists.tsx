@@ -12,6 +12,7 @@ import useItemOptionStore from "@/store/itemOption-store";
 
 import { Table } from "@/components/ui/table";
 import { Card, CardContent } from "@/components/ui/card";
+import doesItemMatchAllConditions from "@/utils/auction/filterCondition";
 
 type SortingState = Array<{ id: string; desc: boolean }>;
 
@@ -28,7 +29,10 @@ export default function ItemLists({ data }: { data: ItemListsTypes[] | undefined
       ? data?.filter((item: any) => selectedItemOptions.every(option => option?.calcFunc?.(item)))
       : data;
   }, [isFiltered, data, selectedItemOptions]);
-  console.log(filteredData);
+  // console.log(filteredData);
+
+  const matchedItems = data?.filter(item => doesItemMatchAllConditions(item, selectedItemOptions));
+  console.log(matchedItems);
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const table = useReactTable({
